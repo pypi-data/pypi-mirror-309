@@ -1,0 +1,13 @@
+cloudpathlib
+dask
+distributed
+gitpython
+numpy
+rhg_compute_tools
+pandas
+parameterize_jobs
+pint-xarray
+scipy
+scikit-learn
+xarray
+zarr
