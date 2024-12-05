@@ -1,0 +1,2 @@
+[console_scripts]
+GDV_distribute_and_mark = GDV_distribute_and_mark.main:main

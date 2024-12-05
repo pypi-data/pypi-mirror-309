@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+GDV_distribute_and_mark/__init__.py
+GDV_distribute_and_mark/class_definition_logic.py
+GDV_distribute_and_mark/db.py
+GDV_distribute_and_mark/main.py
+GDV_distribute_and_mark/parsing.py
+GDV_distribute_and_mark/resource_manager.py
+GDV_distribute_and_mark.egg-info/PKG-INFO
+GDV_distribute_and_mark.egg-info/SOURCES.txt
+GDV_distribute_and_mark.egg-info/dependency_links.txt
+GDV_distribute_and_mark.egg-info/entry_points.txt
+GDV_distribute_and_mark.egg-info/requires.txt
+GDV_distribute_and_mark.egg-info/top_level.txt
+GDV_distribute_and_mark/assets/ico.png

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GDV_distribute_and_mark"
+dynamic = ["version"]
+authors = [
+  { name="The220th", email="The220th@gmail.com" },
+]
+description = "Mark classes for GDV scans. "
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pillow",
+    "argparse",
+    "ksupk",
+    "matplotlib",
+]
+
+[project.scripts]
+GDV_distribute_and_mark = "GDV_distribute_and_mark.main:main"
+
+[project.urls]
+Homepage = "https://github.com/The220th/GDV_distribute_and_mark"
+Issues = "https://github.com/The220th/GDV_distribute_and_mark/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.dynamic]
+version = {attr = "GDV_distribute_and_mark.__version__"}
+
+[tool.setuptools.package-data]
+GDV_distribute_and_mark = ["assets/*.png"]
+
+[tool.setuptools]
+include-package-data = true
