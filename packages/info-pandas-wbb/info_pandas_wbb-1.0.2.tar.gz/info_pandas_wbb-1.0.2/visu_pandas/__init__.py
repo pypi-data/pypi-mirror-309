@@ -1,0 +1,1 @@
+from .visu_pandas import info_tabela
