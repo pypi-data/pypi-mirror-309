@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+oslc4py_domains_auto/AutomationPlan.py
+oslc4py_domains_auto/AutomationRequest.py
+oslc4py_domains_auto/AutomationResult.py
+oslc4py_domains_auto/Contribution.py
+oslc4py_domains_auto/ParameterDefinition.py
+oslc4py_domains_auto/ParameterInstance.py
+oslc4py_domains_auto/__init__.py
+oslc4py_domains_auto/oslc_constants.py
+oslc4py_domains_auto.egg-info/PKG-INFO
+oslc4py_domains_auto.egg-info/SOURCES.txt
+oslc4py_domains_auto.egg-info/dependency_links.txt
+oslc4py_domains_auto.egg-info/requires.txt
+oslc4py_domains_auto.egg-info/top_level.txt
