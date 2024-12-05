@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CBE_verifier.egg-info/PKG-INFO
+CBE_verifier.egg-info/SOURCES.txt
+CBE_verifier.egg-info/dependency_links.txt
+CBE_verifier.egg-info/requires.txt
+CBE_verifier.egg-info/top_level.txt
+cbe_verifier/__init__.py
+cbe_verifier/detector.py
+cbe_verifier/utils.py
+cbe_verifier/verifier.py
