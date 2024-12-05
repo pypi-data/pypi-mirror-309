@@ -1,0 +1,9 @@
+awq_ext.cp310-win_amd64.pyd,sha256=PdZIDb096hcKVohFLiURZEcjdv8G2DItHP2W1k0qqWA,2322432
+awq_v2_ext.cp310-win_amd64.pyd,sha256=1Ivz8XK-y4COo1da-qgV5WqzSwftWlMAWhWGWsNNC5Y,1053696
+exl_ext.cp310-win_amd64.pyd,sha256=G9LP_9-chCCgWRqPFUOD08FLf-M9Dy6hnoM0lCMhDB4,718848
+exlv2_ext.cp310-win_amd64.pyd,sha256=NmRiwOUAEJDtWpdyBMFpwBQgFt6XzvSbnjkwL_yQsgs,5976576
+autoawq_kernels-0.0.9.dist-info/LICENSE,sha256=DFTjK_F2rHHycOSzjSYo3ZY2uSV3bFxOzEDUcVmK4gE,1084
+autoawq_kernels-0.0.9.dist-info/METADATA,sha256=XwDp17xjdqdjFBxL8KqjhvISSF-ZET1GEu3D6B5lWSY,2474
+autoawq_kernels-0.0.9.dist-info/WHEEL,sha256=zH8lgyF2gFod6lpCM_fWcr62DERZcd3iX2BoPN2-YV0,101
+autoawq_kernels-0.0.9.dist-info/top_level.txt,sha256=S0wSLYIiJ9q3IqZRVoLoQANW32thYQpBTdiMnQiMKMY,37
+autoawq_kernels-0.0.9.dist-info/RECORD,,
