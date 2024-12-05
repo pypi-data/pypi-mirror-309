@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: django-admin-berry
+Version: 1.0.11
+Summary: Modern template for Django admin interface (Berry Bootstrap 5 Design)
+Home-page: https://appseed.us/product/berry-dashboard/django/
+Author: AppSeed.us
+Author-email: support@appseed.us
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# [Django Berry](https://app-generator.dev/docs/products/django-libs/theme-berry.html)
+
+Modern template for **[Django Admin](https://app-generator.dev/docs/products/django-libs/theme-berry.html)**, Auth Pages (registration included) crafted on top of **Berry**, an open-source **Bootstrap** design.
+
+- [Django Admin Berry](https://app-generator.dev/docs/products/django-libs/theme-berry.html) - Documentation & Support Links
+- [Django Berry](https://app-generator.dev/product/berry-dashboard/django/) - The product that uses the library
+- [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html) - Learn how to code **Django** Projects
+
+<br />
+
+## **Features**
+
+- Design: **[Berry](https://app-generator.dev/docs/templates/bootstrap/berry-dashboard.html)** (Bootstrap)
+- **Sections Covered**: 
+  - `Admin Section`, reserved for `superusers`
+  - `All pages` managed by `Django.contrib.AUTH`
+  - `Registration` page
+  - `Misc pages`: colors, icons, typography, blank-page 
+  
+<br />
+
+![Django Berry - Modern template for Django Admin Section crafted on top of a modern Bootstrap, Open-Source Design.](https://user-images.githubusercontent.com/51070104/215728710-d1ee7fef-8153-402b-9741-371e1c01cd36.png)
+
+<br />
+
+---
+**[Django Berry](https://app-generator.dev/docs/products/django-libs/theme-berry.html)** - Modern Django Admin Interface provided by **[App-Generator](https://app-generator.dev)**
+
+
