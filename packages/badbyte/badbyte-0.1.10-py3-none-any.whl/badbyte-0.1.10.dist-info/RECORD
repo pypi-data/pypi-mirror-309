@@ -1,0 +1,11 @@
+badbyte/VERSION,sha256=_s8jxLPCwpOB1MFMrLmYk561P1eRuZq35OC8eXLERSQ,7
+badbyte/__init__.py,sha256=9AN7g7jcmO6nMXp_kqxfzxSH28Uul0QtdCJFf1Qgrv8,334
+badbyte/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+badbyte/utils/colors.py,sha256=bbcdRLTjGqZ4WJWoZKcQzYHQtvgJiWkvSmiAHjlBQ9k,72
+badbyte/utils/functions.py,sha256=7s5ksHeD_BvInMyTazRbyl8bzfjV7xkQT3vC5kebq_k,3680
+badbyte-0.1.10.data/scripts/badbyte,sha256=GjvPdbgVDziZwLvAhmy6Ol1VZhNdZtlhSSioB3fTXuw,4806
+badbyte-0.1.10.dist-info/LICENSE,sha256=MWZaoLQ_beT-hTVyaz-Z-bvLtgE0UUBkrEAbzsMNTUk,1066
+badbyte-0.1.10.dist-info/METADATA,sha256=W1qTbUtncKSA7QAClbFpbicrK6U659aTo26ncWfEti4,3301
+badbyte-0.1.10.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+badbyte-0.1.10.dist-info/top_level.txt,sha256=5ks_HVEBOCOIRttvIxB2onNSZDKt9EKcE3L2Q0fE634,8
+badbyte-0.1.10.dist-info/RECORD,,
