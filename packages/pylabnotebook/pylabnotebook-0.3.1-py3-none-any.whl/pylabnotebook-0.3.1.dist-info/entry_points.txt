@@ -1,0 +1,5 @@
+[console_scripts]
+labnotebook = pylabnotebook.cli:main
+
+[gui_scripts]
+

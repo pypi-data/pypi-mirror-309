@@ -1,0 +1,7 @@
+NOTEBOOK_NAME: {{ name }}
+LAB_AUTHOR: {{ author }}
+REVERSE_HISTORY: False
+SHOW_ANALYSIS_FILES: True
+LAB_CSS: {{ script_dir }}/templates/style.css
+ANALYSIS_EXT: ['.html']
+ANALYSIS_IGNORE: []
