@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: plantigo-common
+Version: 1.0.5
+Summary: Reusable modules for Plantigo project
+Author: jakubaniszewski@pm.me
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: fastapi>=0.70.0
+Requires-Dist: grpcio>=1.39.0
+Requires-Dist: grpc-interceptor>=0.15.4
+
