@@ -1,0 +1,2 @@
+[console_scripts]
+filepilot = filepilot.__main__:main
