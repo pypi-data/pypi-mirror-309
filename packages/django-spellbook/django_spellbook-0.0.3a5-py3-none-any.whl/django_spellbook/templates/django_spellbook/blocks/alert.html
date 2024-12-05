@@ -1,0 +1,16 @@
+<div class="spellbook-alert spellbook-bg-{{ type }} spellbook-border-{{ type }} spellbook-text-{{ type }} spellbook-p-3 spellbook-border-radius-lg spellbook-mb-3 spellbook-shadow-sm {% if kwargs.class %}{{ kwargs.class }}{% endif %}">
+    <span class="spellbook-alert-icon">
+        {% if type == "info" %}
+            ℹ️
+        {% elif type == "warning" %}
+            ⚠️
+        {% elif type == "success" %}
+            ✅
+        {% elif type == "danger" %}
+            🚫
+        {% endif %}
+    </span>
+    <span class="spellbook-alert-content">
+        {{ content|safe }}
+    </span>
+</div>
