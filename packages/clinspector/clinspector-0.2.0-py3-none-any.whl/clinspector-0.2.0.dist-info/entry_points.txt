@@ -1,0 +1,4 @@
+[console_scripts]
+clinspector_argparse = clinspector.clis.argparse_cli:main
+clinspector_click = clinspector.clis.click_cli:main
+clinspector_typer = clinspector.clis.typer_cli:main
