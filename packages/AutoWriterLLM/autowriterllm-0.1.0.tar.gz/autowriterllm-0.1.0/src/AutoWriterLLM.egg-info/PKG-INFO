@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: AutoWriterLLM
+Version: 0.1.0
+Summary: Automatic book writing tool using Large Language Models
+Author-email: Yang Xiong <yxiong@umich.edu>
+Maintainer-email: Yang Xiong <yxiong@umich.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/supersheepbear/autowriterllm
+Project-URL: Documentation, https://autowriterllm.readthedocs.io
+Project-URL: Repository, https://github.com/supersheepbear/autowriterllm.git
+Project-URL: Issues, https://github.com/supersheepbear/autowriterllm/issues
+Keywords: book,writing,llm,ai,content generation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer>=0.9.0
+Requires-Dist: markdown>=3.5.1
+Requires-Dist: typing-extensions>=4.8.0
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: anthropic>=0.3.0
+Requires-Dist: tqdm>=4.66.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: chromadb>=0.4.0
+Requires-Dist: sphinx>=7.1.2
+Requires-Dist: sphinx-rtd-theme>=1.3.0
+Provides-Extra: dev
+Requires-Dist: bump2version==1.0.1; extra == "dev"
+Requires-Dist: wheel==0.41.3; extra == "dev"
+Requires-Dist: watchdog==3.0.0; extra == "dev"
+Requires-Dist: tox==4.11.4; extra == "dev"
+Requires-Dist: coverage==7.3.2; extra == "dev"
+Requires-Dist: twine==4.0.2; extra == "dev"
+Requires-Dist: ruff==0.1.9; extra == "dev"
+Requires-Dist: pytest==7.4.3; extra == "dev"
+Requires-Dist: mypy==1.7.1; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+# AutoWriterLLM
+
+A Python tool that helps automatically generate comprehensive book structures and content using Large Language Models (LLMs).
+
+## Features
+
+* Generate detailed table of contents for technical books and guides
+* Create comprehensive book summaries with learning objectives
+* Support for multiple book formats and topics
+* Integration with multiple LLM providers (Anthropic Claude, Yi)
+
+## Installation 
