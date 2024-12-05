@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: grscheller.experimental
+Version: 0.5.0
+Summary: ### Experimental Modules - OBSOLETED
+Keywords: lazy,non-strict
+Author-email: "Geoffrey R. Scheller" <geoffrey@scheller.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Dist: grscheller.fp >= 1.1.0, < 1.2
+Requires-Dist: pytest >=8.3 ; extra == "test"
+Project-URL: Changelog, https://github.com/grscheller/experimental/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://grscheller.github.io/grscheller-pypi-namespace-docs/experimental
+Project-URL: Source, https://github.com/grscheller/experimental
+Provides-Extra: test
+
+# Experimental features for the grscheller PyPI namespace
+
+Repo for testing out experimental features for the grscheller namespace
+PyPI projects.
+
+* **Repositories**
+  * [grscheller.experimental][1] project on *PyPI*
+  * [Source code][2] on *GitHub*
+* **Detailed documentation**
+  * [Detailed API documentation][3] on *GH-Pages*
+
+---
+
+[1]: https://pypi.org/project/grscheller.experimental/
+[2]: https://github.com/grscheller/experimental/
+[3]: https://grscheller.github.io/grscheller-pypi-namespace-docs/experimental/
+
