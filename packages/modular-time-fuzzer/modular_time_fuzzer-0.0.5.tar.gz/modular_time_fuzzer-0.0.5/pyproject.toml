@@ -1,0 +1,33 @@
+[project]
+name = "modular_time_fuzzer"
+version = "0.0.5"
+authors = [
+  { name="gogo246475", email="gogo246475@gmail.com" },
+]
+description = "modular time fuzzer"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests",
+    "argparse"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[project.scripts]
+measure = "bins.measure:main"
+analyze = "bins.analyze:main"
+
+[tool.setuptools]
+packages = ["src.db_crud", "src.analysis_modules", "bins"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
