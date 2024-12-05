@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+image2text-ai/__init__.py
+image2text-ai/core.py
+image2text_ai.egg-info/PKG-INFO
+image2text_ai.egg-info/SOURCES.txt
+image2text_ai.egg-info/dependency_links.txt
+image2text_ai.egg-info/requires.txt
+image2text_ai.egg-info/top_level.txt
