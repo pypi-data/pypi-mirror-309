@@ -1,0 +1,15 @@
+square_file_store/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_file_store/configuration.py,sha256=iTzcSJbxiGLDD3-bxn-chTNbJt_iyenCSducLgQm19Y,3025
+square_file_store/main.py,sha256=3tXDH6nmsroBuljU6bt1-gOpqnuBMoLGg-AySDDV0lY,1583
+square_file_store/messages.py,sha256=OiOJS7Q3oMUmAAsuPeBAEIlPMdqFyVi2OHhjmoCTBGk,461
+square_file_store/data/config.ini,sha256=gMEtT6rnEUnA6cpRJBVU2XzLnZX0wvVa986co3tUAVM,778
+square_file_store/pydantic_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_file_store/pydantic_models/core.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_file_store/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_file_store/routes/core.py,sha256=P_715MLVrcExDdGG62_MGQF6ljUmycUQzViDfQvGmVc,9057
+square_file_store/utils/Helper.py,sha256=hIEQL-7vLABOIUYr9OEQxk9LjtA1r_NZY-EuphGYSWM,3885
+square_file_store/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_file_store-2.0.0.dist-info/METADATA,sha256=h12iGD3o7M4PA2zTF0-ToRDVFeNVzd2afYE0n5GaWGw,1418
+square_file_store-2.0.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+square_file_store-2.0.0.dist-info/top_level.txt,sha256=fyVWQ2B4k8bZvmhGqMdfNZi0fhlVEXT0cgFauu8tOYM,18
+square_file_store-2.0.0.dist-info/RECORD,,
