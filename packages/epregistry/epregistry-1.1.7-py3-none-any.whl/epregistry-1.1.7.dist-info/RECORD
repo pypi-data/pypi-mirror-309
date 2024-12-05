@@ -1,0 +1,8 @@
+epregistry/__init__.py,sha256=t4pTLWPXIhvbiLdsUsOlMvJcODnkh9LAVSl0NAv1fHI,810
+epregistry/epregistry.py,sha256=yNFuUMBcokMXS_pQ9bl7PZsP2kwWhDGN6mQrfbf1eOw,13204
+epregistry/package_to_distribution.py,sha256=96oLKM0H_0kHBNos_j-4N5mDs7-pq9vcGt1H0cuJIyc,8309
+epregistry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epregistry-1.1.7.dist-info/METADATA,sha256=UyJOAMPDIqiNF7w2Uv02zLnVcU-2OJJLsjIfYtc1dWY,11544
+epregistry-1.1.7.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+epregistry-1.1.7.dist-info/licenses/LICENSE,sha256=AteGCH9r177TxxrOFEiOARrastASsf7yW6MQxlAHdwA,1078
+epregistry-1.1.7.dist-info/RECORD,,
