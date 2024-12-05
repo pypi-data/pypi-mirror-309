@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "commit-critic"
+version = "0.1"
+authors = [
+    { name="M6R", email="hello@m6r.ai" },
+]
+description = "Command line tool for generating code review prompts using the Metaphor format"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "m6rclib>=0.3.0"
+]
+
+[project.scripts]
+commit-critic = "commit_critic.commit_critic:main"
+
+[tool.hatch.build]
+include = [
+    "src/commit_critic/**/*.py",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/commit_critic"]
+
+[project.urls]
+Homepage = "https://github.com/m6r-ai/commit-critic"
+Issues = "https://github.com/m6r-ai/commit-critic/issues"
