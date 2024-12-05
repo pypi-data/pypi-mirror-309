@@ -1,0 +1,5 @@
+setup.py
+creaocode.egg-info/PKG-INFO
+creaocode.egg-info/SOURCES.txt
+creaocode.egg-info/dependency_links.txt
+creaocode.egg-info/top_level.txt
