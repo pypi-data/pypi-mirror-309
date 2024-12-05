@@ -1,0 +1,3 @@
+[console_scripts]
+start=jackson_easy_api.cli:start_project
+
