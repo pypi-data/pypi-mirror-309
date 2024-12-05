@@ -1,0 +1,10 @@
+colour
+docopt
+jinja2
+pyyaml
+psutil
+requests
+scikit-learn
+opencv-python
+rich
+typing_extensions
