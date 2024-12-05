@@ -1,0 +1,90 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[build-system]
+requires = [
+  "hatchling >= 1.8, < 2",
+  "hatch-requirements-txt >= 0.3, < 0.5",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "venv-retarget"
+description = "Prepare a virtual environment for moving to another directory"
+readme = "README.md"
+license = {text = "BSD-2-Clause"}
+requires-python = ">= 3.11"
+dynamic = ["dependencies", "version"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "License :: DFSG approved",
+  "License :: Freely Distributable",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: POSIX",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Filesystems",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Software Distribution",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[[project.authors]]
+name = "Peter Pentchev"
+email = "roam@ringlet.net"
+
+[project.scripts]
+"venv-retarget" = "venv_retarget.__main__:main"
+
+[project.urls]
+Homepage = "https://devel.ringlet.net/sysutils/venv-retarget/"
+Changes = "https://devel.ringlet.net/sysutils/venv-retarget/changes/"
+"Issue Tracker" = "https://gitlab.com/ppentchev/venv-retarget/-/issues"
+"Source Code" = "https://gitlab.com/ppentchev/venv-retarget"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/venv_retarget"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements/install.txt"]
+
+[tool.hatch.version]
+path = "src/venv_retarget/defs.py"
+pattern = '(?x) ^ VERSION \s* (?: : \s* Final \s* )? = \s* " (?P<version> [^\s"]+ ) " \s* $'
+
+[tool.mypy]
+strict = true
+
+[tool.publync.format.version]
+major = 0
+minor = 1
+
+[tool.publync.build.tox]
+
+[tool.publync.sync.rsync]
+remote = "marla.ludost.net:vhosts/devel.ringlet.net/public_html/sysutils/venv-retarget"
+
+[tool.ruff]
+extend = "ruff-base.toml"
+output-format = "concise"
+preview = true
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.test-stages]
+stages = [
+  "(@check or @docs) and @quick and not @manual",
+  "(@check or @docs) and not @manual",
+  "@tests and not @manual",
+]
