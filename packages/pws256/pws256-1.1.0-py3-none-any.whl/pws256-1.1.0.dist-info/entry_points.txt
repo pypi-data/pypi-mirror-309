@@ -1,0 +1,2 @@
+[console_scripts]
+pws_shell = shell.__init__:_test
