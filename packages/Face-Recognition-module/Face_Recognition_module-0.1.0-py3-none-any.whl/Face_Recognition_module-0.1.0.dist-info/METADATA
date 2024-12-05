@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Face_Recognition_module
+Version: 0.1.0
+Summary: A Python package for facial recognition using DeepFace
+Home-page: https://github.com/AdityaSeth0905/Xyrionix-Labs-Codebase.git
+Author: Aditya Seth
+Author-email: adityaseth936@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: deepface
+Requires-Dist: tensorflow
+Requires-Dist: pathlib
+
+# Facial Recognition Package
+
+This Python package provides facial recognition functionality using DeepFace. It can compare real-time camera frames with stored images to determine if a face matches one in the known faces directory.
+
+## Installation
+
+To install the package, simply use:
+
+```bash
+pip install facial_recognition_package
+
+
+
+## Ussage
+from facial_recognition import FacialRecognition
+
+recognizer = FacialRecognition()
+recognizer.main()
