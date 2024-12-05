@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkautogentstudio=self.webpackChunkautogentstudio||[]).push([[477],{2267:function(e,t,a){a.r(t);var l=a(6540),u=a(4171);t.default=e=>{let{data:t}=e;return l.createElement(u.A,{meta:t.site.siteMetadata,title:"Home",link:"/build"},l.createElement("main",{style:{height:"100%"},className:" h-full "},"Build"))}}}]);
+//# sourceMappingURL=component---src-pages-build-tsx-871b29e24a2971141056.js.map
