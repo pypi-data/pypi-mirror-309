@@ -1,0 +1,40 @@
+databases : 
+  - /Users/glaunay/work/databases/mmseqs
+executables:
+  mafft: /usr/local/bin/mafft
+  mmseqs: /opt/homebrew/bin/mmseqs
+settings:
+  cache : /Users/glaunay/work/projects/AF2s/msaf/cache
+cocktails:
+  test_light:
+    ingredients:
+      - target: swissprot
+        label: pif.sto
+      - target: fakeprot
+        label: paf.a3m
+  test_chai:
+    pdqt: TRUE
+    ingredients:
+      - target: swissprot
+        label: pif.a3m
+      - target: fakeprot
+        label: paf.a3m
+  test_medium:
+    ingredients:
+      - target: swissprot
+        label: swissprot_hits.sto
+      - target: uniref50
+        label: uniref50_hits.a3m  
+  af2:
+    ingredients:
+      - target: bfd_uniref
+        label: bfd_uniref_hits.a3m
+      - target: mgnify
+        label: mgnify_hits.sto
+      - target: pdb
+        label: pdb_hits.sto
+      - target: uniprot
+        label: uniprot_hits.sto
+      - target: uniref90
+        label: uniref90_hits.sto
+    
