@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: vmc
+Version: 0.0.9
+Summary: VMC(Virtual Model Collection) is a collection of virtual models for various tasks.
+License: MIT
+Author: HSPK
+Author-email: whxway@whu.edu.cn
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: local
+Provides-Extra: ui
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: fastapi[all] (>=0.111.1,<0.112.0)
+Requires-Dist: google-generativeai (>=0.7.2,<0.8.0)
+Requires-Dist: gunicorn (>=22.0.0,<23.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: motor (>=3.6.0,<4.0.0)
+Requires-Dist: numpy (<2)
+Requires-Dist: openai (>=1.35.14,<2.0.0)
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: pymongo (>=4.8.0,<5.0.0)
+Requires-Dist: slark (>=0.1.4,<0.2.0)
+Requires-Dist: srag (>=0.4.0,<0.5.0) ; extra == "ui"
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Requires-Dist: uvicorn[standard] (>=0.30.1,<0.31.0)
+Requires-Dist: werkzeug (>=3.1.2,<4.0.0)
+Requires-Dist: zhipuai (>=2.1.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+## VMC
+
+Virtual Models Collection (VMC) is a collection of virtual models that can be used to test and evaluate the performance of various machine learning models. The collection includes models of various sizes and complexities, and can be used to test the performance of machine learning models on different types of data.
+
