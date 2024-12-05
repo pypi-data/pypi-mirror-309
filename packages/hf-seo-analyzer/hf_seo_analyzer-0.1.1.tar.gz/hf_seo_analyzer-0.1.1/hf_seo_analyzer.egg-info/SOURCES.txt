@@ -1,0 +1,8 @@
+README.md
+setup.py
+hf_seo_analyzer.egg-info/PKG-INFO
+hf_seo_analyzer.egg-info/SOURCES.txt
+hf_seo_analyzer.egg-info/dependency_links.txt
+hf_seo_analyzer.egg-info/entry_points.txt
+hf_seo_analyzer.egg-info/requires.txt
+hf_seo_analyzer.egg-info/top_level.txt
