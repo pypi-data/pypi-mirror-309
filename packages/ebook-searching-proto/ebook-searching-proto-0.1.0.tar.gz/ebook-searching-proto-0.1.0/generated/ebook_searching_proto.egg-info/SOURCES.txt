@@ -1,0 +1,6 @@
+setup.py
+generated/ebook_searching_proto.egg-info/PKG-INFO
+generated/ebook_searching_proto.egg-info/SOURCES.txt
+generated/ebook_searching_proto.egg-info/dependency_links.txt
+generated/ebook_searching_proto.egg-info/requires.txt
+generated/ebook_searching_proto.egg-info/top_level.txt
