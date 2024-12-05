@@ -1,0 +1,12 @@
+PFI/__init__.py,sha256=nXwKDPwXOrH3-qj3dKesJf0it6gkeCDJZaJRiBUxjgI,247
+PFI/_version.py,sha256=TSFbwleOoUD4Rm6TRBv6KEsLM9MOdI4jTPShjJ1s_vg,1651
+PFI/exception.py,sha256=gay2k5VVPPhx0pOx4JDZUlvHMszYXWgBzFMEjX17GeA,3168
+PFI/version.py,sha256=i1i6T0qgnPIzer-G1h0D2FwzUdMHkgB3GevmcV3Yh7s,21
+PFI/file/csv.py,sha256=cxispdwlx88WHle_A8unvSyiYzDNvcDejNmjOrMcyng,1953
+PFI/file/file.py,sha256=5b9i32i2XdLqQFdrvXumZwbvdkLjEhTaP5PmDqbfZ4Y,5036
+PFI/file/txt.py,sha256=9ZWct0EG0KOEWnuRXe0XuHqLk6xGYFAu2PtMxkQ65cY,2885
+PythonFileLib-0.0.2.dist-info/LICENSE,sha256=abVlcuCX9zRGcMNx3RYMTlt9PXnSUEznlrCqXcC5_cY,1082
+PythonFileLib-0.0.2.dist-info/METADATA,sha256=D43M2Q0AAZJEYxrC-PdpLwHOL6ayASdaUCUwarSc5C0,2112
+PythonFileLib-0.0.2.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+PythonFileLib-0.0.2.dist-info/top_level.txt,sha256=yvEehGC-GrNbdo23WAMBeS4mMzilc0FItxosPntvqWY,4
+PythonFileLib-0.0.2.dist-info/RECORD,,
