@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+clickuphelper/__init__.py
+clickuphelper/cli.py
+clickuphelper.egg-info/PKG-INFO
+clickuphelper.egg-info/SOURCES.txt
+clickuphelper.egg-info/dependency_links.txt
+clickuphelper.egg-info/entry_points.txt
+clickuphelper.egg-info/requires.txt
+clickuphelper.egg-info/top_level.txt
