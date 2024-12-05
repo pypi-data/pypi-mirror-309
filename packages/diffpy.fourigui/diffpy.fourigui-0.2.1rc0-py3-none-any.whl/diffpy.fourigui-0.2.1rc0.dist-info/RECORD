@@ -1,0 +1,11 @@
+diffpy/__init__.py,sha256=w43pJCjwSRowjr294Q6vQ_hWvIrnJRz3nbO9dLyluDU,672
+diffpy/fourigui/__init__.py,sha256=XjMy6FaPr4PIhzyGWX2yYKUagX2Bl8B7Gw4i3wYML8Y,736
+diffpy/fourigui/fourigui.py,sha256=hhtpJ4eQ7eC_zpYsFhP9AMoeTWGqhgq-7GA4E7Uerjo,21450
+diffpy/fourigui/version.py,sha256=kPQ5HapKeTQzwpb53v984CBIDzBOI1Z0jGQIfAy1jys,843
+diffpy.fourigui-0.2.1rc0.dist-info/AUTHORS.rst,sha256=3booMNorzYNNI3cqkYs-sWbimnSegFURpo7iSX6oKiU,184
+diffpy.fourigui-0.2.1rc0.dist-info/LICENSE.rst,sha256=FFZAG9Hh02sJbGQEu06NuMxdgx_i1GuezTT4cKTyLkc,1568
+diffpy.fourigui-0.2.1rc0.dist-info/METADATA,sha256=3DsohUnzID1hze6YSEexcUUD1KUGB6LSoK1xkEUzsf0,7675
+diffpy.fourigui-0.2.1rc0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+diffpy.fourigui-0.2.1rc0.dist-info/entry_points.txt,sha256=caAj6XM-BUwUsNkQWPKebDHrVgNx-h1vW_r8Q_tD2tc,59
+diffpy.fourigui-0.2.1rc0.dist-info/top_level.txt,sha256=34qLZyi9mxikpHepVDTMHrrNbe8VoOuz3ShYeiWA7KA,7
+diffpy.fourigui-0.2.1rc0.dist-info/RECORD,,

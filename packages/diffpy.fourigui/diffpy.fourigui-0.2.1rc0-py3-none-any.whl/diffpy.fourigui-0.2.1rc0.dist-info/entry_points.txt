@@ -1,0 +1,2 @@
+[console_scripts]
+fourigui = diffpy.fourigui.fourigui:main
