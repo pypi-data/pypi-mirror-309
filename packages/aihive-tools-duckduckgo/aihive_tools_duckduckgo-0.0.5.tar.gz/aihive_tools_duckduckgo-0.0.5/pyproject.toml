@@ -1,0 +1,28 @@
+[project]
+name = "aihive-tools-duckduckgo"
+version = "0.0.5"
+description = "AIHive duckduckgo package"
+requires-python = ">=3.7"
+readme = "README.md"
+authors = [
+    { name = "Jacob Weiss", email = "jaweiss2305@gmail.com" }
+]
+
+dependencies = [
+    "aihive-tools-core>=0.0.1"
+]
+
+[project.urls]
+homepage = "https://github.com/jacobweiss2305/aihive-tools"
+repository = "https://github.com/jacobweiss2305/aihive-tools/tree/main/packages/duckduckgo"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["aihive_tools.duckduckgo*"]

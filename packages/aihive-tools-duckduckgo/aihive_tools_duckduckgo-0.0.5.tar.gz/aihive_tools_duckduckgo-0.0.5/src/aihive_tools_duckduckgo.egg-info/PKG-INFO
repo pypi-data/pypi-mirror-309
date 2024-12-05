@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aihive-tools-duckduckgo
+Version: 0.0.5
+Summary: AIHive duckduckgo package
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/aihive-tools
+Project-URL: repository, https://github.com/jacobweiss2305/aihive-tools/tree/main/packages/duckduckgo
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aihive-tools-core>=0.0.1
+
+# AIHive Duckduckgo Tool
+
+This package provides duckduckgo integration for the AIHive framework.
+
+## Installation
+
+```bash
+pip install aihive-tools-duckduckgo
+```
+
+## Usage
+
+```python
+from aihive_tools.duckduckgo import DuckduckgoTool
+
+tool = DuckduckgoTool()
+result = tool.execute()
+```
