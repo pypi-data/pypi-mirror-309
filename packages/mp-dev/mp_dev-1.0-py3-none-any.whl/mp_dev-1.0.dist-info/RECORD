@@ -1,0 +1,11 @@
+mp_dev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mp_dev/cli.py,sha256=Tk0vk0HxSg8pqQSEsCCb-taTc45VILQQ0Q1WLLdcE3g,397
+mp_dev/project_generator.py,sha256=-FkS_KMULsmdD-GLnl0Z4DzKphq1JV71iEF5gDyxpkA,3326
+mp_dev/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mp_dev/commands/help_command.py,sha256=Uh3u3Rr6l8uB67B8vbsOYqyO9co30zGkh9fRA0YBj1g,186
+mp_dev/commands/init_command.py,sha256=RxHX0EHJaGbEoFNvQQopYLsegZtS3Vfw7nODIXPfYdo,257
+mp_dev-1.0.dist-info/METADATA,sha256=zqQ8hY1m11Db0KPw-MWgNwTSem59BXdss2DSyTAOwf0,812
+mp_dev-1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+mp_dev-1.0.dist-info/entry_points.txt,sha256=xKJJPN7BG46i8_HxhKWGrhPjiO6BnomXYj54DNrvn6w,43
+mp_dev-1.0.dist-info/top_level.txt,sha256=1F08JKfxi50c4e2Lr3bAT-hC9WtvnuZEoXHo-0J19bA,7
+mp_dev-1.0.dist-info/RECORD,,
