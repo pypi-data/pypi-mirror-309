@@ -1,0 +1,30 @@
+[project]
+name = "listwrap"
+version = "0.0.2"
+description = "Formatting lists of strings."
+authors = [{ name = "Zach Kurtz", email = "zkurtz@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[dependency-groups]
+dev = [
+  "pre-commit >=3.8.0",
+  "pyright >=1.1.378",
+  "ruff >=0.6.3",
+  "pytest >=8.3.2",
+]
+
+[project.urls]
+Source = "https://github.com/zkurtz/listwrap"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests",]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pyright]
+include = ["listwrap", "tests"]

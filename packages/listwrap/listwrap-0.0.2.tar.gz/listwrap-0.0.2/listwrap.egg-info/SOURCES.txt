@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+listwrap/__init__.py
+listwrap.egg-info/PKG-INFO
+listwrap.egg-info/SOURCES.txt
+listwrap.egg-info/dependency_links.txt
+listwrap.egg-info/top_level.txt
+tests/test_align.py
