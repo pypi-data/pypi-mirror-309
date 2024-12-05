@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tnb_bill
+Version: 0.1
+Summary: A package to calculate electricity bills by TNB
+Home-page: https://github.com/zhamri/tnb_bill
+Author: zhamri
+Author-email: zhamri@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# tnb_bill
+
+A Python package to calculate electricity bills based on usage, with support for KWTBB and SST.
