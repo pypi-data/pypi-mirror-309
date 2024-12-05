@@ -1,0 +1,2 @@
+[console_scripts]
+pychess_engine = pychess_engine.cli:main
