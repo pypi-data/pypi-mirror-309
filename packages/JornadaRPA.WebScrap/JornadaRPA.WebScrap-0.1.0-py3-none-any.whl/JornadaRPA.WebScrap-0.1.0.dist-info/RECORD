@@ -1,0 +1,10 @@
+jornadaRPA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jornadaRPA/webScrap/__init__.py,sha256=e-11sronXYlODqVVMtsMmTlDwOEIzX8wlYruRz6MNV4,161
+jornadaRPA/webScrap/webscrap.py,sha256=hOvHYbYkPE3AncxnSQnh6o7Yc2Jj-Yvc3Y0177JYXAw,2360
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_webscrap.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+JornadaRPA.WebScrap-0.1.0.dist-info/LICENSE,sha256=bc7XcLg8thMI8WNnaTuoUG3jgQjGKi-3GIzdDKQgcgE,1091
+JornadaRPA.WebScrap-0.1.0.dist-info/METADATA,sha256=8v6v0hSZTtKnggSmR18r6uc1rtS9F_NSmf2Lrm6d1Ps,2047
+JornadaRPA.WebScrap-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+JornadaRPA.WebScrap-0.1.0.dist-info/top_level.txt,sha256=oB7rYqQxm3jzBz4k-UOPg4sejOql8EuxgaNgv7m6rto,17
+JornadaRPA.WebScrap-0.1.0.dist-info/RECORD,,
