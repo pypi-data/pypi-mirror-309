@@ -1,0 +1,28 @@
+[package]
+name = "powershap-statistical-analysis-rs"
+authors = ["Carlos Arias"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "powershap_statistical_analysis_rs"
+
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = "0.16.1"
+numpy = "0.21.0"
+pyo3 = { version = "0.21", features = ["chrono", "extension-module"] }
+pyo3-polars = "0.18.0"
+polars = { version = "0.44.2", features = ["lazy", "abs"] }
+r_mathlib = "0.2.0"
+statrs = "0.17.1"
+rayon = "1.10.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+debug = true
+overflow-checks = false
+debug-assertions = false

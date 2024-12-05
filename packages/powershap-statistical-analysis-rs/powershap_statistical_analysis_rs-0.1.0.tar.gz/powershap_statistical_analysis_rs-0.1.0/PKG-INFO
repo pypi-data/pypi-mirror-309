@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: powershap-statistical-analysis-rs
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Author: Carlos Arias
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# powershap-statistical-analysis-rs
+Implementation for the powershap-statistical-analysis function in native Rust using pyo3. 
+
