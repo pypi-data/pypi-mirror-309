@@ -1,0 +1,2 @@
+[console_scripts]
+textual-demo = textual_demo.run:main
