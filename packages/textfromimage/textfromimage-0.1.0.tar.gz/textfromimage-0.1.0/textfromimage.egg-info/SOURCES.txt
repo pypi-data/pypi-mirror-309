@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+textfromimage/__init__.py
+textfromimage/core.py
+textfromimage.egg-info/PKG-INFO
+textfromimage.egg-info/SOURCES.txt
+textfromimage.egg-info/dependency_links.txt
+textfromimage.egg-info/requires.txt
+textfromimage.egg-info/top_level.txt
