@@ -1,0 +1,3 @@
+[console_scripts]
+llm-key = llmkey.serve:main
+
