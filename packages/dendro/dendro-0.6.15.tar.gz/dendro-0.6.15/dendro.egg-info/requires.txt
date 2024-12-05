@@ -1,0 +1,7 @@
+click
+simplejson
+numpy
+PyYAML
+pydantic
+psutil
+requests
