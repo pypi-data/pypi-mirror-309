@@ -1,0 +1,14 @@
+_chacha/_chacha.c,sha256=dkMyrPriOzyrpGX-h3zrL3faXsZRb1q3hYBNpT5CguE,291550
+_chacha/portable.h,sha256=eKbpFkAGRnAf_XN2Y5jiPhraW2OO4hOWQXQwDlm_WfE,7313
+chacha/__init__.py,sha256=obt3CSDfoePpvzUQstCYHpWsz48oC0XPIRkeL1rpK-c,5801
+chacha/_chacha.cpython-312-darwin.so,sha256=ZFmXUNNucmuV7ns7Fm9HApmKtwoOUuu9VqNkD_mlMBg,146384
+chacha/decrypt/__init__.py,sha256=kU_xO7pxluJ6t5oZxi35DYw_IScEXjGgExa0blwpUKQ,48
+chacha/decrypt/__main__.py,sha256=wG3hfVIgMcE8S6RinsvwH7dZq7PO0yh6rvI2gLu76tk,43
+chacha/encrypt/__init__.py,sha256=G_IoZpsDI6Y2PHipn8aVyBzjPmKw_gaJ3x4qdOeagR8,49
+chacha/encrypt/__main__.py,sha256=CBc_4Df5BphuONgcPEvccroKl1tGJ_lBjMdAKGUG1Zo,44
+chafe-1.0.0a5.dist-info/LICENSE,sha256=ozUvmYFzbZ7eub7Gb0PJv1JFVAltsH5dlA0uZykWOw0,1176
+chafe-1.0.0a5.dist-info/METADATA,sha256=A4MMm9s8gByuO4eGhMzJCAmDNFzI5uv_LkKYsAwXqxo,2449
+chafe-1.0.0a5.dist-info/WHEEL,sha256=qdsrz-PZGwEUIJB5_IyWo4jSzy_UeJwahvqC1oUb0eg,114
+chafe-1.0.0a5.dist-info/entry_points.txt,sha256=eOG1IIdIcjng_5ced9hWjkWQgugeR5bgmjik9yq_ybI,92
+chafe-1.0.0a5.dist-info/top_level.txt,sha256=drT_7i2cF7WR7U10ogrTDVr9zWI34yVcvA0CC_6Ha5c,15
+chafe-1.0.0a5.dist-info/RECORD,,
