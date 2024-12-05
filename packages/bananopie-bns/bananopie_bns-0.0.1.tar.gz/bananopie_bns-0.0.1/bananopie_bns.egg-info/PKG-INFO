@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bananopie_bns
+Version: 0.0.1
+Summary: A python library to simplify sending and receiving Banano. Also a RPC wrapper.
+Home-page: https://github.com/jetstream0/bananopie_bns
+Author: John Though
+Author-email: prussia@prussia.dev
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bananopie
+
+A direct translation of the resolver bits of the [BNS Typescript Library](https://github.com/stjet/bns) into Python. That Typescript library relies on the banani library, which was a translation of bananopie (a Python library for Banano). And this library relies on bananopie too... Seems like I've gone full circle.
