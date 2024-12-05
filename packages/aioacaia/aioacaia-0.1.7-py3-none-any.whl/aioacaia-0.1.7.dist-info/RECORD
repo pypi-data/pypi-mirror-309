@@ -1,0 +1,12 @@
+aioacaia/__init__.py,sha256=lGPESZkEhCvNpsfJRFXZJLx5jYqf6lgTtDHG0Y-ddhU,34
+aioacaia/acaiascale.py,sha256=dCngJ9pgIwTWYHwlhTs_ke66ZwG5E4VAp0EJmaj_tpk,17688
+aioacaia/const.py,sha256=8tRl9gmBpxFeoTEkOjwQcXHg09f49PzBLnEzetlTcEw,526
+aioacaia/decode.py,sha256=V-H9Pn_kdls-Zf7DjLh-v02ZpEKuueMzqPsZu-Hpwis,7100
+aioacaia/exceptions.py,sha256=8c7Xss_7cP10dNAsTZ9yTRxn8iQpTdbV6UpK1q3ldvA,1162
+aioacaia/helpers.py,sha256=wOltqeMmByZl1dvhSknaWVmJCJmDoHR-1XbVRsV8gsA,4513
+aioacaia/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioacaia-0.1.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aioacaia-0.1.7.dist-info/METADATA,sha256=9YFtQ9XWOr8-UR4XWTo2XNXzxkbaXB9Da3y1IoJzEUI,1799
+aioacaia-0.1.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+aioacaia-0.1.7.dist-info/top_level.txt,sha256=QyX7mYR0WzrRMgXnyL_MkWuPyfb95gabSxdBTi9lUMY,9
+aioacaia-0.1.7.dist-info/RECORD,,
