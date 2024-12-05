@@ -1,0 +1,13 @@
+ipython==8.12.3
+ipywidgets==8.1.5
+langid==1.1.6
+multi_rake==0.0.2
+nltk==3.9.1
+numpy==1.24.4
+pandas==1.5.3
+pycaret==3.2.0
+scikit_learn==1.2.2
+setuptools==75.1.0
+spacy==3.8.2
+vaderSentiment==3.3.2
+vaderSentiment==3.3.2

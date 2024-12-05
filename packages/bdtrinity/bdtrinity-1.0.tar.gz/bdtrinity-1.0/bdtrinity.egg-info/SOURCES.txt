@@ -1,0 +1,20 @@
+LICENCE.txt
+README.md
+setup.py
+bdtrinity/__init__.py
+bdtrinity/anomaly.py
+bdtrinity/arules.py
+bdtrinity/classification.py
+bdtrinity/clustering.py
+bdtrinity/datasets.py
+bdtrinity/nlp.py
+bdtrinity/regression.py
+bdtrinity/timeseries.py
+bdtrinity/utils.py
+bdtrinity.egg-info/PKG-INFO
+bdtrinity.egg-info/PKG-INFO (2)
+bdtrinity.egg-info/SOURCES.txt
+bdtrinity.egg-info/dependency_links (2).txt
+bdtrinity.egg-info/dependency_links.txt
+bdtrinity.egg-info/requires.txt
+bdtrinity.egg-info/top_level.txt
