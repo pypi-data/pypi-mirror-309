@@ -1,0 +1,12 @@
+music_snapshot/__init__.py,sha256=ObPg52CnIREU8H5rbT-ofsDYa43rzykUR-38MDn8-cs,322
+music_snapshot/__main__.py,sha256=Kbux-JCZHSai8EdSqM8x_WxksglVo7HK2_9qN_pCV6Q,343
+music_snapshot/cli.py,sha256=enrWEr9yzQrKAwIFgUKFL4jGRcffuWsZyruxHz5LNR8,14812
+music_snapshot/config.py,sha256=vXxm41pomFqtcTyaZzPj6QPF3-58NB27JyWZsfvX7sA,1784
+music_snapshot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+music_snapshot/tracks.py,sha256=WY8Qr5wpxKtA9hwqAheVfpkGn2Aw7D7ffFoOmcbCPgY,7210
+music_snapshot/utils.py,sha256=rMjtLQHrf6NFQWeWLfdP2Eq6rOkkKzvzZLuXvfNhF2s,1532
+music_snapshot-0.1.0.dist-info/entry_points.txt,sha256=GyBGeoDadMLLVL0iDejtAub9BmVIiAoT6LJSmJrHwd4,63
+music_snapshot-0.1.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+music_snapshot-0.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+music_snapshot-0.1.0.dist-info/METADATA,sha256=04avbeaYbFEjSAnVFjKW42uhDVpvAxFhKGMpSeUJvL4,7513
+music_snapshot-0.1.0.dist-info/RECORD,,
