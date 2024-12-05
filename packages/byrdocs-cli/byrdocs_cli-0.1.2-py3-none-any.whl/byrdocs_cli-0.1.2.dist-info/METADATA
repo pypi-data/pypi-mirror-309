@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: byrdocs_cli
+Version: 0.1.2
+Summary: A simple command line tool for BYR Docs
+Author-email: Rikka <rikka@byr.inl>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.1
+Requires-Dist: boto3 ==1.35.62
+Requires-Dist: botocore ==1.35.62
+Requires-Dist: argcomplete ==3.5.1
+
+# BYR Docs CLI
+
+## Install 
+
+Using pip:
+```bash
+pip3 install byrdocs
+```
+
+## Usage
+
+```bash
+usage: byrdocs [-h] [--version] [--token TOKEN] [command] [file]
+
+positional arguments:
+  command        Command to execute
+  file           Path to the file to upload
+
+options:
+  -h, --help     show this help message and exit
+  --version, -v  show program's version number and exit
+  --token TOKEN  Token for login command
+```
+
+## Development
+
+Build:
+
+```bash
+python3 -m build
+```
+
+
+Push to PyPI:
+```bash
+python3 -m twine upload --repository pypi dist/* --verbose
+```
