@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: wiegand_calculator
+Version: 0.0.1
+Summary: A simple converter for Wiegand data
+Project-URL: Homepage, https://github.com/tachoknight/wiegand-calculator/tree/master/python
+Project-URL: Issues, https://github.com/tachoknight/wiegand-calculator/issues
+Author-email: Ron Olson <tachoknight@gmail.com>
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Wiegand Calculator
+This is a simple calculator for the Wiegand protocol. It can calculate the facility code and card number from a Wiegand number, and vice versa. This is useful for RFID card systems that use the Wiegand protocol.
+
+## Usage
+This module exposes two functions:
+- `convert_from_wiegand(board_tag: int) -> int`: Converts a Wiegand number to the original card number.
+- `converet_to_wiegand(card_number: int) -> int`: Converts a card number to a Wiegand number.
