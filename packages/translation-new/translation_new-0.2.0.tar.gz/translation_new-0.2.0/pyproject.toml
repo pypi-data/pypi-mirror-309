@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "translation_new"
+version = "0.2.0"
+description = "A python package for Multi Lingual Translation using LLM"
+authors = ["Manoj Prabhakar <manojprabhakar.isb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "^4.46.2"
+torch = "^2.5.1"
+pandas = "^2.2.3"
+pytest = "^8.3.3"
+protobuf = "^5.28.3"
+tiktoken = "^0.8.0"
+sentencepiece = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
