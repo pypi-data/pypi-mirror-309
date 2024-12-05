@@ -1,0 +1,10 @@
+README.md
+setup.py
+EC2S3Wrapper/EC2Manager.py
+EC2S3Wrapper/S3Manager.py
+EC2S3Wrapper/__init__.py
+EC2S3Wrapper.egg-info/PKG-INFO
+EC2S3Wrapper.egg-info/SOURCES.txt
+EC2S3Wrapper.egg-info/dependency_links.txt
+EC2S3Wrapper.egg-info/requires.txt
+EC2S3Wrapper.egg-info/top_level.txt
