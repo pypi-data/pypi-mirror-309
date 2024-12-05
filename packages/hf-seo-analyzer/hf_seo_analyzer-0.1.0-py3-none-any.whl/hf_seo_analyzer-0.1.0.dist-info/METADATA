@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hf_seo_analyzer
+Version: 0.1.0
+Summary: A CLI and programmatic tool to analyze Markdown files for SEO using Huggingface API
+Home-page: https://github.com/thinh-vu/hf_seo_analyzer
+Author: Thinh Vu
+Author-email: mrthinh@live.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: requests >=2.0.0
+Requires-Dist: PyYAML >=5.4
+Requires-Dist: argparse >=1.4.0
+
