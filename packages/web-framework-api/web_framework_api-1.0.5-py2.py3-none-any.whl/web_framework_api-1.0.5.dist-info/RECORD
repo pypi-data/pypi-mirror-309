@@ -1,0 +1,9 @@
+web_framework_api/WebFramework.py,sha256=R0lkfthA3NuImz6zfi8GKQRBuZvn3FcAkEAz184lkK0,5044
+web_framework_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_framework_api/exceptions/WebFrameworkException.py,sha256=8U6_0kRz9FBLivaH88yP6q7kYSkRbkL3CKg5OCKvwp4,641
+web_framework_api/utility/Config.py,sha256=1_KPFzfCvS7UE5-xCIpKyYzKrj_tIMXnp0atTzIskSM,12702
+web_framework_api/utility/DLLHandler.py,sha256=MVoTen3eA9AhUCrnmCPiZvknCSNMZRsLfsSdSXdnyeI,3180
+web_framework_api/utility/Utils.py,sha256=nZTvvFUBgiGpABbHbs2YBxgMQw1xKqtN1bBJG0Mr88w,2987
+web_framework_api-1.0.5.dist-info/METADATA,sha256=GOAXknGqSATbOSB9oDGO8Hpogy1e20UtFp9-26J7qbE,3938
+web_framework_api-1.0.5.dist-info/WHEEL,sha256=aO3RJuuiFXItVSnAUEmQ0yRBvv9e1sbJh68PtuQkyAE,105
+web_framework_api-1.0.5.dist-info/RECORD,,
