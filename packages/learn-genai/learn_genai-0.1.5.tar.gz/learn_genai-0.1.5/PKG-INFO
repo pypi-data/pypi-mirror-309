@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: learn_genai
+Version: 0.1.5
+Summary: A package to learn Generative AI through practical examples
+Home-page: https://github.com/fbanespo1/learn_genai.git
+Author: Tony Esposito
+Author-email: peppedda4@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-ollama
+Requires-Dist: langgraph
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: chromadb
+Requires-Dist: ollama
+Requires-Dist: transformers
