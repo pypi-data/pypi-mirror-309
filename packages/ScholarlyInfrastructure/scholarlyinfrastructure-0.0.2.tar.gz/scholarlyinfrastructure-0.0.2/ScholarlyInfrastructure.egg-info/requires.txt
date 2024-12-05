@@ -1,0 +1,11 @@
+fastcore
+decorator
+pydantic
+loguru
+bigmodelvis
+richuru
+optuna
+
+[dev]
+nbdev
+ipykernel
