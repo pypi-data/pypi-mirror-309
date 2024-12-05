@@ -1,0 +1,2 @@
+[console_scripts]
+dnd_firefly = app.dnd_firefly:main
