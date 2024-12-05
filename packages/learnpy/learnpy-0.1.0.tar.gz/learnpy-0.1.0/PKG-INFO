@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: learnpy
+Version: 0.1.0
+Summary: learnpy
+Home-page: http://github.com/zhiqingxiao/learnpy/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+learnpy: All-In-One Importer for Python Maching Learning
+=======================
+
+learnpy is a package that simplifies the import process by importing all commonly used Python packages. It automatically detects the packages in current environment and imports the most commonly used packages.
+
+
+### Usage Example
+
+`from learnpy import *`
+
+
