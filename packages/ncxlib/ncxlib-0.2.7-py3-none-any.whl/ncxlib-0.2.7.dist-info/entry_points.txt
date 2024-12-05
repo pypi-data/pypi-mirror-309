@@ -1,0 +1,7 @@
+[console_scripts]
+clean=scripts:remove_all_init_files
+deploy=scripts:run_poetry_commands
+fmt=scripts:fmt
+gen=scripts:add_init_files
+notebook=scripts:notebook
+
