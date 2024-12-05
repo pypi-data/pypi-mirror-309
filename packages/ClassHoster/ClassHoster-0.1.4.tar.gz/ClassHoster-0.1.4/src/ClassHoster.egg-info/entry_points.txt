@@ -1,0 +1,4 @@
+[console_scripts]
+host = classhoster.public.hostclass:main
+hostall = classhoster.public.hostall:main
+launch = classhoster.launch:main
