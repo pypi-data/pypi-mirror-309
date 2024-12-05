@@ -1,0 +1,2 @@
+[console_scripts]
+marketdl = marketdl.__main__:main
