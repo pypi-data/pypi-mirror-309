@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PFL/__init__.py
+PFL/_version.py
+PFL/exception.py
+PFL/version.py
+PFL/file/csv.py
+PFL/file/file.py
+PFL/file/txt.py
+PythonFileLib.egg-info/PKG-INFO
+PythonFileLib.egg-info/SOURCES.txt
+PythonFileLib.egg-info/dependency_links.txt
+PythonFileLib.egg-info/requires.txt
+PythonFileLib.egg-info/top_level.txt
