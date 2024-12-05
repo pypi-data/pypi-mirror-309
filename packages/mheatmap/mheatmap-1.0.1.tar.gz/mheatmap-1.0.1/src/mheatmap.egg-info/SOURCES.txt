@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mheatmap/__init__.py
+src/mheatmap/_amc_postprocess.py
+src/mheatmap/_rms_permute.py
+src/mheatmap/_spectral_permute.py
+src/mheatmap/matrix.py
+src/mheatmap.egg-info/PKG-INFO
+src/mheatmap.egg-info/SOURCES.txt
+src/mheatmap.egg-info/dependency_links.txt
+src/mheatmap.egg-info/requires.txt
+src/mheatmap.egg-info/top_level.txt
