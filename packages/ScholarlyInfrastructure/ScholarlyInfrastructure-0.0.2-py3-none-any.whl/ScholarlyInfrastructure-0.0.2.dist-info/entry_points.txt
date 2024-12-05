@@ -1,0 +1,2 @@
+[nbdev]
+scholarly_infrastructure = scholarly_infrastructure._modidx:d
