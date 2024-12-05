@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "extensort"
+version = "0.1.1"
+authors = [
+  { name="SMF", email="muntasinfayaz@gmail.com" },
+]
+description = "A module for sorting files into folders based on their extensions"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "colorama",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SMFRafin/extensort"
+"Bug Tracker" = "https://github.com/SMFRafin/extensort/issues"
