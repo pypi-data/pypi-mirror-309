@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/gherkin2robotframework/__init__.py
+src/gherkin2robotframework/__main__.py
+src/gherkin2robotframework/dumpgherkin.py
+src/gherkin2robotframework/translation.py
+src/gherkin2robotframework.egg-info/PKG-INFO
+src/gherkin2robotframework.egg-info/SOURCES.txt
+src/gherkin2robotframework.egg-info/dependency_links.txt
+src/gherkin2robotframework.egg-info/entry_points.txt
+src/gherkin2robotframework.egg-info/requires.txt
+src/gherkin2robotframework.egg-info/top_level.txt
