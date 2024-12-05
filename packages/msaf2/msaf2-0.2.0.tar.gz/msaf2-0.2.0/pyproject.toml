@@ -1,0 +1,17 @@
+[project]
+name = "msaf2"
+version = "0.2.0"
+description = "Building and managing MSA prior to stucture inference"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "biopython>=1.83",
+    "fastparquet>=2024.11.0",
+    "pandas>=2.2.3",
+    "pyyaml>=6.0.2",
+    "rich>=13.9.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
