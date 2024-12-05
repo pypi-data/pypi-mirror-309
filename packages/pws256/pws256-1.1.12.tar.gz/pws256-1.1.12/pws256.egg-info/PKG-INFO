@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pws256
+Version: 1.1.12
+Summary: pws256: A module that is used for users and passwords, and also has validation methods to check passwords with strings
+Author: Hector Robertson
