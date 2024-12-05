@@ -1,0 +1,12 @@
+setup.py
+kapaaud1/__init__.py
+kapaaud1/baiduasr.py
+kapaaud1/configdjj.py
+kapaaud1/custom_widgets.py
+kapaaud1/day2.py
+kapaaud1/image_recognition.py
+kapaaud1/xiancheng.py
+kapaaud1.egg-info/PKG-INFO
+kapaaud1.egg-info/SOURCES.txt
+kapaaud1.egg-info/dependency_links.txt
+kapaaud1.egg-info/top_level.txt
