@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: no_pry_fshangala
+Version: 1.0.0
+Summary: A python module to encrypt and decript passwords and usernames
+Author-email: Funduluka Shangala <fshangala@gmail.com>
+Project-URL: Homepage, https://github.com/fsahngala/python_packaging
+Project-URL: Issues, https://github.com/fshangala/python_packaging/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# No Pry
+A python module to encrypt and decript passwords and usernames
