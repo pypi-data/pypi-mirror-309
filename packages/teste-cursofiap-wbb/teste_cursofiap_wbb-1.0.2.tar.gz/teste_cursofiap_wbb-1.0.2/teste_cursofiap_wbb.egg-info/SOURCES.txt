@@ -1,0 +1,8 @@
+README.md
+setup.py
+teste_bibliot/__init__.py
+teste_bibliot/funcoes.py
+teste_cursofiap_wbb.egg-info/PKG-INFO
+teste_cursofiap_wbb.egg-info/SOURCES.txt
+teste_cursofiap_wbb.egg-info/dependency_links.txt
+teste_cursofiap_wbb.egg-info/top_level.txt
