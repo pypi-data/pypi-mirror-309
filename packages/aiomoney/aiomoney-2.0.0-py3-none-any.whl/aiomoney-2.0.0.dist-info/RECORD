@@ -1,0 +1,14 @@
+aiomoney/__init__.py,sha256=LeZiAMWvM9Sezhki4Ee1e5CXzh9Dm3L_zQAOS39nMFo,78
+aiomoney/authorization.py,sha256=JDGEPCELJQZsDjtofW6XBzks05zmWU4cWmsckKJHgRQ,1423
+aiomoney/exceptions.py,sha256=nJZ1bzi15BsdiiqOEM3zADzxTiwfdTzA5V6d13UCsAk,96
+aiomoney/request.py,sha256=xCiji_g30uo6f0l6XJ7IwjvG2k9ivPfMiHhKyKe-38k,1559
+aiomoney/wallet.py,sha256=lUhSChZs_2ABVn2dz6fO_VvGdf_JQP1-zEYzA0n9D-M,3457
+aiomoney/types/__init__.py,sha256=UXvncgBk7gbdi7KeggPQEyesfAhVlnufSCH-8Hd1wnQ,179
+aiomoney/types/account_info.py,sha256=K1Y4r_LNqlkdyaM8HQ9qir7F_rzVpgTq9u1jrn8Yc7s,823
+aiomoney/types/operation_details.py,sha256=vc97RCiV6U5cywFVjTk8lrhjNyDk4jN_VwCSOXuZL0k,821
+aiomoney/types/operation_history.py,sha256=r8ATodtand0d5c4soVhs2N3Quto3-zLtAgcog0OUT8g,574
+aiomoney/types/payment.py,sha256=5LcPSk9bpsQlGwaFzrD4oovSC1qwaOCJ7gyF8UBcuDE,261
+aiomoney-2.0.0.dist-info/METADATA,sha256=4m1OuXo6O2gdcILBZ3k2Xxhqpxo_qC867H98CRgC0k8,3921
+aiomoney-2.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+aiomoney-2.0.0.dist-info/top_level.txt,sha256=wNg_qdwTANyxKtCuTAfC9I1kWA-VvIlgL9iXQ4gzO58,9
+aiomoney-2.0.0.dist-info/RECORD,,
