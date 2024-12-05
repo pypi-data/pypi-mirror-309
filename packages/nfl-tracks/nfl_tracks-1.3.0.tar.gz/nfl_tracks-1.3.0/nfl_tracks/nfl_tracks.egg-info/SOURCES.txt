@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nfl_tracks/nfl/__init__.py
+nfl_tracks/nfl/visuals.py
+nfl_tracks/nfl_tracks.egg-info/PKG-INFO
+nfl_tracks/nfl_tracks.egg-info/SOURCES.txt
+nfl_tracks/nfl_tracks.egg-info/dependency_links.txt
+nfl_tracks/nfl_tracks.egg-info/requires.txt
+nfl_tracks/nfl_tracks.egg-info/top_level.txt
