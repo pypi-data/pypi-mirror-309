@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app_skellington"
+dynamic = ["version"]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+description = "app_skellington CLI framework"
+requires-python = ">=3.8"
+dependencies = [
+    "appdirs",
+    "configobj",
+    "colorlog"
+]
+authors = [
+    {name = "Mathew Guest", email = "mat@zavage.net"}
+]
+keywords = ["cli", "logging", "application"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+
+[project.urls]
+homepage = "https://zavage-software.com/portfolio/app_skellington"
+repository = "https://git-repos.zavage.net/Zavage-Software/app_skellington"
+documentation = "https://git-repos.zavage.net/Zavage-Software/app_skellington"
+
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pre-commit",
+    "isort",
+    "flake8"
+]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
