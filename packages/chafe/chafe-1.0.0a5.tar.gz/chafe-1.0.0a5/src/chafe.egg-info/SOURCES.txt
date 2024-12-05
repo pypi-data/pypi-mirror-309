@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/_chacha/_chacha.c
+src/_chacha/portable.h
+src/chacha/__init__.py
+src/chacha/decrypt/__init__.py
+src/chacha/decrypt/__main__.py
+src/chacha/encrypt/__init__.py
+src/chacha/encrypt/__main__.py
+src/chafe.egg-info/PKG-INFO
+src/chafe.egg-info/SOURCES.txt
+src/chafe.egg-info/dependency_links.txt
+src/chafe.egg-info/entry_points.txt
+src/chafe.egg-info/top_level.txt
