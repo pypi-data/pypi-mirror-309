@@ -1,0 +1,13 @@
+tags
+settings.json
+.project
+.pydevproject
+.settings/
+build/
+dist/
+*.egg-info
+*.mo
+*.pyc
+*.pyo
+*~
+*.DS_Store
