@@ -1,0 +1,7 @@
+setup.py
+getvoice/__init__.py
+getvoice/voice.py
+getvoice.egg-info/PKG-INFO
+getvoice.egg-info/SOURCES.txt
+getvoice.egg-info/dependency_links.txt
+getvoice.egg-info/top_level.txt
