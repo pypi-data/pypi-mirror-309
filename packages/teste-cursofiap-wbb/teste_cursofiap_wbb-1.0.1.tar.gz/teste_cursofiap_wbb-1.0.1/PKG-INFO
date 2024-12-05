@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: teste_cursofiap_wbb
+Version: 1.0.1
+Summary: Teste de criação de lib curso fiap WBB
+Home-page: 
+Author: William Brandão Bilatto
+Author-email: williambilatto@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Teste Curso Fiap
+
+A simple example libray
+
+# Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações
