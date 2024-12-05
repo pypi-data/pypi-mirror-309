@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: async-web-search
+Version: 0.1.4
+Summary: Async web search library supporting Google, Wikipedia, and arXiv
+Project-URL: Homepage, https://github.com/nwaughachukwuma/web-search
+Project-URL: Bug Tracker, https://github.com/nwaughachukwuma/web-search/issues
+Author: Chukwuma
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: asyncio
+Requires-Dist: beautifulsoup4
+Requires-Dist: httpx
+Requires-Dist: lxml
+Requires-Dist: wikipedia
+Description-Content-Type: text/markdown
+
+# Web Search
+
+Async web search library supporting Google Custom Search, Wikipedia, and arXiv APIs.
+
+## Installation
+
+```bash
+pip install async-web-search
+```
+
+## Usage
+
+```python
+from web_search import WebSearch, WebSearchConfig, GoogleSearchConfig
+
+config = WebSearchConfig(
+    sources=["google", "wikipedia"],
+    google_config=GoogleSearchConfig(
+        api_key="your_google_api_key",
+        cse_id="your_cse_id"
+    )
+)
+
+search = WebSearch(config)
+results = await search.search("quantum computing")
+print(results)
+```
+
+## Features
+
+- Async/concurrent searching
+- Multiple source support (Google, Wikipedia, arXiv)
+- Content extraction and cleaning
+- Configurable search parameters
+
+## License
+
+MIT
