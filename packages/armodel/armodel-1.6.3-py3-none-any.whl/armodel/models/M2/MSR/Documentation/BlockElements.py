@@ -1,0 +1,18 @@
+from typing import List
+from .TextModel.MultilanguageData import MultiLanguageParagraph
+from ...AUTOSARTemplates.GenericStructure.GeneralTemplateClasses.ArObject import ARObject
+
+class DocumentationBlock(ARObject):
+    def __init__(self):
+        super().__init__()
+
+        self.ps = []               # type: List[MultiLanguageParagraph]
+
+    def addP(self, p: MultiLanguageParagraph):
+        self.ps.append(p)
+        return self
+
+    def getPs(self) -> List[MultiLanguageParagraph]:
+        return self.ps
+
+    
