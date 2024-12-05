@@ -1,0 +1,13 @@
+ast_transforms/__init__.py,sha256=v4dbshhxfog98zGwFV337ocVot18Pd_j6eELp9F9O98,295
+ast_transforms/add_func_decorator.py,sha256=cyhs29LpFNiVqcdZCWZfd-EySprhbt5o9Yv5-o6V6Cw,365
+ast_transforms/attach_def_use_vars.py,sha256=7xOeBfX8Q7OjIgGOAhnsKufJzc2goYLSNi3_NKpH018,1836
+ast_transforms/remove_func_arg_annotation.py,sha256=kvJJZ6JcKUC-T67NF19ew3MgnxKK8LCczAvTY4rIkGw,255
+ast_transforms/to_single_op_form.py,sha256=BpovTG1FrKGWGu3RVG5CUSvBSTtIqOM4T5MwvHuRvSc,3742
+ast_transforms/utils.py,sha256=uwMjXiIGN6XXPRsmjn62xFxaC_pjJJPSG5hR8VDMqgU,2303
+ast_transforms/where_to_ternary.py,sha256=Q3_27T6y2fcRh2NHm5-81m8nIH5RiDRN-YMSjHFp4vI,501
+astlib/__init__.py,sha256=lu6Q_ReLvGgtQOh4eLCxMj_AhxcaZzVayNBfVLDEq8g,304
+astlib/utils.py,sha256=cAvUkT-bCiE69vyjtLDoVy5wt8DKV4EAs3E3UwyfAGM,53
+ast_transforms-0.1.3.dist-info/METADATA,sha256=bA8roVRICWqOR2rnJH9Idewso3bMcOOJJOiz_lZve9c,497
+ast_transforms-0.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ast_transforms-0.1.3.dist-info/top_level.txt,sha256=_76WT_aqyhg_bvOAbzgKzjd4eUN5Ae1z7yYqJWwdZqQ,15
+ast_transforms-0.1.3.dist-info/RECORD,,
