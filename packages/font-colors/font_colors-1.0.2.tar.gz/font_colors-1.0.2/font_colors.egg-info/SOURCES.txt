@@ -1,0 +1,11 @@
+LICENCE
+setup.py
+font_colors/__init__.py
+font_colors/back.py
+font_colors/color.py
+font_colors/style.py
+font_colors.egg-info/PKG-INFO
+font_colors.egg-info/SOURCES.txt
+font_colors.egg-info/dependency_links.txt
+font_colors.egg-info/requires.txt
+font_colors.egg-info/top_level.txt
