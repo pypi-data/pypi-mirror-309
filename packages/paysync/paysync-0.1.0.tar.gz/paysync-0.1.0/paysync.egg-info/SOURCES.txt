@@ -1,0 +1,9 @@
+README.md
+setup.py
+paysync/__init__.py
+paysync/paysync.py
+paysync.egg-info/PKG-INFO
+paysync.egg-info/SOURCES.txt
+paysync.egg-info/dependency_links.txt
+paysync.egg-info/requires.txt
+paysync.egg-info/top_level.txt
