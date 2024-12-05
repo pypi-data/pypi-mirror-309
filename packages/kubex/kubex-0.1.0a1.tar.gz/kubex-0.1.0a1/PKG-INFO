@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: kubex
+Version: 0.1.0a1
+Summary: Asynchronous Kubernetes client inspired by kube.rs
+Project-URL: Homepage, https://github.com/codemageddon/kubex
+Project-URL: Repository, https://github.com/codemageddon/kubex.git
+Project-URL: Issues, https://github.com/codemageddon/kubex/issues
+Project-URL: Changelog, https://github.com/codemageddon/kubex/blob/main/CHANGELOG.md
+Author-email: Codemageddon <dev@codemageddon.me>
+Maintainer-email: Codemageddon <dev@codemageddon.me>
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: pydantic<3,>=2.0
+Requires-Dist: pyyaml>=6.0.2
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp>=3.11.2; extra == 'aiohttp'
+Description-Content-Type: text/markdown
+
+# Kubex
+
+Kubex is a Kubernetes client library for Python inspired by kube.rs. It is built on top of [Pydantic](https://github.com/pydantic/pydantic) and is async-runtime agnostic.
+
+> *ATTENTION:* Kubex is currently under active development, and backward compatibility may be broken in future releases.
+
+# Completed Features:
+
+* Basic API interface that allows interaction with almost any Kubernetes resources and their methods.
+* In-cluster client authorization with token refreshing.
+* Basic support for kubeconfig files.
+
+# Planned Features:
+
+* [ ] Support for OIDC and other authentication extensions.
+* [ ] Integration with aiohttp as an internal HTTP client.
+* [ ] Fine-tuning of timeouts.
+* [ ] Comprehensive library of Kubernetes models.
+* [ ] Dynamic API object creation to exclude unsupported methods for resources (requires research for mypy compatibility).
+* [ ] Potential synchronous version of the client.
+* [ ] Additional tests and examples.
+* [ ] JsonPatch models.
+* [ ] Allow `namespace` to be a method parameter instead of an API instance-scoped parameter.
+* [ ] Enhanced support for subresources (status, ephemeral containers).
+* [ ] Support for Pod.attach.
