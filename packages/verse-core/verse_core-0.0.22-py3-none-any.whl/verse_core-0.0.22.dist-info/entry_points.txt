@@ -1,0 +1,3 @@
+[console_scripts]
+verse-run=verse.core.main:main
+
