@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MySQLBridgeData/__init__.py
+MySQLBridgeData/my_module.py
+MySQLBridgeData.egg-info/PKG-INFO
+MySQLBridgeData.egg-info/SOURCES.txt
+MySQLBridgeData.egg-info/dependency_links.txt
+MySQLBridgeData.egg-info/requires.txt
+MySQLBridgeData.egg-info/top_level.txt
