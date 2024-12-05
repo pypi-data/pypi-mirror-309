@@ -1,0 +1,11 @@
+aiohttp
+python-dotenv
+openai
+pyyaml
+redis
+
+[dev]
+pytest
+pytest-asyncio
+black
+isort
