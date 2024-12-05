@@ -1,0 +1,13 @@
+otterbrix-1.0a9.data/data/lib/libotterbrix_log.a,sha256=-HUbxUcTdb4yHQR-DzeIN1iRLqWJMOvIXU_VKt4B6-E,83458
+otterbrix-1.0a9.dist-info/top_level.txt,sha256=xdcnIf1tVdfIrethO0NT8PxY3V7j1MrTXxs69AbmZaU,10
+otterbrix-1.0a9.dist-info/RECORD,,
+otterbrix-1.0a9.dist-info/LICENSE,sha256=e7BmXqrbfODdE6TQfSoXJ5R6Nc_V94cB5n4jyC_Cf-g,1560
+otterbrix-1.0a9.dist-info/METADATA,sha256=WXOL6bF3dakP4HwkPs8BUu4sXgul2tjUq0PG8wo2btE,258
+otterbrix-1.0a9.dist-info/WHEEL,sha256=lCgcXpv663IpgrSP0GEmQbc9pK9DVro0KzSq8yGVPoY,145
+otterbrix/tox.ini,sha256=UtBRPF0H5Vn3ZUqGvHoytlV9hjVFOWL5Xw_7PKGDuvo,66
+otterbrix/get_path.py,sha256=9s9ENiZwEP8KDUAIJRDAALB5p3Yt95RuRUSo4N6CmtU,168
+otterbrix/MANIFEST.in,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otterbrix/setup.py,sha256=DMCCvk1xxCBwQlBr25Ib-SG18G8JigC1AFwczGgEIlk,482
+otterbrix/pyproject.toml,sha256=kiA5bWguFgLAJKHeby3Wlrd9HAr3K3h5oKupJbnSz0I,290
+otterbrix/__init__.py,sha256=Ozo2KKuMG_wiHxr5xsUEsZDawjPjtDkO_ri3jtQTO3Q,107
+otterbrix/otterbrix.cpython-37m-x86_64-linux-gnu.so,sha256=iOubRQ72oftuO4PEKgEgOiUae_WRWbD3O8I7A9mS4bQ,4033480
