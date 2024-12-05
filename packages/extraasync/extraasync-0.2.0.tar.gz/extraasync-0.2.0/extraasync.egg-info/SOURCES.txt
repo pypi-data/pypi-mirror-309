@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+extraasync/__init__.py
+extraasync/aenumerate.py
+extraasync/taskgroup.py
+extraasync.egg-info/PKG-INFO
+extraasync.egg-info/SOURCES.txt
+extraasync.egg-info/dependency_links.txt
+extraasync.egg-info/requires.txt
+extraasync.egg-info/top_level.txt
+tests/test_aenumerate.py
+tests/test_taskgroup.py
