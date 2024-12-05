@@ -1,0 +1,179 @@
+# hf_seo_analyzer
+
+**hf_seo_analyzer** là công cụ CLI và thư viện Python giúp phân tích nội dung Markdown thông qua API và tạo báo cáo chi tiết về SEO.
+
+## Chức năng chính
+- Gửi nội dung Markdown đến API để phân tích.
+- Tạo báo cáo Markdown với các số liệu SEO cụ thể.
+- Hỗ trợ phân tích file đơn lẻ hoặc cả thư mục.
+
+---
+
+## Cách sử dụng
+
+### 1. Phân tích file đơn lẻ
+Phân tích một file Markdown thông qua API:
+```bash
+python3.10 -m hf_seo_analyzer.cli test_markdown.md
+```
+
+---
+
+### 2. Phân tích cả thư mục
+Phân tích tất cả các file Markdown trong một thư mục:
+```bash
+python3.10 -m hf_seo_analyzer.cli md_examples --batch
+```
+
+---
+
+### 3. Tùy chỉnh API và khóa
+Bạn có thể cấu hình `API endpoint` và `API key` trong file `config.yaml` tại thư mục làm việc:
+```yaml
+endpoint: "https://example-api.com/analyze"
+api_key: "your_api_key"
+```
+
+Trong đó, thông tin `endpoint` và `api_key` được cung cấp nếu bạn là học viên của khoá học [Tạo website Docusaurus & Tối ưu SEO](https://learn-anything.vn/lp-khoa-hoc-tao-website-docusaurus-seo/).
+
+---
+
+## Báo cáo
+Khi phân tích thành công, các báo cáo sẽ được lưu trong thư mục `seo-report` tại thư mục làm việc.  
+Ví dụ:
+```
+seo-report/
+├── test_markdown_seo_report.md
+├── md_example_seo_report.md
+```
+
+---
+
+## Yêu cầu hệ thống
+- Python >= 3.10
+- Các thư viện Python: `requests`, `PyYAML`, `argparse`
+
+Cài đặt gói phụ thuộc từ `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Nội dung báo cáo mẫu
+
+#### 📝 SEO Analysis Report
+
+**File:** `post_1.md`
+
+**Generated On:** 2024-11-16 11:41:05
+
+---
+
+## 🔍 Summary
+- **Title Length:** 49 (Good)
+- **Description Length:** 157 (Good)
+- **Keyword Density:** 0.74% (Out of range)
+- **Found Headings:** H2, H3
+- **Missing Headings:** H4
+- **Internal Links:** 3
+- **Outbound Links:** 2
+- **Contains Multimedia:** Yes
+
+---
+
+## 📋 Detailed Analysis
+### Title
+| Metric | Value |
+|--------|-------|
+| **Title length** | 49 |
+| **Keyword in title** | True |
+| **Length status** | Good |
+
+---
+
+### Description
+| Metric | Value |
+|--------|-------|
+| **Description length** | 157 |
+| **Length status** | Good |
+
+---
+
+### Slug
+| Metric | Value |
+|--------|-------|
+| **Slug length** | 41 |
+| **Length status** | Good |
+| **Keyword in url** | True |
+
+---
+
+### Keyword density
+| Metric | Value |
+|--------|-------|
+| **Word count** | 2566 |
+| **Keyword count** | 19 |
+| **Keyword density** | 0.74 |
+| **Density status** | Out of Range |
+
+---
+
+### Headings
+| Metric | Value |
+|--------|-------|
+| **Found levels** | H2, H3 |
+| **Missing levels** | H4 |
+
+---
+
+### Image alt
+| Metric | Value |
+|--------|-------|
+| **Keyword in alt** | True |
+
+---
+
+### Links
+| Metric | Value |
+|--------|-------|
+| **Outbound links count** | 2 |
+| **Internal links count** | 3 |
+| **Outbound links** | [Complex Data] |
+| **Internal links** | [Complex Data] |
+
+---
+
+### Paragraph length
+| Metric | Value |
+|--------|-------|
+| **Average paragraph length** | 59.67 |
+| **Length status** | Good |
+
+---
+
+### Title word type
+| Metric | Value |
+|--------|-------|
+| **Positive words** | True |
+| **Negative words** | False |
+| **Power words** | False |
+
+---
+
+### Word count score
+100
+
+---
+
+### Main keyword unique
+True
+
+---
+
+### Contains multimedia
+True
+
+---
+
+✨ Chúc bạn sử dụng hiệu quả công cụ này!
