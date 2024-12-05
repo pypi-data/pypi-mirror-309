@@ -1,0 +1,2 @@
+[console_scripts]
+gemini-process = GeminiDataProcessor.__main__:main
