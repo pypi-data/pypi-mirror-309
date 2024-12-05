@@ -1,0 +1,4 @@
+core-mixins>=1.0.4
+core-tests>=1.0.3
+
+[test]
