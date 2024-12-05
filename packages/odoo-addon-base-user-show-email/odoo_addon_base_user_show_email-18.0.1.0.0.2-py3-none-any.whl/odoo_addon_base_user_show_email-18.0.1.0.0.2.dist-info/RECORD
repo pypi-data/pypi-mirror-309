@@ -1,0 +1,15 @@
+odoo/addons/base_user_show_email/README.rst,sha256=uO-yrbKT7-L85C53kkHrBKXpCxBGGnz4EQ5G0ZXL1QQ,3523
+odoo/addons/base_user_show_email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/base_user_show_email/__manifest__.py,sha256=3e1l8LtCpT0Iq_hTwEQpaPisQOE5YKJbV-AX0u29Uo0,535
+odoo/addons/base_user_show_email/i18n/base_user_show_email.pot,sha256=OfDtjb0xacrB6eDe-cto59R2njGUFQk1Psb--pDHjpA,692
+odoo/addons/base_user_show_email/i18n/it.po,sha256=Mt5zhmtXq9kMjSShu7Ef-wdDLjec8VivtFa3pdv_xk8,870
+odoo/addons/base_user_show_email/readme/CONTRIBUTORS.md,sha256=3AFe4XBh96uceAUD9AX4M9aQf2PA6xJ6qkpKKPxexLM,53
+odoo/addons/base_user_show_email/readme/DESCRIPTION.md,sha256=X0OyIN38kvvO0qR0sjAse9XGhiI3bAK9fU1mXbcPSLo,727
+odoo/addons/base_user_show_email/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/base_user_show_email/static/description/index.html,sha256=U0B0OZYC60duC02dlLVkhlasd8A34GfN_jogqkqWazw,12948
+odoo/addons/base_user_show_email/views/login_layout.xml,sha256=nJBXO4wNB-ex8zWOZ6-3aqqivcYcDe-8bMjTEL22Uj4,425
+odoo/addons/base_user_show_email/views/res_users_view.xml,sha256=v8e0vOP8_-SFbPfM4rVZYlIyrH1KjkBBGo96MeLxbxo,1288
+odoo_addon_base_user_show_email-18.0.1.0.0.2.dist-info/METADATA,sha256=O1D4uhLjvj7MwNqfK6wZxpWDHie2hlMfNLfNfKp_yn8,4040
+odoo_addon_base_user_show_email-18.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_base_user_show_email-18.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_base_user_show_email-18.0.1.0.0.2.dist-info/RECORD,,
