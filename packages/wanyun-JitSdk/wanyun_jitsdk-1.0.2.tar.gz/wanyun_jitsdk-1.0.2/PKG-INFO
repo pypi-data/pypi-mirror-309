@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wanyun_JitSdk
+Version: 1.0.2
+Summary: 极态官方授权Api的SDK
+Author: zangtao
+Author-email: noguchisyou123456@gmail.com
+Keywords: python,jit,sdk,apiAuth
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# JitSDK
+
+极态官方现内置API授权元素，允许您的应用程序轻松实现对外提供API接口服务。此外，我们还提供了一套全面的SDK，帮助您快速、便捷地接入并使用这些经过授权的API接口
+
+## 使用方法
+ 1. 添加依赖
+
+~~~
+pip install wanyun_JitSdk
+~~~
+
+2. 在授权方获取授权信息
+~~~
+调用url: http://demoain/api/orgId/appName
+accessKey: xxxx
+accessSecret: xxxxxxxxxxxxxxxx
+~~~
+
+4. 在您的项目中导入，并使用，可以参考demo文件
+~~~ python
+authApi = JitApi("http://demoain/api/orgId/appName")
+authApi.setAccessKey("xxxx")
+authApi.setAccessSecret("xxxxxxxxxxxxxxxx")
+authApi.setApi("services.MySvc.func1")
+
+req = JitApiRequest()
+req.setMethod("POST")
+req.setParams({})
+resp = req.execute(authApi)
+print(resp.data)
+~~~
