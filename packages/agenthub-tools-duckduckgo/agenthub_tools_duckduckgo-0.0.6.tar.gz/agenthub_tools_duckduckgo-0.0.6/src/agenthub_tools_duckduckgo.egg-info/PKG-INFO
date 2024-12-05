@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: agenthub-tools-duckduckgo
+Version: 0.0.6
+Summary: AgentHub duckduckgo package
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/agenthub-tools
+Project-URL: repository, https://github.com/jacobweiss2305/agenthub-tools/tree/main/packages/duckduckgo
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: agenthub-tools-core
+Requires-Dist: duckduckgo-search
+
+# AgentHub Duckduckgo Tool
+
+This package provides duckduckgo integration for the AgentHub framework.
+
+## Installation
+
+```bash
+pip install agenthub-tools-duckduckgo
+```
+
+## Usage
+
+```python
+from agenthub_tools.duckduckgo import search, news
+
+print(search(query="What is the weather in Tokyo?"))
+
+print(news(query="Whats going on in Paris?"))
+```
