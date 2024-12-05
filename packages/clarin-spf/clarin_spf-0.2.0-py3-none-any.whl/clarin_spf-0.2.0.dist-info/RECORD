@@ -1,0 +1,11 @@
+clarin_spf/__init__.py,sha256=swjFnNJDfse1D-YM7GXLJJl2sy1HFvsdt_YgfxizvwU,40
+clarin_spf/constants.py,sha256=3a9j9YX_i7FzUBvvX9hA9bWABGbabH-2cpq9O8tF-Ak,252
+clarin_spf/errors.py,sha256=R5lJqvbc5cgrVwLEfphhnvLtYABQHDRCipjaQ0STuCk,209
+clarin_spf/requester.py,sha256=Vxf2kvKd0StC38zvUAb0IKMuHbqV4wdF6yhiKhMo6ys,7015
+clarin_spf/utils.py,sha256=Hjvz8oczABbNPT5B1YM6nDWA33kPJEUJVAlxycbxnbE,3402
+clarin_spf/version.py,sha256=dwm-k_Z-jVJh3XvUUihA4YH_iqS5EfkubVd6suUFZB0,427
+clarin_spf-0.2.0.dist-info/LICENSE,sha256=KSNQCJ_vlEVfoQvXTJs3AYiAkXhCInvaTV-G_V2OLso,10946
+clarin_spf-0.2.0.dist-info/METADATA,sha256=eXSF7oC2jjPMklCyW_R6ovAq9bDiVO81YmlWDwGcR0k,16019
+clarin_spf-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+clarin_spf-0.2.0.dist-info/top_level.txt,sha256=O2HCPpHgDb1DCcgvmNko8Oh_vHlcO3W2Zk6XmXnOzYM,11
+clarin_spf-0.2.0.dist-info/RECORD,,
