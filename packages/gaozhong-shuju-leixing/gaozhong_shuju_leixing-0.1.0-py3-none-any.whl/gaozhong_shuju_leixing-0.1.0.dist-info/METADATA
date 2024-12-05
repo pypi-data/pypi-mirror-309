@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gaozhong-shuju-leixing
+Version: 0.1.0
+Summary: A collection of fundamental data structures implemented in Python
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 高中数据类型
+
+这是一个包含基本数据结构的Python实现项目，包括栈、队列、链表、双向链表、循环队列和二叉树。
+
+## 使用方法
+
+请参考 `高中数据类型.py` 文件中的示例用法以了解如何使用这些数据结构。
