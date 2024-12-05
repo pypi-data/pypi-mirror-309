@@ -1,0 +1,12 @@
+vcodeboot/__init__.py,sha256=AKStGrMmi00qDXDoSdLqRzWq8KGZYeUgwcJYLKaW7dY,67
+vcodeboot/files/__init__.py,sha256=79Ih1151rfcqZdr7F8HSZSTs_iT2SKd1xCkehMsXeXs,19
+vcodeboot/files/core.py,sha256=ESfrl0ZpOLsqOVZMSAVj2Fv_gfCY1q8_kKtFvKqQYJQ,188
+vcodeboot/globaux/__init__.py,sha256=ZM1Z2bkQNfM8QlJC331bcpGssV8A86tlD94ebr4pxhU,244
+vcodeboot/globaux/core.py,sha256=E-ULmCvYsOETdkNyX8BinXweZB-RFs2l_1KuIvo0BeM,4991
+vcodeboot/pixels/__init__.py,sha256=79Ih1151rfcqZdr7F8HSZSTs_iT2SKd1xCkehMsXeXs,19
+vcodeboot/pixels/core.py,sha256=OaFS-dLt-FKIzx7mXLKlq8-OxxVhLXEteIUS4rtbiRE,12425
+vcodeboot/pixels/utils.py,sha256=wg_WYNe1JlfrQGGQ0wLbQozp9Tgpw4QDnyfizKvubuI,1392
+vcodeboot-0.1.4.dist-info/METADATA,sha256=N62Ytw1cUY5T86nFWlW00YE5ZWNG3HyjXK-qCKU7xWQ,737
+vcodeboot-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vcodeboot-0.1.4.dist-info/top_level.txt,sha256=VbaoFSsMxeXrFL9vlZ9dMOlbR3OPLDaxRlf-I-tTUpw,10
+vcodeboot-0.1.4.dist-info/RECORD,,
