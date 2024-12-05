@@ -1,0 +1,12 @@
+classhoster/ROBOT.py,sha256=a3NqQd4DjuIYK8ZnKqhmIZRpWAfrqacGsv9QTemwOPI,177
+classhoster/ROBOT_SYSTEMS.py,sha256=hJKif27d_U8HkXdjlvoZxqZEi3THhUVQ9abuUWjyixQ,120
+classhoster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classhoster/classhoster.py,sha256=dgFfiNXiu50FY1WY4uKciKz_iZNbhgt4KEMqu9OwMfI,2431
+classhoster/launch.py,sha256=23v8evzdPgVVJMGrGIF29_pwU2J8TPAPoQLlUS_u1CY,178
+classhoster/robot_api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classhoster/systems.py,sha256=0pwc5z6RjW4mrKiF7woi6wioxwnmLeSBRYgxusWAPdY,126
+ClassHoster-0.1.0.dist-info/METADATA,sha256=V_9_xMos6ixr3Q73fyDdBd7jv0wDAAQwWfkHX2iXLTg,1042
+ClassHoster-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ClassHoster-0.1.0.dist-info/entry_points.txt,sha256=B_4yTVZNFWW2rBfd0sqknsNsbK-ag0XQ-mg65w9DojQ,85
+ClassHoster-0.1.0.dist-info/top_level.txt,sha256=cuh1IXkjcWJxQVBKDeaBza0IUY8yMMolebpWe-e7Rc0,12
+ClassHoster-0.1.0.dist-info/RECORD,,
