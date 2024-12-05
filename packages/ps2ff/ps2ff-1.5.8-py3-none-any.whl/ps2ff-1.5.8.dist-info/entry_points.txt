@@ -1,0 +1,3 @@
+[console_scripts]
+run_ps2ff = ps2ff.bin.run_ps2ff:cli
+run_ps2ff_single_event = ps2ff.bin.run_ps2ff_single_event:cli
