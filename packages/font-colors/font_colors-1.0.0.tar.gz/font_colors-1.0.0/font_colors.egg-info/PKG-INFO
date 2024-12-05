@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: font-colors
+Version: 1.0.0
+Summary: none
+Author: Arsam
+Author-email: ashouriarsam@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: colorama
+
+# font-colors
+
+This is a simple Python package for handling colors, styles, and backgrounds using the [colorama](https://pypi.org/project/colorama/) library.
+
+## Installation
+
+To install the package, use `pip`:
+
+```bash
+pip install font-colors
