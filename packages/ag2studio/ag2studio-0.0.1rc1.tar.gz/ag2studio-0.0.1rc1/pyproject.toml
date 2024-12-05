@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ag2studio"
+authors = [
+  { name="Chi Wang & Jingyun Wu", email="support@ag2.ai" },
+]
+dynamic = ["version"]
+description = "AG2 Studio"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9, <3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+
+dependencies = [
+    "pydantic",
+    "fastapi",
+    "typer",
+    "uvicorn",
+    "arxiv",
+    "ag2[gemini]>=0.2.0",
+    "python-dotenv",
+    "websockets",
+    "numpy < 2.0.0",
+    "sqlmodel",
+    "psycopg",
+    "alembic",
+    "loguru",
+]
+
+[project.optional-dependencies]
+web = ["fastapi", "uvicorn"]
+database = ["psycopg"]
+all = ["ag2studio[web]", "ag2studio[database]"]
+
+dynamic = ["version"]
+
+[tool.setuptools]
+include-package-data = true
+
+
+[tool.setuptools.dynamic]
+version = {attr = "ag2studio.version.VERSION"}
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages.find]
+include = ["ag2studio*"]
+exclude = ["*.tests*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"ag2studio" = ["*.*"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:Deprecated call to `pkg_resources\\.declare_namespace\\('.*'\\):DeprecationWarning",
+    "ignore::DeprecationWarning:google.rpc",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/ag2ai/ag2"
+"Bug Tracker" = "https://github.com/ag2ai/ag2/issues"
+
+[project.scripts]
+ag2studio = "ag2studio.cli:run"

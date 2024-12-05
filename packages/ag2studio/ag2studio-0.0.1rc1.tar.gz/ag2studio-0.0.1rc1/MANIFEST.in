@@ -1,0 +1,7 @@
+recursive-include  ag2studio/web/ui *
+recursive-include  ag2studio/web/database.sqlite
+recursive-exclude  notebooks *
+
+recursive-exclude  frontend *
+recursive-exclude  docs *
+recursive-exclude  tests *
