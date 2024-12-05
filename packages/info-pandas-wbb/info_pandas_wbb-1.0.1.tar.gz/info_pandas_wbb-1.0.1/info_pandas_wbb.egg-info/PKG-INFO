@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: info-pandas-wbb
+Version: 1.0.1
+Summary: Teste lib para informações de tabela pandas
+Home-page: 
+Author: William Brandão Bilatto
+Author-email: williambilatto@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Teste Curso Fiap
+
+Biblioteca de teste com informações do pandas
+
+# Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações
