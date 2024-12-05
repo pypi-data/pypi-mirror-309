@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: agenthub-anthropic
+Version: 0.0.5
+Summary: AgentHub anthropic package
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/agenthub
+Project-URL: repository, https://github.com/jacobweiss2305/agenthub/tree/main/packages/duckduckgo
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: agenthub-core>=0.0.1

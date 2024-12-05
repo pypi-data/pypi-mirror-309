@@ -1,0 +1,13 @@
+pyproject.toml
+setup.py
+src/agenthub/anthropic/__init__.py
+src/agenthub/anthropic/core.py
+src/agenthub/anthropic/types.py
+src/agenthub/anthropic/util.py
+src/agenthub/anthropic/repl/__init__.py
+src/agenthub/anthropic/repl/repl.py
+src/agenthub_anthropic.egg-info/PKG-INFO
+src/agenthub_anthropic.egg-info/SOURCES.txt
+src/agenthub_anthropic.egg-info/dependency_links.txt
+src/agenthub_anthropic.egg-info/requires.txt
+src/agenthub_anthropic.egg-info/top_level.txt
