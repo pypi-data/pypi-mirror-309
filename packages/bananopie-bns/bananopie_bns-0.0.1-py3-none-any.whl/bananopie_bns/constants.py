@@ -1,0 +1,9 @@
+from bananopie import get_address_from_public_key
+
+TRANS_START = "12070301"
+#TRANS_MIN = "120703010000000000000000000" #0.0012070301
+TRANS_MAX = "120703011000000000000000000" #0.00120703011
+
+FREEZE_PUB_KEY = "451" + "1" * 61
+FREEZE_REP = get_address_from_public_key(FREEZE_PUB_KEY)
+
