@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+citerate/__init__.py
+citerate/citerate.py
+citerate.egg-info/PKG-INFO
+citerate.egg-info/SOURCES.txt
+citerate.egg-info/dependency_links.txt
+citerate.egg-info/top_level.txt
+tests/test.py
