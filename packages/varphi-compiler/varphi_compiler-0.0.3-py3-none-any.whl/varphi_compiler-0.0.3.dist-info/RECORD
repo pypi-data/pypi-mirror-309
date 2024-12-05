@@ -1,0 +1,16 @@
+varphi_compiler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varphi_compiler/frontend/VarphiRepresentor.py,sha256=Lv60mlQhgRslMOYtCjI4CelFCswQuXsM5LZHn-Ng08k,3109
+varphi_compiler/frontend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varphi_compiler/frontend/cUtils.py,sha256=VbkHwsq9-xdpgSVyUiQ1OyT6Dq_jsN7KVvU3TzEK_Fk,5043
+varphi_compiler/frontend/varphi.py,sha256=t2xcj5SVOHcuuKYOFtLvBpZx8ejq9OWNWXLJrumAdv0,3717
+varphi_compiler/frontend/vpToPy.py,sha256=YyfjYBr7drGwmdYUip_dXzchc-lS5tLiXOQ9mnswREQ,5787
+varphi_compiler/frontend/vpc.py,sha256=s2Utr87iI5_rpHyINuFCMBTO93UDOi3J6VWVvXm5TUs,2401
+varphi_compiler/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varphi_compiler/model/__init__.py,sha256=ziz1DfISJPfq5dE9xjNiwBlwsscHfOks1s0BWD7c1cI,20
+varphi_compiler/model/types.py,sha256=VWwSewoZ77iPktRpk2IP8IcrSkLk-MBDJcUrPDVIohM,4609
+varphi_compiler-0.0.3.dist-info/LICENSE,sha256=-J3b-MplgaFLw5IeS644xV6C2vyZRG0pb1Es3gAalPA,1532
+varphi_compiler-0.0.3.dist-info/METADATA,sha256=q1f9STBaQA4xzFrAEC9Ge07TnOF6ctGM6VBCKT8U1PU,601
+varphi_compiler-0.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+varphi_compiler-0.0.3.dist-info/entry_points.txt,sha256=bXP7XUiHxF5qGJIee6QjEGl5pl1-JWLggvdTgGxFNio,58
+varphi_compiler-0.0.3.dist-info/top_level.txt,sha256=mnBsUhSwN0Ay2WruUV3Z84lpPkODGMUJ9fHtPkPSc5M,16
+varphi_compiler-0.0.3.dist-info/RECORD,,
