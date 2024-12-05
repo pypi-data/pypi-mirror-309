@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stored-agent"
+version = "0.1.2"
+description = "A framework for building agents that persist state between interactions."
+authors = ["Vijay Balasubramaniam <vbalasu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.35.60"
+fs = "^2.4.16"
+fs-s3fs = "^1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
