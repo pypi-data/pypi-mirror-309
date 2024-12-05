@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zengrad
+Version: 1.0.0
+Summary: ZenGrad: A gradient descent method focused on stability, smooth updates, and efficient, adaptive learning.
+Author: Murumuri Naga Poorni
+Author-email: poorni.murumuri05@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Requires-Dist: tensorflow >=2.10.0
+Requires-Dist: keras >=2.10.0
+Requires-Dist: loglu >=1.1.1
+
