@@ -1,0 +1,17 @@
+modify_subs.dylibs/libgraphite2.3.2.1.dylib,sha256=tZATfmc4k0FLCGdQTTuH9-rRUv-SwgR_LxcKFLICb0o,139232
+modify_subs.dylibs/libpcre2-8.0.dylib,sha256=g7ogmeZE_PaOEo7ZTWWpYtwcxjcRnimtHYzvTNoAUS0,545424
+modify_subs.dylibs/libglib-2.0.0.dylib,sha256=1UCG-v2PodXBDhUpp6QS_6xZT245IXS4v1J2GVixDeI,1201232
+modify_subs.dylibs/libpng16.16.dylib,sha256=Fac5yaRiUyMhPZVqXPanq_0BL1BnMEXx3QaArz_UJms,209568
+modify_subs.dylibs/libunibreak.6.dylib,sha256=KLQfrj-Fsk6nM0K92Q9vmNilF0NJdqRw1mg6TCxBazA,170544
+modify_subs.dylibs/libfreetype.6.dylib,sha256=PEIYrL8STaCVh5uQoH6Vmi_jGHSaKV01L2PvJrnz780,641712
+modify_subs.dylibs/libharfbuzz.0.dylib,sha256=m9bSQdkOXLfYWe2zcRJnfCDWkd8sS3k8YAlkQdb7qRw,1240912
+modify_subs.dylibs/libintl.8.dylib,sha256=p3WvHXbHEvMzRsTu3J7SbNwsA6a0F-lEBdwNBjpfC8M,162656
+modify_subs.dylibs/libfribidi.0.dylib,sha256=egpjmZ67upzKIqQ7UcRcirasfYj9LR1hzZRhP-llhcI,171920
+modify_subs.dylibs/libass.9.dylib,sha256=5RW31E2GPx3ugGtmiGXi6pWwOVM4auC3GYKTPz3WU34,461568
+modify_subs.dylibs/libjsoncpp.26.dylib,sha256=r-qIXE7h9RJi8xW8kRjpx7mqpkiU_JPZU0-K3i2dqpk,248608
+c_delocalizer/modify_subs.cpython-312-darwin.so,sha256=4yopjW_UtJP4tyMzjBSRmStC4B7xjxPSom5bToGiboU,320800
+c_delocalizer/pair_subs.cpython-312-darwin.so,sha256=XPd2kJbjdnhR-uCmvdagIBWrkyYciJflggcMMGils_8,131856
+modify_subs-0.5.0.dist-info/RECORD,,
+modify_subs-0.5.0.dist-info/WHEEL,sha256=q7AmnxQZUqrqe4YLRmQEjqVDZIHQKXfTZEoBTbDZ01I,109
+modify_subs-0.5.0.dist-info/top_level.txt,sha256=L0RyFeOLWwFiqlYDOGTcxcWxjBM76WWdzBzsBf6n_H0,14
+modify_subs-0.5.0.dist-info/METADATA,sha256=mFyUre7pdh8dRDWryNuEj8cAg2l-giR8f6RAz2M_tP0,648

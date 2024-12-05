@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: modify_subs
+Version: 0.5.0
+Summary: Subtitles delocalizer helper.
+Home-page: https://github.com/EfronC/subdeloc_helper
+Author: Efrain Cardenas
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Modify Subtitles Helper
+-----------------------------
+
+Cython/C++ functions to be imported in other projects.
+
+Sister projects:
+- [SubDelocalizer Tools](https://github.com/EfronC/subdeloc_tools)
+- [Delocalizer](https://github.com/EfronC/Delocalizer)
