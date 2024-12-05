@@ -1,0 +1,5 @@
+lindera_py-0.38.0.dist-info/METADATA,sha256=Ojk1uMCW_mwMOgiAjA4RJTsDbb43r_PuRbUvcDJxRDs,2042
+lindera_py-0.38.0.dist-info/WHEEL,sha256=lmQeMM6OAKHy0QpSh4lo6-MhxvxgC1v8HCrLbo5MBnA,131
+lindera/__init__.py,sha256=789DzXq3kU2cR6OYXrndhkP8w8SvAi4mbS8Aiu6wrkI,111
+lindera/lindera.cpython-312-powerpc64le-linux-gnu.so,sha256=NS1crpe-C_5QXEaidWlqZyVz8A3remDKtUAkgNZjg_o,159971960
+lindera_py-0.38.0.dist-info/RECORD,,
