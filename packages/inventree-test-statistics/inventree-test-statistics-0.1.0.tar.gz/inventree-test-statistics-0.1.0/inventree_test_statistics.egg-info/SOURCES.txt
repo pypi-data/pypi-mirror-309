@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+inventree_test_statistics.egg-info/PKG-INFO
+inventree_test_statistics.egg-info/SOURCES.txt
+inventree_test_statistics.egg-info/dependency_links.txt
+inventree_test_statistics.egg-info/entry_points.txt
+inventree_test_statistics.egg-info/requires.txt
+inventree_test_statistics.egg-info/top_level.txt
+test_statistics/__init__.py
+test_statistics/core.py
+test_statistics/serializers.py
+test_statistics/version.py
+test_statistics/views.py
+test_statistics/static/TestStatisticsPanel.js
