@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+generated/proto/event_pb2.py
+generated/proto/ebook_searching_proto.egg-info/PKG-INFO
+generated/proto/ebook_searching_proto.egg-info/SOURCES.txt
+generated/proto/ebook_searching_proto.egg-info/dependency_links.txt
+generated/proto/ebook_searching_proto.egg-info/requires.txt
+generated/proto/ebook_searching_proto.egg-info/top_level.txt
