@@ -1,0 +1,2 @@
+[console_scripts]
+disgrasya = disgrasya.main:main
