@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: mic-toolkit
+Version: 0.3.1
+Summary: Simple synthetic data generation using LLMs.
+License: MIT
+Author: Ameen Shaikh
+Author-email: mohammedameen9011@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: datasets (>=3.0.0,<4.0.0)
+Requires-Dist: ollama (>=0.3.3,<0.4.0)
+Requires-Dist: tqdm (>=4.67.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Mic Toolkit
+
+![PyPI - Version](https://img.shields.io/pypi/v/mic-toolkit)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/mic-toolkit)
+[![CI](https://github.com/micvitc/mic-toolkit/actions/workflows/ci.yaml/badge.svg)](https://github.com/micvitc/mic-toolkit/actions/workflows/ci.yaml)
+
+## Overview
+
+Mic Toolkit is a simple and efficient tool for synthetic data generation using Large Language Models (LLMs). It provides functionalities for generating text and labels, making it a valuable asset for data scientists and machine learning practitioners.
+
+## Features
+
+- **Text Generation**: Generate synthetic text data based on input prompts.
+- **Label Generation**: Generate labels for text data based on predefined categories.
+
+## Installation
+
+To install Mic Toolkit, use the following command:
+
+```sh
+pip install mic-toolkit
+```
+
+## Docs
+
+Check out the [documentation](https://micvitc.github.io/mic-toolkit/) for more details.
