@@ -1,0 +1,7 @@
+wcf_http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcf_http/core.py,sha256=TjJw9f-AN4x_twxHqQPNi35h0aWeGGhm9TmqcVTOVtw,18408
+wcf_http/main.py,sha256=vreSQVs4MYfJCZ6ATTiSCWQlhC9C5xOtLyd_ORb58yU,2957
+wcf_http_server-39.2.4.0.9.dist-info/entry_points.txt,sha256=0XVckUxS6w3a2qisLXSHvPA8DOxA3c1GL44GimAs7r8,46
+wcf_http_server-39.2.4.0.9.dist-info/METADATA,sha256=7UtF3-G1qB7xsYj5ctyklJ4frMrZTEcZ89xrPcKbE5Q,2533
+wcf_http_server-39.2.4.0.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wcf_http_server-39.2.4.0.9.dist-info/RECORD,,
