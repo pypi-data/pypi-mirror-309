@@ -1,0 +1,2 @@
+[console_scripts]
+sapimclient = sapimclient.__main__:cli

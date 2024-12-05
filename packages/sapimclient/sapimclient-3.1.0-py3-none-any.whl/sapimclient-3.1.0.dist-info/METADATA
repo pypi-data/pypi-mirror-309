@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: sapimclient
+Version: 3.1.0
+Author-email: Niels Perfors <niels.perfors1987@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/niro1987/sapimclient
+Project-URL: Repository, https://github.com/niro1987/sapimclient.git
+Project-URL: Issues, https://github.com/niro1987/sapimclient/issues
+Keywords: SAP,Incentive Management
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.0.0
+Requires-Dist: pydantic >=2.6.0
+Provides-Extra: cli
+Requires-Dist: click >=8.1.7 ; extra == 'cli'
+Requires-Dist: pandas >=2.2.2 ; extra == 'cli'
+
+Python SAP Incentive Management®
+================================
+
+An Asynchronous Python client to communicate with SAP Incentive Management®.
+
+.. image:: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
+    :alt: BuyMeACoffee
+    :target: https://www.buymeacoffee.com/niro1987
+
+Documentation
+-------------
+
+Read the full documentation on `Read the Docs <https://sapimclient.readthedocs.io>`_
+
+REST API
+--------
+
+This project mimics the usage of the SAP Incentive Management REST API. Visit
+:code:`https://{TENANT}.callidusondemand.com/APIDocument` to read the full specification,
+replacing :code:`TENANT` with your tenant-id.
+
+Legal Disclamer
+---------------
+
+This software is designed for use with SAP Incentive Management®. It is not affiliated
+with SAP® and the developers take no legal responsibility for the functionality or
+security of your Incentive Management environment.
+
+SAP Incentive Management is a registered trademark of SAP SE or its affiliates in
+Germany and in other countries.
