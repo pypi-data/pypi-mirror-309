@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: agenthub-openai
+Version: 0.0.7
+Summary: AgentHub openai package
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/agenthub
+Project-URL: repository, https://github.com/jacobweiss2305/agenthub/tree/main/packages/openai
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: agenthub-core
+Requires-Dist: openai
+
+# Agenthub OpenAI Agent
+
+This package contains the OpenAI agent implementation for AgentHub.
+
+## Installation
+
+```bash
+pip install agenthub-openai
+```
+
+## Usage
+
+```python
+from agenthub import Team, Agent
+
+team = Team()
+
+def get_weather(location) -> str:
+    return "{'temp':67, 'unit':'F'}"
+
+weather_agent = Agent(
+    name="Weather AI",
+    instructions="You are a helpful agent.",
+    functions=[get_weather],
+)
+
+messages = [{"role": "user", "content": "What's the weather in NYC?"}]
+
+response = team.run(agent=weather_agent, messages=messages)
+print(response.messages[-1]["content"])
+```
