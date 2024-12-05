@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+discconnect/__init__.py
+discconnect.egg-info/PKG-INFO
+discconnect.egg-info/SOURCES.txt
+discconnect.egg-info/dependency_links.txt
+discconnect.egg-info/top_level.txt
