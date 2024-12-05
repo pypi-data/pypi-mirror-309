@@ -1,0 +1,2 @@
+[console_scripts]
+filedrop-server = filedrop.__main__:main

@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.md
+setyp.py
+filedrop/__init__.py
+filedrop/__main__.py
+filedrop/server.py
+filedrop.egg-info/PKG-INFO
+filedrop.egg-info/SOURCES.txt
+filedrop.egg-info/dependency_links.txt
+filedrop.egg-info/entry_points.txt
+filedrop.egg-info/requires.txt
+filedrop.egg-info/top_level.txt
