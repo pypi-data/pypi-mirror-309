@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: oslc4py-client
+Version: 0.1.2
+Summary: OSLC Python client with common annotation types
+Home-page: https://pajda.fit.vutbr.cz/verifit/oslc4py-client
+Author: Matej Grós
+Author-email: 492906@mail.muni.cz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests
+Requires-Dist: rdflib
+
+UNKNOWN
+
