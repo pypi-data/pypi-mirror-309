@@ -1,0 +1,11 @@
+playwright<2.0,>=1.48.0
+
+[dev]
+build
+clarin_spf[examples]
+pytest
+ruff
+twine
+
+[examples]
+requests
