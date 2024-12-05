@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: dnd-firefly
+Version: 0.4.1
+Summary: Programmatically drag-and-drop in IRSA Viewer (Firefly) tool via Upload feature
+Home-page: https://github.com/ejoliet/dnd-firefly.git
+Author: Emmanuel Joliet
+Author-email: ejoliet@caltech.edu
+Project-URL: Source, https://github.com/ejoliet/dnd-firefly.git
+Project-URL: Issues, https://github.com/ejoliet/dnd-firefly/issues
+Project-URL: Say Thanks!, https://buymeacoffee.com/Red2Green
+Keywords: firefly,visualization,astronomy,images,tables,fits,parquet,votable,csv,tsv
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs==24.2.0
+Requires-Dist: backports.tarfile==1.2.0
+Requires-Dist: build==1.2.2.post1
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: charset-normalizer==3.4.0
+Requires-Dist: docutils==0.21.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: idna==3.10
+Requires-Dist: importlib_metadata==8.5.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==6.0.1
+Requires-Dist: jaraco.functools==4.1.0
+Requires-Dist: keyring==25.5.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.5.0
+Requires-Dist: nh3==0.2.18
+Requires-Dist: outcome==1.3.0.post0
+Requires-Dist: packaging==24.2
+Requires-Dist: pkginfo==1.10.0
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: pyproject_hooks==1.2.0
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.9.4
+Requires-Dist: selenium==4.24.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: trio==0.26.2
+Requires-Dist: trio-websocket==0.11.1
+Requires-Dist: twine==5.1.1
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: wsproto==1.2.0
+Requires-Dist: zipp==3.21.0
+
+# dnd_firefly
+
+Programmatically load file either drag-and-drop or via URL into Firefly Viewer
+
+## Overview
+
+`dnd_firefly` is a command-line tool that allows you to programmatically upload local files to the [Firefly Viewer](https://irsa.ipac.caltech.edu/irsaviewer/) (IRSA Viewer tool) by simulating a drag-and-drop action or loading from a URL. 
+
+This tool is particularly useful for automating data uploads and integrating with scripts or workflows that interact with the Firefly Viewer. This tools complements the existing [URL API](https://irsa.ipac.caltech.edu/irsaviewer/?api) by enabling support for the Upload feature in scenarios where direct access is not yet available.
+
+### Firefly
+
+Firefly is an open-source web-based UI library for astronomical data archive access and visualization developed at [Caltech](https://caltech.edu).
+The development was started in the context of archive-specific applications at the [NASA/IPAC Infrared Science Archive (IRSA)](https://irsa.ipac.caltech.edu), and was then generalized to serve data from many different archives at IRSA (and beyond). It was open sourced in 2015, hosted at GitHub.
+
+See details in the GitHub [repository](https://github.com/Caltech-IPAC/firefly?tab=readme-ov-file#intro) and how to install [locally](https://github.com/Caltech-IPAC/firefly/blob/dev/docs/firefly-docker.md).
+
+### Compatibility
+
+`dnd_firefly` tool makes use of [IRSA Viewer](https://irsa.ipac.caltech.edu/irsaviewer/) and is compatible since release 2023.3 (Drag-n-drop introduced - [FIREFLY-1310](https://github.com/Caltech-IPAC/firefly/pull/1426).
+
+## Features
+
+- **Automate File Uploads:** Upload files to the Firefly Viewer without manual intervention.
+- **Simulate Drag-and-Drop:** Programmatically simulate the drag-and-drop action to upload local files or from URL.
+- **Easy Integration:** Integrate seamlessly with existing data processing pipelines or scripts.
+
+## Installation
+
+You can install `dnd_firefly` directly from PyPI using `pip`:
+
+```bash
+pip install dnd_firefly
+```
+
+PyPi: https://pypi.org/project/dnd-firefly/
+
+**Note:** `dnd_firefly` requires Python **3.11** or higher.
+
+## Requirements
+
+- **Python 3.11+**
+- **Google Chrome Browser:** Ensure that the latest version of Chrome is installed on your system.
+
+## How It Works
+
+The tool uses **Selenium WebDriver** to automate a Chrome browser session. It opens the Firefly Viewer and simulates the drag-and-drop action to upload your specified file or load from URL.
+
+**Selenium Manager:** Starting from Selenium 4.6.0, Selenium includes Selenium Manager, which automatically manages the browser driver required for automation. If you have Chrome installed, Selenium will handle the rest.
+
+## Usage
+
+The `dnd_firefly` tool accepts one argument: the path to the local file or URL you want to upload to the Firefly Viewer.
+
+### Command-Line Usage
+
+For local files:
+```bash
+dnd_firefly /path/to/your/file.tbl
+```
+**Replace** `/path/to/your/file.tbl` with the actual path to your local file.
+
+For URL:
+
+```bash
+dnd_firefly <http|https>://.../file.tbl
+```
+**Replace** `<http|https>://.../file.tbl` with the URL.
+
+
+### Example
+
+To upload a file named `WISE-allwise_p3as_psd-Cone_100asec.tbl` located in your `Downloads` folder, run:
+
+```bash
+dnd_firefly ~/Downloads/WISE-allwise_p3as_psd-Cone_100asec.tbl
+```
+Example of VOTable with 2 tables via URL:
+
+```bash
+dnd_firefly https://raw.githubusercontent.com/ejoliet/playground/refs/heads/master/data/table_IRS_Enh-Spectra-1.vot
+```
+
+## Troubleshooting
+
+- **Selenium Exceptions:** If you encounter errors related to Selenium WebDriver, ensure that you have the latest version of Chrome installed and that your Selenium version is up to date.
+- **Internet Access:** Selenium Manager requires internet access to download the appropriate WebDriver. If you're in an environment with restricted internet access, you may need to manually set up the WebDriver. Refer to the [Selenium documentation](https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/selenium_manager/) for more details.
+- **File Path / URL Issues:** Ensure that the file path or URL you provide is correct and that the file exists.
+
+## Advanced Usage (Optional)
+
+If you need to use a different browser or have specific requirements, you can manually set up the WebDriver.
+
+### Manual WebDriver Setup
+
+1. **Download ChromeDriver:**
+   - Visit the [ChromeDriver Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads) page.
+   - Download the version that matches your installed Chrome browser version.
+
+2. **Install ChromeDriver:**
+   - Place the `chromedriver` executable in a directory that's in your system's `PATH`, or specify its location in the code.
+
+**Note:** Manual setup is only necessary if Selenium Manager is unable to manage the WebDriver automatically.
+
+## Contributing
+
+Contributions are welcome! Please visit the [GitHub repository](https://github.com/ejoliet/dnd-firefly.git) to report issues or submit pull requests.
