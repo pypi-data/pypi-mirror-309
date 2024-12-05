@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "plantigo-common"
+version = "1.0.5"
+description = "Common Python utilities for Plantigo"
+authors = ["Jakub Aniszewski <jakubaniszewski@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = ">=0.70.0"
+grpcio = ">=1.39.0"
+grpc-interceptor = ">=0.15.4"
+
+[tool.poetry.publish]
+repository = "https://upload.pypi.org/legacy/"
