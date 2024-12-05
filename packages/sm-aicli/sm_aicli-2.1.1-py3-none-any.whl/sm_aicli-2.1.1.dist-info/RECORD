@@ -1,0 +1,15 @@
+sm_aicli/__init__.py,sha256=JBEnfDjALU8X8JZoAL-u6VTr3Eg-10zKq71-G923-8o,63
+sm_aicli/main.py,sha256=HEi4LdPEcCqzQbXzQ4N9oxgRsGWlcODYSSF4uQv4gVs,6200
+sm_aicli/revision.py,sha256=NHTOWk6BjKAl1IFzyb05O3WmNkn5fmOXnbSnuBDbN38,102
+sm_aicli/types.py,sha256=UWHuYVB1Ml7isDjz5Kqo9M9RfbTHiCWazSCtC7_iIY4,5861
+sm_aicli/utils.py,sha256=Y_QMMIuwPb7neBPc7RGkrfQ4oePsUpXmcPL0LJmu9WM,7788
+sm_aicli/actor/__init__.py,sha256=sTU-zoXFeBvntvMwKMIrMIiO6rAMT2qKmuK_gG1dIBU,86
+sm_aicli/actor/dummy.py,sha256=qulBa7WJh9Rji02xJopYNHRTT21tUm0tgDuKckaVRJU,830
+sm_aicli/actor/gpt4all.py,sha256=1UBhzLh8nJqNVbh4C6_A_2z1E7CNzcU5juCK62SMKHA,3134
+sm_aicli/actor/openai.py,sha256=FoJMuETQOTwk1WaiAkFQIWf0REHd4s73f4kH9Q3Wqvk,6457
+sm_aicli/actor/user.py,sha256=6ec-yOxPgwD57Y9KngiDlRlVnPsRZlKD3BebowtrAPA,26279
+sm_aicli-2.1.1.data/scripts/aicli,sha256=QjFroKRa3fVPhIUzAymRAukT5-i2AIHjRxYVwZYyKCA,77
+sm_aicli-2.1.1.dist-info/METADATA,sha256=qJipdlR4OtN31R8j95Zi4YQKwZwf_edMaBqWCklCWUQ,14913
+sm_aicli-2.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sm_aicli-2.1.1.dist-info/top_level.txt,sha256=aSNr4ixH_7aRHDZMruIFlUVdC23usQ4nwyhbNYDwtoM,9
+sm_aicli-2.1.1.dist-info/RECORD,,
