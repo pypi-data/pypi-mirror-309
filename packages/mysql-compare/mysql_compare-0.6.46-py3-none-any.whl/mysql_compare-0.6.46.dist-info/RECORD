@@ -1,0 +1,12 @@
+mysql_compare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysql_compare/__main__.py,sha256=xrat83McjBsKrAVbZylJKGrVbE7MD9N-VQ9SJ-DVUd8,1925
+mysql_compare/common.py,sha256=K401eHcdhwFHaOWL9pwUge-FyLlcHcAJ2o1io2z_QEY,5468
+mysql_compare/forward.py,sha256=OfnffelBpp8YXMzC8p_3WZs2xt4cl9bsmWK0yey_npI,21294
+mysql_compare/mysql_compare.py,sha256=otFH2XpOA0BQWmA5yL9rFPBUIptwKPW9LKp8nmawghs,26686
+mysql_compare/mysql_compare_forward.py,sha256=qkkIEB_wk0oQC4OkY9XSzzGP9WTaJx-cpL6bNFXf9jk,33449
+mysql_compare/mysql_compare_reverse.py,sha256=ZJXGlQ9Q_bmSnEukX0lm6_HO8iwuK5BfXfxMMSsh3GU,9920
+mysql_compare/nokey.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysql_compare-0.6.46.dist-info/METADATA,sha256=iUPsxnE5MAY6Prukx0mI7fBQx7EWSQUsRlGLdHqBKos,129
+mysql_compare-0.6.46.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mysql_compare-0.6.46.dist-info/top_level.txt,sha256=_hosZAxDtgc0NrLRPEQvtRL0SVlyhgncuPDTuQD7Yg4,14
+mysql_compare-0.6.46.dist-info/RECORD,,
