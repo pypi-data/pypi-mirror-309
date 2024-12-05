@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: py-klotski
+Version: 0.0.1
+Summary: Klotski multifunctional engine with high performance
+Home-page: https://github.com/dnomd343/klotski
+Author: Dnomd343
+Author-email: dnomd343@gmail.com
+License: BSD-3-Clause
+Requires-Python: >=3.7
