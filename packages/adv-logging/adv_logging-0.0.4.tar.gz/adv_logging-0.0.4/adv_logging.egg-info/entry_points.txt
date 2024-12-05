@@ -1,0 +1,2 @@
+[console_scripts]
+log-utility = advanced_logger.logger:main

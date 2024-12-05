@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+adv_logging.egg-info/PKG-INFO
+adv_logging.egg-info/SOURCES.txt
+adv_logging.egg-info/dependency_links.txt
+adv_logging.egg-info/entry_points.txt
+adv_logging.egg-info/requires.txt
+adv_logging.egg-info/top_level.txt
+advanced_logger/advanced_logger.py
