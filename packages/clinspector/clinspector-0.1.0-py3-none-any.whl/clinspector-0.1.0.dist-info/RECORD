@@ -1,0 +1,16 @@
+clinspector/__init__.py,sha256=DWOPoo0z8WiNcr8i4St1_equGS-q3YzGRVVl7tNwj1s,104
+clinspector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clinspector/introspect/__init__.py,sha256=lvn-RvYRBf59RFMG0dxfkS5brRHw2wcBj-TQf-60UJg,1678
+clinspector/introspect/introspect_argparse.py,sha256=fAAPuVVaU_aQJGcbxs3gomGjNgvmgH3jCUTnNIASed4,1850
+clinspector/introspect/introspect_cappa.py,sha256=Yk__74AqNF37D-MXQWd0ils0eQaj_wRwcjAKVsvbbdQ,2316
+clinspector/introspect/introspect_cleo.py,sha256=uD0Uxa7TNveKBtUI65-MgljieAY1fbksWurWcrFG0ok,3601
+clinspector/introspect/introspect_click.py,sha256=bAOZLBD9TflacyQp89YefQNF9iyPzw1LtLv_69v1TYc,2316
+clinspector/introspect/introspect_typer.py,sha256=4X0-FUrq9uJBtCxzOcfsDv2vyCd0FMorZpE2jQhRVb4,1040
+clinspector/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clinspector/models/commandinfo.py,sha256=_dxxMD0DGOjcOAA7c6CnqsuO6kEjsy0sUgNkO6eMSlc,1157
+clinspector/models/param.py,sha256=8o6CmQYx4A3Qi-w2FR5DRSIJOny5gStryj-JTisxQQc,2326
+clinspector-0.1.0.dist-info/METADATA,sha256=zTCPK-izX7wvMCFda28Yf4Dlp8OBykCFXUCNU51mVsM,8923
+clinspector-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+clinspector-0.1.0.dist-info/entry_points.txt,sha256=WEe4bt7kPJ0DtI6z7icepxCcBMeo-LPGIEjlqacHgx8,180
+clinspector-0.1.0.dist-info/licenses/LICENSE,sha256=AteGCH9r177TxxrOFEiOARrastASsf7yW6MQxlAHdwA,1078
+clinspector-0.1.0.dist-info/RECORD,,
