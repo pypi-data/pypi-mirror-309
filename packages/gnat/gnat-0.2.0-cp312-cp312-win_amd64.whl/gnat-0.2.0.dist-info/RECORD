@@ -1,0 +1,10 @@
+gnat/__init__.py,sha256=EXvEKbWPyqbh4cLRenqg5BkNMX92fu7TH9SsJI4HV_4,41
+gnat/_gnat.cp312-win_amd64.pyd,sha256=iuVS0r_L453-xYcfeuAlGjbG2panv7kdCZyokQq5hIQ,272384
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/comparison.py,sha256=qekinPA_TX9EVqqp8pXOC5pQ_JOo3pppNDW1fxXz08k,2681
+tests/test.py,sha256=4yz6AlxH_VKszh3gDXqrOdmclJ8kVoifZ69O1V1hLSY,2771
+tests/test_online.py,sha256=jje0oywULCLnuvpvhFfbo6vTPzZzBj4j6AdLjVY_KVc,1551
+gnat-0.2.0.dist-info/METADATA,sha256=Cspdcs7AYrFKdvY1ORO_40J6okkYcct1Ju0zlF3Mv0E,4112
+gnat-0.2.0.dist-info/WHEEL,sha256=3cUY9TiuvxHsB0dWaW6wa9MO8pP_yfFeO2_t7ly9aNg,96
+gnat-0.2.0.dist-info/top_level.txt,sha256=rfXDOapMkN76kDrDY7Nj_yROUXCQw3kvh6SyJMkGNrs,11
+gnat-0.2.0.dist-info/RECORD,,
