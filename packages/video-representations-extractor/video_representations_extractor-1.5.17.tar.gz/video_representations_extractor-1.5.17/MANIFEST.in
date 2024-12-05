@@ -1,0 +1,2 @@
+recursive-include vre/representations *.json
+recursive-include vre/representations *.pkl
