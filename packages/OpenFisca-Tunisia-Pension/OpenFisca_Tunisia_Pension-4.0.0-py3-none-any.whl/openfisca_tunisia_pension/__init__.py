@@ -1,0 +1,3 @@
+from openfisca_tunisia_pension.tunisia_pension_taxbenefitsystem import TunisiaPensionTaxBenefitSystem
+
+CountryTaxBenefitSystem = TunisiaPensionTaxBenefitSystem
