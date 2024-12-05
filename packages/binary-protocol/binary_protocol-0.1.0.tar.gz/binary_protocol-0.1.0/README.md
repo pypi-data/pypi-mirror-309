@@ -1,0 +1,141 @@
+# Custom Binary Protocol API
+
+A Python implementation of a configurable binary protocol for efficient data transfer without HTTP/REST overhead.
+
+## Requirements
+
+- Python 3.8 or higher
+- asyncio (built-in)
+- pytest (for running tests)
+
+## Overview
+
+This project implements a lightweight, configurable binary protocol for client-server communication in Python. Unlike traditional REST APIs, this implementation uses a custom binary protocol for data transfer, resulting in lower latency and reduced network overhead.
+
+### Key Features
+
+- **Structured Message Format**: Define message structures with typed fields
+- **Efficient Data Transfer**: Custom binary protocol minimizes overhead compared to HTTP/REST
+- **Type-safe Field Handling**: Automatic serialization of primitive types
+- **Asynchronous Communication**: Built on asyncio for high-performance I/O operations
+- **Zero Dependencies**: Pure Python implementation with no external requirements
+- **Bi-directional Communication**: Supports full-duplex communication between client and server
+- **Fixed and Variable Length Fields**: Support for both fixed and variable-length data
+- **Optimized Performance**: Fast-path for fixed-length messages
+
+## Quick Examples
+
+### Message Type Definition
+
+```python
+from enum import IntEnum
+from binary_protocol.protocol.message_structure import FieldDefinition, MessageStructure
+
+# Define message types
+class MessageType(IntEnum):
+    SENSOR_DATA = 1
+    STATUS = 2
+    BENCHMARK = 3
+    FIXED_BENCHMARK = 4  # New message type for fixed-length benchmarks
+
+# Define fixed-length structure for high-speed sensor data
+sensor_data_structure = MessageStructure([
+    FieldDefinition("sensor1", float, format_string=">f"),  # 4-byte float
+    FieldDefinition("sensor2", float, format_string=">f"),
+    FieldDefinition("sensor3", float, format_string=">f"),
+    FieldDefinition("sensor4", float, format_string=">f")
+])
+
+# Variable-length structure example
+status_structure = MessageStructure([
+    FieldDefinition("status_code", int, format_string=">I"),
+    FieldDefinition("message", str)  # Variable length
+])
+
+# Fixed-length benchmark structure
+fixed_benchmark_structure = MessageStructure([
+    FieldDefinition("value", int, format_string=">I")  # 4-byte integer
+])
+```
+
+### Protocol Configuration
+
+```python
+from binary_protocol import ProtocolConfig
+
+config = ProtocolConfig(
+    message_type_enum=MessageType,
+    message_structures={
+        MessageType.SENSOR_DATA: sensor_data_structure,
+        MessageType.STATUS: status_structure,
+        MessageType.BENCHMARK: benchmark_structure,
+        MessageType.FIXED_BENCHMARK: fixed_benchmark_structure
+    },
+    header_format=">H",  # 2-byte header for message type
+    max_payload_size=10 * 1024 * 1024  # 10MB
+)
+```
+
+## Benchmarking Tools
+
+The protocol includes comprehensive benchmarking capabilities:
+
+### Available Benchmarks
+
+1. **Variable Size Benchmark**
+   - Tests payload sizes from 1B to 9MB
+   - Adaptive batch sizes for memory efficiency
+   - Measures throughput and protocol overhead
+   - Default: 50 iterations per size
+
+2. **Fixed Length Benchmark**
+   - Optimized for 4-byte integer messages
+   - Large batch processing (100,000 messages)
+   - Minimal protocol overhead
+   - Default: 1,000 iterations
+
+3. **Sensor Data Benchmark**
+   - Simulates real-world sensor data (4x float values)
+   - High-frequency transmission testing
+   - Batch size: 50,000 messages
+   - Default duration: 10 seconds
+
+### Running Benchmarks
+
+Run benchmarks in example folder:
+
+```bash
+python examples/benchmark_server.py
+python examples/benchmark_client.py
+```
+
+## Protocol Configuration Options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| message_type_enum | Enum class for message types | Required |
+| message_structures | Dict of structures per type | Required |
+| header_format | Struct format for message header | ">H" |
+| max_payload_size | Maximum allowed payload size | 1MB |
+| connect_timeout | Connection timeout in seconds | 30.0 |
+| read_timeout | Read operation timeout | 30.0 |
+
+## Field Types and Performance
+
+| Field Type | Format | Performance Impact | Batch Support |
+|------------|--------|-------------------|---------------|
+| int/float (fixed) | ">f", ">i", etc. | Fastest | Up to 100k msgs/batch |
+| fixed-length str/bytes | fixed_length=N | Fast | Up to 50k msgs/batch |
+| variable-length str/bytes | None | Additional overhead | Dynamic batch size |
+
+## Security Considerations
+
+1. **Encryption**: Consider adding TLS for secure communication
+2. **Authentication**: Implement a secure authentication mechanism
+3. **Input Validation**: Validate field contents
+4. **Rate Limiting**: Protect against DoS attacks
+5. **Message Size Limits**: Configure appropriate max_payload_size
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
