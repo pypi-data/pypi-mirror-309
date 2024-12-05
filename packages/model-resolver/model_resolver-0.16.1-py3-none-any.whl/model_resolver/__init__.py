@@ -1,0 +1,1 @@
+from model_resolver.minecraft_model import beet_default
