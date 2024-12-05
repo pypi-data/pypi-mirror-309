@@ -1,0 +1,2 @@
+[console_scripts]
+commit-critic = commit_critic.commit_critic:main
