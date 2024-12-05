@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+battoul_package_lab4_cookie/__init__.py
+battoul_package_lab4_cookie/battoul_package_lab4_cookie.py
+battoul_package_lab4_cookie.egg-info/PKG-INFO
+battoul_package_lab4_cookie.egg-info/SOURCES.txt
+battoul_package_lab4_cookie.egg-info/dependency_links.txt
+battoul_package_lab4_cookie.egg-info/requires.txt
+battoul_package_lab4_cookie.egg-info/top_level.txt
