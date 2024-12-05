@@ -1,0 +1,7 @@
+README.md
+setup.py
+My_QR_COOLBOOY.egg-info/PKG-INFO
+My_QR_COOLBOOY.egg-info/SOURCES.txt
+My_QR_COOLBOOY.egg-info/dependency_links.txt
+My_QR_COOLBOOY.egg-info/requires.txt
+My_QR_COOLBOOY.egg-info/top_level.txt
