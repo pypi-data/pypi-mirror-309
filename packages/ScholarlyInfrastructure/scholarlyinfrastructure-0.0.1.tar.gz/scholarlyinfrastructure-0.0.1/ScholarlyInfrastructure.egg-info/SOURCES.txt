@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+ScholarlyInfrastructure.egg-info/PKG-INFO
+ScholarlyInfrastructure.egg-info/SOURCES.txt
+ScholarlyInfrastructure.egg-info/dependency_links.txt
+ScholarlyInfrastructure.egg-info/entry_points.txt
+ScholarlyInfrastructure.egg-info/not-zip-safe
+ScholarlyInfrastructure.egg-info/requires.txt
+ScholarlyInfrastructure.egg-info/top_level.txt
+scholarly_infrastructure/__init__.py
+scholarly_infrastructure/_modidx.py
+scholarly_infrastructure/help.py
+scholarly_infrastructure/nucleus.py
