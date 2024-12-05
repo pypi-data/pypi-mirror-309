@@ -1,0 +1,9 @@
+README.md
+setup.py
+ongeki_scraper/__init__.py
+ongeki_scraper/main.py
+ongeki_scraper.egg-info/PKG-INFO
+ongeki_scraper.egg-info/SOURCES.txt
+ongeki_scraper.egg-info/dependency_links.txt
+ongeki_scraper.egg-info/requires.txt
+ongeki_scraper.egg-info/top_level.txt
