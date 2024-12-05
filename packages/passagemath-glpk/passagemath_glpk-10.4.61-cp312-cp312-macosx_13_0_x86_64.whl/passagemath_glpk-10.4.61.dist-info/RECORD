@@ -1,0 +1,16 @@
+passagemath_glpk-10.4.61.dist-info/RECORD,,
+passagemath_glpk-10.4.61.dist-info/WHEEL,sha256=WRRjt_E0ax0jFLDDkTJAwUvXyfkI5K9zxkQYCZgpZUk,110
+passagemath_glpk-10.4.61.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_glpk-10.4.61.dist-info/METADATA,sha256=ftd4oiPV7DjNS0c3AShODpqAyB10-Nizc1Dd_g3cFoc,3109
+passagemath_glpk.dylibs/libglpk.40.dylib,sha256=FyvMPjohWUfA6WH1p25_DrnIA2uF6g8-wpy7NCv0EM8,1189344
+passagemath_glpk.dylibs/libgmp.10.dylib,sha256=YIgf86Ju7bPM0L2_T6FG-N6QQBBglBJYSVDP4SvQzOM,724176
+sage/all__sagemath_glpk.py,sha256=mG8Db8jQgQygOLZvw6vMHJCZZoC2PfoOzKdjdYfEC_k,43
+sage/numerical/all__sagemath_glpk.py,sha256=mG8Db8jQgQygOLZvw6vMHJCZZoC2PfoOzKdjdYfEC_k,43
+sage/numerical/backends/glpk_backend_test.py,sha256=6LGR9U7heVJgBe01vxsXY8CR1Jbqp9-Uri7DACe5H4k,437
+sage/numerical/backends/glpk_backend.cpython-312-darwin.so,sha256=YlIu808nHusK1kX4yyQf15egGhPc97AIBVaACgvzY5g,451072
+sage/numerical/backends/glpk_exact_backend.cpython-312-darwin.so,sha256=kLRGcLDPySFGZFfSb5q6har0dDReGPnaLpDfXFlpqKk,99656
+sage/numerical/backends/glpk_exact_backend_test.py,sha256=-0NLmXL-iOqgMOfQiCsfmy4GvOMNrKkG9zLvkDBqvz0,446
+sage/numerical/backends/glpk_graph_backend.cpython-312-darwin.so,sha256=LoUSUzjpkNApNdZfdpyPwxrtcNJdCKo4w1TG58tzhx0,247328
+sage/numerical/backends/all__sagemath_glpk.py,sha256=mG8Db8jQgQygOLZvw6vMHJCZZoC2PfoOzKdjdYfEC_k,43
+sage/libs/all__sagemath_glpk.py,sha256=mG8Db8jQgQygOLZvw6vMHJCZZoC2PfoOzKdjdYfEC_k,43
+sage/libs/glpk/__init__.py,sha256=mG8Db8jQgQygOLZvw6vMHJCZZoC2PfoOzKdjdYfEC_k,43
