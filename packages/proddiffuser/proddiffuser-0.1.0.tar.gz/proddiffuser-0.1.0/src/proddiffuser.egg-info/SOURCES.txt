@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/proddiffuser/__init__.py
+src/proddiffuser/cli.py
+src/proddiffuser/generator.py
+src/proddiffuser.egg-info/PKG-INFO
+src/proddiffuser.egg-info/SOURCES.txt
+src/proddiffuser.egg-info/dependency_links.txt
+src/proddiffuser.egg-info/entry_points.txt
+src/proddiffuser.egg-info/requires.txt
+src/proddiffuser.egg-info/top_level.txt
+tests/test_generator.py
