@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: qformat
+Version: 0.1.0
+Summary: qformat
+Home-page: http://github.com/zhiqingxiao/qformat/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+qformat: Quantitative Formatter
+=======================
+
+qformat is a number formatter that use numerical parameters (rather than magic string) to control the number formatting.
+
+### API
+
+`qformat(number: float, width: Optional[int]=None, precision: Optional[int]=None) -> str`
+
+
+### Usage Example
+
+```
+from qformat import qformat
+s = qformat(2., width=4, precision=1)
+print(s)   # Output " 2.0"
+```
