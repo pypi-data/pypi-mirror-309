@@ -1,0 +1,9 @@
+setprint/SetPrint.py,sha256=cHN13-Fog3807qY-8c7QfvXCUCTxDHIUR8BSo-xkq24,43877
+setprint/__init__.py,sha256=1yA3Naa7EVZCwuRU3sEgea6-EC2CvWhBILsDJgqtsWo,55
+setprint_module/SetPrint.py,sha256=Ijxx8_cCnJDey98x0VNaNAC4ki444as0jQfh9sHoHeY,43877
+setprint_module/__init__.py,sha256=4y8UP79or_PRzWjExPXeD7XZoLBnfWBIAgmVfg2y84I,55
+setprint_module/run_test.py,sha256=ZUym82u2x3eWb3_R0HY34e-9_JBrDeL5cM1y_4J4IuQ,1549
+setprint-0.1.6.dist-info/METADATA,sha256=53d68rpeONl3Q_eMAuYVSmSU3RKvSTFbMRVpuCa7cU4,17832
+setprint-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+setprint-0.1.6.dist-info/top_level.txt,sha256=iih_pMu862xd-vrme7N2IrZuwOOuA_UeNUOB1Edw5gU,9
+setprint-0.1.6.dist-info/RECORD,,
