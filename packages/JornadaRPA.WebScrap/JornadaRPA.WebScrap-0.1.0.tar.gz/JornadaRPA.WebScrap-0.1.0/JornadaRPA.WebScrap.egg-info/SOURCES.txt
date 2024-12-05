@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+JornadaRPA.WebScrap.egg-info/PKG-INFO
+JornadaRPA.WebScrap.egg-info/SOURCES.txt
+JornadaRPA.WebScrap.egg-info/dependency_links.txt
+JornadaRPA.WebScrap.egg-info/requires.txt
+JornadaRPA.WebScrap.egg-info/top_level.txt
+jornadaRPA/__init__.py
+jornadaRPA/webScrap/__init__.py
+jornadaRPA/webScrap/webscrap.py
+tests/__init__.py
+tests/test_webscrap.py
