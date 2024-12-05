@@ -1,0 +1,15 @@
+emplode/README.md,sha256=X6HiOp5pQckFIHbf1vWlxWsN4xKbqs2zNu2MSnTimHI,31
+emplode/__init__.py,sha256=_osQ105uPmarYuNsiGslJ4HMycFkvsz8SVO0ExBvweI,75
+emplode/cli.py,sha256=oeenSqCWDQ3JExN_e6yPEZ_3k97n_rVJ0D8SvC16Zc4,5221
+emplode/code_block.py,sha256=7rvZnrtuNdKl52o1jl_-n8MO4Bfn6Gtxmc3WCA3uDbg,2111
+emplode/code_emplode.py,sha256=QhFTSzXi4yijFbn8_qv-7EdpMiHyZOd0qnPJC_-8t7c,8923
+emplode/emplode.py,sha256=uzt3GBfCpwt_8ls5x8xIttHkpfEYHVXLOUsv5s9J2hs,25017
+emplode/get_hf_llm.py,sha256=24VywQ39zVliTsDVsKnzxZnH_h1DiL4nC25V36zPoPI,10747
+emplode/message_block.py,sha256=PTC3uk1aD9cIJpZGGuAz5D0GIgJ4UOMuWc6uriDQi0s,1126
+emplode/system_message.txt,sha256=b7Ys-lngXwvXrwGjzJSIKbH5gVEzFbiB9gHPCCox_D4,2394
+emplode/utils.py,sha256=7w1v_2QscYnbv11qPKmqp62bpqclcoop8SErIcB_FEc,1625
+emplode-0.1.dist-info/LICENSE,sha256=h8D4t9z1NPLJlF0o9IKsAys7qIdtTjFk4IvdVfhcdOU,1064
+emplode-0.1.dist-info/METADATA,sha256=RXsOJZqoKEJhnW5T1HmQ--0wHEDML7LeKUkRPhQUoyo,3477
+emplode-0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+emplode-0.1.dist-info/entry_points.txt,sha256=uIFvo_QN7VnhI9Df2PUNojlNhZWatfG6urqd4cF54lA,39
+emplode-0.1.dist-info/RECORD,,
