@@ -1,0 +1,2 @@
+[inventree_plugins]
+TestStatistics = test_statistics.core:TestStatisticsPlugin
