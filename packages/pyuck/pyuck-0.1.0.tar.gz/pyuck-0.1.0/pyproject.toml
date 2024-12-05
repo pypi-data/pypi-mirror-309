@@ -1,0 +1,25 @@
+[project]
+name = "pyuck"
+authors = [
+  { name = "Xpo Development", email = "dev@xpo.dev" }
+]
+description = "A Python package for creating functional singletons"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/xpodev/pyuck"
+Issues = "https://github.com/xpodev/pyuck/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { attr = "yuck.__version__" }

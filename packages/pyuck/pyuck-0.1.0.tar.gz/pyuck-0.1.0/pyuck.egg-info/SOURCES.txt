@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pyuck.egg-info/PKG-INFO
+pyuck.egg-info/SOURCES.txt
+pyuck.egg-info/dependency_links.txt
+pyuck.egg-info/top_level.txt
+yuck/__init__.py
+yuck/yuck_function.py
