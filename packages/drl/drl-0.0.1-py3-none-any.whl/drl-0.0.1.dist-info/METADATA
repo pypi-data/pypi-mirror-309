@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: drl
+Version: 0.0.1
+Summary: drl
+Home-page: http://github.com/zhiqingxiao/drl/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+drl: Deep Reinforcement Learning
+=======================
+
+This package contains the implementations of the following DRL algorithms:
+
+- DQN  `DQNAgent`
+- PPO  `PPOAgent`
+- SAC  `SACAgent`
+
