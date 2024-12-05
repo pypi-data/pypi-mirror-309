@@ -1,0 +1,9 @@
+cpp_zarr-1.0.0.dist-info/top_level.txt,sha256=J0NyVJpD0yKL_9AbF7QpZJ5l4tmcudbQDRDlq3SLohs,8
+cpp_zarr-1.0.0.dist-info/METADATA,sha256=T7FMuMcft1TXmJrkEIRiiKq6UZyL_23Phj2-txJuDd8,356
+cpp_zarr-1.0.0.dist-info/RECORD,,
+cpp_zarr-1.0.0.dist-info/WHEEL,sha256=peEWV6YDzvuATHsCC1fTBUhH5CTQ-roCj-hFXtf4Gn0,151
+cppzarr/__init__.py,sha256=iUjiBJ8tj6nezgdrCiDK5Mr40Z9M6FsYnFAwmFKsV0I,50
+cppzarr/cppzarrwrappers.py,sha256=_ON54HYISQ0wD3amK_YxQreOnLPawnHF96dSZc7QZMw,779
+cppzarr/cppzarr.cpython-312-x86_64-linux-gnu.so,sha256=-eNAOG0EFSMmkDVY6XbyThBXXRH5NcMtcmXr5sJOd3A,4505801
+cpp_zarr.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+cpp_zarr.libs/libcppZarr-6856eadc.so,sha256=4D-PZjSRkhJKDSp65EacwgATReqp4z1vzEYnRQfrrC0,4631601
