@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+bitpix/__init__.py
+bitpix.egg-info/PKG-INFO
+bitpix.egg-info/SOURCES.txt
+bitpix.egg-info/dependency_links.txt
+bitpix.egg-info/requires.txt
+bitpix.egg-info/top_level.txt

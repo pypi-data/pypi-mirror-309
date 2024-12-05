@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bitpix
+Version: 1.0
+Summary: Pixel painting library
+Author: Felix Rishar
+Author-email: felix_rishar@tutamail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+
+Pixel painting library
