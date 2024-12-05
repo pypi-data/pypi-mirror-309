@@ -1,0 +1,10 @@
+hf_seo_analyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_seo_analyzer/analyzer.py,sha256=7FeFMr-HeeWbX3vaBqhMCHaRVZS7AppXmDp6u7ErPYQ,1428
+hf_seo_analyzer/cli.py,sha256=j0LIpNTe-POv1cG_nIHobuTYSJHbt0G1PXqN3MlU6kI,10963
+hf_seo_analyzer/parser.py,sha256=hZppE3SLe7XYmFhnPgY6J3Sh7zvqPOO-vG3Y6FKQ7CY,7657
+hf_seo_analyzer/utils.py,sha256=26rL5Xt3svA9n6Iftvaxyrwg3f13opi5Jf9BNORMRrM,1089
+hf_seo_analyzer-0.1.4.dist-info/METADATA,sha256=2YU56SW1qgOT6p3CqzhyNmJsmj0oqI-gOLg08nw6FmU,5245
+hf_seo_analyzer-0.1.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+hf_seo_analyzer-0.1.4.dist-info/entry_points.txt,sha256=y9-vY6KIqaM4--aEiv8u203FL-7aefb6gqVegj082qU,61
+hf_seo_analyzer-0.1.4.dist-info/top_level.txt,sha256=r7-CTfogt20vozL4qlLPVWMkaRKJov5XCJP9BdoNQX0,16
+hf_seo_analyzer-0.1.4.dist-info/RECORD,,
