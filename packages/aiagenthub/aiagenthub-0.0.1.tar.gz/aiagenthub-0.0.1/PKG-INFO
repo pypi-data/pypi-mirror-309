@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: aiagenthub
+Version: 0.0.1
+Summary: A general-purpose multi-agent orchestration framework.
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/agenthub
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: openai>=1.33.0
+Requires-Dist: pytest
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: pre-commit
+Requires-Dist: instructor
+
+# Welcome to the AgentHub 🤖
+
+A general-purpose multi-agent orchestration framework for building agentic software.
+
+## Install
+
+Requires Python 3.10+
+
+```shell
+pip install agenthub
+```
+
+or
+
+```shell
+pip install agenthub
+```
+
+## Usage
+
+```python
+from agenthub import Team, Agent
+
+team = Team()
+
+writer_agent = Agent(
+    name="Sophisticated writer",
+    instructions="You write about honey bees.",
+)
+
+response = team.run(
+    agent=writer_agent,
+    messages=[{"role": "user", "content": "Create a motivational haiku."}],
+)
+
+print(response.messages[-1]["content"])
+```
+
+```
+Fields of golden light,  
+Bees dance through blossoms with grace—  
+Sweet rewards await.
+```
+
+## Acknowledgments
+
+This project includes code from [OpenAI Swarm](https://github.com/openai/swarm).
+
+- Ilan Bigio - [ibigio](https://github.com/ibigio)
+- James Hills - [jhills20](https://github.com/jhills20)
+- Shyamal Anadkat - [shyamal-anadkat](https://github.com/shyamal-anadkat)
+- Charu Jaiswal - [charuj](https://github.com/charuj)
+- Colin Jarvis - [colin-openai](https://github.com/colin-openai)
+- Katia Gil Guzman - [katia-openai](https://github.com/katia-openai)
