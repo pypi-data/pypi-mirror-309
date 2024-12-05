@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block import %}
+<script src="/static/js/jquery-3.6.4.min.js"></script>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/loggerflow_functions.js"></script>
+<link href="/static/css/loggerflow.css" rel="stylesheet">
+<link href="/static/css/welcome.css" rel="stylesheet">
+{%  endblock %}
+
+{% block container %}
+<div class="container-fluid mt-5">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Project Name</th>
+      <th>Error counter</th>
+      <th>Connected Backend</th>
+      <th>Authors</th>
+      <th>Last Heartbeat</th>
+      <th>Implementation</th>
+      <th>Functional</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% if projects %}
+      {% for project in projects %}
+        <tr>
+          <td>{{project.project_name }}</td>
+          <td><a href="/exceptions/{{project.id}}/">{{project.exceptions_count}}</a></td>
+
+          {% if not project.connected_backends %}
+            <td>-</td>
+          {% else %}
+          <td>{{project.connected_backends}}</td>
+          {% endif %}
+
+          {% if project.authors %} <td> {{project.authors}} </td> {% else %} <td>-</td> {% endif %}
+          <td>{{project.last_heartbeat}}</td>
+          {% if project.implementation == 'WEBHOOK' %}
+            <td>Polling</td>
+            <td>
+              <button class="btn btn-primary return-project-btn" data-id="{{project.id}}" data-name="{{ project.project_name }}">Return</button>
+              <button class="btn btn-primary delete-project-btn" data-id="{{project.id}}">Delete</button>
+            </td>
+
+          {% elif project.implementation == 'WEBSOCKET' %}
+            <td>Socket</td>
+            <td>
+              <button class="btn btn-primary return-project-btn" data-id="{{project.id}}" data-name="{{ project.project_name }}">Return</button>
+              <button class="btn btn-primary delete-project-btn" data-id="{{project.id}}">Delete</button>
+            </td>
+
+          {% else %}
+            <td>-</td>
+          {% endif %}
+
+        </tr>
+      {% endfor %}
+    {% else %}
+      <tr>
+        <td colspan="8">
+            {% include 'welcome_hidden.html' %}
+      </tr>
+    {% endif %}
+    </tbody>
+  </table>
+</div>
+
+<div class="welcome-hidden" style="display: none">
+    {% include 'welcome_hidden.html' %}
+</div>
+
+{% endblock %}

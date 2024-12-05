@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-blue mx-2">
+  <a class="navbar-brand {% if request.url.path == '/' %}text-white{% else %}text-light{% endif %}" href="/">
+    <img src="{% if request.url.path == '/' %}/static/loggerflow_white.svg{% else %}/static/loggerflow.svg{% endif %}"
+         width="55px" height="55px" alt=""
+    >
+    LoggerFlow
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link {% if request.url.path == '/alarmer' %}text-white{% else %}text-light{% endif %}" href="/alarmer">Alarms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if request.url.path == '/metrics' %}text-white{% else %}text-light{% endif %}" href="/metrics">Metrics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if request.url.path == '/hidden' %}text-white{% else %}text-light{% endif %}" href="/hidden">Hidden Projects</a>
+      </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-light" href="https://github.com/DeNRuDi/loggerflow?tab=readme-ov-file#simple-start-with-lifecycle" target="_blank" rel="noopener">Documentation</a>
+    </li>
+    </ul>
+
+    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+      <li class="nav-item col-6 col-lg-auto">
+        <a class="nav-link py-2 px-0 px-lg-3 {% if request.url.path == '/settings' %}text-white{% else %}text-light{% endif %}" href="/settings">
+          <img src="{% if request.url.path == '/settings' %}/static/settings_white.svg{% else %}/static/settings.svg{% endif %}" width="35px" height="35px" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

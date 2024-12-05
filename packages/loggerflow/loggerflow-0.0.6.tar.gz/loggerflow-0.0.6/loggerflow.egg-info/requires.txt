@@ -1,0 +1,12 @@
+requests
+discordwebhook
+fastapi
+aiohttp
+aiofiles
+uvicorn[standard]
+jinja2
+aiosqlite
+sqlalchemy
+psutil
+pydantic-settings
+python-multipart
