@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: agenthub-tools-core
+Version: 0.0.4
+Summary: AgentHub core package
+Author-email: Jacob Weiss <jaweiss2305@gmail.com>
+Project-URL: homepage, https://github.com/jacobweiss2305/agenthub-tools
+Project-URL: repository, https://github.com/jacobweiss2305/agenthub-tools/tree/main/packages/core
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# AgentHub Core
+
+Core package for the AgentHub framework, providing base classes and utilities.
+
+## Installation
+
+```bash
+pip install agenthub-tools-core
+```
+
+## Usage
+
+```python
+from agenthub_tools.core import BaseTool
+
+class MyTool(BaseTool):
+    name = "my-tool"
+    description = "My custom tool"
+    
+    def execute(self, **kwargs):
+        # Implement tool logic
+        pass
+```
