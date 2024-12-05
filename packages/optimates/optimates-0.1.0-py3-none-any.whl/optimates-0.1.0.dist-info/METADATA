@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: optimates
+Version: 0.1.0
+Summary: A library for discrete optimization and search.
+Author-email: Jeremy Silver <jeremys@nessiness.com>
+License: MIT
+Keywords: optimisation,optimization,search
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
