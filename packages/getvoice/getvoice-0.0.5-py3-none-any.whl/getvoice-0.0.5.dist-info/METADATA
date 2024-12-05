@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: getvoice
+Version: 0.0.5
+Summary: A BASIC VOICE GENERATOR THIS VERSION IS SUPPORTING TELE BOT
+Author: annoying boy
+Author-email: rppareek091@gmail.com
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+
