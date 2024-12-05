@@ -1,0 +1,3 @@
+[console_scripts]
+whisperx=whisperx_numpy2_compatibility.transcribe:cli
+
