@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lute3-khmer
+Version: 0.0.3
+Summary: Learning Using Texts - Khmer Parser
+Author: Justin Dom
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: lute3>=3.4.2
+Requires-Dist: khmer-nltk==1.6
+
+# `lute3-khmer`
+
+A Khmer parser for Lute (`lute3`).
+
+## Installation
+
+See the [Lute manual](https://luteorg.github.io/lute-manual/install/plugins.html).
+
+## Usage
+
+When this parser is installed, you can add "Khmer" as a
+language to Lute, which comes with a simple story.
+

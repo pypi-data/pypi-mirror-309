@@ -1,0 +1,3 @@
+[lute.plugin.parse]
+lute_khmer=lute_khmer_parser.parser:KhmerParser
+
