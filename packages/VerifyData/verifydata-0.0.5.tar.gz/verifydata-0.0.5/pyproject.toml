@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "VerifyData"
+version = "0.0.5"
+description = "VerifyData is an intuitive library focused on data quality assessment, offering automated checks for completeness, consistency, and accuracy to guarantee high standards across your data flows."
+authors = ["developerdatascience <harendra263@gmail.com>"]
+packages = [
+    { include = "verify_data", from = "src" }
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+click = "^8.1.0"
+pyspark = "^3.5.3"
+notebook = "^6.5.5"
+ipykernel = "6.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+pre-commit = "^4.0.1"
+tox = "^4.23.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
