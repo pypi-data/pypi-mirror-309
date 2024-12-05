@@ -1,0 +1,39 @@
+# Model name and its parameters
+model: None
+parameters: None
+
+catalog_name: 'mlops7sem_hw2/'
+
+# Dataset
+n_samples: 1000
+n_features: 3
+n_classes: 3
+n_redundant: 0
+n_informative: 3
+random_state: 42
+
+# Training
+test_size: 0.2
+random_state: 42
+
+# Save model
+save_path: 'models/model.pkl'
+
+#Dataset path
+
+data_path: 'data/processed/'
+x_train: 'data/processed/X_train.csv'
+y_train: 'data/processed/y_train.csv'
+x_test: 'data/processed/X_test.csv'
+y_test: 'data/processed/y_test.csv'
+
+#Params models path
+logreg_path: 'logreg_params.yaml'
+decisiontree_path: 'decisiontree_params.yaml'
+randomforest_path: 'randomforest_params.yaml'
+
+#Metrics
+metrics_path: 'metrics.json'
+
+#Config
+config_path: 'config.json'

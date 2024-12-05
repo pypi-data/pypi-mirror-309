@@ -1,0 +1,42 @@
+# Model name and its parameters
+model: None
+parameters: None
+
+#we need to add /workdir/ in the beginning of the path, if we work in docker and airflow :)
+catalog_name: '/workdir/mlops7sem_hw2/'
+
+# Dataset
+n_samples: 1000
+n_features: 3
+n_classes: 3
+n_redundant: 0
+n_informative: 3
+random_state: 42
+
+# Training
+test_size: 0.2
+random_state: 42
+
+# Save model
+#we need to add /workdir/ in the beginning of the path, if we work in docker and airflow :)
+save_path: '/workdir/models/model.pkl'
+
+#Dataset path
+#we need to add /workdir/ in the beginning of the path, if we work in docker and airflow :)
+
+data_path: '/workdir/data/processed/'
+x_train: '/workdir/data/processed/X_train.csv'
+y_train: '/workdir/data/processed/y_train.csv'
+x_test: '/workdir/data/processed/X_test.csv'
+y_test: '/workdir/data/processed/y_test.csv'
+
+#Params models path
+logreg_path: 'logreg_params.yaml'
+decisiontree_path: 'decisiontree_params.yaml'
+randomforest_path: 'randomforest_params.yaml'
+
+#Metrics
+metrics_path: 'metrics.json'
+
+#Config
+config_path: 'config.json'
