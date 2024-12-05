@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: app_skellington
+Version: 0.2.0
+Summary: app_skellington CLI framework
+Author-email: Mathew Guest <mat@zavage.net>
+License: App Skellington
+        
+        MIT No Attribution
+        
+        Copyright (c) 2024 Mathew Guest
+        
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to permit
+        persons to whom the Software is furnished to do so.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+        `NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+        OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+        USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: homepage, https://zavage-software.com/portfolio/app_skellington
+Project-URL: repository, https://git-repos.zavage.net/Zavage-Software/app_skellington
+Project-URL: documentation, https://git-repos.zavage.net/Zavage-Software/app_skellington
+Keywords: cli,logging,application
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: appdirs
+Requires-Dist: configobj
+Requires-Dist: colorlog
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+app_skellington
+===============
+
+Application framework for Python, features include:
+ - Pain-free multi-level command menu: Expose public class methods as commands available to user.
+ - Simple to define services and automatic dependency injection based on name (with custom invocation as an option). \*WIP
+ - INI-style config and and validation (provided through ConfigObj).
+ - Colored logging (provided through colorlog)
+ - Works on Linux, Windows, and Mac.
+
+Principles:
+ - Lend to creating beautiful, easy to read and understand code in the application.
+ - Minimize coupling of applications to this framework.
+ - Compatible with Linux, Windows, and Mac. Try to be compatible as possible otherwise.
+ - Try to be compatible with alternate Python runtimes such as PyPy and older python environments. \*WIP
+
+# PyPi Hosted Link
+
+https://pypi.org/project/app-skellington/
+
+# Application Configuration
+
+Site configurations are supported through ConfigObj. There is a config.spec
+in the src directory which is a validation file; it contains the accepted
+parameter names, types, and limits for configurable options in the
+application which is built on app_skellington. The format is multi-level .ini syntax.
+
+Reference the ConfigObj documentation for config.ini and config.spec
+format. See:
+
+ - https://configobj.readthedocs.io/en/latest/configobj.html#the-config-file-format
+ - https://configobj.readthedocs.io/en/latest/configobj.html#validation
+
+Config files (config.ini) are created if they don't exist. The
+file always contains the full specification of parameters; i.e. even default
+parameters are added into the config file.
+
+Linux:
+
+ * /home/\<user\>/.config/\<app_name\>/config.ini
+ * /home/\<user\>/.cache/\<app_name\>/log/\<app_name\>.log
+
+Windows:
+
+ * C:\\Users\\\<user>\\\<app_name\>\\Local\\\<app_name\>\\config.ini
+ * C:\\Users\\\<user>\\\<app_name\>\\Local\\\<app_name\>\\Logs\\\<app_name\>.log
+
+Application configuration can be overridden ad-hoc through the --config <filename>
+argument.
+
+# Debug - Turn on Logging
+
+Set 'APPSKELLINGTON_ENABLE_LOGGING' environment variable to any value which turns
+on AppSkellington-level logging. For example,
+
+    APPSKELLINGTON_DEBUG=1 <executable>
+
+or
+
+    export APPSKELLINGTON_DEBUG=1
+    <executable>
+
+# Tests
+
+Tests are a WIP. Recommendation is to run 'pytest' in the 'tests' directory.
+
+# Development
+
+I recommend pyenv to install a reliable, controlled python of preferred version locally.
+
+```
+curl https://pyenv.run | bash
+
+# Add to .bashrc or similar for different shells:
+tee -a "$HOME"/.profile <<'EOF'
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+EOF
+```
+ * reference https://github.com/pyenv/pyenv
+
+Clone the repo:
+```commandline
+git clone https://git-mirror.zavage.net/zavage-software/app_skellington.git
+```
+
+Install pre-commit hooks:
+```commandline
+pre-commit install
+```
+
+Build:
+```
+python -m build
+```
+
+Install:
+
+```
+pip install .
+```
+
+Formatting and Linters:
+```
+black app_skellington
+isort app_skellington
+flake8 app_skellington
+```
+
+Publish:
+
+```
+# Push latest commit, or on commit ready to publish:
+git push
+
+# Create a tag with the desired version number and push:
+git tag -a v0.2.0 -m "0.2.0 provides modern pyproject.toml build with setuptools, versioning, and publishing"
+git push origin v0.2.0
+
+# Build the wheel:
+python -m build
+
+# Publish to pypi:
+twine check dist/*
+twine upload dist/*
+```
+ * Reference https://packaging.python.org/en/latest/overview/
+
+
+# Version
+
+setuptools_scm will infer the version based on the latest tag in your Git history.
+Ensure you are tagging your commits with meaningful version numbers like v1.0.0, v1.1.0, etc.
+
+# License
+
+MIT no attribution required - https://opensource.org/license/mit-0
+
+ * Allows commercial use.
+ * Allows modifications and closed-source derivatives.
+ * Fully interoperable with nearly all other open-source licenses, including GPL (when combined properly).
+
+# See Also
+
+ * Project page: https://zavage-software.com/portfolio/app_skellington
+ * Please report bugs, improvements, or feedback!
+ * Contact: mathew@zavage.net
+
+ * Packing and distribution conforms to PEP 621 https://peps.python.org/pep-0621/
+ * Reference https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/
