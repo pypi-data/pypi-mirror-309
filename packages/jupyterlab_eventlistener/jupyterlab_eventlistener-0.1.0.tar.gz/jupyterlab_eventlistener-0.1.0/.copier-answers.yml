@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: zachsailer@gmail.com
+author_name: Zach Sailer
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: jupyterlab-eventlistener
+project_short_description: A JupyterLab Plugin for listening to Jupyter events in
+    the frontend.
+python_name: jupyterlab_eventlistener
+repository: https://github.com/Zsailer/jupyterlab-eventlistener
+test: true
+
