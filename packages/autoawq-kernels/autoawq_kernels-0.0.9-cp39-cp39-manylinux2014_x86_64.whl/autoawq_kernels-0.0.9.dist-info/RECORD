@@ -1,0 +1,10 @@
+awq_ext.cpython-39-x86_64-linux-gnu.so,sha256=RMeSJe0TjVk_nAQ4Dps4oiUl1C9mIzom1mAvGZ5OFBY,15692504
+awq_ft_ext.cpython-39-x86_64-linux-gnu.so,sha256=g9jH80r0mVXVjp80VtucfbgzpCVIjuVtS_bLsZ3tVWU,69120400
+awq_v2_ext.cpython-39-x86_64-linux-gnu.so,sha256=vYnfLx_0oK3Op5DEdeCb0YJeaG0ThId9b2sVJ7RTFr8,14026848
+exl_ext.cpython-39-x86_64-linux-gnu.so,sha256=la9QbZh4tz-s-HkFwHqNNq5iV5cYvSnHUX-1WkL-64w,14199664
+exlv2_ext.cpython-39-x86_64-linux-gnu.so,sha256=QE8B3L9MhU3CgDnsI_cOoDEbv5jddr7D-1Z8I-sLVPA,19309720
+autoawq_kernels-0.0.9.dist-info/LICENSE,sha256=5ObIe62uGzzqf5SUCY_weqbNAXTpYWQN0fxa3zT-8-A,1063
+autoawq_kernels-0.0.9.dist-info/METADATA,sha256=XA0f3hQurg0wR0TpbcszhuWbLiMHF3LQyPfolK_O8tg,2402
+autoawq_kernels-0.0.9.dist-info/WHEEL,sha256=38eCHpINhOmyXfvf5Y7_WbSgIbKmbOEOs3uMHflmrxg,102
+autoawq_kernels-0.0.9.dist-info/top_level.txt,sha256=pptVF-GSPwPWmK2z89NZs_KzlP3OoWVcJIPP_xYIFfU,48
+autoawq_kernels-0.0.9.dist-info/RECORD,,
