@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+file_renamer/renamering.egg-info/PKG-INFO
+file_renamer/renamering.egg-info/SOURCES.txt
+file_renamer/renamering.egg-info/dependency_links.txt
+file_renamer/renamering.egg-info/entry_points.txt
+file_renamer/renamering.egg-info/top_level.txt
+tests/test_renamer.py
