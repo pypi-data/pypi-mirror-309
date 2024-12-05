@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: proddiffuser
+Version: 0.1.0
+Summary: Product image background generation and composition tool
+Home-page: https://github.com/yourusername/ProdDiffuser
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >=2.1.2
+Requires-Dist: diffusers >=0.31.0
+Requires-Dist: pillow >=9.5.0
+Requires-Dist: transparent-background >=1.3.3
+Requires-Dist: tqdm >=4.65.0
+Requires-Dist: click >=8.0.0
+Provides-Extra: dev
+Requires-Dist: pytest >=7.0.0 ; extra == 'dev'
+Requires-Dist: pytest-cov >=4.0.0 ; extra == 'dev'
+Requires-Dist: black >=22.0.0 ; extra == 'dev'
+Requires-Dist: isort >=5.0.0 ; extra == 'dev'
+Requires-Dist: flake8 >=4.0.0 ; extra == 'dev'
+
+# Background Generator
+
+製品画像の背景を生成・合成するPythonパッケージです。
+
+## 概要
+このプロジェクトは、Yahoo Inc.の[photo-background-generation](https://huggingface.co/yahoo-inc/photo-background-generation)をベースに開発されています。元のプロジェクトは「Salient Object-Aware Background Generation using Text-Guided Diffusion Models」（CVPR 2024）で発表された手法を実装したものです。
+
+## 使い方
+使い方は以下です。
+
+```bash
+pip install proddiffuser
+```
+プロンプトで背景を生成する場合
+```bash
+proddiffuser generate --product product.jpg --prompt "beach sunset" --output result.png
+```
+#既存の背景画像を使用
+```bash
+background-generator generate --product product.jpg --background bg.jpg --output result.png
+```
+Pythonで使用
+```python
+from proddiffuser import BackgroundGenerator
+generator = BackgroundGenerator()
+result = generator.generate_background_with_prompt_and_mask_or_combine(
+product_image_path="product.jpg",
+prompt="beach sunset",
+scale=0.3
+)
+result.save("output.png")
+```
+## ライセンス
+Apache License 2.0
