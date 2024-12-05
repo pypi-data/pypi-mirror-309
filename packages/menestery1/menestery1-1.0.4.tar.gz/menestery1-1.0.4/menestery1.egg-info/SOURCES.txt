@@ -1,0 +1,6 @@
+menestery1.py
+setup.py
+menestery1.egg-info/PKG-INFO
+menestery1.egg-info/SOURCES.txt
+menestery1.egg-info/dependency_links.txt
+menestery1.egg-info/top_level.txt
