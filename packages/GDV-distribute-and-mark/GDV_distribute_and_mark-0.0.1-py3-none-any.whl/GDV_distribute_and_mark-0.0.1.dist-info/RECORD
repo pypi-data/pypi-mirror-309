@@ -1,0 +1,13 @@
+GDV_distribute_and_mark/__init__.py,sha256=zqOsKEuhcOAwdR-jGvBlfNt4tAlHvClj2uFhyAogTXo,39
+GDV_distribute_and_mark/class_definition_logic.py,sha256=qV198p9ivd6vRu1U0wN5bZiATu26C74bVJq3q2lWuqY,1999
+GDV_distribute_and_mark/db.py,sha256=AxtLZpvGWn8HTLb4qX3HbTx3c_93MP-Q12dAbUoNG9U,1064
+GDV_distribute_and_mark/main.py,sha256=SS4Zh_nXkuHcVtHlHZy_gKITHdu7g0P4mthIIbW9YV0,3614
+GDV_distribute_and_mark/parsing.py,sha256=fUPVFnmz3Oyoxm0XJPrxPTIroYL7dJ1Y4472pG_4QCo,513
+GDV_distribute_and_mark/resource_manager.py,sha256=GpLjiRTTBVTTTMDqxnsIVKQ8Kg2Ah5IXkMUsbB7_6RU,572
+GDV_distribute_and_mark/assets/ico.png,sha256=7cjxFsU8DhBVNRzLbYwwFZp8ljneuuMNWVe9GAGvEV4,247217
+GDV_distribute_and_mark-0.0.1.dist-info/LICENSE,sha256=NUWzrphEGbv6cISGGsfMYsaldTYr9XMmvdbb_1apjB4,1065
+GDV_distribute_and_mark-0.0.1.dist-info/METADATA,sha256=fVi6mMvqO1K7naWgRyUqr_mtYG_87HHnNmWekyVB9B8,655
+GDV_distribute_and_mark-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+GDV_distribute_and_mark-0.0.1.dist-info/entry_points.txt,sha256=veSDeuwONEEwYYsesjcrGUrjPhcgHP9H2hiCuxgrnAo,78
+GDV_distribute_and_mark-0.0.1.dist-info/top_level.txt,sha256=TWkXWVDU9aiDypccBLEQGyigwI9wiws-r5gz_vdlcpU,24
+GDV_distribute_and_mark-0.0.1.dist-info/RECORD,,
