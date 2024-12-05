@@ -1,0 +1,7 @@
+passagemath_lrslib-10.4.61.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_lrslib-10.4.61.dist-info/RECORD,,
+passagemath_lrslib-10.4.61.dist-info/METADATA,sha256=6sHPsCetr6olFmtNqoobv549VE7Ph7GlvHr7ItmiIzg,4021
+passagemath_lrslib-10.4.61.dist-info/WHEEL,sha256=C_u37Gjsvm-axxahYbHrVJK_acyekKqTTso2RCL4LvU,112
+sage/all__sagemath_lrslib.py,sha256=Z9TXsdDthYrVcegr2qSk0Gegd5akHQrOO8DY7RtGXUg,89
+sage/libs/lrslib.cpython-310-x86_64-linux-gnu.so,sha256=CLbSlw6kP29uNYtmyMtWaW10k8wOeM2k9K1sm0y4EQ8,65064
+sage/libs/all__sagemath_lrslib.py,sha256=fKY-tQ-YTmUyE7Y7aQ491M_qa4yAUblJYW6vwVRLUCQ,45
