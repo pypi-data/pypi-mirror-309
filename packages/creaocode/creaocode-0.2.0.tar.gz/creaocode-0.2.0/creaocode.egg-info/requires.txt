@@ -1,0 +1,4 @@
+jinja2
+exa_py
+openai
+tqdm
