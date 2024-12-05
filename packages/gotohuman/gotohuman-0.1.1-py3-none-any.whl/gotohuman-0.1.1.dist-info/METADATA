@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gotohuman
+Version: 0.1.1
+Summary: Python SDK for gotoHuman
+Home-page: https://gotohuman.com
+Author: gotoHuman
+Author-email: founders@gotohuman.com
+License: GPL-3.0
+Project-URL: Documentation, https://docs.gotohuman.com/
+Project-URL: Twitter, https://twitter.com/gotohuman
+Keywords: gotohuman ai agents llm automation human-in-the-loop
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# gotoHuman python SDK
+
+Read more at [https://docs.gotohuman.com](https://docs.gotohuman.com)
