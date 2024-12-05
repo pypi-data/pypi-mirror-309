@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mendeley-updated
+Version: 0.4.1
+Summary: A fork of the Python SDK for the Mendeley API. Includes updates to requirements and forks that were never merged.
+Home-page: https://github.com/civilwargeeky/mendeley-python-sdk
+Author: Daniel Klinger
+Author-email: civilwargeeky@yahoo.com
+License: Apache
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: arrow >=0.4.4
+Requires-Dist: memoized-property >=1.0.2
+Requires-Dist: requests >=2.4.3
+Requires-Dist: requests-oauthlib >=0.4.2
+Requires-Dist: oauthlib >=0.7.2
+
