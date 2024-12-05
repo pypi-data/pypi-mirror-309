@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: total_time
+Version: 0.0.4
+Summary: A simple timer module to measure your program's elapsed time.
+Author: Timothee
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# total_time Module
+
+The **total_time** module provides a simple way to measure elapsed time in your Python programs. It includes functions to start a timer, stop it, and calculate the total elapsed time.
+
+## Functions
+
+### `start()`
+This function initializes the timer by recording the current time. Call this function when you want to start measuring time.
+
+### `end()`
+This function stops the timer by recording the current time as the end time. If you haven't called `start()` before calling `end()`, this function will not work correctly.
+
+### `total()`
+This function calculates and returns the total elapsed time in seconds from when `start()` was called to when `end()` was called. 
+- If `end()` has not been called yet, it will automatically call `end()` before calculating the total time.
+
+### `ttotal()`
+This function prints a message indicating how long the operation took. The message will state:
+total = total elapsed time in seconds from when `start()` was called to when `end()` was called
+"It took the computer {total} seconds." 
+
+- If you have not called `end()` before using this function, it will automatically call `end()` first to ensure accurate timing.
+
+## Usage Example
+
+Here’s a quick example of how to use the total_time module:
+
+```python
+import total_time
+
+start()
+# ... your code here ...
+end()
+ttotal()
