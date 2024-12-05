@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ip_fetcher_and_checker
+Version: 0.1.1
+Summary: A tool for fetching ip.
+Home-page: https://github.com/Yukendiran2002/fetch_ip
+Author: Yukendiran
+Author-email: yukendiranjayachandiran@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Fetch IP Module
+
+`fetch_ip` is a Python module to retrieve the local and public IP addresses of your system. 
+
+## Features
+- Fetch your **local IP address**.
+- Fetch your **public IP address** using an external service (`https://api64.ipify.org`).
+
+## Installation
+
+Install the module using pip:
+
+```bash
+pip install fetch_ip
