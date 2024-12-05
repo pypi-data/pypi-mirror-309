@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "supplyseer"
+version = "0.2.0"
+authors = [
+  { name="Jako Rostami", email="rostami.jako@gmail.com" },
+]
+description = "SupplySeer is a time series library for computational Supply Chain."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # List dependencies here
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jakorostami/supplyseer"
+"Bug Tracker" = "https://github.com/jakorostami/supplyseer/issues"
