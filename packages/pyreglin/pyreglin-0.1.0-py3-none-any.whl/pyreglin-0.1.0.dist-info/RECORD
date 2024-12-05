@@ -1,0 +1,12 @@
+pyreglin/__init__.py,sha256=tULT1TGgFKK9jcnYBtAVP3H1myPAPatYunpno5wCAfQ,145
+pyreglin/datasets/__init__.py,sha256=sNNU9QrtizfF4cRRhNVhWFgM-mRYQbNf_z1YGLb5iDM,76
+pyreglin/datasets/load_data.py,sha256=3k5keU2dAP9lDs1gU5XM2iz_lbD03LpVz0qNuzE4uIk,2887
+pyreglin/simdata/__init__.py,sha256=YSKbRNdJtBunQoB1KaLOtx2WjBXKFxnezie5WMSVQN8,57
+pyreglin/simdata/rlm.py,sha256=j1bvjESDLjEOC-ZRoBij5S4UiRRIStgqZW9Pm-BksXc,3872
+pyreglin/tab_anova/__init__.py,sha256=Sle75iuI8FivD6u6d5O40QrYc-cgpBYeXCY-Hk1sEvI,77
+pyreglin/tab_anova/tab_anova.py,sha256=dv7g5JAOsdG88X7bnFLeNJTNmRwkL113RJkKZgg6gSU,1974
+pyreglin-0.1.0.dist-info/LICENSE,sha256=SDEpUfupE9g5zfNOKGqeqmAe6psNwCltmTw8QVyzBZE,1090
+pyreglin-0.1.0.dist-info/METADATA,sha256=OMJCqZ3yWmVksSAUj_mpuNDfwFdEtE2-hgRDJcKkv0Y,1635
+pyreglin-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pyreglin-0.1.0.dist-info/top_level.txt,sha256=9RTYmP2JEmIhTzp4a0ebftcFm-b6JAj7v39FKTow7Cg,9
+pyreglin-0.1.0.dist-info/RECORD,,
