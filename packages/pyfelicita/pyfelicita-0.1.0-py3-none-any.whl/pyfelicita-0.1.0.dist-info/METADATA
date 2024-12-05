@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyfelicita
+Version: 0.1.0
+Summary: A Bluetooth scale integration for coffee machines
+Home-page: https://github.com/kevinstampe/pyfelicita
+Author: Kevin Guldager Stampe
+Author-email: kevinstampe@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bleak
+
