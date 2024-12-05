@@ -1,0 +1,3 @@
+[console_scripts]
+timyton=timyton.app:run
+
