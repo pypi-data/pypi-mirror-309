@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: automate-supervised-dataset-generation
+Version: 0.4.0
+Summary: automate unsupervised dataset generation
+Home-page: https://github.com/prakHr/automate-supervised-dataset-generation
+Author: Prakhar Gandhi
+Author-email: gprakhar0@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mpire
+Requires-Dist: playwright
+Requires-Dist: transformers
+Requires-Dist: torch
+
+# automate-supervised-dataset-generation
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install automate-supervised-dataset-generation
+```
+
+## Start the app
+```
+import automate_supervised_dataset_generation.automate
+query = "Artificial Intelligence"
+num_page = 5
+sleep_time = 10
+labels = ["spam","not Spam"]
+results = automate_supervised_dataset_generation.automate.parallel_scraping(query,num_page,labels,sleep_time)
+```
+
+## License
+
+`automate-unsupervised-dataset-generation` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

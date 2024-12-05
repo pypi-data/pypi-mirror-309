@@ -1,0 +1,4 @@
+mpire
+playwright
+transformers
+torch

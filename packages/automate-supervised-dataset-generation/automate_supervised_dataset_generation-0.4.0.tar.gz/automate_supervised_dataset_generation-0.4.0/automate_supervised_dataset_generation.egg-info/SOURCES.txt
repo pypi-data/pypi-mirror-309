@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+automate_supervised_dataset_generation/__init__.py
+automate_supervised_dataset_generation/automate.py
+automate_supervised_dataset_generation.egg-info/PKG-INFO
+automate_supervised_dataset_generation.egg-info/SOURCES.txt
+automate_supervised_dataset_generation.egg-info/dependency_links.txt
+automate_supervised_dataset_generation.egg-info/requires.txt
+automate_supervised_dataset_generation.egg-info/top_level.txt
