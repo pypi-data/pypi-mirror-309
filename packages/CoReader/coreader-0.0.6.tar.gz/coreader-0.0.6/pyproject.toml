@@ -1,0 +1,21 @@
+[project]
+name = "CoReader"
+version = "0.0.6"
+authors = [
+  { name="Qilong Yun", email="23067693g@connect.polyu.hk" },
+  { name="Zehao Zhang", email="24069596G@connect.polyu.hk" },
+  { name="KONG WAI KIN", email="23007959G@connect.polyu.hk" },
+  { name="Chengrui Tang", email="24060826G@connect.polyu.hk" },
+]
+description = "CoReader, AI Research Paper Assistant"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = { text = "MIT" }
+
+[project.urls]
+Homepage = "https://github.com/4White9264/CoReader"
