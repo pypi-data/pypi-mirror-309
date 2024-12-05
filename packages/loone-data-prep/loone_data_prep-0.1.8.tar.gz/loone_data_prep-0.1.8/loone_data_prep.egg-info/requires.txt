@@ -1,0 +1,6 @@
+rpy2
+retry
+numpy<2
+pandas
+scipy
+geoglows==0.27.1
