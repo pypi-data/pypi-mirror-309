@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+appoint_logger.egg-info/PKG-INFO
+appoint_logger.egg-info/SOURCES.txt
+appoint_logger.egg-info/dependency_links.txt
+appoint_logger.egg-info/requires.txt
+appoint_logger.egg-info/top_level.txt
