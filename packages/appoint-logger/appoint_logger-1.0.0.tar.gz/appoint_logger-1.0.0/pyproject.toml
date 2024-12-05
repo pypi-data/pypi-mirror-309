@@ -1,0 +1,50 @@
+
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+allowed-confusables = ["−", "ρ", "∗"]
+line-length = 88
+indent-width = 4
+select = ["E4", "E7", "E9", "F", "B", "Q"]
+fixable = ["ALL"]
+unfixable = []
+ignore = []
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F401", "E402", "F403"]
+"**/{tests,docs,tools}/*" = ["E402", "F403"]
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
