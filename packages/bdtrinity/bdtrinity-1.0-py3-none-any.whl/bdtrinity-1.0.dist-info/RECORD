@@ -1,0 +1,27 @@
+bdtrinity/__init__.py,sha256=RzCi0OkPkKEze598VIUoU72wnDD1EEunNoA70BgFAT0,37
+bdtrinity/anomaly.py,sha256=cuw-qxHksdRnRqNSvDGsq4joFtUTL4lLOdRLz0FwAzo,45198
+bdtrinity/arules.py,sha256=IiuewSY8ZqDAr8-xqsHN1ipje-5DNiSYvgP8NAb6n9g,167
+bdtrinity/classification.py,sha256=aDxEfmmybwBb7G1BMX509k9VJxXOG6KVh9LHMIqnSdE,177
+bdtrinity/clustering.py,sha256=gYjirHixjq37sQnEL7ZaB_U8BsPyZAdkIZiZnMHlC4c,171
+bdtrinity/datasets.py,sha256=lbRG0HFLVEtxVxADQ-CVw0zb2SCf4F5rUAOKBiOsh24,176
+bdtrinity/nlp.py,sha256=B_NXp9Ojg1z7WRN_rT01XfXVfyAgicK_AlqSoEZoVyc,20364
+bdtrinity/regression.py,sha256=riIiroJ3u_Da9J6HMFryuIjWTpTIDkHJcLFAhumNyjw,172
+bdtrinity/timeseries.py,sha256=JfyBUKowksteVpArWTxen01uxSl-uAG8Yhjbf543MYg,177
+bdtrinity/utils.py,sha256=v1iQexa5ofjmwi00YsU6StTswNbd6aRyx4-WeWR4d14,3243
+pyorange/__init__.py,sha256=RzCi0OkPkKEze598VIUoU72wnDD1EEunNoA70BgFAT0,37
+pyorange/anomaly.py,sha256=cuw-qxHksdRnRqNSvDGsq4joFtUTL4lLOdRLz0FwAzo,45198
+pyorange/arules.py,sha256=IiuewSY8ZqDAr8-xqsHN1ipje-5DNiSYvgP8NAb6n9g,167
+pyorange/classification.py,sha256=aDxEfmmybwBb7G1BMX509k9VJxXOG6KVh9LHMIqnSdE,177
+pyorange/clustering.py,sha256=gYjirHixjq37sQnEL7ZaB_U8BsPyZAdkIZiZnMHlC4c,171
+pyorange/datasets.py,sha256=lbRG0HFLVEtxVxADQ-CVw0zb2SCf4F5rUAOKBiOsh24,176
+pyorange/nlp.py,sha256=B_NXp9Ojg1z7WRN_rT01XfXVfyAgicK_AlqSoEZoVyc,20364
+pyorange/regression.py,sha256=riIiroJ3u_Da9J6HMFryuIjWTpTIDkHJcLFAhumNyjw,172
+pyorange/timeseries.py,sha256=JfyBUKowksteVpArWTxen01uxSl-uAG8Yhjbf543MYg,177
+pyorange/utils.py,sha256=v1iQexa5ofjmwi00YsU6StTswNbd6aRyx4-WeWR4d14,3243
+bdtrinity-1.0.dist-info/LICENCE.txt,sha256=n2ewA16gXt_6D_i106O0vEat7UVVsWR0KLgXsIEeXd8,1117
+bdtrinity-1.0.dist-info/METADATA,sha256=DkQK_Z6DxhxLyrqn6BoP5ZU8v1-5Ey3vecFMlUf6wIM,5930
+bdtrinity-1.0.dist-info/PKG-INFO (2),sha256=UBu8TypJf9CBzosCdgu_V7QnZJFx6s8TPYX4B0MthyU,5520
+bdtrinity-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bdtrinity-1.0.dist-info/dependency_links (2).txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bdtrinity-1.0.dist-info/top_level.txt,sha256=ZnsWtbTgXsG7Joh8LO1x4m076IdERFfl5SCCpdXApGM,10
+bdtrinity-1.0.dist-info/RECORD,,
