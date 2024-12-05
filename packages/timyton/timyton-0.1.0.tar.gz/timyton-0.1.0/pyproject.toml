@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "timyton"
+readme = "README.rst"
+authors = [
+    {name="Nicolas Évrard", email="nicolas.evrard@b2ck.com"},
+    {name="B2CK"},
+]
+description = "A TUI to manage timesheet in Tryton"
+dependencies = ["textual", "httpx", "xdg-base-dirs"]
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Tryton",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)"
+]
+dynamic = ["version"]
+
+[project.scripts]
+timyton = "timyton.app:run"
