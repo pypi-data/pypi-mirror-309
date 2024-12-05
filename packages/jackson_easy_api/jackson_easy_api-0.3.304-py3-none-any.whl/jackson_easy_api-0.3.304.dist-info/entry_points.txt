@@ -1,0 +1,4 @@
+[console_scripts]
+format=jackson_easy_api.cli:format_app
+start=jackson_easy_api.cli:start_project
+
