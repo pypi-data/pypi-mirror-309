@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+quizen/__init__.py
+quizen/output.py
+quizen/quiz.py
+quizen.egg-info/PKG-INFO
+quizen.egg-info/SOURCES.txt
+quizen.egg-info/dependency_links.txt
+quizen.egg-info/entry_points.txt
+quizen.egg-info/requires.txt
+quizen.egg-info/top_level.txt
+quizen/__pycache__/__init__.cpython-312.pyc
+quizen/__pycache__/output.cpython-312.pyc
+quizen/__pycache__/quiz.cpython-312.pyc
