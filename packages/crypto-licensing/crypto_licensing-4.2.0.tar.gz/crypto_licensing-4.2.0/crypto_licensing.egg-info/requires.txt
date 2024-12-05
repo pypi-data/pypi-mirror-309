@@ -1,0 +1,52 @@
+chacha20poly1305>=0.0.3
+click
+dnspython
+future>=1
+requests<3,>=2.20
+tzlocal
+
+[:python_version < "3.0"]
+configparser>=4.0
+pytz
+
+[:python_version < "3.4"]
+enum34>=1.1
+pathlib2>=2.3
+
+[:python_version > "2"]
+requests-toolbelt>=1
+
+[:python_version >= "3.9"]
+pytz_deprecation_shim
+
+[all]
+wheel
+flake8
+pytest>=4.6
+packaging
+pip
+setuptools
+wsgilog>=0.3
+build
+
+[all:python_version < "3.13"]
+web.py>=0.51
+
+[dev]
+build
+packaging
+flake8
+pip
+pytest>=4.6
+setuptools
+wheel
+
+[server]
+wsgilog>=0.3
+
+[server:python_version < "3.13"]
+web.py>=0.51
+
+[tests]
+flake8
+pytest>=4.6
