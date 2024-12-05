@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block content %}
+<v-container class="fill-height">
+    <v-row justify="center">
+        <v-col cols="12" sm="8" md="6" lg="4">
+            <v-card>
+                <v-card-title>Sign In</v-card-title>
+                <v-card-text>
+                    <v-form @submit.prevent="handleSubmit">
+                        <v-text-field
+                            v-model="email"
+                            label="Email"
+                            type="email"
+                            required
+                        ></v-text-field>
+
+                        <v-text-field
+                            v-model="password"
+                            label="Password"
+                            type="password"
+                            required
+                        ></v-text-field>
+
+                        <v-btn
+                            block
+                            color="primary"
+                            type="submit"
+                            :loading="loading"
+                        >
+                            Sign In
+                        </v-btn>
+                    </v-form>
+
+                    <div class="text-center mt-4">
+                        <v-btn
+                            variant="text"
+                            href="/auth/signup"
+                        >
+                            Create Account
+                        </v-btn>
+                    </div>
+                </v-card-text>
+            </v-card>
+        </v-col>
+    </v-row>
+</v-container>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const { createApp } = Vue;
+    const { createVuetify } = Vuetify;
+    const vuetify = createVuetify();
+
+    const app = createApp({
+        data() {
+            return {
+                email: '',
+                password: '',
+                loading: false,
+                drawer: false
+            }
+        },
+        methods: {
+            async handleSubmit() {
+                this.loading = true;
+                try {
+                    const response = await axios.post('/auth/signin', {
+                        email: this.email,
+                        password: this.password
+                    });
+                    window.location.href = '/dashboard';
+                } catch (error) {
+                    console.error('Sign-in error:', error);
+                } finally {
+                    this.loading = false;
+                }
+            }
+        },
+        delimiters: ['${', '}']
+    });
+
+    app.use(vuetify).mount('#app');
+</script>
+{% endblock %}
