@@ -1,0 +1,8 @@
+README.md
+setup.py
+qformat/__init__.py
+qformat/version.py
+qformat.egg-info/PKG-INFO
+qformat.egg-info/SOURCES.txt
+qformat.egg-info/dependency_links.txt
+qformat.egg-info/top_level.txt
