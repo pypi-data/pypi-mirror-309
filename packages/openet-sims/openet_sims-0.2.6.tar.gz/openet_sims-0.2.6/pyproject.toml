@@ -1,0 +1,45 @@
+[project]
+name = "openet-sims"
+version = "0.2.6"
+authors = [
+    { name = "Alberto Guzman", email = "aguzman@csumb.edu" },
+]
+description = "Earth Engine implementation of the SIMS model"
+readme = "README.rst"
+requires-python = ">=3.8"
+keywords = ["SIMS", "OpenET", "Earth Engine", "Evapotranspiration", "Landsat"]
+license = {file = "LICENSE.txt"}
+# license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "earthengine-api >= 0.1.392",
+    "openet-core >= 0.6.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Open-ET/openet-sims"
+#"Repository" = "https://github.com/Open-ET/openet-sims.git"
+#"Documentation" = "https://github.com/Open-ET/openet-sims"
+#"Bug Tracker" = "https://github.com/Open-ET/openet-sims"
+#"Changelog" = "https://github.com/Open-ET/openet-sims"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pandas",
+]
+
+[tool.setuptools.package-data]
+"openet.sims.tests" = ["*.csv"]
+
+[tool.setuptools.packages.find]
+# include = ["openet*"]
+exclude = ["examples*"]
