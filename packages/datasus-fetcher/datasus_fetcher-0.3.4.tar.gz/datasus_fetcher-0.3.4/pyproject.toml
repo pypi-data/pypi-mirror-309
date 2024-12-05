@@ -1,0 +1,36 @@
+[project]
+name = "datasus-fetcher"
+authors = [{ name = "Daniel Komesu", email = "danielkomesu@gmail.com" }]
+description = "Downloader of DATASUS raw data files"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "data",
+    "open data",
+    "data fetcher",
+    "health",
+    "datasus",
+    "microdata",
+]
+license = { text = "MIT" }
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["datasus_fetcher"]
+
+[tool.setuptools.dynamic]
+version = { attr = "datasus_fetcher.__version__" }
+
+[tool.rye]
+dev-dependencies = [
+    "build>=1.2.2.post1",
+    "wheel>=0.45.0",
+    "twine>=5.1.1",
+]
+
+[project.scripts]
+datasus-fetcher = "datasus_fetcher.cli:main"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
