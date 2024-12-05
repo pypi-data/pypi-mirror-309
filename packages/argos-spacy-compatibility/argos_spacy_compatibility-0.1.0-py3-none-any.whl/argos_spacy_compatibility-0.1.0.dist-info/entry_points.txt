@@ -1,0 +1,4 @@
+[console_scripts]
+argos-translate=argos_spacy_compatibility.cli:main
+argospm=argos_spacy_compatibility.argospm:main
+
