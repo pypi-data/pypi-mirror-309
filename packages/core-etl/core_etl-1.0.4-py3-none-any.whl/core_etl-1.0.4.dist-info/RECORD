@@ -1,0 +1,8 @@
+core_etl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_etl/base.py,sha256=yAZhyqv6Rwrk_pQWzrL70NAzSspo4O1iEVQluooYFc8,3304
+core_etl/file_based.py,sha256=I98_tGRpYUfKGNQNR5KcFEhtuaP9QTYnqly2U4Jen3M,1611
+core_etl/record_based.py,sha256=6fMy9VQ7h7BbFShf4qwFd4wkKlW4PVNqB6Iosrk5LLg,3314
+core_etl-1.0.4.dist-info/METADATA,sha256=h3j6G_0iEIX3cPHsdULrPOpV9S05kgrBR0_swyZEEZw,1470
+core_etl-1.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+core_etl-1.0.4.dist-info/top_level.txt,sha256=3jim7NaPp7dh9XALfdYTy03-rMfVPRFUlsNqgBQXu_Y,9
+core_etl-1.0.4.dist-info/RECORD,,
