@@ -1,0 +1,28 @@
+make_dataset:
+  n_samples: 100
+  n_features: 20
+  n_informative: 10
+  n_redundant: 5
+  n_classes: 3
+  shuffle: True
+  test_data_size: 0.3
+  target_column_name: target
+  full_data_path: data/raw/data.csv
+  train_data_path: data/processed/data_train.csv
+  test_data_path: data/processed/data_test.csv
+train_params: 
+  model_type: logistic_regression
+  logistic_regression:
+    multi_class: multinomial
+    solver: lbfgs
+    max_iter: 500
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+  decision_tree:
+    criterion: entropy
+    max_depth:
+report_path: reports
+models_path: models
+predictions_path: data/predictions
+random_state: 14
