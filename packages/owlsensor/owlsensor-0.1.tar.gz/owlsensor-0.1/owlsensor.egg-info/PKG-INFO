@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: owlsensor
+Version: 0.1
+Summary: Library to read data from OWL Energy meters
+Home-page: https://github.com/PBrunot/owlsensor
+Author: Pascal Brunot
+Author-email: pbr-dev@gmail.com
+License: MIT
+Keywords: serial owl cm160 energy_meter homeautomation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pyserial>=3
+
+This package is designed for integrating into Home Assistant a serial-connected OWL energy meter.
