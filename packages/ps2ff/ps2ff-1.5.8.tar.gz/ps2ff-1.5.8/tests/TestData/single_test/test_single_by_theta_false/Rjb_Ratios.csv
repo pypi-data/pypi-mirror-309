@@ -1,0 +1,18 @@
+# Program: bin/run_ps2ff_single_event
+# Config file: tests/config/test_single_by_theta_false.ini
+# Process start: 2024-03-05T13:32:07.111875
+# Process finish: 2024-03-05T13:32:07.674977
+# M = 7.000000, zhyp = 5.000000, bytheta = False, rup_dim_model = MagScaling.WC94, mech = Mechanism.A, AR = 1.7, ndip = 5, mindip = 0.000000, maxdip = 1.570796
+# ntheta = 10, nxny = 10, neps = 2, trunc = 0.500000, min_seis_depth = 0.000000, max_seis_depth = 20.000000
+"Repi_km","R7"
+0.100000,0.130452
+0.251189,0.130590
+0.630957,0.136302
+1.584893,0.156120
+3.981072,0.211822
+10.000000,0.323375
+25.118864,0.541010
+63.095734,0.787504
+158.489319,0.911255
+398.107171,0.964000
+1000.000000,0.985570

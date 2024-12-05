@@ -1,0 +1,9 @@
+# Program: bin/run_ps2ff
+# Config file: tests/config/fast_HB08.ini
+# Process start: 2022-08-17T15:30:54.574936
+# Process finish: 2022-08-17T15:30:54.761946
+# rup_dim_model = HB08, mech = A, LW = False, AR = 1.0, ndip = 3, mindip = 0.000000, maxdip = 1.570796, ntheta = 4, nxny = 3
+# neps = 3, trunc = 2.500000, min_seis_depth = 0.000000, max_seis_depth = 15.000000
+"Repi_km","V6.5","V7","V7.5"
+10.000000,18.993782,19.890595,19.951474
+100.000000,51.161018,218.577282,470.811673

@@ -1,0 +1,9 @@
+# Program: bin/run_ps2ff
+# Config file: tests/config/fast_Sea10_interface.ini
+# Process start: 2022-08-17T15:30:53.507001
+# Process finish: 2022-08-17T15:30:53.692288
+# rup_dim_model = Sea10_interface, mech = A, LW = False, AR = 1.0, ndip = 3, mindip = 0.000000, maxdip = 1.570796, ntheta = 4, nxny = 3
+# neps = 3, trunc = 2.500000, min_seis_depth = 0.000000, max_seis_depth = 15.000000
+"Repi_km","V6.5","V7","V7.5"
+10.000000,19.387491,19.951474,19.951474
+100.000000,124.963288,380.885058,658.451107

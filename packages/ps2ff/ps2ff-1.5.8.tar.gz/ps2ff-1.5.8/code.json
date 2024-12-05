@@ -1,0 +1,472 @@
+[
+    {
+        "name": "ps2ff",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.8",
+        "status": "Development",
+        "organization": "U.S. Geological Survey",
+        "vcs": "git",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.8/ps2ff-v1.5.8.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.8/DISCLAIMER.md",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.8/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2024-11-16"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.7",
+        "status": "Development",
+        "organization": "U.S. Geological Survey",
+        "vcs": "git",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.7/ps2ff-v1.5.7.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.7/DISCLAIMER.md",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.7/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2024-03-05"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.6",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.6/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.6/ps2ff-v1.5.6.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.6/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-11"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.5",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.5/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.5/ps2ff-v1.5.5.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.5/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-11"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.4",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.4/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.4/ps2ff-v1.5.4.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.4/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-11"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5.3",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.3/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5.3/ps2ff-v1.5.3.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5.3/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-11"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.5",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.5/ps2ff-v1.5.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.5/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-11"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.4",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.4/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://github.com/usgs/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.4/ps2ff-v1.4.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.4/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2019-01-28"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.3",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.3/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.3/ps2ff-v1.3.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.3/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2018-12-12"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.2",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.2/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.2/ps2ff-v1.2.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.2/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2018-03-20"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.1.1",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.1.1/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.1.1/ps2ff-v1.1.1.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.1.1/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2017-10-20"
+        }
+    },
+    {
+        "name": "ps2ff",
+        "organization": "U.S. Geological Survey",
+        "description": "Approximated rupture distances from point source",
+        "version": "v1.0.1",
+        "status": "Development",
+        "permissions": {
+            "licenses": [
+                {
+                    "name": "Public Domain, CC0-1.0",
+                    "URL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.0.1/LICENSE.md"
+                }
+            ],
+            "usageType": "openSource"
+        },
+        "homepageURL": "https://code.usgs.gov/ghsc/esi/ps2ff",
+        "downloadURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/archive/v1.0.1/ps2ff-v1.0.1.zip",
+        "disclaimerURL": "https://code.usgs.gov/ghsc/esi/ps2ff/-/raw/v1.0.1/DISCLAIMER.md",
+        "repositoryURL": "https://code.usgs.gov/ghsc/esi/ps2ff.git",
+        "laborHours": 1,
+        "languages": [
+            "Python"
+        ],
+        "tags": [
+            "earthquake",
+            "shakemap",
+            "point source",
+            "finite fault",
+            "seismic-hazard",
+            "earthquake-hazard"
+        ],
+        "contact": {
+            "name": "Eric Thompson",
+            "email": "emthompson@usgs.gov"
+        },
+        "date": {
+            "metadataLastUpdated": "2022-07-13"
+        }
+    }
+]
