@@ -1,0 +1,8 @@
+autowriterllm/__init__.py,sha256=M7Fwy73tVqcxyHC6UGaKBzK6mG81KgrJi7x9nQtNPh4,151
+autowriterllm/ai_content_generator.py,sha256=7P7S-oFuCFvTeillYjKkzc8nuKtKvTWlPFu2ar42U3Y,72319
+autowriterllm/markdown_to_pdf_converter.py,sha256=9TjDfgBq4WyyBHXnaT30ZsL8DR7-d5ZPpV_2XtW4ICg,18384
+AutoWriterLLM-0.1.0.dist-info/LICENSE,sha256=PjqOtuv2wgc1i_QtmS0-jIgGWtwMUMDc-qfsYIsGBg4,1086
+AutoWriterLLM-0.1.0.dist-info/METADATA,sha256=nAjmED-bZLyRvNgGpZMq2SKo_m24cIY_YC9X63H-gBc,2347
+AutoWriterLLM-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+AutoWriterLLM-0.1.0.dist-info/top_level.txt,sha256=K7_cqVPqlErP5VdRRqKAJlpVpZjS9SyIAt80LsXS73E,14
+AutoWriterLLM-0.1.0.dist-info/RECORD,,
