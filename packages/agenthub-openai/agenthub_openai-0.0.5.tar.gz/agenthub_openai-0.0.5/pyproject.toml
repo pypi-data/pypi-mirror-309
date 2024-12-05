@@ -1,0 +1,28 @@
+[project]
+name = "agenthub-openai"
+version = "0.0.5"
+description = "AgentHub openai package"
+requires-python = ">=3.7"
+readme = "README.md"
+authors = [
+    { name = "Jacob Weiss", email = "jaweiss2305@gmail.com" }
+]
+
+dependencies = [
+    "agenthub-core>=0.0.1"
+]
+
+[project.urls]
+homepage = "https://github.com/jacobweiss2305/agenthub"
+repository = "https://github.com/jacobweiss2305/agenthub/tree/main/packages/duckduckgo"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["agenthub", "agenthub.*"]
