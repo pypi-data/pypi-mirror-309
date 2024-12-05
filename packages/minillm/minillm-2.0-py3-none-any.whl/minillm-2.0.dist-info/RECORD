@@ -1,0 +1,9 @@
+minillm/__init__.py,sha256=pRYgTVXB6xFxwp2cN2rUsNCtqZ7kAj-6gMudnDtIl_c,14272
+minillm/config.py,sha256=787hH147o7m4tzXCigoL7Vqo9fb23U22sjGeHxR9uEM,25059
+minillm/embeddings.py,sha256=JOZHSbDFJj7KGlB2F5TRW2k79jb_zcqvmbJNNPhL6vY,11660
+minillm/inference.py,sha256=QtpDS4dCqr8JPU_1vEbVqu0xVKnymBYCeptp_uWXFJM,12391
+minillm/models.py,sha256=rgeB0V3U0QKu3jRh9LyW2TYrPdqhPfpjs5aVK6cd2LQ,3541
+minillm-2.0.dist-info/METADATA,sha256=oFZhbugu_j75gWxCBo2euZpSZLr-tnI9fmP36RvoM48,7691
+minillm-2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+minillm-2.0.dist-info/top_level.txt,sha256=lqGtB-clTJX2ONqY5yime8wsUQi2SPd_JTi0jy7mEao,8
+minillm-2.0.dist-info/RECORD,,
