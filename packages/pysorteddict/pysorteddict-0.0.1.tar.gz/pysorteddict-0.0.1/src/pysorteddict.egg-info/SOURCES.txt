@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/pysorteddict/pysorteddict.cc
+src/pysorteddict.egg-info/PKG-INFO
+src/pysorteddict.egg-info/SOURCES.txt
+src/pysorteddict.egg-info/dependency_links.txt
+src/pysorteddict.egg-info/top_level.txt
