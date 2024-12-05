@@ -1,0 +1,6 @@
+[console_scripts]
+extract_data_streams = dfimagetools.scripts.extract_data_streams:Main
+list_file_entries = dfimagetools.scripts.list_file_entries:Main
+map_extents = dfimagetools.scripts.map_extents:Main
+recursive_hasher = dfimagetools.scripts.recursive_hasher:Main
+source_analyzer = dfimagetools.scripts.source_analyzer:Main
