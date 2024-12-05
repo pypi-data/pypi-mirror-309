@@ -1,0 +1,14 @@
+lxfx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lxfx/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lxfx/data.py,sha256=3fQW9bNxVQEkNtSjO0mFOezni0t8gcUXs_lqcjco9OI,32067
+lxfx/metrics.py,sha256=MvoexjzfezjC6M4NJxccXM0UCrP13ZD9YdCWB4VKzDo,2038
+lxfx/models.py,sha256=uXAK7B3I5s6hrqv6c3nvaGGHgycktkLOUOZ3B0QEbes,27678
+lxfx/predPlotter.py,sha256=KSTUa6Op-RUrW4lcvSilwxsDfxDQaY0iE1FveeKGU08,10347
+lxfx/trainers.py,sha256=MdAvJU5p7IcALeg9WUT2yin3qM-HHqp4DDAH6RRyeTI,19174
+lxfx/utils.py,sha256=8Kajkwxxn4CSYYFXm0tk8f_PIORqxQveZGj3undHdx8,2173
+lxfx/xfx.py,sha256=e3v4I5_-eKacU29KE5mYvPPutoBZXwJhzdDIwZf2-KE,9336
+lxfx-0.0.6.dist-info/LICENSE,sha256=8W6dgSKaGEfYcfrhp-RN5F_Sz8O6dZ6dwZzY5nndQW0,11324
+lxfx-0.0.6.dist-info/METADATA,sha256=z74ZxWscupxz0TTnGliDX9bfAoyr7Ip6uB8gX-Qm7UQ,17557
+lxfx-0.0.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+lxfx-0.0.6.dist-info/top_level.txt,sha256=YcK3XswaMPREzz5cJIo23ikB4SKxzKGKsyRnPpLt7UA,5
+lxfx-0.0.6.dist-info/RECORD,,
