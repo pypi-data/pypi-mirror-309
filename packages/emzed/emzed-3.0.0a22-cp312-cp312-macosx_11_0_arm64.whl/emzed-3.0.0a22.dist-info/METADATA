@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: emzed
+Version: 3.0.0a22
+Author-email: Uwe Schmitt <uwe.schmitt@id.ethz.ch>
+License: MIT
+Project-URL: Homepage, https://emzed.ethz.ch/3/emzed
+License-File: LICENSE
+Requires-Dist: IsoSpecPy==2.2.2
+Requires-Dist: pandas>=2.0.1
+Requires-Dist: pyper==1.1.1
+Requires-Dist: dill>=0.3.9
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: numpy<2,>=1.17
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: tqdm>=4.66.6
+Requires-Dist: python-calamine>=0.2.3
+Requires-Dist: pywin32>=0.3; platform_system == "Windows"
+Requires-Dist: importlib-resources>=1.1.0; python_version < "3.9"
+Provides-Extra: dev
+Requires-Dist: build>=1.2.2; extra == "dev"
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: pytest-cov>=5; extra == "dev"
+Requires-Dist: pytest-regtest>=2; extra == "dev"
+Requires-Dist: isort>=5; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: ruff>=0.7; extra == "dev"
+Requires-Dist: jupyter>=1.1; extra == "dev"
+Requires-Dist: nbsphinx>=0.9.5; extra == "dev"
+Requires-Dist: black-nb>=0.7; extra == "dev"
+Requires-Dist: twine>=5.1; extra == "dev"
+Requires-Dist: wheel>=0.44; extra == "dev"
+Requires-Dist: pre-commit>=4; extra == "dev"
+
