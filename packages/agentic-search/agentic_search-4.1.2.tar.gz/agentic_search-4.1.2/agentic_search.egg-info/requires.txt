@@ -1,0 +1,12 @@
+arxiv
+beautifulsoup4
+duckduckgo-search
+langchain-community
+langchain-core
+nltk
+pydantic
+pypdf
+python-dotenv
+requests
+yollama
+ypostgres_lib
