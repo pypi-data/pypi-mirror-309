@@ -1,0 +1,11 @@
+scan_pdf/__init__.py,sha256=yQA4ZELwXWvtUg7IaqCVRZ1pSew_w64v7bwLw_wl3f4,160
+scan_pdf/cli.py,sha256=nyCrbGGRoYRlfjDLCRBxzCZLFvuoRNvdsOefJ0PAgaU,3656
+scan_pdf/combine.py,sha256=R7omp72Kld20bYEFEZ0zo16Hkvx__MFFnAt4o306Eg0,584
+scan_pdf/convert.py,sha256=7C2O0t4huKadygDtcVJcjghaghaBOX4NcmyPU3Wdq9s,1159
+scan_pdf/scan.py,sha256=UVW-rB5uwWonFwaEsC1l072rVvBEOfkKFQBjEQxMNkQ,3105
+scan_pdf/util.py,sha256=QoK7thmiUjCe_pTotetnbTtAT2hyVxkqtWb4lObcBeo,614
+scan_pdf-0.4.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+scan_pdf-0.4.8.dist-info/METADATA,sha256=5L_M5F_l0a1nj_NxnHi6tzXp6VkdtZLwF-pnXtXzYDs,2961
+scan_pdf-0.4.8.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+scan_pdf-0.4.8.dist-info/entry_points.txt,sha256=im02wGnu8qtevVxvAHJpGB0490y4xUemjXoeyUFVDH4,45
+scan_pdf-0.4.8.dist-info/RECORD,,
