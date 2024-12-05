@@ -1,0 +1,11 @@
+scoresheet_models/__init__.py,sha256=qvq6PUKRQTisp-jFjeZEvgVVr2jaP0TZ_qjKShXFiDk,192
+scoresheet_models/__init__.pyi,sha256=xK0Y9-OpeUiytX9av5qRYOZkY1s-711V6v1d7LwT2Js,375
+scoresheet_models/_contours.py,sha256=XwTVb5Yb-adflbHnc8gIzGpjwsK1i99g28f7ZF161i0,672
+scoresheet_models/defs.py,sha256=rxpExUHJhCELaCmD9Ba4e1Y5jcqgt8sq5j3hpAV355w,1015
+scoresheet_models/drawing.py,sha256=BpypbYckC_VDjJu108SODsnGYI8c9TCO-L0D1fy-ue0,716
+scoresheet_models/fetch.py,sha256=OnQ4g6J32DCV9-Bg53e6hrbUacY4_7yL6nl-e_Rp_N0,2674
+scoresheet_models/model.py,sha256=Nedun-qjRQLE2tlIt-OofgyKd0AzlccP8Z8koQBZ8A8,1761
+scoresheet_models-0.3.0.dist-info/METADATA,sha256=17ehTQbPQ9oYiqaoTNE-6j1V0yOgpnDm4dV9dIEY3Jg,461
+scoresheet_models-0.3.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+scoresheet_models-0.3.0.dist-info/top_level.txt,sha256=xBk2-MEY3QIT6g7A1vpZj1R-zj47J-7FSaF3Wm3Syo8,18
+scoresheet_models-0.3.0.dist-info/RECORD,,
