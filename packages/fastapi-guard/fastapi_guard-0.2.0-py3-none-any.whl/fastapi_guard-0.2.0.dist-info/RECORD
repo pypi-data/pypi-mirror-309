@@ -1,0 +1,16 @@
+config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config/sus_patterns.py,sha256=S2Rcc_Lk5TVdF7UYwWbEGNLY9txZqbGvhl2_OKmMjKo,8451
+config/ip2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config/ip2/ip2location_config.py,sha256=79E32VV8W1XZ0VVnWjGfFrljNPs9QzZg5nAEtllHlgc,4255
+guard/__init__.py,sha256=WLPgOEgqtV_FjvqDrf5OKWs1U0pvhevx_5-tLNFuDN0,168
+guard/cloud_ips.py,sha256=RjHzo1Bd3FO1o_NjIgxv0WYtaAJCED3aj1uaGnh7f-s,3324
+guard/middleware.py,sha256=5ebHQ1ur0RXliFJ1CA3_U7MkFc6MLaX1e_QGZJmWH-w,10392
+guard/models.py,sha256=FT1YJZLNRbVnEX8na3YaZFhEjoCJtFhmxC5ruC6fGOU,10017
+guard/utils.py,sha256=PbxZMM--tq_HS5ht78xScrLIkK28eD1FRBgq-DBULxw,10030
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=LztFRqnHCy5kUpouR3lRHIQP5sUzozBMEtTGBpyPymA,1495
+fastapi_guard-0.2.0.dist-info/LICENSE,sha256=nsVFZxXgU1k0jCmf7VM2Hm8zb3wCtg26gN-ad_a9uRs,1064
+fastapi_guard-0.2.0.dist-info/METADATA,sha256=gyOuLiiKdrfnkkKo-qDNeNfSVPFZriUSweecv5rDER4,11212
+fastapi_guard-0.2.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+fastapi_guard-0.2.0.dist-info/top_level.txt,sha256=qS8GPcspf8WcFpI2pPXTicTFSrRHFK_ZEZHGvWRLBp0,19
+fastapi_guard-0.2.0.dist-info/RECORD,,
