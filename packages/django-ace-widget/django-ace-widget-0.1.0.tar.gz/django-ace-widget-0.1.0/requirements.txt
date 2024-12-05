@@ -1,0 +1,3 @@
+django
+django-app-requires
+django-static-ace-builds

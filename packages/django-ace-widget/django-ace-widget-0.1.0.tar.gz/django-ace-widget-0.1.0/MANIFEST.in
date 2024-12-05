@@ -1,0 +1,9 @@
+include MANIFEST.in
+include LICENSE
+include README.md
+include requirements.txt
+graft django_ace_widget
+prune django_ace_widget_demo
+prune django_ace_widget_example
+global-exclude __pycache__
+global-exclude *.py[co]
