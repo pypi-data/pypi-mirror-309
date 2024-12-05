@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sqliteanalyzer
+Version: 0.1.1
+Summary: Extract space-usage statistics from an SQLite database
+Home-page: https://github.com/santigl/sqliteanalyzer
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
