@@ -1,0 +1,2 @@
+[console_scripts]
+lazyopenai = lazyopenai.cli:main
