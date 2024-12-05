@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gymagent
+Version: 1.0.0
+Summary: gymagent
+Home-page: https://github.com/ZhiqingXiao/OpenAIGymSolution
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+gymagent: Agents for Gym
+=======================
+
+This package provides agents for `openai/gym`.
+
+Lists of agents:
+- `AcrobotV1Agent`
+- `BipedalWalkerV3Agent`
+- `CartPoleV0Agent`
+- `LunarlanderV2Agent`, `LunarLanderContinuousV2Agent`
+- `MountainCarV0Agent`
+- `PendulumV0Agent`
+- `PongNoFrameskipAgent`
