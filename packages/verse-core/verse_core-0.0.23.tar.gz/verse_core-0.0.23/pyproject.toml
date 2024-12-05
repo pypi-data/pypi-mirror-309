@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "verse-core"
+version = "0.0.23"
+description = "Verse Core"
+authors = ["Verse <admin@rapidverse.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rapidverse/verse"
+repository = "https://github.com/rapidverse/verse"
+documentation = "https://github.com/rapidverse/verse"
+keywords = ["verse", "core"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+PyYAML = "*"
+pydantic = "*"
+httpx = "*"
+
+[[tool.poetry.packages]]
+include = "verse"
+
+[tool.poetry.scripts]
+verse-run = "verse.core.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
