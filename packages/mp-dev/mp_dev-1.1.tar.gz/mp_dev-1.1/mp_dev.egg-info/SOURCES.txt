@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+mp_dev/__init__.py
+mp_dev/cli.py
+mp_dev/project_generator.py
+mp_dev.egg-info/PKG-INFO
+mp_dev.egg-info/SOURCES.txt
+mp_dev.egg-info/dependency_links.txt
+mp_dev.egg-info/entry_points.txt
+mp_dev.egg-info/requires.txt
+mp_dev.egg-info/top_level.txt
+mp_dev/commands/__init__.py
+mp_dev/commands/help_command.py
+mp_dev/commands/init_command.py
