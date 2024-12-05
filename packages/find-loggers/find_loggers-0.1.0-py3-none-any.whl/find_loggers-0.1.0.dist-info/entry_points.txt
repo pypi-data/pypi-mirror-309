@@ -1,0 +1,2 @@
+[console_scripts]
+find-loggers = find_loggers:main
