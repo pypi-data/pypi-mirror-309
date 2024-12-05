@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+arxette/__init__.py
+arxette/arx.py
+arxette/garch.py
+arxette.egg-info/PKG-INFO
+arxette.egg-info/SOURCES.txt
+arxette.egg-info/dependency_links.txt
+arxette.egg-info/requires.txt
+arxette.egg-info/top_level.txt
+tests/test_arx.py
