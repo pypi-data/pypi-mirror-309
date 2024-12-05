@@ -1,0 +1,9 @@
+warg_shell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+warg_shell/__main__.py,sha256=JBinc0CXsZoKlNFyseGZQbRe35N2mf2dATz_ZFL9KO8,62
+warg_shell/_cli.py,sha256=-SEZznN7U1urt4E5-ZB7eXrry_VSzuvA1-kx98g-Eg4,4354
+warg_shell/_jon.py,sha256=9sPfZFYr54kuaSgqpsJeDJB2w3zkLdV913VaqN6lDr0,1548
+warg_shell/_warg.py,sha256=9ExGO3XlosS9JzfTU1d1_KOkHPRzcvEfpoJLgWKJcik,4641
+warg_shell-1.0.0.dist-info/METADATA,sha256=qhkA1F7G_19UsXtr-eeSu9xLWK-MKFdet6tyBzNTcuM,1216
+warg_shell-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+warg_shell-1.0.0.dist-info/entry_points.txt,sha256=Eh-RG3gDCPwoAHE0my8gO7vZ2NImV-__ozxMbgtAWM4,51
+warg_shell-1.0.0.dist-info/RECORD,,
