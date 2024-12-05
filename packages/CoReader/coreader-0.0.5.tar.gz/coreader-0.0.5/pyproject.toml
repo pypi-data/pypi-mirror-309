@@ -1,0 +1,17 @@
+[project]
+name = "CoReader"
+version = "0.0.5"
+authors = [
+  { name="4White9264", email="yansheng_chen9264@163.com" },
+]
+description = "CoReader, AI Research Paper Assistant"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/4White9264/CoReader"
