@@ -1,0 +1,16 @@
+bdtrinity/__init__.py,sha256=RzCi0OkPkKEze598VIUoU72wnDD1EEunNoA70BgFAT0,37
+bdtrinity/anomaly.py,sha256=ZwRSFXNoeQuHv-TtNXHDq8Ko4HVbVIYtRmAl9_uW52I,168
+bdtrinity/arules.py,sha256=IiuewSY8ZqDAr8-xqsHN1ipje-5DNiSYvgP8NAb6n9g,167
+bdtrinity/classification.py,sha256=aDxEfmmybwBb7G1BMX509k9VJxXOG6KVh9LHMIqnSdE,177
+bdtrinity/clustering.py,sha256=gYjirHixjq37sQnEL7ZaB_U8BsPyZAdkIZiZnMHlC4c,171
+bdtrinity/datasets.py,sha256=lbRG0HFLVEtxVxADQ-CVw0zb2SCf4F5rUAOKBiOsh24,176
+bdtrinity/nlp.py,sha256=jiW5m4xWkzxppwyh4-zEOXw_ivEYx8I72mVVz-ul8V0,20325
+bdtrinity/regression.py,sha256=riIiroJ3u_Da9J6HMFryuIjWTpTIDkHJcLFAhumNyjw,172
+bdtrinity/time_series.py,sha256=YVGt4goT1JMy3dSdDrB5-JpSz1ptYOQi6GIKhA9Wp4U,178
+bdtrinity/timeseries.py,sha256=JfyBUKowksteVpArWTxen01uxSl-uAG8Yhjbf543MYg,177
+bdtrinity/utils.py,sha256=v1iQexa5ofjmwi00YsU6StTswNbd6aRyx4-WeWR4d14,3243
+bdtrinity-2.1.0.dist-info/LICENCE.txt,sha256=n2ewA16gXt_6D_i106O0vEat7UVVsWR0KLgXsIEeXd8,1117
+bdtrinity-2.1.0.dist-info/METADATA,sha256=Bou7-aJDl7LnYRjB9kU-Ko3JTDE8y6jMWIBxymQOVZc,5711
+bdtrinity-2.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bdtrinity-2.1.0.dist-info/top_level.txt,sha256=ZnsWtbTgXsG7Joh8LO1x4m076IdERFfl5SCCpdXApGM,10
+bdtrinity-2.1.0.dist-info/RECORD,,
