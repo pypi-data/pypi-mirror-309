@@ -1,0 +1,8 @@
+README.md
+setup.py
+symmat/__init__.py
+symmat/version.py
+symmat.egg-info/PKG-INFO
+symmat.egg-info/SOURCES.txt
+symmat.egg-info/dependency_links.txt
+symmat.egg-info/top_level.txt

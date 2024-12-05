@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: symmat
+Version: 0.1.0
+Summary: symmat
+Home-page: https://symmat.github.io
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+symmat: A Symbolic Toolbox for Matrix Calculation
+=======================
+
+## Website
+
+https://symmat.github.io
+
+
+## API
+
+`simplify(expression: str)->str`: Simplify an matrix expression
+
+
+Disclaimer: It is in alpha version. We are on the way to support more matrix simplification rules.
