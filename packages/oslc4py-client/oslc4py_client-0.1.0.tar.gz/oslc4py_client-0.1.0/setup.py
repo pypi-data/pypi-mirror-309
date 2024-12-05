@@ -1,0 +1,19 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="oslc4py_client",
+    version="0.1.0",
+    author="Matej Grós",
+    author_email="492906@mail.muni.cz",
+    description="OSLC Python client with common annotation types",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://pajda.fit.vutbr.cz/verifit/oslc4py-client",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+)

@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+oslc4py_client/Link.py
+oslc4py_client/OSLCPythonClient.py
+oslc4py_client/OSLCResource.py
+oslc4py_client/__init__.py
+oslc4py_client/decorators.py
+oslc4py_client/helpers.py
+oslc4py_client.egg-info/PKG-INFO
+oslc4py_client.egg-info/SOURCES.txt
+oslc4py_client.egg-info/dependency_links.txt
+oslc4py_client.egg-info/top_level.txt
