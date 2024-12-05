@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: core-https
+Version: 1.0.3
+Summary: This project/library contains common elements related to HTTP & API services...
+Author-email: Alejandro Cora González <alek.cora.glez@gmail.com>
+Maintainer: Alejandro Cora González
+License: MIT
+Project-URL: Homepage, https://gitlab.com/bytecode-solutions/core/core-https
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: core-tests==1.0.3
+Requires-Dist: urllib3==2.2.3
+Provides-Extra: test
+
+# core-https
+_______________________________________________________________________________
+
+This project/library contains common elements related to HTTP & API services...
+
+## Execution Environment
+
+### Install libraries
+```commandline
+pip install --upgrade pip 
+pip install virtualenv
+```
+
+### Create the Python Virtual Environment.
+```commandline
+virtualenv --python=python3.11 .venv
+```
+
+### Activate the Virtual Environment.
+```commandline
+source .venv/bin/activate
+```
+
+### Install required libraries.
+```commandline
+pip install .
+```
+
+### Check tests and coverage...
+```commandline
+python manager.py run-test
+python manager.py run-coverage
+```
