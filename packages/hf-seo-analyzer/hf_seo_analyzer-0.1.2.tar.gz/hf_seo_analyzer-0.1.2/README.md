@@ -1,0 +1,175 @@
+# hf_seo_analyzer
+
+**hf_seo_analyzer** là công cụ CLI và thư viện Python giúp phân tích nội dung Markdown thông qua API và tạo báo cáo chi tiết về SEO.
+
+## Chức năng chính
+- Gửi nội dung Markdown đến API để phân tích.
+- Tạo báo cáo Markdown với các số liệu SEO cụ thể.
+- Hỗ trợ phân tích file đơn lẻ hoặc cả thư mục.
+
+---
+
+## Cách sử dụng
+
+### 1. Phân tích file đơn lẻ
+Phân tích một file Markdown thông qua API:
+```bash
+python3.10 -m hf_seo_analyzer.cli test_markdown.md
+```
+
+---
+
+### 2. Phân tích cả thư mục
+Phân tích tất cả các file Markdown trong một thư mục:
+```bash
+python3.10 -m hf_seo_analyzer.cli md_examples --batch
+```
+
+---
+
+### 3. Tùy chỉnh API và khóa
+Bạn có thể cấu hình `API endpoint` và `API key` trong file `config.yaml` tại thư mục làm việc:
+```yaml
+endpoint: "https://example-api.com/analyze"
+api_key: "your_api_key"
+```
+
+Trong đó, thông tin `endpoint` và `api_key` được cung cấp nếu bạn là học viên của khoá học [Tạo website Docusaurus & Tối ưu SEO](https://learn-anything.vn/lp-khoa-hoc-tao-website-docusaurus-seo/).
+
+---
+
+## Báo cáo
+Khi phân tích thành công, các báo cáo sẽ được lưu trong thư mục `seo-report` tại thư mục làm việc.  
+Ví dụ:
+```
+seo-report/
+├── test_markdown_seo_report.md
+├── md_example_seo_report.md
+```
+
+---
+
+## Yêu cầu hệ thống
+- Python >= 3.10
+- Các thư viện Python: `requests`, `PyYAML`, `argparse`
+
+Cài đặt gói phụ thuộc từ `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Nội dung báo cáo mẫu
+
+#### 📝 SEO Analysis Report
+
+**Tệp:** `post_1.md`
+
+**Thời Gian Tạo:** 2024-11-16 12:03:48
+
+---
+
+## 🔍 Tóm Tắt
+- **Độ Dài Tiêu Đề:** 49 (Tốt)
+- **Độ Dài Mô Tả:** 157 (Tốt)
+- **Mật Độ Từ Khoá:** 0.74% (Ngoài khoảng)
+- **Các Tiêu Đề Tìm Thấy:** H2, H3
+- **Các Tiêu Đề Thiếu:** H4
+- **Liên Kết Nội Bộ:** 3
+- **Liên Kết Bên Ngoài:** 2
+- **Chứa Nội Dung Đa Phương Tiện:** Có
+
+---
+
+## 📋 Phân Tích Chi Tiết
+### Tiêu Đề
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Độ Dài Tiêu Đề** | 49 |
+| **Từ Khoá Trong Tiêu Đề** | Có |
+| **Trạng Thái Độ Dài** | Tốt |
+
+---
+
+### Mô Tả
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Độ Dài Mô Tả** | 157 |
+| **Trạng Thái Độ Dài** | Tốt |
+
+---
+
+### Đường dẫn url (slug)
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Độ Dài Slug** | 41 |
+| **Trạng Thái Độ Dài** | Tốt |
+| **Từ Khoá Trong URL** | Có |
+
+---
+
+### Mật Độ Từ Khoá
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Số Từ** | 2566 |
+| **Số Từ Khoá** | 19 |
+| **Mật Độ Từ Khoá** | 0.7404520654715511 |
+| **Trạng Thái Mật Độ** | Ngoài khoảng |
+
+---
+
+### Tiêu Đề
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Tìm thấy trong các cấp tiêu đề:** | H2, H3 |
+| **Thiếu trong các cấp tiêu đề:** | H4 |
+
+---
+
+### Thuộc tính mô tả ảnh
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Từ Khoá Trong thẻ alt** | Có |
+
+---
+
+### Liên Kết
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Số Liên Kết Bên Ngoài** | 2 |
+| **Số Liên Kết Nội Bộ** | 3 |
+| **Liên Kết Bên Ngoài** | ![1982167386.01. SCLZZZZZZZ SX500, https://m.media-amazon.com/images/P/1982167386.01._SCLZZZZZZZ_SX500_.jpg "Phương pháp PARA trong tổ chức thông tin hiệu quả 5", Amazon, https://amzn.to/3MGQoYn |
+| **Liên Kết Nội Bộ** | Hướng dẫn sử dụng Obsidian toàn tập, https://thinhvu.com/2023/01/29/huong-dan-su-dung-obsidian-toan-tap/, Phương pháp PARA - Tiago Forte, https://thinhvu.com/wp-content/uploads/2023/05/phuong-phap-para-summary-thinhvu.jpg "Phương pháp PARA trong tổ chức thông tin hiệu quả 3", Phương pháp PARA trong tổ chức thông tin hiệu quả, https://thinhvu.com/wp-content/uploads/2023/05/Obsidian-PARA-Zettelkasten-Journalit-thinhvu.jpg "Phương pháp PARA trong tổ chức thông tin hiệu quả 4" |
+
+---
+
+### Độ Dài Đoạn Văn
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Độ Dài Đoạn Văn Trung Bình** | 59.674418604651166 |
+| **Trạng Thái Độ Dài** | Tốt |
+
+---
+
+### Loại Từ Trong Tiêu Đề
+| Chỉ Số | Giá Trị |
+|--------|-------|
+| **Từ Tích Cực** | Có |
+| **Từ Tiêu Cực** | Không |
+| **Từ Mạnh** | Không |
+
+---
+
+### Điểm Số Từ
+100
+
+---
+
+### Từ Khoá Chính Duy Nhất
+True
+
+---
+
+### Chứa Nội Dung Đa Phương Tiện
+True
