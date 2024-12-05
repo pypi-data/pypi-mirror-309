@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+minido/__init__.py
+minido/minido.py
+minido.egg-info/PKG-INFO
+minido.egg-info/SOURCES.txt
+minido.egg-info/dependency_links.txt
+minido.egg-info/requires.txt
+minido.egg-info/top_level.txt

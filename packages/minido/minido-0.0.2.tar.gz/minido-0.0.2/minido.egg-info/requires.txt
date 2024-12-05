@@ -1,0 +1,7 @@
+mlxtend
+pandas
+openpyxl
+numpy
+scikit-learn
+matplotlib
+statsmodels
