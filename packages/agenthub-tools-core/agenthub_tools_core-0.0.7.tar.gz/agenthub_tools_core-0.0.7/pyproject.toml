@@ -1,0 +1,28 @@
+[project]
+name = "agenthub-tools-core"
+version = "0.0.7"
+description = "AgentHub core package"
+requires-python = ">=3.7"
+readme = "README.md"
+authors = [
+    { name = "Jacob Weiss", email = "jaweiss2305@gmail.com" }
+]
+
+dependencies = [
+    
+]
+
+[project.urls]
+homepage = "https://github.com/jacobweiss2305/agenthub-tools"
+repository = "https://github.com/jacobweiss2305/agenthub-tools/tree/main/packages/core"
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["agenthub_tools.core*"]
