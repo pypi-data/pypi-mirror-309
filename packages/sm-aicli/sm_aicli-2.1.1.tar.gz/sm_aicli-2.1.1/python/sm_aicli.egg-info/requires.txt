@@ -1,0 +1,4 @@
+gpt4all>=2.7.0
+openai
+gnureadline
+lark
