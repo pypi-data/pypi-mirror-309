@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: creaocode
+Version: 0.2.0
+Summary: Creao AI Core Library
+Home-page: https://www.creao.ai/login
+Author: dev@creao.ai
+Author-email: dev@creao.ai
+Requires-Dist: jinja2
+Requires-Dist: exa-py
+Requires-Dist: openai
+Requires-Dist: tqdm
+
