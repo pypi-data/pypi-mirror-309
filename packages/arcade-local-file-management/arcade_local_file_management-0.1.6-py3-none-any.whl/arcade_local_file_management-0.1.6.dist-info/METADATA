@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arcade_local_file_management
+Version: 0.1.6
+Summary: LLM tools for tasks relating to folder and file management that are stored locally
+Author: Eric Gustin
+Author-email: eric@arcade-ai.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: arcade-ai (==0.1.*)
+Description-Content-Type: text/markdown
+
+# Local File Management Tools
+
+This is an Arcade AI toolkit for managing local files. It includes tools for reading, writing, and searching files.
+
+## Installation
+
+```bash
+pip install arcade-local-file-management
+```
+
+[GitHub](https://github.com/EricGustin/https://github.com/EricGustin/local_file_management)
+
