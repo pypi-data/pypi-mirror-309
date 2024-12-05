@@ -1,0 +1,11 @@
+happy_migrations/__init__.py,sha256=UETlWURuExjtVBF1iZ04y92ZFMJUGzNSgqwAzckdb9c,287
+happy_migrations/__main__.py,sha256=zWdg1fvn2e8qBeqjlX_k413qxoxSDXriHuRqbmNIfOE,2249
+happy_migrations/_data_classes.py,sha256=fWdT_zUa7mpfSISTNSoLm562VRE1uKvjyobPsTQXZg0,716
+happy_migrations/_textual_app.py,sha256=hHT0waCneCyT_eHolKruP5E__o-GVHl_puYgWgM5z2I,1466
+happy_migrations/sqlite_backend.py,sha256=1HOCfBMdOVIefOAw8PDwElcEiaYZ01gpIzwCmlvZwkY,11095
+happy_migrations/utils.py,sha256=IE2XKnxHGKV0pQ_4Ix3Ciu3PENG3FsFOmAopapGEUYI,765
+happy_migrations-0.0.1.dist-info/METADATA,sha256=hKCc-_wqpPibfdIP1ItvYl5hW1TjJ_-kQj22q718C_g,1633
+happy_migrations-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+happy_migrations-0.0.1.dist-info/entry_points.txt,sha256=0I5n5EVoFzRUGcNpBcY3M0shkrDYu_2kg02IOQeguyc,58
+happy_migrations-0.0.1.dist-info/licenses/LICENSE,sha256=95kmncYxIXli2-49rQYd6vkIGw37044gOyNoVKbiOxM,1073
+happy_migrations-0.0.1.dist-info/RECORD,,
