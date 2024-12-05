@@ -1,0 +1,13 @@
+oslc4py_domains_auto/AutomationPlan.py,sha256=Uk9BSlSWj8PF-Ky5RTaxgO-6xfR1qX8ClUJtHgv3-BQ,8489
+oslc4py_domains_auto/AutomationRequest.py,sha256=B5azpmZn8twVj26Q0EfbcsepbqUOBlcCBOfbZvZfHog,9520
+oslc4py_domains_auto/AutomationResult.py,sha256=OYZT3jldDQK0x7W8NaP_RaHJPRbL10gun3YEnAH_EYQ,10994
+oslc4py_domains_auto/Contribution.py,sha256=1FK-ZEGBPU4wBr-wJkDf7MyJlPEGo6SFt2vlYGpi3E8,6352
+oslc4py_domains_auto/ParameterDefinition.py,sha256=M_WTAYNetFdGVlGJ-s7lwEdUhHkgJR_0iJnkl2d_i_s,9441
+oslc4py_domains_auto/ParameterInstance.py,sha256=2ZN-qEFcWOYBGPBbNMmc_nQy06uX287L5R7wo3VRH20,3904
+oslc4py_domains_auto/__init__.py,sha256=XYJYgcY7aM9-QG0o4FvNQl-1QwTp1Vp3kr420c92iCc,284
+oslc4py_domains_auto/oslc_constants.py,sha256=TME-KqJlJ2esmoofJ1_QbPjw6n5cu7p5OE5S7MgNKoE,551
+oslc4py_domains_auto-0.1.0.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oslc4py_domains_auto-0.1.0.dist-info/METADATA,sha256=FcEZsFDoSPQ82UoeFzXbPfgGrviL2rvnPs6UbUCFIbg,557
+oslc4py_domains_auto-0.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+oslc4py_domains_auto-0.1.0.dist-info/top_level.txt,sha256=Z-cQQH94erP_sFfSIJJr1teAZCAwgzVtFB6-gxCgwjE,21
+oslc4py_domains_auto-0.1.0.dist-info/RECORD,,
