@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: happy-migrations
+Version: 0.0.2
+Summary: Hopefully no tears.
+Project-URL: Homepage, https://github.com/Zimzozaur/happy-migrations
+Project-URL: Issues, https://github.com/Zimzozaur/happy-migrations/issues
+Author-email: Simon Piechutowski <szymonpiechutowski@gmail.com>
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: click~=8.1.7
+Requires-Dist: textual~=0.85.2
+Provides-Extra: dev
+Requires-Dist: pre-commit~=4.0.1; extra == 'dev'
+Requires-Dist: pytest~=8.3.2; extra == 'dev'
+Requires-Dist: ruff>=0.6.1; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Happy Migrations: Hopefully no tears. (WIP)
+
+
+TODO:
+1. Logging into _happy_log
+2. Log message to end user
+   1. No migration to apply
+   2. No migration to rollback
+3. Create a test scenario
+
+
+Make only edge methods run connect
+
+
+
+Methods:
+1. List migrations
+2. List logs
+3. Apply all
+4. Apply one
+5. Apply up to
+6. Rollback one
+7. Rollback up to
+8. Rollback all
+9. Mark as applied
+10. Mark as pending
