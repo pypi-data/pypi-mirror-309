@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/prits/__init__.py
+src/prits/__main__.py
+src/prits.egg-info/PKG-INFO
+src/prits.egg-info/SOURCES.txt
+src/prits.egg-info/dependency_links.txt
+src/prits.egg-info/requires.txt
+src/prits.egg-info/top_level.txt
