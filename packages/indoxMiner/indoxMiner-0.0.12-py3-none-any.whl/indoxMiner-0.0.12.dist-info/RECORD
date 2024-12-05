@@ -1,0 +1,15 @@
+indoxMiner/__init__.py,sha256=zv6bKRhMEEwPnoxGxgCGIq7bnvvXMIFXo0r-W9Pvimw,1167
+indoxMiner/auto_schema.py,sha256=EhqHSKfHA07Lbqcf3ZChuDpUl-s15CPS5mSOSvfMpRU,15256
+indoxMiner/extraction_results.py,sha256=rGnSMCRSoQI3TX28sprK1XweQJJEZGhoT377V8EmAZg,3022
+indoxMiner/extractor.py,sha256=aP1Bq5lfdXaGJY-gjs4W6-yrzeZXD-LkTuX4r3Q3QF0,22863
+indoxMiner/fields.py,sha256=_eeidEPEZ0D8lvBG9boch9TScRpfTkXwCrROSuNV6lc,17784
+indoxMiner/llms.py,sha256=a25yLvt0lFxenjAKsSDDVt8Vw8t9jsxuaG7JKlOeSu4,24371
+indoxMiner/loader.py,sha256=r_n2qJBgrzGYkVW4g7tcXKsJkCZNXrEZA6nyi34Y4ZQ,17167
+indoxMiner/ocr_processor.py,sha256=KaJ2vre_JGqnA4U1xaeaXf2GPDSM4PHdTJp2X-Fvkj0,7685
+indoxMiner/schema.py,sha256=ZxxHe4eGLgMy6ZGEkGtHuTp23F2LzoyEv9LOYJSJGk4,25606
+indoxMiner/utils.py,sha256=1j1r4DIyMy_8_MG9HN6PrxFt_v-s6nMhzWnaVO_xgnA,3913
+indoxMiner-0.0.12.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+indoxMiner-0.0.12.dist-info/METADATA,sha256=VLj_rcuT0ebW8bX2jQNFoQ5SG90gLUr5ldu0VrdHxVM,7485
+indoxMiner-0.0.12.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+indoxMiner-0.0.12.dist-info/top_level.txt,sha256=hSmOMz92A9qI5CtFFlu5k7qlmZ3lEDRjtFbDP5qmyik,11
+indoxMiner-0.0.12.dist-info/RECORD,,
