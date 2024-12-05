@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+zorkdata.egg-info/PKG-INFO
+zorkdata.egg-info/SOURCES.txt
+zorkdata.egg-info/dependency_links.txt
+zorkdata.egg-info/top_level.txt
