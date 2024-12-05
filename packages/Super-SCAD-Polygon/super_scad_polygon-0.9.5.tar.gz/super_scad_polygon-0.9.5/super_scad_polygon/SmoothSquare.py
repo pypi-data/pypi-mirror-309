@@ -1,0 +1,33 @@
+from typing import List, Set
+
+from super_scad.d2.Square import Square
+from super_scad_smooth_profile.SmoothProfile import SmoothProfile
+
+from super_scad_polygon.SmoothPolygonMixin import SmoothPolygonMixin
+
+
+class SmoothSquare(SmoothPolygonMixin, Square):
+    """
+    A widget for right triangles with smooth corners.
+    """
+
+    # ----------------------------------------------------------------------------------------------------------------------
+    def __init__(self,
+                 *,
+                 size: float,
+                 profiles: SmoothProfile | List[SmoothProfile] | None = None,
+                 extend_sides_by_eps: bool | List[bool] | Set[int] | None = None):
+        """
+        Object constructor.
+
+        :param size: The side_length of the square.
+        :param profiles: The profiles to be applied at nodes of the right triangle. When a single profile is given, this
+                         profile will be applied at all nodes.
+        :param extend_sides_by_eps: Whether to extend sides by eps for a clear overlap.
+        """
+        Square.__init__(self,
+                        size=size,
+                        extend_sides_by_eps=extend_sides_by_eps)
+        SmoothPolygonMixin.__init__(self, profiles=profiles)
+
+# ----------------------------------------------------------------------------------------------------------------------
