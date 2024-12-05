@@ -1,0 +1,8 @@
+.django_ace_widget_wrapper {
+    border: 1px solid var(--hairline-color);
+    display: inline-block;
+}
+
+.django_ace_widget_wrapper .ace_editor {
+    margin: 0;
+}

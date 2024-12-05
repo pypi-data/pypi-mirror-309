@@ -1,0 +1,15 @@
+django_ace_widget/__init__.py,sha256=h1y8hT51G-gx4NRphPRpx26SEujAbTmQp37brgU3cLE,51
+django_ace_widget/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_ace_widget/apps.py,sha256=epwxbruz2R2niM7gAtp8I25yVgxzF1VN7aofz2_JU3U,164
+django_ace_widget/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_ace_widget/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_ace_widget/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_ace_widget/widgets.py,sha256=iyU-T6rQK48AXMMHbNo7aHSQscmzx42WE1wGDq3i_5U,1475
+django_ace_widget/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ace_widget/static/django_ace_widget/ace_widget.css,sha256=dzbkbpKmB7ah2MFTlcIKQEOlSO4E3oJ1DO-XVdcJNzE,161
+django_ace_widget/static/django_ace_widget/ace_widget.js,sha256=jCFuj_7Jxdt3M3XgcTaf92npXOEb4wQC9suIKJKXewM,1423
+django_ace_widget-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_ace_widget-0.1.0.dist-info/METADATA,sha256=jcvLofhxZTPI-uVzplOmlHvwBKG8fQirC0-7W6TmXLw,2747
+django_ace_widget-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+django_ace_widget-0.1.0.dist-info/top_level.txt,sha256=L6jD5haC7LX7OHdNdi07ws9V0-8ErEHdV-X1QHVtHvU,18
+django_ace_widget-0.1.0.dist-info/RECORD,,
