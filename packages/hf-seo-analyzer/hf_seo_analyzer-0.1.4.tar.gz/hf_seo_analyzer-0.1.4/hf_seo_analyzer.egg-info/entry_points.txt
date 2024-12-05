@@ -1,0 +1,2 @@
+[console_scripts]
+hf-seo-analyzer = hf_seo_analyzer.cli:main
