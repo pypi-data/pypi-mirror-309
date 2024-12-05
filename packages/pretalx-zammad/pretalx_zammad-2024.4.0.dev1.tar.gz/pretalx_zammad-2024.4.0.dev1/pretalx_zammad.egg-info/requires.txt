@@ -1,0 +1,7 @@
+
+[dev]
+black
+build
+check-manifest
+flake8
+isort
