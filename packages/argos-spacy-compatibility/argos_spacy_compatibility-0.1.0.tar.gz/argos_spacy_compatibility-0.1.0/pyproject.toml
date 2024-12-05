@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "argos-spacy-compatibility"
+version = "0.1.0"
+description = "Compatiblity fix for argostranslate. Should no longer be required post 1.9.7"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+argos-translate = "argos_spacy_compatibility.cli:main"
+argospm = "argos_spacy_compatibility.argospm:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+ctranslate2 = "^4.0"
+sentencepiece = "0.2.0"
+spacy = "*"
+packaging = "*"
+sacremoses = "0.0.53"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
