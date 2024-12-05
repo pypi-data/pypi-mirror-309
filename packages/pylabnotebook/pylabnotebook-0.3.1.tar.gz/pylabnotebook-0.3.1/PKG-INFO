@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pylabnotebook
+Version: 0.3.1
+Summary: This package provides functions to write an automated labnotebook using git.
+Keywords: git,notebook,track,history,log
+Author-Email: Matteo Miotto <miotsdata@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/mmiots9/pylabnotebook
+Project-URL: Issues, https://github.com/mmiots9/pylabnotebook/issues
+Requires-Python: >=3.7
+Requires-Dist: setuptools>=72.1.0
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: sphinx-rtd-theme>=2.0.0
+Requires-Dist: myst-parser>=4.0.0
+Requires-Dist: Jinja2>=3.1.4
+Description-Content-Type: text/markdown
+
+<h1 align="center">Labnotebook 📔🖥</h1>
+
+This project aims to help bioinformaticians in creating the so called "Laboratory notebook" automatically, thanks to git workflow manager.
+Read the [documentation](https://pylabnotebook.readthedocs.io/en/latest/).
+
+**IMPORTANT**: this tool is based on git and its application, in particular, through git history it will create an html notebook divided by date and commit.
+
+<h3 style="margin-bottom:3px;">Features</h3>
+<ul>
+  <li>Automatically create a laboratory notebook</li>
+  <li>Customizable CSS file</li>
+  <li>Direct link to analysis files (expecially for user who creates .html reports. e.g. markdown or jupyter notebook html)</li>
+  <li>Export to html</li>
+</ul>
+
+<h3>Installation</h3>
+To install the package, run:
+
+```
+pip install pylabnotebook
+```
+
+This will install the pylabnotebook package; you can then run <code>labnotebook</code> function from within the terminal (detailed explanation below).
+
+For a complete guide, check the official [user guide](https://pylabnotebook.readthedocs.io/en/latest/user_guide.html).
+
+<h3>Issue reporting and suggestions</h3>
+If you find any issue or you want to suggest some edit, please feel free to open an issue or a pull request.

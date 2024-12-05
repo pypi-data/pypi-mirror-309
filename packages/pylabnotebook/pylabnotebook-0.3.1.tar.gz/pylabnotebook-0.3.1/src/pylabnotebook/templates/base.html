@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ config["NOTEBOOK_NAME"] }} lab notebook</title>
+
+    <style>
+      {{ style_css }}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="labtitle">{{ config["NOTEBOOK_NAME"] }} lab notebook</h1>
+      <p id="creationdate">Created on: {{ create_date }}</p>
+      <p id="labauthor">Author: {{ config["LAB_AUTHOR"] }}</p>
+    </header>
+    {% set ns = namespace(last_date = None) %}
+    <main>
+      <button id="bottom-btn" class="go-bottom">&#x25BC;</button>
+
+      {% for sha, commit in commits_info.items() %} {% if commit['date'] !=
+      ns.last_date %}
+      <h2 class="day-el">{{ commit.get('date') }}</h2>
+      {% set ns.last_date = commit.get('date') %} {% endif %}
+
+      <div class="commit-el" id="{{ sha }}">
+        <h3 class="title-el">{{ commit.get('title') }}</h3>
+        <p class="mess-el">{{ commit.get('message') }}</p>
+        <p class="author-el">Author: {{ commit.get('author') }}</p>
+        <p class="sha-el">sha: {{ sha }}</p>
+
+        {% if commit.get('analysis_files')|length == 0 %}
+        <div class="analyses-el">Analysis file/s: <code>none</code></div>
+        {% else %}
+        <div class="analyses-el">
+          Analysis file/s:
+          <ul class="analysis_list">
+            {% for a_file in commit.get('analysis_files') %} {% if link %}
+            <li>
+              <code
+                ><a href="{{ a_file }}" target="_blank">{{ a_file }}</a></code
+              >
+            </li>
+            {% else %}
+            <li><code>{{ a_file }}</code></li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+        {% endif %}
+
+        <details>
+          <summary>Changed files:</summary>
+          <ul class="changed_list">
+            {% for c_file in commit.get('changed_files') %}
+            <li>{{ c_file }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+      </div>
+
+      {% endfor %}
+    </main>
+
+    <footer>
+      <p>
+        Made with
+        <a href="https://github.com/mmiots9/pylabnotebook" target="_blank"
+          >pylabnotebook</a
+        >&copy; mmiots9, 2024
+      </p>
+    </footer>
+    <script>
+      document
+        .getElementById("bottom-btn")
+        .addEventListener("click", function () {
+          const button = this;
+          const isScrollingToBottom = button.className === "go-bottom";
+
+          button.innerHTML = isScrollingToBottom ? "&#x25B2;" : "&#x25BC;";
+
+          if (isScrollingToBottom) {
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: "smooth",
+            });
+          } else {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }
+
+          button.classList.toggle("go-bottom");
+        });
+    </script>
+  </body>
+</html>
