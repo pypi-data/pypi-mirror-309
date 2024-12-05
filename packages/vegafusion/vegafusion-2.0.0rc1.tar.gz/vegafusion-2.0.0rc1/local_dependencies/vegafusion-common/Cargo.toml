@@ -1,0 +1,94 @@
+[package]
+name = "vegafusion-common"
+version = "2.0.0-rc1"
+edition = "2021"
+description = "Common components required by multiple VegaFusion crates"
+license = "BSD-3-Clause"
+resolver = "2"
+
+[features]
+py = ["pyo3", "pyo3-arrow"]
+json = ["serde_json/preserve_order", "arrow/json", "chrono"]
+prettyprint = ["arrow/prettyprint"]
+proto = ["datafusion-proto", "datafusion-proto-common", "prost"]
+
+[dependencies]
+thiserror = "^1.0.29"
+url = { version = "2.3.1", optional = true}
+
+[dependencies.arrow]
+version = "53.2.0"
+default-features = false
+features = ["ipc"]
+
+[dependencies.sqlparser]
+version = "0.51.0"
+optional = true
+
+[dependencies.chrono]
+version = "0.4.35"
+default-features = false
+optional = true
+
+[dependencies.ahash]
+version = "0.8.11"
+
+[dependencies.pyo3]
+version = "0.22.4"
+optional = true
+
+[dependencies.jni]
+version = "0.21.1"
+optional = true
+
+[dependencies.pyo3-arrow]
+version = "0.5.1"
+default-features = false
+optional = true
+
+[dependencies.base64]
+version = "0.21.2"
+optional = true
+
+[dependencies.prost]
+version = "0.13.3"
+optional = true
+
+[dependencies.object_store]
+version = "0.11.0"
+optional = true
+
+[dependencies.serde_json]
+version = "1.0.91"
+default-features = false
+optional = true
+
+[dependencies.datafusion-common]
+version = "43.0.0"
+default-features = false
+
+[dependencies.datafusion-expr]
+version = "43.0.0"
+
+[dependencies.datafusion-proto]
+version = "43.0.0"
+default-features = false
+features = [ "parquet",]
+optional = true
+
+[dependencies.datafusion-proto-common]
+version = "43.0.0"
+default-features = false
+optional = true
+
+[dependencies.datafusion-functions]
+version = "43.0.0"
+default-features = false
+features = [
+  "core_expressions",
+  "string_expressions",
+  "datetime_expressions",
+  "hashbrown"]
+
+[dependencies.datafusion-functions-nested]
+version = "43.0.0"

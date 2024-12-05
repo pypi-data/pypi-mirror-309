@@ -1,0 +1,151 @@
+[[bench]]
+name = "spec_benchmarks"
+harness = false
+
+[package]
+name = "vegafusion-runtime"
+license = "BSD-3-Clause"
+edition = "2021"
+version = "2.0.0-rc1"
+description = "VegaFusion Runtime"
+resolver = "2"
+
+[features]
+default = [
+  "fs",
+  "multi-thread",
+  "rustls-tls",
+  "s3",
+  "http",
+  "parquet",
+  "proto",
+  "tonic",
+]
+py = ["vegafusion-core/py"]
+proto = ["vegafusion-common/proto", "dep:datafusion-proto"]
+tonic = ["dep:tonic", "vegafusion-core/tonic_support", "proto"]
+protobuf-src = ["vegafusion-core/protobuf-src"]
+s3 = ["object_store/aws"]
+http = ["object_store/http"]
+http-wasm = ["object-store-wasm/http"]
+fs = ["tokio/fs"]
+parquet = ["datafusion-common/parquet", "datafusion/parquet"]
+multi-thread = ["tokio/rt-multi-thread"]
+rustls-tls = ["reqwest/rustls-tls"]
+
+[dependencies]
+regex = "^1.5.5"
+num-traits = "0.2.15"
+itertools = "0.11.0"
+float-cmp = "0.9.0"
+lru = "0.11.1"
+async-recursion = "1.0.5"
+async-lock = "2.8.0"
+tempfile = "3.3.0"
+futures-util = "0.3.21"
+bytes = "1.1.0"
+log = "0.4.17"
+env_logger = "0.10.0"
+ordered-float = "3.6.0"
+async-mutex = "1.4.0"
+url = "2.3.1"
+cfg-if = "1.0.0"
+async-trait = "0.1.73"
+futures = "0.3.21"
+
+[dependencies.sqlparser]
+version = "0.51.0"
+
+[dependencies.chrono]
+version = "0.4.35"
+default-features = false
+
+[dependencies.chrono-tz]
+version = "0.9.0"
+features = [ "case-insensitive", "filter-by-regex",]
+
+[dependencies.reqwest]
+version = "0.12.8"
+default-features = false
+features = ["json"]
+
+[dependencies.tonic]
+version = "0.12.3"
+optional = true
+
+[dependencies.tokio]
+version = "1.36.0"
+features = ["macros"]
+
+[dependencies.uuid]
+version = "^1.2"
+features = ["v4"]
+
+[dependencies.vegafusion-common]
+path = "../vegafusion-common"
+features = ["json", "sqlparser", "prettyprint", "object_store", "url"]
+version = "2.0.0-rc1"
+
+[dependencies.vegafusion-core]
+path = "../vegafusion-core"
+features = ["sqlparser"]
+version = "2.0.0-rc1"
+
+[dependencies.prost]
+version = "0.13.3"
+
+[dependencies.serde]
+version = "1.0.137"
+features = ["derive"]
+
+[dependencies.object_store]
+version = "0.11.0"
+
+[dependencies.object-store-wasm]
+version = "0.0.6"
+
+[dependencies.lazy_static]
+version = "1.5"
+
+[dependencies.serde_json]
+version = "1.0.91"
+default-features = false
+
+[dependencies.datafusion]
+version = "43.0.0"
+default-features = false
+features = [ "nested_expressions",]
+
+[dependencies.datafusion-common]
+version = "43.0.0"
+default-features = false
+
+[dependencies.datafusion-expr]
+version = "43.0.0"
+
+[dependencies.datafusion-proto]
+version = "43.0.0"
+default-features = false
+features = [ "parquet",]
+optional = true
+
+[dependencies.datafusion-physical-expr]
+version = "43.0.0"
+default-features = false
+
+[dependencies.datafusion-optimizer]
+version = "43.0.0"
+default-features = false
+
+[dependencies.datafusion-functions]
+version = "43.0.0"
+default-features = false
+
+[dependencies.datafusion-functions-nested]
+version = "43.0.0"
+
+[dependencies.datafusion-functions-aggregate]
+version = "43.0.0"
+
+[dependencies.datafusion-functions-window]
+version = "43.0.0"
