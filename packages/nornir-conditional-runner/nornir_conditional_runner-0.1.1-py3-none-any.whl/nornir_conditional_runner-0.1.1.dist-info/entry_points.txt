@@ -1,0 +1,3 @@
+[nornir.plugins.runners]
+groupConditional=nornir_conditional_runner.conditional_runner:ConditionalRunner
+
