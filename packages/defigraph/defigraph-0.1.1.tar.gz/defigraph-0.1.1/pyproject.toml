@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defigraph"
+version = "0.1.1"
+authors = [{ name = "Meek Msaki", email = "meek.dev3@gmail.com" }]
+description = "A package for creating a directed graphs based on DeFi protocols"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pytest>=8.3.3", "ruff>=0.7.4", "web3>=7.5.0"]
+
+[project.urls]
+Homepage = "https://github.com/mmsaki/defigraph"
+Issues = "https://github.com/mmsaki/defigraph/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+addopts = ["--import-mode=importlib"]
+
+[project.optional-dependencies]
+dev = ["bumpver", "pytest"]
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "🏷️ bump version {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"']
