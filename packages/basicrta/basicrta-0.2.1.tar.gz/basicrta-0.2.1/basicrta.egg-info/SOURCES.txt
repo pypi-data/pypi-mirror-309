@@ -1,0 +1,12 @@
+AUTHORS.md
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+basicrta.egg-info/PKG-INFO
+basicrta.egg-info/SOURCES.txt
+basicrta.egg-info/dependency_links.txt
+basicrta.egg-info/requires.txt
+basicrta.egg-info/top_level.txt
