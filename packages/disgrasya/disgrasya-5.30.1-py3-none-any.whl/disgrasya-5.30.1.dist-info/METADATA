@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: disgrasya
+Version: 5.30.1
+Summary: A utility for checking credit cards through multiple gateways using multi-threading and proxies.
+Author: Jaehwan0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+
