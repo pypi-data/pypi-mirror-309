@@ -1,0 +1,13 @@
+external_dependency/en_core_web_sm-any-py3-none-any.whl,sha256=hswUH2OULUssX87gZjD9b5BHiNLwqwBczkWq24-3OIk,12803381
+saged/__init__.py,sha256=q1EPVb4RIycb_FfqLDGqa_lLGeKdG3iNx1ZSHvyMW40,870
+saged/_assembler.py,sha256=DA_vLqtvV-otR11jWZH0VmqbL3CoP5Rci5PtXhs_ffA,27929
+saged/_diagnoser.py,sha256=c6lDE5YyBmHrsaN1obBuig0cCT8ZxI3d4ObP4ZWeqxk,35493
+saged/_extractor.py,sha256=umP3BSyrz9n9jKW9ObnLQqrLNGmuboXAuUlDaAPkCCI,43202
+saged/_generator.py,sha256=oDG2T1xQngD71XXXmM8Pc_AfssaN5VUiLciz5K4HRQ0,1826
+saged/_pipeline.py,sha256=78NvaCM7o-xFlig8FCYL9NpUm_pdpAdO5zw74FV1zDw,29361
+saged/_saged_data.py,sha256=2B_-7YpctV5FB6SfC9fOccF9on8TpDReJUH4lJfT0yU,24170
+saged/_scrape.py,sha256=Gt9L_VhVTiPBd0YGgMKWmKox2biebFK0SJqHYS-3I9A,30613
+saged/_utility.py,sha256=7htKiJL9Y5L-w9kCGAUU1lUqONRZCRzBIWOuk1cG-Rw,5841
+sagedbias-0.0.7.dist-info/METADATA,sha256=o13gW-_B4buHQglZ5XY5nVmm0-0VV-VYAyxraTe4tzA,1193
+sagedbias-0.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sagedbias-0.0.7.dist-info/RECORD,,
