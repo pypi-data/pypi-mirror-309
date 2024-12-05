@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ebook-searching-proto
+Version: 0.1.1
+Summary: Generated protobuf and gRPC code
+Home-page: https://github.com/levandattt/EBOOK_Search_OWL
+Author: Chu
+Author-email: truongquangchu.tqc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
