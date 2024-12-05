@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+roblox_version/__init__.py
+roblox_version/version.py
+roblox_version.egg-info/PKG-INFO
+roblox_version.egg-info/SOURCES.txt
+roblox_version.egg-info/dependency_links.txt
+roblox_version.egg-info/requires.txt
+roblox_version.egg-info/top_level.txt
