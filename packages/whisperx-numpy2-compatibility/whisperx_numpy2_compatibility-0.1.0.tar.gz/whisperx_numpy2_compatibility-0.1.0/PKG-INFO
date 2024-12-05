@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: whisperx-numpy2-compatibility
+Version: 0.1.0
+Summary: A compatibility fix to allow whisperx to work with other packages that require numpy>2. Should no longer be required once pull requests on the main package are accepted.
+License: MIT
+Author: Jonathan Fox
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: faster-whisper (>=1.0.3,<2.0.0)
+Requires-Dist: llvmlite (>=0.43.0,<0.44.0)
+Requires-Dist: nltk
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: pandas
+Requires-Dist: pyannote-audio (>=3.3.2,<4.0.0)
+Requires-Dist: torch (>=2)
+Requires-Dist: torchaudio (>=2)
+Requires-Dist: torchmetrics (>=1.5.2,<2.0.0)
+Requires-Dist: transformers
+Description-Content-Type: text/markdown
+
+A compatability fix to allow whisperx to work with other packages that require numpy>2. Should no longer be required once pull requests on the main package are accepted.
+
