@@ -1,0 +1,2 @@
+import{d as o,c as r,g as a,h as c,o as n,j as e,k as t,aT as _,aU as f}from"./index-BujuzOkm.js";import{u as p}from"./usePageTitle-DmJKbRnt.js";const h=o({__name:"Artifacts",setup(u){return p("Artifacts"),(l,d)=>{const s=c("p-layout-default");return n(),r(s,{class:"artifacts"},{header:a(()=>[e(t(_))]),default:a(()=>[e(t(f))]),_:1})}}});export{h as default};
+//# sourceMappingURL=Artifacts-DOhyon06.js.map
