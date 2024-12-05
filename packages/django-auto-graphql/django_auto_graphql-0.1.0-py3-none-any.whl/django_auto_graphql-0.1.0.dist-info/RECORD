@@ -1,0 +1,8 @@
+auto_graphql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_graphql/apps.py,sha256=TbRVUbBr7rGOAKakGPw01qfdKi32FQbQnmQABdS2HJw,98
+auto_graphql/urls.py,sha256=YdAAnTsggkVIj-6IdStTXEWjU7Im9H-gC-CIbelVw3U,154
+auto_graphql/views.py,sha256=K20jX9iYj5Khrh1M4fxnA_QXNkIrhxYp4NJfK9UBZb0,5336
+django_auto_graphql-0.1.0.dist-info/METADATA,sha256=f4KyPt3czGqfIziOdwGsJE5Q0reHAAsEcDMLute_cxs,7662
+django_auto_graphql-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_auto_graphql-0.1.0.dist-info/top_level.txt,sha256=7watly2cUwQ-3utQrcwu558RW0NtuLXK4pKjMc2Y1zw,13
+django_auto_graphql-0.1.0.dist-info/RECORD,,
