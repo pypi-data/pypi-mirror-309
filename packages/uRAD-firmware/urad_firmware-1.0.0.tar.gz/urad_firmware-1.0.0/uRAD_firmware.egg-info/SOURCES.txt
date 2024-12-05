@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+uRAD.py
+lib/__init__.py
+lib/uRAD_firmware_lib.py
+uRAD_firmware.egg-info/PKG-INFO
+uRAD_firmware.egg-info/SOURCES.txt
+uRAD_firmware.egg-info/dependency_links.txt
+uRAD_firmware.egg-info/entry_points.txt
+uRAD_firmware.egg-info/requires.txt
+uRAD_firmware.egg-info/top_level.txt
