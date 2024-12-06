@@ -1,0 +1,14 @@
+include README.md
+include maskgct/maskgct/tts/maskgct/config/*.json
+include maskgct/maskgct/tts/maskgct/g2p/sources/*
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/config.json
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/poly_bert_model.onnx
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/polychar.txt
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/polydict_r.json
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/polydict.json
+include maskgct/maskgct/tts/maskgct/g2p/sources/g2p_chinese_model/vocab.txt
+include maskgct/maskgct/tts/maskgct/g2p/utils/mls_en.json
+include maskgct/maskgct/tts/maskgct/g2p/g2p/vocab.json
+include maskgct/maskgct/tts/maskgct/ckpt/wav2vec2bert_stats.pt
+recursive-include maskgct/maskgct/tts/maskgct/g2p/sources/*
+recursive-include maskgct *.py
