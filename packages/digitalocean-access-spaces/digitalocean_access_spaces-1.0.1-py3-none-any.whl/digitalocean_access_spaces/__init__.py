@@ -1,0 +1,2 @@
+from .digitalocean_access_spaces import digitalocean_access_spaces
+digitalocean_access_spaces = digitalocean_access_spaces
