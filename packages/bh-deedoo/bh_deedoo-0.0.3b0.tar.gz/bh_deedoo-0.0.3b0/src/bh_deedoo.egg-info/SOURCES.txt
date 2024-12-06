@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/bh_deedoo/__init__.py
+src/bh_deedoo/__main__.py
+src/bh_deedoo.egg-info/PKG-INFO
+src/bh_deedoo.egg-info/SOURCES.txt
+src/bh_deedoo.egg-info/dependency_links.txt
+src/bh_deedoo.egg-info/entry_points.txt
+src/bh_deedoo.egg-info/requires.txt
+src/bh_deedoo.egg-info/top_level.txt
+src/bh_deedoo/cmds/deedoo/__init__.py
+src/bh_deedoo/cmds/deedoo/defaults.py
+src/bh_deedoo/cmds/deedoo/server.py
+src/bh_deedoo/cmds/deedoo/stoppers.py
+src/bh_deedoo/cmds/deedoo/util.py
+tests/test_dummy.py
