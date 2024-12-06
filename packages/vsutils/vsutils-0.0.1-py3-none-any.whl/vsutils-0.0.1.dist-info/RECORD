@@ -1,0 +1,9 @@
+vsutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsutils/__main__.py,sha256=VOmPnKBFDB_yjz0EjdO5T93XbgYdRya8Hsdh8jD8eQ8,2503
+vsutils/ADMET/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsutils/ADMET/filters.py,sha256=YwpMHDWMjNCHf_jWW24ihkV72Us7slK9RaVxNd2KT08,13051
+vsutils/ADMET/mc_filter.py,sha256=3a1bkGD9e0IhGWiWmcqzkofS6kpBtrRHimlBl-xbK98,3842
+vsutils-0.0.1.dist-info/METADATA,sha256=SrbVhcCQyTsCsiS80CCmHJh4WXktLRpW9_Bxx175vvo,2814
+vsutils-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+vsutils-0.0.1.dist-info/licenses/LICENSE,sha256=aDa04y2yaC0pJ1FzdGtyko5ATmIYIWHffL3FFK6Z8ug,1063
+vsutils-0.0.1.dist-info/RECORD,,
