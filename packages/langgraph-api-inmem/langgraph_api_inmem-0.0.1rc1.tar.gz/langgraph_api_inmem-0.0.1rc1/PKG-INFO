@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: langgraph-api-inmem
+Version: 0.0.1rc1
+Summary: 
+Author: Will Fu-Hinthorn
+Author-email: will@langchain.dev
+Requires-Python: >=3.11.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langgraph (>=0.2.48,<0.3.0)
+Requires-Dist: langgraph-checkpoint (>=2.0.5,<3.0.0)
+Requires-Dist: pyzmq (>=26.2.0,<27.0.0)
+Description-Content-Type: text/markdown
+
+
