@@ -1,0 +1,483 @@
+Metadata-Version: 2.3
+Name: agentsys
+Version: 0.2.0
+Summary: A robust, asynchronous multi-agent development framework
+Project-URL: Homepage, https://github.com/lifsys/agentsys
+Project-URL: Repository, https://github.com/lifsys/agentsys.git
+Project-URL: Documentation, https://github.com/lifsys/agentsys#readme
+Project-URL: Issues, https://github.com/lifsys/agentsys/issues
+Author: LifSys AI
+License: MIT License
+        
+        Copyright (c) 2024 OpenAI
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: aiofiles>=23.2.1
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: numpy
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pytest-asyncio>=0.23.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: dev
+Requires-Dist: black>=22.0; extra == 'dev'
+Requires-Dist: isort>=5.0; extra == 'dev'
+Requires-Dist: mypy>=1.0; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.23.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'dev'
+Requires-Dist: pytest-timeout>=2.2.0; extra == 'dev'
+Requires-Dist: pytest>=7.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# AgentSys
+
+A robust, asynchronous multi-agent development framework designed for building scalable agent-based systems.
+
+## Overview
+
+AgentSys is a Python framework that provides a flexible and powerful infrastructure for developing, testing, and deploying multi-agent systems. It focuses on:
+
+- **Asynchronous Execution**: Built from the ground up with async/await support
+- **Robust Error Handling**: Comprehensive error management and recovery
+- **Flexible Routing**: Multiple routing strategies for agent communication
+- **Persistent Storage**: Both in-memory and file-based storage options
+- **Comprehensive Testing**: Full test coverage with async support
+
+## Core Concepts
+
+### 1. Agents
+
+An agent in AgentSys is a self-contained unit that can:
+- Process tasks asynchronously
+- Maintain internal state
+- Communicate with other agents
+- Handle errors gracefully
+- Store and retrieve data
+
+Example of a basic agent:
+
+```python
+from agentsys.plugins.router import Agent, Task, ExecutionResult, AgentState
+
+class DataProcessingAgent(Agent):
+    def __init__(self, name: str, storage):
+        super().__init__(name)
+        self.storage = storage
+        self.processed_count = 0
+
+    async def process(self, task: Task) -> ExecutionResult:
+        try:
+            # Process the task
+            result = await self._transform_data(task.input)
+            
+            # Store the result
+            await self.storage.put(f"result_{task.id}", result)
+            
+            # Update internal state
+            self.processed_count += 1
+            
+            return ExecutionResult(
+                status=AgentState.COMPLETED,
+                result=result
+            )
+        except Exception as e:
+            return ExecutionResult(
+                status=AgentState.FAILED,
+                error=str(e)
+            )
+
+    async def _transform_data(self, data):
+        # Custom data transformation logic
+        return f"Processed: {data}"
+```
+
+### 2. Tasks
+
+Tasks are the fundamental unit of work in AgentSys:
+
+```python
+from agentsys.plugins.router import Task, TaskPriority
+
+# Basic task
+task = Task(
+    input="raw_data",
+    id="unique_id",  # Optional, auto-generated if not provided
+    metadata={"source": "sensor_1"}  # Optional metadata
+)
+
+# Priority task
+priority_task = Task(
+    input="urgent_data",
+    priority=TaskPriority.HIGH
+)
+
+# Task with routing hints
+routed_task = Task(
+    input="specialized_data",
+    routing_key="data_processing"
+)
+```
+
+### 3. Router
+
+The router orchestrates communication between agents:
+
+```python
+from agentsys.plugins.router import AgentRouter, RoutingConfig, RoutingStrategy
+
+# Create router with custom configuration
+router = AgentRouter(
+    routing_config=RoutingConfig(
+        strategy=RoutingStrategy.ROUND_ROBIN,
+        timeout=60,
+        max_retries=3
+    )
+)
+
+# Register agents
+data_agent = DataProcessingAgent("data_processor", storage)
+await router.register_agent(data_agent)
+
+# Register routes with decorators
+@router.route("process_data")
+async def process_data(task: Task):
+    return await data_agent.process(task)
+
+# Or register routes directly
+router.add_route(
+    route_key="backup_data",
+    handler=data_agent.process
+)
+```
+
+### 4. Storage
+
+AgentSys provides flexible storage options:
+
+```python
+from agentsys.plugins.storage import FileStorage, MemoryStorage, StorageConfig
+
+# File storage with backup
+file_storage = FileStorage(
+    config=StorageConfig(
+        base_path="./data",
+        backup_enabled=True,
+        backup_interval=3600
+    )
+)
+
+# Memory storage for temporary data
+memory_storage = MemoryStorage()
+
+# Store and retrieve data
+await storage.put("key", {"data": "value"})
+data = await storage.get("key")
+await storage.delete("key")
+
+# List keys with prefix
+keys = await storage.list(prefix="result_")
+
+# Backup data
+await storage.backup()
+```
+
+## Building a Complete Agent System
+
+Here's how to build a complete agent system:
+
+```python
+import asyncio
+from agentsys.plugins.router import (
+    AgentRouter, Agent, Task, ExecutionResult,
+    AgentState, RoutingConfig, RoutingStrategy
+)
+from agentsys.plugins.storage import FileStorage, StorageConfig
+
+# 1. Define your agent
+class AnalyticsAgent(Agent):
+    def __init__(self, name: str, storage):
+        super().__init__(name)
+        self.storage = storage
+    
+    async def process(self, task: Task) -> ExecutionResult:
+        try:
+            # Process analytics
+            result = await self._analyze(task.input)
+            
+            # Store results
+            await self.storage.put(
+                f"analytics_{task.id}",
+                result
+            )
+            
+            return ExecutionResult(
+                status=AgentState.COMPLETED,
+                result=result
+            )
+        except Exception as e:
+            return ExecutionResult(
+                status=AgentState.FAILED,
+                error=str(e)
+            )
+    
+    async def _analyze(self, data):
+        # Your analytics logic here
+        return {"analyzed": data}
+
+# 2. Set up storage
+storage = FileStorage(
+    config=StorageConfig(
+        base_path="./data",
+        backup_enabled=True
+    )
+)
+
+# 3. Configure and create router
+router = AgentRouter(
+    routing_config=RoutingConfig(
+        strategy=RoutingStrategy.ROUND_ROBIN,
+        timeout=60
+    )
+)
+
+# 4. Create and register agent
+analytics_agent = AnalyticsAgent("analytics_1", storage)
+await router.register_agent(analytics_agent)
+
+# 5. Define routes
+@router.route("analyze_data")
+async def analyze_data(task: Task):
+    return await analytics_agent.process(task)
+
+# 6. Submit tasks
+async def main():
+    try:
+        # Create task
+        task = Task(
+            input={"data": "sample"},
+            metadata={"priority": "high"}
+        )
+        
+        # Submit and wait for result
+        result = await router.submit_task(task)
+        
+        # Check result
+        if result.status == AgentState.COMPLETED:
+            print(f"Analysis complete: {result.result}")
+        else:
+            print(f"Analysis failed: {result.error}")
+    finally:
+        # Clean up
+        await router.stop()
+
+# 7. Run the system
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+## Testing Your Agents
+
+Comprehensive testing example:
+
+```python
+import pytest
+from agentsys.plugins.router import AgentRouter, Task, AgentState
+
+@pytest.fixture
+async def router_instance():
+    router = AgentRouter()
+    try:
+        yield router
+    finally:
+        await router.stop()
+
+@pytest.fixture
+async def analytics_agent(router_instance):
+    agent = AnalyticsAgent("test_agent", MemoryStorage())
+    await router_instance.register_agent(agent)
+    return agent
+
+@pytest.mark.asyncio
+async def test_analytics_agent(router_instance, analytics_agent):
+    # Test data
+    test_data = {"test": "data"}
+    
+    # Create and submit task
+    task = Task(input=test_data)
+    result = await router_instance.submit_task(task)
+    
+    # Verify result
+    assert result.status == AgentState.COMPLETED
+    assert "analyzed" in result.result
+    assert result.error is None
+```
+
+## Installation
+
+Requires Python 3.11+
+
+```bash
+pip install agentsys
+```
+
+## Core Components
+
+### Router
+
+The router is the central component that manages agent communication and task execution:
+
+```python
+from agentsys.plugins.router import AgentRouter, Route, Task, RoutingConfig
+
+# Initialize router
+router = AgentRouter(routing_config=RoutingConfig())
+
+# Register routes
+@router.route("process_data")
+async def process_data(task: Task):
+    result = await process(task.input)
+    return ExecutionResult(
+        status=AgentState.COMPLETED,
+        result=result
+    )
+
+# Submit tasks
+task = Task(input="test_input")
+result = await router.submit_task(task)
+```
+
+### Storage
+
+Flexible storage options for persisting agent state and data:
+
+```python
+from agentsys.plugins.storage import FileStorage, MemoryStorage, StorageConfig
+
+# File-based storage
+storage = FileStorage(config=StorageConfig(
+    base_path="./data",
+    backup_enabled=True
+))
+
+# Memory storage
+memory_storage = MemoryStorage()
+
+# Store and retrieve data
+await storage.put("key", "value")
+value = await storage.get("key")
+```
+
+### Routing Strategies
+
+Multiple routing strategies available:
+
+- **RoundRobin**: Distributes tasks evenly across agents
+- **LeastLoaded**: Routes to agents with lowest workload
+- **Priority**: Routes based on task priority
+- **Custom**: Implement your own routing logic
+
+```python
+from agentsys.plugins.router import RoutingStrategy
+
+config = RoutingConfig(
+    strategy=RoutingStrategy.ROUND_ROBIN
+)
+```
+
+## Best Practices
+
+1. **Agent Design**
+   - Keep agents focused on a single responsibility
+   - Implement proper error handling
+   - Use storage for persistence
+   - Clean up resources properly
+
+2. **Task Management**
+   - Include relevant metadata
+   - Set appropriate priorities
+   - Use routing keys for specific agents
+   - Handle task timeouts
+
+3. **Resource Management**
+   - Always use try/finally blocks
+   - Stop routers explicitly
+   - Clean up storage resources
+   - Use async context managers
+
+4. **Error Handling**
+   - Return proper ExecutionResult objects
+   - Log errors with context
+   - Implement retry mechanisms
+   - Use timeouts for long operations
+
+5. **Testing**
+   - Test both success and failure cases
+   - Use proper async fixtures
+   - Clean up resources in tests
+   - Test with different routing strategies
+
+## Configuration
+
+Example configuration for production:
+
+```python
+router_config = RoutingConfig(
+    strategy=RoutingStrategy.ROUND_ROBIN,
+    timeout=60,
+    max_retries=3,
+    max_queue_size=1000,
+    logging_enabled=True
+)
+
+storage_config = StorageConfig(
+    base_path="./data",
+    backup_enabled=True,
+    backup_interval=3600,
+    compression_enabled=True,
+    max_size_mb=1024
+)
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## License
+
+MIT License
+
+## Requirements
+
+- Python 3.11+
+- pytest-asyncio
+- pydantic
