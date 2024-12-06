@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+quectelatcommands/__init__.py
+quectelatcommands/quectelGnssATCommands.py
+quectelatcommands/quectelModemATCommands.py
+quectelatcommands/quectelSerial.py
+quectelatcommands.egg-info/PKG-INFO
+quectelatcommands.egg-info/SOURCES.txt
+quectelatcommands.egg-info/dependency_links.txt
+quectelatcommands.egg-info/entry_points.txt
+quectelatcommands.egg-info/requires.txt
+quectelatcommands.egg-info/top_level.txt
