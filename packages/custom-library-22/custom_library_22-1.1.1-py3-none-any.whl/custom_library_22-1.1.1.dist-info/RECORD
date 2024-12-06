@@ -1,0 +1,9 @@
+custom_library_22/__init__.py,sha256=1HRgy_7NWi1SwrVM5TrxuQEI9Lixya9WaHyeCSdSOCg,58
+custom_library_22/custom_library_22.py,sha256=2cnkioSCTBJcmZjqnAjP4Cmu7HN8Y9_PqZz3pBI-Nrw,1814
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_custom_library.py,sha256=0ZvNSOHBuTcF2YJG8IJHczfBUF3q6JMeQ6j5o8_3u9U,431
+custom_library_22-1.1.1.dist-info/LICENSE,sha256=AZ14K3GbEGATk0wVI30gFQy_jTkScfmTfF4z0o8pO4s,236
+custom_library_22-1.1.1.dist-info/METADATA,sha256=4Uqbs6gp_-_D5-n3_JpKQv94lmAjJq7q-cY2ysyCvNw,939
+custom_library_22-1.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+custom_library_22-1.1.1.dist-info/top_level.txt,sha256=wlOGvwuHiAtxbfneIirGD9Xzhq2mP5fgiNKAcPtgTyg,24
+custom_library_22-1.1.1.dist-info/RECORD,,
