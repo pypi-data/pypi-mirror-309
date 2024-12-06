@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: box_object_detection
+Version: 0.1.0
+Summary: A YOLOv8-based object detection tool using FastAPI.
+Home-page: https://github.com/Raizo22
+Author: Your Name
+Author-email: kelessamsung22@gmail.com
+License: Raizo22
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.yaml
+
+# Box Object Detection
+
+A YOLOv8-based object detection tool using FastAPI.
+
+## Features
+- Upload images and detect objects using YOLOv8.
+- Interactive sliders for confidence and IoU thresholds.
+- Beautiful and responsive user interface.
+
+## Installation
+Install the package using pip:
+```bash
+pip install box-object-detection

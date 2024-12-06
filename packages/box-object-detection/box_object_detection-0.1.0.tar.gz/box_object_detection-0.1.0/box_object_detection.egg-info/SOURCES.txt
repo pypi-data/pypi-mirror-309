@@ -1,0 +1,11 @@
+LICENSE.yaml
+README.md
+setup.py
+box_object_detection/__init__.py
+box_object_detection/app.py
+box_object_detection.egg-info/PKG-INFO
+box_object_detection.egg-info/SOURCES.txt
+box_object_detection.egg-info/dependency_links.txt
+box_object_detection.egg-info/entry_points.txt
+box_object_detection.egg-info/requires.txt
+box_object_detection.egg-info/top_level.txt

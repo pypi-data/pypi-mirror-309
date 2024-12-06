@@ -1,0 +1,15 @@
+
+---
+
+## **4. Isi File `__init__.py`**
+
+Tambahkan file kosong `__init__.py` di dalam folder `box_object_detection/`. Ini menandakan direktori sebagai modul Python.
+
+---
+
+## **5. Membuat Distribusi**
+
+1. **Instal `setuptools` dan `wheel`**:
+   Jalankan perintah berikut:
+   ```bash
+   pip install setuptools wheel
