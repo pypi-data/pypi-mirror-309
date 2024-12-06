@@ -1,0 +1,2 @@
+[console_scripts]
+create = folder_structure_generator_7edge.generator:main

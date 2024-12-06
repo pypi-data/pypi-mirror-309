@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: folder-creation-test
+Version: 1.0.6
+Summary: CLI tool to generate folder structures for services
+Home-page: https://github.com/yourusername/folder-structure-generator-7edge
+Author: AABK
+Author-email: akhilesh.b@7edge.com
+Requires-Dist: InquirerPy
+Requires-Dist: pyyaml
+
