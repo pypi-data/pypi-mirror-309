@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: hookify
+Version: 1.0
+Summary: A modern library which allows you to efficiently and quickly send Discord webhooks.
+Author: Discord: @mcananas
+
