@@ -1,0 +1,3 @@
+[console_scripts]
+random-joke=random_jokes.jokes:get_random_joke
+
