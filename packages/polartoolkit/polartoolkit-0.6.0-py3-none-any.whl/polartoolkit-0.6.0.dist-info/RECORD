@@ -1,0 +1,13 @@
+antarctic_plots/__init__.py,sha256=_Dlr1ggfJ2-IbqsbfbvGDCRsP0_LL74eXWRqKqCTCEM,753
+polartoolkit/__init__.py,sha256=vN274YWe9KqPe_8lHpPxdVdTrkawIX9gzq_AVQTGoHI,559
+polartoolkit/fetch.py,sha256=41MbPkItiDlBY8bG7J9gdbfiBngZiNuC-oOdJb8Ybhw,148626
+polartoolkit/maps.py,sha256=9FDqbCY92codJhMVmJAoSBThCF1k0BUuLeuQCjAuTPk,95668
+polartoolkit/profile.py,sha256=7TKdZ3E4wtZvYWQpGeDe503NPiSdaqhu_ijCpUeaX6Y,690
+polartoolkit/profiles.py,sha256=QBtxrwE0cAeEtyerHkd6ViwiJpUU_NMHd2qv4bt46jw,58273
+polartoolkit/regions.py,sha256=5ixzjy6NOdPk-ELRTNMbFYJKD62-R90Z9X6vbaiQZiA,9522
+polartoolkit/utils.py,sha256=fdFFii4ZNC0MXUGQf2RARVV3z8gb1OberIUoUHu1c98,68489
+polartoolkit-0.6.0.dist-info/LICENSE,sha256=kgmt2_KvcUl7o07kpbpq_CZ-iUAAhg6QOQsewDRrnVk,1082
+polartoolkit-0.6.0.dist-info/METADATA,sha256=JjJMMoi9EoL5_Xd1GGsEtRrlG6xaIZ8yxzTvSMchais,10533
+polartoolkit-0.6.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+polartoolkit-0.6.0.dist-info/top_level.txt,sha256=WaXjlTYGfI7jFPsZMFhUvL4OHO2tha1tXw_-H9Zr7BE,29
+polartoolkit-0.6.0.dist-info/RECORD,,
