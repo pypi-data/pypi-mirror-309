@@ -1,0 +1,12 @@
+volkoff/__init__.py,sha256=TuQBDkjNwGoUYc6PA5klgjzts6LEewyPacuCdybQ9YU,53
+volkoff/extract.py,sha256=yqoMxKoaUiedPNKEPFkPp0fSpRhdX6Sol_srXtUA3WE,881
+volkoff/hide.py,sha256=BxGT0N_ib7KBQarTJNAGnaiEGEqRNGheazl14HyebJM,872
+volkoff/main.py,sha256=UwUitnyeCDzmecnsJki9_T8Db0l041qd2UndUVSITyA,5535
+volkoff/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volkoff/tests.py,sha256=d7TsqKGh6BbhQ0CzTfvS2Vbj5PZUtrQoS7Kom_K1eFM,3225
+volkoff/tui.py,sha256=FQ8vqWQR3T2lAWUXHQCGpahuRM2fMS9Dy_dSRzG1w64,4447
+volkoff/utils.py,sha256=lnh8-Lu2D2LEvVu-HZCEYLdIsnNPZ2nXUr70bPy_bFs,4671
+volkoff-0.1.44.dist-info/METADATA,sha256=tzhsYzKmU12YOWTSC3wCN-5QDQlFVk6O3zdm5ZF8W_Y,1933
+volkoff-0.1.44.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+volkoff-0.1.44.dist-info/entry_points.txt,sha256=UEDeQagtNg5OLWSDeAiD3_W1dI_EkfM4W_ek2R3UpFI,41
+volkoff-0.1.44.dist-info/RECORD,,
