@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: kaleido
+Version: 0.4.2
+Summary: Plotly graph export library
+Author-email: Andrew Pikul <ajpikul@gmail.com>
+Maintainer-email: Andrew Pikul <ajpikul@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) Plotly, Inc
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: choreographer>=0.99.6
+Requires-Dist: async_timeout
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# Kaleido
+
+Kaleido is a cross-platform library for generating static images for [Plotly][plotly]'s visualization library.
+After installing it, you can use `fig.write_image("filename.png")` to save a plot to a file.
+
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
+## How It Works
+
+The original version of kaleido included a custom build of the Chrome web browser,
+which made it very large (hundreds of megabytes) and proved very difficult to maintain.
+In contrast,
+this version depends on [choreographer][choreographer],
+a lightweight library that enables remote control of browsers from Python.
+When you ask kaleido to create an image,
+it uses choreographer to run a headless instance of Chrome to render and save your figure.
+Please see choreographer's documentation for details.
+
+> The new version of kaleido is a work on progress; we would be grateful for help testing it and improving it.
+> If you find a bug, please report it in [our GitHub repository][repo],
+> and please include a minimal reproducible example if you can.
+>
+> It would also be very helpful to run the script `src/py/tests/manual.py`
+> and attach its zipped output to your bug report.
+> This will give us detailed information about the precise versions of software you are using
+> and the platform you are running on,
+> which will help us track down problems more quickly.
+
+## Installation
+
+You can install kaleido from [PyPI][pypi] using pip:
+
+```
+$ pip install kaleido
+```
+
+## Use
+
+Versions 4.9 and above of the Plotly Python library will automatically use kaleido for static image export when kaleido is installed.
+For example:
+
+```python
+import plotly.express as px
+fig = px.scatter(px.data.iris(), x="sepal_length", y="sepal_width", color="species")
+fig.write_image("figure.png", engine="kaleido")
+```
+
+See the [Plotly static image export documentation][plotly-export] for more information.
+
+[choreographer]: https://pypi.org/project/choreographer/
+[plotly]: https://plotly.com/
+[plotly-export]: https://plotly.com/python/static-image-export/
+[pypi]: https://pypi.org/
+[repo]: https://github.com/plotly/Kaleido
