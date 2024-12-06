@@ -1,0 +1,13 @@
+monitor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monitor/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+monitor/apps.py,sha256=4kdPnjYP45uKe5uA5kfP3FWnsg-PQxTjrwfzq9Ixb4k,152
+monitor/models.py,sha256=JzIs7fwdJ3DBGyto2dcPV15MtFw9LfvYbXO_gygz0uY,381
+monitor/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+monitor/urls.py,sha256=hiqbvC9Z3punZkS2qnwOZZu7AlY0_bUZTlczWrTm1bY,289
+monitor/views.py,sha256=kKaQrUoz7wTRw3PtHJrz-DOacfWhh_22dhey4JqEk9A,2236
+monitor/migrations/0001_initial.py,sha256=POn01RfGYaNjROe_k4YDEm1Q7528GW4nPW4a3bJfaTI,845
+monitor/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+realpython_django_monitor-1.1.0.dist-info/METADATA,sha256=X9sfbpSx3U2Ybu3DhQyUddifqwtnG31DQe_UMQzKz7s,1107
+realpython_django_monitor-1.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+realpython_django_monitor-1.1.0.dist-info/top_level.txt,sha256=tGkQDkVeyKgP5Rr7acpp0df83NBAnI8up0sGwRxuuQ4,8
+realpython_django_monitor-1.1.0.dist-info/RECORD,,
