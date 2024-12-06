@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pretty_verbose/__init__.py
+pretty_verbose/logger_classes.py
+pretty_verbose/messages_classes.py
+pretty_verbose/processes_classes.py
+pretty_verbose.egg-info/PKG-INFO
+pretty_verbose.egg-info/SOURCES.txt
+pretty_verbose.egg-info/dependency_links.txt
+pretty_verbose.egg-info/top_level.txt
+test/test_messages.py
