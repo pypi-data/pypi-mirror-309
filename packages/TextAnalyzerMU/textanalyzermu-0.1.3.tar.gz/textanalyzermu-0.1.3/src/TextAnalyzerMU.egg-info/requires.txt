@@ -1,0 +1,12 @@
+transformers==4.30.0
+nltk>=3.7
+wordcloud==1.8.2.2
+matplotlib>=3.5.3
+numpy>=1.23.0
+sumy==0.8.1
+langdetect==1.0.9
+scikit-learn==1.2.2
+python-Levenshtein==0.20.9
+googletrans==4.0.0-rc1
+pandas>=1.4.3
+tensorflow>=2.10.0
