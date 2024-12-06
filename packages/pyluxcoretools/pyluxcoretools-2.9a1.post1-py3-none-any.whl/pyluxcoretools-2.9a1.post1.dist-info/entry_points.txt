@@ -1,0 +1,3 @@
+[console_scripts]
+pyluxcoreconsole = src.pyluxcoreconsole:main
+pyluxcoremaketx = src.pyluxcoremaketx:main
