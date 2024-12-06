@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: question-quizmaster
+Version: 0.2
+Home-page: https://github.com/alaznearamburu/Progra_Grupal4.git
+Author: Mikel, Libe, Jon y Alazne
+Author-email: alazne.aramburu@alumni.mondragon.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# QuizMaster
+
+**QuizMaster** is a library designed to create and manage interactive quizzes in Python. It provides flexible tools to implement different types of questions, calculate scores, and provide detailed feedback to the user. Its modular design allows for easy addition of new functionalities.
+
+## Main Features
+
+- **Support for multiple question types:**
+
+  - Multiple-choice (with several correct answers).
+  - Single-choice.
+  - True/False.
+  - Short answer.
+
+- **Advanced scoring methods:**
+
+  - Partial scoring.
+  - All-or-nothing.
+  - Proportional with penalty.
+  - Full bonus.
+
+- **Question management:**
+
+  - Validation and normalization of answers.
+  - Images associated with questions.
+  - Automatic feedback based on performance.
+
+- **Customizable feedback:**
+
+  - Detailed scores and specific feedback for each question.
+  - Option to display feedback after each question or at the end of the quiz.
+
+## Main Functions
+
+| **Function**             | **Description**                                             |
+|--------------------------|-------------------------------------------------------------|
+| `start()`                | Starts the quiz and calculates the scores.                  |
+| `calculate_score()`      | Calculates the total score based on the answers.            |
+| `normalize_text(text)`   | Normalizes text by removing special characters and accents. |
+| `display_feedback()`     | Personalized feedback based on correct answers.             |
+
+## Question Management
+
+- **`display()`**  
+  Displays a question to the user and interprets their response. Implemented in the specific classes for each question type.
+
+- **`check_answer(answer)`**  
+  Verifies if the user's answer is correct. Returns `True` or `False`.
+
+- **`get_correct_answer_text()`**  
+  Returns the correct answer in text format.
+
+- **`display_image()`**  
+  Displays an image associated with the question (if available).
+
+## Advanced Scoring
+
+- **`scoring_mode_puntuacion_parcial()`**  
+  Grants proportional points based on the correct answers selected. Penalizes errors.
+
+- **`scoring_mode_todo_o_nada()`**  
+  Assigns points only if all correct answers are selected and there are no errors.
+
+- **`scoring_mode_proporcional_con_penalizacion()`**  
+  Calculates the score proportionally, subtracting points for incorrect answers.
+
+- **`scoring_mode_bonificacion_completa()`**  
+  Awards extra points for completely correct answers and partially penalizes errors.
+
+## Answer Normalization
+
+- **`normalize_text(text)`**  
+  Converts text to lowercase, removes accents and special characters to perform comparisons insensitive to formatting errors.
+
+## Supported Question Types
+
+### Arguments
+
+- **First argument:** The statement or text of the question to be displayed to the user.
+- **Second argument:** A list of answer options from which the user can choose, True/False for binary questions, or a string for short answers.
+- **Third argument:** A list of indices of the correct answers in the options list (indices start at 0).
+- **`score_value`** (optional): Defines the point value awarded if the answer is correct.
+- **`scoring_mode`** (optional): Defines the scoring method to use (`scoring_mode_puntuacion_parcial`, `scoring_mode_todo_o_nada`, `scoring_mode_proporcional_con_penalizacion`, `scoring_mode_bonificacion_completa`).
+- **`immediate_feedback`** (optional): Indicates whether immediate feedback should be provided after the user's response (`True` or `False`).
+
+### Multiple Choice (MultipleChoiceQuestion)
+
+Allows selecting multiple correct answers.
+
+#### Example
+
+```python
+q1 = MultipleChoiceQuestion("Which are planets?", 
+                            ["Sun", "Earth", "Moon", "Mars"], 
+                            [1, 3], 
+                            score_value=3, 
+                            scoring_mode="partial_scoring", 
+                            immediate_feedback=False)
+
+```
+
+### Single Choice (SingleChoiceQuestion)
+
+Allows selecting only one correct option.
+
+#### Example
+
+```python
+q2 = SingleChoiceQuestion("What is the capital of England?", 
+                          ["Paris", "London", "Berlin", "Rome"], 
+                          1, 
+                          score_value=2, 
+                          immediate_feedback=True)
+```
+
+### True/False (TrueFalseQuestion)
+Questions with binary responses (True/False).
+
+#### Example
+
+```python
+q3 = TrueFalseQuestion("The Earth is flat.", 
+                       True, 
+                       score_value=1, 
+                       immediate_feedback=True)
+```
+
+### Short Answer (ShortAnswerQuestion)
+Requires the user to input a text answer.
+
+#### Example
+
+```python
+q4 = ShortAnswerQuestion("What is the capital of France?", 
+                         "Paris", 
+                         score_value=2, 
+                         immediate_feedback=True)
+```
+
+## Usage
+
+```python
+from quizmaster import Quiz
+from quizmaster import MultipleChoiceQuestion, SingleChoiceQuestion, TrueFalseQuestion, ShortAnswerQuestion
+# Create quiz
+    quiz = Quiz(questions=[q1, q2, q3, q4])
+
+    # Start quiz
+    quiz.start()
+```
