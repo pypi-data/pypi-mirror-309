@@ -1,0 +1,2 @@
+[console_scripts]
+bh_deedoo = bh_deedoo.__main__:main

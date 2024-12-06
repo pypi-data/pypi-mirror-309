@@ -1,0 +1,12 @@
+[project]
+version = "0.0.2-b0" # bh.bump: this line must be first.
+name = "bh-deedoo"
+description = "Deedoos are alarms to keep you on track."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bh-bump==0.1.3rc1",
+]
+
+[project.scripts]
+bh_deedoo = "bh_deedoo.__main__:main"
