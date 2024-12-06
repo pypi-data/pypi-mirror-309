@@ -1,0 +1,14 @@
+[console_scripts]
+format=_scripts:format_code
+gh-echo=_main:app
+lint=_scripts:lint
+lint-and-format=_scripts:lint_and_format
+run-coverage=_scripts:run_coverage
+run-coverage-html=_scripts:run_coverage_html
+run-coverage-report=_scripts:run_coverage_report
+run-tests=_scripts:run_tests
+run-tests-on-classes=_scripts:run_tests_on_classes
+run-tests-on-files=_scripts:run_tests_on_files
+watch-tests=_scripts:watch_tests
+watch-tests-coverage=_scripts:watch_tests_with_coverage
+
