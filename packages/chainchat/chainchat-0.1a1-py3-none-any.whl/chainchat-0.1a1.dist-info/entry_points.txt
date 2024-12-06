@@ -1,0 +1,2 @@
+[console_scripts]
+chainchat = chainchat.cli:cli
