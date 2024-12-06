@@ -1,0 +1,15 @@
+pyproject.toml
+src/monitor/__init__.py
+src/monitor/admin.py
+src/monitor/apps.py
+src/monitor/models.py
+src/monitor/tests.py
+src/monitor/urls.py
+src/monitor/views.py
+src/monitor/migrations/0001_initial.py
+src/monitor/migrations/__init__.py
+src/realpython_django_monitor.egg-info/PKG-INFO
+src/realpython_django_monitor.egg-info/SOURCES.txt
+src/realpython_django_monitor.egg-info/dependency_links.txt
+src/realpython_django_monitor.egg-info/requires.txt
+src/realpython_django_monitor.egg-info/top_level.txt
