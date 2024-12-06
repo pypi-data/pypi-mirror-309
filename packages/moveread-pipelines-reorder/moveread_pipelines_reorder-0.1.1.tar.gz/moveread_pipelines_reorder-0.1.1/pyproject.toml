@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-pipelines-reorder"
+version = "0.1.1"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = ""
+dependencies = [
+  "pipeteer", "fastapi"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/moveread/pipelines.git"
+
+[project.scripts]
+reorder = "moveread.pipelines.reorder.scripts.cli:main"
+reorder-clientgen = "moveread.pipelines.reorder.scripts.clientgen:main"
