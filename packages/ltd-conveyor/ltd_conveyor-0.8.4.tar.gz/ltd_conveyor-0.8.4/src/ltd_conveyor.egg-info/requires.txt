@@ -1,0 +1,17 @@
+boto3
+requests
+uritemplate
+click
+importlib-metadata
+
+[dev]
+responses
+pytest
+pytest-mock
+documenteer[pipelines]
+sphinx-click
+coverage[toml]
+Sphinx
+mypy
+types-requests
+types-setuptools
