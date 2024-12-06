@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rofi-tmux-ng
+Version: 0.0.1
+Summary: Manage tmux sessions & windows via Rofi
+Home-page: http://github.com/viniarck/rofi-tmux
+Author: Laurito
+Author-email: viniarck@gmail.com
+License: MIT
+Keywords: rofi tmux tmuxinator i3 manage switch
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: python-rofi ==1.0.1
+Requires-Dist: i3ipc >=2.0.1
+Requires-Dist: click
+Requires-Dist: tendo
+
