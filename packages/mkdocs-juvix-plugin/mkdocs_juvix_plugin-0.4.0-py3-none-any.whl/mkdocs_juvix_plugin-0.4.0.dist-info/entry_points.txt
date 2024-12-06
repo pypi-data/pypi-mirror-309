@@ -1,0 +1,7 @@
+[console_scripts]
+juvix-mkdocs=src.cli:cli
+
+[mkdocs.plugins]
+juvix=mkdocs_juvix.main:JuvixPlugin
+todos=mkdocs_juvix.todos:TodosPlugin
+
