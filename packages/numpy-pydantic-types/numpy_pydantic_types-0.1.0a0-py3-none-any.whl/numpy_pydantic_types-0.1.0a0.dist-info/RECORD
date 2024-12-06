@@ -1,0 +1,10 @@
+numpy_pydantic_types/__init__.py,sha256=OncV3sAUdeTMUUELxeXsy_Tr1kf-dpm-PDZAhTHF21U,584
+numpy_pydantic_types/__init__.pyi,sha256=2pkxTA78B9b0iW9qEh-J6wTQkz-FrWVVkx9F1J5Qo_I,363
+numpy_pydantic_types/floats.py,sha256=Q0IOlx7cs851bI7wXeON2qEQMp-7wpO4GeE9EI2dTuI,1639
+numpy_pydantic_types/numpy_type.py,sha256=Cj_gTu71fBDilxCCPqO6fuIq0o7W4HDY787oy8tGKpc,984
+numpy_pydantic_types/requirements-dev.txt,sha256=rWouj7XdsNqlSmFSbYvu0n9Ql8VXrIN9u_-otI2v-2o,1308
+numpy_pydantic_types/requirements.txt,sha256=zWkO4AKdIpq3NaIu1YnJUgtTURyQdpKXRpUlyhCFrHA,370
+numpy_pydantic_types-0.1.0a0.dist-info/LICENSE,sha256=_OtTYDaEoeIWQgg7ZBRuCWFnnmRIeDotHAaHEs6_TS0,1073
+numpy_pydantic_types-0.1.0a0.dist-info/METADATA,sha256=_l1IwF3on_5posIk8r9qnQM8d5xmeKSabINd9ZIk84I,4087
+numpy_pydantic_types-0.1.0a0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+numpy_pydantic_types-0.1.0a0.dist-info/RECORD,,
