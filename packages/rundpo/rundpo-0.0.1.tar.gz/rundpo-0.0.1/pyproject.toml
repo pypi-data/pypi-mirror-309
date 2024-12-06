@@ -1,0 +1,16 @@
+[project]
+name = "rundpo"
+version = "0.0.1"
+authors = [
+  { name="Andrew Gritsevskiy", email="mass@hey.com" },
+]
+description = "A package that lets you run DPO"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://rundpo.com"
+Issues = "https://rundpo.com/issues"

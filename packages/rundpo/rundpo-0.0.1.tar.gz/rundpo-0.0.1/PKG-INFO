@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rundpo
+Version: 0.0.1
+Summary: A package that lets you run DPO
+Author-email: Andrew Gritsevskiy <mass@hey.com>
+Project-URL: Homepage, https://rundpo.com
+Project-URL: Issues, https://rundpo.com/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rundpo
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
