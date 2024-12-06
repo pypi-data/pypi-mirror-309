@@ -1,0 +1,10 @@
+tabs2music/__init__.py,sha256=-5nujM293A5Sxr1eCqQ2hrAPLplKDKBuCdlPZWjRpns,21
+tabs2music/main.py,sha256=HtMq3dxwDT8riszScikyZ6q1etCE9E0oQRYfl9PlBMY,2278
+tabs2music/midi_and_wav_creation.py,sha256=ch0mMiTcE_k4hu1Ma9avWFYHmX-xopOQtSC9vw9nQvA,2640
+tabs2music/tabs_parser.py,sha256=Mt6XxY1g6DftabUCtyiMW5nhpz23AFes0VcgJN8Nkr4,3769
+tabs2music/tuning_to_midi_note.py,sha256=1vAbjWoJH7ZVMXRnBnCswlzQEDh5PSxbUrzGgcnsOw0,1333
+tabs2music-0.0.12.dist-info/LICENSE,sha256=-JJLesN4p-LpCBoNWqrTplKpbz5_oi9UhQcA9xCWumw,1071
+tabs2music-0.0.12.dist-info/METADATA,sha256=vQ3JN9OiC3OM8DFDMB5QfTCrlp6NTsSrhfKjw3VfYbY,5034
+tabs2music-0.0.12.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+tabs2music-0.0.12.dist-info/top_level.txt,sha256=q5mX_LTLquoawDeH7_CcvuIUBJBtpE0UIb8aTVA4xcc,11
+tabs2music-0.0.12.dist-info/RECORD,,
