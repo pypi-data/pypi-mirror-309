@@ -1,0 +1,9 @@
+README.md
+setup.py
+example_pkg_avinash.egg-info/PKG-INFO
+example_pkg_avinash.egg-info/SOURCES.txt
+example_pkg_avinash.egg-info/dependency_links.txt
+example_pkg_avinash.egg-info/requires.txt
+example_pkg_avinash.egg-info/top_level.txt
+inventory_pkg/__init__.py
+inventory_pkg/inventory_properties.py
