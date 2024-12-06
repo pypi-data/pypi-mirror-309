@@ -1,0 +1,8 @@
+priority_summary_verify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+priority_summary_verify/priority.py,sha256=V090mD_vF0EHhl5MgvOrZgI24oUjn-IZ5OPPRdsYdB0,1421
+priority_summary_verify/summary.py,sha256=_YDMw2lcuI24PoAzKiQ_ksY2XkWxUauOYIFd0EoehD8,2393
+priority_summary_verify/verify.py,sha256=px9YNUDDAwpXctAaw6udUM_zjP4NvNwRDMYxpkVfGmU,1671
+my_library_package-0.1.dist-info/METADATA,sha256=V41RT6H1F00nvqP9YSH_WHz_xswfhqfOPsuZk-Npv_M,197
+my_library_package-0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+my_library_package-0.1.dist-info/top_level.txt,sha256=PegfWj-u7vPb7o7tjw2CIyyraPfSKkfnKbEjWA5RRas,24
+my_library_package-0.1.dist-info/RECORD,,
