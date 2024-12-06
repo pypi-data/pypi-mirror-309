@@ -1,0 +1,4 @@
+[console_scripts]
+sshm=sshtmux.main:cli
+ssht=sshtmux.main_tui:tui
+
