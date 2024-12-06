@@ -1,0 +1,16 @@
+tinysync/__init__.py,sha256=S5Ilzd2rChi8MENRN1urHtsyK3dHIJtY_RTiog0rbAQ,123
+tinysync/backendMethods.py,sha256=D8NRzYfp4H61vSZ6pPa-tpiaSn8o7tOH5Zu8N11_XA0,57284
+tinysync/config.py,sha256=1XEhmKjMTiUSR74_mG8xeOW4Af5sDzZOwNxtHO7D1vw,4341
+tinysync/dicttable.py,sha256=clJeGQXZ6Q40vaTcmFiBu-TrMBfDcVvxWI7cxGnOpuE,21704
+tinysync/log.py,sha256=MOfwSOTkkk5-CK3Pjrq4ceN2ac0hpL279SqkqLdGIao,1862
+tinysync/syncer.py,sha256=f2D8WGG-5xJOe4cSvmBElt1LO7l4r-_Sq1OibDtwYK8,34724
+tinysync/utils.py,sha256=SqtpF7VEyg8czinp_sis3fY23T2PVquewoH6q0SSHUo,7371
+tinysync/backend/__init__.py,sha256=iAC_TCePyglCuJrvMWSP35ql6JxL72K6tNneGdaLJLk,117
+tinysync/backend/abc.py,sha256=_mYbh8Hg45RqUQr5rQPYsHDwn9LdZbbGdE-NmeldGCQ,7793
+tinysync/backend/localFS.py,sha256=xfurwvZsNjVM4NJluTTArOrUv3llYTVWV9TRvXKBzio,7774
+tinysync/backend/nixssh.py,sha256=EFHmjKnG1AZ2Zw18N7Mh9-Rdyt44AShp5VF_2joO2Jk,8481
+tinysync/backend/webdav.py,sha256=qY3N-0nZQN51K5WzfRf29rf-oXnvlGdfiU52JO_ME9c,7004
+tinysync-0.0.10.dist-info/METADATA,sha256=CA18Vi5VZxeoy21hms7wNTTXtwY0P1NEhxuhgpxlQJY,2913
+tinysync-0.0.10.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+tinysync-0.0.10.dist-info/top_level.txt,sha256=HZEYJm1zSh6xvfPGoivGKaE4YFAyXwYSMYcp8VSDIto,9
+tinysync-0.0.10.dist-info/RECORD,,
