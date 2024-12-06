@@ -1,0 +1,3 @@
+[console_scripts]
+eio = embedmeio.__main__:main
+embedmeio = embedmeio.__main__:main
