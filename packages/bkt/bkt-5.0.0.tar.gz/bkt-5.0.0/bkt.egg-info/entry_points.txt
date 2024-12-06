@@ -1,0 +1,3 @@
+[console_scripts]
+bucket = bucket.cli:app
+bucket5 = bucket.cli:app
