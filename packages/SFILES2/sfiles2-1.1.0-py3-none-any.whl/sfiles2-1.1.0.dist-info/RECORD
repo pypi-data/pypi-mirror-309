@@ -1,0 +1,9 @@
+Flowsheet_Class/OntoCape_SFILES_mapping.py,sha256=QVBKZu8QINhsGcR2h2EmultENipRKYE5xiTwtYRoyzk,908
+Flowsheet_Class/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Flowsheet_Class/flowsheet.py,sha256=FP5k8CjG9yvxK9aQyPMRgEzt5v3x7v792lOwwipDvBI,37452
+Flowsheet_Class/nx_to_sfiles.py,sha256=6ma_aFUWRwhVWa61CWbMydLq-AKA6fOvmXEcRRCk8X4,40902
+Flowsheet_Class/utils_visualization.py,sha256=OA_eK92M_5L_zraHidPinQ2H1rpCdhSVTm5qrYQhE3c,17345
+sfiles2-1.1.0.dist-info/METADATA,sha256=VFBTigqyiN0ER7D148FZrxxYxF8YkZDVLehApp_2fZ8,2469
+sfiles2-1.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+sfiles2-1.1.0.dist-info/licenses/LICENSE,sha256=bpeRp-1ze2wXcD9CZBAyrs2LgbvPFz1mbNqJdqgU2JM,1086
+sfiles2-1.1.0.dist-info/RECORD,,
