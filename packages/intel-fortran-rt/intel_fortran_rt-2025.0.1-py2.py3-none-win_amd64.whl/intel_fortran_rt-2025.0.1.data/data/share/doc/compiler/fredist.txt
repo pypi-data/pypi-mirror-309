@@ -1,0 +1,52 @@
+This is the redist.txt file mentioned in the associated Intel End User License 
+Agreement for Developer Tools (Version April 2023) (“Agreement”).  All 
+capitalized terms used but not defined in this file have the same meaning as 
+specified in the Agreement. The Redistributables are listed below, and are 
+subject to all of the terms and conditions of the Agreement.
+
+Please note that Third Party Programs, if any, may also be redistributable. See 
+the “third-party-programs.txt” or other similarly-named text file for more 
+details.”
+
+################################################################################
+###   Intel® Fortran Compiler 2025.0
+################################################################################
+
+<installdir>/Library/bin/omptarget.rtl.opencl.dll
+<installdir>/Library/bin/omptarget.rtl.level0.dll
+<installdir>/Library/bin/omptarget.dll
+<installdir>/Library/bin/omptarget.sycl.wrap.dll
+<installdir>/opt/compiler/Library/lib/libomptarget-opencl-required.bc
+<installdir>/opt/compiler/Library/lib/libomptarget-opencl-optional.bc
+<installdir>/opt/compiler/Library/bin/libomp-fallback-cassert.spv
+<installdir>/opt/compiler/Library/bin/libomp-fallback-cmath-fp64.spv
+<installdir>/opt/compiler/Library/bin/libomp-fallback-cmath.spv
+<installdir>/opt/compiler/Library/bin/libomp-fallback-complex-fp64.spv
+<installdir>/opt/compiler/Library/bin/libomp-fallback-complex.spv
+<installdir>/opt/compiler/Library/bin/libomp-fallback-cstring.spv
+<installdir>/Library/bin/omptarget.rtl.unified_runtime.dll
+<installdir>/Library/lib/libiomp5md.lib
+<installdir>/Library/lib/libiompstubs5md.lib
+<installdir>/Library/bin/libiomp5md.dll
+<installdir>/Library/bin/libiompstubs5md.dll
+<installdir>/Library/bin/libiomp5md_db.dll
+<installdir>/Library/bin/xptifw.dll
+<installdir>/Library/bin/libmmd.dll
+<installdir>/Library/bin/libmmdd.dll
+<installdir>/Library/bin/svml_dispmd.dll
+<installdir>/Library/bin/qkmalloc.dll
+<installdir>/Library/bin/libircmd.dll
+<installdir>/Library/lib/libircdisp.lib
+<installdir>/Library/lib/libircmd.lib
+<installdir>/Library/bin/libirngmd.dll
+<installdir>/Library/bin/xptifwd.dll
+<installdir>/Library/lib/xptifwd.lib
+<installdir>/Library/bin/onnxruntime.1.12.22.721.dll
+<installdir>/Library/bin/compiler/onnxruntime.1.12.22.721.dll
+<installdir>/Library/bin/libifportmd.dll
+<installdir>/Library/bin/libicaf.dll
+<installdir>/Library/bin/libifcoremd.dll
+<installdir>/Library/bin/libifcoremdd.dll
+<installdir>/Library/bin/libifcorert.dll
+<installdir>/Library/bin/libifcorertd.dll
+<installdir>/Library/bin/ifdlg100.dll
