@@ -1,0 +1,8 @@
+plexe/__init__.py,sha256=PZuBc5Ppl83eqv7M9fySRqEMHlK6iLAbptb8M18ZEso,3524
+plexe/client.py,sha256=If3eMgfSD0k7OnCo86iaGPynqA7H2qM44V6oqXrNRGM,8358
+plexe/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plexe/tests/test_integration.py,sha256=Z3RgVAZZk4UY7fVZbIsiYX-SbTPxJB2qy2p0YBKyckQ,6725
+plexe-0.1.3.dist-info/METADATA,sha256=CmwHt4bxWuDOnr7VWOX4B877YVFWhKSMqlh8CHFgNSU,5407
+plexe-0.1.3.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+plexe-0.1.3.dist-info/licenses/LICENSE,sha256=onXGp5HbJf-iYiJsiWC6GqVzE8zeq7VHps_HBC5o3TQ,1065
+plexe-0.1.3.dist-info/RECORD,,
