@@ -1,0 +1,2 @@
+[httpie.plugins.transport.v1]
+httpie_curl_cffi = httpie_curl_cffi:CurlCffiTransportPlugin
