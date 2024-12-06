@@ -1,0 +1,4 @@
+# Casino-Montepinar
+Para este trabajo, la idea principal es hacer una librería que sea capaz de emular el funcionamiento de varios de los juegos de un casino.
+
+La base para el funcionamiento de todas las funciones, será una base de datos capaz de guardar el id, correo electrónico y créditos de los que cada jugador dispone. De esta manera, una vez iniciada la sesión, cada usuario podrá mantener un registro de sus créditos, y podrá jugar con lo ganado en cualquier momento. También es una gran manera de asegurarse que alguien no gasta por encima de sus posibilidades. Luego, como si fuera un casino real, cada usuario podrá rellenar los créditos con la cantidad de "dinero" que quiera.

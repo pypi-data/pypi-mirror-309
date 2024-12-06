@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Leones
+Version: 0.1.0
+Summary: This library consists of a casino simulator, in which you can play various casino games such as black jack.
+Home-page: https://github.com/unaidemiguel/Casino-Montepinar.git
+Author: Unai de Miguel Bilbao, Unai Martinez Leal, Asier López Bárcena, Aitor Fernandez de Retana
+Author-email: unai.demiguel@alumni.mondragon.edu, unai.martinez@alumni.mondragon.edu, asier.lopezb@alumni.mondragon.edu, aitor.fernandezderet@alumni.mondragon.edu
+Maintainer: Unai de Miguel Bilbao
+Maintainer-email: unai.demiguel@alumni.mondragon.edu
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Casino-Montepinar
+Para este trabajo, la idea principal es hacer una librerÃ­a que sea capaz de emular el funcionamiento de varios de los juegos de un casino.
+
+La base para el funcionamiento de todas las funciones, serÃ¡ una base de datos capaz de guardar el id, correo electrÃ³nico y crÃ©ditos de los que cada jugador dispone. De esta manera, una vez iniciada la sesiÃ³n, cada usuario podrÃ¡ mantener un registro de sus crÃ©ditos, y podrÃ¡ jugar con lo ganado en cualquier momento. TambiÃ©n es una gran manera de asegurarse que alguien no gasta por encima de sus posibilidades. Luego, como si fuera un casino real, cada usuario podrÃ¡ rellenar los crÃ©ditos con la cantidad de "dinero" que quiera.
