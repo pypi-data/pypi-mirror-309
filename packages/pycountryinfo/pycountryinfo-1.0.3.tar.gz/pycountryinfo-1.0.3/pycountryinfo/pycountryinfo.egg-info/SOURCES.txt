@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pycountryinfo/data/__init__.py
+pycountryinfo/data/countries.json
+pycountryinfo/pycountryinfo.egg-info/PKG-INFO
+pycountryinfo/pycountryinfo.egg-info/SOURCES.txt
+pycountryinfo/pycountryinfo.egg-info/dependency_links.txt
+pycountryinfo/pycountryinfo.egg-info/requires.txt
+pycountryinfo/pycountryinfo.egg-info/top_level.txt
