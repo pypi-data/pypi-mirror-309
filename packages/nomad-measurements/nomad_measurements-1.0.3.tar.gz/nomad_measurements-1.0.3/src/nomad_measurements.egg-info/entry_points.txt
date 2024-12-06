@@ -1,0 +1,4 @@
+[nomad.plugin]
+general_schema = nomad_measurements:schema
+xrd_parser = nomad_measurements.xrd:parser
+xrd_schema = nomad_measurements.xrd:schema
