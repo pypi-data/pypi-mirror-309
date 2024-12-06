@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cloxz-cli
+Version: 0.4.0
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+
+```shell
+git clone https://github.com/zehevi/clockz
+cd clockz
+python setup.py sdist
+pip install ./dist/clock-cli-0.2.tar.gz
+clock --help
+```
