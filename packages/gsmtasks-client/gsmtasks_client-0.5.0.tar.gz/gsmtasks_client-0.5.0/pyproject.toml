@@ -1,0 +1,52 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.poetry]
+name = "gsmtasks-client"
+description = "Client library for https://api.gsmtasks.com/ ."
+version = "0.5.0"
+authors = []
+license = "0BSD"
+packages = [
+    { include = 'gsmtasks', from = "gen" },
+]
+include = [
+    'gen/**/*',
+]
+repository = 'https://github.com/lapidary-library/gsmtasks'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+lapidary = "^0.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    "gen",
+]
+
+[tool.lapidary]
+document_path = 'openapi/openapi.yaml'
+origin = 'https://api.gsmtasks.com/docs/schema/'
+package = 'gsmtasks'
+plugins=[
+    'lapidary.render.plugins:JSONPatchPlugin',
+    'schema:GSMTasksSchemaPlugin',
+]
+extra_sources = ['src']
+
+[tool.taskipy.tasks]
+update = 'lapidary render'
+test = 'pytest -s'
+
+[tool.mypy]
+mypy_path = ['gen', 'tests']
+namespace_packages = true
+packages = ['gsmtasks']
