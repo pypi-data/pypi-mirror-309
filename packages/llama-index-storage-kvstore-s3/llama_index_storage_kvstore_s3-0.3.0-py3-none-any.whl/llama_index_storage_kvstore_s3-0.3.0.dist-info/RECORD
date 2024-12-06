@@ -1,0 +1,5 @@
+llama_index/storage/kvstore/s3/__init__.py,sha256=NV_g5QZOD4jNYaKBe4Igqpz1tCedlJc5ZJKtGqimHh4,87
+llama_index/storage/kvstore/s3/base.py,sha256=taPq4J-98WV8_n5k1DKqpd2jPd5iHItcqGiOEg37rHM,4712
+llama_index_storage_kvstore_s3-0.3.0.dist-info/METADATA,sha256=0lvLm8YPZPlbUGfQIvac-vNJ1jl9q1DI1xPvcu9aNfk,687
+llama_index_storage_kvstore_s3-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_kvstore_s3-0.3.0.dist-info/RECORD,,
