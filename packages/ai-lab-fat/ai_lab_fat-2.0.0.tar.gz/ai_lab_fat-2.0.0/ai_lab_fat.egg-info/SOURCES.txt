@@ -1,0 +1,8 @@
+README.md
+setup.py
+ai_lab_fat/__init__.py
+ai_lab_fat/test.py
+ai_lab_fat.egg-info/PKG-INFO
+ai_lab_fat.egg-info/SOURCES.txt
+ai_lab_fat.egg-info/dependency_links.txt
+ai_lab_fat.egg-info/top_level.txt
