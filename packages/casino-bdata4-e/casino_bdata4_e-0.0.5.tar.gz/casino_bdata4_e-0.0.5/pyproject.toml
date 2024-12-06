@@ -1,0 +1,20 @@
+[project]
+name = "casino_bdata4_e"
+version = "0.0.5"
+authors = [
+  { name="joonroo", email="jon.rodrigueza@alumni.mondragon.edu" },
+  { name="ikerbenitod", email="iker.benitod@alumni.mondragon.edu" },
+  { name="asier.lorenzo", email="asier.lorenzoa@alumni.mondragon.edu" },
+  { name="unai.penafiel", email="unai.penafiel@alumni.mondragon.edu" }
+]
+description = "Casino games library created by a group of 4 university students."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/uunaii/Trabajo_Progra.git"
