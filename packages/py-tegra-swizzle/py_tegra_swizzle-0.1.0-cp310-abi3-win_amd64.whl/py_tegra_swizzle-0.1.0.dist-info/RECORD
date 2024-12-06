@@ -1,0 +1,9 @@
+py_tegra_swizzle/__init__.py,sha256=9z9mp3ta3t2Deu1t_iIagW5r0W3TN3OxMU_BhJZ7Dyw,2393
+py_tegra_swizzle/rust.pyd,sha256=wMfX_u8RvXdw1QCP89favoRVvUfrbUtnNcxIKVyOMKo,280064
+py_tegra_swizzle/rust.pyi,sha256=X2bmesNKfdEDsNICMXmRaOmgm4L6xllzcDji7u4oJqk,2542
+py_tegra_swizzle/version.py,sha256=LihvXsX11I2jla5mXh08c4Nv7nlLSLZJCmSKYdqiruQ,427
+py_tegra_swizzle-0.1.0.dist-info/LICENSE,sha256=5Qy5Y2zesRh_6FPhuStBYxpWgEYRQgz8Ok75SAnrGkE,1072
+py_tegra_swizzle-0.1.0.dist-info/METADATA,sha256=hYqOnpSTSo7wAipWTW8KsKS-XrRTDTBnAyYBxrfXJtE,690
+py_tegra_swizzle-0.1.0.dist-info/WHEEL,sha256=puAfksJrdaWocV9p6IH2LvcC0XxPFjdgfmj12kG8OhY,101
+py_tegra_swizzle-0.1.0.dist-info/top_level.txt,sha256=AUztJtrC7-SHh8fA6VKrmfDDcs72xH8r3xlg93IIyCQ,17
+py_tegra_swizzle-0.1.0.dist-info/RECORD,,
