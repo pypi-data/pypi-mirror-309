@@ -1,0 +1,8 @@
+csvtotable/cli.py,sha256=63vWUPZbufBv5kK7bLrht7RYOg4DesKQlf6q8fXY5AU,3401
+csvtotable/convert.py,sha256=8Y3gbonuN6QuFRHRtHtcSb1GVWQiUlMGlcQ8gbsaplA,7059
+csvtotable/templates/template.j2,sha256=vgqBVTDhEJqCA_wHtLdHjYrKo4KjjEl0YTlsnH3aBhk,7009
+csvtotablenameless-2.3.0.3.dist-info/METADATA,sha256=kRLdxpmStsPwqguz9GT0LmEv7Kw0iGgwucwCxd17CHY,4652
+csvtotablenameless-2.3.0.3.dist-info/WHEEL,sha256=aO3RJuuiFXItVSnAUEmQ0yRBvv9e1sbJh68PtuQkyAE,105
+csvtotablenameless-2.3.0.3.dist-info/entry_points.txt,sha256=G4m9bB4e8ORJQGVfyK7_jNN2PZKw__v-nv2tby_ma5w,50
+csvtotablenameless-2.3.0.3.dist-info/licenses/LICENSE,sha256=Yp7Jf5vJq8UpUTuY0ghL1tiWv1Oj3duE7QGQhlUXWQA,1073
+csvtotablenameless-2.3.0.3.dist-info/RECORD,,
