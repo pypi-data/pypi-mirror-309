@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wordfilegenerator
+Version: 1.0.0
+Summary: Generate wordlist files with custom specifications.
+Home-page: https://github.com/sandrustout/unlimitedwordfilegenerator
+Author: sandrustout
+License-File: LICENSE.txt
+
