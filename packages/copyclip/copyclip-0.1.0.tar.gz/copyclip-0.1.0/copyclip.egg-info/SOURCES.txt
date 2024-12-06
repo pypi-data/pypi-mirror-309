@@ -1,0 +1,10 @@
+README.md
+setup.py
+copyclip/__init__.py
+copyclip/main.py
+copyclip.egg-info/PKG-INFO
+copyclip.egg-info/SOURCES.txt
+copyclip.egg-info/dependency_links.txt
+copyclip.egg-info/entry_points.txt
+copyclip.egg-info/requires.txt
+copyclip.egg-info/top_level.txt
