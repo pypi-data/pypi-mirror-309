@@ -1,0 +1,184 @@
+[build-system]
+requires = [
+	"hatchling",
+	"hatch-vcs",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "ezdag"
+authors = [
+    { name = "Patrick Godwin", email = "patrick.godwin@ligo.org" },
+]
+maintainers = [
+    { name = "Patrick Godwin", email = "patrick.godwin@ligo.org" },
+]
+description = "High-level HTCondor DAG generation library"
+readme = "README.md"
+license = "MPL-2.0"
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Science/Research",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+	"Natural Language :: English",
+	"Operating System :: POSIX :: Linux",
+	"Programming Language :: Python :: 3 :: Only",
+]
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+	"htcondor >= 9"
+]
+
+[project.urls]
+Homepage = "https://git.ligo.org/patrick.godwin/ezdag"
+Documentation = "https://ezdag.readthedocs.io"
+"Issue Tracker" = "https://git.ligo.org/patrick.godwin/ezdag/issues"
+"Source Code" = "https://git.ligo.org/patrick.godwin/ezdag.git"
+
+[project.optional-dependencies]
+visualize = [
+	"graphviz",
+]
+test = [
+	"ezdag[visualize]",
+	"pytest",
+	"pytest-cov",
+	"pytest-datadir",
+]
+docs = [
+	"mkdocs >= 1.3",
+	"mkdocs-coverage >= 0.2",
+	"mkdocs-gen-files >= 0.3",
+	"mkdocs-literate-nav >= 0.4",
+	"mkdocs-material-igwn",
+	"mkdocs-section-index >= 0.3",
+	"mkdocstrings[python]",
+	"markdown-callouts >= 0.2",
+	"markdown-exec >= 0.5",
+	"toml >= 0.10",
+]
+lint = [
+	"mypy",
+	"mypy-extensions",
+	"ruff",
+]
+dev = [
+	"ezdag[docs]",
+	"ezdag[lint]",
+	"ezdag[test]",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "ezdag/_version.py"
+
+[tool.hatch.envs.default]
+features = ["dev"]
+installer = "uv"
+
+[tool.hatch.envs.default.scripts]
+check = "mypy --install-types --non-interactive ezdag"
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+scripts.build = "mkdocs build --clean --strict"
+scripts.serve = "mkdocs serve"
+
+[tool.hatch.envs.hatch-test]
+features = ["test"]
+default-args = ["ezdag/tests"]
+extra-args = ["-ra", "-v", "-s"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.coverage.run]
+source = ["ezdag"]
+omit = [
+	"ezdag/__init__.py",
+	"ezdag/tests/*",
+	"*/_version.py",
+]
+
+[tool.coverage.report]
+# print report with one decimal point
+precision = 1
+show_missing = true
+omit = [
+	"_version.py",
+	"tests/*",
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+	# pycodestyle
+	"E",
+	"W",
+	# pyflakes
+	"F",
+	# isort
+	"I",
+	# pep8-naming
+	"N",
+	# flake8-bandit
+	"S",
+	# flake8-blind-except
+	"BLE",
+	# flake8-boolean-trap
+	"FBT",
+	# flake8-bugbear
+	"B",
+	# flake8-builtins
+	"A",
+	# flake8-comprehensions
+	"C4",
+	# flake8-datetimez
+	"DTZ",
+	# flake8-errmsg
+	"EM",
+	# flake8-executable
+	"EXE",
+	# flake8-future-annotations
+	"FA",
+	# flake8-logging
+	"LOG",
+	# flake8-logging-format
+	"G",
+	# flake8-pytest-style
+	"PT",
+	# flake8-return
+	"RET",
+	# flake8-self
+	"SLF",
+	# flake8-simplify
+	"SIM",
+	# flake8-slots
+	"SLOT",
+	# flake8-type-checking
+	"TCH",
+	# tryceratops
+	"TRY",
+	# refurb
+	"FURB",
+	# ruff-specific rules
+	"RUF",
+]
+ignore = [
+	"E203",
+	"S101",
+	"C414",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]

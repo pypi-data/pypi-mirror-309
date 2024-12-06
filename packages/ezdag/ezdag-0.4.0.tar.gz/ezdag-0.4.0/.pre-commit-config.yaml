@@ -1,0 +1,43 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: debug-statements
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: format
+        name: format
+        entry: hatch fmt
+        language: python
+        types: [python]
+        pass_filenames: false
+        verbose: true
+      - id: lint
+        name: lint
+        entry: hatch fmt --check
+        language: python
+        types: [python]
+        pass_filenames: false
+      - id: type-check
+        name: type-check
+        entry: hatch run check
+        language: python
+        types: [python]
+        pass_filenames: false
+      - id: type-check
+        name: check
+        entry: hatch run check
+        language: python
+        types: [python]
+        pass_filenames: false
+      - id: docs
+        name: docs
+        entry: hatch run docs:build
+        language: python
+        types: [python]
+        pass_filenames: false
