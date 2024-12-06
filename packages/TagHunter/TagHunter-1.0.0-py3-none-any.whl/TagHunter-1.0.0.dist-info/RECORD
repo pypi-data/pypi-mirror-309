@@ -1,0 +1,10 @@
+TagHunter/__init__.py,sha256=WYR-3B9Isg_FqPQQePD6VRTtHfFVwqF0T-HpdW0Osf4,30
+TagHunter/aggregator.py,sha256=Iuf3OvMAp7QsIRgvLz01lhz004rpQIpqklFZ-8DDlDk,2242
+TagHunter/extractor.py,sha256=V7IWybLeL4RTZRk-xJEOtS7Ed75-_-5PCKEGWj5hCfU,1711
+TagHunter/processor.py,sha256=hcPruDuPnOdynVfGOjjngGbCbY4uEiPD0KcMG2jl61o,1176
+TagHunter/updater.py,sha256=OMc05oziYGwRFI3v5Bz-ix9DMFMVAGcXPP5lMmEDZ9k,4269
+TagHunter/validator.py,sha256=NO6f1VDof34fG-umDFsZhmEMxnLPyYOAY-CcSg5tilk,4070
+TagHunter-1.0.0.dist-info/METADATA,sha256=o3mId1OeNAIAWawKayMCIZmKnhIoyiFQQbhbkpuQxO4,1446
+TagHunter-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+TagHunter-1.0.0.dist-info/top_level.txt,sha256=WGkHh5rGqDHc6kcYCculHsB8JyLDzpRoUSpSlyU7h9Y,10
+TagHunter-1.0.0.dist-info/RECORD,,
