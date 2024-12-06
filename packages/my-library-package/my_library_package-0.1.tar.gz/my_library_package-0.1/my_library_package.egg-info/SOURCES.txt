@@ -1,0 +1,9 @@
+setup.py
+my_library_package.egg-info/PKG-INFO
+my_library_package.egg-info/SOURCES.txt
+my_library_package.egg-info/dependency_links.txt
+my_library_package.egg-info/top_level.txt
+priority_summary_verify/__init__.py
+priority_summary_verify/priority.py
+priority_summary_verify/summary.py
+priority_summary_verify/verify.py
