@@ -1,0 +1,5 @@
+pyautogui
+colorama
+requests
+keyboard
+tkinter
