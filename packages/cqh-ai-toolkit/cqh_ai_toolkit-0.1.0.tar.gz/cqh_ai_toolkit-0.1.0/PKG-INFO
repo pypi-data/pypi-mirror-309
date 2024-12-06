@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: cqh-ai-toolkit
+Version: 0.1.0
+Summary: A toolkit for AI
+Author-email: Qianhe Chen <qianhechen01@gmail.com>
+Requires-Python: >=3.10
