@@ -1,0 +1,2 @@
+[console_scripts]
+backtestbuddy = backtestbuddy.cli:main

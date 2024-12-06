@@ -1,0 +1,15 @@
+backtestbuddy/__init__.py,sha256=Bv4EFdJVXdcwXguAceOvnhijFeAE8swuHQsT5zH-_4M,548
+backtestbuddy/backtest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtestbuddy/backtest/sport_backtest.py,sha256=HwZbZ6R-W-DiFbp4siEKkyofljdYwUxzZxR4Ntxbnog,25370
+backtestbuddy/metrics/__init__.py,sha256=huj7-EXdAenGm976aIfArlpxpisgtEBd_tSsxQXUxgE,28
+backtestbuddy/metrics/sport_metrics.py,sha256=kZ-Jftgk6USf0r7pHfvhJESpo-rcfJm-b7mxDIbL3Cs,13803
+backtestbuddy/plots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtestbuddy/plots/sport_plots.py,sha256=yL3kgbd9vnERkdRQcofG1YygcXzRSeP5AgcLfw3ScU0,10790
+backtestbuddy/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtestbuddy/strategies/sport_strategies.py,sha256=WciW9J_FFg07GeEwc_7mfzzlaFAUVqzk7TBDaxAERXA,7784
+backtestbuddy-0.1.1.dist-info/LICENSE,sha256=fG_Ne1BAj3ZnJxPCHsaTepkQPHq4xmTXBaYWJZ_PA1U,1088
+backtestbuddy-0.1.1.dist-info/METADATA,sha256=JUetQl2rzJzjvH_nuHF5fxvTOxHhgj-FsR9W0-ZE0_c,3839
+backtestbuddy-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+backtestbuddy-0.1.1.dist-info/entry_points.txt,sha256=cljETYSJHUTQK3u3SNtLKW1sPIJd8CPV46xc8U1nZnE,57
+backtestbuddy-0.1.1.dist-info/top_level.txt,sha256=lBjGJ8Gr1vhH_m97gyBUl0W92z-kSCOn-EONskoHnrI,14
+backtestbuddy-0.1.1.dist-info/RECORD,,
