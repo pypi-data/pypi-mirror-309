@@ -1,0 +1,17 @@
+mkdocs_mpgtheme_plugin/plugin.py,sha256=u9npOs21h5cvomwJT_EdqxXwo67AEQoEdfR6w15D5Nw,1090
+mkdocs_mpgtheme_plugin/assets/mpgtheme/css/mpg.css,sha256=sfmtAF1TZuZ5nIr0CufArIy3gDtJC9BMNxE2MBP4BZI,2942
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/footer-logo-placeholder.svg,sha256=I90nahckWhdMkxSiqZJWKmU_7SiDzBpNbnXIn5ey8OA,110400
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/footer-logo-placeholder.svg.license,sha256=AsK4K1bZ9jSnxO1r11gtyWCGyAebHDm_ZAgstC7ssx4,90
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/header-logo-bg.svg,sha256=NnG-AqPHYVSJEKCi5U7MJQvsuhPRaXvqRX9stsnfE_M,551
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/header-logo-bg.svg.license,sha256=AsK4K1bZ9jSnxO1r11gtyWCGyAebHDm_ZAgstC7ssx4,90
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/header-logo-placeholder.svg,sha256=k6R5l5btPKI7ZtXSfgBpBWR-xn5Kkf1WyLJNh30YFK4,868
+mkdocs_mpgtheme_plugin/assets/mpgtheme/images/header-logo-placeholder.svg.license,sha256=AsK4K1bZ9jSnxO1r11gtyWCGyAebHDm_ZAgstC7ssx4,90
+mkdocs_mpgtheme_plugin/mpgtheme/partials/footer.html,sha256=l89xJchpVyrDULi6_gX8do_NKJrEdpELWjRpFHOCfVQ,4567
+mkdocs_mpgtheme_plugin/mpgtheme/partials/footer_logo.html,sha256=XsHk_-SIWz_XoeAvVOPrfrPVYH1zfIsQMNbEehW4afg,202
+mkdocs_mpgtheme_plugin/mpgtheme/partials/header.html,sha256=JxdByu_JBayVhBKBS_BHUdKMVvUER1XaYB--6jrXcyg,2547
+mkdocs_mpgtheme_plugin/mpgtheme/partials/logo.html,sha256=Bcffqfdjzu_FO4N63gTBiSeqQ7s5u13aapeC3fTDqrg,235
+mkdocs_mpgtheme_plugin-0.0.1.dist-info/METADATA,sha256=Qta9qD-olQtPfIzSK5TnU4HP8-8be1KOZccDPDH0S_M,3413
+mkdocs_mpgtheme_plugin-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mkdocs_mpgtheme_plugin-0.0.1.dist-info/entry_points.txt,sha256=WjEUy2GBSHJYEvSEe7UdSgxo6G2vFHIdsGb7xy6MvjE,73
+mkdocs_mpgtheme_plugin-0.0.1.dist-info/top_level.txt,sha256=7kcRWsDqGUpuARB860igkDbk9ZAjL16ZuPmFoFtcUBs,23
+mkdocs_mpgtheme_plugin-0.0.1.dist-info/RECORD,,
