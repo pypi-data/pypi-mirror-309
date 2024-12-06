@@ -1,0 +1,2 @@
+[console_scripts]
+components = basic_components.cli.components:app

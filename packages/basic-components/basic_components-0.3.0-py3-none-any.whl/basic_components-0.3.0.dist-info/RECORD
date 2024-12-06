@@ -1,0 +1,12 @@
+basic_components/__init__.py,sha256=zO45LGT3yUKzv4YbkCsiMLCB1ttFnzhRLxWWhFUl2g0,56
+basic_components/component_dependencies.toml,sha256=o2k43miJv9byTS-aIj6bp0yGUXEjSzhW4axUnJiokBc,723
+basic_components/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_components/cli/components.py,sha256=VzOR-yGN977NS6RTHSaN4aKEdhDhMrlE8v1769gV-pY,7589
+basic_components/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_components/utils/jinjax.py,sha256=MBhU19qMT6TyEt084YMkSHJNaIR7-KlDQBfY_ydDnp8,706
+basic_components/utils/tailwind.py,sha256=NX-WfVxddcdIvGyThvvlotgI-cPNCejg904br1AVeGo,6359
+basic_components-0.3.0.dist-info/METADATA,sha256=m36nr90DzKommzllIvec-lkhlIt9Wvm4aJIDhKsUohs,7115
+basic_components-0.3.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+basic_components-0.3.0.dist-info/entry_points.txt,sha256=9dvbTchBXGtAI_I561ELkXCNqA1nEPyIoUzKlNrDihg,67
+basic_components-0.3.0.dist-info/licenses/LICENSE,sha256=7PBHZwCBAsXxHFK4zhQSPr7TVhBbHB5kjjfoLbt_ypI,1073
+basic_components-0.3.0.dist-info/RECORD,,
