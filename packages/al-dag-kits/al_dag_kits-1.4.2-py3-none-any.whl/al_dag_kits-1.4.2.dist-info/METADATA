@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: al-dag-kits
+Version: 1.4.2
+Summary: Custom utilities and triggers for Airflow DAGs
+Author: Zeming lim
+Author-email: zeming.lim@applovin.com
+Requires-Dist: apache-airflow-providers-google>=10.21.0
+Requires-Dist: apache-airflow-providers-cncf-kubernetes>=8.3.3
+
