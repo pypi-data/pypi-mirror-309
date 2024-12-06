@@ -1,0 +1,12 @@
+requests
+NumPy<2.0.0
+pandas
+matplotlib
+pickle
+scipy
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[pyomo]
+Pyomo>=6.7.0
