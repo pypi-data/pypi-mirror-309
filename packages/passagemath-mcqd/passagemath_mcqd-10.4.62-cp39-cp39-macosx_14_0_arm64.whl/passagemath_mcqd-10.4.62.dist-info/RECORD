@@ -1,0 +1,10 @@
+passagemath_mcqd.dylibs/libpari-gmp-tls.dylib,sha256=nCyu9gCPbQLQmzk32jOfCFpYAzRP8_Fr6fNoYvbXgX0,9837072
+passagemath_mcqd.dylibs/libgmp.10.dylib,sha256=a09_XZqa9pWNUZbUd1gueywk5Lm5EZoJnUw1FRFvNho,606176
+passagemath_mcqd-10.4.62.dist-info/RECORD,,
+passagemath_mcqd-10.4.62.dist-info/WHEEL,sha256=eg1zyktX7-3MiIVl-1qODnmTBFPGY0wRbVVdAIpcRo4,107
+passagemath_mcqd-10.4.62.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_mcqd-10.4.62.dist-info/METADATA,sha256=BM7SNICeJOCkfPJFla6FzEzBZRFSs2zovZ6172ER6L0,2650
+sage/all__sagemath_mcqd.py,sha256=JfNdiXZ8w_OvTD5zRNmHqB7TlKoFuYo0NA9VBP30zdA,43
+sage/graphs/mcqd.pxd,sha256=Nt-y-spw3laVaRSR0syBgMRg1tAxbgVEcLnoD02inFg,228
+sage/graphs/all__sagemath_mcqd.py,sha256=JfNdiXZ8w_OvTD5zRNmHqB7TlKoFuYo0NA9VBP30zdA,43
+sage/graphs/mcqd.cpython-39-darwin.so,sha256=Dgkmo5PdWEwxzPg7a9rzjrcLrJyBbXAqesB9D74Jar0,118720
