@@ -1,0 +1,12 @@
+pyglog/__init__.py,sha256=LJdayvVgl2ipLPgd0ajZmebGsm3vy_V_q_v1g6aUIH0,269
+pyglog/logger_factory.py,sha256=9tJoLykLdLiMcD3wi7Rj0WVn3caYO1YZaCmfqEAdfBg,729
+pyglog/providers/__init__.py,sha256=TFN1v1dqK7zpIhzoW8dURIRNF51oPP_C0M63dddAwmI,350
+pyglog/providers/base_logger_factory.py,sha256=wdQqCe_cFkfaAYraVtSlIT0FhlrkF8v0SkAG-dcg4V8,657
+pyglog/providers/elasticsearch_logger_factory.py,sha256=AP4cCZ84OVO7yzMdDXhNkc9KSVvjqKJ2SL5h0YkJMiA,693
+pyglog/providers/opensearch_logger_factory.py,sha256=TTZAEXAiIjSiZk5_CEcg2qci4SyVzOEHssbmaBQNo8A,753
+pyglog/providers/standard_logger.py,sha256=BEg1lsGg8iRHuUlV4DhFL1HTR4iU7IaeArzlgtsPKlA,705
+pyglog-1.0.0.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyglog-1.0.0.dist-info/METADATA,sha256=vyP7ometFW3-V6iIf9zQvDHZ5Zq73_lSJCzjHdDiDYQ,1674
+pyglog-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pyglog-1.0.0.dist-info/top_level.txt,sha256=DB9Do3a_drXcbHF05dn4ReraOOxMNgEPgbPNEdGEx00,7
+pyglog-1.0.0.dist-info/RECORD,,
