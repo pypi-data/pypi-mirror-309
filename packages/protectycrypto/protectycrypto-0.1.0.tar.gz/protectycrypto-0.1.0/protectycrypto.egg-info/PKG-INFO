@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: protectycrypto
+Version: 0.1.0
+Home-page: https://github.com/u1kerqx1/protectycrypto
+Author: u1kerq
+Author-email: ulkerqx1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Hash-keys based crypto
+
+
+Usages:
+`protectycrypto.get_keys()` - Returning all UTF-8 characters
+`protectycrypto.get_hash_keys(version)` - Returning hash keys (version - count of characters in key)
+`protectycrypto.encode(text, hash_keys)` - Encoding
+`protectycrypto.decoded(text, hash_keys)` - Decoding"# protectycrypto" 
