@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vianu
+Version: 0.0.7
+Summary: Vianu enables developers to access tools applicable to life sciences and healthcare.
+Home-page: https://github.com/smc40/vianu
+License: Unclear
+Keywords: healthcare,government,opensource,data science
+Author: Nicolas Perez Gonzalez
+Author-email: nicolas@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: abydos (>=0.5.0,<0.6.0)
+Requires-Dist: build (>=1.2.2.post1,<2.0.0)
+Requires-Dist: cologne-phonetics (>=2.0.0,<3.0.0)
+Requires-Dist: gradio (>=4.0,<5.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: twine (>=5.1.1,<6.0.0)
+Project-URL: Repository, https://github.com/smc40/vianu
