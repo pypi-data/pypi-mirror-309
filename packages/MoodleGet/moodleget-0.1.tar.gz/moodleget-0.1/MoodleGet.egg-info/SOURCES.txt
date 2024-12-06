@@ -1,0 +1,9 @@
+README.md
+setup.py
+MoodleGet/__init__.py
+MoodleGet/main.py
+MoodleGet.egg-info/PKG-INFO
+MoodleGet.egg-info/SOURCES.txt
+MoodleGet.egg-info/dependency_links.txt
+MoodleGet.egg-info/requires.txt
+MoodleGet.egg-info/top_level.txt
