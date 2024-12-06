@@ -1,0 +1,100 @@
+[tool.poetry]
+name = "kiwi_release_cli"
+version = "0.0.2"
+description = ""
+authors = ["Zoe Blevins <zblevins@nvidia.com>"]
+readme = "README.md"
+packages = [
+    {include = "kiwi_release_cli", from = "src"},
+]
+
+[tool.poetry.scripts]
+release = "kiwi_release_cli.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+gitpython = "^3.1.42"
+semver = "^3.0.2"
+
+[tool.poetry.group.dev.dependencies]
+anybadge = "^1.14.0"
+black = "^23.12.0"
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.7.10"
+lxml = "^4.9.3"
+mock = "^5.1.0"
+mypy = "^1.4.1"
+pydocstyle = "^6.3.0"
+pylint = "^2.17.4"
+pylint-gitlab = "^1.2.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+pytest-html = "^3.2.0"
+bandit = "^1.7.7"
+
+
+[tool.poetry.group.ipython.dependencies]
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.main]
+analyse-fallback-blocks = "no"
+jobs = 0
+py-version = "3.10"
+
+[tool.pylint.basic]
+class-attribute-naming-style = "snake_case"
+good-names = ["i", "j", "k", "v", "ex", "Run", "logger", "_", "f"]
+property-classes = ["abc.abstractproperty", "property"]
+
+[tool.pylint.format]
+ignore-long-lines = "^\\s*(# )?(from \\S+)?\\s?(import\\s)?(.+)?<?(http)?s?(://\\S+)?>?"
+
+[tool.pylint.imports]
+allow-wildcard-with-all = "no"
+
+[tool.pylint.messages_control]
+# Line length is checked by flake8 with flake8-bugbear
+disable = [
+    "raw-checker-failed",
+    "bad-inline-option",
+    "locally-disabled",
+    "file-ignored",
+    "suppressed-message",
+    "useless-suppression",
+    "deprecated-pragma",
+    "use-symbolic-message-instead",
+    "line-too-long",
+    "duplicate-code",
+    "fixme"
+]
+
+[tool.pylint.miscellaneous]
+# Don't flag these as failures, let us commit with things that still need to be done in the code
+notes = ["FIXME", "TODO"]
+
+[tool.pylint.similarities]
+min-similarity-lines = 16
+
+[tool.pydocstyle]
+convention = "google"
+inherit = false
+add_ignore = ["D200", "D212"]
+
+[tool.mypy]
+cache_dir = ".cache/mypy_cache"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+cache_dir = ".cache/pytest_cache"
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.xml]
+output = "coverage.xml"
