@@ -1,0 +1,11 @@
+[project]
+name = "pobullation"
+version = "0.0.0"
+description = "A placeholder package"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
