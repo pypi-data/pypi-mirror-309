@@ -1,0 +1,13 @@
+django_cloudevents/__init__.py,sha256=y1nMJnOy9IUJ8Ib09xfK8Whsx7Sy68Y6_phNQdpcViY,128
+django_cloudevents/_compat.py,sha256=0WhP8jfx9Fhr8la2TOP_eB5_G-tSfEiIin_5trIpznw,514
+django_cloudevents/apps.py,sha256=-TjUd9FdnXrBkPkeiOGMlCuZrwfntHSSSF3HHe9QFUc,110
+django_cloudevents/conf.py,sha256=j2viYKVQh5OtjL8u2xrOV2FDcF2-cMOaYTpFnjYEm7I,928
+django_cloudevents/processors.py,sha256=EAxIbklS5eeCJzrZCWTDsmduQqBFcB6-LP4Sh2n_SpY,2756
+django_cloudevents/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cloudevents/signals.py,sha256=Ew2HMZUNfgh3MnZaJkyGkiEJw54i3sIwi_WZ5hglb_k,60
+django_cloudevents/urls.py,sha256=IpfebPRIfLNWWOmLjw0N_glQ7pN2lzDcHLoXUxQSmsk,161
+django_cloudevents/views.py,sha256=SInHKlYeS6tn23KaQXAEhZ553dILs-RVZy9QY_Dzb4o,2280
+django_cloudevents-0.0.1.dist-info/METADATA,sha256=8-QBaxCMJLvCgLAH80DxadED_QnEUy4JeP85yRGTFcM,1788
+django_cloudevents-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+django_cloudevents-0.0.1.dist-info/licenses/LICENSE.txt,sha256=o1RNnLgn-ale4TkWNgcvhDVSEGcX8qhQj8fK-4yOlXQ,1111
+django_cloudevents-0.0.1.dist-info/RECORD,,
