@@ -1,0 +1,10 @@
+edu_to_analytics_web_edu-1.0.3-py3.9-nspkg.pth,sha256=JiKi9OKUosjgl1DPdUgiVf55DilJyHcsc3WasmNvsTg,517
+edu_to_analytics/data/__init__.py,sha256=wuboBNsHD6Kni2DEpe3IWEMQSu477pnAvCaxEBUCLeA,50
+edu_to_analytics/data/apps.py,sha256=sW2P77qGGOpo48YKSi33le5MuGGzg1K5I1IfVlXdUQY,127
+edu_to_analytics/data/tasks.py,sha256=mTvVLjpBKNBxU5Ar0rZQEv56NZSYCrIztokM7yCQmPI,1397
+edu_to_analytics/data/utils.py,sha256=_PYFL1Nm4vB76BKguGNd8U5ByoMjPGkM-VXQmGuswPo,4906
+edu_to_analytics_web_edu-1.0.3.dist-info/METADATA,sha256=Nb36nhp75Mt0Uv6yXn7DMOQbv3k9MT0K_2_EPzSfJrk,509
+edu_to_analytics_web_edu-1.0.3.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+edu_to_analytics_web_edu-1.0.3.dist-info/namespace_packages.txt,sha256=iXEK2tl4nZTj67RZ0ztqDCqgu6vxrQu4bZqcWu_MqwU,17
+edu_to_analytics_web_edu-1.0.3.dist-info/top_level.txt,sha256=iXEK2tl4nZTj67RZ0ztqDCqgu6vxrQu4bZqcWu_MqwU,17
+edu_to_analytics_web_edu-1.0.3.dist-info/RECORD,,
