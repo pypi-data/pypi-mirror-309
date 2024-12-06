@@ -1,0 +1,6 @@
+[
+  "skills/llm_inference.py::test_get_llm_token_limit",
+  "skills/llm_inference.py::test_llm_inference",
+  "skills/python_envs.py::test_get_python_code",
+  "skills/python_envs.py::test_python_line_is_variable_expression"
+]

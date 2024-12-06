@@ -1,0 +1,4 @@
+[
+  "llm_inference.py::test_get_llm_token_limit",
+  "llm_inference.py::test_llm_inference"
+]
