@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+eva/__init__.py
+eva/eva.py
+everythingisevangelion.egg-info/PKG-INFO
+everythingisevangelion.egg-info/SOURCES.txt
+everythingisevangelion.egg-info/dependency_links.txt
+everythingisevangelion.egg-info/requires.txt
+everythingisevangelion.egg-info/top_level.txt

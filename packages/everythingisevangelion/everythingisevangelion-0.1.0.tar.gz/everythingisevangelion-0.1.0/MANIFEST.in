@@ -1,0 +1,9 @@
+# Include all Python files in the package directory
+recursive-include mypackage *.py
+
+# Include README and LICENSE files
+include README.md
+include LICENSE.txt
+
+# Exclude .git files
+global-exclude .git*
