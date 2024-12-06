@@ -1,0 +1,12 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+sarkun/__init__.py
+sarkun/sarkun.py
+sarkun.egg-info/PKG-INFO
+sarkun.egg-info/SOURCES.txt
+sarkun.egg-info/dependency_links.txt
+sarkun.egg-info/entry_points.txt
+sarkun.egg-info/requires.txt
+sarkun.egg-info/top_level.txt
