@@ -1,0 +1,7 @@
+README.md
+setup.py
+spider-XR/__init__.py
+spider_XR.egg-info/PKG-INFO
+spider_XR.egg-info/SOURCES.txt
+spider_XR.egg-info/dependency_links.txt
+spider_XR.egg-info/top_level.txt
