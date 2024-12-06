@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: tf-registry
+Version: 1.0.0
+Summary: An API client for the public Terraform registry
+Author-email: Josh Holbrook <josh.holbrook@gmail.com>
+License: BSD-3
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: go-flag
+Requires-Dist: pytest-recording >=0.13.2
+Requires-Dist: python-hcl2
+Requires-Dist: requests
+Requires-Dist: syrupy >=4.7.2
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyter-console ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Requires-Dist: validate-pyproject[all] ; extra == 'dev'
+
+# tf-registry
+
+A client for the public Terraform registry.
+
+## Usage
+
+```py
+from tf_registry import RegistryClient
+
+client = RegistryClient()
+
+# List modules
+print(client.list())
+```
+
+This client implements the APIs documented here:
+
+<https://developer.hashicorp.com/terraform/registry/api-docs>
+
+For more details, peruse the docstrings.
+
+## Development
+
+This project uses [uv](https://docs.astral.sh/uv/) and
+[just](https://github.com/casey/just). The `justfile` should contain most of
+what you need - including `just format`, `just lint`, `just check`, and
+`just test`. Note that type checking requires node.js, because I use pyright.
+
+## License
+
+MIT. See `LICENSE` for more details.
