@@ -1,0 +1,155 @@
+import logging
+from functools import partial
+
+import pyproj
+import shapely.ops as ops
+from polytope_feature import shapes
+from shapely.geometry.polygon import Polygon
+
+from ..feature import Feature
+
+
+def get_area(points):
+    min_lat, min_lon = points[0]
+    max_lat, max_lon = points[1]
+
+    # Define the polygon coordinates
+    polygon_coords = [
+        (min_lat, min_lon),  # Bottom-left corner
+        (min_lat, max_lon),  # Bottom-right corner
+        (max_lat, max_lon),  # Top-right corner
+        (max_lat, min_lon),  # Top-left corner
+        (
+            min_lat,
+            min_lon,
+        ),  # Closing the polygon by returning to the bottom-left corner
+    ]
+
+    # Create the polygon
+    pgon = Polygon(polygon_coords)
+    geom_area = ops.transform(
+        partial(
+            pyproj.transform,
+            pyproj.Proj(init="EPSG:4326"),
+            pyproj.Proj(
+                proj="aea", lat_1=pgon.bounds[1], lat_2=pgon.bounds[3]
+            ),  # noqa: E501
+        ),
+        pgon,
+    )
+    return geom_area.area / 1_000_000
+
+
+class BoundingBox(Feature):
+    def __init__(self, feature_config, client_config):
+        assert feature_config.pop("type") == "boundingbox"
+        self.points = feature_config.pop("points", [])
+        self.axes = feature_config.pop("axes", [])
+
+        if "axes" in feature_config:
+            raise ValueError(
+                "Bounding box does not have axes in feature, did you mean axes?"  # noqa: E501
+            )
+
+        assert (
+            len(feature_config) == 0
+        ), f"Unexpected keys in config: {feature_config.keys()}"
+
+        area_bb = get_area(self.points)
+        logging.info(f"Area of bounding box: {area_bb} km\u00b2")
+        if area_bb > client_config.polygonrules.max_area:
+            raise ValueError(
+                f"Area of Bounding Box {area_bb} km\u00b2 exceeds the maximum size of {client_config.polygonrules.max_area} km\u00b2"  # noqa: E501
+            )
+
+    def get_shapes(self):
+        # Time-series is a squashed box from start_step to start_end for each point  # noqa: E501
+        if len(self.points[0]) == 2:
+            return [
+                shapes.Union(
+                    ["latitude", "longitude"],
+                    *[
+                        shapes.Box(
+                            ["latitude", "longitude"],
+                            lower_corner=[
+                                self.points[0][0],
+                                self.points[0][1],
+                            ],  # noqa: E501
+                            upper_corner=[
+                                self.points[1][0],
+                                self.points[1][1],
+                            ],  # noqa: E501
+                        )
+                    ],
+                )
+            ]
+        else:
+            return [
+                shapes.Union(
+                    ["latitude", "longitude", "levelist"],
+                    *[
+                        shapes.Box(
+                            ["latitude", "longitude", "levelist"],
+                            lower_corner=[
+                                self.points[0][0],
+                                self.points[0][1],
+                                self.points[0][2],
+                            ],
+                            upper_corner=[
+                                self.points[1][0],
+                                self.points[1][1],
+                                self.points[1][2],
+                            ],
+                        )
+                    ],
+                )
+            ]
+
+    def incompatible_keys(self):
+        return []
+
+    def coverage_type(self):
+        return "MultiPoint"
+
+    def name(self):
+        return "Bounding Box"
+
+    def parse(self, request, feature_config):
+        if feature_config["type"] != "boundingbox":
+            raise ValueError("Feature type must be boudningbox")
+        if "step" in request and "number" in request:
+            step = request["step"].split("/")
+            number = request["number"].split("/")
+            if len(step) > 1 and len(number) > 1:
+                raise ValueError(
+                    "Multiple steps and numbers not yet supported for Bounding Box feature, this will be added in the future"  # noqa: E501
+                )
+        if len(feature_config["points"]) != 2:
+            raise ValueError(
+                "Bounding box must have only two points in points"
+            )  # noqa: E501
+        if "axis" in feature_config:
+            raise ValueError(
+                "Bounding box does not have axis in feature, did you mean axes?"  # noqa: E501
+            )
+        if "axes" not in feature_config:
+            for point in feature_config["points"]:
+                if len(point) != 2:
+                    raise ValueError(
+                        "For Bounding Box each point must have only two values unless axes is specified"  # noqa: E501
+                    )
+        else:
+            for point in feature_config["points"]:
+                if len(point) != len(feature_config["axes"]):
+                    raise ValueError(
+                        "Bounding Box points must have the same number of values as axes"  # noqa: E501
+                    )
+            if "axes" in feature_config:
+                if ("levelist" in feature_config["axes"]) and (
+                    "levelist" in request
+                ):  # noqa: E501
+                    raise ValueError(
+                        "Bounding Box axes is overspecified in request"
+                    )  # noqa: E501
+
+        return request
