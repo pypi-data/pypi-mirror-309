@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: prlps_text_replacer
+Version: 0.0.1
+Summary: замена слов и фраз по словарям замен с сохранением исходного регистра
+Home-page: https://github.com/prolapser/prlps_text_replacer
+Author: prolapser
+License: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+`pip install prlps_text_replacer`
+
+
+```python
+from prlps_text_replacer import text_replace_by_dict
+
+text = "Гуманоидный робот и Соединенное Королевство - это разные вещи. А безпанцирные улитки - это просто слизни. РОБОТ рОбОт робот"
+replacements = {
+    "гуманоидный робот": "андроид",
+    "Соединенное Королевство": "Великобритания",
+    "безпанцирные улитки": "слизни",
+    "робот": "машина",
+    "РОБОТ": "АВТОМАТ",
+}
+
+result = text_replace_by_dict(text, replacements)
+print(result)
+```
