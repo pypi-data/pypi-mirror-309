@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tlgbotfwk.egg-info/PKG-INFO
+tlgbotfwk.egg-info/SOURCES.txt
+tlgbotfwk.egg-info/dependency_links.txt
+tlgbotfwk.egg-info/requires.txt
+tlgbotfwk.egg-info/top_level.txt
