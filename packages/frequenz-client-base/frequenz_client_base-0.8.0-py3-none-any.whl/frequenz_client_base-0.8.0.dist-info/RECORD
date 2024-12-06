@@ -1,0 +1,14 @@
+frequenz/client/base/__init__.py,sha256=3QsJtivRSntP6GvuMCLQF5YFd-Fgtf8Z8RQMYF8w1LE,120
+frequenz/client/base/channel.py,sha256=UwGFDf-A1A2lZZxN-2P23YmS4QbqRTmUYZr4ovXqHe0,11563
+frequenz/client/base/client.py,sha256=rI99XqoAg2VGR1DfrB8A2zoXaN9NdgbVslXaBbcBtz4,12489
+frequenz/client/base/conftest.py,sha256=NB21GYKVnjam9lHyFyBEYxR8qYjDkvV70f4kuYLzAUY,409
+frequenz/client/base/conversion.py,sha256=IKgv5Wy02B7qzJwMaMZs_HyL6oK1oh22NGBFYaTyouY,1521
+frequenz/client/base/exception.py,sha256=N064So0TC6jO4yF1JZwgzaUmHqnwaLm7Avg4SDpKcEw,23633
+frequenz/client/base/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz/client/base/retry.py,sha256=WLHaeaHPnQjNSeFhFV65bt3tkDswKECkS3EGFJgnm2I,5078
+frequenz/client/base/streaming.py,sha256=WO_BQFHu2tpVGDLZE1ysjYHa56-AIP5hQ0ffC4v0jW0,4562
+frequenz_client_base-0.8.0.dist-info/LICENSE,sha256=C3svrUte2N2h2JaK1qfbYQNp5MTaqdaJkFLe-kgUxbU,1089
+frequenz_client_base-0.8.0.dist-info/METADATA,sha256=6t3soiNHS3aNa3Qoovsu0x9gW-3Jzxz-4C5hLZMQsRY,4693
+frequenz_client_base-0.8.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+frequenz_client_base-0.8.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_client_base-0.8.0.dist-info/RECORD,,
