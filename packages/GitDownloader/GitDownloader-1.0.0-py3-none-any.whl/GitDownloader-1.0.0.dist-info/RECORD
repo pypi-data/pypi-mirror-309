@@ -1,0 +1,9 @@
+GitDownloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GitDownloader/cli.py,sha256=t98-jKiRgkGw2N5YrBJ_UiOMvv9HctYTVHfN-01PgTY,579
+GitDownloader/downloader.py,sha256=gmYiUVrlKUYyMxr4_TiEUhLgm1axLSjX_TYEne7_oc0,5610
+GitDownloader-1.0.0.dist-info/LICENSE,sha256=o31FDYqDKG5mqsATbr_eWxLqwQ_VqAIAOL4TodkPeDs,1078
+GitDownloader-1.0.0.dist-info/METADATA,sha256=6EVm8MLKG4r4l5f8UYolbELWFobxLbuh9b6y5p6fE0A,2735
+GitDownloader-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+GitDownloader-1.0.0.dist-info/entry_points.txt,sha256=xvw6OQ6oQoABs2YU43BsJxBtEgMEa4kah8A8o_KNP6I,57
+GitDownloader-1.0.0.dist-info/top_level.txt,sha256=Idg4gbQYYG_fbxt1U0-Uja7hdUW1ZKSSYBfNdA2wNfg,14
+GitDownloader-1.0.0.dist-info/RECORD,,
