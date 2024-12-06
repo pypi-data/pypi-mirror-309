@@ -1,0 +1,67 @@
+# LinksGPT URL Expander Python SDK
+Uncover truth behind short links to avoid malicious sites and privacy breaches. [LinksGPT](https://www.linksgpt.com/) URL Expander SDK, provides an easy way to interact with the [URL Expander](https://www.linksgpt.com/url-expander) API - Expands shortened URLs and retrieves details about redirections and the final destination URL.
+
+[LinksGPT](https://www.linksgpt.com/) is a professional link management platform for custom short urls, brand building and conversion optimization. It offers intelligent URL shortening and expansion, custom domains, team roles, customizable QR codes, tracking and AI-based in-depth analytics, deep linking, openAPI and enhanced link security. Powered by AI, it provides intelligent insights and recommendations based on user behavior and click patterns, support data-driven brand strategies and marketing decisions.
+
+## What is URL Expander?
+
+[URL Expander](https://www.linksgpt.com/url-expander) is a tool that reveals the final destination of any URL, including shortened links. It allows users to see the original or expanded URL that is hidden behind a short link. By entering a shortened URL, the tool retrieves the actual URL destination and provides users with more information about where they will be directed if they click on the link. This is especially important for security purposes, as shortened URLs can be a means to disguise malicious or harmful links. By expanding the link, users can assess its legitimacy and make more informed decisions about whether to click on it.
+
+## Requirements
+
+Python 2.7 and 3.4+
+
+## Installation & Usage
+### pip install
+
+```sh
+pip install short-url-expander
+```
+Then import the package:
+```python
+import url_expander
+```
+
+## Getting Started
+
+```python
+from __future__ import print_function
+import time
+import url_expander
+from url_expander.rest import ApiException
+from pprint import pprint
+
+# Configure the client
+configuration = url_expander.Configuration()
+# create an instance of the API class
+api_instance = url_expander.URLExpanderApi(url_expander.ApiClient(configuration))
+body = url_expander.ToolsUrlexpanderBody(url="https://0t1.co/linksgptapidoc") # ToolsUrlexpanderBody | JSON payload containing the URL to expand
+
+try:
+    # Expand a shortened URL
+    api_response = api_instance.url_expander(body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling URLExpanderApi->url_expander: %s\n" % e)
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *https://app.linksgpt.com/api/v1*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*URLExpanderApi* | url_expander | **POST** /tools/url-expander | Expand a shortened URL
+
+## Source Code
+
+GitHub Repo: [url-expander-sdk-python](https://github.com/LinksGPT/url-expander-sdk-python)
+
+## Documentation For Authorization
+
+ All endpoints do not require authorization.
+
+
+## Author
+
+service@linksgpt.com
