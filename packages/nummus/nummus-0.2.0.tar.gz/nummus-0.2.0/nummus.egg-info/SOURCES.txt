@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nummus.egg-info/PKG-INFO
+nummus.egg-info/SOURCES.txt
+nummus.egg-info/dependency_links.txt
+nummus.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
