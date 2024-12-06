@@ -1,0 +1,2 @@
+[console_scripts]
+floyd = floyd.tool:main

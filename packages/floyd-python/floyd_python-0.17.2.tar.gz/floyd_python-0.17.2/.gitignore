@@ -1,0 +1,10 @@
+.coverage
+.ruff_cache
+.venv
+build
+dist
+*.pyc
+*.pyc.d
+*.py,cover
+floyd_python.egg-info
+node_modules
