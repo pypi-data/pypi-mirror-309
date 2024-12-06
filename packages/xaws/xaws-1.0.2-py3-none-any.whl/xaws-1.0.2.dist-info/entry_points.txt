@@ -1,0 +1,3 @@
+[console_scripts]
+xaws-decrypt = xaws.command:decrypt
+xaws-encrypt = xaws.command:encrypt
