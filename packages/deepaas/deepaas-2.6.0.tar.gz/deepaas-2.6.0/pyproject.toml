@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "deepaas"
+version = "2.6.0"
+description = "DEEPaaS is a REST API to expose a machine learning model."
+authors = ["Alvaro Lopez Garcia <aloga@ifca.unican.es>"]
+license = "Apache-2"
+readme = "README.md"
+
+homepage = "https://github.com/ai4os/deepaas"
+repository = "https://github.com/ai4os/deepaas/issues"
+documentation = "https://deepaas.readthedocs.io/"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ai4os/deepaas/issues"
+
+[tool.poetry.scripts]
+deepaas-run = "deepaas.cmd.run:main"
+deepaas-predict = "deepaas.cmd.execute:main"
+deepaas-cli = "deepaas.cmd.cli:main"
+
+[tool.poetry.plugins] # Optional super table
+
+[tool.poetry.plugins."oslo.config.opts"]
+deepaas = "deepaas.opts:list_opts"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"oslo.log" = "^4.8.0"
+"oslo.config" = "^8.8.1"
+stevedore = "^3.5.2"
+aiohttp = "^3.8.6"
+aiohttp-apispec = "^2.2.3"
+Werkzeug = "^2.0.3"
+marshmallow = "^3.14.1"
+webargs = "<6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
