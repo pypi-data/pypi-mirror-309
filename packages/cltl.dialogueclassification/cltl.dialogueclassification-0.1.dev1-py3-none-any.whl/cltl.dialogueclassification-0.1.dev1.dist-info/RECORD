@@ -1,0 +1,14 @@
+cltl/dialogue_act_classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cltl/dialogue_act_classification/add_dialogue_acts_to_emissor.py,sha256=ZbEARAcr1QamQNyPNNeWwpi0Vfe_Fdk_QwNCOQAamyc,2222
+cltl/dialogue_act_classification/api.py,sha256=Rp9Av598zzprDQE_1o0TDipn0Td6VdM5H_SK_v0LrM4,795
+cltl/dialogue_act_classification/midas_classifier.py,sha256=15C9HfDzTXXOdi1bkGRry50ejTbAUfDjIHXPPTVZbgI,6139
+cltl/dialogue_act_classification/silicone_classifier.py,sha256=UyI6QDiowz329lsYdhBP-9gYbsxAuZ9JfkagF1owSS4,1815
+cltl.dialogueclassification-0.1.dev1.data/data/VERSION/VERSION,sha256=wGORH2szZdB6YNS6s22A13Ch5cgA8vzE1xc7X5m86e0,9
+cltl_service/dialogue_act_classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cltl_service/dialogue_act_classification/schema.py,sha256=PfyOIZR7zu1lhognZtn7y2qGyFfolMvYy74Z5LIsXYU,1180
+cltl_service/dialogue_act_classification/service.py,sha256=ifE1fpWNWEKXHhkDvSPJKiaHdDuW138QakQiYMhVut0,3002
+cltl.dialogueclassification-0.1.dev1.dist-info/LICENSE,sha256=J40faxY6nCahHZjmm1Uny__bdNIEGLWVq5W92_6HZEY,1069
+cltl.dialogueclassification-0.1.dev1.dist-info/METADATA,sha256=TC-FRt0J_WXNSe8KtlNPriV4Laz8rAxZXUfPSk9URNA,3185
+cltl.dialogueclassification-0.1.dev1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+cltl.dialogueclassification-0.1.dev1.dist-info/top_level.txt,sha256=WN13WMb5MxwAXuafgmFdnB4CIGk83UfFsaW-sVEwS4Q,18
+cltl.dialogueclassification-0.1.dev1.dist-info/RECORD,,
