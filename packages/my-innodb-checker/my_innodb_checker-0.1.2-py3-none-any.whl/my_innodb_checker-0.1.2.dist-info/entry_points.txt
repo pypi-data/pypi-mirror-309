@@ -1,0 +1,3 @@
+[console_scripts]
+mycheck=my_innodb_checker.cli:main
+
