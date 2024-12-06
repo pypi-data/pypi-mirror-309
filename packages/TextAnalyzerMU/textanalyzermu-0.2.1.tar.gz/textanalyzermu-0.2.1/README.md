@@ -1,0 +1,2 @@
+# TextAnalyzerMU
+It is a natural language processing library focused on simplifying and enhancing text analysis. It is a versatile tool that offers a set of advanced functions, enabling users to extract valuable insights, understand text in depth, identify patterns, and derive meaningful value.
