@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: django-string-helpers
+Version: 0.1.0
+Summary: A collection of string helper utilities for Django applications
+Home-page: https://gitlab.com/rohit2096/sample-library.git
+Author: Rohit Hazare
+Author-email: rohithazare20@gmail.com
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django String Helpers
+
+A collection of string helper utilities for Django applications.
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install django-string-helpers
+
+INSTALLED_APPS = [
+    # Other apps
+    "django_string_helpers",
+]
+
+from django_string_helpers.string_helpers import to_camel_case
+
+print(to_camel_case("hello_world"))  # Output: helloWorld

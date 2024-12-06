@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_string_helpers.egg-info/PKG-INFO
+django_string_helpers.egg-info/SOURCES.txt
+django_string_helpers.egg-info/dependency_links.txt
+django_string_helpers.egg-info/requires.txt
+django_string_helpers.egg-info/top_level.txt
+sample_library/__init__.py
+sample_library/models.py
+sample_library/views.py
+sample_library/tests/__init__.py
+sample_library/tests/tests_utils.py
+sample_library/utils/__init__.py
+sample_library/utils/apps.py
+sample_library/utils/string_helper.py
