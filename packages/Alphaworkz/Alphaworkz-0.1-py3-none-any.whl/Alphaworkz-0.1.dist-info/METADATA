@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Alphaworkz
+Version: 0.1
+Summary: This package allows to make the ERP easily customizable
+Home-page: https://github.com/qlkannan/Alphaworkz
+Author: Kannan
+Author-email: support@alphaworks.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: SetupTools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+

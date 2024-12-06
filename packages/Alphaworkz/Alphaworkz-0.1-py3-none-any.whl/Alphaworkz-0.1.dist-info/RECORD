@@ -1,0 +1,10 @@
+Packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Packages/version.py,sha256=rqyZtt1djmoU2vxYGslRgV4TaBWrxK8uesP_Xai_8-U,19
+Packages/SingleTableQueries/SelectQueries.py,sha256=gBsjKMaWn1yi0s33MY-9aFHFkAvFuzIZUtdqTcsvqt0,5233
+Packages/SingleTableQueries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/SingleTabselectTest.py,sha256=XMZahr6k2yR479vIZ1lL6Lyvri1UZrp-RI4A3a1HEFQ,751
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Alphaworkz-0.1.dist-info/METADATA,sha256=kOfydSNEIclVPy42JPlAZ_rrI_4BBtOupl8K_pQj3Jk,1161
+Alphaworkz-0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+Alphaworkz-0.1.dist-info/top_level.txt,sha256=mllQdSAqjimNZV3AVs5XOthmmzGKeGPJI8z2S-7gdYI,15
+Alphaworkz-0.1.dist-info/RECORD,,
