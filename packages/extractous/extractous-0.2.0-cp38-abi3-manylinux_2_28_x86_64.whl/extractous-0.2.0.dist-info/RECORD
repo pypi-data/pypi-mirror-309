@@ -1,0 +1,16 @@
+extractous-0.2.0.dist-info/METADATA,sha256=hcD03zbFa6Crm9jfdj1XIccvAciVBinrYL4dW1bmjOI,2358
+extractous-0.2.0.dist-info/WHEEL,sha256=n8JOMS4mpGuG1hgoxsuagLgQ791db77hNG1Bpq4l_8M,106
+extractous/__init__.py,sha256=Oyq4Nw_-Zo0UatbHWKHRe5lSlj9sOb_ui1r4pekCJVA,399
+extractous/libawt.so,sha256=3-Tfn-7xi8Rach6ESxl56RKkNbfIQa6nyh_kyY5mahU,891240
+extractous/libawt_headless.so,sha256=lfKDKIkg2hxo-WM6E5y2zTzg-rXR8CORiWKmWiICYNE,42648
+extractous/libawt_xawt.so,sha256=r95aqpYezqJk-qaE0W3T6pFk0hYJLx9dWfIGOgVubYs,579600
+extractous/libfontmanager.so,sha256=o_7TAT3TGK_rsCNk3_MHuw9lAFeHkC1somkSJPsonVI,1738496
+extractous/libjava.so,sha256=SszBdYcYSfITkQBJ8v61VOAvJs5OJxm_SrWYdslKGNg,15424
+extractous/libjavajpeg.so,sha256=QnAL6oaXPIlM6xgscPw0O6b-eCPOgQuA_l3EqKFngDY,235872
+extractous/libjsound.so,sha256=ngR249ic-zf7zdQ1mDOQZyRuThuugRk3zPvMfC0SIBM,80344
+extractous/libjvm.so,sha256=SszBdYcYSfITkQBJ8v61VOAvJs5OJxm_SrWYdslKGNg,15424
+extractous/liblcms.so,sha256=X7ta1zAYvVkQK5nLu1Z3vchM9b3Mgn9sJrMtTBT4eTY,523960
+extractous/libmlib_image.so,sha256=IRGXoODSEbEqbfgmousI_9Hr0rbGAFMzT6JAsRxkmKU,598880
+extractous/libtika_native.so,sha256=E37YiWddf4lVaAaSHgLecFebzAJd7_DEsFFxf-6BAv0,111022776
+extractous/_extractous.abi3.so,sha256=YUtrWGwwZny2XTbCbPyALZNLgvbbxZbrO7WuEwLGXNo,1027424
+extractous-0.2.0.dist-info/RECORD,,
