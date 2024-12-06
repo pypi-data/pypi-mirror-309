@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: TextAnalyzerMU
+Version: 0.2.2
+Summary: TextAnalyzerMU
+Home-page: https://github.com/izaskunbenegas/TextAnalyzer.git
+Author: Grupo G: Naia Flores, Paula Arnaiz, Izaskun Benegas y Anne Morán
+Author-email: naiaflorescubillas@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: transformers ==4.46.2
+Requires-Dist: nltk ==3.9.1
+Requires-Dist: wordcloud ==1.9.4
+Requires-Dist: matplotlib ==3.9.2
+Requires-Dist: numpy ==2.0.2
+Requires-Dist: sumy ==0.11.0
+Requires-Dist: langdetect ==1.0.9
+Requires-Dist: scikit-learn ==1.5.2
+Requires-Dist: python-Levenshtein ==0.26.1
+Requires-Dist: googletrans ==4.0.0rc1
+Requires-Dist: pandas ==2.2.3
+Requires-Dist: tensorflow ==2.18.0
+Requires-Dist: tf-keras ==2.18.0
+
+# TextAnalyzerMU
+It is a natural language processing library focused on simplifying and enhancing text analysis. It is a versatile tool that offers a set of advanced functions, enabling users to extract valuable insights, understand text in depth, identify patterns, and derive meaningful value.
