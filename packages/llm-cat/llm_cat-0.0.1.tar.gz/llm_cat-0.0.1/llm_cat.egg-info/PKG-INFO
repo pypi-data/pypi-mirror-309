@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: llm_cat
+Version: 0.0.1
+Summary: llm api and prompt
+Home-page: https://www.linkedin.com/in/chandlersong/
+Author: chandler song
+Author-email: 275737875@qq.com
+License: MIT
+Keywords: llm api and prompt
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: jinja2
+
+# Introduction
+## Install package
+```shell
+pip install llm_cat
+```
+##  Example Usage:
+```python
+# deepseek
+message = "What is the capital of France?"
+token ="sk-xxxxxxxxxxxxx"
+result = deepseek_chat(message,token)
+print(result)
+
+
+# ollama
+message = "What is the capital of France?"
+response = ollama_chat(message,model='llama3.1',url = 'http://localhost:11434/api/chat')
+print(response)
+```
+
+
+
+## Template
+
+```python
+from jinja2 import Template
+
+prompt_template = "Hello {{ name }}!"
+template = Template(prompt_template)
+print(template.render(name="John Doe"))
+```
+

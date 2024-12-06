@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+llm_cat/__init__.py
+llm_cat/base.py
+llm_cat/deepseek_api.py
+llm_cat/ollama_api.py
+llm_cat/prompt.py
+llm_cat.egg-info/PKG-INFO
+llm_cat.egg-info/SOURCES.txt
+llm_cat.egg-info/dependency_links.txt
+llm_cat.egg-info/requires.txt
+llm_cat.egg-info/top_level.txt
