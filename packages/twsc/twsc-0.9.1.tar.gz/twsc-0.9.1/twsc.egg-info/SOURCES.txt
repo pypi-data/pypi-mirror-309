@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/main.py
+src/utils.py
+tests/__init__.py
+tests/test_twc.py
+twsc.egg-info/PKG-INFO
+twsc.egg-info/SOURCES.txt
+twsc.egg-info/dependency_links.txt
+twsc.egg-info/entry_points.txt
+twsc.egg-info/requires.txt
+twsc.egg-info/top_level.txt
