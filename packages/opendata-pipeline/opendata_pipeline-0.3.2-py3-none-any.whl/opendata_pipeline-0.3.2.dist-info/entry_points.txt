@@ -1,0 +1,2 @@
+[console_scripts]
+opendata-pipeline = opendata_pipeline.main:app
