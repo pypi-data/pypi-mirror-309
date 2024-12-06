@@ -1,0 +1,9 @@
+README.md
+setup.py
+reinusKR-rev/__init__.py
+reinusKR-rev/reinusKR-rev.py
+reinusKR_rev.egg-info/PKG-INFO
+reinusKR_rev.egg-info/SOURCES.txt
+reinusKR_rev.egg-info/dependency_links.txt
+reinusKR_rev.egg-info/entry_points.txt
+reinusKR_rev.egg-info/top_level.txt
