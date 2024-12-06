@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+trembala/__init__.py
+trembala.egg-info/PKG-INFO
+trembala.egg-info/SOURCES.txt
+trembala.egg-info/dependency_links.txt
+trembala.egg-info/top_level.txt
