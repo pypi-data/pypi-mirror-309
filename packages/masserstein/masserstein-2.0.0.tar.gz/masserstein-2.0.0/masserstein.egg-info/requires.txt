@@ -1,0 +1,8 @@
+IsoSpecPy
+numpy
+pulp
+scipy
+tqdm
+
+[graphics]
+matplotlib

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+masserstein/__init__.py
+masserstein/deconv_simplex.py
+masserstein/misc.py
+masserstein/model_selection.py
+masserstein/peptides.py
+masserstein/polymers.py
+masserstein/spectrum.py
+masserstein.egg-info/PKG-INFO
+masserstein.egg-info/SOURCES.txt
+masserstein.egg-info/dependency_links.txt
+masserstein.egg-info/requires.txt
+masserstein.egg-info/top_level.txt
