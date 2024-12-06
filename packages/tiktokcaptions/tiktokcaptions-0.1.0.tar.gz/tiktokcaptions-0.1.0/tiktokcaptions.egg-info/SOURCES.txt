@@ -1,0 +1,13 @@
+README.md
+setup.py
+tiktokcaptions/__init__.py
+tiktokcaptions/captions.py
+tiktokcaptions/segment_parser.py
+tiktokcaptions/text_drawer.py
+tiktokcaptions.egg-info/PKG-INFO
+tiktokcaptions.egg-info/SOURCES.txt
+tiktokcaptions.egg-info/dependency_links.txt
+tiktokcaptions.egg-info/requires.txt
+tiktokcaptions.egg-info/top_level.txt
+tiktokcaptions/assets/fonts/Montserrat-Bold.ttf
+tiktokcaptions/assets/fonts/Montserrat-ExtraBold.ttf
