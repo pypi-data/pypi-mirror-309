@@ -1,0 +1,11 @@
+htt/__init__.py,sha256=smpSj1I8RumM9JqPY7El_BLypdz8vP6EE3aegJkHHjQ,704
+htt/application.py,sha256=oe6m65bJ3nCh-4YPivez4vuy_x9dm3DULu_V4a9jNLc,15153
+htt/exceptions.py,sha256=k86wMw1J7RBU7HLWvrcJHdAYtanpSfCjpN0Tw3fzz9A,2086
+htt/exceptions_grpc_bridge.py,sha256=C5Ban9OukyhAO314gb5eW_iL9DR6iSSe5TrZnuvU6Ps,1579
+htt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htt/pytest_skip_dev.py,sha256=b-RMN_s-7g6PvKCVMSwX8RLwqJkwe8pPkvSaY-IkS-I,495
+htt/segment_timer.py,sha256=G8SZeTZoS-rNxSA-qIhww_uvpNyvon0ovsW3AlVqM_I,2013
+htt-0.27.dist-info/LICENSE,sha256=vzYXRv3_-qpRcODVXyq0TLyNqFMj4uYwW_Bi7umu4zA,1498
+htt-0.27.dist-info/METADATA,sha256=c10f0T9QvRqi45cgfc5YUhBun7-5G6agn-_I2z_eN4M,605
+htt-0.27.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+htt-0.27.dist-info/RECORD,,
