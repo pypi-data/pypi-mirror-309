@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/specfem/__init__.py
+src/specfem/specfem.py
+src/specfem.egg-info/PKG-INFO
+src/specfem.egg-info/SOURCES.txt
+src/specfem.egg-info/dependency_links.txt
+src/specfem.egg-info/requires.txt
+src/specfem.egg-info/top_level.txt
