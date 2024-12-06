@@ -1,0 +1,6 @@
+feedparser~=6.0
+loguru~=0.7
+pydantic>=2.9.2
+aiohttp>=3.10.10
+tenacity>=9.0.0
+aiofiles>=24.1.0
