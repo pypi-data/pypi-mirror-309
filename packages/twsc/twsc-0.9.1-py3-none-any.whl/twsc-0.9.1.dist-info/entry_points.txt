@@ -1,0 +1,2 @@
+[console_scripts]
+twsc = src.main:clean_trailing_whitespace

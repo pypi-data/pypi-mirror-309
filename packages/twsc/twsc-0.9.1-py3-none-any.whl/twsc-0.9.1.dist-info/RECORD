@@ -1,0 +1,11 @@
+src/__init__.py,sha256=jJvTCJopKULVOiQyDR2mX4dD-cBFXjVSNmpDmN_Fy-U,63
+src/main.py,sha256=1_7Fr0HGU7QwwLGEoVSx2hog4GyOqbhNX9V8c3BWXs8,6199
+src/utils.py,sha256=UOBJS1QIEfaPJQ8Yjcryz43f1rD-By1x6IKe029WiuA,2283
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_twc.py,sha256=UQSl5CKXP-AI5YerAQq7ls6BaAI9mXtji2OhDXfyF_k,6419
+twsc-0.9.1.dist-info/LICENSE,sha256=gAk2ax3DyzQI7ZH4C1_AIWsqeDXXTClj5FsWj5mBPXQ,1068
+twsc-0.9.1.dist-info/METADATA,sha256=Zp3W56Jc13drbBNzV03qyad_U6FVB1m1aegiHSOBJVE,3441
+twsc-0.9.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+twsc-0.9.1.dist-info/entry_points.txt,sha256=bgx2V-rhu-U9SHs88_n-sPM0eKBNXViujm1DmxMx2p4,60
+twsc-0.9.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+twsc-0.9.1.dist-info/RECORD,,
