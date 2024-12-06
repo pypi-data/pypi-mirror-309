@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+seven_deadly_swarms/__init__.py
+seven_deadly_swarms/swarms.py
+seven_deadly_swarms.egg-info/PKG-INFO
+seven_deadly_swarms.egg-info/SOURCES.txt
+seven_deadly_swarms.egg-info/dependency_links.txt
+seven_deadly_swarms.egg-info/requires.txt
+seven_deadly_swarms.egg-info/top_level.txt
