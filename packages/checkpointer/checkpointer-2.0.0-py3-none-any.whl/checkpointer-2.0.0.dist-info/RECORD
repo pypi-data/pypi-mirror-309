@@ -1,0 +1,13 @@
+checkpointer/__init__.py,sha256=TODGBGbZYBJ5LIpz5t6tnQNJ7ODPRUvXjv3Ooqb8-cc,357
+checkpointer/checkpoint.py,sha256=V8JL8ibmMeqZjLjaigeAWa-8c948VfIiYqO8t5OFk48,4812
+checkpointer/function_body.py,sha256=92mnTY9d_JhKnKugeySYRP6qhU4fH6F6zesb7h2pEi0,1720
+checkpointer/print_checkpoint.py,sha256=wHC2xWNwNfFhRHyhrmLkadYoyThRTJWiox3NjgE9Ubc,1369
+checkpointer/types.py,sha256=yoNPnN_QJHfyK_Gs8c0SoywHHDUlU7uhKqPPTTWjRTE,469
+checkpointer/utils.py,sha256=UrQt689UHUjl7kXpTbUCGkHUgQZllByX2rbuvZdt9vk,368
+checkpointer/storages/bcolz_storage.py,sha256=5hbJB0VJ2k-FHf7rItywMXP74WT-JTqeNK5N8yftcnw,2647
+checkpointer/storages/memory_storage.py,sha256=5ITKjh_bVNfj1C6pcyMgB4YU4sy6jOLlvH0_3Pl1Elo,558
+checkpointer/storages/pickle_storage.py,sha256=ipXG2dht8YQAXJFEK5-OwOb8xP8ij_v7K0Qu5Xz9aVE,1622
+checkpointer-2.0.0.dist-info/METADATA,sha256=5DZmJ0rMnPeRZ9b5REXv1h7z8tbj0llgTO9yp8xEbnQ,7561
+checkpointer-2.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+checkpointer-2.0.0.dist-info/licenses/LICENSE,sha256=0cmUKqBotzbBcysIexd52AhjwbphhlGYiWbvg5l2QAU,1054
+checkpointer-2.0.0.dist-info/RECORD,,
