@@ -1,0 +1,5 @@
+sqlmodel_query_builder/__init__.py,sha256=5JFLFMpuq3aev-AsvCOLxzam2jt9piKaVDizdcJJ67Y,96
+sqlmodel_query_builder/_query_builder.py,sha256=hQ7HFttIkzkwmla5JcCl-8YyyZ2So8bdgqla21l2jLI,3068
+sqlmodel_query_builder-0.0.1.dist-info/METADATA,sha256=erjOFs6JlsLUzZuJs-B0m4oNuGmsshL_OhbhoJ16f8A,2081
+sqlmodel_query_builder-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sqlmodel_query_builder-0.0.1.dist-info/RECORD,,
