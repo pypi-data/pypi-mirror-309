@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: modernmetric
+Version: 1.5.0
+Summary: Calculate code metrics in various languages
+Home-page: https://github.com/verinfast/modernmetric
+Author: Jason Nichols
+Author-email: github@verinfast.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: chardet >=5.1.0
+Requires-Dist: flake8
+Requires-Dist: httpx[http2] ~=0.27.2
+Requires-Dist: pygments >=2.15.1
+Requires-Dist: pygments-tsx >=1.0.1
+Requires-Dist: pygount
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+
+See https://github.com/verinfast/modernmetric for documentation
