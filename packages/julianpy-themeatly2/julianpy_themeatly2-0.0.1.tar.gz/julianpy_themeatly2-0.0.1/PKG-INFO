@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: julianpy_themeatly2
+Version: 0.0.1
+Summary: An API for Julian's Editor
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Themeatly2 <themeatly2@themeatly2.top>, Harsizcool <harsizstudio@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# JulianPy
+JulianPy is a API made by Themeatly2 and Harsizcool to interface with Julian's Editor games in a very basic, but efficient way.
+
+## Todo:
+- Add basic controls (like keyboard inputs, chat, etc.) -  Done
+- Add tools (like hasWifi()) - Done
+- Add websocket communication
+- Add other things (like Community API, Marketplace API, etc.)
+
+## Example
+```
+import julianpy
+import time
+
+id = julianpy.extractGameId("https://s.julianseditor.com/3An5lL")
+julian = julianpy.Astronaut(id)
+
+julian.holdKey("d", 1)
+time.sleep(1)
+julian.sendMessage("Hello from Python!")
+time.sleep(3)
+julian.die()
+
+```
