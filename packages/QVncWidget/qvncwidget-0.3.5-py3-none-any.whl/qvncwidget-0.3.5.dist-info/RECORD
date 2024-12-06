@@ -1,0 +1,11 @@
+qvncwidget/__init__.py,sha256=XK_hPyzsZaFG0HMRu6NmtY8tfOHGh_yS-YF0mJhAzpA,34
+qvncwidget/easystruct.py,sha256=b6IW1DUrV5gjqOI8W0t_Hn_frmRsKjd8cYlJ93njIfk,6854
+qvncwidget/qvncwidget.py,sha256=LXimX6iH4y0KEAzc40oNnlamFQRDPnv0PbMsnplRsiE,21084
+qvncwidget/rfb.py,sha256=JuDKm6xZN59MJC9pIH9ieRR0d-kBT4D1kcBk1Q3m-fE,15658
+qvncwidget/rfbconstants.py,sha256=E9FVoyZphdN2SY6rU5L-cWZ4EI-zQTWNAjmhmuOYt94,4271
+qvncwidget/rfbdes.py,sha256=DkZc27ZoHPG6o1edNFjRtJvOior6I-wFx1P9BqACxXw,599
+qvncwidget/rfbhelpers.py,sha256=TABsnsECcmGh_8CH60NzUJVWDiOnWXrSaVXjT_05mHc,3359
+qvncwidget-0.3.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qvncwidget-0.3.5.dist-info/METADATA,sha256=Rspvwp4yThf_yU57-tjxTbXh4VXQST7JAhRmeOH2O9M,4400
+qvncwidget-0.3.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qvncwidget-0.3.5.dist-info/RECORD,,
