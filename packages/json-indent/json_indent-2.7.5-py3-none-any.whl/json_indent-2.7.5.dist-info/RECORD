@@ -1,0 +1,12 @@
+json_indent/__init__.py,sha256=fSrmNx17XLtiMbIN77L9AcPjIKxaNYvlfxs-o5q5WIY,229
+json_indent/__main__.py,sha256=GF8Jg9_Hdy8plCiI7-JA4zA875EIOVL7CmDwqfT2JUM,152
+json_indent/completion.py,sha256=A22ztqmrR7EVnE8xRSO_MoejqHXto_qVuxX16bY6q8I,3502
+json_indent/iofile.py,sha256=zxG0uBJ98IMn2nZXMQJV8bMZpleWoCs2zfooh3512fU,6225
+json_indent/json_indent.py,sha256=eu6IhzHQJhxeZZvY_95pDKXCFThFw8bmwaPd6gmUVAQ,18274
+json_indent/pyversion.py,sha256=Kp-6ZwCHAuokcm3oCQaC0G5SBNZnP-pdhPZL1Ibl8OY,3260
+json_indent/util.py,sha256=LXvA3iyK8VOWmBGadLSk4NrMjKxO6SICA4bE_bk0xjE,1714
+json_indent-2.7.5.dist-info/METADATA,sha256=ksjdDYcRbiTUpvG5ySRH1jJXhU41wDwbOanF_2RPf_g,9223
+json_indent-2.7.5.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+json_indent-2.7.5.dist-info/entry_points.txt,sha256=Cy9kHOd0yyta5aOahyQWxZIghlMZcU2smZ2Glbtb7YU,61
+json_indent-2.7.5.dist-info/licenses/LICENSE,sha256=HF5vKaePRMscpY7mRwQubvb3us05SNy_rIUtLEjmmd4,1072
+json_indent-2.7.5.dist-info/RECORD,,
