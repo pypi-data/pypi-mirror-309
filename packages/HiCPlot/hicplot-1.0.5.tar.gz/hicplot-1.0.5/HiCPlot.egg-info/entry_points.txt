@@ -1,0 +1,5 @@
+[console_scripts]
+DiffSquHeatmap = HiCPlot.DiffSquHeatmap:main
+NGStrack = HiCPlot.NGStrack:main
+SquHeatmap = HiCPlot.SquHeatmap:main
+TriHeatmap = HiCPlot.TriHeatmap:main
