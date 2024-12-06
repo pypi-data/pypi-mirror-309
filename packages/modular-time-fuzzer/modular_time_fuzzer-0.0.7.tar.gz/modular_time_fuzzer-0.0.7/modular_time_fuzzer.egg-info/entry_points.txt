@@ -1,0 +1,3 @@
+[console_scripts]
+analyze = bins.analyze:main
+measure = bins.measure:main
