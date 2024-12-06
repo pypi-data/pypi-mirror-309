@@ -1,0 +1,5 @@
+llama_index/readers/azstorage_blob/__init__.py,sha256=gt1x3QOqR3XL1k7okZh2vo2HscNQ032G0X4LwBTi9v8,107
+llama_index/readers/azstorage_blob/base.py,sha256=bZM1rI9LeV2iS7Sb9W1Bdii1u0FwC9tiMQiqO_31YqE,9331
+llama_index_readers_azstorage_blob-0.3.0.dist-info/METADATA,sha256=QgsfO6PoVtgOcM-2vo5peUWElmtCoEqKkO8J770fKe8,4161
+llama_index_readers_azstorage_blob-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_azstorage_blob-0.3.0.dist-info/RECORD,,
