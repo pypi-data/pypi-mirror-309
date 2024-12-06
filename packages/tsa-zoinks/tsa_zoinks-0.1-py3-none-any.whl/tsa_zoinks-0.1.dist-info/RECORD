@@ -1,0 +1,9 @@
+zoinks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoinks/analyzer.py,sha256=IkOm1NJwfk4pEPgIaecWNuzQkCnBYfTi5GgL37siDM8,3712
+zoinks/macros.py,sha256=6UGWLUKiPufaHtfRQSiwP6R7bsb-99pJ_NhqSmK_L3I,979
+zoinks/main.py,sha256=jZCjNdcDKOl1KkKR4XkOZm84JU5_hJL54lXVijsGxw8,644
+tsa_zoinks-0.1.dist-info/METADATA,sha256=nDcN2XM-SxTFt9BGXRxjuMpsB-PSz1vwDUQpwm0RCe8,2745
+tsa_zoinks-0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+tsa_zoinks-0.1.dist-info/entry_points.txt,sha256=s_ntEyTbJmX9mEHXYT8-pUnLoCJJBtrTQLEIhfQh_ow,44
+tsa_zoinks-0.1.dist-info/top_level.txt,sha256=4J5BuavdkrqITIjnnLr2343M28NuED5xQRJmpHtX3ec,7
+tsa_zoinks-0.1.dist-info/RECORD,,
