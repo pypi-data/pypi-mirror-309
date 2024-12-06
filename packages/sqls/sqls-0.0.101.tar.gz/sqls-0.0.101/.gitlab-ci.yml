@@ -1,0 +1,72 @@
+stages:
+  - test
+  - build
+
+
+test:
+  stage: test
+  image: python:$VERSION-alpine
+  services:
+    - mariadb:10
+    - postgres:15
+  variables:
+    MARIADB_USER: sqlsuser
+    MARIADB_PASSWORD: sqlspass
+    MARIADB_DATABASE: sqls
+    MARIADB_RANDOM_ROOT_PASSWORD: 1
+    POSTGRES_USER: sqlsuser
+    POSTGRES_PASSWORD: sqlspass
+    POSTGRES_DB: sqls
+    SQLS_MYSQL_HOST: mariadb
+    SQLS_POSTGRES_HOST: postgres
+  script:
+    - apk add git
+    - python$VERSION -m venv venv
+    - venv/bin/python -m pip install -r requirements-dev.txt
+    - venv/bin/python -m pip install -e .[dev,mysql,postgresql,sqlite]
+    - venv/bin/python -m pytest --cov=src --cov-report=term --cov-report=xml --junit-xml=report.xml
+    - venv/bin/python -m mypy --no-error-summary docs src tests
+    - venv/bin/python -m reuse lint
+    - venv/bin/python -m ruff check docs src tests
+    - venv/bin/python -m ruff format --diff docs src tests
+    - venv/bin/sphinx-build docs public
+  coverage: '/\d+\%\s*$/'
+  artifacts:
+    paths:
+      - public
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+      junit: report.xml
+  parallel:
+    matrix:
+      - VERSION:
+        - "3.10"
+        - "3.11"
+        - "3.12"
+
+
+build:
+  stage: build
+  image: python:3.10-alpine
+  script:
+    - apk add git
+    - python3.10 -m venv venv
+    - venv/bin/python -m pip install build
+    - venv/bin/python -m build .
+  artifacts:
+    paths:
+      - dist
+
+
+pages:
+  stage: build
+  image: python:3.10-alpine
+  script:
+    - ls public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

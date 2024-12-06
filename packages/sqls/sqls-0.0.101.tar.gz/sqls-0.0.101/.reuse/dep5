@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: sqls
+Upstream-Contact: Marko Durkovic <marko@miding.de>
+Source: https://gitlab.com/durko/sqls
+
+Files: .gitignore .github/* .gitlab/* requirements*.txt *.toml *.yml
+Copyright: 2020 - 2024 Marko Durkovic <marko@miding.de>
+License: CC0-1.0
+
+Files: *.rst **/*.rst
+Copyright: 2020 - 2024 Marko Durkovic <marko@miding.de>
+License: CC-BY-SA-4.0
