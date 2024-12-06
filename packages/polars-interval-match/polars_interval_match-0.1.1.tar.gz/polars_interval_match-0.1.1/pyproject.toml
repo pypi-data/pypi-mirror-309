@@ -1,0 +1,27 @@
+[project]
+name = "polars-interval-match"
+version = "0.1.1"
+description = "A Python extension module for matching intervals in Polars DataFrames"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["Polars", "interval", "data science", "data wrangling","plugin"]
+authors = [
+  {email = "kyle.slugg@gmail.com", name = "Kyle Slugg-Urbino"},
+]
+maintainers = [
+  {email = "kyle.slugg@gmail.com", name = "Kyle Slugg-Urbino"},
+]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+dependencies = [
+  "polars"
+]
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+python-source = "python"
+module-name = "polars_interval_match._interval_match"
