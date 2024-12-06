@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: clickshots
+Version: 0.1.0
+Summary: A robust automated screenshot capture system
+Home-page: https://github.com/USERNAME/clickshots
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/USERNAME/clickshots/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: pynput
+Requires-Dist: pyautogui; platform_system == "Darwin"
+
+# ClickShots
+
+A robust automated screenshot capture system that monitors user interactions.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+### Command Line
+
+```bash
+# Use default directory (~/Pictures/clickshots)
+clickshots
+
+# Or specify a custom directory
+clickshots -d /path/to/save/directory
+clickshots --directory /path/to/save/directory
+```
+
+### Python Code
+
+```python
+from clickshots import main
+
+# Use default directory
+main()
+
+# Or specify directory
+main(save_dir="/path/to/save/directory")
+```
+
+### Controls
+
+- **Ctrl + Shift**: Toggle mouse/touchpad screenshots
+- **Alt + \\**: Toggle keyboard screenshots
+- **Ctrl + C**: Exit program
+
+
+
