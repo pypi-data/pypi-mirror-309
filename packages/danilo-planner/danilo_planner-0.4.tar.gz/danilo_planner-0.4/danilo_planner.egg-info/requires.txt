@@ -1,0 +1,7 @@
+langchain
+chromadb
+langchain_community
+langchain-chroma
+huggingface_hub
+langchainhub
+langchain_core
