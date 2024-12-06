@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/spark_jdbc_ingestor/__init__.py
+src/spark_jdbc_ingestor/main.py
+src/spark_jdbc_ingestor.egg-info/PKG-INFO
+src/spark_jdbc_ingestor.egg-info/SOURCES.txt
+src/spark_jdbc_ingestor.egg-info/dependency_links.txt
+src/spark_jdbc_ingestor.egg-info/top_level.txt
