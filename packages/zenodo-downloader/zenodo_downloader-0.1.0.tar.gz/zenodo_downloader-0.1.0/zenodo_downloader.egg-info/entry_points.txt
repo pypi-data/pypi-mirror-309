@@ -1,0 +1,2 @@
+[console_scripts]
+zenodo-download = zenodo_downloader.cli:main
