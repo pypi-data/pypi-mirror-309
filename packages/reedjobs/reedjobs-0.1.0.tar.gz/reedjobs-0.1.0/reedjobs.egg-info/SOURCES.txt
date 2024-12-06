@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+reedjobs/__init__.py
+reedjobs/_model.py
+reedjobs/_types.py
+reedjobs/client.py
+reedjobs/utils.py
+reedjobs.egg-info/PKG-INFO
+reedjobs.egg-info/SOURCES.txt
+reedjobs.egg-info/dependency_links.txt
+reedjobs.egg-info/requires.txt
+reedjobs.egg-info/top_level.txt
+tests/test_client.py
