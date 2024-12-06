@@ -1,0 +1,41 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+
+    "editor.formatOnSave": true,
+    "editor.rulers": [80],
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "ruff.importStrategy": "fromEnvironment",
+
+    "[python]": {
+      "files.insertFinalNewline": true,
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.codeActionsOnSave": {
+        "source.organizeImports.ruff": true,
+        "source.fixAll.ruff": false
+      }
+    },
+    // File list
+    "files.exclude": {
+      "**/.git/": true,
+      "**/.ipynb_checkpoints/": true,
+      "**/.mypy_cache/": true,
+      "**/__pycache__/": true,
+      "**/.pytest_cache/": true,
+      "**/.ruff_cache/": true,
+      "build/": true,
+      "dist/": true,
+      "docs/_build": true,
+      "docs/node_modules": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.mypy-type-checker",
+      "charliermarsh.ruff"
+    ]
+  }
+}
