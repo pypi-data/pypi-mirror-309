@@ -1,0 +1,6 @@
+click
+ffmpeg-python
+Pillow
+python-docx
+PyMuPDF
+reportlab
