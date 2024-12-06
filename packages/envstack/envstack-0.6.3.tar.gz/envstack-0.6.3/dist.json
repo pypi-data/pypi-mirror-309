@@ -1,0 +1,29 @@
+{
+    "author": "ryan@rsg.io",
+    "targets": {
+        "env-envstack": {
+            "source": "stack.env",
+            "destination": "{DEPLOY_ROOT}/env/stack.env"
+        },
+        "env-dev": {
+            "source": "dev.env",
+            "destination": "{DEPLOY_ROOT}/env/dev.env"
+        },
+        "bin-envstack": {
+            "source": "bin/envstack",
+            "destination": "{DEPLOY_ROOT}/bin/envstack"
+        },
+        "bat-envstack": {
+            "source": "bin/envstack.bat",
+            "destination": "{DEPLOY_ROOT}/bin/envstack.bat"
+        },
+        "bin-hello": {
+            "source": "bin/hello",
+            "destination": "{DEPLOY_ROOT}/bin/hello"
+        },
+        "lib-envstack": {
+            "source": "lib/envstack",
+            "destination": "{DEPLOY_ROOT}/lib/python/envstack"
+        }
+    }
+}
