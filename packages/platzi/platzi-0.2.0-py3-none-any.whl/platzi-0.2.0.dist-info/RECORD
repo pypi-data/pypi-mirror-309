@@ -1,0 +1,15 @@
+platzi/__init__.py,sha256=M8TNRpd804iCyQnqNIoBU9nI2NnbbA99gY7GjRM94cE,99
+platzi/async_api.py,sha256=SH90kwPer47RYuuJbVZHfFV6TApR_NfCwjn0m6357BQ,6358
+platzi/cli.py,sha256=z0rMKMmisXXK3q59OSw3CuENX9QTRYRxxruIQhSS4BE,1232
+platzi/collectors.py,sha256=T4p_Xrv3AhASDdISEqee1GcqURrTrME9-xr8H1jXofk,2483
+platzi/constants.py,sha256=SKgq_CsXYxy_uHsjlaoNvW-Mcrc8fGaA7M8GU-Vi3m4,607
+platzi/helpers.py,sha256=Ucjh_M-DxYi12RfQBZi6oZlDEFQPsrISas9tB5-_P8M,577
+platzi/logger.py,sha256=5C2L_rUdXh7AyVZtyntQPT9j-Wcx7ng97i_bi_dq3wA,893
+platzi/m3u8.py,sha256=btQ0Tcqp-02MUXNPaRaZEmxEKudHhHPT2AnUkaxHKs0,4382
+platzi/models.py,sha256=MuaZjYJSvwQe3nYxDH3WZe0ZH3PogIxz-LHkf4VtmBk,1077
+platzi/utils.py,sha256=YcOwSqDjI7tX6_hlJSiX633X5g8L77S2DRhaazwlm-s,2766
+platzi-0.2.0.dist-info/LICENCE,sha256=MICUTOiebbpu1_drke5Pweq_MkMwvaHEK--uCjrSZp0,1064
+platzi-0.2.0.dist-info/METADATA,sha256=f3TBOZuovq591jSRHSLfCXGa42DqdeIWWxKLXb25Jzo,4811
+platzi-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+platzi-0.2.0.dist-info/entry_points.txt,sha256=r4dgnvhd0obD8WAHLgYYu7X_lQ-bch6S4qbLxWJkuZQ,41
+platzi-0.2.0.dist-info/RECORD,,
