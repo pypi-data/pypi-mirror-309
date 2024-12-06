@@ -1,0 +1,15 @@
+oh_my_batch/__init__.py,sha256=BsRNxZbqDWfaIZJGxzIDqCubRWztMGFDceW08TECuFs,98
+oh_my_batch/__main__.py,sha256=sWyFZMwWNvhkanwZSJRGfBBDoIevhC028dTSB67i6yI,61
+oh_my_batch/assets/__init__.py,sha256=Exub46UbQaz2V2eXpQeiVfnThQpXaNeuyjlGY6gBSZc,130
+oh_my_batch/assets/functions.sh,sha256=dvPGpOKz4CyUSlE5IAewQc8HUrQJuaZ0j-WZIuxB3Tg,1002
+oh_my_batch/batch.py,sha256=6qnaXEVyA493heGzzbCrdZXCcnYk8zgl7WP0rmo7KlU,3690
+oh_my_batch/cli.py,sha256=Jyz8q2pUYke3mfJS6F_G9S9hApddgXxQw1BsN6Kfkjc,553
+oh_my_batch/combo.py,sha256=-qgqT7XSvEeyefMPD3-HuX-aozefjSKhbZbPm1pm_18,9324
+oh_my_batch/job.py,sha256=q-1WxZQxQNqDV4xZXz5V9RQQ787rhdX18tQWTNBKBjQ,6268
+oh_my_batch/misc.py,sha256=G_iOovRCrShBJJCc82QLN0CvMqW4adOefEoY1GedEiw,452
+oh_my_batch/util.py,sha256=K-XAndE5dgpxBrohAlUhVpeJGT7Q9vUG9ghHc9L0HaU,2426
+oh_my_batch-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+oh_my_batch-0.2.4.dist-info/METADATA,sha256=6pn6dkc4pAN3FlH9erNTWKwYnOJl9Y-S7PsocwDc33c,5445
+oh_my_batch-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oh_my_batch-0.2.4.dist-info/entry_points.txt,sha256=ZY2GutSoNjjSyJ4qO2pTeseKUFgoTYdvmgkuZZkwi68,77
+oh_my_batch-0.2.4.dist-info/RECORD,,
