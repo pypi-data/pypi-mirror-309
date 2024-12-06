@@ -1,0 +1,7 @@
+main.py
+setup.py
+instructnerf2nerf.egg-info/PKG-INFO
+instructnerf2nerf.egg-info/SOURCES.txt
+instructnerf2nerf.egg-info/dependency_links.txt
+instructnerf2nerf.egg-info/requires.txt
+instructnerf2nerf.egg-info/top_level.txt
