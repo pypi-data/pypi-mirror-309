@@ -1,0 +1,63 @@
+file /home/leclerc/micromamba/envs/sdot_i/lib/python3.13/site-packages/sdot/bindings/construct.py,line 120:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C++ header file boost/multiprecision/cpp_int.hpp... 
+scons: Configure: ".sconf_temp/conftest_70d979e8ebca7f20000df185bbdc5fe3_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_70d979e8ebca7f20000df185bbdc5fe3_0.cpp <-
+  |  |
+  |  |#include "boost/multiprecision/cpp_int.hpp"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_70d979e8ebca7f20000df185bbdc5fe3_0_de20a349584cd848b307e2b2e301c199.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_70d979e8ebca7f20000df185bbdc5fe3_0_de20a349584cd848b307e2b2e301c199.o -c -DSDOT_CONFIG_module_name=poom_vec_nd_0_bindings_for_FP64_Linux -DSDOT_CONFIG_suffix=FP64_Linux -Wdeprecated-declarations -std=c++20 -fopenmp -fdiagnostics-color=always -ffast-math -O3 -g3 "-DSDOT_CONFIG_scalar_type=FP64" -I/home/leclerc/sdot/sdot/bindings/cpp -I/home/leclerc/sdot/sdot/ext/tl20/src/cpp -I/home/leclerc/sdot/sdot/ext/asimd/src -I/home/leclerc/sdot/sdot/ext/boost -I/home/leclerc/sdot/sdot/ext/eigen -I/home/leclerc/micromamba/envs/sdot_2/include/python3.13 -I/home/leclerc/micromamba/envs/sdot_2/lib/python3.13/site-packages/pybind11/include .sconf_temp/conftest_70d979e8ebca7f20000df185bbdc5fe3_0.cpp
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C++ header file Eigen/Dense... 
+scons: Configure: ".sconf_temp/conftest_c5e6f16ed25ba7f22d1ca43ada3c4966_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_c5e6f16ed25ba7f22d1ca43ada3c4966_0.cpp <-
+  |  |
+  |  |#include "Eigen/Dense"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_c5e6f16ed25ba7f22d1ca43ada3c4966_0_29080e9f563ff1ab5bb05b2439a73584.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_c5e6f16ed25ba7f22d1ca43ada3c4966_0_29080e9f563ff1ab5bb05b2439a73584.o -c -DSDOT_CONFIG_module_name=poom_vec_nd_0_bindings_for_FP64_Linux -DSDOT_CONFIG_suffix=FP64_Linux -Wdeprecated-declarations -std=c++20 -fopenmp -fdiagnostics-color=always -ffast-math -O3 -g3 "-DSDOT_CONFIG_scalar_type=FP64" -I/home/leclerc/sdot/sdot/bindings/cpp -I/home/leclerc/sdot/sdot/ext/tl20/src/cpp -I/home/leclerc/sdot/sdot/ext/asimd/src -I/home/leclerc/sdot/sdot/ext/boost -I/home/leclerc/sdot/sdot/ext/eigen -I/home/leclerc/micromamba/envs/sdot_2/include/python3.13 -I/home/leclerc/micromamba/envs/sdot_2/lib/python3.13/site-packages/pybind11/include .sconf_temp/conftest_c5e6f16ed25ba7f22d1ca43ada3c4966_0.cpp
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C++ header file asimd/SimdVec.h... 
+scons: Configure: ".sconf_temp/conftest_d782562e515ceed5496ccf9b42419756_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_d782562e515ceed5496ccf9b42419756_0.cpp <-
+  |  |
+  |  |#include "asimd/SimdVec.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_d782562e515ceed5496ccf9b42419756_0_18767e5224ec88ed87589608832f79d5.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_d782562e515ceed5496ccf9b42419756_0_18767e5224ec88ed87589608832f79d5.o -c -DSDOT_CONFIG_module_name=poom_vec_nd_0_bindings_for_FP64_Linux -DSDOT_CONFIG_suffix=FP64_Linux -Wdeprecated-declarations -std=c++20 -fopenmp -fdiagnostics-color=always -ffast-math -O3 -g3 "-DSDOT_CONFIG_scalar_type=FP64" -I/home/leclerc/sdot/sdot/bindings/cpp -I/home/leclerc/sdot/sdot/ext/tl20/src/cpp -I/home/leclerc/sdot/sdot/ext/asimd/src -I/home/leclerc/sdot/sdot/ext/boost -I/home/leclerc/sdot/sdot/ext/eigen -I/home/leclerc/micromamba/envs/sdot_2/include/python3.13 -I/home/leclerc/micromamba/envs/sdot_2/lib/python3.13/site-packages/pybind11/include .sconf_temp/conftest_d782562e515ceed5496ccf9b42419756_0.cpp
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C++ header file tl/support/Displayer.h... 
+scons: Configure: ".sconf_temp/conftest_72b029fe473b65b8d62467b44216c0d1_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_72b029fe473b65b8d62467b44216c0d1_0.cpp <-
+  |  |
+  |  |#include "tl/support/Displayer.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_72b029fe473b65b8d62467b44216c0d1_0_b81088c28fb5e112e99388a7fda496c7.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_72b029fe473b65b8d62467b44216c0d1_0_b81088c28fb5e112e99388a7fda496c7.o -c -DSDOT_CONFIG_module_name=poom_vec_nd_0_bindings_for_FP64_Linux -DSDOT_CONFIG_suffix=FP64_Linux -Wdeprecated-declarations -std=c++20 -fopenmp -fdiagnostics-color=always -ffast-math -O3 -g3 "-DSDOT_CONFIG_scalar_type=FP64" -I/home/leclerc/sdot/sdot/bindings/cpp -I/home/leclerc/sdot/sdot/ext/tl20/src/cpp -I/home/leclerc/sdot/sdot/ext/asimd/src -I/home/leclerc/sdot/sdot/ext/boost -I/home/leclerc/sdot/sdot/ext/eigen -I/home/leclerc/micromamba/envs/sdot_2/include/python3.13 -I/home/leclerc/micromamba/envs/sdot_2/lib/python3.13/site-packages/pybind11/include .sconf_temp/conftest_72b029fe473b65b8d62467b44216c0d1_0.cpp
+  |
+scons: Configure: (cached) yes
+
+
