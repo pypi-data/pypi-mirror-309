@@ -1,0 +1,12 @@
+nexio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexio/exceptions.py,sha256=AdvbSAEmy3-0UN4xYSAThNWXVqj-Ri2bknyhQWjvV90,59
+nexio/helpers/jobs.py,sha256=1HK34Aa4m24IMYtWxeMw2ZLYLM2OxvNlcPi-Xk8RKok,5799
+nexio/helpers/todoist.py,sha256=w3bDNe4myCjvogMTbSEWOFTz5NREcRns8aPN2UzJF9A,2246
+nexio/jobs.py,sha256=8A57upGt-TTfk35gBuxCYT026Qz92cSfHOrtAbfSxi0,608
+nexio/main.py,sha256=uhL1Bumg8G7YW_hS4sXQZBdMVaPG3VOEeyMB_KXoQ9Q,165
+nexio/todoist.py,sha256=wPbK43Vp6hMUBJoXtIooQ8g03BHik2B6IvhlYdSXFug,985
+nexio/utils/postgres.py,sha256=H90IDeMLh2yqoa4851r_Ic16w5DjkIzsjLCIbN3o6So,1688
+nexio-0.1.0.dist-info/METADATA,sha256=y6BgAosyp_3Qkuq6m3rLodnuuMcivp8qFZ8dFb0uro8,1078
+nexio-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+nexio-0.1.0.dist-info/entry_points.txt,sha256=VaV78surwDZlRLQPX-36AmRmbK1mc5GPmY1u3zKjnAI,40
+nexio-0.1.0.dist-info/RECORD,,
