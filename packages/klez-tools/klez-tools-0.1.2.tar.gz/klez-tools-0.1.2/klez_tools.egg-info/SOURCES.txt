@@ -1,0 +1,8 @@
+README.md
+setup.py
+klez_tools.egg-info/PKG-INFO
+klez_tools.egg-info/SOURCES.txt
+klez_tools.egg-info/dependency_links.txt
+klez_tools.egg-info/entry_points.txt
+klez_tools.egg-info/requires.txt
+klez_tools.egg-info/top_level.txt
