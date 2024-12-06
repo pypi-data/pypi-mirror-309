@@ -1,0 +1,5 @@
+requests>=2.31.0
+dnspython>=2.4.2
+pyOpenSSL>=23.3.0
+beautifulsoup4>=4.12.3
+tqdm>=4.66.2

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: knock-subdomains
+Version: 7.0.2
+Summary: Knockpy Subdomains Scan
+Home-page: https://github.com/guelfoweb/knock
+Author: Gianni Amato
+Author-email: guelfoweb@gmail.com
+License: GPL-3.0
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: dnspython>=2.4.2
+Requires-Dist: pyOpenSSL>=23.3.0
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: tqdm>=4.66.2
