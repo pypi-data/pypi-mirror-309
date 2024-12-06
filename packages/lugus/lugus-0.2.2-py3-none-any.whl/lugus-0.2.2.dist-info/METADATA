@@ -1,0 +1,67 @@
+Metadata-Version: 2.3
+Name: lugus
+Version: 0.2.2
+Summary: Terminal Feeds Reader
+Project-URL: Documentation, https://github.com/OpenCode/lugus#readme
+Project-URL: Issues, https://github.com/OpenCode/lugus/issues
+Project-URL: Source, https://github.com/OpenCode/lugus
+Author-email: Francesco Apruzzese <cescoap@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: feedparser==6.0.11
+Requires-Dist: markdownify==0.13.1
+Requires-Dist: textual==0.86.0
+Description-Content-Type: text/markdown
+
+# LUGUS: Your terminal feeds reader
+
+[![PyPI - Version](https://img.shields.io/pypi/v/lugus.svg)](https://pypi.org/project/lugus)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lugus.svg)](https://pypi.org/project/lugus)
+
+![readme header](https://raw.githubusercontent.com/OpenCode/lugus/main/readme/header.png)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Roadmap](#roadmap)
+- [License](#license)
+
+## Installation
+
+```console
+pip install lugus
+```
+
+## Screenshot
+
+### Main Screen
+
+![main page screenshot](https://raw.githubusercontent.com/OpenCode/lugus/main/readme/home.png)
+
+## Roadmap
+
+- [ ] Import existing OPML files
+- [ ] Export feeds as OPML file
+- [ ] Set article as unread
+- [ ] Set a feed as read
+- [ ] Set an article as favorite
+- [ ] Tags system for articles
+- [ ] Add notes on articles
+- [ ] Feeds auto-sync
+- [ ] Edit existing feeds
+- [ ] Search articles by name/content
+ 
+## License
+
+`LUGUS` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
