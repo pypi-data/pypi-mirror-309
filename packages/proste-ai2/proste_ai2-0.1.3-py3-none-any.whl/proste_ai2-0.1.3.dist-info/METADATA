@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: proste_ai2
+Version: 0.1.3
+Summary: Prosty pakiet AI do nauki
+Author: Situus
+Author-email: situs1235@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: scikit-learn>=1.0
+
+# Proste AI
+
+**Proste AI** to prosty pakiet AI w Pythonie, ktĂłry umoĹĽliwia zarzÄ…dzanie danymi, tworzenie modeli oraz generowanie odpowiedzi na podstawie wytrenowanego modelu. Pakiet obsĹ‚uguje wczytywanie danych z plikĂłw CSV, trenowanie modeli i ich zapis oraz pĂłĹşniejsze wykorzystanie.
+
+---
+
+## Instalacja
+
+Najpierw zainstaluj pakiet za pomocÄ… `pip`:
+
+```bash
+pip install proste-ai
