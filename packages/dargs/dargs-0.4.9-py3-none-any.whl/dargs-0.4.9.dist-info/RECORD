@@ -1,0 +1,17 @@
+dargs/__init__.py,sha256=daiqzHE8FhzA-5a92wYeVwEs7IidvKUDznc8lzcYKI8,144
+dargs/__main__.py,sha256=qK5N-mo5LXltNzvxp906Hv4LrbXT9ql7VK152Klkh38,102
+dargs/_test.py,sha256=ru6uz5OlBEX-FKWwvAS7kZdUfXFa1XS8z5Ldyek-P2Q,535
+dargs/_version.py,sha256=JGwJlc49_-uoMJgwKLhR6s3Vkz0PUCEmX4tl4xBWYw8,160
+dargs/check.py,sha256=HhbcxYsFVyMQncrZLy2IiMlvX9v6WMjNdlyWJu_K_Yg,922
+dargs/cli.py,sha256=YNtPoL4vhmH6blICblPiN72gh4jW5kLh_FyqkYOhHJs,2869
+dargs/dargs.py,sha256=D4KENMCpPMsKmyVX1ZDVaDROLmD_v3SPSNQ_zoai5l8,40194
+dargs/json_schema.py,sha256=YwesXssNuJl0R4Q78NAQMv6Qucw1In3_STYCvnOpfCI,4373
+dargs/notebook.py,sha256=7DGEcB7cAA9tMoXD3j7EcwPoiWDJ9OyJt0ecNL83cLc,10200
+dargs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dargs/sphinx.py,sha256=bdXSrdCbPBUKoklby9dYosFkjZfzAqiXiG3rbH1yrBQ,7013
+dargs-0.4.9.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+dargs-0.4.9.dist-info/METADATA,sha256=x8boOYo5cVvcSOBXvBBoQlNYAXE339QlrHrETsAOvNo,11861
+dargs-0.4.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dargs-0.4.9.dist-info/entry_points.txt,sha256=LROwDIL1H0MP4YmTZSFovQI0dTXbGAPm2bcCre8oV4M,41
+dargs-0.4.9.dist-info/top_level.txt,sha256=5kJ_Hf9gLcomxV51kWLKba9ZrAk9c8UjyB5ugVHSk3Y,6
+dargs-0.4.9.dist-info/RECORD,,
