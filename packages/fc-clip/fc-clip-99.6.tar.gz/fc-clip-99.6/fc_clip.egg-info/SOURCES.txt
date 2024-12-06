@@ -1,0 +1,7 @@
+main.py
+setup.py
+fc_clip.egg-info/PKG-INFO
+fc_clip.egg-info/SOURCES.txt
+fc_clip.egg-info/dependency_links.txt
+fc_clip.egg-info/requires.txt
+fc_clip.egg-info/top_level.txt
