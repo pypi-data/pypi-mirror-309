@@ -1,0 +1,17 @@
+nielsen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nielsen/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nielsen/bin/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nielsen/bin/cli/config.py,sha256=cNQnb4oiD8cjd8UCO-H5uXhngEjWYF-viIFs2qX2qDg,674
+nielsen/bin/cli/main.py,sha256=hgv4-E_IVy8TDNP6NyarvPNP4lOkCV7upy7-WtrXh3g,4320
+nielsen/bin/cli/tv.py,sha256=vRyyyQg4ekmp9fS493DzE-k4YY5VzL2SP2Cz2jKNIjo,5276
+nielsen/bin/pickler.py,sha256=bxDFC17PkUXEf_1b0kRiE1RbDC3nTBk1oYynXDb-O1g,2438
+nielsen/config.py,sha256=D3m44mLTH5elFdr4bQ36IyZpAkRvPXG2o4E7U7Xlqm0,2856
+nielsen/fetcher/tvmaze-types.py,sha256=shwM8UH7ALt6RpGkBAAFZ2RQSBy-X86KA5efYKiyLjo,710
+nielsen/fetcher.py,sha256=QYxvi59nszirIuqYLTCCSnxhuc0eNDTzHhxEf-O7jAU,13838
+nielsen/media.py,sha256=5GCLN44GElLLeWGu8OVP2Qf-2UI_r2Cne0ejElc3gbM,14678
+nielsen/processor.py,sha256=ql3KoI8QSBvYYpemh3UNj_AXuey3KiVVR2CpnX796cw,2512
+nielsen-3.1.4.dist-info/LICENSE,sha256=5zPq3q4yTylP-v9RhlKdNDnRSyBpUsx6tNJh5TgamnQ,34509
+nielsen-3.1.4.dist-info/METADATA,sha256=KsquGgfg9l0YdAs3ft0assrtXiXjZRCCXd0oSF8d-8A,11822
+nielsen-3.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nielsen-3.1.4.dist-info/entry_points.txt,sha256=wXicSMiPPpfL0AloEKEZCvVb5LCFtjgYzTzex1OwriI,53
+nielsen-3.1.4.dist-info/RECORD,,
