@@ -1,0 +1,6 @@
+README.md
+setup.py
+project_tools_git.egg-info/PKG-INFO
+project_tools_git.egg-info/SOURCES.txt
+project_tools_git.egg-info/dependency_links.txt
+project_tools_git.egg-info/top_level.txt
