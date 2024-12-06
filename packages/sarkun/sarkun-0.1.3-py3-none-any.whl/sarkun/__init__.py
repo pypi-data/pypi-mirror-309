@@ -1,0 +1,1 @@
+from sarkun import main
