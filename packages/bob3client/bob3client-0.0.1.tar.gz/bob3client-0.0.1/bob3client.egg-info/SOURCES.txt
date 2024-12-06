@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+bob3client/__init__.py
+bob3client/main.py
+bob3client.egg-info/PKG-INFO
+bob3client.egg-info/SOURCES.txt
+bob3client.egg-info/dependency_links.txt
+bob3client.egg-info/requires.txt
+bob3client.egg-info/top_level.txt
