@@ -1,0 +1,26 @@
+name: Publish
+
+on: push
+
+permissions:
+  id-token: write
+
+jobs:
+  Build-and-publish:
+    name: Build and publish if needed
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Publish package to TestPyPI
+      uses: ./.github/actions/publish-package
+      with:
+        test: true
+
+    # Publish only tagged commits
+    - name: Publish package to PyPI, if tagged
+      # if: startsWith(github.ref, 'refs/tags')
+      uses: ./.github/actions/publish-package
+      with:
+        test: false

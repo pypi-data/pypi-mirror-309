@@ -1,0 +1,46 @@
+name: Publish package to PyPI or TestPyPI
+
+inputs:
+  test:
+    description: Whether to publish to TestPyPI
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install pypa/build
+      run: >-
+        python -m
+        pip install
+        build
+        --user
+
+    - name: Build a binary wheel and a source tarball
+      run: >-
+        python -m
+        build
+        --sdist
+        --wheel
+        --outdir dist/
+        .
+
+    - name: Publish package to TestPyPI
+      if: ${{ inputs.test }} == true
+      run: echo "Publishing to TestPyPI"
+      # uses: pypa/gh-action-pypi-publish@release/v1
+      # with:
+      #   repository-url: https://test.pypi.org/legacy/
+      #   verbose: true
+      #   skip-existing: true
+
+    - name: Publish package to PyPI, if tagged
+      if: ${{ inputs.test }} == false
+      run: echo "Publishing to PyPI"
+      # uses: pypa/gh-action-pypi-publish@release/v1
+      # with:
+      #   verbose: true
