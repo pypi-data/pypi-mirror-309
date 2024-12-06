@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: metafield
+Version: 0.2.5
+Summary: Computational linguistic research companion
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython >=3.1.43
+Requires-Dist: litellm >=1.49.1
+Requires-Dist: nbformat >=5.10.4
+Requires-Dist: networkx >=3.4.2
+Requires-Dist: pydot >=3.0.2
+

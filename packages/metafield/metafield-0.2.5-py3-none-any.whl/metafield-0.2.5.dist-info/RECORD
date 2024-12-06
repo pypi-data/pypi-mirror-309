@@ -1,0 +1,11 @@
+metafield/__init__.py,sha256=7aDasa4XD1YcNXQA6y0W6c2MPqrw-tnOAKrPLDQJfp4,134
+metafield/__main__.py,sha256=T3QIZfUJKr1m3wfsY8F5tUYVZKivERpe9fLn9OJOqac,61
+metafield/app.py,sha256=dQ2jQM8ziGQzAa_672v3YCRqAP9t3QlpnpNE6YXp3EY,39
+metafield/git_utils.py,sha256=48l8zfIcBtb9RmvoO60pSx0wjM7lYcYf3XmJivLJuT0,1565
+metafield/nb_depends.py,sha256=-FjaoX586BvlmDGoC_gEleMPewXsU57OGEVNuRP1sdM,5157
+metafield/nb_utils.py,sha256=Gq8cUEAuLe-VsVoxKsx6VRcOAOKH9e5DEc_9GElOArI,2069
+metafield-0.2.5.dist-info/METADATA,sha256=uF6rUaA4PoXyF4UjZRtAivvfRBYi15G_fJemSn4rx4U,331
+metafield-0.2.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+metafield-0.2.5.dist-info/entry_points.txt,sha256=70KTdvEwUugG-gksz9E04DwmMtq3NeYHzp6AvIuPIa0,49
+metafield-0.2.5.dist-info/top_level.txt,sha256=0o6ys940cleEWtFX3j8X1VcTuIYE70gaoB_njdDrk5g,10
+metafield-0.2.5.dist-info/RECORD,,
