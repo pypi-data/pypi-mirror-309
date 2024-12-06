@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aj_chalk/__init__.py
+aj_chalk/colorize.py
+aj_chalk.egg-info/PKG-INFO
+aj_chalk.egg-info/SOURCES.txt
+aj_chalk.egg-info/dependency_links.txt
+aj_chalk.egg-info/top_level.txt
