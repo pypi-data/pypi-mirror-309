@@ -1,0 +1,3 @@
+
+[test]
+markdown-it-py>=1.1.0
