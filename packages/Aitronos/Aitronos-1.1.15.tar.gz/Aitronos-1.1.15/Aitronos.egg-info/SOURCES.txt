@@ -1,0 +1,9 @@
+README.md
+setup.py
+Aitronos/__init__.py
+Aitronos/module.py
+Aitronos.egg-info/PKG-INFO
+Aitronos.egg-info/SOURCES.txt
+Aitronos.egg-info/dependency_links.txt
+Aitronos.egg-info/top_level.txt
+tests/test_module.py
