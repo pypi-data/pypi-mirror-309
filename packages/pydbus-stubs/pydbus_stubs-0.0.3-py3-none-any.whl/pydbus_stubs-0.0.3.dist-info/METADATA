@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pydbus-stubs
+Version: 0.0.3
+Summary: Stubs for pydbus.
+Home-page: https://github.com/Tatsh/pydbus-stubs
+License: MIT
+Keywords: dbus,stubs,typing
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Stubs Only
+Requires-Dist: pygobject-stubs (>=2.12.0,<3.0.0)
+Project-URL: Issues, https://github.com/Tatsh/pydbus-stubs/issues
+Project-URL: Repository, https://github.com/Tatsh/pydbus-stubs
+Description-Content-Type: text/markdown
+
+# pydbus-stubs
+
+[![QA](https://github.com/Tatsh/pydbus-stubs/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/pydbus-stubs/actions/workflows/qa.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/pydbus-stubs)](https://pypi.org/project/pydbus-stubs/)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/pydbus-stubs)
+![GitHub](https://img.shields.io/github/license/Tatsh/pydbus-stubs)
+![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/pydbus-stubs/v0.0.3/master)
+
+Stubs for `pydbus`.
+
+## Installation
+
+```shell
+pip install pydbus-stubs
+```
+
