@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: coreframe
+Version: 1.0.0
+Summary: COmmon REsearch FRAMEwork
+Author: MetaEarth Lab
+Author-email: hyungjun@gmail.com
+Keywords: python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: h5py
+
+![example workflow](https://github.com/kimlab/cf/actions/workflows/test.yml/badge.svg)
