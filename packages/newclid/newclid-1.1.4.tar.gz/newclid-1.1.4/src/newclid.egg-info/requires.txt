@@ -1,0 +1,12 @@
+numpy>=1.23.5
+matplotlib>=3.7.0
+scipy>=1.10.0
+
+[dev]
+black
+ruff
+pytest
+pytest-cov
+pytest-check
+pytest-mock
+pre-commit

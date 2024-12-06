@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual env
+pyvenv.cfg
+bin/
+share/
+venv/
+.venv/
+
+# Models
+ag_ckpt_vocab/
+
+# IDEs
+.idea/
+.vscode/
+
+# Coverage data
+.coverage
+
+# TODO
+TODO.md
+
+# Swap files
+**/*.nfs*c*
+
+# local env
+.conda/
+
+# local files
+run.log
+
+# Local scripts
+benchmark.py
+individual_rules_out
+_build
+
+# Documentation
+docs/source
+
+
+# Experiment data
+ddar_results/
+run_results/
+tests_output
+exp/
+tests-exp/*
+!tests-exp/*.ggb
+!tests-exp/*.ggb
+!tests-exp/runtime_cache.json
