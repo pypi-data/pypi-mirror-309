@@ -1,0 +1,6 @@
+setuptools
+numpy==1.26.4
+matplotlib
+scipy
+pandas
+pymultifit==0.1.4a1
