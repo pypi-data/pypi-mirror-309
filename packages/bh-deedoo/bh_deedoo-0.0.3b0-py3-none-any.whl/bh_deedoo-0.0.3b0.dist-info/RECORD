@@ -1,0 +1,12 @@
+bh_deedoo/__init__.py,sha256=eID9wnNWaws8o1nDnabgv9McIUNF6TIXAZRIYhj669k,66
+bh_deedoo/__main__.py,sha256=lIvppNZnpwlp4mjX1oOVB9i1pU4XHiTRbwrfi_pxxCs,69
+bh_deedoo/cmds/deedoo/__init__.py,sha256=w_CSaqzPZopTuW6cyy_xhqqHqNWibXtyR-STA-MM4JQ,717
+bh_deedoo/cmds/deedoo/defaults.py,sha256=oDdpNECNkpYDdBxF4Ogrq24N1i88ofjy93hJuHkeEnY,178
+bh_deedoo/cmds/deedoo/server.py,sha256=OFK71rR-hIwzk6BieyB14z8GMLPAPSDPIYnaNTA1uCI,2443
+bh_deedoo/cmds/deedoo/stoppers.py,sha256=9NpoB3qCsLuszzCuwxYkJAVanbGH2og9cRbQuN7j3uc,983
+bh_deedoo/cmds/deedoo/util.py,sha256=VVrjwOnD1_DX0Q2mvuQfZwyFcuBVp3RvobXle_f6s0Q,795
+bh_deedoo-0.0.3b0.dist-info/METADATA,sha256=QVNOOdql7jpt7Mh0Zg4jkT79dogb7ejq3jL31PQ7_s4,258
+bh_deedoo-0.0.3b0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bh_deedoo-0.0.3b0.dist-info/entry_points.txt,sha256=VANGyJh3v4fIe7b6eZ2nIN42ZcyY1gOrQcS8Kf1ApuY,54
+bh_deedoo-0.0.3b0.dist-info/top_level.txt,sha256=UGoeSbJi4NFHUDjA9SncsLKoUZeYfOv1ZKpQ88lnAzs,10
+bh_deedoo-0.0.3b0.dist-info/RECORD,,

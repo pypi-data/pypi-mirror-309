@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bh-deedoo
+Version: 0.0.3b0
+Summary: Deedoos are alarms to keep you on track.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: bh-bump ==0.1.3rc1
+
+# bh-deedoo
+
+Deedoos are alarms to keep you on track.
