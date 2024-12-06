@@ -1,0 +1,17 @@
+ml_library/ActivationFunctions.py,sha256=-UwAjW9BM03KSvEdTQLQMX1ul7xb1Ng128ORlv5sEsM,2034
+ml_library/CostFunctions.py,sha256=Kbw1YxFO_p39NjNUFbaJ4LttQJUmGTd0M1zyF-noxAU,1397
+ml_library/DecisionTree.py,sha256=rxBYBstYb47PR6bhg201Xj4W0pDv_pXkkW5Cm5BcPtg,7487
+ml_library/LinearClassifier.py,sha256=yQSCiXrNJNzk62PHU8MLFXT4XHF9RXIR7J4PqpjGKYA,1083
+ml_library/LinearRegression.py,sha256=EDNHrJqK7nbAVYcgE3F3gosbkS33uAEAmgj7i13C1zY,972
+ml_library/MLP.py,sha256=cza25UzSFnm2miwA7C6y5aUavwJZQoIVTp3NKkyMK8E,4043
+ml_library/MLPOptimizers.py,sha256=TuJtd-z3ckm2h2oYc1J4WZL2JwnYviA_1ZEVLFkfqMc,1941
+ml_library/NonLinearRegression.py,sha256=VOzjFih2lscfmsPQkhi7G-laizzmxFSR0tq9LZlxLHs,1276
+ml_library/Optimizers.py,sha256=QnMmNZ-yq2ZhDy2Rw6kH_z_qPkCfR7Yb-DuZV5RnR5w,2974
+ml_library/SVMDual.py,sha256=G0r59YC5tXrooDvVbaYmkxYVg2BhBz_x4XM0vtCr7lU,9714
+ml_library/SVMPrimal.py,sha256=I6-VWzJ3sdAhMMY0tzh3QXS0BIRKJ-i6rPnCnZormLE,1351
+ml_library/__init__.py,sha256=Q1C2fvmEHIi2Ea3d3kegpcLoSfaNbAq-eI5dJCGRBPI,696
+ml_library-1.0.dist-info/LICENCE.txt,sha256=nx3TiEM4ID51S62vXorKR8zBLT8ymfNJI9AzuAXKwrs,1066
+ml_library-1.0.dist-info/METADATA,sha256=sqLk6l-HIvvILMFmfpMEBxGxFiztqSaMaFYQ3gcNe-M,3619
+ml_library-1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ml_library-1.0.dist-info/top_level.txt,sha256=gJUSH0JHjy1-CFz96bX6MA9BHxBztfuN1D5wNssMWVw,11
+ml_library-1.0.dist-info/RECORD,,
