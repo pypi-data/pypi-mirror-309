@@ -1,0 +1,16 @@
+damage_chart_component/__init__.py,sha256=qKwaA5ZyoQGFFb8mu17MSzcNXncs4UbkrDaN2E3ytF0,1365
+damage_chart_component/example.py,sha256=eAPQeLA72SMvd9njyrzIUB6zrcxKYu4e6kqkmT4Q3CM,25791
+damage_chart_component/frontend/build/asset-manifest.json,sha256=ZKE0AfYwbVlSHLuuGAl-tc10BqFZNeeUT_xTBKXNf6I,374
+damage_chart_component/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+damage_chart_component/frontend/build/bootstrap.min.css.map,sha256=8SM4U2NQpCLGTQLW5D_x3qSTwxVq2CP-GXYc3V1WwFs,589892
+damage_chart_component/frontend/build/index.html,sha256=V8RS7SMHtlHgdO4lXlfoDGY5C_mhNzqzYWqgm-piud4,553
+damage_chart_component/frontend/build/static/css/main.328f3c68.css,sha256=c1NaeanlnDG3VMgxedloVvbPmW2df12kScgdzdqLoc4,915
+damage_chart_component/frontend/build/static/css/main.328f3c68.css.map,sha256=O7sdWncfW74qP2xAtH-1H2iiSriGmafP_prnB5-DIyI,2081
+damage_chart_component/frontend/build/static/js/main.4652cfee.js,sha256=eHpwuux98IQ7rDBXdhSLc9W7ohht9WCfZU3lb8aDrlI,552560
+damage_chart_component/frontend/build/static/js/main.4652cfee.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+damage_chart_component/frontend/build/static/js/main.4652cfee.js.map,sha256=O3zUHsiKZXJb0NuyfiTkc8QUIjRBaiLZMxXGIcz0VvI,2374477
+image_object_component-0.0.1.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+image_object_component-0.0.1.dist-info/METADATA,sha256=-qlH2qYg7GtxEObn-h4WyVneDzGzi4CllAsfi8EGkas,926
+image_object_component-0.0.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+image_object_component-0.0.1.dist-info/top_level.txt,sha256=I8qsGJ1WnyEAl7ppd1Y8cW_vpbErE5nwXKdKutdkHHg,23
+image_object_component-0.0.1.dist-info/RECORD,,
