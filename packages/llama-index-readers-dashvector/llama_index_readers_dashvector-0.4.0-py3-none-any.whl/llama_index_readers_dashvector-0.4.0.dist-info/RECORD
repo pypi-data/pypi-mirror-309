@@ -1,0 +1,5 @@
+llama_index/readers/dashvector/__init__.py,sha256=2BpZbexLFo2F-s9dshq1TJvO4g6_2Z3i7DytPAtrkD0,97
+llama_index/readers/dashvector/base.py,sha256=oGqByKn1VoEe1BsutvrAOqG_DSM0zHtwM1o-1hLrAMc,3137
+llama_index_readers_dashvector-0.4.0.dist-info/METADATA,sha256=E3o_2tgHWjsw77bsZwYzqurICbd1jhTqTE61s8QSAgI,2031
+llama_index_readers_dashvector-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_dashvector-0.4.0.dist-info/RECORD,,
