@@ -1,0 +1,18 @@
+[project]
+name = "databda"
+version = "0.1.0"
+authors = [
+  { name="Andrey", email="dorofeevav1149@gmail.com" },
+]
+description = "A program for local 'hashing' of data"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://turnmanedition.github.io/IsTericad.com/"
+Issues = "https://github.com/TurnManEDITION/IsTericad.com"

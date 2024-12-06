@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/databda/__init__.py
+src/databda/data.py
+src/databda/main.py
+src/databda.egg-info/PKG-INFO
+src/databda.egg-info/SOURCES.txt
+src/databda.egg-info/dependency_links.txt
+src/databda.egg-info/top_level.txt
