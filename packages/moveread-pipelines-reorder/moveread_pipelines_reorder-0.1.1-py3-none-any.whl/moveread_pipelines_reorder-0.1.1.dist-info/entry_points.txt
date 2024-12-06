@@ -1,0 +1,3 @@
+[console_scripts]
+reorder = moveread.pipelines.reorder.scripts.cli:main
+reorder-clientgen = moveread.pipelines.reorder.scripts.clientgen:main
