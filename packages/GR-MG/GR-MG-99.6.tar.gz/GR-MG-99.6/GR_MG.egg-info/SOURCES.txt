@@ -1,0 +1,7 @@
+main.py
+setup.py
+GR_MG.egg-info/PKG-INFO
+GR_MG.egg-info/SOURCES.txt
+GR_MG.egg-info/dependency_links.txt
+GR_MG.egg-info/requires.txt
+GR_MG.egg-info/top_level.txt
