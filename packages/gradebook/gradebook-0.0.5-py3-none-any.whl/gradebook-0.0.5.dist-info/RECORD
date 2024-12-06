@@ -1,0 +1,10 @@
+gradebook/cleanup_db.py,sha256=903Xj8VSbJGoTvskOeRenevEcqWUzPdVDWeusZyHfzw,1150
+gradebook/cli.py,sha256=4qe5Wm8mwtk9R6QX2Rr-qNLyp72nrKGTMDf_acn7r3g,63364
+gradebook/db.py,sha256=F6jL-nkhhbRqhnSZpK2YtwgXO1pS2FxMsskAVKGEa4U,18594
+gradebook/debug_add.py,sha256=BZz1o0zjwrc1HZEiTXuuexiPewn3ZLrKFaQ6abVv3go,3749
+gradebook/gradebook_debug.py,sha256=SV1FhaFUIs0ws3PoNq3YTRLO-tvQDfRYk48a5MofGAY,3051
+gradebook/models/__init__.py,sha256=u82TFSPWsJkHS8mhOunmEtqSILZVGzU7Zv4KJKoan5E,30
+gradebook-0.0.5.dist-info/METADATA,sha256=bQo8BAgyXL_UGfV5V8-wOVQmnc9Dn-fsP06VcvyFnIg,1032
+gradebook-0.0.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gradebook-0.0.5.dist-info/entry_points.txt,sha256=HwWeIiftLhRzN3GmIJISvKOJhniRNqSf8edsslpmJks,47
+gradebook-0.0.5.dist-info/RECORD,,
