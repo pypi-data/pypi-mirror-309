@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+arbori/__init__.py
+arbori/__main__.py
+arbori/cli.py
+arbori/io.py
+arbori/tree.py
+arbori.egg-info/PKG-INFO
+arbori.egg-info/SOURCES.txt
+arbori.egg-info/dependency_links.txt
+arbori.egg-info/entry_points.txt
+arbori.egg-info/requires.txt
+arbori.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_io.py
+tests/test_tree.py
