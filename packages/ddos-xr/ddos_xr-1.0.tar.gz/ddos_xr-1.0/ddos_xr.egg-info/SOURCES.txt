@@ -1,0 +1,9 @@
+README.md
+setup.py
+ddos_xr/__init__.py
+ddos_xr/__main__.py
+ddos_xr.egg-info/PKG-INFO
+ddos_xr.egg-info/SOURCES.txt
+ddos_xr.egg-info/dependency_links.txt
+ddos_xr.egg-info/entry_points.txt
+ddos_xr.egg-info/top_level.txt
