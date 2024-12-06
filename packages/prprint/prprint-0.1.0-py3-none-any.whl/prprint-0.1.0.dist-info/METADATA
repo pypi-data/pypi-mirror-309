@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: prprint
+Version: 0.1.0
+Summary: An enhanced pprint module with additional features.
+Home-page: https://github.com/yourusername/prprint
+Author: Lovely Cobra
+Author-email: elene.yeti@web.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Well, just a slight modification of pprint module: adding an empty line to the beginning and the end of whatever is being printed and changing some default values.
