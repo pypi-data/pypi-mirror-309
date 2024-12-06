@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-nominopolitan
+Version: 0.6.0
+Summary: Neapolitan with namespaces - Django CRUD views
+Home-page: https://github.com/doctor-cornelius/django-nominopolitan
+Author: Michael Foulds
+Author-email: mfoulds@navigatus.net
+Requires-Python: >=3.12.3,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: django (>=5.1.3,<6.0.0)
+Requires-Dist: django-htmx (>=1.21.0,<2.0.0)
+Requires-Dist: django-template-partials (>=24.4,<25.0)
+Requires-Dist: neapolitan (>=24.8,<25.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: validators (>=0.28.3,<0.29.0)
+Project-URL: Repository, https://github.com/doctor-cornelius/django-nominopolitan
+Description-Content-Type: text/markdown
+
+# Nominopolitan
+
+It's [`neapolitan`](https://github.com/carltongibson/neapolitan/tree/main), but with namespaces.
