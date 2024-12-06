@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ovos-skill-color-picker
+Version: 0.0.5
+Summary: ColorPickerSkill
+Home-page: https://github.com/OpenVoiceOS/ovos-skill-color-picker
+Author: krisgesling
+Author-email: UNKNOWN
+License: Apache2.0
+Keywords: ovos skill plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-workshop
+Requires-Dist: ovos-color-parser
+
+UNKNOWN
+
+
