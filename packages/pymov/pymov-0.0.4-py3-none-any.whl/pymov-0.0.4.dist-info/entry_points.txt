@@ -1,0 +1,3 @@
+[console_scripts]
+pymov=pymov.__main__:main
+
