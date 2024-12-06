@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: binaryornot-stubs
+Version: 0.0.2
+Summary: Stubs for binaryornot.
+Home-page: https://github.com/Tatsh/binaryornot-stubs
+License: MIT
+Keywords: command line,library,media
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Stubs Only
+Project-URL: Issues, https://github.com/Tatsh/binaryornot-stubs/issues
+Project-URL: Repository, https://github.com/Tatsh/binaryornot-stubs
+Description-Content-Type: text/markdown
+
+# binaryornot-stubs
+
+[![QA](https://github.com/Tatsh/binaryornot-stubs/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/binaryornot-stubs/actions/workflows/qa.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/binaryornot-stubs)](https://pypi.org/project/binaryornot-stubs/)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/binaryornot-stubs)
+![GitHub](https://img.shields.io/github/license/Tatsh/binaryornot-stubs)
+![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/binaryornot-stubs/v0.0.2/master)
+
+Stubs for `binaryornot`.
+
+## Installation
+
+```shell
+pip install binaryornot-stubs
+```
+
