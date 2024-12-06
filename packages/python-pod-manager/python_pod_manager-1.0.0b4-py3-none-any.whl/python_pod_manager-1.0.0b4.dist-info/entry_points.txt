@@ -1,0 +1,2 @@
+[console_scripts]
+pypodmanager = pypodmanager.utils.cli:main

@@ -1,0 +1,235 @@
+Metadata-Version: 2.1
+Name: python-pod-manager
+Version: 1.0.0b4
+Summary: A pod manager for version dependency python projects.
+Home-page: https://gitlab.com/Hakanbaban53/python-pod-manager
+Author: Hakan İSMAİL
+Author-email: hakanismail53@gmail.com
+License: MIT License
+        
+        Copyright (c) 2024 Hakan İSMAİL
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: psutil
+Requires-Dist: colorama
+
+# Python Pod Manager
+
+**Python Pod Manager** is a library designed to manage Dockerized environments for Python projects with flexible dependency management and deployment options. It provides a way to run applications with specific library versions in an isolated pod environment, avoiding conflicts with the host system.
+
+## Overview
+
+With Python Pod Manager, you can configure a pod to install and run all necessary libraries without impacting the libraries on your local machine. This setup makes it easy to share your `requirements.txt` file and configuration with other users, ensuring they can reproduce the same environment without modifying their local libraries.
+
+## Configuration File Structure
+
+Here is an example configuration file (`config.yaml`) with explanations for each section:
+
+```yaml
+engine:
+  name: "docker" # Specifies the container engine used. Currently, only Docker is supported.
+  rebuild: true # Indicates if the pods should be rebuilt each time (true) or not (false).
+
+isolation:
+  enabled: true # Enables or disables the isolation feature.
+  name: "Code-Runner" # The name of the isolated environment or pod.
+  version: "latest" # Version tag for the isolated environment.
+  base_image: "python:3.13-slim" # Base image for building the isolated container.
+  working_dir: "/app" # Working directory inside the container.
+  commands: # List of commands for the build process.
+    - name: "COPY" # Command to copy files.
+      command: ". /app" # Copies current directory contents to /app.
+
+libraries:
+  requirements_file: "requirements.txt" # Name of the requirements file. Default is requirements.txt.
+  path: "path/to/file/location" # Path to additional library files. Defaults to the current directory if not specified.
+  # - name: "numpy" # Option to list individual libraries.
+  #   version: "2.1.0" # Version of the library.
+
+library_pod:
+  base_image: "python:3.13-slim" # Base image for the library pod.
+  working_dir: "/app" # Working directory inside the pod.
+  version: "latest" # Pod version.
+  dedicated_pod: true # Indicates if the pod is dedicated.
+  pod_name: "my_pod" # Custom name for the library pod.
+
+commands:
+  - name: "RUN" # Custom Dockerfile command.
+    command: "pip install {libraries} --target /app/lib" # Installs libraries to a target path.
+
+mount:
+  host_mount_path: "/home/hakan/custom_mount" # Path on the host to mount.
+  pod_mount_path: "/app/lib" # Target path in the container.
+
+# Optional deployment section
+deployment:
+  deployment_mode: "stack" # Deployment mode (stack or compose). Default is compose.
+  stack_name: "my_docker_stack" # Custom Docker stack name. Default is my_stack.
+  compose_file: "docker-compose.yml" # Docker Compose file. Default is docker-compose.yml.
+  retry_attempts: 3 # Number of retry attempts.
+  retry_interval: 5 # Time between retries (in seconds).
+
+# Optional additional section
+additional:
+  log_level: "INFO" # Logging level. Default is FATAL.
+  log_path: "." # Directory path for logs. Default is ~/Pypodmanager/logs.
+  log_file: "log.txt" # Log file name. Default is Docker_Manager.log.
+```
+
+### Explanation of Each Section
+
+#### Engine
+- **`name`**: Specifies the container engine being used (e.g., `docker`). Note: Currently, only Docker is supported.
+- **`rebuild`**: Indicates whether the pods should be rebuilt each time (`true`) or not (`false`).
+
+#### Isolation
+- **`enabled`**: Determines if the isolation feature is active (`true`). If you dont want to run code on your computer use this.
+- **`name`**: The name assigned to the isolated environment or pod.
+- **`version`**: Version tag for the isolated environment.
+- **`base_image`**: Specifies the base image to be used for creating the isolated container (e.g., `python:3.13-slim`).
+- **`working_dir`**: The working directory within the container.
+- **`commands`**: A list of custom commands executed during the build process, such as `COPY` or `RUN`. This section allows for flexible Dockerfile customization.
+
+#### Libraries
+- **`requirements_file`**: Specifies the name of the requirements file to install libraries from (commonly `requirements.txt`).
+- **`path`**: An optional path to a directory containing additional library files for use with the `requirements_file`. If omitted, the current working directory is used.
+- **Individual Library List**: Instead of using a `requirements.txt` file, individual libraries can be listed with specific versions. This provides an alternative method for declaring dependencies.
+
+#### Library Pod
+- **`base_image`**: The base image used for creating the library pod.
+- **`working_dir`**: The working directory inside the pod.
+- **`version`**: Specifies the version of the pod.
+- **`dedicated_pod`**: Indicates whether the pod is a dedicated one (`true`).
+- **`pod_name`**: Custom name for the library pod.
+
+#### Commands
+- **Custom Docker Commands**: Allows the addition of specific instructions to the Dockerfile, such as `RUN`, `CMD`, or `ENV`. These commands can be tailored to suit particular build needs and extend the container's behavior.
+
+#### Mount
+- **`host_mount_path`**: The directory path on the host machine that will be mounted inside the container.
+- **`pod_mount_path`**: The destination path inside the container where the host directory will be mounted.
+
+#### Deployment (Optional)
+- **`deployment_mode`**: Specifies the deployment strategy, either `stack` or `compose`. Defaults to `compose`.
+- **`stack_name`**: Custom name for the Docker stack when deployed in `stack` mode. Defaults to `my_stack`.
+- **`compose_file`**: Specifies the Docker Compose file to use. If not provided, defaults to `docker-compose.yml`.
+- **`retry_attempts`**: The number of retry attempts in case of deployment failure.
+- **`retry_interval`**: Time interval (in seconds) between retry attempts.
+
+#### Additional (Optional)
+- **Logging Configuration**:
+  - **`log_level`**: Sets the logging verbosity (e.g., `INFO`, `DEBUG`, `FATAL`). The default level is `FATAL` if not specified.
+  - **`log_path`**: Directory path for storing log files. Defaults to `~/Pypodmanager/logs`.
+  - **`log_file`**: Name of the log file. Defaults to `Docker_Manager.log`.
+
+
+## Usage
+
+1. Create and customize the configuration file (`config.yaml`) as needed on your current working directory.
+2. Initialize Python Pod Manager and run the application in the pod.
+
+### Example
+
+Use the following script to set up and manage a specific application within the pod.
+
+```python
+# Initialize and run the pod
+from pypodman import AppInitializer
+AppInitializer().run()
+
+# Import and use required libraries as usual
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+from sklearn.decomposition import PCA
+
+class IrisDataAnalysis:
+    # Application code using libraries in the pod environment
+    def __init__(self):
+        self.data = load_iris()
+        self.df = pd.DataFrame(data=self.data.data, columns=self.data.feature_names)
+        self.df['target'] = self.data.target
+        self.pca_result = None
+        self.n_components = 2
+
+    def summarize_data(self):
+        print("Summary of the Iris dataset:")
+        print(self.df.describe())
+
+    def draw_pairplot(self):
+        sns.set_theme(style="ticks")
+        sns.pairplot(self.df, hue="target", palette="husl", markers=["o", "s", "D"])
+        plt.suptitle('Iris Pair Plot', y=1.02)
+        plt.show()
+
+    def apply_pca(self):
+        pca = PCA(n_components=self.n_components)
+        self.pca_result = pca.fit_transform(self.df.iloc[:, :-1])  # Exclude target column
+        self.df['pca_one'] = self.pca_result[:, 0]
+        self.df['pca_two'] = self.pca_result[:, 1]
+
+    def plot_pca_result(self):
+        if self.pca_result is None:
+            print("PCA has not been applied yet. Call the 'apply_pca()' method first.")
+            return
+
+        plt.figure(figsize=(8, 6))
+        sns.scatterplot(x="pca_one", y="pca_two", hue="target", palette="deep", data=self.df, s=100)
+        plt.title("PCA on Iris Dataset")
+        plt.xlabel("PCA One")
+        plt.ylabel("PCA Two")
+        plt.legend(title='Target')
+        plt.show()
+
+    def display_correlation_heatmap(self):
+        plt.figure(figsize=(10, 6))
+        corr = self.df.iloc[:, :-3].corr()  # Exclude PCA columns and target for correlation
+        sns.heatmap(corr, annot=True, cmap='coolwarm', linewidths=0.5)
+        plt.title("Correlation Heatmap of Iris Dataset")
+        plt.show()
+
+if __name__ == "__main__":
+    iris_analysis = IrisDataAnalysis()
+    iris_analysis.summarize_data()
+    iris_analysis.draw_pairplot()
+    iris_analysis.apply_pca()
+    iris_analysis.plot_pca_result()
+    iris_analysis.display_correlation_heatmap()
+```
+
+### Benefits of Using a Pod
+
+- **Dependency Isolation**: The specified libraries are installed inside the pod, so there is no need to install or uninstall them on your local machine.
+- **Easy Sharing**: Share the `requirements.txt` file and configuration with other users. They can reproduce the same environment without affecting their own library versions.
+- **Seamless Operation**: With the pod set up, you only need to run the code as usual without worrying about environment issues on the host machine.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
