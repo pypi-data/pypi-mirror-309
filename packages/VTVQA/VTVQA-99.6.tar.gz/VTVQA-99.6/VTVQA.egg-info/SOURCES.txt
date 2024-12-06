@@ -1,0 +1,7 @@
+main.py
+setup.py
+VTVQA.egg-info/PKG-INFO
+VTVQA.egg-info/SOURCES.txt
+VTVQA.egg-info/dependency_links.txt
+VTVQA.egg-info/requires.txt
+VTVQA.egg-info/top_level.txt
