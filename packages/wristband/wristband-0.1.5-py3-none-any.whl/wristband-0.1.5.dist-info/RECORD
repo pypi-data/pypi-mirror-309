@@ -1,0 +1,10 @@
+wristband/__init__.py,sha256=b3U_OKlRlVI52is_oIm28i8O94wA7B7KoYoESTeNjPs,127
+wristband/exceptions.py,sha256=sHqTjL-o-yQCS8WDhaQn1URqqrVnEa108cvl-NGvEUE,587
+wristband/users.py,sha256=xmjnu_oaicQSvQdUNVFPFVsRjyWILkodsEXg6djovsQ,5601
+wristband/oauth2/__init__.py,sha256=sIcp60F08cQUKkNm8vAgHTTBBzEJvqS-HIkLOJsPQe0,32
+wristband/oauth2/get_token.py,sha256=W7seQfYV8MyHF41gKljAp0oBCtKxtTI5pwUA7mN1Ihc,2374
+wristband-0.1.5.dist-info/METADATA,sha256=ZdNbbuV5txoWc8ryRcXdla2z-zv6z5pCBIKh572B7H0,286
+wristband-0.1.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+wristband-0.1.5.dist-info/entry_points.txt,sha256=dW7JfuZu0SJRBu_PNpzQxe1t-M0AVl3xpO2zZuVwhC8,52
+wristband-0.1.5.dist-info/top_level.txt,sha256=hR_O7BH12-5HzwoeYdIhSwFzXJmIjtZIsf04fHS8glQ,10
+wristband-0.1.5.dist-info/RECORD,,
