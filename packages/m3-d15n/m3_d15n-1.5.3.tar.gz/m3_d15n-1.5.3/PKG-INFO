@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: m3-d15n
+Version: 1.5.3
+Summary: Подсистема деперсонализации данных в БД
+Home-page: https://stash.bars-open.ru/projects/M3/repos/m3-d15n
+Author: BARS Group
+Author-email: bars@bars-open.ru
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: Russian
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Requires-Dist: six<2,>=1.11
+Requires-Dist: Django<4,>=1.8
+Requires-Dist: psycopg2-binary<3,>=2.7.4
+
+Подсистема деперсонализации данных в БД PostgreSQL
+**************************************************
+
+Подсистема предназначена для обеспечения сокрытия персональных данных при
+работе веб-приложения в общедоступной сети.
+
+Описание подсистемы, принципов её работы, инструкции по её подключению и
+разработке описаны в документации. Для её просмотра её нужно сгенерировать
+с помощью Sphinx. Чтобы это сделать, нужно:
+
+  1. создать виртуальное окружение Python 3.6;
+  2. установить в него Fabric3: ``pip install Fabric3``;
+  3. склонировать в него репозиторий подсистемы:
+     ``git clone ssh://git@stash.bars-open.ru:7999/m3/m3-d15n.git``
+  4. перейти в папку с репозиторием: ``cd m3-d15n``;
+  5. установить необходимые пакеты в виртуальное окружение: ``fab req.dev``;
+  6. выполнить сборку документации в формате HTML: ``fab doc.build``;
+  7. открыть главную страницу в браузере: ``fab doc.browser`` (должна быть
+     установлена утилита ``xdg-open``), либо вручную открыть файл
+     ``./docs/build/html/index.html``.
