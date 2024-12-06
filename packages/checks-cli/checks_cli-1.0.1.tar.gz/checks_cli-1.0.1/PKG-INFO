@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: checks-cli
+Version: 1.0.1
+Summary: Command-line tool to manage tasks list.
+Home-page: https://github.com/anas-shakeel/checks
+Author: Anas Shakeel
+License: MIT
+Keywords: todo,task,task-manager,tasklist,todo-list,cli,command-line,productivity,organizer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pinsy
+Requires-Dist: tabulate
+
+## checks
+
+A CLI application for managing todo tasks while coding. (rather than managing `TODO.md` or similar files.)
+
+### Usage:
+
+Run `checks` command in the terminal in your project directory (or anywhere)
+
+```shell
+>> checks
+```
+
+#### NOTE:
+
+This readme is currently being written.
