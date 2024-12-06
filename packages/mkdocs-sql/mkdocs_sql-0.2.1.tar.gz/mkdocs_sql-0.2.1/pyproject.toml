@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs_sql"
+version = "0.2.1"
+authors = [
+    { name = "Vishal Gandhi", email = "igandhivishal@gmail.com" }
+]
+description = "A MkDocs plugin for executing and displaying SQL queries"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: MkDocs",
+    "Topic :: Documentation",
+]
+dependencies = [
+    "mkdocs>=1.6.1",
+    "pandas>=2.2.3",
+    "tabulate>=0.9.0",
+    "pyyaml>=6.0.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/igandhivishal/mkdocs-sql"
+Repository = "https://github.com/igandhivishal/mkdocs-sql"
+Issues = "https://github.com/igandhivishal/mkdocs-sql/issues"
+
+[project.entry-points."mkdocs.plugins"]
+sql = "mkdocs_sql.plugin:SQLPlugin"

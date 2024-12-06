@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+docs/javascripts/sql-toggle.js
+docs/stylesheets/sql-toggle.css
+mkdocs_sql.egg-info/PKG-INFO
+mkdocs_sql.egg-info/SOURCES.txt
+mkdocs_sql.egg-info/dependency_links.txt
+mkdocs_sql.egg-info/entry_points.txt
+mkdocs_sql.egg-info/requires.txt
+mkdocs_sql.egg-info/top_level.txt
+src/__init__.py
+src/plugin.py
+src/version.py
