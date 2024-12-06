@@ -1,0 +1,14 @@
+complexeva/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+complexeva/dummies/__init__.py,sha256=VQqNl0moMT5xdfFD5_OZufsWeNHPcZXsH5vXxQYBOJY,178
+complexeva/dummies/matrix.py,sha256=cK38675wNZzIw8vWcxGX7Az6K5hhqmX-kTqNaFojzX0,6116
+complexeva/dummies/networks.py,sha256=9lqj0mCpxffXZrq5Fn0_WIIK9gSXAboHO4G9UD_74Lc,3438
+complexeva/measures/__init__.py,sha256=hCalgxjRe25lWHf6HjgcyET2KC2PY3GsgvUvK9RAlnQ,347
+complexeva/measures/validate.py,sha256=v0qh9lbBQsc5s5djj5EVQHyYhuuc0cDFypTTbWngfH4,4043
+complexeva/utils/__init__.py,sha256=rXFRwhalDiyZJtit9LQatHqCMHOyHtgWro_zHaDN4BI,115
+complexeva/utils/convert_image_matrix.py,sha256=Umz2RbfhuGif2i6XEBxXvjvoe_Fv9-25v_CSPR5hR00,1818
+complexeva/utils/convert_matrix_network.py,sha256=UmpwVrJIYKSYOYh_vClZYqAETz5O_vSlLfLHG3BJcu0,2743
+complexeva/utils/device.py,sha256=4XIFZy2P9506Hj6CayU4sC_eGZy3aMicqAEZUyInPOw,1007
+complexeva-0.1.6.dist-info/METADATA,sha256=L6bce03XwumNrMtIUkLaWBwHO4pLVYUvpJe1XLnaLZY,535
+complexeva-0.1.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+complexeva-0.1.6.dist-info/top_level.txt,sha256=X3XSpN6IPOG6ih1Sic0RRGW3fh_CJhIBe7Mw58BOy2s,11
+complexeva-0.1.6.dist-info/RECORD,,
