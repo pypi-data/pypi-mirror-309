@@ -1,0 +1,12 @@
+NetManage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NetManage/__main__.py,sha256=VrsmLV0Bi-ICMcQvqxAZ9MqbVZqJ__HrlDcJPtnl5yw,5924
+NetManage/utils/NMCOMM_file.py,sha256=dCaS2y3Mn7_egjFRj5MgtVJAi1gZOJvvzmHdVpSfTGI,2130
+NetManage/utils/NMCONN_file.py,sha256=rutSejTricNEkTainfu6VUwXbtT_RwsVAu7H-xvLbgU,3629
+NetManage/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NetManage/utils/commands.py,sha256=C3D3pNCaqvikmlsFb3sywdzKancEI1deDR5wzda5bUY,818
+NetManage/utils/connections.py,sha256=N2PKG9l0DNsmYOqvWOd1YTvodPyfx2xujWUufVzBTgU,2300
+NetManage-0.1.5.dist-info/METADATA,sha256=YMyL636FyapGeqxRNOmfatvHxKVaEtyu1_uGUreEJcE,572
+NetManage-0.1.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+NetManage-0.1.5.dist-info/entry_points.txt,sha256=q1iY9BznB_S_nXcPStM7xuTvaiWLQC39x6s4t-wVXWk,54
+NetManage-0.1.5.dist-info/top_level.txt,sha256=SXuApDG6p5nA9UyP591XU8SaPHUqlRYvj3BLyGfvW0U,10
+NetManage-0.1.5.dist-info/RECORD,,
