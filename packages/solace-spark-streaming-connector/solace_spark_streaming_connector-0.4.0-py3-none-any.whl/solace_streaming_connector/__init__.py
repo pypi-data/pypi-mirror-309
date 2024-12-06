@@ -1,0 +1,5 @@
+import solace_stream_source.solace_stream_datasource
+from solace_streaming_connector import *
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.getOrCreate()
+spark.dataSource.register(solace_stream_source.solace_stream_datasource.SolaceStreamDataSource)

@@ -1,0 +1,8 @@
+solace_stream_source/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solace_stream_source/solace_queue_stream_reader.py,sha256=TJpcVJcUodvoUbDVkWP50gULVnA2KE9P3RA1qiYBj3w,5908
+solace_stream_source/solace_stream_datasource.py,sha256=hCYTQvc5TDh0F-KmYuJ1YaRNvPvRkmByWZtcc6A2E48,534
+solace_streaming_connector/__init__.py,sha256=SNxC0uiD8wuc-Kzo2ZwwQQPaBv0RURNRDHf-WhHp3dQ,269
+solace_spark_streaming_connector-0.4.0.dist-info/METADATA,sha256=A7h6-xIHiKn__JfaBTy7De5-5MyQvmjcxLWTkapV8sE,414
+solace_spark_streaming_connector-0.4.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+solace_spark_streaming_connector-0.4.0.dist-info/top_level.txt,sha256=bU65P1x4zxVK_b_04wZnbd7ryktDjF8wVwagYl5NXTk,48
+solace_spark_streaming_connector-0.4.0.dist-info/RECORD,,
