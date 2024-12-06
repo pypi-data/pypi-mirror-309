@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: fast-license
+Version: 0.1.1
+Summary: Easy way to handle License
+Author: Bigollo
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
+# 项目License
+
+## 简介
+
+fast-license 是一个用于项目快速添加License功能的Python包，提供License生成、License更新、中间件等功能。
+
+## 依赖性
+
+##### 基础依赖（安装fast-license时将自动安装）：
+
+- cryptography
+
+##### 额外依赖（根据需求手动安装）：
+
+| 功能       | 依赖            |
+| ---------- | --------------- |
+| 中间件 | fastapi、starlette |
+| License更新接口 | fastapi、starlette、pydantic、requests |
+
+## 安装
+
+```shell
+# 通过 pip 安装：
+pip install fast-license
+```
+
+## License生成
+
+#### 1. RSA生成
+
+   ```shell
+   python -m fast_license generate-keys
+   ```
+
+#### 2. 私钥输出
+
+```shell
+python -m fast_license print-key
+```
+
+#### 3. License生成
+
+```shell
+python -m fast_license generate YYYY-mm-dd_HH:MM:SS
+```
+
+#### 4. 打印License内容
+
+```shell
+python -m fast_license decrypt
+```
+
+## 中间件应用
+
+```python
+from fast_license.middleware import LicenseMiddleware
+
+app = FastAPI()
+app.add_middleware(LicenseMiddleware, license_path={License路径}, private_key={私钥输出内容})
+```
+
+## 装饰器应用
+
+```python
+from fast_license.license import LicenseDecorator
+
+add_license = LicenseDecorator(license_path={License路径}, private_key={私钥输出内容})
+
+@add_license
+def func():
+    pass
+```
+
+## License接口
+
+```python
+from fast_license.api_manager import APILicense
+
+app = FastAPI()
+api_license = APILicense(license_path={License路径}, private_key={私钥输出内容})
+
+# 多机
+api_license.register(hosts=[{ip1}, {ip2}], port={服务端口})
+
+app.include_router(api_license.router)
+```
+
