@@ -1,0 +1,97 @@
+kind: pipeline
+name: Test
+
+trigger:
+  ref:
+    include:
+      - refs/heads/main
+      - refs/pull/**
+      - refs/tags/v**
+
+steps:
+  - name: Test Python
+    image: python:3.10.6
+    commands:
+      - python -m pip install --upgrade uv invoke
+      - uv sync --all-extras
+      - uv run pytest --cov --cov-report=xml
+      - uv run pre-commit run --all-files
+
+---
+kind: pipeline
+name: Security Checks
+
+trigger:
+  ref:
+    include:
+      - refs/heads/main
+      - refs/pull/**
+      - refs/tags/v**
+
+steps:
+  - name: gitleaks-scan
+    image: zricethezav/gitleaks:latest
+    pull: if-not-exists
+    commands:
+      - echo "Running Gitleaks scan..."
+      - mkdir -p reports
+      - gitleaks detect -s ./ -v -f json -r reports/gitleaks.json || true
+
+  - name: kube-score-analysis
+    image: zegl/kube-score:v1.14.0-helm3
+    commands:
+      - mkdir -p reports
+      - helm template chart | kube-score score -o ci - | tee reports/kube-scan.json
+    when:
+      branch:
+        - main
+        - score
+      event:
+        - push
+        - tag
+
+  - name: sonarqube-analysis
+    image: sonarsource/sonar-scanner-cli:latest
+    network_mode: host
+    user: root
+    environment:
+      SONAR_HOST_URL:
+        from_secret: SONARQUBE_HOST
+      SONAR_TOKEN:
+        from_secret: SONARQUBE_TOKEN
+    commands:
+      - VERSION=$(cat neos_common/__init__.py | sed 's/^.*__version__ = "\([^"]*\).*/\1/')
+      - sonar-scanner -X -Dsonar.projectKey=NEOS-Critical_neos-platform-common_AYSllwJcMpAbRG9xVdpa -Dsonar.projectVersion=v$VERSION-$DRONE_TAG
+
+  - name: dependency-analysis
+    image: aquasec/trivy:latest
+    network_mode: host
+    commands:
+      - wget -c https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl
+      - mkdir -p reports
+      - trivy fs --ignore-unfixed --vuln-type os,library --format template --template "@html.tpl" -o reports/scan.html ./
+      - trivy fs --vuln-type os,library --format json -o reports/trivy.json ./
+
+---
+kind: pipeline
+name: publish
+depends_on:
+  - Test
+  - Security Checks
+
+trigger:
+  ref:
+    include:
+      - refs/tags/v**
+
+steps:
+  - name: publish
+    image: python:3.10.6
+    environment:
+      TWINE_USERNAME: __token__
+      TWINE_PASSWORD:
+        from_secret: PYPI_TOKEN
+    commands:
+      - python -m pip install --upgrade uv
+      - uv build
+      - uvx twine upload dist/*
