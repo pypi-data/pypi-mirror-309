@@ -1,0 +1,17 @@
+disopy/__init__.py,sha256=xoRF1V0EVO2v4o_qHq3C5JKMTKneejwSMFxnXXAjRyI,689
+disopy/__main__.py,sha256=5P0bpmde02Jd1IdNMbs2bv6dTOHvzhN96OvhShDNSnI,1858
+disopy/config.py,sha256=oclDtJdnscWm6iK8aF558XvbzYJmfAKmaLJEpA-r6vw,5545
+disopy/discord.py,sha256=-1Km9i_KMzC7sAruc9kY1kNZFf58IW59bQ32j5FCkqs,2813
+disopy/env.py,sha256=7s72ApnULqG9iCUyzwqzgHheWKZKj2fa12vts60KPhI,2280
+disopy/logging.py,sha256=7vRC5Zw1bUB5c6mstjjYO90aeaSHnIca_7gCzQhx-ws,2094
+disopy/options.py,sha256=hzNpepL-WjcYa2Y0IpyOfOuX-jgEFWi_m2b79scRDzU,2488
+disopy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+disopy/cogs/base.py,sha256=MfBn73nUYIIKpypWJSRR14WGlgma3Knjgda_7Hu_7Ak,2179
+disopy/cogs/misc.py,sha256=QvpUxAnsAOeB5hr7kbtPM8e9CzMLF0x3DpzsZU8C1LY,2258
+disopy/cogs/queue.py,sha256=PNczkcV6IxaKPKRmuMV9J4GOXUP8CRGTxbRU4ZSHcYQ,16463
+disopy/cogs/search.py,sha256=jpIjs07Cf1bFCjaGidU5cbW3hmCUG350aUoJS6zC7mE,4965
+disopy-2.2.1.dist-info/METADATA,sha256=4CkFK_-GfcdglvMCJrwEiyMsfXL0AmXGIyEXMcX0hzs,4319
+disopy-2.2.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+disopy-2.2.1.dist-info/entry_points.txt,sha256=NfCraPP_Pxe6N8zI843aocfGNdtwQ41n1EkmCwCeBaI,48
+disopy-2.2.1.dist-info/licenses/LICENSE.txt,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+disopy-2.2.1.dist-info/RECORD,,
