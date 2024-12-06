@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: python_trade_runner
+Version: 0.0.2.dev1
+Summary: Helper for backtesting and running trading strategies
+Author-email: Loic Ledreck <loic.ledreck@gmail.com>
+License: MIT
+Project-URL: Homepage, https://strategymaker.net
+Project-URL: Repository, https://github.com/loicl971/python_trade_runner
+Project-URL: Issues, https://github.com/loicl971/python_trade_runner/issues
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+
+# python_trade_runner
+Helper for backtesting and running trading strategies
