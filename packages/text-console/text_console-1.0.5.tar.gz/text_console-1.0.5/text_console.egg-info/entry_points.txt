@@ -1,0 +1,2 @@
+[console_scripts]
+text_console = text_console:main
