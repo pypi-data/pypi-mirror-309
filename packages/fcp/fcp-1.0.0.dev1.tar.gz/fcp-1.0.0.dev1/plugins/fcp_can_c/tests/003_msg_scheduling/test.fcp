@@ -1,0 +1,32 @@
+version: "4"
+
+struct Pedals {
+    acc_pos @0: u8 | unit("%"),
+    brake_pos @1: u8 | unit("%"),
+}
+
+impl can for Pedals {
+    id: 10,
+    device: "ecu",
+    period: 15, /* Period in milliseconds*/
+}
+
+struct Shutdown {
+    error @0: u8,
+}
+
+impl can for Shutdown {
+    id: 11,
+    device: "ecu",
+    period: 20,
+}
+
+struct Button {
+    press @0: u8,
+}
+
+impl can for Button {
+    id: 12,
+    device: "ecu",
+    period: -1,
+}

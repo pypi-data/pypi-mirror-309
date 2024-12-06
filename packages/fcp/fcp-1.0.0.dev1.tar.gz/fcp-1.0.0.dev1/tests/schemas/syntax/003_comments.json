@@ -1,0 +1,32 @@
+{
+  "impls": [],
+  "structs": [
+    {
+      "name": "foo",
+      "fields": [
+        {
+          "name": "bar",
+          "field_id": 0,
+          "type": {"BuiltinType": {"name": "u8"}}
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "baz",
+      "enumeration": [
+        {
+          "name": "Var1",
+          "value": 0
+        },
+        {
+          "name": "Var2",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "services": [],
+  "version": "3.0"
+}

@@ -1,0 +1,7 @@
+Error: Unexpected character 's' -> {filename}:1:1
+
+Expected one of:
+    * VERSION
+
+1 | struct A {
+  | ~~~~~~~~~~

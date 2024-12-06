@@ -1,0 +1,33 @@
+{
+  "impls": [],
+  "structs": [
+    {
+      "name": "foo",
+      "fields": [
+        {
+          "name": "var1",
+          "field_id": 0,
+          "type": {"BuiltinType": {"name": "u8"}}
+        },
+        {
+          "name": "var2",
+          "field_id": 1,
+          "type": {"BuiltinType": {"name": "u8"}}
+        }
+      ]
+    },
+    {
+      "name": "baz",
+      "fields": [
+        {
+          "name": "var",
+          "field_id": 0,
+          "type": {"ComposedType": {"name": "foo", "category": "Struct"}}
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "services": [],
+  "version": "3.0"
+}

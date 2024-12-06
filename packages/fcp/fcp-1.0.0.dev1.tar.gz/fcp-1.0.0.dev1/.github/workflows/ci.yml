@@ -1,0 +1,52 @@
+name: main
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+env:
+    CARGO_TERM_COLOR: always
+    RUSTFLAGS: -D warnings
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    ci:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: yezz123/setup-uv@v4
+            - run: make RUN_UNDER="uvx -p 3.12" ci
+
+
+    tests:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        steps:
+            - uses: actions/checkout@v4
+            - uses: yezz123/setup-uv@v4
+            - run: make RUN_UNDER="uvx -p ${{ matrix.python }}" test
+
+    docs:
+        environment:
+          name: github-pages
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: yezz123/setup-uv@v4
+            - run: make docs
+            - name: Upload artifact
+              id: upload-artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: docs/build/html
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4

@@ -1,0 +1,15 @@
+version: "3"
+
+struct Foo {
+    s1 @0: u8 | unit("m/s"),
+    s2 @1: u16 | unit("kg"),
+}
+
+
+struct Bar {
+    s1 @0: [Foo, 2],
+}
+
+impl can for Bar {
+    id: 10,
+}

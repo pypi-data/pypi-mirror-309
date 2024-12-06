@@ -1,0 +1,21 @@
+{
+  "impls": [],
+  "structs": [],
+  "enums": [
+    {
+      "name": "foo",
+      "enumeration": [
+        {
+          "name": "bar",
+          "value": 0
+        },
+        {
+          "name": "baz",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "services": [],
+  "version": "3.0"
+}

@@ -1,0 +1,36 @@
+{
+  "impls":[
+      {
+          "name": "A",
+          "protocol": "protocol1",
+          "type": "A",
+          "fields": {
+              "id": 2
+          },
+          "signals": [
+              {
+                  "name": "field1",
+                  "fields": {
+                      "bitstart": 0,
+                      "bitlength": 8
+                  }
+              }
+          ]
+      }
+  ],
+  "structs": [
+    {
+      "name": "A",
+      "fields": [
+        {
+          "name": "field1",
+          "field_id": 0,
+          "type": {"BuiltinType": {"name": "u8"}}
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "services": [],
+  "version": "3.0"
+}

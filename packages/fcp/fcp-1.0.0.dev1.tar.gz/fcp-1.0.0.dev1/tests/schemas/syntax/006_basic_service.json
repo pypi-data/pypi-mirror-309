@@ -1,0 +1,43 @@
+{
+  "impls":[],
+  "structs": [
+    {
+      "name": "A",
+      "fields": [
+        {
+          "name": "field1",
+          "field_id": 0,
+          "type": {
+              "BuiltinType": {
+                  "name": "u8"
+              }
+          }
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "fields": [
+        {
+          "name": "field1",
+          "field_id": 0,
+          "type": {"BuiltinType": {"name": "u16"}}
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "services": [
+      {
+          "name": "Service",
+          "rpcs": [
+              {
+                  "name": "Foo",
+                  "input": "A",
+                  "output": "B"
+              }
+          ]
+      }
+  ],
+  "version": "3.0"
+}
