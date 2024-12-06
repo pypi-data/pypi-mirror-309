@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+BetterTkinter.egg-info/PKG-INFO
+BetterTkinter.egg-info/SOURCES.txt
+BetterTkinter.egg-info/dependency_links.txt
+BetterTkinter.egg-info/top_level.txt
+bettertkinter/BTk.py
+bettertkinter/BTkButton.py
+bettertkinter/BTkFrame.py
+bettertkinter/__init__.py
