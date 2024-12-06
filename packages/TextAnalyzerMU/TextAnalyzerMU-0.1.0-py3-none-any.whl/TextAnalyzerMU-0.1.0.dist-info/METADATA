@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TextAnalyzerMU
+Version: 0.1.0
+Summary: Una breve descripción de tu paquete
+Home-page: https://github.com/izaskunbenegas/TextAnalyzer.git
+Author: Grupo G
+Author-email: naiaflorescubillas@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: transformers
+Requires-Dist: nltk
+Requires-Dist: wordcloud
+Requires-Dist: matplotlib
+Requires-Dist: sumy
+Requires-Dist: langdetect
+Requires-Dist: scikit-learn
+Requires-Dist: python-Levenshtein
+Requires-Dist: googletrans ==4.0.0-rc1
+Requires-Dist: pandas
+
+# TextAnalyzer
+Es una librerÃ­a de procesamiento de lenguaje natural enfocada a simplificar y mejorar el anÃ¡lisis de textos. Es una herramienta versÃ¡til que ofrece un conjunto de funciones avanzadas con las que el usuario puede extraer informaciÃ³n de interÃ©s entender en profundizar el texto, para poder identificar patrones y extraer valor.
