@@ -1,0 +1,17 @@
+extrainterpreters-0.2.0.dist-info/RECORD,,
+extrainterpreters-0.2.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+extrainterpreters-0.2.0.dist-info/WHEEL,sha256=1ZyO9j1dy13xVX61sKkt9ZD7N3zINMoUcKTcK_UacOg,111
+extrainterpreters-0.2.0.dist-info/top_level.txt,sha256=-4UVnR1n0grVo02y5ZLoIULlNbjukBw5w4P_Bc8mnE8,18
+extrainterpreters-0.2.0.dist-info/METADATA,sha256=YlndCutTlZyxSg9vGGc6qi9g6yi5Fd6gc57CrguxGV4,5499
+extrainterpreters/queue.py,sha256=Dr65DUJpF6EKcd3Wd0731zswJ68XKRdt2c1ykeuVhAk,18589
+extrainterpreters/__init__.py,sha256=fffoqq8ZSM3zIrUAV1MKfucnLh4UQeev_bbQyCprnKE,2814
+extrainterpreters/remote_array.py,sha256=sWz4NUz2-tTh1a8bs-APw0iUsu1ST1b_i9P2Gl28-OM,13594
+extrainterpreters/simple_interpreter.py,sha256=C_LTDbWU80rleA_5SnScAx40XAMQikCKNmXfoMiLAIU,8083
+extrainterpreters/memoryboard.py,sha256=lJ2hGN-bzkvUM9Cax_zNbJ3JnEXncGkJJuZd8BLxW8U,9095
+extrainterpreters/utils.py,sha256=RpbG0Kk84R3EIRTMkaSiEi47rc4F0NXJT4Y7lZGZNvc,5583
+extrainterpreters/base_interpreter.py,sha256=0DDySuypTTGaZ_aFWmsNoVWp0e2hugqAS5cqA0jfGn0,7147
+extrainterpreters/lock.py,sha256=20wISh-vYtayxBj2uj9c64ycoMHqTbWm2N6cr7HAjyM,6775
+extrainterpreters/_memoryboard.cpython-313-darwin.so,sha256=B5_FM7IcyXft_rxDdhQn203k5wfbEIUtb4UEMFlblF8,35008
+extrainterpreters/memoryboard.c,sha256=bxfpD8-g4VEP-rUSQr-2hpSJ_FwyhT0Xgs21_FJg8ro,3951
+extrainterpreters/resources.py,sha256=PAVv-qXzruS0FshUyP6ra9i85xgiaHbu_Z4ATBTWbTg,4177
+extrainterpreters/piped_interpreter.py,sha256=EheRKMXJYtdglatB_DVJp05nj46XZnlJBmIxw-nBGqc,3975
