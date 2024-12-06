@@ -1,0 +1,2 @@
+[console_scripts]
+gyjd = gyjd.cli.__main__:app
