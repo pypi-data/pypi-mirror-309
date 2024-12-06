@@ -1,0 +1,2 @@
+[console_scripts]
+sync_repo = semantic_syntax_tree.sync_repo:main
