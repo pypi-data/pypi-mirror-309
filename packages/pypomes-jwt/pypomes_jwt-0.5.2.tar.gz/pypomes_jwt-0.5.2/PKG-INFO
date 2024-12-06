@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: pypomes_jwt
+Version: 0.5.2
+Summary: A collection of Python pomes, penyeach (JWT module)
+Project-URL: Homepage, https://github.com/TheWiseCoder/PyPomes-JWT
+Project-URL: Bug Tracker, https://github.com/TheWiseCoder/PyPomes-JWT/issues
+Author-email: GT Nunes <wisecoder01@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: pip>=24.3.1
+Requires-Dist: pyjwt>=2.10.0
+Requires-Dist: pyopenssl>=24.2.1
+Requires-Dist: pypomes-core>=1.6.2
+Requires-Dist: setuptools>=75.5.0
+Requires-Dist: wheel>=0.45.0
