@@ -1,0 +1,11 @@
+airflow/providers/pinecone/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/pinecone/__init__.py,sha256=TFJO0FuDX4I-WlE7KyjZP3j1AC42ZLjQ5r8YznwASfw,1495
+airflow/providers/pinecone/get_provider_info.py,sha256=a4W1Iudaqo9s0TiQNZ55XtbFKJuGrTbhK7EB5oYAIfQ,2378
+airflow/providers/pinecone/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/pinecone/hooks/pinecone.py,sha256=vbkuhXGP82QOa0XBA-R1RtWt2vTmB2JS6TnLcamcjnA,15034
+airflow/providers/pinecone/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/pinecone/operators/pinecone.py,sha256=sWGkSkC1z0ir_QquFO1nfPCjNlkopT3VOtIQNCKLZ9M,7608
+apache_airflow_providers_pinecone-2.1.1.dist-info/entry_points.txt,sha256=dOcAD_Wy2d40tVNavtTunEPGKXsL-md2shZsEJrdn-4,104
+apache_airflow_providers_pinecone-2.1.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+apache_airflow_providers_pinecone-2.1.1.dist-info/METADATA,sha256=uzY6cRQGiDNby2q7TSPEPcmGVw_G2z206ryGS0PlaVM,4731
+apache_airflow_providers_pinecone-2.1.1.dist-info/RECORD,,
