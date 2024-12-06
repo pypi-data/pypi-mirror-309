@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dtech_password_generator"
+version = "1.0.0"
+description = "A simple password generator package."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Daniel Wangari", email = "danielnjama2015@gmail.com"}]
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["pytest", "black"]
