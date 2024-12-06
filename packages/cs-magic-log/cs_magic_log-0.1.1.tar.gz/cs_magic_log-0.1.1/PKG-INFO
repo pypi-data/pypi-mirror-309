@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cs-magic-log
+Version: 0.1.1
+Summary: 一个简单易用的日志配置工具
+Home-page: https://github.com/cs-magic/log_py
+License: MIT
+Author: Mark
+Author-email: mark@cs-magic.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/cs-magic/log_py
+Description-Content-Type: text/markdown
+
+# cs-magic-log
+
+一个简单易用的日志配置工具，基于 loguru。
+
+## 安装 
