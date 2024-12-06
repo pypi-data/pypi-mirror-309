@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "spond"
+version = "1.1.0"
+description = "Simple, unofficial library with some example scripts to access data from the Spond API."
+authors = ["Ola Thoresen <ola@nytt.no>"]
+license = "GPL 3.0"
+readme = 'README.md'
+repository = 'https://github.com/Olen/Spond'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.11.4"
+pytest = "^8.1.1"
+pytest-asyncio = "^0.23.6"
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311', 'py312', 'py313']
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
