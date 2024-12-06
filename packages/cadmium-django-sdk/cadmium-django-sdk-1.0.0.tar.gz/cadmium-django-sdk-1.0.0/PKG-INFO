@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cadmium-django-sdk
+Version: 1.0.0
+Summary: Cadmium SDK for capturing and sending Django errors.
+Home-page: https://github.com/yourusername/cadmium-django-sdk
+Author: Your Name
+Author-email: your_email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+
+UNKNOWN
+
