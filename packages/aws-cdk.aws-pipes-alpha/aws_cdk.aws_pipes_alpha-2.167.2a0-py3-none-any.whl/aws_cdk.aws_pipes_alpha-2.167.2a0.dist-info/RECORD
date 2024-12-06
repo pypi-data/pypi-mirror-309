@@ -1,0 +1,10 @@
+aws_cdk/aws_pipes_alpha/__init__.py,sha256=pQhvlVk3PO05VGmcm0xCkFse6Lm5eqXK1Eukdy6a5DQ,139010
+aws_cdk/aws_pipes_alpha/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_pipes_alpha/_jsii/__init__.py,sha256=_-tbiEzkaza89j9S7q4P-c_scI7FHk5rtIvGPdCS514,1483
+aws_cdk/aws_pipes_alpha/_jsii/aws-pipes-alpha@2.167.2-alpha.0.jsii.tgz,sha256=8cw7BxpGKUDkqqOQNu8XYBV6Me9t7F4Yt72mWWraMBs,82303
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/LICENSE,sha256=kEDF86xJUQh1E9M7UPKKbHepBEdFxIUyoGfTwQB7zKg,11391
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/METADATA,sha256=QpHY8xUkmI2AivK_rHXkMR4Ywp1QJskyWocC511eiRA,17209
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/NOTICE,sha256=dXf56qvx2VDNCaqiRscOD2IH5GbmqbnKRzroZCeLtaQ,113
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_pipes_alpha-2.167.2a0.dist-info/RECORD,,
