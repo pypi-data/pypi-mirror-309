@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+BetterLoggin/__init__.py
+BetterLoggin/logger.py
+BetterLoggin.egg-info/PKG-INFO
+BetterLoggin.egg-info/SOURCES.txt
+BetterLoggin.egg-info/dependency_links.txt
+BetterLoggin.egg-info/requires.txt
+BetterLoggin.egg-info/top_level.txt
