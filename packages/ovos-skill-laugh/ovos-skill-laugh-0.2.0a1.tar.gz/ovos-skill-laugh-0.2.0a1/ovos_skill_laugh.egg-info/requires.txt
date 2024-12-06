@@ -1,0 +1,8 @@
+ovos-utils
+ovos-workshop
+ovos-plugin-manager
+ovos-audio
+
+[test]
+pytest
+pytest-cov
