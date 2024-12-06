@@ -1,0 +1,91 @@
+[package]
+name = "codemp"
+description = "codemp -- code multiplexer"
+homepage = "https://code.mp"
+repository = "https://github.com/hexedtech/codemp"
+authors = [
+	"alemi <me@alemi.dev>",
+	"zaaarf <me@zaaarf.foo>",
+	"frelodev <frelodev@gmail.com>",
+	"cschen <cschen@codemp.dev>"
+]
+license = "GPL-3.0-only"
+edition = "2021"
+version = "0.8.4"
+exclude = ["dist/*"]
+
+[lib]
+name = "codemp"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# core
+tracing = "0.1"
+thiserror = "1.0"
+# crdt
+diamond-types = "1.0"
+# proto
+codemp-proto = "0.7"
+uuid = { version = "1.10", features = ["v4"] }
+tonic = { version = "0.12", features = ["tls", "tls-roots"] }
+# api
+tokio = { version = "1.40", features = ["macros", "rt-multi-thread", "sync"] }
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+# client
+tokio-stream = "0.1"
+dashmap = "6.1"
+
+# glue (multiple)
+tracing-subscriber = { version = "0.3", optional = true }
+
+# glue (java)
+lazy_static = { version = "1.5", optional = true }
+jni = { version = "0.21", features = ["invocation"], optional = true }
+jni-toolbox = { version = "0.2", optional = true, features = ["uuid"] }
+
+# glue (lua)
+mlua = { version = "0.10", features = ["module", "serialize", "error-send"], optional = true }
+
+# glue (js)
+napi = { version = "2.16", features = ["full"], optional = true } 
+napi-derive = { version="2.16",  optional = true}
+
+# glue (python)
+pyo3 = { version = "0.22", features = ["extension-module", "multiple-pymethods"], optional = true}
+
+# extra
+async-trait = { version = "0.1", optional = true }
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[build-dependencies]
+# glue (js)
+napi-build = { version = "2.1", optional = true }
+# glue (python)
+pyo3-build-config = { version = "0.22", optional = true }
+
+[features]
+default = ["lua-jit", "py-abi3"]
+# extra
+async-trait = ["dep:async-trait"]
+serialize = ["dep:serde", "uuid/serde"]
+# special tests which require more setup
+test-e2e = []
+# ffi
+java = ["dep:lazy_static", "dep:jni", "dep:tracing-subscriber", "dep:jni-toolbox"]
+js = ["dep:napi-build", "dep:tracing-subscriber", "dep:napi", "dep:napi-derive"]
+py = ["dep:pyo3", "dep:tracing-subscriber", "dep:pyo3-build-config"]
+lua = ["serialize", "dep:mlua", "dep:tracing-subscriber", "dep:lazy_static"]
+# ffi variants
+lua-jit = ["mlua?/luajit"]
+lua-54 = ["mlua?/lua54"]
+py-abi3 = ["pyo3?/abi3-py38"]
+
+
+[package.metadata.docs.rs] # enabled features when building on docs.rs
+features = ["serialize"]
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+strip = 'symbols'
