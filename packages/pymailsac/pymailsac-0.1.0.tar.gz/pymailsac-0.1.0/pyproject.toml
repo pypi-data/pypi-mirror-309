@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pymailsac"
+version = "0.1.0"
+description = "API Wrapper Client for Mailsac"
+authors = ["GSejas <jsequeira03@gmail.com>"]
+readme = "README.md"
+classifiers = [
+        'Programming Language :: Python :: 3',
+        'Operating System :: OS Independent',
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.9.2"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+sib-api-v3-sdk = "^7.6.0"
+pytest-cov = "^6.0.0"
+autopep8 = "^2.3.1"
+python-dotenv = "^1.0.1"
+interrogate = "^1.7.0"
+flake8 = "^7.1.1"
+mkdocs = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
