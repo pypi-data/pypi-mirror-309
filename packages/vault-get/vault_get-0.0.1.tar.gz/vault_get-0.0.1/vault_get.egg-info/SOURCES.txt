@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+requirements.txt
+requirements_dev.txt
+vault_get/__init__.py
+vault_get/vault_get.py
+vault_get.egg-info/PKG-INFO
+vault_get.egg-info/SOURCES.txt
+vault_get.egg-info/dependency_links.txt
+vault_get.egg-info/entry_points.txt
+vault_get.egg-info/requires.txt
+vault_get.egg-info/top_level.txt

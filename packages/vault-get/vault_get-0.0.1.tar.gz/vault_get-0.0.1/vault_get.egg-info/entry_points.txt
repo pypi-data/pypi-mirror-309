@@ -1,0 +1,2 @@
+[console_scripts]
+vault-get = vault_get.vault_get:main
