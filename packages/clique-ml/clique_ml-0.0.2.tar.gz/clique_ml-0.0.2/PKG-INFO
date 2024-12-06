@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: clique-ml
+Version: 0.0.2
+Summary: A selective ensemble for predictive models that tests new additions to prevent downgrades in performance.
+Project-URL: Source, https://github.com/whitgroves/ensemble
+Keywords: selective,ensemble,tensorflow,maching learning,cuda
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: typing_extensions>=4.12.2
+Requires-Dist: tensorflow>=2.18.0
+
+# ensemble
+While working on the Kaggle competition, [Optiver - Trading at the Close](https://github.com/whitgroves/optiver-trading-at-the-close), I developed some code that I want to repackage here.
+
+This code was written against CUDA 12.2 and not tested on other versions. Compatability was a hassle, so run `cuda-venv.sh` to setup the virtual environment instead of using `conda` or `pip`.
