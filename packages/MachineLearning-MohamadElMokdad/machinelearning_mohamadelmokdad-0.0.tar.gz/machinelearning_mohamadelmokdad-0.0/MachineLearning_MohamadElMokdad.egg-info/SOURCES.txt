@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+MachineLearning_MohamadElMokdad.egg-info/PKG-INFO
+MachineLearning_MohamadElMokdad.egg-info/SOURCES.txt
+MachineLearning_MohamadElMokdad.egg-info/dependency_links.txt
+MachineLearning_MohamadElMokdad.egg-info/requires.txt
+MachineLearning_MohamadElMokdad.egg-info/top_level.txt
