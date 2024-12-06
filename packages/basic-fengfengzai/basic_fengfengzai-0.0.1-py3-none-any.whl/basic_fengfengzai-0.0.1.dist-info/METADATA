@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: basic_fengfengzai
+Version: 0.0.1
+Summary: short package description
+Home-page: http://example.com
+Author: dufeng1010
+Author-email: dufeng@example.com
+Project-URL: Bug Tracker, http://example.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# this is a simple test
+
+this is a simple python package for test pypi
+
+
+## for example
+
+from multiply.multi_by_three import multiply_by_three
+from divide.divide_by_three import divide_by_three
+
+multiply_by_three(9)
+divide_by_three(21)
