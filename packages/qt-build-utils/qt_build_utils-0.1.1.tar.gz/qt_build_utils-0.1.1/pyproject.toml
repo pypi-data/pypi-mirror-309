@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "qt-build-utils"
+version = "0.1.1"
+description = ""
+authors = ["floris vernieuwe <floris@vernieuwe.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+setuptools = "^75.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E402"]
+
+[tool.ruff]
+line-length = 120
+exclude = ["**.pyi", "**/.venv/**"]
+include = ["src/**.py", "test/**.py"]
+
+[tool.pyright]
+ignore = ["**.pyi", "**/.venv/**"]
+
+
+[tool.poetry.scripts]
+qt-build = "qt_build_utils:cli"
