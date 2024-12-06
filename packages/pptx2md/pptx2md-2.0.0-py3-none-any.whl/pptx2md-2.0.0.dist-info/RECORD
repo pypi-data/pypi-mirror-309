@@ -1,0 +1,14 @@
+pptx2md/__init__.py,sha256=jWfPcK8pSCJXQQIb4PAf-gH95lAQFwCwzhcxsV5YRjo,50
+pptx2md/__main__.py,sha256=amq1PUAgkk7mtiTY_WrWpfjD_0IivTgUW2fbcsieOa0,3649
+pptx2md/entry.py,sha256=7gRVO26-1LPC9d2uRN7EmcMAuwCliwDNdnk1Ln2HYKU,1062
+pptx2md/image.py,sha256=R5pQ8lxzlqdTXsgGmxiz4dWkJreQK0zyH61me-nXkBY,571
+pptx2md/log.py,sha256=mD2gvnWeI2JLv1TND7uBqnCGSxqAj3-7XFwk1oZehrw,916
+pptx2md/multi_column.py,sha256=-fcaIgAFJTGMrOXpfMGqHigfL_mpeduMFHu6-UvXDDo,7797
+pptx2md/outputter.py,sha256=wDlWgelciFxYxEOXZt63RPId7jeAK40T4u-j1-YAyPY,10909
+pptx2md/parser.py,sha256=Fu3Plna0iSG-L4zPHerLQlwOffpY99gq4sWKJ3--K7E,9712
+pptx2md/types.py,sha256=aVlyaW2skAl_yIia5PqZV5E-Owi4_Ax-3-kbO_zvwFs,3750
+pptx2md/utils.py,sha256=OMUVhK46tsMhouBV_vJUArpg4lSOQbtaje1ZunTqNZk,2653
+pptx2md-2.0.0.dist-info/entry_points.txt,sha256=2AvvXG1LgFQbEw0jEhpYv5IHE4b_4C9LxVlWryYc0gE,49
+pptx2md-2.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pptx2md-2.0.0.dist-info/METADATA,sha256=XUYq-MtBrricl0SFofX8m8Eo4zwl3vxhH8hlgXkUCKs,747
+pptx2md-2.0.0.dist-info/RECORD,,
