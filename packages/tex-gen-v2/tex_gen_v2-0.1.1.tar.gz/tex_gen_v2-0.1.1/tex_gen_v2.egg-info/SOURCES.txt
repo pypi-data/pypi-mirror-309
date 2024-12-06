@@ -1,0 +1,6 @@
+pyproject.toml
+tex_gen.py
+tex_gen_v2.egg-info/PKG-INFO
+tex_gen_v2.egg-info/SOURCES.txt
+tex_gen_v2.egg-info/dependency_links.txt
+tex_gen_v2.egg-info/top_level.txt
