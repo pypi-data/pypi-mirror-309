@@ -1,0 +1,2 @@
+[console_scripts]
+compatlib = compatlib.client:run_compatlib
