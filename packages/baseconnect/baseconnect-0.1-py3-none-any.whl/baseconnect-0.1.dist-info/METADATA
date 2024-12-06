@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: baseconnect
+Version: 0.1
+Summary: Database connection library for SQL Server
+Home-page: https://github.com/Domiterd/BaseConnect
+Author: Domiter Dominik
+Author-email: dominik.domiter@autowallis.hu
+Requires-Python: >=3.6, <4
+Requires-Dist: pyodbc
+Requires-Dist: pandas
+
