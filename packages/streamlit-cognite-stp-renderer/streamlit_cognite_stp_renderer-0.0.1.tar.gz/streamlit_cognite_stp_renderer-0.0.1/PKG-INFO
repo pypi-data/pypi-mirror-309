@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: streamlit-cognite-stp-renderer
+Version: 0.0.1
+Summary: A component to render STEP files in Streamlit.
+License: Apache-2.0 license
+Author: Marvin Reza
+Author-email: marvin.reza@cognite.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: build (>=1.2.2.post1,<2.0.0)
+Requires-Dist: cognite-sdk (>=7.51.1,<8.0.0)
+Requires-Dist: streamlit (==1.39.0)
+Description-Content-Type: text/markdown
+
+# Cognite STP renderer
+
+This is a Streamlit library that can be used to show CAD models inside a
+Streamlit app. It works especially good when used inside Streamlit in Fusion,
+but can also be used in standalone Streamlit apps.
+
+## How to install
+
+You simply install it by running
+`pip install streamlit-cognite-stp-renderer`
+
+## How to use
+
+Here is an example app
+
+```python
+import streamlit as st
+from stp_renderer import StpRendererParams, stp_renderer
+from cognite.client import CogniteClient
+
+client = CogniteClient()
+
+state = stp_renderer(
+    client=client,
+    file_id=1234,
+    params=StpRendererParams(height=400),
+    key='stp_renderer'
+)
+st.header("STP Renderer:")
+st.json(state)
+```
+
+## Local development
+
+It's recommended to add a clean environment. You need `pip` and `node`.
+
+Clone repo
+`git clone git@github.com:cognitedata/streamlit-cognite-stp-renderer.git`
+
+Install Python packages
+`pip install streamlit`
+`pip install cognite-sdk`
+
+Install NPM packages and start server
+
+```shell
+cd stp_renderer/frontend
+yarn
+HTTPS=true yarn start
+```
+
+Then open `https://localhost:3001/` to accept bad certificate.
+
+Open repo folder in another terminal. Install this package as development package
+`pip install -e .`
+
+Extract a token from Fusion, and start with
+
+`COGNITE_TOKEN="TOKEN" streamlit run examples/demo.py`
+
+### Local development in fusion stlite
+
+Make sure you have set [stp_renderer/__init__.py:8](stp_renderer/__init__.py:19)
+to `_RELEASE = True`.
+
+Step 1) Build front end component with `cd stp_renderer/frontend && yarn && yarn
+build` Step 2) Build streamlit component with `python -m build` (hint: `pip
+install build`)
+Step 3) Start local server `python server.py`
+
+Open Fusion, create a Streamlit app and add the following the installed package
+`http://localhost:8000/dist/streamlit_stp_renderer-0.0.1-py3-none-any.whl`
+
+It will then load successfully inside Stlite.
+
+## Building a release version
+
+In order to build a packaged release version, follow steps:
+
+Set the 'RELEASE' environment variable to indicate to build system that you are
+building a release version: `export RELEASE=1`.
+

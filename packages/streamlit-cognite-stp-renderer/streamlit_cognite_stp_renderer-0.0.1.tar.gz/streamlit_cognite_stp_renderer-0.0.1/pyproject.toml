@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "streamlit-cognite-stp-renderer"
+version = "0.0.1"
+description = "A component to render STEP files in Streamlit."
+authors = ["Marvin Reza <marvin.reza@cognite.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+packages = [{include = "stp_renderer"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+streamlit = "1.39.0"
+build = "^1.2.2.post1"
+cognite-sdk = "^7.51.1,<8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+twine = "^5.0.0"
+mypy = "^1.8.0"
+pre-commit = "^4.0.0"
+setuptools = "^75.0.0"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
