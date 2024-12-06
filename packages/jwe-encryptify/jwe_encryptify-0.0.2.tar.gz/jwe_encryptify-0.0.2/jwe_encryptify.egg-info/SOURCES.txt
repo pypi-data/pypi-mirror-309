@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+jwe_encryptify/__init__.py
+jwe_encryptify.egg-info/PKG-INFO
+jwe_encryptify.egg-info/SOURCES.txt
+jwe_encryptify.egg-info/dependency_links.txt
+jwe_encryptify.egg-info/requires.txt
+jwe_encryptify.egg-info/top_level.txt
