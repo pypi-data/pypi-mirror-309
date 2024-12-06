@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hand_gesture_recognizer
+Version: 0.1.0
+Summary: A library for recognizing hand gestures using MediaPipe
+Author: Umesh Singh Verma
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+Requires-Dist: numpy

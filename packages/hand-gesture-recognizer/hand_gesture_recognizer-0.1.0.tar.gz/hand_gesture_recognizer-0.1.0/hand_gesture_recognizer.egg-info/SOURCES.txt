@@ -1,0 +1,9 @@
+setup.py
+hand_gesture_recognizer/__init__.py
+hand_gesture_recognizer/custom_gestures.py
+hand_gesture_recognizer/main.py
+hand_gesture_recognizer.egg-info/PKG-INFO
+hand_gesture_recognizer.egg-info/SOURCES.txt
+hand_gesture_recognizer.egg-info/dependency_links.txt
+hand_gesture_recognizer.egg-info/requires.txt
+hand_gesture_recognizer.egg-info/top_level.txt
