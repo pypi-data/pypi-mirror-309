@@ -1,0 +1,11 @@
+long_s/__init__.py,sha256=J1JZLCCkCOgKKu1-WO7mH2urerXRFhrue-_c-ovD5uk,449
+long_s/_convert.py,sha256=RGb2eD3PJYvgzVS1iUraKfnLBvqyb4315-Lo54rQicM,10142
+long_s/_german_conversion.py,sha256=VCSRU4g4n4dJywGhqMbDJaWeipO_8DBVsMOebu0HbVo,12480
+long_s/_german_lists.py,sha256=hmaKK3zW_3F2RbG4W2GAyQEEjf410H2pyZSujdNpEI8,13148
+long_s/_simple_conversions.py,sha256=kUL_ry9EumqXsENG2nFqPnn3ur08h_oykSfW_FjXkZI,5708
+long_s/_split_words.py,sha256=4YXTMqtWdpYj35bnqHiiktgrMxieDW3cM6lUlnrV6qI,2631
+long_s-1.0.2.dist-info/LICENSE,sha256=zitNaVtDTZXEtwxfW0OGeDPR1anECvAT3zjdD9Qd2EM,1065
+long_s-1.0.2.dist-info/METADATA,sha256=ZxKtGQvb45UDizaYHSPS3TAxJKuIv3HAJDL7I4VKkgU,2958
+long_s-1.0.2.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+long_s-1.0.2.dist-info/top_level.txt,sha256=8l1_sdbDgPHzYjEVmrPiIBHjd0t1_MS0tUY-24gsKWQ,7
+long_s-1.0.2.dist-info/RECORD,,
