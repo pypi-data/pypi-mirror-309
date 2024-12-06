@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: llama-index-llms-octoai
+Version: 0.4.0
+Summary: llama-index llms octoai integration
+License: MIT
+Author: hanscl
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.3,<2.0.0)
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: octoai (>=1.6.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Llms Integration: OctoAI
+
+Using the [OctoAI](https://octo.ai) LLMs Integration is a simple as:
+
+```python
+from llama_index.llms.octoai import OctoAI
+
+octoai = OctoAI(token=OCTOAI_API_KEY)
+response = octoai.complete("Paul Graham is ")
+print(response)
+```
+
+## Calling `chat` with a list of messages
+
+```python
+from llama_index.core.llms import ChatMessage
+
+messages = [
+    ChatMessage(
+        role="system",
+        content="Below is an instruction that describes a task. Write a response that appropriately completes the request.",
+    ),
+    ChatMessage(role="user", content="Write a blog about Seattle"),
+]
+response = octoai.chat(messages)
+print(response)
+```
+
