@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+FastApi_J2S/core.py
+FastApi_J2S/core_server.py
+FastApi_J2S.egg-info/PKG-INFO
+FastApi_J2S.egg-info/SOURCES.txt
+FastApi_J2S.egg-info/dependency_links.txt
+FastApi_J2S.egg-info/requires.txt
+FastApi_J2S.egg-info/top_level.txt

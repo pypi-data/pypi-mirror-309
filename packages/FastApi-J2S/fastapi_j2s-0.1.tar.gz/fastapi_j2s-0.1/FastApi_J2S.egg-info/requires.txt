@@ -1,0 +1,4 @@
+Modul-Wrapper
+Jinja2
+mysql-connector-python
+requests
