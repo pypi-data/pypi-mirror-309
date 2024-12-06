@@ -1,0 +1,10 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "abundant"
+version = "0.0.1"
+authors = [{ name = "Jesse Hu" }]
+description = "Abundant SDK"
+requires-python = ">=3.8"
