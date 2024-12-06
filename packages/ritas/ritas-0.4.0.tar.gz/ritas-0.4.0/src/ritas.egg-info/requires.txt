@@ -1,0 +1,11 @@
+click
+geopandas
+matplotlib
+pandas
+pyarrow
+pykrige
+pyproj
+rasterio>=1.4
+shapely
+streamlit
+tqdm

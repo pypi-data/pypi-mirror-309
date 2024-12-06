@@ -1,0 +1,107 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools",
+  "setuptools-scm",
+]
+
+[project]
+name = "ritas"
+license.file = "LICENSE"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+dynamic = [
+  "version",
+]
+dependencies = [
+  "click",
+  "geopandas",
+  "matplotlib",
+  "pandas",
+  "pyarrow",
+  "pykrige",
+  "pyproj",
+  "rasterio>=1.4", # rasterize API requirement
+  "shapely",
+  "streamlit",
+  "tqdm",
+]
+scripts.ritas = "ritas.cli:main"
+
+[tool.setuptools_scm]
+# can be empty if no extra settings are needed, presence enables setuptools_scm
+
+[tool.ruff]
+line-length = 79
+
+exclude = [
+  "**/*.ipynb",
+]
+lint.select = [
+  "A",   # Builtins
+  "ANN", # Annotations
+  "ARG", # Unused arguments
+  "B",   # Bugbear
+  "BLE", # Blind except
+  "C4",  # Comprehensions
+  "C90", # mccabe
+  "COM", # Commas
+  "DTZ", # Datetimes
+  "ERA", # Commented-out code
+  "EXE", # Executable
+  "F",   # pyflakes
+  "G",   # Logging format
+  "I",   # Isort
+  "ICN", # Import conventions
+  "INP", # Disallow PEP-420 (Implicit namespace packages)
+  "INT", # gettext
+  "ISC", # Implicit str concat
+  "N",   # PEP-8 Naming
+  "NPY", # Numpy
+  "PGH", # Pygrep hooks
+  "PIE", # Unnecessary code
+  "PL",  # Pylint
+  "PT",  # Pytest
+  "PTH", # Use Pathlib
+  "PYI", # Stub files
+  "RET", # Return
+  "RSE", # Raise
+  "RUF", # Ruff
+  "S",   # Bandit
+  "SIM", # Code simplification
+  "SLF", # Private member access
+  "T20", # Print
+  "TCH", # Type checking
+  "TID", # Tidy imports
+  "UP",  # Pyupgrade
+  "W",   # Warnings
+  "YTT", # sys.version
+]
+lint.ignore = [
+  "ANN401",  # Disallow typing.Any
+  "COM812",  # Missing trailing comma
+  "ISC001",  # Implicit str concat
+  "PLR0913", # Too many arguments
+]
+lint.per-file-ignores.'docs/source/conf.py' = [ "A001", "INP001" ]
+lint.per-file-ignores.'tests/*' = [ "ARG", "PLR2004", "PT011", "S101" ]
+lint.flake8-tidy-imports.ban-relative-imports = "all"
+# Unlike Flake8, default to a complexity level of 10.
+lint.mccabe.max-complexity = 10
+lint.pylint.max-args = 15
+lint.pylint.max-branches = 20
+lint.pylint.max-returns = 10
+lint.pylint.max-statements = 80
+
+[tool.pytest.ini_options]
+testpaths = [
+  'tests',
+]

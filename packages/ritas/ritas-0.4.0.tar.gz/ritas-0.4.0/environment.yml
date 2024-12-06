@@ -1,0 +1,17 @@
+dependencies:
+  - coverage
+  - pandas
+  - geopandas
+  - matplotlib-base
+  - pyarrow
+  - pykrige
+  - pyproj
+  - pytest
+  - pytest-cov
+  - rasterio
+  - setuptools_scm
+  - shapely
+  # For docs
+  - sphinx
+  - streamlit
+  - tqdm
