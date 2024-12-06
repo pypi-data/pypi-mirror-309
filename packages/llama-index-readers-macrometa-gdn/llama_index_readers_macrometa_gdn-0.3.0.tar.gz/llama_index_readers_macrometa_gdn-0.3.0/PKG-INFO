@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-macrometa-gdn
+Version: 0.3.0
+Summary: llama-index readers macrometa_gdn integration
+License: MIT
+Keywords: macrometa
+Author: Your Name
+Author-email: you@example.com
+Maintainer: Dain Im
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Macrometa GDN Loader
+
+```bash
+pip install llama-index-readers-macrometa-gdn
+```
+
+This loader takes in a Macrometa federation URL, API key, and collection name and returns a list of vectors.
+
+## Usage
+
+To use this loader, you need to pass the URL and API key through the class constructor, and then load the data using an array of collection names.
+
+```python
+from llama_index.readers.macrometa_gdn import MacrometaGDNReader
+
+collections = ["test_collection"]
+loader = MacrometaGDNReader(url="https://api-macrometa.io", apikey="test")
+vectors = loader.load_data(collection_list=collections)
+```
+
