@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tiyanfu.py
+wzry.py
+wzyd.py
+AutoWZRY.egg-info/PKG-INFO
+AutoWZRY.egg-info/SOURCES.txt
+AutoWZRY.egg-info/dependency_links.txt
+AutoWZRY.egg-info/requires.txt
+AutoWZRY.egg-info/top_level.txt
