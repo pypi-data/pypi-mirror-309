@@ -1,0 +1,11 @@
+makdo/__init__.py,sha256=_GwZPoc8DBIMc3wPS6oj02cktQukX7x91zjaAlj_J18,140
+makdo/eblook.py,sha256=9ldid-xNNnCccHo29UyJpabLOD71B-SfBSGAGREWtto,16215
+makdo/makdo_docx2md.py,sha256=A4_XwHSXmxwAIK6DSOA2uFsTXL42BbhqDHtVYDzgTPw,345959
+makdo/makdo_editor.py,sha256=KbQb6qs9ZEs0awrI4vn_DOkPHFz7-Yy0Il-EplJYixs,592749
+makdo/makdo_md2docx.py,sha256=OB16r_aDAfPEEztZjVefKSREwXihbY7f85eLSjrZ3Ik,264798
+makdo/makdo_mddiff.py,sha256=vDV5m6qw-gtfIE2UCcGH72mtHDzmZX5U_r1bGZNcpI4,21911
+makdo-7.16.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+makdo-7.16.dist-info/METADATA,sha256=pmFNzLwLG8UAs3iYNai1E5_ixi82PVZ8qc7OYGN6mEs,21378
+makdo-7.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+makdo-7.16.dist-info/top_level.txt,sha256=tulVuW5kP9eFkXQyP3hAu62Rb0vLBhKe0IsCPu3hWvE,6
+makdo-7.16.dist-info/RECORD,,
