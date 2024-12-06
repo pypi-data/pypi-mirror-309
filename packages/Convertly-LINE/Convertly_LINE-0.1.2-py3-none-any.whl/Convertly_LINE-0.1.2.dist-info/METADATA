@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Convertly_LINE
+Version: 0.1.2
+Description-Content-Type: text/markdown
+
+# CONVERTLY: A PYTHON LIBRARY FOR DATA CONVERSION
+
+The general idea of this library called Convertly is to provide an easy tool to convert various units such as measures, currency and time.
+
+To develop this library and create a converter, a set of functions was created. These functions allow for the conversion of various measurements and currencies, as well as the ability to convert time between different countries.
+
+## Functions:
+* Measure converter
+    - It will be possible to convert measures in the International System of Units, in the imperial and US customary measurement systems and in between both of them.
+    - Measurements of length (m), mass (kg), time (s), thermodynamic temperature (K), etc. can be converted.
+* Time converter
+    - Convert the time of one country to another.
+* Currency converter
+	You can convert currencies around the world.
