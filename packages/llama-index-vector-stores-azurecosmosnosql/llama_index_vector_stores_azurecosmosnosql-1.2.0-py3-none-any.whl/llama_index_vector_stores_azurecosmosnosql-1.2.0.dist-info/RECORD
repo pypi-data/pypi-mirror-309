@@ -1,0 +1,5 @@
+llama_index/vector_stores/azurecosmosnosql/__init__.py,sha256=wkH6bN9sc5qMocIEV6hN5-TvmrA81CXO_Mn2zV9dMmM,146
+llama_index/vector_stores/azurecosmosnosql/base.py,sha256=KbjgEBzrMf4qdaAAzSIU40_p4Tsmf6P-1v_iEKX1-sI,13864
+llama_index_vector_stores_azurecosmosnosql-1.2.0.dist-info/METADATA,sha256=Yk3cmYdmhsYrySCiP0nvgbO6634i7zwFV3cgSX6l9Rg,2263
+llama_index_vector_stores_azurecosmosnosql-1.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_azurecosmosnosql-1.2.0.dist-info/RECORD,,
