@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: journey_orchestrate
+Version: 0.0.1
+Summary: For a customer journey involving multiple marketing channels through which messages were delivered, we can orchestrate and stitch together the individual journey paths for each customer, providing a cohesive view of their interactions across all touchpoints.
+Author: Dhivya Nagasubramanian
+Author-email: nagas021@alumni.umn.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
