@@ -1,0 +1,7 @@
+[backups.test]
+source = "."
+repository = "test"
+password_command = "echo 'foo'"
+[backups.test.env]
+foo = "bar"
+
