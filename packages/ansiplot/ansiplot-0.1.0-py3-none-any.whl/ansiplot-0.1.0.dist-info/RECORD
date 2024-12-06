@@ -1,0 +1,12 @@
+ansiplot/__init__.py,sha256=ZVJBY1VO0aYemgE-gJt0SiHd_SVT6mP-E9ywqVFPHg8,95
+ansiplot/canvas.py,sha256=v4wmAutdUrXaDjH42n0OzOQYxdDEB6NmJTpY4nIMvPo,3240
+ansiplot/rect.py,sha256=0By9ugfBZ_c5_arNde6LWpx_HfbmgZiI77UbU1fdDV4,6788
+ansiplot/scaled.py,sha256=VW6tXw-Q9Oa7uRUl6IrU1ri3uU3hj9DQg3NdIi9LUdA,2682
+ansiplot/utils.py,sha256=mlCTqZuNmnWlTztVzjhe68TDQ7BK6vhip5ADah29CUA,320
+ansiplot/palette/__init__.py,sha256=Lt56Nj27FEyFSVD9IWAIp_ci7a5svKToFc4TTtkIysc,43
+ansiplot/palette/pretty.py,sha256=MBImpLZGcoTah-QbRqte2Sf_jn87dYqzP_-tbBJaIzg,1263
+ansiplot-0.1.0.dist-info/LICENSE.txt,sha256=fX-yvqpv9tEgrANpRR7_hROdv98zEkB_KdbMJavSYOc,591
+ansiplot-0.1.0.dist-info/METADATA,sha256=Nr31KqdmJPtzdNtCUmLjqCB-NPRuQlTGlZKFeMncPUA,2239
+ansiplot-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ansiplot-0.1.0.dist-info/top_level.txt,sha256=rrarsEgbfZBTZUhQIWhLQM0w206CgglvVA8AYVWPpX0,9
+ansiplot-0.1.0.dist-info/RECORD,,
