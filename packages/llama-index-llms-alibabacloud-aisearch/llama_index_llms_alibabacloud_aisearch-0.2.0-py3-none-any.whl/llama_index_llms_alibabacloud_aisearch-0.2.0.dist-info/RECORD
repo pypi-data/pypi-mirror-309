@@ -1,0 +1,5 @@
+llama_index/llms/alibabacloud_aisearch/__init__.py,sha256=9YKkxfx2WAemvRZ-SVdMugIkaImU9CqtOg6cwZjs0O0,120
+llama_index/llms/alibabacloud_aisearch/base.py,sha256=RYV4vnu2bsMAh15icYEH-gQ2y6sUI3iraiz_DhqJFRs,7524
+llama_index_llms_alibabacloud_aisearch-0.2.0.dist-info/METADATA,sha256=A8ZHMEC5nRqA6wn1in4wgoS2X5WQQE8ZxNVvQ4adYw0,1540
+llama_index_llms_alibabacloud_aisearch-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_llms_alibabacloud_aisearch-0.2.0.dist-info/RECORD,,
