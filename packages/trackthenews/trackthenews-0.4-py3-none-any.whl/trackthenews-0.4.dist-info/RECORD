@@ -1,0 +1,10 @@
+trackthenews/__init__.py,sha256=i5CnH1gOJ1UkwdHjJN4OlhaX10W45Io4ZnkTclaIU8c,37
+trackthenews/base_blocklist.py,sha256=XsZzqmjSSc8Bgr72UgxgGdVVqjAv3wOrzs18pZDYWoU,422
+trackthenews/core.py,sha256=oQDO2N9ts1ouRGtAV31EdI05X-0vqkym-OJH9J44xvo,23658
+trackthenews/fonts/LICENSE_OFL.txt,sha256=anP5VBwt50FYwOfPawpY73dPWngL8ZHy1-ycxT7-K_I,4301
+trackthenews/fonts/NotoSerif-Regular.ttf,sha256=D6bVbk2Cb3LBvGwoe0P6GuhbQ2kzn5ic-lvfFZXyJnM,552144
+trackthenews-0.4.dist-info/LICENSE,sha256=0htftepcDbqoAzaBzDoi4kh2qPbV87-z8VsGcWYBxfk,1104
+trackthenews-0.4.dist-info/METADATA,sha256=Ok4OX8z39fEAuKIGhYKKO_kqeSMbW0ImfPJuyOWZhCY,7285
+trackthenews-0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+trackthenews-0.4.dist-info/entry_points.txt,sha256=S02QaUxiqgYvTwDzbNUWfs8Tsi55e9sDhtOT0m-g6lc,50
+trackthenews-0.4.dist-info/RECORD,,
