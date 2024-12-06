@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sonika_langchain_bot.egg-info/PKG-INFO
+sonika_langchain_bot.egg-info/SOURCES.txt
+sonika_langchain_bot.egg-info/dependency_links.txt
+sonika_langchain_bot.egg-info/requires.txt
+sonika_langchain_bot.egg-info/top_level.txt
