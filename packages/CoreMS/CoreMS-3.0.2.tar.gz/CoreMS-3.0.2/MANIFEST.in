@@ -1,0 +1,5 @@
+include requirements.txt
+include disclaimer.txt
+include Dockerfile
+include ext_lib/*
+include ext_lib/dotnet/*
