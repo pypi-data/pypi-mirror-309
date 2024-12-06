@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+embedmeio/__init__.py
+embedmeio/__main__.py
+embedmeio/const.py
+embedmeio.egg-info/PKG-INFO
+embedmeio.egg-info/SOURCES.txt
+embedmeio.egg-info/dependency_links.txt
+embedmeio.egg-info/entry_points.txt
+embedmeio.egg-info/not-zip-safe
+embedmeio.egg-info/top_level.txt
