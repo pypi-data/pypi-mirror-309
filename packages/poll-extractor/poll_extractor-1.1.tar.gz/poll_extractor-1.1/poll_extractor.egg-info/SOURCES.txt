@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+poll_extractor/__init__.py
+poll_extractor.egg-info/PKG-INFO
+poll_extractor.egg-info/SOURCES.txt
+poll_extractor.egg-info/dependency_links.txt
+poll_extractor.egg-info/not-zip-safe
+poll_extractor.egg-info/top_level.txt
