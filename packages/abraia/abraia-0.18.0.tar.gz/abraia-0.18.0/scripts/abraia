@@ -1,0 +1,220 @@
+#!/usr/bin/env python
+from builtins import input
+
+import os
+import json
+import click
+import itertools
+from glob import glob
+from tqdm import tqdm
+from urllib.parse import urlparse
+from tqdm.contrib.concurrent import process_map
+# from concurrent.futures import ProcessPoolExecutor
+
+from abraia import config
+from abraia import Abraia
+from abraia import APIError
+
+
+abraia = Abraia()
+
+
+# def process_map(task, values, max_workers=3):
+#     with ProcessPoolExecutor(max_workers) as exe:
+#         return list([result for result in exe.map(task, values)])
+
+
+def is_url(url):
+    res = urlparse(url)
+    if res.scheme and res.netloc:
+        return True
+    return False
+
+
+def echo_error(error):
+    click.echo('[' + click.style('Error {}'.format(error.code),
+                                 fg='red', bold=True) + '] {}'.format(error.message))
+
+
+def input_files(src):
+    if isinstance(src, str) and src.startswith('http'):
+        return [src]
+    src = os.path.join(src, '**/*') if os.path.isdir(src) else src
+    return glob(src, recursive=True)
+
+
+@click.group('abraia')
+@click.version_option('0.18.0')
+def cli():
+    """Abraia CLI tool"""
+    pass
+
+
+@cli.command()
+def configure():
+    """Configure the abraia api key"""
+    try:
+        click.echo('Go to [' + click.style('https://abraia.me/console/', fg='green') + '] to get your user id and key\n')
+        abraia_id, abraia_key = config.load()
+        abraia_id = click.prompt('Abraia Id', default=abraia_id)
+        abraia_key = click.prompt('Abraia Key', default=abraia_key)
+        config.save(abraia_id, abraia_key)
+    except:
+        pass
+
+
+@cli.command()
+def info():
+    """Show user account information"""
+    click.echo('abraia, version 0.18.0\n')
+    click.echo('Go to [' + click.style('https://abraia.me/console/', fg='green') + '] to see your account information\n')
+
+
+def convert_file(src, dest, args):
+    if src.startswith('http'):
+        path, args['url'] = src, src
+    else:
+        path = abraia.upload_file(src, 'batch/')
+    abraia.transform_image(path, dest, args)
+
+
+@cli.command()
+@click.option('--width', help='Resize to specified width', type=int)
+@click.option('--height', help='Resize to specified height', type=int)
+@click.option('--mode', help='Select the resize mode', type=click.Choice(['pad', 'crop', 'thumb']))
+@click.option('--format', help='Convert to specified image format', type=click.Choice(['jpeg', 'png', 'webp']))
+@click.option('--action', help='Apply an action template', type=click.Path())
+@click.argument('src')
+@click.argument('dest', required=False)
+def convert(src, dest, width, height, mode, format, action):
+    """Convert an image or set of images"""
+    try:
+        args = {'width': width, 'height': height, 'mode': mode, 'format': format, 'action': action, 'quality': 'auto'}
+        filenames = input_files(src)
+        dirname = src.rstrip('/').rstrip('\\') if os.path.isdir(src) else None
+        for filename in tqdm(filenames, unit='file'):
+            if filename.startswith('http'):
+                path, name = '', os.path.basename(urlparse(filename).path) or 'screenshot.png'
+            else:
+                path, name = os.path.split(filename)
+            nam, ext = os.path.splitext(name)
+            oext = format if format is not None else (ext and ext[1:])
+            dest = dest if dest else os.path.join(path, f"{nam}_o.{oext}")
+            if dirname:
+                relpath = os.path.relpath(path, dirname)
+                dest = os.path.join('output', relpath, f"{nam}.{oext}")
+            convert_file(filename, dest, args)
+    except APIError as error:
+        echo_error(error)
+
+
+def editing_file(src, dest, mode):
+    output = f"export/{os.path.basename(dest)}"
+    path = abraia.upload_file(src, 'batch/')
+    if mode == 'anonymize':
+        abraia.anonymize_image(path, output)
+    elif mode == 'upscale':
+        abraia.upscale_image(path, output)
+    else:
+        abraia.remove_background(path, output)
+    abraia.download_file(output, dest)
+
+
+@cli.command()
+@click.option('--mode', help='Select the edit mode', type=click.Choice(['rembg', 'upscale', 'anonymize']), default='rembg')
+@click.argument('src')
+def editing(src, mode):
+    """Edit an image or set of images"""
+    try:
+        inputs = input_files(src)
+        ext = 'png' if mode == 'rembg' else 'jpg'
+        dirname = src if os.path.isdir(src) else os.path.dirname(src)
+        paths = [os.path.splitext(os.path.relpath(src, dirname))[0] for src in inputs]
+        outputs = [os.path.join('output', f"{path}.{ext}") for path in paths]
+        process_map(editing_file, inputs, outputs, itertools.repeat(mode), max_workers=3)
+    except APIError as error:
+        echo_error(error)
+
+
+@cli.command()
+@click.option('--remove', help='Remove file metadata', is_flag=True)
+@click.argument('src')
+def metadata(src, remove):
+    """Load and remove file metadata"""
+    try:
+        path = abraia.upload_file(src, 'batch/')
+        if remove:
+            print('remove', remove)
+            print(abraia.remove_metadata(path))
+            buffer = abraia.download_file(path)
+            with open(src+'.output', 'wb') as f:
+                f.write(buffer.getvalue())
+        else:
+            meta = abraia.load_metadata(path)
+            # metadata = abraia.load_metadata('usain.jpg')
+            # abraia.save_json('usain.json', metadata)
+            click.echo(json.dumps(meta, indent=2))
+    except APIError as error:
+        echo_error(error)
+
+
+@cli.command()
+@click.argument('path', required=False)
+def list(path):
+    """List the files in abraia"""
+    try:
+        files, folders = abraia.list_files(path or '')
+        output = '\n'.join(['{:>28}  {}/'.format('', click.style(f['name'], fg='blue', bold=True)) for f in folders]) + '\n'
+        output += '\n'.join(['{}  {:>7}  {}'.format(f['date'], f['size'], f['name']) for f in files])
+        output += '\ntotal {}'.format(len(files))
+        click.echo(output)
+    except APIError as error:
+        echo_error(error)
+
+
+@cli.command()
+@click.argument('src', type=click.Path())
+@click.argument('path', required=False)
+def upload(src, path):
+    """Upload a file to abraia"""
+    try:
+        with click.progressbar(input_files(src)) as files:
+            for file in files:
+                click.echo(abraia.upload_file(file, path or ''))
+    except APIError as error:
+        echo_error(error)
+
+
+@cli.command()
+@click.argument('path')
+def download(path):
+    """Download a file from abraia"""
+    try:
+        with click.progressbar(abraia.list_files(path)[0]) as files:
+            for file in files:
+                path, dest = file['path'], os.path.basename(path)
+                click.echo(abraia.download_file(path, dest))
+    except APIError as error:
+        echo_error(error)
+
+
+@cli.command()
+@click.argument('path')
+def remove(path):
+    """Remove a file from abraia"""
+    try:
+        files = abraia.list_files(path)[0]
+        for file in files:
+            click.echo(file['path'])
+        if files and click.confirm('Are you sure you want to remove the files?'):
+            for file in files:
+                click.echo(abraia.remove_file(file['path']))
+    except APIError as error:
+        echo_error(error)
+
+
+if __name__ == '__main__':
+    if not abraia.userid:
+        configure()
+    else:
+        cli()
