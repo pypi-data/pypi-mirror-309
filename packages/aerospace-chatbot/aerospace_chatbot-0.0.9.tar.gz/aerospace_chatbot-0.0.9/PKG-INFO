@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: aerospace-chatbot
+Version: 0.0.9
+Summary: Aerospace engineering chatbot and AI tools.
+Home-page: https://github.com/dan-s-mueller/aerospace_chatbot/tree/main
+License: MIT
+Author: dsmueller
+Author-email: dsm@danmueller.pro
+Requires-Python: >=3.11.0,<3.12.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.35.50,<2.0.0)
+Requires-Dist: chromadb (>=0.5.0,<0.6.0)
+Requires-Dist: cleanlab (>=2.7.0,<3.0.0)
+Requires-Dist: cleanvision (>=0.3.6,<0.4.0)
+Requires-Dist: google-cloud-storage (>=2.18.2,<3.0.0)
+Requires-Dist: huggingface-hub (>=0.24.6,<0.25.0)
+Requires-Dist: ipykernel (>=6.29.3,<7.0.0)
+Requires-Dist: ipywidgets (>=8.1.1,<9.0.0)
+Requires-Dist: jsonlines (>=4.0.0,<5.0.0)
+Requires-Dist: langchain (>=0.3.7,<0.4.0)
+Requires-Dist: langchain-anthropic (>=0.2.4,<0.3.0)
+Requires-Dist: langchain-chroma (>=0.1.4,<0.2.0)
+Requires-Dist: langchain-community (>=0.3.3,<0.4.0)
+Requires-Dist: langchain-core (>=0.3.15,<0.4.0)
+Requires-Dist: langchain-openai (>=0.2.3,<0.3.0)
+Requires-Dist: langchain-pinecone (>=0.2.0,<0.3.0)
+Requires-Dist: langchain-voyageai (>=0.1.1,<0.2.0)
+Requires-Dist: langchainhub (>=0.1.21,<0.2.0)
+Requires-Dist: numpy (>=1.21,<1.25)
+Requires-Dist: openai (>=1.43.1,<2.0.0)
+Requires-Dist: pinecone-client (>=5.0.1,<6.0.0)
+Requires-Dist: pinecone[grpc] (>=5.3.1,<6.0.0)
+Requires-Dist: pymupdf (>=1.24.13,<2.0.0)
+Requires-Dist: pypdf (>=3.17.4,<4.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: pytest (>=8.1.1,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: ragas (>=0.1.16,<0.2.0)
+Requires-Dist: ragatouille (>=0.0.8.post4,<0.0.9)
+Requires-Dist: renumics-spotlight (>=1.6.11,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sphinx (==7.2.6)
+Requires-Dist: sphinx-design (>=0.5.0,<0.6.0)
+Requires-Dist: sphinx-rtd-theme (==2.0.0)
+Requires-Dist: sphinxawesome-theme (>=5.1.1,<6.0.0)
+Requires-Dist: streamlit (>=1.38.0,<2.0.0)
+Requires-Dist: streamlit-pdf-viewer (>=0.0.19,<0.0.20)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Requires-Dist: watchdog (>=2.1.5,<6.0.0)
+Project-URL: Repository, https://github.com/dan-s-mueller/aerospace_chatbot/tree/main
+Description-Content-Type: text/markdown
+
+# Aerospace Chatbot
+Aerospace discipline-specific chatbots and AI tools.
+Help docs here: https://aerospace-chatbot.readthedocs.io/en/latest/
+
+## Deployments
+See https://aerospace-chatbot.readthedocs.io/en/latest/help/deployments.html for details.
+
