@@ -1,0 +1,10 @@
+tiktokcaptions/__init__.py,sha256=8fHPEgj0J6hL7GoirhUVUWH9FIjIBkd8Ygvb_zbq_OY,111
+tiktokcaptions/captions.py,sha256=pY27FmOFxgk-KjUNX0NhKVNwgzRb6JC5DVaIuHAZI-4,9281
+tiktokcaptions/segment_parser.py,sha256=rRjwLNT0SQFVgA7g1FYeNp9-LV7sPrejAdd-qXpdneU,2794
+tiktokcaptions/text_drawer.py,sha256=axU8nCRXQjHRMYuhhBOD7E6whPNwma0okfDtvM781pc,8203
+tiktokcaptions/assets/fonts/Montserrat-Bold.ttf,sha256=xMjLVypaLEPXizcB9LI0loTmyk0VV-Rpr2BlseCZwmw,261588
+tiktokcaptions/assets/fonts/Montserrat-ExtraBold.ttf,sha256=JXr5oF3mNx4fezRdAqk69cLgq5uSJEGKRRibjMhgSc0,262108
+tiktokcaptions-0.1.1.dist-info/METADATA,sha256=w7VU7Y48k8-v8uE57zU-KhK7Bga15AHnRNbnR40IL1I,2245
+tiktokcaptions-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tiktokcaptions-0.1.1.dist-info/top_level.txt,sha256=Of-3YBzY4pgerxhThaeB2Smj6Qkai8nJ1_0l9G9fNBw,15
+tiktokcaptions-0.1.1.dist-info/RECORD,,
