@@ -1,0 +1,8 @@
+django_removals/__init__.py,sha256=dn4RB1e9BT0ra5JnNEkG6IMR3zqzzjLm7NmB5N5O-30,89
+django_removals/apps.py,sha256=ouE_fhDhVy1r_NibLeU8TmexgKrcONdaoQZE4GwbuWc,383
+django_removals/checks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_removals/checks/settings.py,sha256=nSQyhi52z8zTRMZVTM8TtKP9IZJ580EcaO6NheQPK8U,3740
+django_removals-1.0.3.dist-info/LICENSE.md,sha256=lfz37w7rShZ2czEPe166vX1iXNsnIo0T9V5PW1zQ_sU,1102
+django_removals-1.0.3.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+django_removals-1.0.3.dist-info/METADATA,sha256=4LtQWVKVqI1x9emAazGC2-I3tBGQO9S7MMnBXew6Puc,7235
+django_removals-1.0.3.dist-info/RECORD,,
