@@ -1,0 +1,17 @@
+kpi_formula/__init__.py,sha256=9prf9kD1INee8nChVTMDQj08KBzVEf3aY8MUdb0TEhs,610
+kpi_formula/advanced/__init__.py,sha256=DmvDQcWRwM3UKXy41qDTwYhV4wUNKEkMKkEJlKt8QV4,273
+kpi_formula/advanced/data_processor.py,sha256=jdxlOMgGkkXnjoQBYJxgerbSXkpMhifdEr1QDX3s_wQ,913
+kpi_formula/advanced/data_validator.py,sha256=xVxJ_04XKYBQi5cbtfi2Oq0MB5r9iowkREdFzQXtKvw,1106
+kpi_formula/advanced/kpi_calculator.py,sha256=_5zKBxFSEtn-PDc8yJ6Uo3PWhl5uoFM1WlcMJfgYij4,1116
+kpi_formula/advanced/time_series.py,sha256=QeorNrFLMj8qAaCr9IgAlatr2ykaWG2CZEem7nm3I64,1655
+kpi_formula/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpi_formula/core/data_manager.py,sha256=zkIarqsI07RNTvC_vErNMUK3S6Go3c_IsvrZIzXjG7w,11460
+kpi_formula/core/join_manager.py,sha256=ytDjDj0pKME_Diq7tYg2xoD7Oz4F0glg5Umx3BX_Hns,2482
+kpi_formula/core/models.py,sha256=tr6-jp9q3yClPP9fXV1AXJ2FpZ56l9SHVDkNuEo1Q6w,1797
+kpi_formula/core/operations.py,sha256=d5QzEwBsRshm9QH59lTDUPqmGr13WIxvuk-oYmGI-WM,3582
+kpi_formula/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpi_formula_t5-0.2.3.dist-info/LICENSE,sha256=quRAJ8oPIh9hqlZaJd0uPnDa7dVVuu3aRjlmjPtNSBc,1064
+kpi_formula_t5-0.2.3.dist-info/METADATA,sha256=y_I1zxH0bkH4xnsCp0Rpnq6-JvRJlRyaZ35X0ynk0Z8,6429
+kpi_formula_t5-0.2.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+kpi_formula_t5-0.2.3.dist-info/top_level.txt,sha256=eOxruMi9bSSpKiWBUT-vk5zwqLmKHN2AsXT2SowEFdM,12
+kpi_formula_t5-0.2.3.dist-info/RECORD,,
