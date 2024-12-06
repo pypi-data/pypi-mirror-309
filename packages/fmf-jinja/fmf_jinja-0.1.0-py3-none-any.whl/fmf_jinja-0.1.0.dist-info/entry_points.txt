@@ -1,0 +1,2 @@
+[console_scripts]
+fmf-jinja = fmf_jinja.cli:main
