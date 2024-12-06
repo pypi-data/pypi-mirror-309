@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: langgraph-api-inmem
+Version: 0.0.2
+Summary: 
+Author: Will Fu-Hinthorn
+Author-email: will@langchain.dev
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: croniter (>=1.0.1)
+Requires-Dist: httptools (>=0.5.0)
+Requires-Dist: httpx (>=0.25.0)
+Requires-Dist: jsonschema-rs (>=0.20.0)
+Requires-Dist: langchain-core (>=0.2.38,<0.4.0)
+Requires-Dist: langgraph (>=0.2.52,<0.3.0)
+Requires-Dist: langgraph-checkpoint (>=2.0.5,<3.0)
+Requires-Dist: langsmith (>=0.1.63)
+Requires-Dist: orjson (>=3.9.7)
+Requires-Dist: pycurl (>=7.45.0)
+Requires-Dist: sse-starlette (>=2.1.0)
+Requires-Dist: structlog (>=23.1.0)
+Requires-Dist: tenacity (>=8.0.0)
+Requires-Dist: tornado (>=6.4.0)
+Requires-Dist: uvicorn (>=0.26.0)
+Requires-Dist: uvloop (>=0.18.0)
+Description-Content-Type: text/markdown
+
+
