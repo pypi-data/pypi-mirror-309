@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: JTRFaker
+Version: 0.0.0
+Summary: A library to generate fake data for various use cases
+Home-page: https://github.com/LeanderCS/JTRFaker
+Author: Leander Cain Slotosch
+Author-email: slotosch.leander@outlook.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy>=1.3
+Requires-Dist: Faker>=10.0.0
+
+# JTRFaker
+
+The `JTRFaker` domain is a utility module in your project that is primarily focused on generating
+fake data for testing and development purposes. It leverages the power of the Faker library to
+create realistic yet random data that can be used to populate your database during `development`
+or for `testing` your application's functionality.
+
+## Installation
+
+```bash
+pip install JTRFaker
+```
+
+## Development
+
+```bash
+docker build -t jtrfaker .
+```
+
+```bash
+docker run -it jtrfaker bash
+```
