@@ -1,0 +1,15 @@
+AUTHORS.rst
+LICENSE
+README.rst
+setup.py
+spade_fiware_artifacts/__init__.py
+spade_fiware_artifacts/context_broker_inserter.py
+spade_fiware_artifacts/context_broker_suscription_manager.py
+spade_fiware_artifacts.egg-info/PKG-INFO
+spade_fiware_artifacts.egg-info/SOURCES.txt
+spade_fiware_artifacts.egg-info/dependency_links.txt
+spade_fiware_artifacts.egg-info/entry_points.txt
+spade_fiware_artifacts.egg-info/requires.txt
+spade_fiware_artifacts.egg-info/top_level.txt
+test/test_inserter_context_broker.py
+test/test_subscription_manager.py
