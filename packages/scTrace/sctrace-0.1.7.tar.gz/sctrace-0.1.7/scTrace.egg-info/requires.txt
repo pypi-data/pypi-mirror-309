@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+matplotlib
+scanpy
+leidenalg
+pyro-ppl
+POT
+node2vec
+scStateDynamics
