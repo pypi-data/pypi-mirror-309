@@ -1,0 +1,6 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/metal/__init__.py,sha256=ql9fsQYHtPpuKs0NeFrMA2Nz1nEdUn5CfOFZQ7UWiXs,98
+llama_index/vector_stores/metal/base.py,sha256=X4Mpw2Bq5vKXdaOI43mlItUKsRSc9lrFPQhaTLKRYOI,5288
+llama_index_vector_stores_metal-0.3.0.dist-info/METADATA,sha256=emg6QAwFWCm0cfUgz5It585O2G_smbz90nTW_y1g2rI,700
+llama_index_vector_stores_metal-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_metal-0.3.0.dist-info/RECORD,,
