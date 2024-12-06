@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: blue-yonder
+Version: 0.0.1
+Summary: Bluesky Python API for humans.
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/alxfed/blue-yonder
+Project-URL: Bug Tracker, https://github.com/alxfed/blue-yonder/issues
+Keywords: bluesky,bsky,blue-yonder
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+Requires-Dist: atproto>=0.0.55
+
+# Blue Yonder
+Bluesky Python API for humans.
+<pre>
+  pip install blue-yonder
+</pre>
+Note: the pip package name has a dash `-` between the words.
+
+Then:
+```Python
+  # Python
+  import blue_yonder as by
+  # or
+  from blue_yonder import Bird
+```
+Note: the library name has an underscore `_` between the words.
+
+## Usage
+```Python
+  # Python
+  from blue_yonder import Bird
+```
