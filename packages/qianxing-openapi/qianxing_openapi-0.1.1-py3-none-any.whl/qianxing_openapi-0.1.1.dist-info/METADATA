@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: qianxing-openapi
+Version: 0.1.1
+Summary: Qianxing OpenAPI SDK for Python
+Home-page: https://github.com/risenlighten-qianxing/openapi-sdk-python
+Author: Zhihong Luo
+Author-email: luozhihong@risenlighten.com
+Project-URL: Source, https://github.com/risenlighten-qianxing/openapi-sdk-python
+Keywords: Qianxing,Lasvsim,自动驾驶,OpenAPI
+Requires-Python: >=3.0
+Requires-Dist: requests
+
+test
+## 发布pip流程
+```
+1. 配置好setup.py
+2. 安装依赖：pip install twine setuptools wheel
+3. 构建分发包：python setup.py sdist bdist_wheel
+4. 上传包到 PyPI：twine upload dist/*
+```
