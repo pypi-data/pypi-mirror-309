@@ -1,0 +1,7 @@
+main.py
+setup.py
+prolificdreamer.egg-info/PKG-INFO
+prolificdreamer.egg-info/SOURCES.txt
+prolificdreamer.egg-info/dependency_links.txt
+prolificdreamer.egg-info/requires.txt
+prolificdreamer.egg-info/top_level.txt
