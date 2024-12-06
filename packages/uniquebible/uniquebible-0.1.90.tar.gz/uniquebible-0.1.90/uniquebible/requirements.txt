@@ -1,0 +1,7 @@
+prompt_toolkit
+gdown
+babel
+requests
+apsw
+markdown
+opencc-python-reimplemented
