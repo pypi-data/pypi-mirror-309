@@ -1,0 +1,11 @@
+click
+requests
+sqlglot[rs]
+pydantic==2.*
+
+[dev]
+mypy
+pre-commit
+ruff==0.4.3
+pyyaml
+types-PyYAML
