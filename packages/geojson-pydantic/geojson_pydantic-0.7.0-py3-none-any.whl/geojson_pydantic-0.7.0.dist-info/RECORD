@@ -1,0 +1,10 @@
+geojson_pydantic/__init__.py,sha256=YKL_zpRMr3A-858fD8wNXS9uvsSMVJ8rLPAPWMus9ss,448
+geojson_pydantic/features.py,sha256=of4TXnQkIMD9rnwOu7CWJ9VJ7Mf5mEdQGbNkw2dAV1s,1912
+geojson_pydantic/geo_interface.py,sha256=_121Vf0kdfSUJVp8SV_UEU4PPIUgHtp2nyCrkiECZH8,705
+geojson_pydantic/geometries.py,sha256=B8rI5qrjHvMAaww_RthzH0pzM_RvbbhdCi-JOWyFruY,10982
+geojson_pydantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geojson_pydantic/types.py,sha256=msy4l-L0P0PJj0tLQZNaY8uFjGGbAkOhSXyAVFG0u-w,1699
+geojson_pydantic-0.7.0.dist-info/LICENSE,sha256=18IxFIta7rF_RcVSIgLUUd_alyfQ9bGoZKQm5vOarGU,1073
+geojson_pydantic-0.7.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+geojson_pydantic-0.7.0.dist-info/METADATA,sha256=1xY9Kve6TESlKJuX8l5qABA3IBFU4-1U0JzC1KSVRe0,8979
+geojson_pydantic-0.7.0.dist-info/RECORD,,
