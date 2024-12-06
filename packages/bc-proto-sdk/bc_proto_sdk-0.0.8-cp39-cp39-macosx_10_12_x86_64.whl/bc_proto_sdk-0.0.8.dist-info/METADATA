@@ -1,0 +1,57 @@
+Metadata-Version: 2.3
+Name: bc_proto_sdk
+Version: 0.0.8
+Summary: BrainCo FW proto message SDK
+Author: BrainCo
+License: 	
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/BrainCoTech/bc_proto_sdk
+
+# BrainCo Proto Message SDK
+
+for debug build
+
+```shell
+yarn serve
+cargo tree
+cargo b -- --show-output
+cargo test eeg_cap_parser_test -- --show-output
+cargo test morpheus_parser_test -- --show-output
+cargo test morpheus_parser_normal -- --show-output
+cargo test edu_msg_decode -- --show-output
+cargo test edu_msg_encode -- --show-output
+cargo run --example eeg-cap-msg-test --features="eeg-cap"
+cargo run --example eeg-cap-test --features="eeg-cap"
+cargo run --example ohos-test --features="ohos"
+cargo run --example morp-algo-test --features="morpheus"
+rustc --print target-list | grep ohos
+# NOTE: use feature "ohos" in Cargo.toml
+sh build_ohos.sh
+# NOTE: use feature "nodejs" in Cargo.toml
+sh build_wasm.sh
+tree -I target
+tree dist
+
+# for python
+# python -m venv .env
+# source .env/bin/activate
+
+# pyenv virtualenv pyo3
+# pyenv local pyo3
+
+pyenv local venv39
+pyenv virtualenv venv39
+pyenv activate venv39
+pyenv deactivate
+
+# pip install maturin
+# maturin init --bindings pyo3
+
+# NOTE: use feature "python3" in Cargo.toml
+maturin dev
+
+export PYTHON_SYS_EXECUTABLE=$(which python3)
+cargo run --example pyo3
+sh test_python.sh
+```
+
