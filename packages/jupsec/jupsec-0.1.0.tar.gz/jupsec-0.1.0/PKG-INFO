@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: jupsec
+Version: 0.1.0
+Summary: does nothing
+Author: Hisham Raihan
+Author-email: hishamraihan40@gmail.com
+Requires-Python: >=2.1
