@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: flowx_sdk
+Version: 0.0.1
+Summary: the feature of blockchain
+Project-URL: home, https://github.com/georgegoldman/FlowX.git
+Author-email: George-Goldman <georgegoldmanjohn.o@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: requests>=2.20
+Description-Content-Type: text/markdown
+
+# FlowX
+FlowX is designed to empower developers building financial solutions by offering a protocol for efficient, low-cost cross-border payments using stablecoins. FlowX will help developers solve real-world issues in African financial systems, such as high remittance costs, limited liquidity, and currency volatility.
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
