@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/ProdDiffuser.egg-info/PKG-INFO
+src/ProdDiffuser.egg-info/SOURCES.txt
+src/ProdDiffuser.egg-info/dependency_links.txt
+src/ProdDiffuser.egg-info/requires.txt
+src/ProdDiffuser.egg-info/top_level.txt
+src/proddiffuser.egg-info/PKG-INFO
+src/proddiffuser.egg-info/SOURCES.txt
+src/proddiffuser.egg-info/dependency_links.txt
+src/proddiffuser.egg-info/requires.txt
+src/proddiffuser.egg-info/top_level.txt
