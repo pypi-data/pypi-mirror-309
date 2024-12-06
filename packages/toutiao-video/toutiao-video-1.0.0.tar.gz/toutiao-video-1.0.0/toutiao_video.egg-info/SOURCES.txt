@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+toutiao/__init__.py
+toutiao/bin.py
+toutiao/core.py
+toutiao/utils.py
+toutiao/version.json
+toutiao_video.egg-info/PKG-INFO
+toutiao_video.egg-info/SOURCES.txt
+toutiao_video.egg-info/dependency_links.txt
+toutiao_video.egg-info/entry_points.txt
+toutiao_video.egg-info/requires.txt
+toutiao_video.egg-info/top_level.txt
