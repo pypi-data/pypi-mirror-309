@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/TkOne.egg-info/PKG-INFO
+src/TkOne.egg-info/SOURCES.txt
+src/TkOne.egg-info/dependency_links.txt
+src/TkOne.egg-info/requires.txt
+src/TkOne.egg-info/top_level.txt
+src/tkone/__init__.py
+src/tkone/_custom.py
+src/tkone/_custom.pyi
+src/tkone/_tkinter.py
