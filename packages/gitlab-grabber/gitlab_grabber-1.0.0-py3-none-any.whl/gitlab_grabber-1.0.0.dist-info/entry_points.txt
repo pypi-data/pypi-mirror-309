@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab_grabber=gitlab_grabber.main:main
+
