@@ -1,0 +1,17 @@
+csrc/dequant_impl_packed.cu,sha256=RukbsUA3vvAPuSbKUSso_RI8ZDUKgps7iM3lS6eU7Fk,37648
+csrc/ops.cc,sha256=SUiCCYlTPPBSd7tYFB2ZtdhT1uAFqKyyyetxWujKI3I,6960
+vptq/__init__.py,sha256=54JMShXTftDyBcU6EFtlWE6gtylWBPxO7b1JIPok100,436
+vptq/__main__.py,sha256=zsoWWhZDbcaG3Uy1qc0meNLWOjBNiGlbiSqD1iyS28I,288
+vptq/app.py,sha256=Cu1Tmbe-kBaXPTwEqgshoiUB7EPR1yBbAAFfmMTW7qQ,4980
+vptq/app_gpu.py,sha256=M1mc32T15-cIomBC3Imf2mQbbXnMXyCzUoDTYLKhWK4,4190
+vptq/app_utils.py,sha256=gtYRmO8ng-H6ABURpaiYUUdAOrMu3vci0wfuyo-qphE,5093
+vptq/ops.cpython-310-x86_64-linux-gnu.so,sha256=zzwgm2o8my0xcMNL111M8S2mFLE5fjrg6ocOl7IW5y8,64995888
+vptq/layers/__init__.py,sha256=pBmk9w0k_00CZ-xPyElgAsCTrIrYCZAJJot4QFFVhyI,370
+vptq/layers/model_base.py,sha256=0MXjrOw1BkJOMCTMA9Qgi94h0bDTYXvZg51Cg8vWgsM,7658
+vptq/layers/utils.py,sha256=fS_2APo3aO6YuPzBb9xxYNBn0ZwB_EqLs9SfiajcTO0,613
+vptq/layers/vqlinear.py,sha256=lxAfNa0r3LaqTOq-aWX55AM6tCjMdL16cmMeRxHwcBA,31672
+vptq-0.0.4.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+vptq-0.0.4.dist-info/METADATA,sha256=UsA1eTLPZoQV-jPy_XOdzHe61U8Bk9PGizdmk2YtMLw,27182
+vptq-0.0.4.dist-info/WHEEL,sha256=nP5rfy0GYQGnoY3bowWpLTc67hARu3hoTZ4eQm72Sxc,105
+vptq-0.0.4.dist-info/top_level.txt,sha256=b_hoqqoQpM-YLx6NNrHAljFYjGmz2lb37IgwitPSl5g,37
+vptq-0.0.4.dist-info/RECORD,,
