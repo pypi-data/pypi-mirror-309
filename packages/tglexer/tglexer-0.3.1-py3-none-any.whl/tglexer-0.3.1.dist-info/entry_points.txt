@@ -1,0 +1,2 @@
+[pygments.lexers]
+tensorgrad = tensorgrad_lexer.tensorgrad_lexer:TensorGradLexer
