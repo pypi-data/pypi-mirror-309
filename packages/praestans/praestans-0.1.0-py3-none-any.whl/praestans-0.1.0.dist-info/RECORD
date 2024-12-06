@@ -1,0 +1,11 @@
+praestans/__init__.py,sha256=5jiPB13gMutJdhLO9Xb_kJRIG8AfYY-Tz27vXP0MhRY,78
+praestans/bin.py,sha256=XAs2-DKBJLMhUHezHNmg0yMlDWk34cZFCmPeJCBt0fE,1246
+praestans/dec.py,sha256=RF7kJyG7ROfa1O5Z_o6-qghizauNeW7ENnfdTqvsPlo,965
+praestans/err.py,sha256=-XEqb3H3k6riPB7VuxhPPqQT_2uYx35fk3ZH3G0VfTc,1580
+praestans/hex.py,sha256=PC8PAHsbjpAIa-942qQ4r6mGvJqyScKKjvRG84UF0ys,1381
+praestans/oct.py,sha256=XD2s_LrB3i1sod7Eq8UeZcwfEoF5yBTnFD8FZ5atfBs,909
+praestans-0.1.0.dist-info/LICENSE,sha256=OIBFNTtVVY1p17BUAVNg2HyuRMoXBM3mzs_C4mgiAlE,1093
+praestans-0.1.0.dist-info/METADATA,sha256=-X0e9GajA4LDyLLsaOyzVFibMXwL4KU743q2QS-r7tc,2085
+praestans-0.1.0.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+praestans-0.1.0.dist-info/top_level.txt,sha256=X9_2YTxWAVxFtThnpBSrl6AK8kI5QbupYzQw5E8XLoM,10
+praestans-0.1.0.dist-info/RECORD,,
