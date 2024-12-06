@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: deterministic-rsa-keygen
+Version: 1.0
+Summary: generate deterministic RSA key pair and perform encrypt and decrypt operations
+License: Apache Software License
+Author: Mauricio
+Author-email: mtdb.github.n20n0@passinbox.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pycryptodome (>=3.21.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# deterministic-rsa-keygen
+
+Use pycryptodome to generate a deterministic RSA key pair and perform encrypt and decrypt operations
+
+## Install
+
+`pip install deterministic-rsa-keygen`
+
+## Ussage
+
+```
+from rsa import generate_key, encrypt, decrypt
+
+# as alternatives you can use a bit39 phrase or another key as seed
+secret_key = generate_key("the derived key cannot be stronger than this seed")
+
+private_key = secret_key.exportKey("PEM")
+public_key = secret_key.publickey().exportKey("PEM")
+
+secret = encrypt("secret", public_key)
+assert decrypt(secret, private_key) == bytes("secret", 'utf-8')
+```
+
