@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+wordfilegenerator/__init__.py
+wordfilegenerator/main.py
+wordfilegenerator.egg-info/PKG-INFO
+wordfilegenerator.egg-info/SOURCES.txt
+wordfilegenerator.egg-info/dependency_links.txt
+wordfilegenerator.egg-info/top_level.txt
