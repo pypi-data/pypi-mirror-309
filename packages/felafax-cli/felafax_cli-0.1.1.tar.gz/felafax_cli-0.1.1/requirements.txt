@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+boto3
+google-cloud-storage
+google-cloud-compute
+requests
+python-multipart
+typer
