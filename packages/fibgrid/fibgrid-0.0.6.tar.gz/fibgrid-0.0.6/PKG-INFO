@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fibgrid
+Version: 0.0.6
+Summary: Fibonacci Discrete Global Grid (DGG)
+Home-page: https://github.com/TUW-GEO/fibgrid
+Author: TU Wien
+Author-email: remote.sensing@geo.tuwien.ac.at
+License: MIT
+Project-URL: Documentation, https://fibgrid.readthedocs.io/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+
+=======
+fibgrid
+=======
+
+.. image:: https://github.com/TUW-GEO/fibgrid/actions/workflows/ci.yml/badge.svg
+   :target: https://github.com/TUW-GEO/fibgrid/actions/workflows/ci.yml
+
+.. image:: https://coveralls.io/repos/github/TUW-GEO/fibgrid/badge.svg?branch=master
+   :target: https://coveralls.io/github/TUW-GEO/fibgrid?branch=master
+
+.. image:: https://badge.fury.io/py/fibgrid.svg
+    :target: http://badge.fury.io/py/fibgrid
+
+.. image:: https://readthedocs.org/projects/fibgrid/badge/?version=latest
+   :target: http://fibgrid.readthedocs.org/
+
+Creating Fibonacci grid and read pre-computed grids.
