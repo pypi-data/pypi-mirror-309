@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/test.py
+src/PyOData1C/__init__.py
+src/PyOData1C/exeptions.py
+src/PyOData1C/http.py
+src/PyOData1C/models.py
+src/PyOData1C/odata.py
+src/PyOData1C/sample.py
+src/PyOData1C.egg-info/PKG-INFO
+src/PyOData1C.egg-info/SOURCES.txt
+src/PyOData1C.egg-info/dependency_links.txt
+src/PyOData1C.egg-info/requires.txt
+src/PyOData1C.egg-info/top_level.txt
