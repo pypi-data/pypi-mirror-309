@@ -1,0 +1,3 @@
+[console_scripts]
+create = folder_structure_generator_7edge.generator:create_service_structure
+start = folder_structure_generator_7edge.generator:create_folder_structure_with_files
