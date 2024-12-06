@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+trem/__init__.py
+trem.egg-info/PKG-INFO
+trem.egg-info/SOURCES.txt
+trem.egg-info/dependency_links.txt
+trem.egg-info/top_level.txt
