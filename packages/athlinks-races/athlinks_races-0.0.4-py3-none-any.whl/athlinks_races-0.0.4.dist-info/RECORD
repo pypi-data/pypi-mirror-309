@@ -1,0 +1,15 @@
+athlinks_races/__init__.py,sha256=An6YZzwzzZNxclmQsn8IkI8Wyg3_9Sb_jAmAlMkkARk,452
+athlinks_races/app.py,sha256=DhOFlqwHxeoNnTNusO2_Sdgs4Jsy9QnY3f9cusVfbZ4,2164
+athlinks_races/cli.py,sha256=P0spJe39eMPXIuy-sP6Ay2HtJeqjashaf3XH_w5nDa4,3101
+athlinks_races/demo.py,sha256=s-qfD5JLZjQIfxpBXpRHN5avhviLSVynnVS4peUA3GA,2045
+athlinks_races/items.py,sha256=ZErHEBoGFO6t8O0muUJXz4XQOJaxTE9Cae1HKtI9weQ,1721
+athlinks_races/pipelines.py,sha256=-8X2rIrlYmO0JZOy_zsWwdgU2z8VC_d5YpcinlrKLP0,3103
+athlinks_races/settings.py,sha256=5ymZl0v8cJtdAkGX4gM1mS5fDtRH30nJNLVjr-7mZaQ,562
+athlinks_races/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+athlinks_races/spiders/race.py,sha256=YfNIhs_k7kwDFGNTiLOHQf1Fh7zIeP9yc5VDGC27708,7076
+athlinks_races-0.0.4.dist-info/LICENSE,sha256=qnznK5TCtLAug__xpYTUFGj5icz6OWrzruecUBsLwEM,1071
+athlinks_races-0.0.4.dist-info/METADATA,sha256=8tOKWXH70tkuEVvfxcHgBWdO5T3Jx6CBN8mfCLAz8C4,6509
+athlinks_races-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+athlinks_races-0.0.4.dist-info/entry_points.txt,sha256=9SskOEiVeWHM5VwHSOekZKg83cC_41uuPhq-savfx7k,63
+athlinks_races-0.0.4.dist-info/top_level.txt,sha256=tjFR-lY8njMhBTOiykPjUE51AG7U4XXpqKzmvgnz_64,15
+athlinks_races-0.0.4.dist-info/RECORD,,
