@@ -1,0 +1,2 @@
+[console_scripts]
+quizen = quizen.quiz:main
