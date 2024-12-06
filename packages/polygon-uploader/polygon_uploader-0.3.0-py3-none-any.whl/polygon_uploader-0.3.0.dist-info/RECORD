@@ -1,0 +1,17 @@
+polygon_uploader/__init__.py,sha256=WFYTu0VpPf1PzgFGRFesWc1cMtn0gU2K9vTWHMhFLrA,56
+polygon_uploader/common/__init__.py,sha256=K16uHB-B7_nIVwWenr2ZzT43L6vYv3sE2JsqaZBscNc,252
+polygon_uploader/common/authentication.py,sha256=kK1Ww77rBcQbC9pCCgdyqLub0KqBQ2lswL7FZ5uzmmY,1450
+polygon_uploader/common/file_download.py,sha256=kG7P9XcaI2RSyjLA_OohPmRD-xORyI71xu_VTOjLp6M,1137
+polygon_uploader/common/polygon.py,sha256=D3a8Zh1yEA8FvYLBWOjLfxLxVkSHWVnMKiRcAR9fp7A,3462
+polygon_uploader/common/tmp_file_system.py,sha256=JtyCgzBlHwy9KZdAY1-grSC5hKEcRzzODqhAfrDczMk,322
+polygon_uploader/lojac/__init__.py,sha256=FUXfZZb-WdblkQyK2s2bFIhrradqm7Prs7YgvhlQRyk,24
+polygon_uploader/lojac/lojac.py,sha256=LgFwbUp99mu9cca0VfZgd7p5PG1r3Zs4MVzoWioeysw,9985
+polygon_uploader/usaco/__init__.py,sha256=9oZ-f0pL9LqdzaJq3ECbXMdY7alu0gRMkIJ_5LBSF44,24
+polygon_uploader/usaco/__main__.py,sha256=1p787KNTrGQgVpTEVW-lZGaAy_62qV_kTaJftG5lcQA,63
+polygon_uploader/usaco/usaco.py,sha256=4DYzrNqDkZVpSDob0Llxsqqt_QJWSB_MEGwpEdFLvsk,8927
+polygon_uploader-0.3.0.dist-info/LICENSE,sha256=78j_Urrus60H-adpzGHK2h7m3arsI3HkCo-Rbfq5OwM,1074
+polygon_uploader-0.3.0.dist-info/METADATA,sha256=4JYtCE3tFQwo7MfNvS-3ZRJxDHcypE1jVO1YzYs7HI0,1553
+polygon_uploader-0.3.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+polygon_uploader-0.3.0.dist-info/entry_points.txt,sha256=Uvj0ccufNsNWN1fgQ-IvkoSp8BEsZU5Z1gm2vbLtYWM,150
+polygon_uploader-0.3.0.dist-info/top_level.txt,sha256=WfJY2sYFZWFmFOsM8MQg4XjvKZc7NH9yd8vRNWQF7q4,17
+polygon_uploader-0.3.0.dist-info/RECORD,,
