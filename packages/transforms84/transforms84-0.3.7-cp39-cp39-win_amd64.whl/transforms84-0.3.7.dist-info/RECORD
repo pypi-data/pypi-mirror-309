@@ -1,0 +1,12 @@
+transforms84/__init__.py,sha256=yTkuVcK8Zym2EKA1dSicN9t9zaxUE4jKR32dIf5TeW0,23
+transforms84/distances.cp39-win_amd64.pyd,sha256=w8Vu885eEeW_9auVdHCFHx4pfXZ7Zl59mDLQgJKMk6Q,16896
+transforms84/distances.pyi,sha256=ApXX8UwxS7Q4cPL8O-K6_nIPLPC9615TTU2C__U00vE,470
+transforms84/helpers.cp39-win_amd64.pyd,sha256=xfLrcd5Q8Q8A_lSKtW1519snuSfShh3MEBCGTTq1Qm4,24064
+transforms84/helpers.pyi,sha256=650kuT3gEAbJjF6T4g20hqW8jp9CRuH2hOZWDv5TdeQ,2010
+transforms84/systems.py,sha256=0s_3jxEJSLM6kL5sxo5NUwQwwmwZGdDnhutFwIpb3V8,1718
+transforms84/transforms.cp39-win_amd64.pyd,sha256=vgxmTcWzP0MF6-NZ7eUDh1UoL2PrhbzKXujw6V3EVLs,64512
+transforms84/transforms.pyi,sha256=RABy2Mcd5lXNoMGyBuZrckWHEriH6m5WN_JVITCTplQ,5337
+transforms84-0.3.7.dist-info/METADATA,sha256=XFtICc6OhO83Cm52rU5K6zSOgzX3eqjGde0bzZurfl8,8644
+transforms84-0.3.7.dist-info/WHEEL,sha256=ynoZ0da0aUZJ-Uud_zYpEfwz71d4idxviPd2wFx3QaQ,99
+transforms84-0.3.7.dist-info/top_level.txt,sha256=mxRdltwPgCTwa4oTSH0BVoSkAkpDN6nX_JlThimOORQ,13
+transforms84-0.3.7.dist-info/RECORD,,
