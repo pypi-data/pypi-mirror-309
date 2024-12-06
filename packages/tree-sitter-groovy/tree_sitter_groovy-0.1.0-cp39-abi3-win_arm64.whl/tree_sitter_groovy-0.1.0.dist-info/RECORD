@@ -1,0 +1,9 @@
+tree_sitter_groovy/__init__.py,sha256=3OxYxJbpCJes-175chmqHYkP_Uoe6kDJA02zbhiVWZg,1155
+tree_sitter_groovy/__init__.pyi,sha256=oixFm8lXsZZWYa5cRwj6brbqh37_fzN2rLE-dmX9_rA,247
+tree_sitter_groovy/_binding.pyd,sha256=SzJcb4VBeE83Ay7auSzPASyS_3qfSTL7yHe4fajs074,1003008
+tree_sitter_groovy/binding.c,sha256=dL7TWyX6YoMgOMfdMyQQNKcehH2cJtQKWcZeWLeR-0Y,683
+tree_sitter_groovy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_groovy-0.1.0.dist-info/METADATA,sha256=Dtk8MOEgGQXI0dqExvGfTDbTk5KvRyf4dnxEhREU8wo,611
+tree_sitter_groovy-0.1.0.dist-info/WHEEL,sha256=lglDeFnaq9LY6n_9A3IFKhVlxaQuYSm1Vltz6vwGqMo,99
+tree_sitter_groovy-0.1.0.dist-info/top_level.txt,sha256=2XsepPxAHCLwUnecPO8s-eEqNqsNnXgoGF-KZ2dbQWg,28
+tree_sitter_groovy-0.1.0.dist-info/RECORD,,
