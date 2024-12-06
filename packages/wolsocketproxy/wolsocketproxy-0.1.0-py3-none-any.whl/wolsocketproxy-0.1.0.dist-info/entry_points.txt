@@ -1,0 +1,3 @@
+[console_scripts]
+wolsocketproxy=wolsocketproxy:main
+

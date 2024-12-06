@@ -1,0 +1,9 @@
+wolsocketproxy/__init__.py,sha256=vVI0czPJC7nL6pEfV53kYjUuISCidHc3FR-JMjxTAuU,1189
+wolsocketproxy/__main__.py,sha256=UzC778-666hT9HmIeEx1K6UVo0UoIeooKF-3vsGD8Kg,71
+wolsocketproxy/monitor.py,sha256=yqq_rOuImwP1rBGE6JIdiHr3Qk8e5MReTFUfJcUuo-Q,1448
+wolsocketproxy/proxy.py,sha256=zV7qBLzw2W-xd-2RL7yRRmWusH2sVEOPrYdOEm-HgCU,5671
+wolsocketproxy-0.1.0.dist-info/LICENSE,sha256=3lzzg4gQ_VG2wRFFuzKC7ZA9QXJuzdtvRE5zPlY56Rg,552
+wolsocketproxy-0.1.0.dist-info/METADATA,sha256=pOhfROTLuzrdNgL_wGNA9eWRP3g1Bsdrnlmd9-u5iKU,2667
+wolsocketproxy-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+wolsocketproxy-0.1.0.dist-info/entry_points.txt,sha256=3NDywC4AUsx2PnaAb6vYiP_DUVZu1mski4yWbQ5QPLU,54
+wolsocketproxy-0.1.0.dist-info/RECORD,,
