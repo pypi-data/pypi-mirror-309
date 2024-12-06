@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/functional_maybe.egg-info/PKG-INFO
+src/functional_maybe.egg-info/SOURCES.txt
+src/functional_maybe.egg-info/dependency_links.txt
+src/functional_maybe.egg-info/top_level.txt
+test/test_maybe.py
