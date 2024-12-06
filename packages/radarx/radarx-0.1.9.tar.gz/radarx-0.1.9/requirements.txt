@@ -1,0 +1,13 @@
+cmweather
+lat_lon_parser
+netCDF4
+numpy
+pyproj
+cartopy
+scipy
+xarray<= 2024.9.0
+xarray-datatree >= 0.0.10
+xmltodict
+matplotlib
+xradar
+pooch
