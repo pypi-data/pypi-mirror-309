@@ -1,0 +1,10 @@
+quboassist-0.0.19.dist-info/METADATA,sha256=-zk2y1uydoXRbrwvCyIrCBaIkpiriITwuq6lLQhfyQ8,6962
+quboassist-0.0.19.dist-info/WHEEL,sha256=bNtRK4IG-ZINiRwRhIvmsDSb0Vife_pt6vsyhyhjHi8,95
+quboassist-0.0.19.dist-info/entry_points.txt,sha256=WX9Na7XYlboyOitqJz5fsX_Qxjwrx3ljC-Ml1z4TQDA,41
+quboassist-0.0.19.dist-info/licenses/LICENSE,sha256=sUGMjUAI731NjHO-Farcqx30wXLTn-6TNUFTrA9_AWE,1088
+quboassist/main.py,sha256=4hO78TIEUDcHxp2Kgmak4NxYOBNhi2ovJFk8juGPKxA,16505
+quboassist/__init__.py,sha256=H8txwwwwOW6SqmeHzts3HEvlz0zcJMDKE2ruy_XcWps,44
+quboassist/__pycache__/main.cpython-313.pyc,sha256=H99JUznm9E60jCYFeAd4UZ1d4IiZCytygC1eKw1E3LE,25435
+quboassist/__pycache__/__init__.cpython-313.pyc,sha256=eW3W8UFf4V_MQhdpuJLttl3jI5cu32bzrc0kQRbk6fY,288
+quboassist/quboassistfunc.cp311-win_amd64.pyd,sha256=qt2eodAXriASnn2xKlWPLhQreu90ojQ3zI2nYBnhPig,660480
+quboassist-0.0.19.dist-info/RECORD,,
