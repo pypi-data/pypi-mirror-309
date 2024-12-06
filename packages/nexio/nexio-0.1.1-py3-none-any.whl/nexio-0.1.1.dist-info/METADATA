@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: nexio
+Version: 0.1.1
+Summary: CLI tool to power your own journey
+Author: Jorge Roldan
+Author-email: roldanjrgl@protonmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi-utils (==0.7.0)
+Requires-Dist: fastapi[standard] (>=0.115.2,<0.116.0)
+Requires-Dist: pandas (==2.2.3)
+Requires-Dist: psycopg2-binary (==2.9.9)
+Requires-Dist: pydantic (==2.9.2)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: requests (>=2.32.3,<2.33.0)
+Requires-Dist: rich (>=13.9.2,<13.10.0)
+Requires-Dist: tabulate (==0.9.0)
+Requires-Dist: todoist-api-python (==2.1.7)
+Requires-Dist: typer (==0.12.5)
+Requires-Dist: typing-inspect (==0.9.0)
+Description-Content-Type: text/markdown
+
+# `nexio`
+
+**Usage**:
+
+```console
+$ nexio [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `jobs`
+* `todoist`
+
+## `nexio jobs`
+
+**Usage**:
+
+```console
+$ nexio jobs [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `close-jobs`
+* `pull-jobs`
+
+### `nexio jobs close-jobs`
+
+**Usage**:
+
+```console
+$ nexio jobs close-jobs [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+### `nexio jobs pull-jobs`
+
+**Usage**:
+
+```console
+$ nexio jobs pull-jobs [OPTIONS]
+```
+
+**Options**:
+
+* `--store [no_store|csv|postgres]`: [default: no_store]
+* `--output TEXT`
+* `--help`: Show this message and exit.
+
+## `nexio todoist`
+
+**Usage**:
+
+```console
+$ nexio todoist [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `get-projects`
+* `get-tasks`
+
+### `nexio todoist get-projects`
+
+**Usage**:
+
+```console
+$ nexio todoist get-projects [OPTIONS]
+```
+
+**Options**:
+
+* `--store [no_store|csv|postgres]`: [default: no_store]
+* `--help`: Show this message and exit.
+
+### `nexio todoist get-tasks`
+
+**Usage**:
+
+```console
+$ nexio todoist get-tasks [OPTIONS]
+```
+
+**Options**:
+
+* `--project-ids TEXT`
+* `--store [no_store|csv|postgres]`: [default: no_store]
+* `--output TEXT`
+* `--help`: Show this message and exit.
+
