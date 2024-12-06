@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: baseconnect
+Version: 0.3
+Summary: Database connection library for SQL Server
+Home-page: https://github.com/Domiterd/BaseConnect
+Author: Domiter Dominik
+Author-email: dominik.domiter@autowallis.hu
+Description-Content-Type: text/markdown
+Requires-Dist: pyodbc
+Requires-Dist: pandas
+
+# BasicConnect
+
+A Python library for easier SQL Server database connection .
+
+## Installation & Usage
+
+```bash
+pip install
+
+usage: 
+from baseconnect import Database
