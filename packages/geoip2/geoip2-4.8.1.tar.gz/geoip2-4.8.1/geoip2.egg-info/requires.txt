@@ -1,0 +1,6 @@
+aiohttp<4.0.0,>=3.6.2
+maxminddb<3.0.0,>=2.5.1
+requests<3.0.0,>=2.24.0
+
+[test]
+pytest-httpserver>=1.0.10
