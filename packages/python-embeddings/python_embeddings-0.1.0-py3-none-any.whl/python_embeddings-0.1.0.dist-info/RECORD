@@ -1,0 +1,16 @@
+python_embeddings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_embeddings/chroma_play.py,sha256=FwCMXfFWybmaB0pmMmpTaL85W9ZoKOFlkQRZYMiM5JE,1012
+python_embeddings/cli_utils.py,sha256=U87x0mrkInrvwTXFVKShOTWvTZ_M4tJgH5TtD3NbxF0,832
+python_embeddings/code_parsers.py,sha256=_5P_62PS7AW82ONGpD3oodpMdTUYeOdxMQiKIEqypjs,6160
+python_embeddings/git_utils.py,sha256=8csOpF738ap2q75fyud4grfBsoFCDCaG8g6i_JLGMzo,705
+python_embeddings/image_tests.py,sha256=7VH7d0VsbpK1h_MGDypC1bkc0tv1i_jrBidlNwJ7rac,1284
+python_embeddings/log_utils.py,sha256=sp93OyOZk3WmA9mRq3XV8tfNbV1uE74CZw1iHiUCIhA,999
+python_embeddings/search.py,sha256=H0qN80mki0pq0LcO8nWauxZpAwwPQ3qLyaeggR_0FeY,4683
+python_embeddings/sync_repo.py,sha256=6iEOTjAdhqrm7cH9lm_9UGzT-vt6JVSc-CpW6_D8Xjk,8042
+python_embeddings/vector_db.py,sha256=7eppeRevs5A-7mTxZNOiN_ceDnxDwOOxMHpPs_ihC9M,4851
+python_embeddings-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+python_embeddings-0.1.0.dist-info/METADATA,sha256=_TzwATzuCo4KsqyQIjF08vCevq2_9UH5kDSabksDDjk,471
+python_embeddings-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+python_embeddings-0.1.0.dist-info/entry_points.txt,sha256=jKrjCSuxtmVuKKeNWIBxGUQEJNS94fl0plkeH04pHKU,102
+python_embeddings-0.1.0.dist-info/top_level.txt,sha256=t9z8y5uHd2ai4wy0CS4oeJy6js6inbJKt4MAVk3Y-hE,18
+python_embeddings-0.1.0.dist-info/RECORD,,

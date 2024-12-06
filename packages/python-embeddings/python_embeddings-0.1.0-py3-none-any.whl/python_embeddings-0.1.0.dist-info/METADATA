@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-embeddings
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chromadb >=0.5.18
+Requires-Dist: libcst >=1.5.0
+Requires-Dist: pydantic >=2.9.2
+Requires-Dist: tqdm >=4.67.0
+
+Tools for semantic search of python code
+
+# TODO: make [chromadb-server] an optional dependency https://docs.trychroma.com/guides#using-the-python-http-only-client
