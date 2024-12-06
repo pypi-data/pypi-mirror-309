@@ -1,0 +1,5 @@
+llama_index/packs/timescale_vector_autoretrieval/__init__.py,sha256=uNMYk13MvWKnO3PHzikxcmsUGD56HHWrXfDWjxn381c,156
+llama_index/packs/timescale_vector_autoretrieval/base.py,sha256=FzeW5GT50f3iPBHcbcW7nZQRXSIECpZKLiNkStL_d6U,2519
+llama_index_packs_timescale_vector_autoretrieval-0.3.0.dist-info/METADATA,sha256=FHVHiGS5NbD6QvcNgborIVUYnGBggQNusoNn20O08-M,7033
+llama_index_packs_timescale_vector_autoretrieval-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_packs_timescale_vector_autoretrieval-0.3.0.dist-info/RECORD,,
