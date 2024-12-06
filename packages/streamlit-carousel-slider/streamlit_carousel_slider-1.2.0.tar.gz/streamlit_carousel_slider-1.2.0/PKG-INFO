@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: streamlit-carousel-slider
+Version: 1.2.0
+Summary: Carousel slider component for streamlit using React and tailwind with daisyui.
+Home-page: https://pypi.org/project/streamlit-carousel-slider
+Author: ryone9re
+Author-email: ryoichi.kurimoto@gmail.com
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=1.40
+
+# streamlit-carousel-slider
+
+Carousel slider component for streamlit using React and tailwind with daisyui.
+
+## Usage
+
+```python
+from streamlit_carousel_slider import streamlit_carousel_slider
+
+streamlit_carousel_slider(
+    images=[
+        {
+            "source": "IMAGE_URL or IMAGE_BASE64_STRING",
+        },
+        {
+            "source": "IMAGE_URL or IMAGE_BASE64_STRING",
+        },
+        {
+            "source": "IMAGE_URL or IMAGE_BASE64_STRING",
+        },
+        {
+            "source": "IMAGE_URL or IMAGE_BASE64_STRING",
+        },
+    ]
+)
+```

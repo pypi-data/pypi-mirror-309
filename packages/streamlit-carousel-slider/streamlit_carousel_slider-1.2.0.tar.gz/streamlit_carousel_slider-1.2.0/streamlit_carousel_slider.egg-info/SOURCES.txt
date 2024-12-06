@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+streamlit_carousel_slider/__init__.py
+streamlit_carousel_slider.egg-info/PKG-INFO
+streamlit_carousel_slider.egg-info/SOURCES.txt
+streamlit_carousel_slider.egg-info/dependency_links.txt
+streamlit_carousel_slider.egg-info/requires.txt
+streamlit_carousel_slider.egg-info/top_level.txt
+streamlit_carousel_slider/frontend/dist/index.html
+streamlit_carousel_slider/frontend/dist/assets/index-BBmrR8-p.css
+streamlit_carousel_slider/frontend/dist/assets/index-CAzZG-zn.js

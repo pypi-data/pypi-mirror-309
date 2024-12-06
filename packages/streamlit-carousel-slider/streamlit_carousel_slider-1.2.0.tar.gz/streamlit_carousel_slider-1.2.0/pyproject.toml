@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "streamlit-carousel-slider"
+version = "1.2.0"
+description = "Carousel slider component for streamlit."
+authors = ["ryone9re <ryoichi.kurimoto@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "1.40.1"
+
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "75.4.0"
+types-setuptools = "75.4.0.20241115"
+twine = "5.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
