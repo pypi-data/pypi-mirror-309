@@ -1,0 +1,4 @@
+audformat
+pytest
+pytest-cov
+sybil
