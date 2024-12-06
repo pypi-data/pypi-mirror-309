@@ -1,0 +1,12 @@
+
+[dependencies]
+numpy
+
+[grad]
+keras>=3
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
+keras>=3
