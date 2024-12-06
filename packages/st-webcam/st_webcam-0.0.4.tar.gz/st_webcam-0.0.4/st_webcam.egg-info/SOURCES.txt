@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+st_webcam/__init__.py
+st_webcam/st_webcam.py
+st_webcam.egg-info/PKG-INFO
+st_webcam.egg-info/SOURCES.txt
+st_webcam.egg-info/dependency_links.txt
+st_webcam.egg-info/requires.txt
+st_webcam.egg-info/top_level.txt
