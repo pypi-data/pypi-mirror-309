@@ -1,0 +1,16 @@
+openai
+tiktoken
+langdetect
+pandas
+pyperclip
+gdown
+scipy
+nltk
+PyPDF2
+cryptography
+matplotlib
+pygame
+sounddevice
+soundfile
+keyboard
+pillow
