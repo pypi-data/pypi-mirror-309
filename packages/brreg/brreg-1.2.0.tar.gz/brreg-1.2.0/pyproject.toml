@@ -1,0 +1,113 @@
+[tool.poetry]
+name = "brreg"
+version = "1.2.0"
+description = "API client for Brønnøysundregistrene."
+authors = ["Stein Magnus Jodal <stein.magnus@jodal.no>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/crdbrd/python-brreg"
+repository = "https://github.com/crdbrd/python-brreg"
+documentation = "https://brreg.readthedocs.io"
+keywords = ["brreg", "enhetsregisteret"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Libraries",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+httpx = ">= 0.24"
+pydantic = ">= 2"
+
+[tool.poetry.group.dev.dependencies]
+nox = "^2024.10.9"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = ">= 5.3"
+sphinx-rtd-theme = ">= 1.2"
+sphinx-autodoc-typehints = ">= 1.12"
+
+[tool.poetry.group.mypy.dependencies]
+mypy = "^1.11.1"
+
+[tool.poetry.group.pyright.dependencies]
+pyright = "1.1.389"
+
+[tool.poetry.group.ruff.dependencies]
+ruff = "0.7.4"
+
+[tool.poetry.group.tests.dependencies]
+coverage = { extras = ["toml"], version = "^7.4.1" }
+pytest = ">=7.4.4,<9.0.0"
+pytest-cov = ">=4.1,<7.0"
+pytest-httpx = "0.34.0"
+pytest-watcher = "^0.4.1"
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["brreg"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+filterwarnings = ["error::RuntimeWarning"]
+
+[tool.mypy]
+no_implicit_optional = true
+warn_return_any = true
+warn_redundant_casts = true
+warn_unused_configs = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = "brreg.*"
+disallow_untyped_defs = true
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+	# These rules interfere with `ruff format`
+	"COM812",
+	"ISC001",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"docs/*" = ["INP001"]
+"tests/*" = [
+	"D",       # pydocstyle
+	"PLR2004", # magic-value-comparison
+	"S101",    # assert
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["brreg"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.pyright]
+pythonVersion = "3.9"
+venvPath = "."
+venv = ".venv"
+typeCheckingMode = "strict"
+# Already covered by tests and careful import ordering:
+reportImportCycles = false
+# Already covered by flake8-self:
+reportPrivateUsage = false
+
+[build-system]
+requires = ["poetry-core>=1.0"]
+build-backend = "poetry.core.masonry.api"
