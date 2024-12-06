@@ -1,0 +1,7 @@
+winzy
+pyautogui
+pynput
+pillow
+
+[test]
+pytest
