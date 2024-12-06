@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: kiwi_release_cli
+Version: 0.0.2
+Summary: 
+Author: Zoe Blevins
+Author-email: zblevins@nvidia.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: gitpython (>=3.1.42,<4.0.0)
+Requires-Dist: semver (>=3.0.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Release CLI
+
+Small CLI utility to handle semantic versioning via git tag
+
+```
+% poetry run release tag --help
+Usage: release tag [OPTIONS]
+
+  Cut a new tag for the release.
+
+Options:
+  --major   Bump major version
+  --minor   Bump minor version
+  --patch   Bump patch version
+  --dryrun  Preview the release tag change
+  --help    Show this message and exit.
+```
