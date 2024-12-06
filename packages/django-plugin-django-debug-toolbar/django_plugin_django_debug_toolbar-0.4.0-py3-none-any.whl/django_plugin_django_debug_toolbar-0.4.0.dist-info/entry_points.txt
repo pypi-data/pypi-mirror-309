@@ -1,0 +1,2 @@
+[djp]
+django_plugin_django_debug_toolbar = django_plugin_django_debug_toolbar
