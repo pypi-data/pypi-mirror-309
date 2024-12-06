@@ -1,0 +1,7 @@
+bioimageio
+conda-recipe
+dev
+example
+presentations
+scripts
+tests
