@@ -1,0 +1,8 @@
+epitope_aligner/__init__.py,sha256=AwBxu92dod7j5-59EHWrD7-21hoJyF1LPCS2WLwrjfk,116
+epitope_aligner/examples.py,sha256=APy-uuFQNDWfLBJsaqF-nkuW7C8Drraz5VRhYUhWvco,1435
+epitope_aligner/map.py,sha256=wwqhfPcGsq8FQKM2KRVceMm1e6oIm-eSlT4qJJxMmx8,16428
+epitope_aligner/stretch.py,sha256=C26pTg_xQVmzqtJ7uOQR1W3BngSN0uF07h6WAnqzzlQ,5866
+epitope_aligner/utils.py,sha256=IOjNXks5U6bMPq0F6chhiJyz01BnP3DV7tTDQNkoE9A,4631
+epitope_aligner-0.1.1.dist-info/METADATA,sha256=GHu-Wd7DrJmCCfa_Gd4ADVzB3oBDy9zbd9PPGQBL0-s,6257
+epitope_aligner-0.1.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+epitope_aligner-0.1.1.dist-info/RECORD,,
