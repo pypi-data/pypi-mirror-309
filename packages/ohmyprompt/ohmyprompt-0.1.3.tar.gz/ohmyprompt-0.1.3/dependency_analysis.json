@@ -1,0 +1,1952 @@
+{
+  "modules": {
+    "__init__": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.__init__": {
+      "classes": {},
+      "functions": {
+        "hello": {
+          "calls": [],
+          "dependencies": [],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.cli": {
+      "classes": {},
+      "functions": {
+        "find_free_port": {
+          "calls": [
+            "range",
+            "s.bind",
+            "socket.socket"
+          ],
+          "dependencies": [
+            "socket.AF_INET",
+            "socket.socket",
+            "s.bind",
+            "socket.SOCK_STREAM",
+            "socket"
+          ],
+          "is_async": false
+        },
+        "cli": {
+          "calls": [
+            "click.echo",
+            "core.tools.project_tools.ProjectTools",
+            "find_free_port",
+            "uvicorn.run",
+            "tools.start_monitoring"
+          ],
+          "dependencies": [
+            "click.echo",
+            "os.environ",
+            "core.tools.project_tools.ProjectTools",
+            "os",
+            "os.path",
+            "uvicorn",
+            "click",
+            "uvicorn.run",
+            "tools.start_monitoring"
+          ],
+          "is_async": false
+        },
+        "main": {
+          "calls": [
+            "cli"
+          ],
+          "dependencies": [],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.web.config_types": {
+      "classes": {
+        "ToolOptionType": {
+          "bases": [
+            "Enum"
+          ],
+          "dependencies": [
+            "Enum"
+          ],
+          "methods": {
+            "__str__": {
+              "calls": [],
+              "dependencies": [
+                "self.value"
+              ],
+              "is_async": false
+            }
+          }
+        },
+        "BooleanOptionValue": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "ChoiceOptionValue": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "NumberOptionValue": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "ToolOptionValue": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "typing.Any",
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "ToolOption": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "ToolConfig": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "Tools": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.web.__init__": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.web.app": {
+      "classes": {},
+      "functions": {
+        "startup_event": {
+          "calls": [
+            "print",
+            "RuntimeError",
+            "api.config.init_config",
+            "api.history.get_report_manager"
+          ],
+          "dependencies": [
+            "os.environ",
+            "api.config.init_config",
+            "os",
+            "api.history.get_report_manager",
+            "app.dependency_overrides"
+          ],
+          "is_async": true
+        },
+        "home": {
+          "calls": [
+            "templates.TemplateResponse"
+          ],
+          "dependencies": [
+            "templates.TemplateResponse"
+          ],
+          "is_async": true
+        },
+        "history_view": {
+          "calls": [
+            "templates.TemplateResponse"
+          ],
+          "dependencies": [
+            "templates.TemplateResponse"
+          ],
+          "is_async": true
+        }
+      }
+    },
+    "ohmyprompt.utils.report_manager": {
+      "classes": {
+        "ReportManager": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "template_path.exists",
+                "formatters.formatter_factory.FormatterFactory",
+                "logger.warning",
+                "pathlib.Path",
+                "template_path.read_text",
+                "ConfigService.get_instance"
+              ],
+              "dependencies": [
+                "template_path.exists",
+                "formatters.formatter_factory.FormatterFactory",
+                "logger.warning",
+                "self.formatter_factory",
+                "self.config_service",
+                "pathlib.Path",
+                "services.config_service.ConfigService",
+                "self.template",
+                "self.history_path",
+                "template_path.read_text",
+                "ConfigService.get_instance"
+              ],
+              "is_async": false
+            },
+            "create": {
+              "calls": [
+                "cls",
+                "RuntimeError",
+                "pathlib.Path",
+                "ConfigService.get_instance"
+              ],
+              "dependencies": [
+                "config_service._config_manager",
+                "services.config_service.ConfigService",
+                "pathlib.Path",
+                "ConfigService.get_instance"
+              ],
+              "is_async": false
+            },
+            "save_results": {
+              "calls": [
+                "logger.warning",
+                "logger.info",
+                "self._format_structure",
+                "result_file.write_text",
+                "datetime.fromtimestamp",
+                "formatter.format",
+                "float",
+                "isinstance",
+                "logger.error",
+                "markdown_content.extend",
+                "int",
+                "results.items",
+                "markdown_content.append",
+                "str"
+              ],
+              "dependencies": [
+                "logger.warning",
+                "self.formatter_factory",
+                "self._format_structure",
+                "result_file.write_text",
+                "logger.info",
+                "datetime.datetime",
+                "datetime.fromtimestamp",
+                "formatter.format",
+                "logger.error",
+                "markdown_content.extend",
+                "results.items",
+                "self.history_path",
+                "markdown_content.append"
+              ],
+              "is_async": false
+            },
+            "_format_structure": {
+              "calls": [
+                "lines.extend",
+                "self._format_structure",
+                "len",
+                "logger.error",
+                "lines.append",
+                "sorted",
+                "structure.items",
+                "isinstance",
+                "enumerate"
+              ],
+              "dependencies": [
+                "lines.extend",
+                "self._format_structure",
+                "logger.error",
+                "lines.append",
+                "structure.items"
+              ],
+              "is_async": false
+            },
+            "generate_report": {
+              "calls": [
+                "analysis_results.get",
+                "self._format_structure",
+                "formatter.format",
+                "tool_results.get",
+                "logger.error",
+                "datetime.now",
+                "str"
+              ],
+              "dependencies": [
+                "analysis_results.get",
+                "self.formatter_factory",
+                "self._format_structure",
+                "datetime.datetime",
+                "formatter.format",
+                "tool_results.get",
+                "logger.error",
+                "self.template",
+                "datetime.now"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.file_utils": {
+      "classes": {},
+      "functions": {
+        "_should_ignore": {
+          "calls": [
+            "any",
+            "basename.startswith",
+            "path.split",
+            "fnmatch.fnmatch"
+          ],
+          "dependencies": [
+            "os",
+            "os.path",
+            "os.sep",
+            "basename.startswith",
+            "path.split",
+            "fnmatch.fnmatch",
+            "fnmatch"
+          ],
+          "is_async": false
+        },
+        "_walk": {
+          "calls": [
+            "os.listdir",
+            "_walk",
+            "_should_ignore"
+          ],
+          "dependencies": [
+            "os.listdir",
+            "os.path",
+            "os"
+          ],
+          "is_async": false
+        },
+        "get_file_structure": {
+          "calls": [
+            "list",
+            "_walk",
+            "config_service.get_exclude_patterns",
+            "ConfigService.get_instance"
+          ],
+          "dependencies": [
+            "services.config_service.ConfigService",
+            "config_service.get_exclude_patterns",
+            "ConfigService.get_instance",
+            "typing.Any"
+          ],
+          "is_async": false
+        },
+        "should_exclude": {
+          "calls": [
+            "rel_path.split",
+            "fnmatch.fnmatch"
+          ],
+          "dependencies": [
+            "os",
+            "rel_path.split",
+            "os.path",
+            "os.sep",
+            "fnmatch.fnmatch",
+            "fnmatch"
+          ],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.utils.shell_utils": {
+      "classes": {},
+      "functions": {
+        "execute_bash": {
+          "calls": [
+            "str",
+            "process.kill",
+            "process.communicate",
+            "subprocess.Popen"
+          ],
+          "dependencies": [
+            "subprocess",
+            "subprocess.TimeoutExpired",
+            "subprocess.PIPE",
+            "process.communicate",
+            "process.kill",
+            "process.returncode",
+            "subprocess.Popen"
+          ],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.utils.config_utils": {
+      "classes": {
+        "EnumEncoder": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "default": {
+              "calls": [
+                "super",
+                "isinstance"
+              ],
+              "dependencies": [
+                "enum.Enum",
+                "obj.value"
+              ],
+              "is_async": false
+            }
+          }
+        },
+        "ConfigManager": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "pathlib.Path",
+                "self._ensure_config_dir"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "self.config_file",
+                "pathlib.Path",
+                "self._ensure_config_dir",
+                "self.history_path",
+                "self.config_dir"
+              ],
+              "is_async": false
+            },
+            "_ensure_config_dir": {
+              "calls": [],
+              "dependencies": [
+                "self.history_path",
+                "self.config_dir"
+              ],
+              "is_async": false
+            },
+            "load_config": {
+              "calls": [
+                "print",
+                "json.loads"
+              ],
+              "dependencies": [
+                "self.config_file",
+                "json",
+                "json.loads"
+              ],
+              "is_async": false
+            },
+            "save_config": {
+              "calls": [
+                "print",
+                "json.dumps"
+              ],
+              "dependencies": [
+                "self.config_file",
+                "json",
+                "json.dumps"
+              ],
+              "is_async": false
+            },
+            "get_history_path": {
+              "calls": [],
+              "dependencies": [
+                "self.history_path"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {
+        "get_python_version": {
+          "calls": [
+            "print",
+            "full_version.split",
+            "platform.python_version"
+          ],
+          "dependencies": [
+            "full_version.split",
+            "platform",
+            "platform.python_version"
+          ],
+          "is_async": false
+        },
+        "get_platform": {
+          "calls": [],
+          "dependencies": [
+            "sys",
+            "sys.platform"
+          ],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.services.config_service": {
+      "classes": {
+        "ConfigService": {
+          "bases": [],
+          "dependencies": [
+            "utils.config_utils.ConfigManager",
+            "typing.Any",
+            "typing.Optional"
+          ],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "RuntimeError"
+              ],
+              "dependencies": [],
+              "is_async": false
+            },
+            "initialize": {
+              "calls": [
+                "object.__new__",
+                "cls._load_or_create_config",
+                "str",
+                "utils.config_utils.ConfigManager"
+              ],
+              "dependencies": [
+                "cls._config_manager",
+                "object.__new__",
+                "cls._instance",
+                "cls._load_or_create_config",
+                "utils.config_utils.ConfigManager"
+              ],
+              "is_async": false
+            },
+            "get_instance": {
+              "calls": [
+                "RuntimeError"
+              ],
+              "dependencies": [
+                "cls._instance"
+              ],
+              "is_async": false
+            },
+            "_load_or_create_config": {
+              "calls": [
+                "print",
+                "cls._ensure_config_integrity",
+                "RuntimeError",
+                "dict"
+              ],
+              "dependencies": [
+                "web.config.DEFAULT_CONFIG",
+                "cls._ensure_config_integrity",
+                "cls._config",
+                "cls._config_manager"
+              ],
+              "is_async": false
+            },
+            "_ensure_config_integrity": {
+              "calls": [
+                "print",
+                "config.get"
+              ],
+              "dependencies": [
+                "web.config.DEFAULT_CONFIG",
+                "config.get",
+                "cls._config_manager"
+              ],
+              "is_async": false
+            },
+            "get_tool_config": {
+              "calls": [
+                "tools_config.get",
+                "ValueError",
+                "print",
+                "typing.cast",
+                "default_tools.get"
+              ],
+              "dependencies": [
+                "tools_config.get",
+                "web.config.DEFAULT_CONFIG",
+                "self._config",
+                "web.config_types.ToolConfig",
+                "typing.cast",
+                "default_tools.get"
+              ],
+              "is_async": false
+            },
+            "get_config": {
+              "calls": [],
+              "dependencies": [
+                "self._config"
+              ],
+              "is_async": false
+            },
+            "save_config": {
+              "calls": [
+                "RuntimeError",
+                "self._ensure_config_integrity"
+              ],
+              "dependencies": [
+                "self._config",
+                "self._config_manager",
+                "self._ensure_config_integrity"
+              ],
+              "is_async": false
+            },
+            "get_exclude_patterns": {
+              "calls": [
+                "config_exclude.get",
+                "set"
+              ],
+              "dependencies": [
+                "config_exclude.get",
+                "self._config"
+              ],
+              "is_async": false
+            },
+            "get_update_interval": {
+              "calls": [],
+              "dependencies": [
+                "self._config"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.radon_tool": {
+      "classes": {
+        "CommandValue": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "CommandOption": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "RadonTool": {
+          "bases": [
+            "BaseTool"
+          ],
+          "dependencies": [
+            "BaseTool"
+          ],
+          "methods": {
+            "get_tool_name": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            },
+            "check_installation": {
+              "calls": [
+                "utils.shell_utils.execute_bash"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "utils.shell_utils.execute_bash"
+              ],
+              "is_async": false
+            },
+            "run": {
+              "calls": [
+                "value_dict.get",
+                "self._handle_command_output",
+                "self._create_error_result",
+                "tool_config.get",
+                "options.get",
+                "typing.cast",
+                "self._run_radon_command",
+                "isinstance",
+                "str",
+                "commands_option.get"
+              ],
+              "dependencies": [
+                "value_dict.get",
+                "self._create_error_result",
+                "self.config_service",
+                "tool_config.get",
+                "typing.cast",
+                "self._handle_command_output",
+                "self._run_radon_command",
+                "options.get",
+                "commands_option.get"
+              ],
+              "is_async": false
+            },
+            "_run_radon_command": {
+              "calls": [
+                "self._prepare_radon_args",
+                "subprocess.run",
+                "cmd_args.append"
+              ],
+              "dependencies": [
+                "subprocess",
+                "self.project_root",
+                "cmd_args.append",
+                "subprocess.run",
+                "self._prepare_radon_args",
+                "result.stdout"
+              ],
+              "is_async": false
+            },
+            "_prepare_radon_args": {
+              "calls": [
+                "option.replace",
+                "cmd_args.append",
+                "cmd_args.extend",
+                "options.get",
+                "str"
+              ],
+              "dependencies": [
+                "options.get",
+                "cmd_args.extend",
+                "option.replace",
+                "cmd_args.append"
+              ],
+              "is_async": false
+            },
+            "_handle_command_output": {
+              "calls": [
+                "self._create_error_result",
+                "handlers.get",
+                "handler"
+              ],
+              "dependencies": [
+                "self._create_error_result",
+                "self._handle_mi_output",
+                "self._handle_raw_output",
+                "self._handle_cc_output",
+                "self._handle_hal_output",
+                "handlers.get"
+              ],
+              "is_async": false
+            },
+            "_handle_cc_output": {
+              "calls": [
+                "self._process_complexity_data",
+                "self._create_error_result",
+                "self._calculate_complexity_stats",
+                "json.loads",
+                "str"
+              ],
+              "dependencies": [
+                "self._process_complexity_data",
+                "json",
+                "self._create_error_result",
+                "self._calculate_complexity_stats",
+                "json.loads"
+              ],
+              "is_async": false
+            },
+            "_handle_mi_output": {
+              "calls": [
+                "self._create_error_result",
+                "round",
+                "len",
+                "json.loads",
+                "sum",
+                "float",
+                "self._is_valid_number",
+                "mi_data.values",
+                "str"
+              ],
+              "dependencies": [
+                "json",
+                "self._create_error_result",
+                "json.loads",
+                "self._is_valid_number",
+                "mi_data.values"
+              ],
+              "is_async": false
+            },
+            "_handle_raw_output": {
+              "calls": [
+                "self._create_error_result",
+                "str",
+                "json.loads"
+              ],
+              "dependencies": [
+                "self._create_error_result",
+                "json",
+                "json.loads"
+              ],
+              "is_async": false
+            },
+            "_handle_hal_output": {
+              "calls": [
+                "self._create_error_result",
+                "str",
+                "json.loads"
+              ],
+              "dependencies": [
+                "self._create_error_result",
+                "json",
+                "json.loads"
+              ],
+              "is_async": false
+            },
+            "_process_complexity_data": {
+              "calls": [
+                "data.items",
+                "self._get_function_type"
+              ],
+              "dependencies": [
+                "data.items",
+                "self._get_function_type"
+              ],
+              "is_async": false
+            },
+            "_calculate_complexity_stats": {
+              "calls": [
+                "round",
+                "len",
+                "sum",
+                "complexity_data.values",
+                "all_complexities.append"
+              ],
+              "dependencies": [
+                "complexity_data.values",
+                "all_complexities.append"
+              ],
+              "is_async": false
+            },
+            "_get_function_type": {
+              "calls": [
+                "func.get"
+              ],
+              "dependencies": [
+                "func.get"
+              ],
+              "is_async": false
+            },
+            "_is_valid_number": {
+              "calls": [
+                "float"
+              ],
+              "dependencies": [],
+              "is_async": false
+            },
+            "_create_error_result": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.ruff_tool": {
+      "classes": {
+        "RuffTool": {
+          "bases": [
+            "BaseTool"
+          ],
+          "dependencies": [
+            "BaseTool"
+          ],
+          "methods": {
+            "get_tool_name": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            },
+            "check_installation": {
+              "calls": [
+                "utils.shell_utils.execute_bash"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "utils.shell_utils.execute_bash"
+              ],
+              "is_async": false
+            },
+            "run": {
+              "calls": [
+                "utils.shell_utils.execute_bash",
+                "self.build_command",
+                "stdout.strip",
+                "filter",
+                "self.check_installation",
+                "stderr.strip"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "utils.shell_utils.execute_bash",
+                "self.build_command",
+                "stdout.strip",
+                "self.check_installation",
+                "stderr.strip"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.__Init__": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.mypy_tool": {
+      "classes": {
+        "MypyTool": {
+          "bases": [
+            "BaseTool"
+          ],
+          "dependencies": [
+            "BaseTool"
+          ],
+          "methods": {
+            "get_tool_name": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            },
+            "check_installation": {
+              "calls": [
+                "utils.shell_utils.execute_bash"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "utils.shell_utils.execute_bash"
+              ],
+              "is_async": false
+            },
+            "run": {
+              "calls": [
+                "utils.shell_utils.execute_bash",
+                "self.build_command",
+                "stdout.strip",
+                "self.check_installation",
+                "stderr.strip"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "utils.shell_utils.execute_bash",
+                "self.build_command",
+                "stdout.strip",
+                "self.check_installation",
+                "stderr.strip"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.project_tools": {
+      "classes": {
+        "ToolFactory": {
+          "bases": [],
+          "dependencies": [
+            "radon_tool.RadonTool",
+            "mypy_tool.MypyTool",
+            "ruff_tool.RuffTool",
+            "base.BaseTool"
+          ],
+          "methods": {
+            "create_tool": {
+              "calls": [
+                "ValueError",
+                "tool_class"
+              ],
+              "dependencies": [
+                "cls._tools"
+              ],
+              "is_async": false
+            }
+          }
+        },
+        "ProjectTools": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "ReportManager.create",
+                "set",
+                "exclude_patterns.get",
+                "logging.getLogger",
+                "ConfigService.initialize",
+                "ConfigService.get_instance"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "self.update_interval",
+                "ReportManager.create",
+                "os",
+                "self.exclude_patterns",
+                "os.path",
+                "self.config_service",
+                "logging.INFO",
+                "utils.report_manager.ReportManager",
+                "services.config_service.ConfigService",
+                "self.history_manager",
+                "exclude_patterns.get",
+                "logging.getLogger",
+                "self.running",
+                "ConfigService.initialize",
+                "self.logger",
+                "logging",
+                "ConfigService.get_instance"
+              ],
+              "is_async": false
+            },
+            "monitoring_loop": {
+              "calls": [
+                "self._run_analysis",
+                "print",
+                "range",
+                "time.sleep"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "self.update_interval",
+                "self._run_analysis",
+                "self.running",
+                "time",
+                "time.sleep"
+              ],
+              "is_async": false
+            },
+            "start_monitoring": {
+              "calls": [
+                "threading.Thread",
+                "monitor_thread.start"
+              ],
+              "dependencies": [
+                "threading.Thread",
+                "threading",
+                "self.running",
+                "monitor_thread.daemon",
+                "monitor_thread.start"
+              ],
+              "is_async": false
+            },
+            "_run_analysis": {
+              "calls": [
+                "config.get",
+                "ToolFactory.create_tool",
+                "tool.run",
+                "tool.get",
+                "print",
+                "results.get",
+                "utils.file_utils.get_file_structure",
+                "enabled_tools.items",
+                "tool_config.get",
+                "time.time",
+                "list",
+                "str"
+              ],
+              "dependencies": [
+                "config.get",
+                "self.project_root",
+                "ToolFactory.create_tool",
+                "tool.get",
+                "tool.run",
+                "self.exclude_patterns",
+                "self.config_service",
+                "results.get",
+                "self.history_manager",
+                "utils.file_utils.get_file_structure",
+                "enabled_tools.items",
+                "tool_config.get",
+                "time.time",
+                "time"
+              ],
+              "is_async": false
+            },
+            "run_analysis": {
+              "calls": [
+                "ToolFactory.create_tool",
+                "tool.run",
+                "enabled_tools.items",
+                "tool_config.get",
+                "tool.check_installation",
+                "str"
+              ],
+              "dependencies": [
+                "self.project_root",
+                "ToolFactory.create_tool",
+                "tool.run",
+                "self.config_service",
+                "enabled_tools.items",
+                "tool_config.get",
+                "tool.check_installation"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.core.tools.base": {
+      "classes": {
+        "BaseTool": {
+          "bases": [
+            "ABC"
+          ],
+          "dependencies": [
+            "ABC"
+          ],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "ConfigService.get_instance"
+              ],
+              "dependencies": [
+                "services.config_service.ConfigService",
+                "self.project_root",
+                "ConfigService.get_instance",
+                "self.config_service"
+              ],
+              "is_async": false
+            },
+            "run": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            },
+            "check_installation": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            },
+            "build_command": {
+              "calls": [
+                "options.append",
+                "value.get",
+                "options.extend",
+                "cmd_parts.append",
+                "self.get_tool_name",
+                "print",
+                "cmd_parts.extend",
+                "isinstance",
+                "str",
+                "option.get"
+              ],
+              "dependencies": [
+                "options.append",
+                "value.get",
+                "options.extend",
+                "self.config_service",
+                "cmd_parts.append",
+                "self.get_tool_name",
+                "cmd_parts.extend",
+                "option.get"
+              ],
+              "is_async": false
+            },
+            "get_tool_name": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.web.config.radon_config": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.web.config.mypy_config": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.web.config.__init__": {
+      "classes": {
+        "ExcludePatterns": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "Tools": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "config_types.ToolConfig",
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "DefaultConfigType": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.web.config.ruff_config": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.web.config.manager": {
+      "classes": {
+        "ConfigManagerSingleton": {
+          "bases": [],
+          "dependencies": [
+            "utils.config_utils.ConfigManager"
+          ],
+          "methods": {
+            "init": {
+              "calls": [
+                "utils.config_utils.ConfigManager",
+                "print",
+                "RuntimeError",
+                "typing.cast"
+              ],
+              "dependencies": [
+                "typing.Any",
+                "cls._instance",
+                "cls._initialized",
+                "typing.cast",
+                "utils.config_utils.ConfigManager"
+              ],
+              "is_async": false
+            },
+            "get_instance": {
+              "calls": [],
+              "dependencies": [
+                "cls._instance"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {
+        "init_config": {
+          "calls": [
+            "ConfigManagerSingleton.init"
+          ],
+          "dependencies": [
+            "ConfigManagerSingleton.init"
+          ],
+          "is_async": false
+        },
+        "get_config_manager": {
+          "calls": [
+            "ConfigManagerSingleton.get_instance"
+          ],
+          "dependencies": [
+            "ConfigManagerSingleton.get_instance"
+          ],
+          "is_async": false
+        },
+        "get_project_root": {
+          "calls": [
+            "str",
+            "get_config_manager",
+            "RuntimeError"
+          ],
+          "dependencies": [
+            "config_manager.project_root"
+          ],
+          "is_async": false
+        },
+        "get_default_config": {
+          "calls": [
+            "typing.cast"
+          ],
+          "dependencies": [
+            "typing.cast"
+          ],
+          "is_async": false
+        }
+      }
+    },
+    "ohmyprompt.web.api.config": {
+      "classes": {
+        "ConfigResult": {
+          "bases": [
+            "TypedDict"
+          ],
+          "dependencies": [
+            "TypedDict"
+          ],
+          "methods": {}
+        },
+        "ApiConfigManager": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "__init__": {
+              "calls": [
+                "self._ensure_config_file"
+              ],
+              "dependencies": [
+                "self.config_file",
+                "self._ensure_config_file"
+              ],
+              "is_async": false
+            },
+            "_ensure_config_file": {
+              "calls": [],
+              "dependencies": [
+                "self.config_file"
+              ],
+              "is_async": false
+            },
+            "load_config": {
+              "calls": [
+                "json.loads"
+              ],
+              "dependencies": [
+                "self.config_file",
+                "json",
+                "json.loads"
+              ],
+              "is_async": false
+            },
+            "save_config": {
+              "calls": [
+                "json.dumps"
+              ],
+              "dependencies": [
+                "self.config_file",
+                "json",
+                "json.dumps"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {
+        "init_config": {
+          "calls": [
+            "ApiConfigManager",
+            "pathlib.Path"
+          ],
+          "dependencies": [
+            "pathlib.Path"
+          ],
+          "is_async": false
+        },
+        "get_config": {
+          "calls": [
+            "config_manager.load_config",
+            "fastapi.HTTPException"
+          ],
+          "dependencies": [
+            "config_manager.load_config",
+            "fastapi.HTTPException"
+          ],
+          "is_async": true
+        },
+        "update_config": {
+          "calls": [
+            "config_manager.save_config",
+            "fastapi.HTTPException"
+          ],
+          "dependencies": [
+            "config_manager.save_config",
+            "fastapi.HTTPException"
+          ],
+          "is_async": true
+        }
+      }
+    },
+    "ohmyprompt.web.api.__init__": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.web.api.exclude": {
+      "classes": {},
+      "functions": {
+        "get_exclude_patterns": {
+          "calls": [
+            "str",
+            "typing.cast",
+            "list",
+            "fastapi.HTTPException",
+            "config_service.get_exclude_patterns",
+            "ConfigService.get_instance"
+          ],
+          "dependencies": [
+            "services.config_service.ConfigService",
+            "typing.cast",
+            "fastapi.HTTPException",
+            "web.config.ExcludePatterns",
+            "config_service.get_exclude_patterns",
+            "ConfigService.get_instance"
+          ],
+          "is_async": true
+        },
+        "update_exclude_patterns": {
+          "calls": [
+            "config_service.save_config",
+            "config_service.get_config",
+            "typing.cast",
+            "fastapi.HTTPException",
+            "str",
+            "ConfigService.get_instance"
+          ],
+          "dependencies": [
+            "web.config.Config",
+            "config_service.save_config",
+            "config_service.get_config",
+            "services.config_service.ConfigService",
+            "typing.cast",
+            "fastapi.HTTPException",
+            "ConfigService.get_instance"
+          ],
+          "is_async": true
+        }
+      }
+    },
+    "ohmyprompt.web.api.history": {
+      "classes": {},
+      "functions": {
+        "get_report_manager": {
+          "calls": [
+            "pathlib.Path",
+            "reports.web_report_manager.WebReportManager"
+          ],
+          "dependencies": [
+            "pathlib.Path",
+            "reports.web_report_manager.WebReportManager"
+          ],
+          "is_async": false
+        },
+        "get_history_list": {
+          "calls": [
+            "manager.get_reports"
+          ],
+          "dependencies": [
+            "manager.get_reports"
+          ],
+          "is_async": true
+        },
+        "delete_history": {
+          "calls": [
+            "manager.remove_report"
+          ],
+          "dependencies": [
+            "manager.remove_report"
+          ],
+          "is_async": true
+        }
+      }
+    },
+    "ohmyprompt.web.reports.web_report_manager": {
+      "classes": {
+        "WebReportManager": {
+          "bases": [],
+          "dependencies": [],
+          "methods": {
+            "__init__": {
+              "calls": [],
+              "dependencies": [
+                "self.history_path"
+              ],
+              "is_async": false
+            },
+            "get_reports": {
+              "calls": [
+                "datetime.fromtimestamp",
+                "print",
+                "sorted",
+                "int",
+                "reports.append",
+                "file.read_text"
+              ],
+              "dependencies": [
+                "datetime.datetime",
+                "datetime.fromtimestamp",
+                "file.stem",
+                "reports.append",
+                "self.history_path",
+                "file.read_text"
+              ],
+              "is_async": false
+            },
+            "remove_report": {
+              "calls": [
+                "report_file.exists",
+                "report_file.unlink",
+                "FileNotFoundError"
+              ],
+              "dependencies": [
+                "self.history_path",
+                "report_file.exists",
+                "report_file.unlink"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.formatter_factory": {
+      "classes": {
+        "FormatterFactory": {
+          "bases": [],
+          "dependencies": [
+            "ruff_formatter.RuffFormatter",
+            "base.ReportFormatter",
+            "radon_formatter.RadonFormatter",
+            "mypy_formatter.MypyFormatter"
+          ],
+          "methods": {
+            "get_formatter": {
+              "calls": [
+                "ValueError",
+                "formatter_class"
+              ],
+              "dependencies": [
+                "cls._formatters"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.ruff_formatter": {
+      "classes": {
+        "RuffFormatter": {
+          "bases": [
+            "ReportFormatter"
+          ],
+          "dependencies": [
+            "ReportFormatter"
+          ],
+          "methods": {
+            "format": {
+              "calls": [
+                "lines.extend",
+                "errors.append",
+                "error_stats.items",
+                "data.get",
+                "error_stats.get",
+                "sorted",
+                "error.split",
+                "error.strip"
+              ],
+              "dependencies": [
+                "lines.extend",
+                "errors.append",
+                "error_stats.items",
+                "data.get",
+                "error_stats.get",
+                "error.split",
+                "error.strip"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.__init__": {
+      "classes": {},
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.radon_formatter": {
+      "classes": {
+        "RadonFormatter": {
+          "bases": [
+            "ReportFormatter"
+          ],
+          "dependencies": [
+            "ReportFormatter"
+          ],
+          "methods": {
+            "format": {
+              "calls": [
+                "self._format_cc_data",
+                "self._format_mi_data",
+                "lines.extend",
+                "self._format_basic_info",
+                "complexity.get"
+              ],
+              "dependencies": [
+                "self._format_cc_data",
+                "self._format_mi_data",
+                "lines.extend",
+                "self._format_basic_info",
+                "complexity.get"
+              ],
+              "is_async": false
+            },
+            "_format_basic_info": {
+              "calls": [
+                "complexity.get"
+              ],
+              "dependencies": [
+                "complexity.get"
+              ],
+              "is_async": false
+            },
+            "_format_cc_data": {
+              "calls": [
+                "self._filter_complex_functions",
+                "json.dumps",
+                "lines.extend"
+              ],
+              "dependencies": [
+                "self._filter_complex_functions",
+                "json.dumps",
+                "json",
+                "lines.extend"
+              ],
+              "is_async": false
+            },
+            "_format_mi_data": {
+              "calls": [
+                "lines.append",
+                "json.dumps",
+                "self._filter_problematic_files",
+                "lines.extend"
+              ],
+              "dependencies": [
+                "json",
+                "self._filter_problematic_files",
+                "json.dumps",
+                "lines.extend",
+                "lines.append"
+              ],
+              "is_async": false
+            },
+            "_filter_complex_functions": {
+              "calls": [
+                "func.get",
+                "isinstance",
+                "details.items"
+              ],
+              "dependencies": [
+                "func.get",
+                "details.items"
+              ],
+              "is_async": false
+            },
+            "_filter_problematic_files": {
+              "calls": [
+                "info.get",
+                "details.items"
+              ],
+              "dependencies": [
+                "info.get",
+                "details.items"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.mypy_formatter": {
+      "classes": {
+        "MypyFormatter": {
+          "bases": [
+            "ReportFormatter"
+          ],
+          "dependencies": [
+            "ReportFormatter"
+          ],
+          "methods": {
+            "format": {
+              "calls": [
+                "any",
+                "lines.extend",
+                "type_check.get",
+                "lines.append"
+              ],
+              "dependencies": [
+                "lines.extend",
+                "type_check.get",
+                "lines.append"
+              ],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    },
+    "ohmyprompt.utils.formatters.base": {
+      "classes": {
+        "ReportFormatter": {
+          "bases": [
+            "ABC"
+          ],
+          "dependencies": [
+            "ABC"
+          ],
+          "methods": {
+            "format": {
+              "calls": [],
+              "dependencies": [],
+              "is_async": false
+            }
+          }
+        }
+      },
+      "functions": {}
+    }
+  },
+  "statistics": {
+    "call_frequencies": {
+      "ConfigService.get_instance": 7,
+      "utils.shell_utils.execute_bash": 5,
+      "tool_config.get": 3,
+      "templates.TemplateResponse": 2,
+      "formatter.format": 2,
+      "fnmatch.fnmatch": 2,
+      "_walk": 2,
+      "config_service.get_exclude_patterns": 2,
+      "utils.config_utils.ConfigManager": 2,
+      "cmd_args.append": 2,
+      "func.get": 2,
+      "stdout.strip": 2,
+      "stderr.strip": 2,
+      "ToolFactory.create_tool": 2,
+      "tool.run": 2,
+      "enabled_tools.items": 2,
+      "complexity.get": 2,
+      "details.items": 2,
+      "s.bind": 1,
+      "socket.socket": 1,
+      "click.echo": 1,
+      "core.tools.project_tools.ProjectTools": 1,
+      "find_free_port": 1,
+      "uvicorn.run": 1,
+      "tools.start_monitoring": 1,
+      "cli": 1,
+      "api.config.init_config": 1,
+      "api.history.get_report_manager": 1,
+      "template_path.exists": 1,
+      "formatters.formatter_factory.FormatterFactory": 1,
+      "template_path.read_text": 1,
+      "result_file.write_text": 1,
+      "markdown_content.extend": 1,
+      "results.items": 1,
+      "markdown_content.append": 1,
+      "structure.items": 1,
+      "enumerate": 1,
+      "analysis_results.get": 1,
+      "tool_results.get": 1,
+      "basename.startswith": 1,
+      "_should_ignore": 1,
+      "rel_path.split": 1,
+      "process.kill": 1,
+      "process.communicate": 1,
+      "super": 1,
+      "full_version.split": 1,
+      "platform.python_version": 1,
+      "object.__new__": 1,
+      "tools_config.get": 1,
+      "default_tools.get": 1,
+      "config_exclude.get": 1,
+      "value_dict.get": 1,
+      "commands_option.get": 1,
+      "option.replace": 1,
+      "cmd_args.extend": 1,
+      "handlers.get": 1,
+      "handler": 1,
+      "mi_data.values": 1,
+      "complexity_data.values": 1,
+      "all_complexities.append": 1,
+      "filter": 1,
+      "tool_class": 1,
+      "ReportManager.create": 1,
+      "exclude_patterns.get": 1,
+      "ConfigService.initialize": 1,
+      "monitor_thread.start": 1,
+      "tool.get": 1,
+      "results.get": 1,
+      "utils.file_utils.get_file_structure": 1,
+      "tool.check_installation": 1,
+      "cmd_parts.append": 1,
+      "cmd_parts.extend": 1,
+      "option.get": 1,
+      "ConfigManagerSingleton.init": 1,
+      "ConfigManagerSingleton.get_instance": 1,
+      "get_config_manager": 1,
+      "ApiConfigManager": 1,
+      "config_manager.load_config": 1,
+      "config_manager.save_config": 1,
+      "config_service.save_config": 1,
+      "config_service.get_config": 1,
+      "reports.web_report_manager.WebReportManager": 1,
+      "manager.get_reports": 1,
+      "manager.remove_report": 1,
+      "reports.append": 1,
+      "report_file.exists": 1,
+      "report_file.unlink": 1,
+      "formatter_class": 1,
+      "error_stats.items": 1,
+      "error_stats.get": 1,
+      "type_check.get": 1
+    },
+    "dependency_frequencies": {
+      "services.config_service.ConfigService": 7,
+      "ConfigService.get_instance": 7,
+      "utils.shell_utils.execute_bash": 5,
+      "utils.config_utils.ConfigManager": 4,
+      "web.config.DEFAULT_CONFIG": 3,
+      "tool_config.get": 3,
+      "BaseTool": 3,
+      "ReportFormatter": 3,
+      "templates.TemplateResponse": 2,
+      "formatter.format": 2,
+      "fnmatch.fnmatch": 2,
+      "fnmatch": 2,
+      "config_service.get_exclude_patterns": 2,
+      "cmd_args.append": 2,
+      "func.get": 2,
+      "stdout.strip": 2,
+      "stderr.strip": 2,
+      "ToolFactory.create_tool": 2,
+      "tool.run": 2,
+      "enabled_tools.items": 2,
+      "ABC": 2,
+      "complexity.get": 2,
+      "details.items": 2,
+      "socket.AF_INET": 1,
+      "socket.socket": 1,
+      "s.bind": 1,
+      "socket.SOCK_STREAM": 1,
+      "socket": 1,
+      "click.echo": 1,
+      "core.tools.project_tools.ProjectTools": 1,
+      "uvicorn": 1,
+      "click": 1,
+      "uvicorn.run": 1,
+      "tools.start_monitoring": 1,
+      "Enum": 1,
+      "api.config.init_config": 1,
+      "api.history.get_report_manager": 1,
+      "app.dependency_overrides": 1,
+      "template_path.exists": 1,
+      "formatters.formatter_factory.FormatterFactory": 1,
+      "template_path.read_text": 1,
+      "config_service._config_manager": 1,
+      "result_file.write_text": 1,
+      "markdown_content.extend": 1,
+      "results.items": 1,
+      "markdown_content.append": 1,
+      "structure.items": 1,
+      "analysis_results.get": 1,
+      "tool_results.get": 1,
+      "basename.startswith": 1,
+      "rel_path.split": 1,
+      "process.communicate": 1,
+      "process.kill": 1,
+      "process.returncode": 1,
+      "full_version.split": 1,
+      "platform": 1,
+      "platform.python_version": 1,
+      "object.__new__": 1,
+      "tools_config.get": 1,
+      "web.config_types.ToolConfig": 1,
+      "default_tools.get": 1,
+      "config_exclude.get": 1,
+      "value_dict.get": 1,
+      "commands_option.get": 1,
+      "cmd_args.extend": 1,
+      "option.replace": 1,
+      "handlers.get": 1,
+      "mi_data.values": 1,
+      "complexity_data.values": 1,
+      "all_complexities.append": 1,
+      "radon_tool.RadonTool": 1,
+      "mypy_tool.MypyTool": 1,
+      "ruff_tool.RuffTool": 1,
+      "ReportManager.create": 1,
+      "utils.report_manager.ReportManager": 1,
+      "exclude_patterns.get": 1,
+      "ConfigService.initialize": 1,
+      "monitor_thread.daemon": 1,
+      "monitor_thread.start": 1,
+      "tool.get": 1,
+      "results.get": 1,
+      "utils.file_utils.get_file_structure": 1,
+      "tool.check_installation": 1,
+      "cmd_parts.append": 1,
+      "cmd_parts.extend": 1,
+      "option.get": 1,
+      "config_types.ToolConfig": 1,
+      "ConfigManagerSingleton.init": 1,
+      "ConfigManagerSingleton.get_instance": 1,
+      "config_manager.project_root": 1,
+      "config_manager.load_config": 1,
+      "config_manager.save_config": 1,
+      "web.config.ExcludePatterns": 1,
+      "web.config.Config": 1,
+      "config_service.save_config": 1,
+      "config_service.get_config": 1,
+      "reports.web_report_manager.WebReportManager": 1,
+      "manager.get_reports": 1,
+      "manager.remove_report": 1,
+      "reports.append": 1,
+      "report_file.exists": 1,
+      "report_file.unlink": 1,
+      "ruff_formatter.RuffFormatter": 1,
+      "radon_formatter.RadonFormatter": 1,
+      "mypy_formatter.MypyFormatter": 1,
+      "error_stats.items": 1,
+      "error_stats.get": 1,
+      "type_check.get": 1
+    },
+    "circular_dependencies": []
+  }
+}
