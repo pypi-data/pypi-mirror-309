@@ -1,0 +1,13 @@
+
+[dev]
+flake8
+flake8-black
+pytest
+black
+isort
+jupyter-console
+mkdocs
+mkdocs-bootstrap386
+mkdocstrings[python]
+toml
+validate-pyproject[all]
