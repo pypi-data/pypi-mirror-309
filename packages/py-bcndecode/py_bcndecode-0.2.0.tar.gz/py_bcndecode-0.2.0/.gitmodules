@@ -1,0 +1,3 @@
+[submodule "bcndecode"]
+	path = bcndecode
+	url = https://github.com/ifeherva/bcndecode.git

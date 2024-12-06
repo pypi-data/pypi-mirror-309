@@ -1,0 +1,120 @@
+name: Python Package
+
+on:
+  push:
+    branches:
+     - main
+    tags:
+      - '*'
+
+  merge_group:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - 'macos-13'
+          - 'windows-latest'
+
+    runs-on: ${{ matrix.os }}
+    name: Wheel for ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: 'recursive'
+      
+      - name: Build wheels
+        run: pipx run cibuildwheel==2.14.1 --output-dir dist
+        env:
+          CIBW_BUILD: 'cp310-*'
+          CIBW_SKIP: '*-win32 *-manylinux_i686'
+
+      - name: Check if there are changes
+        run: git diff --exit-code
+
+      - name: Store the packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-${{ matrix.os }}
+          path: dist/
+
+  linux-build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/pyca/cryptography-manylinux_2_28:x86_64
+    name: Wheel for Linux
+    env:
+      RUSTUP_HOME: /root/.rustup
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: 'recursive'
+
+      - name: Avoid issues with Git's solution for CVE-2022-24765 breaking setuptools-scm
+        run: git config --global --add safe.directory $(pwd)
+
+      - uses: Swatinem/rust-cache@v2.7.5
+
+      - run: /opt/python/cp310-cp310/bin/python -m venv .venv
+     
+      - name: Update pip
+        run: .venv/bin/python -m pip install --upgrade pip
+
+      - name: Install Python packages
+        run: .venv/bin/python -m pip install --upgrade build auditwheel
+
+      - name: build wheel
+        run: .venv/bin/python -m build
+
+      - name: multilinux stuff
+        run: |
+          .venv/bin/python -m auditwheel repair --plat manylinux_2_28_x86_64 dist/*-linux_x86_64.whl -w dist
+          rm dist/*-linux_x86_64.whl
+
+      - name: Check if there are changes
+        run: git diff --exit-code
+
+      - name: Store the packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-package-linux
+          path: dist/
+
+  pypi:
+    runs-on: 'ubuntu-latest'
+    needs:
+      - build
+      - linux-build
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v4
+        with:
+          pattern: python-package-*
+          merge-multiple: true
+          path: dist/
+
+      - name: Publish 📦 to TestPyPI
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          verbose: true
+
+      - name: Publish 📦 to PyPI
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        uses: pypa/gh-action-pypi-publish@release/v1
