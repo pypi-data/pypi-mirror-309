@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include llm_structured_output_Detect_repairs/http_client.py
+recursive-include tests *
+
+
