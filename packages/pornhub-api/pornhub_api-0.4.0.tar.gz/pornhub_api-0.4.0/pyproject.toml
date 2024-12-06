@@ -1,0 +1,111 @@
+[tool.black]
+line-length = 88
+target-version = ["py36", "py37", "py38", "py39", "py310"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    pdms/templates
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pip-cache
+  | \.poetry
+  | \.venv
+  | \.vscode
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+combine_as_imports = true
+default_section = "LOCALFOLDER"
+no_lines_before = "LOCALFOLDER"
+force_grid_wrap = false
+include_trailing_comma = true
+known_first_party = """
+  coub_api
+"""
+known_third_party = """
+  pydantic
+  pytest
+"""
+line_length = 88
+multi_line_output = 3
+length_sort = "1"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+skip = ".eggs,.venv,venv"
+
+[tool.flake8]
+max-line-length=88
+
+[tool.mypy]
+ignore_missing_imports = true
+no_implicit_optional = false
+
+[tool.pytest.ini_options]
+markers = [
+    "webtest: marks tests as doing real http-call (deselect with '-m \"not webtest\"')",
+    "serial",
+]
+
+[tool.poetry]
+name = "pornhub-api"
+version = "0.4.0"
+description = ""
+authors = ["Andrew Grinevich <beule@gmail.com>"]
+readme = "README.rst"
+repository = "https://github.com/Derfirm/pornhub_api"
+license = "MIT"
+keywords = ["pornhub", "pornhub-api", "api-wrapper"]
+classifiers = [
+   'Development Status :: 2 - Pre-Alpha',
+   'Intended Audience :: Information Technology',
+   'Programming Language :: Python',
+   'License :: OSI Approved :: MIT License',
+   'Natural Language :: English',
+   'Operating System :: OS Independent',
+   'Programming Language :: Python',
+   'Programming Language :: Python :: 3',
+   'Programming Language :: Python :: 3.9',
+   'Programming Language :: Python :: 3.10',
+   'Programming Language :: Python :: 3.11',
+   'Topic :: Internet :: WWW/HTTP',
+   'Topic :: Software Development :: Libraries :: Python Modules',
+]
+packages = [
+    { include = "pornhub_api" },
+    { include = "README.rst" },
+    { include = "LICENSE" },
+]
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.9"
+pydantic = ">=1.4,<2.0"
+requests = ">=2.23.0"
+httpx = {version = ">=0.23.1", optional = true}
+aiohttp = "^3.11.5"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=22.10,<25.0"
+mypy = "==1.10.0"
+isort = "^5.7.0"
+pytest = ">=6.2.5"
+pytest-cov = ">=2.11.1"
+deepdiff = ">=5.8,<7.0"
+requests-mock = "^1.8.0"
+pytest-lazy-fixture = "^0.6.3"
+pytest-asyncio = ">=0.14.0"
+types-requests = "^2.28.11.5"
+pytest-httpx = "^0.21.2"
+aioresponses = "^0.7.7"
+
+[tool.poetry.extras]
+aiohttp-backend = ["aiohttp"]
+httpx-backend = ["httpx"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
