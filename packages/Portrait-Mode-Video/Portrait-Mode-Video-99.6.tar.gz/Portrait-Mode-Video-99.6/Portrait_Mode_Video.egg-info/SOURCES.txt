@@ -1,0 +1,7 @@
+main.py
+setup.py
+Portrait_Mode_Video.egg-info/PKG-INFO
+Portrait_Mode_Video.egg-info/SOURCES.txt
+Portrait_Mode_Video.egg-info/dependency_links.txt
+Portrait_Mode_Video.egg-info/requires.txt
+Portrait_Mode_Video.egg-info/top_level.txt
