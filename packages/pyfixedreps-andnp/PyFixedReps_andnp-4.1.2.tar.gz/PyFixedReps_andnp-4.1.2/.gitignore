@@ -1,0 +1,13 @@
+__pycache__/
+.vscode/
+.token
+*.pyc
+*.so
+
+env/
+dist/
+PyFixedReps_andnp*
+.pdm-python
+.venv/
+target/
+requirements.txt
