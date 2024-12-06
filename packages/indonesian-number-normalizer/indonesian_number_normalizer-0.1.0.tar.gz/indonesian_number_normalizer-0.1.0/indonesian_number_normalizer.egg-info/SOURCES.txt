@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+indonesian_number_normalizer/__init__.py
+indonesian_number_normalizer/constants.py
+indonesian_number_normalizer/normalizer.py
+indonesian_number_normalizer.egg-info/PKG-INFO
+indonesian_number_normalizer.egg-info/SOURCES.txt
+indonesian_number_normalizer.egg-info/dependency_links.txt
+indonesian_number_normalizer.egg-info/requires.txt
+indonesian_number_normalizer.egg-info/top_level.txt
+tests/test_normalizer.py
+tests/tests.py
