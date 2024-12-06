@@ -1,0 +1,6 @@
+pyproject.toml
+pyparsonic/__init__.py
+pyparsonic.egg-info/PKG-INFO
+pyparsonic.egg-info/SOURCES.txt
+pyparsonic.egg-info/dependency_links.txt
+pyparsonic.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+[project]
+name = "pyparsonic"
+version = "0.0.0-alpha1"
+authors = [
+  {name = "Simon Schoonjans", email = "simon.schoonjans99@gmail.com"},
+]
+description = "Coming soon"
