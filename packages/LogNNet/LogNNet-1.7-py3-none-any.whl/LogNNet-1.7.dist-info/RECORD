@@ -1,0 +1,10 @@
+LogNNet/__init__.py,sha256=0gI2OdD2FOnOmL6W3V3paSNyCFZrpYCbzpuFqQhvrZ8,48
+LogNNet/mlp_evaluation.py,sha256=TBoCLlF0C6ajRX5p2r0tOuP_ruCzvpXV-yAUOrjg0SI,13255
+LogNNet/neural_network.py,sha256=99oRNaW-P88s969P01fl5_GqnoCbYHef2T2_78FXYR0,31862
+LogNNet/pso_method.py,sha256=CGfYu43YPb5KjGpY35GGK6qapZvQIAbNfacY3nkmLcU,10589
+LogNNet/utility.py,sha256=W5TNPGXwfWdwe1nz5FsqcB0jR_DxaWOStRq79QEE-b0,7143
+LogNNet-1.7.dist-info/LICENSE,sha256=fpbS3OZAu0EeEYMUybadk-HCy88UWThIn_SAGU4Q098,1094
+LogNNet-1.7.dist-info/METADATA,sha256=oq21YtGahjpZRZ72BoIkZDNPKOigzSiEXrcgWYMyOI4,17092
+LogNNet-1.7.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+LogNNet-1.7.dist-info/top_level.txt,sha256=c4GilvSs9WVQs_YDudrdNygT1HrCkc418H7prN5vnbY,8
+LogNNet-1.7.dist-info/RECORD,,
