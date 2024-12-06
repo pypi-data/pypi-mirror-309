@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin>=0.13"]
+build-backend = "maturin"
+
+[project]
+name = "box-intersect-lib-py"
+requires-python = ">=3.7"
+requires = ["numpy"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool]
+
+[tool.maturin]
+manifest-path = "box-intersect-lib-py/Cargo.toml"
+
