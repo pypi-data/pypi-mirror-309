@@ -1,0 +1,11 @@
+pynpdc/__init__.py,sha256=PdluC2JfbFhjhfjDNgwTVGGnZD_0FswF1_OcITURql0,1217
+pynpdc/auth_client.py,sha256=hiDm4_ZDMoVC1Limv9ksSjLTMAslJg0QcxZqF2oq0tg,6983
+pynpdc/dataset_client.py,sha256=HTJlqLYUl0rkynkGeF0JP9EdJyQeeLYMQJZTCLAEeis,29628
+pynpdc/exception.py,sha256=3r4RVwl1c9zk61cW9oDe61j4PbFiXT-96SsB4nh89yE,413
+pynpdc/models.py,sha256=HFkRDDjf8eAFTKR3VioHn5K-DBuolj5vnHs3LZ1KN1M,30409
+pynpdc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynpdc/utils.py,sha256=FxF45Of_KyQDacVyiOLt3khLqRx_Tmkw0ISdP7eNAC8,579
+pynpdc-0.19.1.dist-info/METADATA,sha256=ZYKZbZ6xo11tMZP2OCbTtF8vHLlDuecc3_UFJGCAZek,7405
+pynpdc-0.19.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pynpdc-0.19.1.dist-info/top_level.txt,sha256=PE-ZKYkhhtzshhQZVwoFXq_pcULwk8KBT3u4-B7bbIg,7
+pynpdc-0.19.1.dist-info/RECORD,,
