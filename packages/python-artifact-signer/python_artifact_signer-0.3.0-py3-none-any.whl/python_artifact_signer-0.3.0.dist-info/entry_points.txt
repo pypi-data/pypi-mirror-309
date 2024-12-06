@@ -1,0 +1,3 @@
+[console_scripts]
+python-artifact-signer=python_artifact_signer.main:main
+
