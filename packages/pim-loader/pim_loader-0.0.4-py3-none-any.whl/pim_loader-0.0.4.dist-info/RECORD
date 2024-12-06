@@ -1,0 +1,8 @@
+pim_loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pim_loader/__main__.py,sha256=xB-y1ZJewXPwCxdsK0c8w_yjbgej0cIwBKgUYpVKq6g,56
+pim_loader/constants.py,sha256=HbrkH0FE7T_tJlB9ShrzVT7RJwyfwhDCTLHekIJ4sy8,1427
+pim_loader/pim_api.py,sha256=M3SnAbhM9m5tLHPb26-sdlptkjkvMPY87Ch2Uxr2VYg,13877
+pim_loader-0.0.4.dist-info/METADATA,sha256=nPHe_CCjAkxfzLiuDdf1j7CMHX1cSTVxxYa9VBjMjFA,300
+pim_loader-0.0.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pim_loader-0.0.4.dist-info/licenses/LICENSE,sha256=K0IsYkRfzg8Wc-WJk62qyiWmj7VaGIO1vLJnlmK6Q84,1086
+pim_loader-0.0.4.dist-info/RECORD,,
