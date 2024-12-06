@@ -1,0 +1,15 @@
+test.py,sha256=77gylSJ95O0A7tGP3vCnANp-a7vqKdzm-lUYGMYThzM,722
+test_time.py,sha256=z_yptJipqBaV8X_omE4sgnzthI71MQjY-vdC-lYDJIU,2441
+polyquad/__init__.py,sha256=OitL3JvaUIy8luGQ8fw3wxJU5dqT5lC5qIpcONhHz0M,1137
+polyquad/_antonietti.py,sha256=ZOooQus7cCVlHwIiIFXD0VKiEYjmmFesiJgUCjCXTBM,13642
+polyquad/_main.py,sha256=fCmuGutBMB5_5njC4qC42dj3POOJWvyey9LJdgSH3Fs,3294
+polyquad/_mapping.py,sha256=oKcrgcVRWk63rG2ECB9XO5zLG-zQpcudriA7iXqB718,1586
+polyquad/_moment_matching_2d.py,sha256=bsHHRgLx9Dk9YQ9m8WZSy2QAJILij_rYiSKKh2dUquU,2377
+polyquad/_moment_matching_3d.py,sha256=WCEYhkobCkhSKsOAdjjujqfIvT0yMSlA6ueqyHGjePk,2491
+polyquad/_oldAnto.py,sha256=-dQHkJvIcudzo9XJ9pEKxTvZVIGxvL_lfKyR8cJRSxI,10820
+polyquad/_utils.py,sha256=iJMEdOLeF7E_V8NQGTZMEzvWIVV5YI_YbX_O2GrAATs,1896
+polyquad-0.1.dist-info/LICENSE,sha256=tYHBwyPab6d93LZjIZvkvZ_ekXihsRBhAWTsC9Dv8bo,1102
+polyquad-0.1.dist-info/METADATA,sha256=BaEunRE9WWUz5xdlpRkKxqy3M2g6evh665VfdzIN5hw,5019
+polyquad-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+polyquad-0.1.dist-info/top_level.txt,sha256=fyYd_tHvu0YXSId25F0Tg-UlbdCgsjmTH9W-2tVyNIY,9
+polyquad-0.1.dist-info/RECORD,,
