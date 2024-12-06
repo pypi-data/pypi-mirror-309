@@ -1,0 +1,7 @@
+numpy
+pandas
+torch
+torchvision
+torchmetrics>=0.11.0
+pycocotools
+scikit-learn
