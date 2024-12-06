@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: llama-index-vector-stores-hnswlib
+Version: 0.3.0
+Summary: llama-index vector_stores hnswlib integration
+License: MIT
+Author: Artur Stopa
+Author-email: arturstopa10@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: hnswlib (>=0.8.0,<0.9.0)
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Vector_Stores Integration: Hnswlib
+
+A LlamaIndex vector store using Hnswlib, a header-only C++ HNSW implementation with python bindings.
+
+## Usage
+
+Pre-requisite:
+
+```
+pip install llama-index-vector-stores-hnswlib
+pip install hnswlib
+```
+
+A minimal example:
+
+```python
+import hnswlib
+from llama_index.vector_stores_hnswlib import HnswlibVectorStore
+
+space = "ip"  # distance function
+dim = 768  # embedding dimension
+hnswlib_index = hnswlib.Index(space, dim)
+hnswlib_index.init_index(max_elements=10)
+
+hnsw_vector_store = HnswlibVectorStore(hnswlib_index=index)
+```
+
+## More examples and references
+
+A detailed usage guede can be found [in this demo notebook](https://docs.llamaindex.ai/en/stable/examples/vector_stores/HnswlibIndexDemo.html) in the LlamaIndex docs.
+
+Hnswlib documentation and implementation can be found [here](https://github.com/nmslib/hnswlib).
+
