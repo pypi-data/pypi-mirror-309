@@ -1,0 +1,17 @@
+numpy
+pandas
+google-cloud-aiplatform
+scikit-learn
+pydantic
+tenacity
+tqdm
+bs4
+
+[google_sheets]
+gspread
+google-auth
+
+[ui]
+mesop
+gspread
+google-auth
