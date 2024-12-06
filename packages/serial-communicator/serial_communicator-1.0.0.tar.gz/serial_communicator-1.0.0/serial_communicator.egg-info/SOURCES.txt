@@ -1,0 +1,9 @@
+LICENSE
+README.md
+serial_communicator.py
+setup.py
+serial_communicator.egg-info/PKG-INFO
+serial_communicator.egg-info/SOURCES.txt
+serial_communicator.egg-info/dependency_links.txt
+serial_communicator.egg-info/requires.txt
+serial_communicator.egg-info/top_level.txt
