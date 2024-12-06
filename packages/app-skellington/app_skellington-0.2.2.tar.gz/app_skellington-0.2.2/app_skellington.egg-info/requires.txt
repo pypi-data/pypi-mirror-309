@@ -1,0 +1,9 @@
+appdirs
+configobj
+colorlog
+
+[dev]
+black
+pre-commit
+isort
+flake8
