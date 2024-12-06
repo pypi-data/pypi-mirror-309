@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cloudshell-networking-ipinfusion
+Version: 1.0.0
+Summary: QualiSystems networking IP Infusion specific Package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+Requires-Python: ~=3.7
+Requires-Dist: cloudshell-shell-flows<2.0,>=1.0.4
+Requires-Dist: cloudshell-snmp<5.0,>=4.0.2
+Requires-Dist: cloudshell-snmp-autoload<2.0,>=1.0.0
+Requires-Dist: cloudshell-cli<5.0,>=4.0.4
+
+QualiSystems networking IP Infusion specific Package
