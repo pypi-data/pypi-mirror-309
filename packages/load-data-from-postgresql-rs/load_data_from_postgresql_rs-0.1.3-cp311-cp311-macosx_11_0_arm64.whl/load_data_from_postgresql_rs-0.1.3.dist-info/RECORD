@@ -1,0 +1,5 @@
+load_data_from_postgresql_rs-0.1.3.dist-info/METADATA,sha256=gpkUmn6SjeGVKQOpb523oOk72MsaPrGgkQpKXnkxXt4,509
+load_data_from_postgresql_rs-0.1.3.dist-info/WHEEL,sha256=G0UiGw3m33Mk_hYz-jWAoIF2nZyjCvAl7lj9uXFMSyg,104
+load_data_from_postgresql_rs/__init__.py,sha256=HwJ4_EHZg3hGp97NfWiftdNhVMixHrGw3nrja15pdQQ,195
+load_data_from_postgresql_rs/load_data_from_postgresql_rs.cpython-311-darwin.so,sha256=Kk-NX2keBmTvygkipzjRXhIk5j4fI-KaG-vYHk8_Ejk,9265216
+load_data_from_postgresql_rs-0.1.3.dist-info/RECORD,,
