@@ -1,0 +1,8 @@
+setup.py
+ValorPossivel/ValorPossivel.py
+ValorPossivel/__init__.py
+ValorPossivel.egg-info/PKG-INFO
+ValorPossivel.egg-info/SOURCES.txt
+ValorPossivel.egg-info/dependency_links.txt
+ValorPossivel.egg-info/top_level.txt
+tests/Test_ValorPossivel.py
