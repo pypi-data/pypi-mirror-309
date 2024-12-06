@@ -1,0 +1,3 @@
+[console_scripts]
+dynapsys = dynapsys.cli:main
+dynapsys-server = dynapsys.deployment:run_server

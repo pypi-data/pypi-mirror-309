@@ -1,0 +1,60 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="dynapsys",
+    version="0.2.0",
+    author="Tom",
+    description="Dynamic Python System Deployment Tools",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/dynapsys/dynapsys",
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Build Tools",
+        "Topic :: System :: Systems Administration",
+        "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: POSIX :: Linux",
+    ],
+    python_requires=">=3.6",
+    install_requires=[
+        "requests>=2.31.0",
+        "urllib3>=2.0.0",
+        "psutil>=5.9.0",
+        "click>=8.1.0",
+        "python-dotenv>=1.0.0",
+        "structlog>=23.1.0",
+        "typing-extensions>=4.7.0; python_version < '3.8'",
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=7.0.0',
+            'pytest-cov>=4.0.0',
+            'pytest-mock>=3.10.0',
+            'coverage>=7.0.0',
+            'flake8>=6.0.0',
+            'black>=23.0.0',
+            'isort>=5.12.0',
+            'mypy>=1.0.0',
+            'sphinx>=6.0.0',
+            'sphinx-rtd-theme>=1.2.0',
+            'build>=0.10.0',
+            'twine>=4.0.0',
+            'wheel>=0.40.0',
+            'pre-commit>=3.3.0',
+        ]
+    },
+    entry_points={
+        "console_scripts": [
+            "dynapsys-server=dynapsys.deployment:run_server",
+            "dynapsys=dynapsys.cli:main",
+        ],
+    },
+)
