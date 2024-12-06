@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: smoky
+Version: 0.1.0
+Summary: SM One Key！Okay！！基于国密SM（国家商用密码算法）系列的一机一码授权模块。
+Author-email: 江白河 <baiheqiuhan@qq.com>
+License: MIT
+Requires-Python: <3.12,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PySide6>=6.4.2
+Requires-Dist: moside>=0.1.3
+Requires-Dist: pycryptodomex>=3.21.0
+
+# smoky
+
+基于国密SM（国家商用密码算法）系列的一机一码授权模块，SM One Key！
+
