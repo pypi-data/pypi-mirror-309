@@ -1,0 +1,4 @@
+[console_scripts]
+cb=pycodebuddy.main:main
+codebuddy=pycodebuddy.main:main
+

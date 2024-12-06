@@ -1,0 +1,14 @@
+pycodebuddy/__init__.py,sha256=1rIJgdkOpvKqN4vDiECqBBSCwdoPgVH2a6sm9VzvbVY,217
+pycodebuddy/base_client.py,sha256=nYRMmeKzlra0k8sqeEFEzex80Jn8KzmZhpyq_yrxelA,2801
+pycodebuddy/codebuddy.py,sha256=kuPmgj0GU33pioqWhMt5kX0_iuS0JbkoU16dSq5_vB0,679
+pycodebuddy/command_executor.py,sha256=TLG6aVgqDON54EOkL_q_w0R1VHQgb3pqQolt_nbVepM,967
+pycodebuddy/config_loader.py,sha256=VHUX0skYYalK5npPgoZ9Wc2qDkJqkKrkoWejqq0LySM,3039
+pycodebuddy/dummy_client.py,sha256=nUnheSfREIYcgm4vlEVXFydAbbCBR9e3FrhG-OGOi18,424
+pycodebuddy/file_handler.py,sha256=Ent8tHIYjqY6L0ot4dV19Z_DcatXVIhNXwqB42EOng8,3243
+pycodebuddy/main.py,sha256=cJ_Y9gAKskIkJfBRAxTTLqruw9jJACjRChXo80HSm2Q,3899
+pycodebuddy/openai_client.py,sha256=jkoPevLHA9NMTwkwpH_bKEZrVx9HWlZC1TidCp-Uh5o,2518
+pycodebuddy/transaction_handler.py,sha256=bwJPfmzYO98msRrSBNMz8FSy6jiUkEE_6stFTQqSty8,3256
+pycodebuddy-0.0.1.dist-info/METADATA,sha256=1Y1E8akuHvc6Z3d-TNpy3iw0uIraHM5QxvPoIw-XC_s,3482
+pycodebuddy-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pycodebuddy-0.0.1.dist-info/entry_points.txt,sha256=FM9eO-_Q5CalnaJkkb1ve_ELQM6Tuf20g2ao42u3JbI,76
+pycodebuddy-0.0.1.dist-info/RECORD,,
