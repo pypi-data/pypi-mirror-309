@@ -1,0 +1,25 @@
+from setuptools import setup, find_packages
+setup(
+    name='folder-creation-test',
+    version='1.0.8',
+    description='CLI tool to generate folder structures for services',
+    author='AABK',
+    author_email='akhilesh.b@7edge.com',
+    url='https://github.com/yourusername/folder-structure-generator-7edge',
+    packages=find_packages(),
+    include_package_data=True,  # Include files specified in MANIFEST.in
+    package_data={
+        '': ['*.yml', '*.json'],  # Include specific file types
+    },
+    install_requires=[
+        'InquirerPy',
+        'pyyaml',  # Add pyyaml for YAML file handling
+    ],
+    entry_points={
+        'console_scripts': [
+            'start=folder_structure_generator_7edge.generator:create_folder_structure_with_files',  # Additional command
+            'create=folder_structure_generator_7edge.generator:create_service',
+            
+        ],
+    },
+)
