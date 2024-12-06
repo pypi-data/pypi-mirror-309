@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/realerikrani/sopenqlite/__init__.py
+src/realerikrani/sopenqlite/db.py
+src/realerikrani/sopenqlite/py.typed
+src/realerikrani_sopenqlite.egg-info/PKG-INFO
+src/realerikrani_sopenqlite.egg-info/SOURCES.txt
+src/realerikrani_sopenqlite.egg-info/dependency_links.txt
+src/realerikrani_sopenqlite.egg-info/top_level.txt
