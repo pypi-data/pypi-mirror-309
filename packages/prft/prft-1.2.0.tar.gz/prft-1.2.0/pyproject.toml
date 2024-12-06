@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prft"
+version = "1.2.0"
+description = "A tool to generate a file tree structure of a project with .gitignore support"
+dependencies = [
+    "pathspec"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Arkadii Artamonov", email = "artamarkan@gmail.com"}
+]
+maintainers = [
+  {name = "Arkadii Artamonov", email = "artamarkan@gmail.com"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT License"}
+keywords = ["file", "tree", "structure", "file tree", "file structure"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+prft = "project_file_tree.prft:main"
