@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+mecher_appium_page/__init__.py
+mecher_appium_page/appium_page_class.py
+mecher_appium_page.egg-info/PKG-INFO
+mecher_appium_page.egg-info/SOURCES.txt
+mecher_appium_page.egg-info/dependency_links.txt
+mecher_appium_page.egg-info/requires.txt
+mecher_appium_page.egg-info/top_level.txt
+mecher_appium_page/models/__init__.py
+mecher_appium_page/models/app_config.py
+mecher_appium_page/models/locators.py
