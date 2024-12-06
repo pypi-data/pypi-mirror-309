@@ -1,0 +1,40 @@
+# mkdocs.yml
+site_name: Qwery List
+
+theme:
+  site_name: "Qwery List"
+  logo: cat200.png
+  favicon: cat200.png
+  name: "material"
+  palette:
+    - scheme: slate
+      primary: pink
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - scheme: default
+      primary: pink
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+  repo_url: https://github.com/WitoldFracek/qlist/tree/main
+
+
+nav:
+  - Home: index.md
+  - classes:
+      - QList: qlist.md
+      - Lazy: lazy.md
+      - EagerQList: eager.md
+  - Qitek: cat200.png
+
+plugins:
+  - mkdocstrings
+
+extra_css:
+  - navbar.css
