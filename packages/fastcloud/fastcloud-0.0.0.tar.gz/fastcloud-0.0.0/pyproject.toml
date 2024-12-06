@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastcloud"
+version = "0.0.0"
+description = "Upload and download files to common cloud providers like azure blob storage, s3 and more"
+requires-python = ">=3.8"
+authors = [
+    { name = "SocAIty" }
+]
+license = { text = "GPLv3" }
+readme = "README.md"
+dependencies = [
+    "media-toolkit>=0.1.1",
+]
+
+[project.optional-dependencies]
+azure = [
+    "azure-storage-blob"
+]
+S3 =[
+    "boto3"
+]
+full = [
+    "azure-storage-blob",
+    "boto3"
+]
+
+
+[project.urls]
+Repository = "https://github.com/SocAIty/fastCloud"
