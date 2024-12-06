@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+get_user_information/__init__.py
+get_user_information/ip_master.py
+get_user_information/system_info_checker.py
+getuserinformation.egg-info/PKG-INFO
+getuserinformation.egg-info/SOURCES.txt
+getuserinformation.egg-info/dependency_links.txt
+getuserinformation.egg-info/not-zip-safe
+getuserinformation.egg-info/top_level.txt
