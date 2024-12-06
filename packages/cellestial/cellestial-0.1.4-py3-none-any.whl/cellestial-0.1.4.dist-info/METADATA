@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cellestial
+Version: 0.1.4
+Summary: 
+License: Apache-2.0
+Author: Zaf4
+Author-email: zafermolbio@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anndata (>=0.11.0,<0.12.0)
+Requires-Dist: cairosvg (>=2.7.1,<3.0.0)
+Requires-Dist: lets-plot (>=4.5.1,<5.0.0)
+Requires-Dist: polars[pyarrow] (>=1.13.1,<2.0.0)
+Requires-Dist: pyarrow (>=18.0.0,<19.0.0)
+Requires-Dist: pycairo (>=1.27.0,<2.0.0)
+Requires-Dist: scanpy[leiden] (>=1.10.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://github.com/datavil/cellestial/blob/master/assets/cellestial_logo.png?raw=true" alt="Cellestial Logo" width="250">
+</p>
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/DataVil/Cellestial) [![PyPI](https://img.shields.io/pypi/v/cellestial?color=blue)](https://pypi.org/project/cellestial/)
+
+# Cellestial
+
+An Interactive and Highly Customizable __Single-Cell__ & __Spatial__ Plotting Tool over a ggplot-like API.
+
+Name Encuplates: Space, Scatters of Stars, and of course Cells.
+
+## Installation
+
+```bash
+pip install cellestial
+```
+
+## Usage
+
+```python
+import cellestial as cl
+```
