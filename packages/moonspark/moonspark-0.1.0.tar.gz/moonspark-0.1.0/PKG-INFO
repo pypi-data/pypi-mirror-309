@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: moonspark
+Version: 0.1.0
+Summary: Logging helpers for PySpark
+Author-email: Garrett Mooney <garrettrmooney@gmail.com>
+Requires-Python: <3.11,>=3.9
+Requires-Dist: polars>=1.14.0
+Requires-Dist: pyarrow>=18.0.0
+Requires-Dist: pyspark==3.3
