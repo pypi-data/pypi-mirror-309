@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: entropy-classifier
+Version: 1.1.0
+Summary: A library to calculate entropy and classify data based on uncertainty.
+Home-page: https://github.com/moudgalya1223/LLM_business
+Author: moudgalya
+Author-email: dattu99rockstar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas >=1.3.0
+Requires-Dist: numpy >=1.21.0
+
+# Entropy Classifier
+
+`entropy-classifier` is a Python library for calculating entropy, certainty levels, and classifying data columns based on their uncertainty levels.
+
+## Features
+- Calculate entropy for binary and non-binary data.
+- Determine certainty levels for passing or failing outcomes.
+- Classify columns by their uncertainty levels.
+
+## Installation
+
+```bash
+pip install entropy-classifier

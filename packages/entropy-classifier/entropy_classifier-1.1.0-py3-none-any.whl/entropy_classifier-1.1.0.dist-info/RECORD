@@ -1,0 +1,8 @@
+entropy_classifier/__init__.py,sha256=8-WcYXSSCaKFCjJKCsC1cp3fXi--LiaI1y6DU-i0dL4,310
+entropy_classifier/entropy_calculate.py,sha256=JNLma3xcsFe5WmIeF5UymBgbv_iBGsTZpIWY2pJtF9s,2100
+entropy_classifier/file_import.py,sha256=kjl1EEH71SZksjqyZOufLhgYvW8ZEdc9W3u1KAAOu6E,431
+entropy_classifier/uncertainty_classification.py,sha256=3Cz1ybIK2cP9OXziRzVaMktkFcrcrqdOhblmRH4sLDc,1125
+entropy_classifier-1.1.0.dist-info/METADATA,sha256=9ZbZrEVrvurBHsxoqSLjmNVQcIOY7edtN8oQwnAe_ng,957
+entropy_classifier-1.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+entropy_classifier-1.1.0.dist-info/top_level.txt,sha256=r-up2y6a-lRU8vU5BdEW6NH_--wkr1ZlM7zMYMo0oG0,19
+entropy_classifier-1.1.0.dist-info/RECORD,,
