@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pydantic-api-sdk-notion
+Version: 0.0.1
+Summary: Type Safe SDK For Notion API
+Home-page: https://github.com/stevieflyer/pydantic-api-sdk-notion
+License: MIT
+Keywords: notion,pydantic,api,type-safe
+Author: stevieflyer
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: notion-client (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic-api-models-notion (>=0.0.2,<0.0.3)
+Project-URL: Repository, https://github.com/stevieflyer/pydantic-api-sdk-notion
+Description-Content-Type: text/markdown
+
+# Type-Safe Notion API SDK
+
