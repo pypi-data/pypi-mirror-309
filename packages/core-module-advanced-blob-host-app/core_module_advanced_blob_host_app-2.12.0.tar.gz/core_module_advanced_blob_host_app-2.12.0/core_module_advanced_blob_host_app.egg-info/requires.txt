@@ -1,0 +1,5 @@
+Django
+core-main-app==2.12.*
+core-parser-app==2.12.*
+core-module-blob-host-app==2.12.*
+core-module-remote-blob-host-app==2.12.*
