@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tumfl"
+version = "0.1.16"
+description = "The Ultimate Minimizer For Lua: minimize your lua scripts"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["lua", "minimizer", "ast"]
+license = { text = "MIT License" }
+authors = [{ name = "Fabian Wunsch" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pip-tools", "mypy", "flake8", "coverage", "pylint"]
+
+[project.urls]
+homepage = "https://github.com/stormworks-utils/tumfl"
+repository = "https://github.com/stormworks-utils/tumfl"
+
+[tool.setuptools]
+packages = ["tumfl", "tumfl.AST", "tumfl.AST.Expression", "tumfl.AST.Statement"]

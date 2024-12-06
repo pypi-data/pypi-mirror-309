@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tumfl
+Version: 0.1.16
+Summary: The Ultimate Minimizer For Lua: minimize your lua scripts
+Author: Fabian Wunsch
+License: MIT License
+Project-URL: homepage, https://github.com/stormworks-utils/tumfl
+Project-URL: repository, https://github.com/stormworks-utils/tumfl
+Keywords: lua,minimizer,ast
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+
+# Tumfl: The Ultimate Minimizer For Lua
+
+[![codecov](https://codecov.io/github/stormworks-utils/tumfl/branch/main/graph/badge.svg?token=X5TIVNJSZ7)](https://codecov.io/github/stormworks-utils/tumfl)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+ 
+This package contains the best minimizer you'll find on the market, or so I hope.
+# Current status
+
+## Parser
+
+ - On par with Lua
+ - No support for arbitrary byte strings (only valid UTF-8)
+
+## Formatter
+
+ - Highly configurable formatter
+ - Can produce both minified and prettyfied results
+ - Minified results have minimal amount of characters (only required semicolons, etc.)
+ - Lossy in the sense that it does not preserve (all) comments
+
+## Minifier
+
+ - Not existent
