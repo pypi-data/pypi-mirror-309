@@ -1,0 +1,7 @@
+moonspark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moonspark/logging.py,sha256=_8DF5i1vHmFBwYvKCF7LulUeUKqlINQzEzpBYmHu6oM,5754
+moonspark/polars.py,sha256=iVp9utxDmRzI4y9w6lOFuntebZeBbD7VVanR4qyN4Cc,146
+moonspark/types.py,sha256=qmDpYuNSp3rzlXYss8jD09nNoRazGFNSj0v-_Hzj8UY,250
+moonspark-0.1.0.dist-info/METADATA,sha256=31_wLqzAExTj1r2yYts_aBB9GAMA1wVq-Xg3-RbWnBs,264
+moonspark-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+moonspark-0.1.0.dist-info/RECORD,,
