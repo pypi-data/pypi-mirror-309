@@ -1,0 +1,2 @@
+[console_scripts]
+pypirccua = pypirccua.__main__:main
