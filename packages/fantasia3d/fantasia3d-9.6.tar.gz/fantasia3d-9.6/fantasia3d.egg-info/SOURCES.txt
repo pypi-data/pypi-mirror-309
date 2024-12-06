@@ -1,0 +1,7 @@
+main.py
+setup.py
+fantasia3d.egg-info/PKG-INFO
+fantasia3d.egg-info/SOURCES.txt
+fantasia3d.egg-info/dependency_links.txt
+fantasia3d.egg-info/requires.txt
+fantasia3d.egg-info/top_level.txt
