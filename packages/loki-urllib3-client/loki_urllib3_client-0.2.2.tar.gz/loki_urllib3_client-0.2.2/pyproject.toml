@@ -1,0 +1,27 @@
+[project]
+name = "loki-urllib3-client"
+dynamic = ["version"]
+authors = [
+  { name="Jimmy Christensen", email="lithorus@gmail.com" },
+]
+description = "A simple loki client using urllib3"
+readme = "README.md"
+requires-python = ">3.7"
+dependencies = [
+    "urllib3"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = [
+    "hatchling",
+    "versioningit",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "versioningit"
