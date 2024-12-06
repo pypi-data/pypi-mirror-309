@@ -1,0 +1,9 @@
+datapoint/Forecast.py,sha256=F2qUJ_YmmRn4pG9TLvmP6Nbx9c_QC-w2rr05h95X99Q,17025
+datapoint/Manager.py,sha256=Z7fgxkMqNtkpghjaeeUKo4wktPpElEK5i2RhjOTusb8,7453
+datapoint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapoint/exceptions.py,sha256=ewrymETjo63rDmSryzjctdTFxJYNSgmGWrDwQCPI1Q0,97
+datapoint/weather_codes.py,sha256=jP2lqoKQ3zBlkdTzky_Ic8n7lSX-JW0afCdqt77UAZ4,908
+datapoint-0.10.0.dist-info/METADATA,sha256=DA5lowypHIgrwcJXtP3xJ9tikfsb1b4UqKh3uqr0rIU,43448
+datapoint-0.10.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+datapoint-0.10.0.dist-info/licenses/LICENSE,sha256=B2finjM2vHIzlfqFz2KQ5OeRLJcfZE4B8_154CYKyso,34498
+datapoint-0.10.0.dist-info/RECORD,,
