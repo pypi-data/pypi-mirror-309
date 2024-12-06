@@ -1,0 +1,5 @@
+llama_index/embeddings/clarifai/__init__.py,sha256=scVYSR7HNPBZOri0bsu4Z5Ut_KJwzxdX-tpnFLU2gZM,100
+llama_index/embeddings/clarifai/base.py,sha256=J8kFjCJfjG6lSbPXhYlKyFL2KXbI-O4f2PcfGudWJG4,5058
+llama_index_embeddings_clarifai-0.3.0.dist-info/METADATA,sha256=J_KIF0bpQ50xuky-up0e57cbT6fuhZh5o-fJejauM2M,701
+llama_index_embeddings_clarifai-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_clarifai-0.3.0.dist-info/RECORD,,
