@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+testflows.snapshots.egg-info/PKG-INFO
+testflows.snapshots.egg-info/SOURCES.txt
+testflows.snapshots.egg-info/dependency_links.txt
+testflows.snapshots.egg-info/not-zip-safe
+testflows.snapshots.egg-info/requires.txt
+testflows.snapshots.egg-info/top_level.txt
+testflows/snapshots/__init__.py
+testflows/snapshots/compare.py
+testflows/snapshots/errors.py
+testflows/snapshots/mode.py
+testflows/snapshots/parallel.py
+testflows/snapshots/snapshots.py
+testflows/snapshots/v1.py
