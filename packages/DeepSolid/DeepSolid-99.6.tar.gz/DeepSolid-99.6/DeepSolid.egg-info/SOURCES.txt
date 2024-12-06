@@ -1,0 +1,7 @@
+main.py
+setup.py
+DeepSolid.egg-info/PKG-INFO
+DeepSolid.egg-info/SOURCES.txt
+DeepSolid.egg-info/dependency_links.txt
+DeepSolid.egg-info/requires.txt
+DeepSolid.egg-info/top_level.txt
