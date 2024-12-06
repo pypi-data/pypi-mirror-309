@@ -1,0 +1,3 @@
+[ovos.plugin.skill]
+ovos-skill-color-picker.krisgesling=ovos_skill_color_picker:ColorPickerSkill
+
