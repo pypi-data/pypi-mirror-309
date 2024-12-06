@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fafig_studio
+Version: 1.0.1
+Summary: Fafig Studio Add-ons Manager
+Requires-Python: >=3.10,<=3.13
+Description-Content-Type: text/markdown
+
