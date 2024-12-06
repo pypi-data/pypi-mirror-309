@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cogsol/__init__.py
+cogsol/definitions.py
+cogsol.egg-info/PKG-INFO
+cogsol.egg-info/SOURCES.txt
+cogsol.egg-info/dependency_links.txt
+cogsol.egg-info/requires.txt
+cogsol.egg-info/top_level.txt
