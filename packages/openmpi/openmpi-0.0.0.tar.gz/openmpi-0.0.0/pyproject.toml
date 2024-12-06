@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools >= 40.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openmpi"
+version = "0.0.0"
+description = "Open MPI - https://www.open-mpi.org/"
+maintainers = [
+    {name = "Lisandro Dalcin", email = "dalcinl@gmail.com"}
+]
