@@ -1,0 +1,16 @@
+# Imported and exported transaction files
+private
+Download.CSV
+estrattocontoitalia.xls
+transactions.csv
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
