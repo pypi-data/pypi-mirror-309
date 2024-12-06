@@ -1,0 +1,11 @@
+fan
+fuzzy_logic
+fuzzy_msa
+fuzzy_neural_net
+fuzzy_nn
+fuzzy_numbers
+fuzzy_optimization
+graphs
+prediction
+sequencing_assignment
+tests
