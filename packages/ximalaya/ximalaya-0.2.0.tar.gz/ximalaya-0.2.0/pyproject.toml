@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ximalaya"
+version = "0.2.0"
+description = "Python package for Ximalaya services."
+authors = ["Garrett HE <garrett.he@outlook.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/mingyun-studio/python-ximalaya"
+repository = "https://github.com/mingyun-studio/python-ximalaya.git"
+keywords = ["ximalaya"]
+packages = [{ include = "ximalaya", from = "src" }]
+classifiers = []
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+chance = "^0.110"
+pre-commit = "^4.0.1"
+pylint = "^3.3.1"
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+tox = "^4.21.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
