@@ -1,0 +1,7 @@
+nvidia/cublasmp/cu12/include/cublasmp.h,sha256=o1kM-A5PfJWJ8DJFkjvGaT5lzHhIu0_7o96Q2rNIEKQ,11598
+nvidia/cublasmp/cu12/lib/libcublasmp.so.0,sha256=ertcL4E-skWpegqlKqNDRCYfynAYnB9_0L7EZxtsZho,5379505
+nvidia_cublasmp_cu12-0.2.1.427.dist-info/LICENSE,sha256=QDKb-R9TlEtBEYx4sJ_eSadWnWpamcblovXKVui4H1k,19208
+nvidia_cublasmp_cu12-0.2.1.427.dist-info/METADATA,sha256=rDwbjeYhPlur8-XLV8IN16DAWbZjlBNieDYiC6CvgUI,22453
+nvidia_cublasmp_cu12-0.2.1.427.dist-info/WHEEL,sha256=kqmmdOgqHetwKe5CuhSd4uCUKzjE-aOfKEyVJngRqro,110
+nvidia_cublasmp_cu12-0.2.1.427.dist-info/top_level.txt,sha256=fTkAtiFuL16nUrB9ytDDtpytz2t0B4NvYTnRzwAhO14,7
+nvidia_cublasmp_cu12-0.2.1.427.dist-info/RECORD,,
