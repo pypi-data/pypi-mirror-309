@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sestheta
+Version: 1.0.1
+Summary: Quantitative research tool for social interpersonal relationships and psychology, achieving linear prediction through fitting analysis. Special thanks to Ericas, the theoretical proposer of this project.
+Home-page: https://space.bilibili.com/3493290083093446
+Author: 街角的猫_wjz
+Author-email: wjz-space@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+License-File: LICENSE.txt
+
