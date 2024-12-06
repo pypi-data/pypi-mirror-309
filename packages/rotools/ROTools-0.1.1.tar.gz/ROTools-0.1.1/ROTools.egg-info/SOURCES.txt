@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ROTools/DictObj.py
+ROTools/DumpBase.py
+ROTools/__init__.py
+ROTools/attr.py
+ROTools/code.py
+ROTools.egg-info/PKG-INFO
+ROTools.egg-info/SOURCES.txt
+ROTools.egg-info/dependency_links.txt
+ROTools.egg-info/top_level.txt
