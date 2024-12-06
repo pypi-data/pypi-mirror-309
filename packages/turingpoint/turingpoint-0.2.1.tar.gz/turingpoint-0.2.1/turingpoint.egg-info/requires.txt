@@ -1,0 +1,14 @@
+tqdm
+
+[examples_sb3]
+gymnasium>=0.28.1
+stable-baselines3[extra]<2.1,>=2.0.0a5
+pettingzoo[batterfly,classic]<1.23,>=1.22.3
+pymunk
+tianshou<0.6,>=0.5.0
+numpy
+
+[examples_torch]
+gymnasium[accept-rom-licesnse,atari,box2d]
+ale-py
+numpy
