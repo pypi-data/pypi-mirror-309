@@ -1,0 +1,11 @@
+requests
+openai
+langchain
+langchain_community
+langchain_openai
+tiktoken
+faiss-cpu
+jq
+unstructured[pdf]
+deepeval
+label-studio-sdk==1.0.5
