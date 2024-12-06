@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+translatefree/__init__.py
+translatefree/translate.py
+translatefree.egg-info/PKG-INFO
+translatefree.egg-info/SOURCES.txt
+translatefree.egg-info/dependency_links.txt
+translatefree.egg-info/requires.txt
+translatefree.egg-info/top_level.txt
