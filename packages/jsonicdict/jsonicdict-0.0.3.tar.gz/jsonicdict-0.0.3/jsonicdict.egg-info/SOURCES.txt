@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+jsonicdict/__init__.py
+jsonicdict.egg-info/PKG-INFO
+jsonicdict.egg-info/SOURCES.txt
+jsonicdict.egg-info/dependency_links.txt
+jsonicdict.egg-info/top_level.txt
