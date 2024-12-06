@@ -1,0 +1,6 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/dynamodb/__init__.py,sha256=RnL5ykNoFg0rbxtf-hH3msoP3_DtFqWCxh4Gf1M9XkQ,107
+llama_index/vector_stores/dynamodb/base.py,sha256=TgjcZWKpd1g2AfrhhczJ6o0RC_wjIev8Vh8w0njP5TE,5824
+llama_index_vector_stores_dynamodb-0.3.0.dist-info/METADATA,sha256=CO4fOiPzvPfsDblHT1oJTUfM4Fb_R0j-0UG96BjlC1Y,775
+llama_index_vector_stores_dynamodb-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_dynamodb-0.3.0.dist-info/RECORD,,
