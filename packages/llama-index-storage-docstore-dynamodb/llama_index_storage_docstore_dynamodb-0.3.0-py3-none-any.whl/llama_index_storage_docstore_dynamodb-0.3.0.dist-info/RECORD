@@ -1,0 +1,5 @@
+llama_index/storage/docstore/dynamodb/__init__.py,sha256=XXu2pM5v_H3EfyGeUoreVFMPjlezq0r0aPaFTOUqT00,114
+llama_index/storage/docstore/dynamodb/base.py,sha256=3tSthc7__FdsdPjxUHJBxpNJBmkrbevkuwQUDfReRMA,881
+llama_index_storage_docstore_dynamodb-0.3.0.dist-info/METADATA,sha256=kkDVDcG3LZXr9744yV1pE5f-FmDDckMHl-wJhO5V6TY,777
+llama_index_storage_docstore_dynamodb-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_docstore_dynamodb-0.3.0.dist-info/RECORD,,
