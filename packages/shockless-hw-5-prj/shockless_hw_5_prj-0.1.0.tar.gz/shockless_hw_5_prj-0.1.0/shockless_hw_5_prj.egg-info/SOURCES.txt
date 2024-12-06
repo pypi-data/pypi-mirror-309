@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+shockless_hw_5_prj.egg-info/PKG-INFO
+shockless_hw_5_prj.egg-info/SOURCES.txt
+shockless_hw_5_prj.egg-info/dependency_links.txt
+shockless_hw_5_prj.egg-info/top_level.txt
+src/__init__.py
+src/data/__init__.py
+src/data/make_dataset.py
+src/entities/__init__.py
+src/entities/data_params.py
+src/entities/params.py
+src/entities/train_params.py
+src/models/__init__.py
+src/models/inference.py
+src/models/train.py
