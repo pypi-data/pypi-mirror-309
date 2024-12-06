@@ -1,0 +1,5 @@
+requests
+moviepy
+yt-dlp
+python-dotenv
+urllib3
