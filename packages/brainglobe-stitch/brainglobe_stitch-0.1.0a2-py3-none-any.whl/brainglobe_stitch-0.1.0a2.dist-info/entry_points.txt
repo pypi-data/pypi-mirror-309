@@ -1,0 +1,2 @@
+[napari.manifest]
+mesospim-stitcher = brainglobe_stitch:napari.yaml
