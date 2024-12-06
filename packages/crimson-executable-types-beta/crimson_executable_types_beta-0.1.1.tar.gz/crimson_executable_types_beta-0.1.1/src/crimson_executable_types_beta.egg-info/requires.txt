@@ -1,0 +1,4 @@
+pydantic
+crimson-auto-pydantic
+crimson-ast-dev-tool
+crimson-types-beta
