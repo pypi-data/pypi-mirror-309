@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+solo_django_admin/__init__.py
+solo_django_admin/manage.py
+solo_django_admin/models.py
+solo_django_admin.egg-info/PKG-INFO
+solo_django_admin.egg-info/SOURCES.txt
+solo_django_admin.egg-info/dependency_links.txt
+solo_django_admin.egg-info/requires.txt
+solo_django_admin.egg-info/top_level.txt
+solo_django_admin/core/__init__.py
+solo_django_admin/core/asgi.py
+solo_django_admin/core/settings.py
+solo_django_admin/core/urls.py
