@@ -1,0 +1,13 @@
+deep_nlp_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_nlp_service/config.py,sha256=3TPsIWeFmLOrQf7Bse-QMAHBcbz1PKugwqX17LxCXVo,431
+deep_nlp_service/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_nlp_service/models/attention.py,sha256=u-wVR15UDfVZigeN0XgdJdrBpWgC2sIxMGzVkXAB0hg,1845
+deep_nlp_service/models/bert_model.py,sha256=2uvHMF7y3jaoz421L7bMz5pIstt7-OtY1cbahVt27Dc,2323
+deep_nlp_service/models/dataset.py,sha256=YNm7vgmzAZLugrrAoas1jDPTkn2KcSdnRjGjfe_lVHY,1056
+deep_nlp_service/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deep_nlp_service/utils/data_processor.py,sha256=717Wp3e7IQR5_Wq8D6KWp5Ysivmd8oMh9wAv2pCZFow,1361
+deep_nlp_service/utils/logger.py,sha256=19gB3qXxUiYYrxMqy4XyIMhO-zMQUaLTYsiFeIRJDyo,485
+SimsysDNLP-0.0.4.dist-info/METADATA,sha256=URunLO-lIBk0lqhJV1-R4yKap4v8vkOHm3JW19WMGbA,2964
+SimsysDNLP-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+SimsysDNLP-0.0.4.dist-info/top_level.txt,sha256=4gPGZ3zcxdPRZw8-vxgazqFppLo8Aulu4euz0rmYMfA,17
+SimsysDNLP-0.0.4.dist-info/RECORD,,
