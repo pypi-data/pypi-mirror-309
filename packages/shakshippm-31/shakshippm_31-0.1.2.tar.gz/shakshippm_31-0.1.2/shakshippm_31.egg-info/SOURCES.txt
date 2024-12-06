@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shakshippm_31.egg-info/PKG-INFO
+shakshippm_31.egg-info/SOURCES.txt
+shakshippm_31.egg-info/dependency_links.txt
+shakshippm_31.egg-info/requires.txt
+shakshippm_31.egg-info/top_level.txt
+sppm/__init__.py
