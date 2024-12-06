@@ -1,0 +1,10 @@
+orval/__init__.py,sha256=VgDiKu3Kzgp3vJk8OfWWBi-q3NA0jIWDWiRU0BFDpz4,470
+orval/arrays.py,sha256=fSF_gJ5JwD2NyXCXQwGYd1MzzVJelQHF-Z8nODdsnc8,314
+orval/byte_utils.py,sha256=yeOPsCsxesb8VqvtffcdiBmSSMqhk4VepKVEDgvPLoY,2215
+orval/datetimes.py,sha256=Wh4mOxttT3M3JvKgbJklNRCZ1RODod-oIFhPR2jgl0Q,395
+orval/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orval/strings.py,sha256=pUlwU2a-tikijxIj1WLnRAefwggES_0PX0amk6vJgFk,4146
+orval/utils.py,sha256=1xSH6xgSuyD_vx6-qzkk5ShaHdb86xcaC6hmeJAxgNY,1092
+orval-0.0.3.dist-info/METADATA,sha256=AuS6hytlNrfKjfC_N1rx73m8PvOqM5OvVs8sQR4FVdU,3310
+orval-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+orval-0.0.3.dist-info/RECORD,,
