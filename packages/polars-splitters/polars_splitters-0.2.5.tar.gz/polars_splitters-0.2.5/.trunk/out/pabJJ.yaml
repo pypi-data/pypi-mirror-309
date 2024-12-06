@@ -1,0 +1,29 @@
+trunk_cli_version: 1.16.0
+title: trivy exited with exit_code=1
+report:
+  - trivy exited with exit_code=1
+  - linter:
+      command: |
+        /Users/jonas.miguel/.cache/trunk/tools/trivy/0.45.1-b0f486db55b4691f7fc7bbc6cc8e5000/trivy fs requirements.txt --scanners vuln --format json --no-progress --cache-dir /Users/jonas.miguel/.cache/trunk/repos/e56a2212cf42fe1a6b618f22fb8682c9/results/trivy
+      stdin_path: (none)
+      run_from: /private/var/folders/qh/2k5gcmgx3hl6wxjp2qtjz3dr0000gq/T/trunk-503/xx5pdE
+      timeout: 10m
+      rerun: (cd /private/var/folders/qh/2k5gcmgx3hl6wxjp2qtjz3dr0000gq/T/trunk-503/xx5pdE; env -i PATH=/Users/jonas.miguel/.cache/trunk/tools/trivy/0.45.1-b0f486db55b4691f7fc7bbc6cc8e5000:/Users/jonas.miguel/.cache/trunk/tools/trivy/0.45.1-b0f486db55b4691f7fc7bbc6cc8e5000:/Users/jonas.miguel/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/jonas.miguel/.cargo/bin:/Users/jonas.miguel/.local/bin:/Users/jonas.miguel/.local/bin HOME=/Users/jonas.miguel USER=jonas.miguel /Users/jonas.miguel/.cache/trunk/tools/trivy/0.45.1-b0f486db55b4691f7fc7bbc6cc8e5000/trivy fs requirements.txt --scanners vuln --format json --no-progress --cache-dir /Users/jonas.miguel/.cache/trunk/repos/e56a2212cf42fe1a6b618f22fb8682c9/results/trivy)
+      affects_cache:
+        []
+      direct_configs:
+        []
+      exit_status: exited
+      exit_code: 1
+      stdout: (none)
+      stderr: |
+        2024-11-19T22:22:51.272+0100	[34mINFO[0m	Need to update DB
+        2024-11-19T22:22:51.272+0100	[34mINFO[0m	DB Repository: ghcr.io/aquasecurity/trivy-db
+        2024-11-19T22:22:51.272+0100	[34mINFO[0m	Downloading DB...
+        2024-11-19T22:22:52.063+0100	[31mFATAL[0m	init error: DB error: failed to download vulnerability DB: database download error: OCI repository error: 1 error occurred:
+        	* GET https://ghcr.io/v2/aquasecurity/trivy-db/manifests/2: TOOMANYREQUESTS: retry-after: 68.992µs, allowed: 44000/minute
+
+
+
+    parser: |
+      (none)
