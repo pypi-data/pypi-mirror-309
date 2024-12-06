@@ -1,0 +1,142 @@
+[project]
+name = "basic-components"
+version = "0.3.0"
+description = "Re-usable server-side components based on shadcn/ui with JinjaX, Alpine.js and Tailwind CSS"
+authors = [
+    { name = "phernandez", email = "paul@basicmachines.co" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "web",
+    "components",
+    "jinja",
+    "jinjax",
+    "tailwind",
+    "htmx",
+    "alpinejs",
+    "fastapi",
+    "flask",
+    "django",
+    "ui",
+    "frontend",
+    "server-side",
+    "shadcn",
+    "shadcnui",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: FastAPI",
+    "Framework :: Flask",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Typing :: Typed",
+]
+dependencies = [
+    "copier>=9.4.1",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "tomli>=2.0.2",
+    "tomli-w>=1.1.0",
+]
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+utils = [
+    "jinjax>=0.47",
+    "jinja2>=3.1.3",
+]
+docs = [
+    "fastapi[standard]>=0.115.4",
+    "jinjax[whitenoise]>=0.47",
+    "pyright>=1.1.385",
+    "pytest-playwright>=0.5.2",
+    "pytest>=8.3.3",
+    "starlette-wtf>=0.4.5",
+    "uvicorn>=0.32.0",
+    "wtforms>=3.2.1",
+    "jinja2>=3.1.3",
+    "python-frontmatter>=1.1.0",
+    "pygments>=2.17.2",
+    "loguru>=0.7.2",
+    "pydantic>=2.9.2",
+    "pydantic-settings>=2.6.0",
+    "arel>=0.3.0",
+    "websockets>=13.1",
+    "markdown>=3.7",
+    "markupsafe>=3.0.2",
+    "watchfiles>=0.24.0",
+    "icecream>=2.1.3",
+    "pymdown-extensions>=10.12",
+    "setuptools>=75.5.0",
+    "copier>=9.4.1",
+]
+dev = [
+    "black>=24.1.0",
+    "isort>=5.13.0",
+    "mypy>=1.8.0",
+    "ruff>=0.2.0",
+    "python-semantic-release>=9.14.0",
+]
+full = [
+    "basic-components[utils]",
+    "basic-components[docs]",
+    "basic-components[dev]",
+]
+
+[project.scripts]
+components = "basic_components.cli.components:app"
+
+[project.urls]
+Homepage = "https://github.com/basicmachines-co/basic-components"
+Documentation = "https://components.basicmachines.co"
+Repository = "https://github.com/basicmachines-co/basic-components"
+Changelog = "https://github.com/basicmachines-co/basic-components/blob/main/CHANGELOG.md"
+Issues = "https://github.com/basicmachines-co/basic-components/issues"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "basic_components/**/*.py",
+    "basic_components/component_dependencies.toml",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+python_files = [
+    "test_*.py",
+]
+addopts = "-ra -q"
+
+[tool.semantic_release]
+version_variable = "basic_components/__init__.py:__version__"
+version_toml = [
+    "pyproject.toml:project.version",
+]
+major_on_zero = false
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "pip install uv && uv build"
+dist_path = "dist/"
+upload_to_pypi = true
+commit_message = "chore(release): {version} [skip ci]"
+

@@ -1,0 +1,217 @@
+Metadata-Version: 2.3
+Name: basic-components
+Version: 0.3.0
+Summary: Re-usable server-side components based on shadcn/ui with JinjaX, Alpine.js and Tailwind CSS
+Project-URL: Homepage, https://github.com/basicmachines-co/basic-components
+Project-URL: Documentation, https://components.basicmachines.co
+Project-URL: Repository, https://github.com/basicmachines-co/basic-components
+Project-URL: Changelog, https://github.com/basicmachines-co/basic-components/blob/main/CHANGELOG.md
+Project-URL: Issues, https://github.com/basicmachines-co/basic-components/issues
+Author-email: phernandez <paul@basicmachines.co>
+License: MIT
+Keywords: alpinejs,components,django,fastapi,flask,frontend,htmx,jinja,jinjax,server-side,shadcn,shadcnui,tailwind,ui,web
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: copier>=9.4.1
+Requires-Dist: rich>=13.7.0
+Requires-Dist: tomli-w>=1.1.0
+Requires-Dist: tomli>=2.0.2
+Requires-Dist: typer>=0.9.0
+Provides-Extra: dev
+Requires-Dist: black>=24.1.0; extra == 'dev'
+Requires-Dist: isort>=5.13.0; extra == 'dev'
+Requires-Dist: mypy>=1.8.0; extra == 'dev'
+Requires-Dist: python-semantic-release>=9.14.0; extra == 'dev'
+Requires-Dist: ruff>=0.2.0; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: arel>=0.3.0; extra == 'docs'
+Requires-Dist: copier>=9.4.1; extra == 'docs'
+Requires-Dist: fastapi[standard]>=0.115.4; extra == 'docs'
+Requires-Dist: icecream>=2.1.3; extra == 'docs'
+Requires-Dist: jinja2>=3.1.3; extra == 'docs'
+Requires-Dist: jinjax[whitenoise]>=0.47; extra == 'docs'
+Requires-Dist: loguru>=0.7.2; extra == 'docs'
+Requires-Dist: markdown>=3.7; extra == 'docs'
+Requires-Dist: markupsafe>=3.0.2; extra == 'docs'
+Requires-Dist: pydantic-settings>=2.6.0; extra == 'docs'
+Requires-Dist: pydantic>=2.9.2; extra == 'docs'
+Requires-Dist: pygments>=2.17.2; extra == 'docs'
+Requires-Dist: pymdown-extensions>=10.12; extra == 'docs'
+Requires-Dist: pyright>=1.1.385; extra == 'docs'
+Requires-Dist: pytest-playwright>=0.5.2; extra == 'docs'
+Requires-Dist: pytest>=8.3.3; extra == 'docs'
+Requires-Dist: python-frontmatter>=1.1.0; extra == 'docs'
+Requires-Dist: setuptools>=75.5.0; extra == 'docs'
+Requires-Dist: starlette-wtf>=0.4.5; extra == 'docs'
+Requires-Dist: uvicorn>=0.32.0; extra == 'docs'
+Requires-Dist: watchfiles>=0.24.0; extra == 'docs'
+Requires-Dist: websockets>=13.1; extra == 'docs'
+Requires-Dist: wtforms>=3.2.1; extra == 'docs'
+Provides-Extra: full
+Requires-Dist: arel>=0.3.0; extra == 'full'
+Requires-Dist: black>=24.1.0; extra == 'full'
+Requires-Dist: copier>=9.4.1; extra == 'full'
+Requires-Dist: fastapi[standard]>=0.115.4; extra == 'full'
+Requires-Dist: icecream>=2.1.3; extra == 'full'
+Requires-Dist: isort>=5.13.0; extra == 'full'
+Requires-Dist: jinja2>=3.1.3; extra == 'full'
+Requires-Dist: jinjax>=0.47; extra == 'full'
+Requires-Dist: jinjax[whitenoise]>=0.47; extra == 'full'
+Requires-Dist: loguru>=0.7.2; extra == 'full'
+Requires-Dist: markdown>=3.7; extra == 'full'
+Requires-Dist: markupsafe>=3.0.2; extra == 'full'
+Requires-Dist: mypy>=1.8.0; extra == 'full'
+Requires-Dist: pydantic-settings>=2.6.0; extra == 'full'
+Requires-Dist: pydantic>=2.9.2; extra == 'full'
+Requires-Dist: pygments>=2.17.2; extra == 'full'
+Requires-Dist: pymdown-extensions>=10.12; extra == 'full'
+Requires-Dist: pyright>=1.1.385; extra == 'full'
+Requires-Dist: pytest-playwright>=0.5.2; extra == 'full'
+Requires-Dist: pytest>=8.3.3; extra == 'full'
+Requires-Dist: python-frontmatter>=1.1.0; extra == 'full'
+Requires-Dist: python-semantic-release>=9.14.0; extra == 'full'
+Requires-Dist: ruff>=0.2.0; extra == 'full'
+Requires-Dist: setuptools>=75.5.0; extra == 'full'
+Requires-Dist: starlette-wtf>=0.4.5; extra == 'full'
+Requires-Dist: uvicorn>=0.32.0; extra == 'full'
+Requires-Dist: watchfiles>=0.24.0; extra == 'full'
+Requires-Dist: websockets>=13.1; extra == 'full'
+Requires-Dist: wtforms>=3.2.1; extra == 'full'
+Provides-Extra: utils
+Requires-Dist: jinja2>=3.1.3; extra == 'utils'
+Requires-Dist: jinjax>=0.47; extra == 'utils'
+Description-Content-Type: text/markdown
+
+# basic-components
+
+Re-usable server-side components based on shadcn/ui.
+Built with JinjaX, Alpine.js, and Tailwind CSS, with support for htmx.
+
+## Installation & Usage
+
+### Quick Start with `uvx`
+
+JinjaX is required.
+
+```bash
+# install jinjax
+uvx add jinjax
+````
+
+You can use the CLI directly without installing the package.
+
+```bash
+# Add components
+uvx --from basic-components components add button
+```
+
+You will also need to configure your project to load components into the `jinjax.Catalog` and add a global `cn` function
+to the Jinja environment. See [utilities](https://components.basicmachines.co/docs/utilities).
+
+Helpers for these are packed in the `basic-components[utils]` package. 
+
+### Package Installation Options
+
+Install only the utility functions for JinjaX and tailwind.
+
+```bash
+# With utility functions
+pip install basic-components[utils]
+```
+
+Setup instructions and examples:
+- [FastAPI](https://components.basicmachines.co/docs/fastapi)
+- [Flask](https://components.basicmachines.co/docs/flask)
+- [Django](https://components.basicmachines.co/docs/django)
+
+
+### Installation Groups
+
+- `utils`: Utility functions for JinjaX setup and `cn()` tailwind class helper
+- `docs`: Requirements for the docs site
+- `dev`: Development tools for contributing
+- `full`: All features included
+
+## Documentation
+
+Visit [https://components.basicmachines.co](https://components.basicmachines.co) to view the documentation.
+
+## Contributing
+
+Please read the [contributing guide](https://components.basicmachines.co/docs/contribution).
+
+## License
+
+Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+
+## Components
+
+19/48
+
+- [x] accordion
+- [x] alert
+- [x] alert-dialog 
+- [ ] aspect-ratio
+- [ ] avatar
+- [x] badge
+- [ ] breadcrumb
+- [x] button
+- [ ] calendar
+- [x] card
+- [ ] carousel
+- [ ] chart
+- [x] checkbox
+- [ ] collapsible
+- [ ] command
+- [ ] context-menu
+- [x] dialog 
+- [ ] drawer
+- [x] dropdown-menu
+- [x] form
+- [ ] hover-card
+- [ ] input-otp
+- [x] input
+- [x] label
+- [x] link
+- [ ] menubar
+- [ ] navigation-menu
+- [ ] pagination
+- [x] popover
+- [ ] progress
+- [x] radio-group
+- [ ] resizable
+- [ ] scroll-area
+- [x] select
+- [ ] separator
+- [x] sheet
+- [ ] sidebar
+- [ ] skeleton
+- [ ] slider
+- [ ] sonner
+- [ ] switch
+- [x] table
+- [x] tabs
+- [x] textarea
+- [x] toast
+- [ ] toaster
+- [ ] toggle-group
+- [ ] toggle
+- [ ] tooltip
+
+Extended
+- [ ] Prose 
