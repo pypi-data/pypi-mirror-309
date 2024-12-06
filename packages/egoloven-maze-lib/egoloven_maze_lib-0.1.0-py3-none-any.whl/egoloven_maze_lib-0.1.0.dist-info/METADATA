@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: egoloven-maze-lib
+Version: 0.1.0
+Summary: Library for uni project.
+Home-page: https://github.com/egoloven/egoloven-maze-lib.git
+Author: egoloven
+Author-email: eugene.goloven@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: LICENSE.txt
+
