@@ -1,0 +1,35 @@
+numpy
+xarray
+cftime
+parse
+shapely
+pandas
+matplotlib
+seaborn
+netcdf4
+haversine
+cartopy
+matplotlib-venn<1
+metpy
+tqdm
+pyarrow
+pyproj
+
+[:python_version < "3.9"]
+geopandas
+fiona<=1.9.6
+
+[:python_version >= "3.9"]
+geopandas>=0.14.4
+
+[dev]
+pre-commit
+pytest
+ruff
+
+[docs]
+pydata-sphinx-theme
+sphinx-copybutton
+nbsphinx
+IPython
+sphinx-design
