@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: translatefree
+Version: 1.0.1
+Summary: A free and open source library for translating strings in Python
+Home-page: https://github.com/pipinstallshan/translatefree
+Author: Shahnoor
+Author-email: shahnr5889@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/pipinstallshan/translatefree/issues
+Project-URL: Documentation, https://github.com/pipinstallshan/translatefree#readme
+Project-URL: Source Code, https://github.com/pipinstallshan/translatefree
+Keywords: translation translate free python-library
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium>=4.0.0
+Requires-Dist: undetected-chromedriver>=3.4.6
+Requires-Dist: fake-useragent>=1.2.0
+Requires-Dist: colorama>=0.4.6
+
+# Free Translate
+A free and open source library for translating strings in Python
