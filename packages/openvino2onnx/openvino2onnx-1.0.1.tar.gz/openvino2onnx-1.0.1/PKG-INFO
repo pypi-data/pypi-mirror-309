@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: openvino2onnx
+Version: 1.0.1
+Summary: An Open Neural Network Exchange (ONNX) Optimization and Transformation Tool.
+Author-email: Wenyi Tang <wenyitang@outlook.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: onnx >= 1.8.1
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: tabulate
+Requires-Dist: black ; extra == "test"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: isort ; extra == "test"
+Requires-Dist: pre-commit ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: onnxoptimizer ; extra == "test"
+Requires-Dist: onnxruntime ; extra == "test"
+Requires-Dist: onnxsim < 0.4.36 ; extra == "test"
+Requires-Dist: openvino >= 2024.1.0 ; extra == "test"
+Requires-Dist: openvino-dev >= 2024.1.0 ; extra == "test"
+Project-URL: Docs, https://loseall.github.io/openvino2onnx
+Project-URL: Home, https://github.com/LoSealL/openvino2onnx
+Provides-Extra: test
+
+# OPENVINO2ONNX
+A simple tool to convert your IR XML to ONNX file.
+
+Supported OpenVINO IR Version
+
+- IRv10: openvino>=2020,<2023
+- IRv11: openvino>=2023
+
+## Usage
+
+1. Install from PyPI
+```shell
+pip install openvino2onnx
+```
+
+2. Convert IR using CLI
+```shell
+openvino2onnx model.xml
+```
+
