@@ -1,0 +1,14 @@
+gmail/__init__.py,sha256=WCwTy-Wd75styyhoOzaEqjHrhe1_xXqv2vmZju-A7Xs,19
+gmail/__main__.py,sha256=Z-ruH0lfw11FCw6MRFYxx_hLO3QjvJKPao0aNUxJyz4,106
+gmail/api.py,sha256=mDNdtK70QzA6KcY2Lwg2woq7Td2gxnypivcpcv9Gh5M,8141
+gmail/cli.py,sha256=ztStSbCb8oHxoHuM7txFe4bBgqoCLnH_HWf8GrVaSKY,2051
+gmail/commands/__init__.py,sha256=heSp_soVPnLyiX6HUjiXSQBfp2QanhsQwc5GvyAJ5Ww,21
+gmail/commands/download.py,sha256=OXJMLUnTP3vLEp55kMDWtl29_QsoGWupBiKRi07qKGk,1958
+gmail/commands/labels.py,sha256=T88d4usu4Z8DbadwJ6rwaYtawDGNY7ZD6EbHiMdAhxM,1947
+gmail/commands/list.py,sha256=CT5QyqZ6qhA9MDz8tY6p7Mrw9DL7O-0absaR_MZSq1A,3497
+gmail/google.py,sha256=hCETT1JcuK4xS7gKIKP14Bxu-9SlYu0yK7aVhJc8TF0,2746
+rlane_gmail-1.0.2.dist-info/METADATA,sha256=B4YptfnQG3Vao257KaqpJ6AdI3IxGhuHXKGkYjh3aJM,3207
+rlane_gmail-1.0.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+rlane_gmail-1.0.2.dist-info/entry_points.txt,sha256=bAvb1hcODeX9XbS-XhcAMwHbIE5TScQcroQymH1EsnA,57
+rlane_gmail-1.0.2.dist-info/licenses/LICENSE,sha256=TVpVrLOIatrJu_eYPMC1lOTeVgFT00kiieZkrgDqmKc,1068
+rlane_gmail-1.0.2.dist-info/RECORD,,
