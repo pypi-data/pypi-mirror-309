@@ -1,0 +1,5 @@
+Pillow
+pynput
+
+[:platform_system == "Darwin"]
+pyautogui
