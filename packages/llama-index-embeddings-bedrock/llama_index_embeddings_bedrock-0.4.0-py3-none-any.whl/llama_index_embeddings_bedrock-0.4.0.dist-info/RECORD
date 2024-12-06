@@ -1,0 +1,5 @@
+llama_index/embeddings/bedrock/__init__.py,sha256=SN-ZQJ0tyLGHdoGvWzwftTjLzmkoE1VT0RvRU2okRV8,115
+llama_index/embeddings/bedrock/base.py,sha256=QQQcPU4w_mrkHFnAO0nO8mtA-35_olFmqMrZOq5eghE,16504
+llama_index_embeddings_bedrock-0.4.0.dist-info/METADATA,sha256=zmFZT3Eb6udvc1vjZFjIJtvKvKhRVZiiJF4MosrjKlQ,695
+llama_index_embeddings_bedrock-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_bedrock-0.4.0.dist-info/RECORD,,
