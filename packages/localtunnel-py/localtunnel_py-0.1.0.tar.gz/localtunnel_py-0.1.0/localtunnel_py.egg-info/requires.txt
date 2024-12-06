@@ -1,0 +1,4 @@
+aiohttp>=3.11.2
+asyncio>=3.4.3
+loguru>=0.7.2
+nest_asyncio>=1.5.6
