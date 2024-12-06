@@ -1,0 +1,13 @@
+joblib~=1.1
+platformdirs
+
+[all]
+asv[virtualenv]<0.6.2,~=0.6.0
+pre-commit
+
+[benchmarks]
+asv[virtualenv]<0.6.2,~=0.6.0
+
+[devel]
+asv[virtualenv]<0.6.2,~=0.6.0
+pre-commit
