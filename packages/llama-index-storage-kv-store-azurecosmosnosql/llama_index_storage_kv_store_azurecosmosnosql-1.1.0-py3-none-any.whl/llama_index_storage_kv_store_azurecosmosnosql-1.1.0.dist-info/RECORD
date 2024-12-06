@@ -1,0 +1,5 @@
+llama_index/storage/kvstore/azurecosmosnosql/__init__.py,sha256=HqMkKgYQY6ZkThwQrekyxYMtt0JHiYJbhj3XGgqOka0,125
+llama_index/storage/kvstore/azurecosmosnosql/base.py,sha256=S9amc1j5b7-tvd0vXaUtDdS6sTIdmnUeA0RT5e8ms24,8376
+llama_index_storage_kv_store_azurecosmosnosql-1.1.0.dist-info/METADATA,sha256=D2V34KADky5ZmtnwkR9pmUn41_gYASwRapw_jIBPxCI,818
+llama_index_storage_kv_store_azurecosmosnosql-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_kv_store_azurecosmosnosql-1.1.0.dist-info/RECORD,,
