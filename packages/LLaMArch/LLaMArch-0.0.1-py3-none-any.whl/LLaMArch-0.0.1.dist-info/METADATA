@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: LLaMArch
+Version: 0.0.1
+Summary: Building Block Architectures for GenAI
+Home-page: https://github.com/gpavanb1/llamarch-docs
+Author: gpavanb1
+Author-email: gpavanb@gmail.com
+License: CC BY-NC 4.0 for non-commercial use, commercial license available
+Project-URL: Bug Reports, https://github.com/gpavanb1/llamarch-docs/issues
+Project-URL: Source, https://github.com/gpavanb1/llamarch-docs/
+Keywords: genai architecture ai patterns machine-learning llm langchain
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: langchain
+
+# LLaMArch
+[![Downloads](https://pepy.tech/badge/llamarch)](https://pepy.tech/project/llamarch)
+
+Minimal, Building Blocks for Large Language Models!
+
+## Installation
+
+```bash
+pip install llamarch
+```
+
+## Usage
+
+```python
+from llamarch import ...
+```
+
+Refer to the [documentation site](https://gpavanb1.github.io/llamarch-docs/) for more information.
+
+## Whom to contact?
+
+Please direct your queries to [gpavanb1](http://github.com/gpavanb1)
+for any questions.
