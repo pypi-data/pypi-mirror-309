@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+spheres_packing_calculator/spheres_packing_calculator.py
+spheres_packing_calculator.egg-info/PKG-INFO
+spheres_packing_calculator.egg-info/SOURCES.txt
+spheres_packing_calculator.egg-info/dependency_links.txt
+spheres_packing_calculator.egg-info/requires.txt
+spheres_packing_calculator.egg-info/top_level.txt
