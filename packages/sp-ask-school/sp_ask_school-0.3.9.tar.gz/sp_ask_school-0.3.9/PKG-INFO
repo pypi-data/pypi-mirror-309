@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: sp-ask-school
+Version: 0.3.9
+Summary: A package for managing school information and queues for Scholars Portal Ask
+Home-page: https://github.com/scholarsportal/ask_schools
+License: MIT
+Keywords: school,queue,management,scholars portal,ask a librarian
+Author: Guinsly Mondésir
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/scholarsportal/ask_schools
+Description-Content-Type: text/markdown
+
+# SP Ask School
+
+A Python package for managing school information and queues for Scholars Portal Ask service. This package provides utilities to manage and query information about various Ontario universities and their associated chat queues.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install sp-ask-school
+```
+
+## Usage
+
+```python
+from sp_ask_school import (
+    find_school_by_operator_suffix,
+    find_queues_from_a_school_name,
+    find_school_by_queue_or_profile_name
+)
+
+# Find school from operator suffix
+school = find_school_by_operator_suffix("operator_tor")
+print(school)  # Output: "toronto"
+
+# Get queues for a school
+queues = find_queues_from_a_school_name("Toronto")
+print(queues)  # Output: ["toronto", "toronto-mississauga", ...]
+
+# Find school from queue name
+school = find_school_by_queue_or_profile_name("western-proactive")
+print(school)  # Output: "Western"
+```
+
+## Features
+
+- Find school information by operator suffix
+- Get queue lists for specific schools
+- Find school information by queue name
+- Support for French and SMS queues
+- Practice queue management
+- Support for multiple university profiles
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Authors
+
+- Guinsly Mondésir
+
+## Maintained by
+
+[Scholars Portal](https://scholarsportal.info/)

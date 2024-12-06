@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "sp-ask-school"
+version = "0.3.9"
+description = "A package for managing school information and queues for Scholars Portal Ask"
+authors = ["Guinsly Mondésir"]
+readme = "README.md"
+packages = [{include = "sp_ask_school"}]
+license = "MIT"
+homepage = "https://github.com/scholarsportal/ask_schools"
+repository = "https://github.com/scholarsportal/ask_schools"
+keywords = ["school", "queue", "management", "scholars portal", "ask a librarian"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-sugar = "^1.0.0"
+pyclean = "^3.0.0"
+black = "23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
