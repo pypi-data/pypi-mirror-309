@@ -1,0 +1,13 @@
+makejinja/__init__.py,sha256=3vFiIhVjeyCCS1NQM4kHWjkyOA82e_4gL213S1M5gNA,412
+makejinja/__main__.py,sha256=fbkjIMmLFoSCteeFOG4YKW46gv-h-VnOZTzEHVIkcbo,48
+makejinja/app.py,sha256=apStLFwW7FYqwrrIZKo1-T-SyfI9JUKR-vFdDqC5N2c,12818
+makejinja/cli.py,sha256=ZrK8SsbNh3A6NlHYZasM7JH6QVpWLv3sEJJLeSho6Vk,1449
+makejinja/config.py,sha256=Yi4lJ4plcajZqMrFFu2f8_pr1naCxhOaYli2ZaBxO9M,16042
+makejinja/plugin.py,sha256=QdwFbZoj1pQmNb9GEfWLm8Wx-6SUf7BSGN8IeQQ8knY,1368
+makejinja/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+makejinja-2.7.1.dist-info/LICENSE,sha256=yImp-eAMhgceWCQ6iLCEUHbYAUcD0LRkoVO24D1zRoA,1067
+makejinja-2.7.1.dist-info/METADATA,sha256=_5G1hd3rKQFFiX2uLl63nMdyIDIfUMIXztDcYkG8i8k,5402
+makejinja-2.7.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+makejinja-2.7.1.dist-info/entry_points.txt,sha256=T9aQnYk66HeQ4g9m5pbpVc9bTGoaSNrQDdVcCE-MkOk,58
+makejinja-2.7.1.dist-info/top_level.txt,sha256=9CDAppIDFoCA29uVeD0RC1iJSjCWyRhvTeK9kUN8tvs,10
+makejinja-2.7.1.dist-info/RECORD,,
