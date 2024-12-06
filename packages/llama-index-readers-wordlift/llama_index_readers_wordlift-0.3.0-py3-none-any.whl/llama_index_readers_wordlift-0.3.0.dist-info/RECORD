@@ -1,0 +1,5 @@
+llama_index/readers/wordlift/__init__.py,sha256=enD4y40ziHMigik7AoH4YevtPP53Nhb3HHQgfs86pl0,91
+llama_index/readers/wordlift/base.py,sha256=pHY8b9lArIG0AX5z9IticiFxTRSzd5ixdM4sVjKkn-o,10549
+llama_index_readers_wordlift-0.3.0.dist-info/METADATA,sha256=HIbZY4k3f7h0HSYlUyO0jJe8Qi81fqmnd91JdlffeFI,3068
+llama_index_readers_wordlift-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_wordlift-0.3.0.dist-info/RECORD,,
