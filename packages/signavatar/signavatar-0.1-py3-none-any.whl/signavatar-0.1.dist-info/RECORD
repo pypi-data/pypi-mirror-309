@@ -1,0 +1,10 @@
+signavatar/__init__.py,sha256=pHkGwBaqo8_IFdUmokJne9R-xCJCfhGto0u3BCqrNbI,73
+signavatar/signavatar.py,sha256=shv15XiqUN5DZGiRWzQPNYo8Xr-eVwGUDKH0SLbFoxg,3317
+signavatar/signavatar3.py,sha256=zGhQOWnM9-LiOYu4FN35LIZWIXQWdYeFtZja5mHZBcY,4216
+signavatar/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signavatar/tests/test_signavatar.py,sha256=HveIzxdE9v5pduwB24BeeyQtA0hX6RWF9opvOo3zaUs,1633
+signavatar-0.1.dist-info/LICENCE,sha256=OsSY99DFHDb07uVod_K_rRARBg8MoMYoKS-VqQQLhqY,1087
+signavatar-0.1.dist-info/METADATA,sha256=k7HYeyYGoPGWL5w9ZEKOiozs1Gnf9uEIvW3kMO3oj3s,2560
+signavatar-0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+signavatar-0.1.dist-info/top_level.txt,sha256=a-UOu1wiRBPXRRIVDdZQqKK87VUjQM0O2Tqesk-rnts,11
+signavatar-0.1.dist-info/RECORD,,
