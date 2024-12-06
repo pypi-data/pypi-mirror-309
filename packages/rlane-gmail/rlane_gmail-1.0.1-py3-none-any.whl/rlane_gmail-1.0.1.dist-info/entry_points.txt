@@ -1,0 +1,5 @@
+[console_scripts]
+gmail = gmail.cli:main
+
+[gui_scripts]
+
