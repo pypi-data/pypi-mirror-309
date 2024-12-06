@@ -1,0 +1,2 @@
+[console_scripts]
+flask-api = flask_api_package.app:create_app

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: flask_api_package
+Version: 1.0.0
+Summary: A simple Flask API package
+Author: Your Name
+Author-email: your_email@example.com
+Requires-Dist: Flask>=2.0.0
