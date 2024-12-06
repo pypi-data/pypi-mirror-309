@@ -1,0 +1,11 @@
+bewspweb/__init__.py,sha256=QvtfIGjaYlI9Cce0hmE_Rv6IaMpHWXwd8fETIrB081Y,221
+bewspweb/bewspweb_print.py,sha256=LJUFn_GgJ0G0M2oOm710_xNHva72HVHzP6l0DE_Jni0,380
+bewspweb/bewspweb_start.py,sha256=p2iMzSrU4odIoB1SBhiLOId2KV5F037O1e43Ml9Q4Qc,1900
+bewspweb/bewspweb_weave.py,sha256=FlWMw9T-esYZN6_0Q4A0IeX-16AISnHp-Z7eqWkrn98,2407
+test/test.py,sha256=QHRbcqmLBj-py1Kd7Ff2MQG8vqwkBfLrWZISMnoCBzQ,690
+test/test_1.py,sha256=yDWLxzZz8OKT19gHrXkX_EFGo8FcVkMUZUKk2DDnLMw,816
+test/test_2.py,sha256=mYEfXD5xlnZFNGX5nfhr3lannRLx9sh0DH4UoZlrm8I,688
+bewspweb-0.1.3.dist-info/METADATA,sha256=7q1wAMTBXv_wFizpfKWlcMnOdGy5eJlfp7005UFraxQ,3089
+bewspweb-0.1.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bewspweb-0.1.3.dist-info/top_level.txt,sha256=ozbaQcG9UAoA2_8gtBPBl-nVbyUpV7YUiVqqxMTmkNM,14
+bewspweb-0.1.3.dist-info/RECORD,,
