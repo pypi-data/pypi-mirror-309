@@ -1,0 +1,5 @@
+[console_scripts]
+fidelity = fidelity.cli:main
+
+[gui_scripts]
+
