@@ -1,0 +1,7 @@
+"TraceView Name:","WMS Functional Use Cases"
+""
+"Source","","1 Level Downstream",""
+"Use Case ID","Use Case Name","Requirement ID","Requirement Name"
+"DPPS-UC-180-2.3","Run a single-job workflow on multiple simulated DCs","C-WMS-0140","Job Scheduling"
+"DPPS-UC-180-3.2","Test small(-scale) simulation analysis on DPPS Test Cluster","",""
+"DPPS-UC-100-1.2","Configure a production","C-WMS-0020","Production configuration"
