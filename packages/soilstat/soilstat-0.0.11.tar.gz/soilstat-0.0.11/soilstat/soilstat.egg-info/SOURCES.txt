@@ -1,0 +1,12 @@
+LICENSE
+README.md
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+soilstat/__init__.py
+soilstat/bearing_capacity/vesic.py
+soilstat/soilstat.egg-info/PKG-INFO
+soilstat/soilstat.egg-info/SOURCES.txt
+soilstat/soilstat.egg-info/dependency_links.txt
+soilstat/soilstat.egg-info/requires.txt
+soilstat/soilstat.egg-info/top_level.txt
