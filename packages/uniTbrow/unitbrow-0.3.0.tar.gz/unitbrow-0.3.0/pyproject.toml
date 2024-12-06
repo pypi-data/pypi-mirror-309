@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="uniTbrow"
+version="0.3.0"
+authors = [
+    { name="Matthew Whitaker", email="sub6resources@gmail.com" },
+]
+dependencies = [
+    "sympy",
+]
+description="Stop raising your brow at unit conversions"
+readme="README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Sub6Resources/uniTbrow"
+"Issues" = "https://github.com/Sub6Resources/uniTbrow/issues"
