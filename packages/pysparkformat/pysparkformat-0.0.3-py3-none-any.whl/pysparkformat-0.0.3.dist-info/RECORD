@@ -1,0 +1,8 @@
+pysparkformat/__init__.py,sha256=4dCrvStS1OgE3Vlcv-qx5-TAo377yOMEToEqCi-PwY4,23
+pysparkformat/http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysparkformat/http/csv.py,sha256=rSr3gxzcE4nVu0fbjUSw43XTlhReANeU1TAVR-00yJ0,4845
+pysparkformat-0.0.3.dist-info/LICENSE,sha256=tqhQpJUN5XSKoiOlRcNNqVcWQKoNue33QDzuA2SI3aM,568
+pysparkformat-0.0.3.dist-info/METADATA,sha256=nPKurk0hfLjo8JcPPxx-RuidwNVMvuMYxM_tN9SI_-c,2161
+pysparkformat-0.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pysparkformat-0.0.3.dist-info/top_level.txt,sha256=tq3epmieKNSYF7asU_gK3cnhHavDAZP1O7LeB-R9aK0,14
+pysparkformat-0.0.3.dist-info/RECORD,,
