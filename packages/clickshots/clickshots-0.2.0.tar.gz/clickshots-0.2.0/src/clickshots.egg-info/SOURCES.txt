@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/clickshots/__init__.py
+src/clickshots/core.py
+src/clickshots/listeners.py
+src/clickshots/utils.py
+src/clickshots.egg-info/PKG-INFO
+src/clickshots.egg-info/SOURCES.txt
+src/clickshots.egg-info/dependency_links.txt
+src/clickshots.egg-info/entry_points.txt
+src/clickshots.egg-info/requires.txt
+src/clickshots.egg-info/top_level.txt
+tests/test_clickshots.py
