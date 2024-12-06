@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+run
+floyd/__init__.py
+floyd/__main__.py
+floyd/version.py
+floyd_python.egg-info/PKG-INFO
+floyd_python.egg-info/SOURCES.txt
+floyd_python.egg-info/dependency_links.txt
+floyd_python.egg-info/entry_points.txt
+floyd_python.egg-info/requires.txt
+floyd_python.egg-info/top_level.txt
