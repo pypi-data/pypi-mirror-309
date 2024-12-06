@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ci-cd-tool
+Version: 0.2.6
+Summary: A CI/CD command line tool.
+Home-page: https://github.com/username/ci-cd-tool
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click==8.0.3
+Requires-Dist: pyyaml==6.0
+Requires-Dist: pygithub==1.55
+Requires-Dist: python-gitlab==3.0.0
+Requires-Dist: boto3==1.21.0
+Requires-Dist: heroku3
+Requires-Dist: google-cloud-storage==2.3.0
+Requires-Dist: requests==2.26.0
+Requires-Dist: inquirer
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pytest-cov>=4.0.0
+
+aaaaLL# CCProject
+# CCProject
+# CCProject
+# CCProject
