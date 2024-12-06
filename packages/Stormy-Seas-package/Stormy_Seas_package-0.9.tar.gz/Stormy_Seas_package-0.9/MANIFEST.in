@@ -1,0 +1,2 @@
+include Stormy_Seas_package/*.py
+include Stormy_Seas_package/assets/*
