@@ -1,0 +1,8 @@
+llama_index/readers/apify/__init__.py,sha256=-ScwXOnPvdKfUz6o3UON8RXIo3lqTYN6D73pOz-Ekq8,166
+llama_index/readers/apify/actor/__init__.py,sha256=CJrDTvTts_H5eNjutlxCatWm6hSK6lZipQozuSrt9TQ,104
+llama_index/readers/apify/actor/base.py,sha256=rrPdGjkjM5CBoQ2dYgRgZLVBQ0BzBP7b0IzAikfYpOk,2460
+llama_index/readers/apify/dataset/__init__.py,sha256=gevrCD79n9HPY-JrR9WupC7oB2tTLxf4YHeuYBMFNko,110
+llama_index/readers/apify/dataset/base.py,sha256=ozQthCbqEFQP82c1ws2nhL3DgjM7LI8luXpHWkqeY4s,1577
+llama_index_readers_apify-0.3.0.dist-info/METADATA,sha256=aV_AxnrEQXaqMvoupVTrpS97l6iamdgi-sfXIEQlnTI,3698
+llama_index_readers_apify-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_apify-0.3.0.dist-info/RECORD,,
