@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: spheres_packing_calculator
+Version: 0.1.3
+Summary: Calculates a precise packing density for spherical particles in a 3D Cartesian region
+Author: Freddie Barter
+Author-email: fjbarter@outlook.com
+License: GPL-3.0-only
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyvista
+
+## Requirements ##
+This package requires Python 3.6 or later. Install dependencies via pip:
+
+pip install -r requirements.txt
+
+
+Dependencies:
+NumPy: For efficient numerical operations.
+SciPy: For Simpson's rule integration.
+PyVista: For reading and handling .vtk files.
+OS: For handling and import of files 
+
+
+## Key Functions ##
+compute_packing_density(file, boundaries=None, report_progress=False)
+Description: Computes the packing density of particles in a cuboidal region.
+
+Args:
+file (str): Path to the .vtk file containing particle data.
+boundaries (dict, optional): Defines cuboidal region (x_min, x_max, etc.). Defaults to dataset bounds.
+report_progress (bool, optional): If True, prints progress during computation.
+
+Returns: Float representing the packing density.
+
+
+single_cap_intersection(R, a)
+Description: Calculates the volume of a single spherical cap.
+
+
+double_cap_intersection(R, a, b)
+Description: Calculates the volume of a double spherical cap intersection.
+
+
+triple_cap_intersection(R, a, b, c)
+Description: Calculates the volume of a triple spherical cap intersection.
+
+
+## How It Works ##
+Read Data:
+Uses PyVista to read .vtk files containing particle coordinates and radii.
+
+Define Boundaries:
+Boundaries are calculated from the dataset by default or can be user-specified.
+
+Volume Calculation:
+Single, double, and triple cap intersections are evaluated using numerical methods for accurate volume determination.
+
+Packing Density:
+The total particle volume inside the defined boundaries is divided by the cuboidal cell volume to compute packing density.
+
+## Testing ##
+Tests will be added in a future release.
+
+## Limitations ##
+Currently optimized for spherical particles only.
+Requires .vtk files with properly formatted particle data.
+Numerical integration precision depends on num_simpson_sample_points (adjustable).
+
+## Planned Features ##
+Add support for non-spherical particle shapes.
+Include formal tests in the next version.
+Performance optimization for very large datasets.
+
+## License ##
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
+
+## Acknowledgements ##
+This project uses:
+
+PyVista for file handling.
+Numerical integration methods from SciPy.
+Inspiration from computational geometry techniques.
+
+## Contact ##
+For questions or support, reach out to:
+
+Name: Freddie Barter
+Email: fjbarter@outlook.com
