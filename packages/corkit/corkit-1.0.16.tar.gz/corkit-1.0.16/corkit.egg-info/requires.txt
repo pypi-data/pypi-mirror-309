@@ -1,0 +1,13 @@
+astropy
+numpy
+aiofiles
+scipy
+aiohttp
+scikit-image
+beautifulsoup4
+matplotlib
+pillow
+pandas
+torch
+torchvision
+gdown
