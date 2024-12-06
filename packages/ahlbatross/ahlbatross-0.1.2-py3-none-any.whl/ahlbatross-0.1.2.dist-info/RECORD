@@ -1,0 +1,10 @@
+_ahlbatross_version.py,sha256=08TK2sYzQF2Wqm6gpxZEgWYYF9ZjbInObIzS2R2yxiE,18
+ahlbatross/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ahlbatross/cli.py,sha256=PJLNzxHlmoHtLvGs_29xcw9QtRCf9LGvBDu_zpBQrFw,1196
+ahlbatross/main.py,sha256=AbfUwIg6LkGdWCpM-t2756Y40RxYU32Phw3ZlAPbkUA,26617
+ahlbatross/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+ahlbatross-0.1.2.dist-info/METADATA,sha256=OkngpxzzDI50mG81HsXM0ibFJ_Z8LlYXCcVVAZrbFz4,3904
+ahlbatross-0.1.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ahlbatross-0.1.2.dist-info/entry_points.txt,sha256=SQSFCPuTPz9RgvBi7WYcH9pe5ajsCHZAoti7ESQINVc,50
+ahlbatross-0.1.2.dist-info/licenses/LICENSE,sha256=ZWXYkbOOUM3cJ7cnGIVZuFVmGwbLcI9xPvhy3SnzJ4Q,1094
+ahlbatross-0.1.2.dist-info/RECORD,,
