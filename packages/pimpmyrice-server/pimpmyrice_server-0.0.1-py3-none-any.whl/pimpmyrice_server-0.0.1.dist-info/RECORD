@@ -1,0 +1,13 @@
+pimpmyrice_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pimpmyrice_server/__main__.py,sha256=wD9Tb-HGw92de8DKAt2CdeW9MdBvW_zaUnWtqnYPqCI,270
+pimpmyrice_server/api.py,sha256=1q3pXIPOKXHmANnevSEJDqkzpE3nfoW_8spp4gJfmpo,5363
+pimpmyrice_server/cli.py,sha256=wx1RJeHJojNEH4joSHjmNJZNnIe_hnV4KKPhqDR7sXs,1307
+pimpmyrice_server/files.py,sha256=uyNbnHYAADyrsOqksOAd0FhwOWG7FemuzD_aWaDKK3c,2655
+pimpmyrice_server/tray.py,sha256=n4d4e3hy14hsYL55cW2Af3_VM4N3v3i4wvevdHDytzk,584
+pimpmyrice_server/assets/pimp.ico,sha256=MujdN1qWbXWSRhw5mi_6kOVeTXnUROUJm3C8QFw84Ys,4286
+pimpmyrice_server-0.0.1.dist-info/LICENSE,sha256=AGzy0TlIH9PEp4mGJgK7iZiNz2-wXS6_2pqIyn2CCSc,1085
+pimpmyrice_server-0.0.1.dist-info/METADATA,sha256=ItUtNXVdlS9BDY0d9bPJASfYR0LJ8LD1AHqqj-PDbXw,952
+pimpmyrice_server-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pimpmyrice_server-0.0.1.dist-info/entry_points.txt,sha256=z6bUCLEq2_P4YRUOZa3ouZyyoSmAjxNfJB0GppeKFP4,64
+pimpmyrice_server-0.0.1.dist-info/top_level.txt,sha256=SAxtBkGW8VNgq9EmYleUTg6cPlddzHUvHnrRFhJo0TQ,18
+pimpmyrice_server-0.0.1.dist-info/RECORD,,
