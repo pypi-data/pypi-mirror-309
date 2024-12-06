@@ -1,0 +1,13 @@
+titta/TalkToProLab.py,sha256=GeAK_TziOtV87lRdIH9EGjp4MsQTIU6e-Iq21sVrYeg,25314
+titta/TalkToProLab_dummy.py,sha256=lLOY7fh1V5WXUlp4uiljGgoo-kzYalGTwJJPoBw8I0o,15080
+titta/Titta.py,sha256=OfIqeerP791eRba-IaR68IJwN1oCWvAkw79EazKCiuo,9352
+titta/Tobii.py,sha256=xxva2NdsbxtdSswgtBqPl57BNpP9R-xLcKEXX_UnDnk,82831
+titta/Tobii_dummy.py,sha256=LHMDuYsRxs8iVRWlvRm4AdzFhkTgWGJaOBi7LK2FZKU,8812
+titta/__init__.py,sha256=NjjtZB48lqnfBw4w3dfl9jwqZbdEu4HwBMg1WwAe8Rw,82
+titta/helpers_tobii.py,sha256=i1ud94Nia1y59YkdGhg-wnaWhln-rQMNhaP0FTRYUiE,23628
+titta/version.py,sha256=2mhj3ZzSBORZRAw-XNDZH6Fc32uULgRHrr9MaH5aMmw,488
+titta-2.1.0.dist-info/LICENSE.md,sha256=_aKjNL5Je5PhCJHbAoNOav0GvceDCNGWRh_UcpP8kU0,14184
+titta-2.1.0.dist-info/METADATA,sha256=Q4Bo-TXmJaAFuV-eFb-lr4hEcsvjYjIsHonIjbgiiv0,20820
+titta-2.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+titta-2.1.0.dist-info/top_level.txt,sha256=6yOqvT7Zj5opzsAbWf4OWMaG6edFIqKgzdppxpjok1k,6
+titta-2.1.0.dist-info/RECORD,,
