@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hamuna-modules
+Version: 1.0.0
+Summary: Modules for Hamuna AI
+Home-page: https://www.hamuna.club
+Author: O.Push
+Author-email: opush.developer@outlook.com
+License: MIT
+Description-Content-Type: text/plain
+Requires-Dist: diskcache
+Requires-Dist: httpx
+Requires-Dist: aiofile
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp_retry
+Requires-Dist: aiodecorators
+Requires-Dist: wget
+
+Hamuna AI modules

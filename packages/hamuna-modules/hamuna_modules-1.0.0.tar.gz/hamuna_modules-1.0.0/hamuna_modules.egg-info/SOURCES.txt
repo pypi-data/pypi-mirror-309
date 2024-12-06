@@ -1,0 +1,6 @@
+setup.py
+hamuna_modules.egg-info/PKG-INFO
+hamuna_modules.egg-info/SOURCES.txt
+hamuna_modules.egg-info/dependency_links.txt
+hamuna_modules.egg-info/requires.txt
+hamuna_modules.egg-info/top_level.txt
