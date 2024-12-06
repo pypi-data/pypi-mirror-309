@@ -1,0 +1,8 @@
+gemaakmd_diffusion2d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemaakmd_diffusion2d/diffusion2d.py,sha256=lU4b4hbiehVH1rBq7f4B7ijiMFMxDssmhZzejhieQPg,2088
+gemaakmd_diffusion2d/output.py,sha256=GYV09OLBvWGMAaE4YiFhbfFd9z0aXsZw95YNMli3YNE,555
+gemaakmd_diffusion2d-0.0.14.dist-info/LICENSE,sha256=BauI8_naHQX5xb8KfEXEmpAH-HfdnCN6W_ZoJ2_gTDs,18651
+gemaakmd_diffusion2d-0.0.14.dist-info/METADATA,sha256=0DWvQWLOFcyqQcHlKQfGsKRfFWnIQ-a4rvP7kKWwkfg,2102
+gemaakmd_diffusion2d-0.0.14.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+gemaakmd_diffusion2d-0.0.14.dist-info/top_level.txt,sha256=EQgzj4-KNdq9jbiIb-Sq4_Hm7_icy2MshkhC5088dyk,21
+gemaakmd_diffusion2d-0.0.14.dist-info/RECORD,,
