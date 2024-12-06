@@ -1,0 +1,12 @@
+decree_tree/__init__.py,sha256=okulogZCceVLnq0h1Y7vS8M4eoDMWeFjUpKHr01iwhQ,276
+decree_tree/_version.py,sha256=NVt0icQozjdMjfEJgNP8e0xwIUqt_DxEhD0g8KwZzUA,198
+decree_tree/assembled.py,sha256=VtcYgvP7wC874sRd0rcUZ7l1k1AIBEZ_4qf_7QfTLkg,11125
+decree_tree/base.py,sha256=4AhYyWFG8yDFjXlCAerot8cgw3INhZMLwqpStg6iMnY,1347
+decree_tree/decree.py,sha256=DpCKiJmtMwV2dKGvytSJ9OIQe2GnWjf8-tBkc1K8hyw,7156
+decree_tree/extras.py,sha256=9aGp2zGsLd8N9CaLZn5d6oPyUYSN8RKBPdXhT_AQPTI,1025
+decree_tree/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decree_tree/tree.py,sha256=XkWQj07v4ktmmcJ1JLQa1hnXc6-kKFaOnP_HJm1geWo,9609
+decree_tree-0.2.0.dist-info/LICENSE.txt,sha256=jxVdwgYiCliUN_FumqTqQAw0GYzo_5NlD5AR9pJlaSc,11341
+decree_tree-0.2.0.dist-info/METADATA,sha256=2XVztJUxrdKFdT42ja0DA9EpayPN4mDYQtapkToIMHU,3090
+decree_tree-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+decree_tree-0.2.0.dist-info/RECORD,,
