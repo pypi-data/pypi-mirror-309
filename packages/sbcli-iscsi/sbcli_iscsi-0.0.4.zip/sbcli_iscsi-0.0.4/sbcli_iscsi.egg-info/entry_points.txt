@@ -1,0 +1,2 @@
+[console_scripts]
+sbcli-iscsi = simplyblock_cli.cli:main
