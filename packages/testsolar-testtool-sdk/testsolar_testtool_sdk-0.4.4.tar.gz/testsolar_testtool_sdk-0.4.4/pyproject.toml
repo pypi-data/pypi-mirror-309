@@ -1,0 +1,45 @@
+[project]
+name = "testsolar-testtool-sdk"
+version = "0.4.4"
+description = "Python3 SDK for TestSolar testtool"
+authors = [
+    { name = "asiazhang", email = "asiazhang2002@gmail.com" },
+]
+urls = { repository = "https://github.com/OpenTestSolar/testtool-sdk-python" }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+dependencies = [
+    "portalocker>=2.7",
+    "dacite>=1.8.1",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = { text = "Apache License 2.0" }
+keywords = [
+    'testsolar'
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.4",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.4.1",
+    "ruff>=0.6.3",
+]
+
+[tool.ruff]
+line-length = 100
