@@ -1,0 +1,7 @@
+vital-ai-vitalsigns>=0.1.23
+vital-agent-container-sdk>=0.1.5
+vital-ai-haley-kg>=0.1.14
+kgraphservice>=0.0.7
+six
+pyyaml
+requests
