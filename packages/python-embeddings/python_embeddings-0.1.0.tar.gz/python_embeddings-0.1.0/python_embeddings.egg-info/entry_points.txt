@@ -1,0 +1,3 @@
+[console_scripts]
+search = python_embeddings.search:main
+sync_repo = python_embeddings.sync_repo:main
