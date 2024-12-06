@@ -1,0 +1,14 @@
+README.md
+setup.py
+folder_creation_test.egg-info/PKG-INFO
+folder_creation_test.egg-info/SOURCES.txt
+folder_creation_test.egg-info/dependency_links.txt
+folder_creation_test.egg-info/entry_points.txt
+folder_creation_test.egg-info/requires.txt
+folder_creation_test.egg-info/top_level.txt
+folder_structure_generator_7edge/__init__.py
+folder_structure_generator_7edge/dredd-template.yml
+folder_structure_generator_7edge/generator.py
+folder_structure_generator_7edge/hooks-template.py
+folder_structure_generator_7edge/serverless-template.yml
+folder_structure_generator_7edge/swagger-template.json
