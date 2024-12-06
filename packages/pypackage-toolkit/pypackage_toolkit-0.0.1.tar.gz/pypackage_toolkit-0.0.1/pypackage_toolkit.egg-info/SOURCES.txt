@@ -1,0 +1,9 @@
+README.md
+setup.py
+pypackage-toolkit/__init__.py
+pypackage_toolkit.egg-info/PKG-INFO
+pypackage_toolkit.egg-info/SOURCES.txt
+pypackage_toolkit.egg-info/dependency_links.txt
+pypackage_toolkit.egg-info/not-zip-safe
+pypackage_toolkit.egg-info/requires.txt
+pypackage_toolkit.egg-info/top_level.txt

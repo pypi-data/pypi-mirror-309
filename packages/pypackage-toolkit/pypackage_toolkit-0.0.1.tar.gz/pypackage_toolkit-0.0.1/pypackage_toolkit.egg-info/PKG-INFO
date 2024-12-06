@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pypackage-toolkit
+Version: 0.0.1
+Description-Content-Type: text/markdown
+Requires-Dist: langchain
+Requires-Dist: python-dotenv
+Requires-Dist: openai
+
+# LLM å·¥å…·åŒ…
