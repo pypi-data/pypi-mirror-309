@@ -1,0 +1,11 @@
+Scrapy==2.11.2
+textual==0.86.1
+
+[dev]
+twine
+pytest
+textual-dev
+docutils-stubs==0.0.22
+
+[lint]
+pylint
