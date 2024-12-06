@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: TagHunter
+Version: 1.0.0
+Summary: A Python package to identify and analyze improperly structured <p> tags in HTML documents.
+Home-page: https://github.com/Birbalk99/TagHunter
+Author: Birbal Kumar
+Author-email: birbalk99@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: beautifulsoup4>=4.9.0
+
+
+        TagHunter is a Python tool for identifying <p> tags in HTML files that are not properly nested, such as <p> tags that appear as list items but are not part of <li> tags. 
+
+        Features:
+        - Detect improperly structured <p> tags.
+        - Recognize patterns like numeric, Roman numerals, and parenthetical markers.
+        - Validate patterns and classify by CSS classes.
+        - Exclude invalid patterns (e.g., numbers above a threshold).
+        - Aggregate results and generate reports.
+        - Automatically export findings to CSV files.
+    

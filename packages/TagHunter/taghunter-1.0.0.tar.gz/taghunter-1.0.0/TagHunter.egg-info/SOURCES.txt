@@ -1,0 +1,13 @@
+README.md
+setup.py
+TagHunter/__init__.py
+TagHunter/aggregator.py
+TagHunter/extractor.py
+TagHunter/processor.py
+TagHunter/updater.py
+TagHunter/validator.py
+TagHunter.egg-info/PKG-INFO
+TagHunter.egg-info/SOURCES.txt
+TagHunter.egg-info/dependency_links.txt
+TagHunter.egg-info/requires.txt
+TagHunter.egg-info/top_level.txt
