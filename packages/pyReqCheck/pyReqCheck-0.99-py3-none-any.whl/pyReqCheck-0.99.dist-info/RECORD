@@ -1,0 +1,10 @@
+pyReqCheck/__init__.py,sha256=nyu6VhAPZi8lEi0Gqlgq4qKEh5GWpAWUWAHBCb4Ma_M,25
+pyReqCheck/__main__.py,sha256=gY8XoCELaQ7QCBwbzXVenm7YirKgq3IDrYLqbq3C45k,941
+pyReqCheck/mapping,sha256=XxIABmGUPVNUw0TOODo3Bb_Z1Mmn4NOLECUXn4v9h6w,26858
+pyReqCheck/pyReqCheck.py,sha256=9ErkPQfZLbNC4S_aPVMtedc4yimSycIMa8SatomxZQU,5429
+pyReqCheck/stdlib,sha256=1FKBTL9R-Omu-ixLGk7RKFAt7gc78Ecj2zsUkHGULWA,36606
+pyReqCheck-0.99.dist-info/LICENSE,sha256=FeTLCAb54ufw6REl2zqysSWXo6HZUSR2-0vgLgOtWg0,1078
+pyReqCheck-0.99.dist-info/METADATA,sha256=jM_mvpSsybGym9a9ix9tJgOjy6EL-4Bpp_xoVQM2Z9c,1193
+pyReqCheck-0.99.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pyReqCheck-0.99.dist-info/top_level.txt,sha256=Iu6x-gUQwu4EUHNcCcDs3MSIyv-6uKS0xA9nkuPGOVg,11
+pyReqCheck-0.99.dist-info/RECORD,,
