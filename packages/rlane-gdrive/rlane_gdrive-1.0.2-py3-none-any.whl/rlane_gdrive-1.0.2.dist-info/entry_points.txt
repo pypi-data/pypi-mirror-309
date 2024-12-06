@@ -1,0 +1,5 @@
+[console_scripts]
+gdrive = gdrive.cli:main
+
+[gui_scripts]
+
