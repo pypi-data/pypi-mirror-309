@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "ts_version": {
+      "type": "string",
+      "priority": 1,
+      "required": true
+    },
+    "module_system": {
+      "type": "string",
+      "enum": ["CommonJS", "ESM"],
+      "priority": 2,
+      "required": true
+    },
+    "type_definitions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "priority": 3,
+      "required": false
+    }
+  },
+  "required": ["ts_version", "module_system"]
+}

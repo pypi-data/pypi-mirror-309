@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "document_type": "system_design_document",
+    "description": "This document defines the modular structure, dependencies, and adaptive components of the system.",
+    "template_version": "1.0"
+  },
+  "project_id": "{{ PROJECT_ID }}",
+  "version": "{{ VERSION }}",
+  "modules": [
+    {
+      "id": 1,
+      "name": "Meta Information",
+      "path": "lingustruct/templates/m1.json",
+      "schema": "lingustruct/templates/m1_s.json",
+      "dependencies": [],
+      "purpose": "Defines the metadata and project scope.",
+      "category": "Metadata",
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "name": "Architecture Information",
+      "path": "lingustruct/templates/m2.json",
+      "schema": "lingustruct/templates/m2_s.json",
+      "dependencies": [1],
+      "purpose": "Describes the system's architecture and components.",
+      "category": "Architecture",
+      "priority": 2
+    },
+    {
+      "id": 3,
+      "name": "Dependency Resolution",
+      "path": "lingustruct/templates/m3.json",
+      "schema": "lingustruct/templates/m3_s.json",
+      "dependencies": [1, 2],
+      "purpose": "Specifies the dependency resolution strategy between modules.",
+      "category": "Configuration",
+      "priority": 3
+    },
+    {
+      "id": 4,
+      "name": "Error Handling",
+      "path": "lingustruct/templates/m4.json",
+      "schema": "lingustruct/templates/m4_s.json",
+      "dependencies": [1],
+      "purpose": "Defines error handling strategies for different system components.",
+      "category": "Error Management",
+      "priority": 4
+    },
+    {
+      "id": 5,
+      "name": "Priority Management",
+      "path": "lingustruct/templates/m5.json",
+      "schema": "lingustruct/templates/m5_s.json",
+      "dependencies": [1],
+      "purpose": "Manages task priorities across the system.",
+      "category": "Task Management",
+      "priority": 5
+    },
+    {
+      "id": 6,
+      "name": "Abbreviations and Glossary",
+      "path": "lingustruct/templates/m6.json",
+      "schema": "lingustruct/templates/m6_s.json",
+      "dependencies": [1],
+      "purpose": "Defines abbreviations and key terms used in the project.",
+      "category": "Documentation",
+      "priority": 6
+    },
+    {
+      "id": 7,
+      "name": "Term Mappings",
+      "path": "lingustruct/templates/m7.json",
+      "schema": "lingustruct/templates/m7_s.json",
+      "dependencies": [1, 2],
+      "purpose": "Maps key concepts to implementation patterns and dependencies.",
+      "category": "Mapping",
+      "priority": 7
+    },
+    {
+      "id": 8,
+      "name": "Property Order Definition",
+      "path": "lingustruct/templates/m8.json",
+      "schema": "lingustruct/templates/m8_s.json",
+      "dependencies": [1, 2, 3],
+      "purpose": "Defines the order in which properties are processed and prioritized.",
+      "category": "Configuration",
+      "priority": 8
+    },
+    {
+      "id": 9,
+      "name": "Version Control",
+      "path": "lingustruct/templates/m9.json",
+      "schema": "lingustruct/templates/m9_s.json",
+      "dependencies": [1],
+      "purpose": "Specifies the versioning strategy for the project.",
+      "category": "Versioning",
+      "priority": 9
+    },
+    {
+      "id": 10,
+      "name": "Technology Stack",
+      "path": "lingustruct/templates/m10.json",
+      "schema": "lingustruct/templates/m10_s.json",
+      "dependencies": [1, 2, 5, 6],
+      "purpose": "Describes the languages, frameworks, and tools used in the project.",
+      "category": "Technology",
+      "priority": 10
+    },
+    {
+      "id": 11,
+      "name": "TypeScript Module",
+      "path": "lingustruct/templates/m11.json",
+      "schema": "lingustruct/templates/m11_s.json",
+      "dependencies": [1, 10],
+      "purpose": "Describes key aspects of TypeScript files in the project.",
+      "category": "File Specific",
+      "priority": 11
+    },
+    {
+      "id": 12,
+      "name": "Python Module",
+      "path": "lingustruct/templates/m12.json",
+      "schema": "lingustruct/templates/m12_s.json",
+      "dependencies": [1, 10],
+      "purpose": "Describes key aspects of Python files in the project.",
+      "category": "File Specific",
+      "priority": 12
+    },
+    {
+      "id": 13,
+      "name": "Rust Module",
+      "path": "lingustruct/templates/m13.json",
+      "schema": "lingustruct/templates/m13_s.json",
+      "dependencies": [1, 10],
+      "purpose": "Describes key aspects of Rust files in the project.",
+      "category": "File Specific",
+      "priority": 13
+    },
+    {
+      "id": 14,
+      "name": "Go Module",
+      "path": "lingustruct/templates/m14.json",
+      "schema": "lingustruct/templates/m14_s.json",
+      "dependencies": [1, 10],
+      "purpose": "Describes key aspects of Go files in the project.",
+      "category": "File Specific",
+      "priority": 14
+    },
+    {
+      "id": 15,
+      "name": "JavaScript Module",
+      "path": "lingustruct/templates/m15.json",
+      "schema": "lingustruct/templates/m15_s.json",
+      "dependencies": [1, 10],
+      "purpose": "Describes key aspects of JavaScript files in the project.",
+      "category": "File Specific",
+      "priority": 15
+    },
+    {
+      "id": 16,
+      "name": "Generic File Information",
+      "path": "lingustruct/templates/m16.json",
+      "schema": "lingustruct/templates/m16_s.json",
+      "dependencies": [],
+      "purpose": "Stores general file metadata.",
+      "category": "General",
+      "priority": 16
+    },
+    {
+      "id": 17,
+      "name": "Dependency Analysis",
+      "path": "lingustruct/templates/m17.json",
+      "schema": "lingustruct/templates/m17_s.json",
+      "dependencies": [16],
+      "purpose": "Tracks file dependencies and relationships.",
+      "category": "Dependency Analysis",
+      "priority": 17
+    }
+  ],
+  "relationships": [
+    {
+      "source": 1,
+      "target": 2,
+      "type": "sequential",
+      "description": "Meta information must be processed before defining the architecture."
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "type": "dependency",
+      "description": "The architecture module depends on dependency resolution strategies."
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "type": "feedback",
+      "description": "Error handling strategies affect property order processing."
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "type": "influences",
+      "description": "Priority management influences the technology stack selection."
+    }
+  ],
+  "adaptive_patterns": {
+    "high_security": {
+      "modules": [2, 4, 6],
+      "adaptation": {
+        "multi_factor_authentication": true,
+        "enhanced_error_logging": true
+      }
+    },
+    "high_load": {
+      "modules": [3, 5, 10],
+      "adaptation": {
+        "caching": true,
+        "load_balancing": true
+      }
+    }
+  },
+  "quality_assurance": {
+    "coverage": {
+      "dimensions": ["functionality", "security", "performance"],
+      "depth": "comprehensive"
+    },
+    "coherence_check": {
+      "pattern_matching": "consistent",
+      "conflict_resolution": "automated"
+    }
+  }
+}

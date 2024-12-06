@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "file_type": {
+      "type": "string",
+      "priority": 1,
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "priority": 2,
+      "required": true
+    },
+    "size": {
+      "type": "integer",
+      "priority": 3,
+      "required": false
+    },
+    "content_summary": {
+      "type": "string",
+      "priority": 4,
+      "required": false
+    }
+  },
+  "required": ["file_type", "path"]
+}
