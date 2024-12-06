@@ -1,0 +1,15 @@
+easy_dwpose/__init__.py,sha256=pg9G2sbQxnyvYUeNfPXnf8NaWJPCBJqwjXU5jcmRUjE,76
+easy_dwpose/body_estimation/__init__.py,sha256=dN53vzJhz1q8vOtYVQWphGPxK0xM2kMQGcEiqDPd8Uk,106
+easy_dwpose/body_estimation/detector.py,sha256=4xbg-NVHpHEI7itXGvlMhJeBf8ftp71Q2pd3vy0we7U,4828
+easy_dwpose/body_estimation/pose.py,sha256=-tzO7I1z0o271M00F33_YUT53gEdwwQMnRapBrX9-18,11814
+easy_dwpose/body_estimation/utils.py,sha256=-VZSzb84UiN3oeS8u9aFY95ENW-ov0j907R-BsbdSM0,603
+easy_dwpose/body_estimation/wholebody.py,sha256=5clGtVvK6g8gm9rTwPOekdJb8Jcq9taj2RG7ja8AmDc,2056
+easy_dwpose/draw/__init__.py,sha256=T9V4fnsqQLLDkZSdOJAW3Tu3DIUyIREYT-hYTAmJR-w,78
+easy_dwpose/draw/mimic_motion.py,sha256=JZKIiYit92ta59vMuwWLjLY2p3n9ucTu2mWRjLFvXs4,5740
+easy_dwpose/draw/musepose.py,sha256=FhNFvfbDJPtdd7evKjMVucCLGedachrW75RA_miW9c0,5485
+easy_dwpose/draw/openpose.py,sha256=1kWU0r6mB0isyRXUwwPGkS5Oz8K8Gr-sXbP336oQUso,4296
+easy_dwpose/dwpose.py,sha256=0W_ERcu4QM1aXtmepFtUJG82MJHbsvnodQfPvo1eROE,2954
+easy_dwpose-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+easy_dwpose-1.0.2.dist-info/METADATA,sha256=STeOn1VYUaYeX5Axyap7obU9Rfr6e_kDwcupCqUK3Vk,851
+easy_dwpose-1.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+easy_dwpose-1.0.2.dist-info/RECORD,,
