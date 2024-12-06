@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+phabreporter.egg-info/PKG-INFO
+phabreporter.egg-info/SOURCES.txt
+phabreporter.egg-info/dependency_links.txt
+phabreporter.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
