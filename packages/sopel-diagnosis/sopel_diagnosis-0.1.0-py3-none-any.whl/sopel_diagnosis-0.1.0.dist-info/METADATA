@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sopel-diagnosis
+Version: 0.1.0
+Summary: A silly Sopel plugin to diagnose your friends with random mental disorders. (Just for fun! NOT medical advice.)
+Author-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/dgw/sopel-diagnosis
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-diagnosis/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+
+# sopel-diagnosis
+
+A silly Sopel plugin to diagnose your friends with random mental disorders.
+(Just for fun! NOT medical advice.)
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-diagnosis
+```
+
+## Using
+
+- `.diagnose [<name>]`: Scientifically determine the cause of all your (or
+  another person's) troubles in life.
+
+## Changelog
+
+### 0.1.0
+
+First release of `sopel-diagnosis`.
