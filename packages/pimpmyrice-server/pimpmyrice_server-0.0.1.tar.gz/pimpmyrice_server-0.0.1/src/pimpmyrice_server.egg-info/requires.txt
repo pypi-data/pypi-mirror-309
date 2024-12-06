@@ -1,0 +1,7 @@
+pimpmyrice
+fastapi
+uvicorn[standard]
+docopt
+requests
+watchdog
+pystray
