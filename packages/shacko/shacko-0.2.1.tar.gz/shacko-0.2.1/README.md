@@ -1,0 +1,114 @@
+# Homeless Framework
+
+**Homeless:** tested in the toughest times. ✅
+
+A web framework born out of necessity, grown in tough conditions, and ready to
+lend a hand when you think everything's falling apart. Because when you're
+"homeless", the only thing left to do is build something solid.
+
+## 🚀 Getting Started
+
+### Install Homeless
+
+We'll use `uv` as the "all-in-one" tool. Thanks, uv, for making it worth every
+second spent installing it, after all, time isn't exactly on our side. Easy
+install [docs](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer).
+
+**Tip:** in a pinch, `uv --help` won't let you down.
+
+So go ahead with:
+
+```bash
+# Linux
+cd /tmp  # Is there a better place? (more on this later)
+# Line by line and self explanatory:
+uv init testdrive
+cd testdrive
+uv add homeless
+```
+
+Output:
+
+```bash
+Resolved 2 packages in 182ms
+░░░░░░░░░░░░░░░░░░░░ [0/1] Installing wheels...
+Installed 1 package in 0.98ms
+ + homeless==0.1.0
+```
+
+Let's see:
+
+```bash
+❯ uv run python
+Python 3.12.7 (main, Oct  1 2024, 08:52:11) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from homeless import hello
+>>> hello()
+'Hello from homeless!'
+>>> exit()
+```
+
+Oh, boy.
+
+### Write your first project
+
+You don't need much to get started, just an idea and some code. Build something,
+and you might even find a real home and finally escape `/tmp`, or at least land
+a good bug fix.
+
+### Tested in the toughest times
+
+We've all been "homeless" at the start. This framework has been tested in chaos,
+tough times, and sleepless nights.
+
+## Main goals
+
+If we're lucky, stay warm.
+
+## 📜 Documentation
+
+Think of the docs as a house under construction, it's not quite finished yet,
+but it's getting better every day. The ~~core~~ ~~onl^H~~ docs are at [the docs page](https://github.com/homeless-framework/homeless]), and like any good
+shelter, they're growing stronger with each update. Need a hand?  Documentation
+contributions are always welcome!
+
+## 🤔 Why "Homeless"?
+
+Because every great idea starts from hardship. "Homeless" isn't just a name,
+it's a philosophy: start from nothing and build something that lasts. And if
+you're lucky, maybe you'll find a home. Or at least a solid app.
+
+### ➡️ Roadmap
+
+Let's get there before the cold of the winter gets too cold! It doesn't have to
+end to be
+finished on the streets.
+
+### 💡 About Homeless
+
+Homeless isn't just a name, part 2; it's a story of starting from scratch and
+building something solid when everything else seems uncertain. Born from
+real-life challenges, this framework embodies the idea that the toughest times
+can spark the most creative solutions.
+
+Homeless is for anyone who's ever had to build something from nothing, whether
+you're coding in a coffee shop, working from a temporary shelter, or just trying
+to make sense of things when everything feels up in the air.
+
+This framework is proof that, even when life is tough, you can still build tools
+that matter. One line of code at a time.
+
+- 💪 From nothing to something
+- 🏗️ Building stability through code
+- 🤝 A community that gets it
+- 🔗 Built from the ground up, connecting everything
+
+### 🤝 Contributing
+
+Got some free time (and maybe a roof over your head)? Contribute to improving
+Homeless! There's nothing better than building together.
+
+### 🛠️ Support
+
+Need help? No problem, we're all in the same boat. Open an issue or shoot us an
+email, but remember: no problem is too big when you've got the right framework!

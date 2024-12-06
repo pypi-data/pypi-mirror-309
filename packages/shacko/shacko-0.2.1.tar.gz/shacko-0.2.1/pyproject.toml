@@ -1,0 +1,14 @@
+[project]
+name = "shacko"
+version = "0.2.1"
+description = "Shacko: The Digital Homeless Framework. Tested in the toughest times. ✅"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/homeless-framework/homeless"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
