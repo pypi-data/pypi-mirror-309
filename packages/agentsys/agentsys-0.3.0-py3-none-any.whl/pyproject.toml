@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentsys"
+version = "0.3.0"
+description = "A robust, asynchronous multi-agent development framework"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [
+    {name = "LifSys AI"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: AsyncIO",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+dependencies = [
+    "numpy",
+    "pydantic>=2.0.0",
+    "python-dotenv>=0.19.0",
+    "typing-extensions>=4.0.0",
+    "aiofiles>=23.2.1",
+    "pytest-asyncio>=0.23.0",
+    "aiohttp>=3.9.0",
+    "asyncio>=3.4.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/lifsys/agentsys"
+Repository = "https://github.com/lifsys/agentsys.git"
+Documentation = "https://github.com/lifsys/agentsys#readme"
+Issues = "https://github.com/lifsys/agentsys/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "mypy>=1.0",
+    "pre-commit",
+    "pytest-cov>=4.1.0",
+    "pytest-timeout>=2.2.0"
+]
+
+[tool.hatch.build]
+packages = ["."]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = "."
+timeout = 300
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
