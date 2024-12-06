@@ -1,0 +1,26 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "self_encryption"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pip>=24.0",
+    "pytest>=7.4.4",
+]
+
+[tool.maturin]
+features = ["python"]
+module-name = "self_encryption._self_encryption"
+bindings = "pyo3"
+develop = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
