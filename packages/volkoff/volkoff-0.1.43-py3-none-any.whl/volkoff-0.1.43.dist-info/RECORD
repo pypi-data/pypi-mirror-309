@@ -1,0 +1,11 @@
+volkoff/__init__.py,sha256=TuQBDkjNwGoUYc6PA5klgjzts6LEewyPacuCdybQ9YU,53
+volkoff/extract.py,sha256=yqoMxKoaUiedPNKEPFkPp0fSpRhdX6Sol_srXtUA3WE,881
+volkoff/hide.py,sha256=BxGT0N_ib7KBQarTJNAGnaiEGEqRNGheazl14HyebJM,872
+volkoff/main.py,sha256=aUs7iZLPk_xCX3Yap1iLg64ZBYNlfIOyucyk2qIakG4,6969
+volkoff/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volkoff/tests.py,sha256=_6uxQqsr6McjOtbnI3dNOp6p6RGLPTw33kf5WMaow1I,3220
+volkoff/tui.py,sha256=FQ8vqWQR3T2lAWUXHQCGpahuRM2fMS9Dy_dSRzG1w64,4447
+volkoff-0.1.43.dist-info/METADATA,sha256=mIhUJGdBy_Ad9NaTD2y-UDIczfvyQd0kSHZmEe3ZC5Q,1899
+volkoff-0.1.43.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+volkoff-0.1.43.dist-info/entry_points.txt,sha256=UEDeQagtNg5OLWSDeAiD3_W1dI_EkfM4W_ek2R3UpFI,41
+volkoff-0.1.43.dist-info/RECORD,,
