@@ -1,0 +1,33 @@
+{
+  "initializeCommand": "mkdir -p /var/tmp/container-extensions", // executed on HOST system
+  "postCreateCommand": "./init_container.sh",
+  "image": "roxauto/roxbot:latest",
+  "runArgs": ["--network=host"],
+
+  "mounts": [
+    "source=/var/tmp/container-extensions,target=/home/dev/.vscode-server/extensions,type=bind,consistency=cached"
+  ],
+
+  "containerEnv": {
+    "GPS_REF":"51.365948, 6.172037"
+  },
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.pylint",
+        "ms-python.black-formatter",
+        "shardulm94.trailing-spaces",
+        "njpwerner.autodocstring",
+        "mhutchie.git-graph",
+        "doi.fileheadercomment",
+        "donjayamanne.githistory",
+        "ms-python.mypy-type-checker",
+        "ms-python.isort"
+      ]
+    }
+  }
+}
