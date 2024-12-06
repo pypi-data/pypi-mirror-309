@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tox.ini
+src/iqm/pypitest/__init__.py
+src/iqm_pypitest.egg-info/PKG-INFO
+src/iqm_pypitest.egg-info/SOURCES.txt
+src/iqm_pypitest.egg-info/dependency_links.txt
+src/iqm_pypitest.egg-info/requires.txt
+src/iqm_pypitest.egg-info/top_level.txt

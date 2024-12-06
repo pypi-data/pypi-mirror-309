@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=65.4.1"]
+# build-backend = "setuptools.build_meta"
+
+[project]
+name = "iqm-pypitest"
+# dynamic = ["version"]
+version = "0.1"
+description = "A dummy package for testing IQM's Python packaging"
+authors = [{name="IQM Finland Oy", email="developers@meetiqm.com"}]
+readme = "README.md"
+license = {file="LICENSE.txt"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+]
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "pydantic >= 2.4.2, < 3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/iqm-finland/iqm-pypitest"
+Documentation = "https://github.com/iqm-finland/iqm-pypitest"
+
+[project.optional-dependencies]
+dev = [
+    "tox == 4.11.3",
+    "tox-extras == 0.0.2"
+]
+
+[tool.setuptools_scm]
+# See configuration details in https://github.com/pypa/setuptools_scm
+version_scheme = "no-guess-dev"

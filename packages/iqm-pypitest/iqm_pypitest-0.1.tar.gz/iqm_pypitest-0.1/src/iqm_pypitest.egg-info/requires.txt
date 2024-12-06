@@ -1,0 +1,5 @@
+pydantic<3.0,>=2.4.2
+
+[dev]
+tox==4.11.3
+tox-extras==0.0.2

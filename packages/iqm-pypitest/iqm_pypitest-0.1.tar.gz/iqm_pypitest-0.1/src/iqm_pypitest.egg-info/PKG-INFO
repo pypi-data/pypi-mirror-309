@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: iqm-pypitest
+Version: 0.1
+Summary: A dummy package for testing IQM's Python packaging
+Author-email: IQM Finland Oy <developers@meetiqm.com>
+License: Copyright (c) 2021-2024 IQM Finland Oy.
+        
+        All rights reserved. Confidential and proprietary.
+        
+        Distribution or reproduction of any information contained herein is prohibited
+        without IQM Finland Oy's prior written permission.
+        
+Project-URL: Homepage, https://github.com/iqm-finland/iqm-pypitest
+Project-URL: Documentation, https://github.com/iqm-finland/iqm-pypitest
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: <3.12,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pydantic<3.0,>=2.4.2
+Provides-Extra: dev
+Requires-Dist: tox==4.11.3; extra == "dev"
+Requires-Dist: tox-extras==0.0.2; extra == "dev"
+
+# Pypitest
+
+This is a dummy package for testing purposes.
