@@ -1,0 +1,12 @@
+filur/main.py,sha256=MpSXXkoUUcDLp0xcbUHkEIsv2err3I7zzMBmRAgreBg,3365
+filur/models/__init__.py,sha256=UCAZN-BA31fuPmiIDKokchivv5Kq-AYaEt2xjyl28H0,54
+filur/models/file.py,sha256=TPd8lGnmhG3dupMtUYvH9wkpkyzBp8vzSVZYYXWfm50,6417
+filur/models/pattern.py,sha256=BDOh5x4--AS1RVValiWJH_YtdwEe2BK3juJu2YdvZw0,582
+filur/schemas/__init__.py,sha256=gVOlOAPEdQjAuR9TDMv2fjJ7w70AXE_1i2ZpwTtfU8c,42
+filur/schemas/configuration.py,sha256=Ht4Mx1kXpwRHIF9wOzoeBqKTM57TTjN5PdPKyKVc1gA,992
+filur/templates/template.html,sha256=kk9yBwbzqdhhle_Xqx5ySb0fUDUoiyAqzgwC_d3DAHY,6638
+filur-0.1.0.dist-info/METADATA,sha256=dxiIdsIDkO3JlyKIjwTqAFk7bRyzs1IRHF6TtnKfWI8,2334
+filur-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+filur-0.1.0.dist-info/entry_points.txt,sha256=fYhnrBv69abAIyQaSsqX0botEoLuKM20kLJ70HksD_M,42
+filur-0.1.0.dist-info/licenses/LICENSE,sha256=OyFDp5t6LaTXTNwVuVAIarFLPf1U0hmCPWNdsUjvzcs,1096
+filur-0.1.0.dist-info/RECORD,,
