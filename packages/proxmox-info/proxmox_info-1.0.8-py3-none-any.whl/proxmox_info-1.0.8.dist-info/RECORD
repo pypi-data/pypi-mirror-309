@@ -1,0 +1,9 @@
+proxmox_info/_version.py,sha256=vy0P95Si-KzUl6NsixjrWEHfr5xcmkA_oO_S3bQRmvE,411
+proxmox_info/config.py,sha256=CCcqVaYpojdHsPqCEmn2qj3DnMKSNBgCHc4eqVaL7pY,529
+proxmox_info/pminfo.py,sha256=fzybghJo6PTOsmIGW2JKjSQYa7wG0RH_hHiVPLwoal4,9722
+proxmox_info-1.0.8.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+proxmox_info-1.0.8.dist-info/METADATA,sha256=b5bzy5B4ykG-haxONNOHcABSObJX4DNgpAxcDxFyo0w,3072
+proxmox_info-1.0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+proxmox_info-1.0.8.dist-info/entry_points.txt,sha256=kyXQYrxEa4f8PsY5ZFCwBCOWe0u1D54Y_b78TLnB00Q,58
+proxmox_info-1.0.8.dist-info/top_level.txt,sha256=sBjDKixRJ8iNc0WViRcfocBItwppLEQh5NCAQ07BoXs,13
+proxmox_info-1.0.8.dist-info/RECORD,,
