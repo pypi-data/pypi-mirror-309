@@ -1,0 +1,17 @@
+vianu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vianu/datasets/20211125_USAN_stem_list_cumulative_csv_2.csv,sha256=TCC6EAXad8GzKERO4Z758OH0OOAJYJ80jDqv53wzqfc,52039
+vianu/datasets/drugs_rxnorm_20210510.csv,sha256=GuiCYKhIEMK7Mqcwa1OPXuXcJbwkPfGKGe5iaI8wdcs,4447146
+vianu/datasets/drugsatfda_20210527.csv,sha256=IU3YWjnfGU7R-ttoNvpvIZPzEcCTCVX38Dc5VSe5U9Y,4888715
+vianu/datasets/swissmedic_zugelassene_arzneimittel_20230531_public.xlsx,sha256=L3fygdjNyDRGFPtKUqhRVbeaIOB-osIhuykee97u1qw,1037047
+vianu/tools/nightcrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vianu/tools/nightcrawler/launch_demo_app.py,sha256=QJEaavhKCim1rIIuraxtk9FCFgY2wJAS5PcA7KUk87c,12801
+vianu/tools/nightcrawler/launch_demo_pipeline.py,sha256=T3lrM_MnidKbbHelGV0OlaSkUpx9mKkLVJQyAiudoZA,10193
+vianu/tools/tici/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vianu/tools/tici/comparison_utils.py,sha256=Pe0oFF70n4e8cMIoJCKVCwvl87Dng2xQS1OuvQ1z7GE,2577
+vianu/tools/tici/load_files.py,sha256=E6xcfnEDP4QOLCOsDMFwRFl3kFCKQycVPaiiB0Bx9L8,4100
+vianu/tools/tici/matching_sequences.py,sha256=9US3Aza-PDolXdGwhNMMrQpv94jaziCuWvPxSlJtWYY,1263
+vianu/tools/tici/tici_pipeline.py,sha256=yg1aNGgxOFzdnlmjZk-FlrW8AMj2KnPF7-yyak8LE2Y,2275
+vianu-0.0.8.dist-info/METADATA,sha256=MaS-r3mbXSYhvpwD972lfbmT77013EXvbuamJDycwOM,988
+vianu-0.0.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+vianu-0.0.8.dist-info/entry_points.txt,sha256=SzVyZU5EGVOEdOowVyXmzEibM1MOJisxW1GJHa_YGcg,78
+vianu-0.0.8.dist-info/RECORD,,
