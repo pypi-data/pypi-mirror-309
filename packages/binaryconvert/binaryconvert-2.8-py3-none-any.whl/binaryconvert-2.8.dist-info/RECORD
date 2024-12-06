@@ -1,0 +1,11 @@
+binaryconvert/__init__.py,sha256=ZobZOhi3dkXtVLyeFEaxFWub7M8wpGvH6znz9u0iDTg,75
+binaryconvert/__main__.py,sha256=5-p0aAzVzEp3OImuqsdzj-tuvB2o4F-NNEriL06ZIbA,61
+binaryconvert/cli.py,sha256=c31SgI64BZDkvXQVnMiJe6YClhdpqU8WAEQ2ulZDiNY,570
+binaryconvert/convert.py,sha256=WE8GTFb-sUyJ_Gh01xO5eP44guqJ_jebrJRxIaZppIc,1182
+binaryconvert-2.8.dist-info/LICENSE,sha256=R2VG8_edMFnlhRbnQK5zg-IXAyASrR5qbOdfUMrun5Y,1062
+binaryconvert-2.8.dist-info/METADATA,sha256=rrGLy5AWjG9zNl56Hk59PvQOzlPY2bptLqlT1krjwlU,2381
+binaryconvert-2.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+binaryconvert-2.8.dist-info/dependency_links.txt,sha256=x-eu7CyK2lNGSOJhH_0cg0IufA0_9mOTFpZz7sd5Ylw,39
+binaryconvert-2.8.dist-info/entry_points.txt,sha256=M3bSBF1kC6w1i-Qi_8pWtxK1OxtXrArEAgmlu3sGMiU,60
+binaryconvert-2.8.dist-info/top_level.txt,sha256=lxGhWHKeytzRz-Gp6MVRO6uNTOvSQ7y82cz4i-hlk4M,14
+binaryconvert-2.8.dist-info/RECORD,,
