@@ -1,0 +1,10 @@
+clickshots/__init__.py,sha256=vAIT-AgYonxAENX2sv15vtb2YAqf2BaqMx439LqVLmg,237
+clickshots/core.py,sha256=PYWu-Fyy5E9S6vQ5c69JvV87ln7HibbuIgSOLIZqUIY,2389
+clickshots/listeners.py,sha256=NMpjWYvIQECQ8bROJhYjY-LxtNwYUkBsIYD_TZjx_kk,6366
+clickshots/utils.py,sha256=W5PsU187dfrYq9vpx4BAKP0mx0lUfltGj447FskPlnw,6184
+clickshots-0.2.0.dist-info/LICENSE,sha256=SSkC3ManBJ08421fLc96UdyuATaVkTAsHiS5EXc2Ej8,1088
+clickshots-0.2.0.dist-info/METADATA,sha256=6zbLwVHIb1nLL3uSwyRPqa3TMlUHxjpYZVyPrXfoa08,3016
+clickshots-0.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+clickshots-0.2.0.dist-info/entry_points.txt,sha256=v0Jl4sT-uefX5HK3ufyrH4-i9ZGGrpH_u9R4iiVlwZ0,52
+clickshots-0.2.0.dist-info/top_level.txt,sha256=j-jIj6GUC5PSvbeu64oCc8I5FwjZtEHStbHA5R5X4CE,11
+clickshots-0.2.0.dist-info/RECORD,,
