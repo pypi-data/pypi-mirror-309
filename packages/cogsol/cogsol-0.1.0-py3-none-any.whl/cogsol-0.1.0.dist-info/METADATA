@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cogsol
+Version: 0.1.0
+Summary: A Python SDK for interacting with an Cognitive API provided by Cognitive Solutions.
+Home-page: https://github.com/Pyxis-Cognitive-Solutions/cognitive-sdk
+Author: Cognitive Solutions
+Author-email: cognitive.solutions@pyxis.tech
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests >=2.20.0
+
