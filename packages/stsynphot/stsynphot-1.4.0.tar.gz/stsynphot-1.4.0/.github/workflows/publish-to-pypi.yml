@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  release:
+    types: [released]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-n-publish:
+    name: Build and publish Python 🐍 distributions 📦 to PyPI
+    runs-on: ubuntu-latest
+    if: github.repository == 'spacetelescope/stsynphot_refactor'
+    environment:
+      name: release
+      url: https://pypi.org/p/stsynphot
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b  # v5.3.0
+      with:
+        python-version: '3.x'
+
+    - name: Install python-build and twine
+      run: python -m pip install build "twine>=3.3"
+
+    - name: Build package
+      run: python -m build --sdist --wheel .
+
+    - name: List result
+      run: ls -l dist
+
+    - name: Check dist
+      run: python -m twine check --strict dist/*
+
+    - name: Test package
+      run: |
+        cd ..
+        python -m venv testenv
+        testenv/bin/pip install pytest-astropy ci-watson stsynphot_refactor/dist/*.whl
+        testenv/bin/python -c "import stsynphot; stsynphot.test()"
+
+    - name: Publish distribution 📦 to PyPI
+      if: github.event_name == 'release'
+      uses: pypa/gh-action-pypi-publish@fb13cb306901256ace3dab689990e13a5550ffaa  # v1.11.0
