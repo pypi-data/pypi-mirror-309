@@ -1,0 +1,5 @@
+llama_index/embeddings/huggingface_itrex/__init__.py,sha256=whQPtFcQZCh86hCkSpKyQxqys2bmeNrwJdZz6K0Xt74,127
+llama_index/embeddings/huggingface_itrex/base.py,sha256=2M-BohcTNM7ApIovjj4DPIWGTH7sboWCOtUXWG8rinU,6683
+llama_index_embeddings_itrex-0.4.0.dist-info/METADATA,sha256=3q5l1uzjNWf8f-BfiOSuctxpb3X9aKQmMsyRRx4hOas,945
+llama_index_embeddings_itrex-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_itrex-0.4.0.dist-info/RECORD,,
