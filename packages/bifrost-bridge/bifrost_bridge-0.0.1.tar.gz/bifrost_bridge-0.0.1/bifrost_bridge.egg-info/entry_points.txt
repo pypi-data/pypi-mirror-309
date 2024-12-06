@@ -1,0 +1,6 @@
+[console_scripts]
+bridge_fastp = bifrost_bridge.fastp:process_fastp_data
+bridge_mlst = bifrost_bridge.mlst:process_mlst_data
+
+[nbdev]
+bifrost_bridge = bifrost_bridge._modidx:d
