@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+awesomest_search/__init__.py
+awesomest_search/search.py
+awesomest_search.egg-info/PKG-INFO
+awesomest_search.egg-info/SOURCES.txt
+awesomest_search.egg-info/dependency_links.txt
+awesomest_search.egg-info/requires.txt
+awesomest_search.egg-info/top_level.txt
