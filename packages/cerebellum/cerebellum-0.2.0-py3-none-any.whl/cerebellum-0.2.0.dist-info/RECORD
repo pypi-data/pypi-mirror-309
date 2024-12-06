@@ -1,0 +1,10 @@
+cerebellum/__init__.py,sha256=a6d_gEqOTWkVLd6oSdJUww76iz73aQzkWt04xntV2ks,77
+cerebellum/browser.py,sha256=Xb7PtS9dVFKPtz7jypTkWf9DEmH1-a7luysuFw9Z5p0,14536
+cerebellum/planners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cerebellum/planners/anthropic.py,sha256=eZb9AO5uImmWVqslzeVZaBdL7Yeq7KgrztzQxoyUtsI,41032
+cerebellum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cerebellum/utils.py,sha256=JXwTqwfe1gFTDJBaNW6GEVxLsmgdwdJ4dOY6KaeokFA,4281
+cerebellum-0.2.0.dist-info/LICENSE,sha256=HY1QiXZuUT7MGszrqRRKRrsODAb8ABIlgSKdzp4_dc0,1052
+cerebellum-0.2.0.dist-info/METADATA,sha256=XqCgn_tOxqkXyqZ_4lJPyp_21GJCF6atx6TovqrSeS0,741
+cerebellum-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cerebellum-0.2.0.dist-info/RECORD,,
