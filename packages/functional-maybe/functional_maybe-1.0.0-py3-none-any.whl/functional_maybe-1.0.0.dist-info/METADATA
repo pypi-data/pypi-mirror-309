@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: functional-maybe
+Version: 1.0.0
+Summary: Wrapper class. Basically functional Maybe or Railway pattern.
+Home-page: https://github.com/JoonasOT/FunctionalMaybe/
+Author: Joonas Tuominen
+Author-email: joonas.o.tuominen@gmail.com
+Project-URL: Bug Tracker, https://github.com/JoonasOT/FunctionalMaybe/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FunctionalMaybe
+A simple Maybe wrapper class that works. Creates a wrapper around variable and allows transformation of said variable to different values and supplying it to functions.
