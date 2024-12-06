@@ -1,0 +1,14 @@
+oss/remote/__init__.py,sha256=i1Bcgy8iyajkkcvAudDTULV0Jkj9EgUISIUn0rz7Oq0,43
+oss/remote/app.py,sha256=nR13t-Tuh7-woChq2E3QGQUfEbf1fNH-BKb1UfJWd1E,1085
+oss/remote/bin/__init__.py,sha256=vpz2P2mOgFqel4QIfCcCU9DvTkLdcfwwhtvSBWiH0Zk,51
+oss/remote/bin/remote.py,sha256=1fF3barv-mW6rY1igqw0E3bTIvR7R7HP6ylSY2nrJmw,3221
+oss/remote/models/__init__.py,sha256=gMMVwy9Pe1tMOVjgO1i5zA7q4cH0ycF4PF_4qTUZCOQ,57
+oss/remote/remotes/__init__.py,sha256=ClrCjxlnvRJaS__MrfAADmnW3fQaYbIorumjruL3-rE,59
+oss/remote/remotes/buttonpad.py,sha256=W4cFYlgoLgVaiT6IzyjfYeQwvAB845GeVHrNzBqV7e8,1602
+oss/remote/remotes/keypad.py,sha256=riI_W9beIHKm7qxPK4cCmDAtb0gQJ2nCEfLsHcU_HfE,2802
+oss/remote/remotes/type.py,sha256=wUsOMpSxQr0WbE7yBiZkF2fn5LSqfLWG3Z1-Z-97MsQ,402
+openshootingsolutions_remote-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+openshootingsolutions_remote-0.0.2.dist-info/METADATA,sha256=XF8C3O0f0hygIcmGWhmvQDrBxzJhtG4UzF4zfJUGho8,2130
+openshootingsolutions_remote-0.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+openshootingsolutions_remote-0.0.2.dist-info/entry_points.txt,sha256=fUbzfkGOVKDMEJkr1A7Y1ZFX1_SqvFQpaSo-Rq-eWF0,56
+openshootingsolutions_remote-0.0.2.dist-info/RECORD,,

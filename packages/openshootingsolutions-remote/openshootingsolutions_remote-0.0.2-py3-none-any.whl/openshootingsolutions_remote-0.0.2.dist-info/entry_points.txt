@@ -1,0 +1,3 @@
+[console_scripts]
+oss_remote=oss.remote.bin.remote:cli
+
