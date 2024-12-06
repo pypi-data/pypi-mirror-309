@@ -1,0 +1,13 @@
+kcweb={}
+kcweb['name']='kcweb'                             #项目的名称
+kcweb['version']='6.4.11'							#项目版本
+kcweb['description']='kcweb作为web开发而设计的高性能框架'       #项目的简单描述
+kcweb['long_description']='kcweb作为web开发而设计的高性能框架，采用全新的架构思想，注重易用性。遵循MIT开源许可协议发布，意味着个人和企业可以免费使用kcweb，甚至允许把你基于kcweb开发的应用开源或商业产品发布或销售。完整文档请访问：https://intapp.kwebapp.cn/intapp/doc/index/finddoc/1'     #项目详细描述
+kcweb['license']='MIT License'                    #开源协议   mit开源
+kcweb['url']='https://docs.kwebapp.cn/index/index/2'
+kcweb['author']='百里-坤坤'  					 #名字
+kcweb['author_email']='kcweb@kwebapp.cn' 	     #邮件地址
+kcweb['maintainer']='坤坤' 						 #维护人员的名字
+kcweb['maintainer_email']='fk1402936534@qq.com'    #维护人员的邮件地址
+kcweb['username']=''
+kcweb['password']=''
