@@ -1,0 +1,17 @@
+twidge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twidge/__main__.py,sha256=Zw0teUdpsXI1IJwc8zKzQF6DoR6TBmNKZ5-NtL9q_Ws,1194
+twidge/core.py,sha256=QGF4WO08e3wcBhYq5nxT8E6_-jj5Efou6TD1k-SFcSg,6052
+twidge/terminal.py,sha256=d7ps6FOCjoWNbQIfPc4L5_CaLOZBQ738haI6TzAa9fk,2939
+twidge/widgets/__init__.py,sha256=ZoKDvrX0StDKkntGJtY90vj3UptEEzIatirYlVQOJpM,137
+twidge/widgets/editors.py,sha256=DOHHG_J524jWDLKrVw9QoZzGfnB-3O3der4NdrKV1SI,14353
+twidge/widgets/filters.py,sha256=nmq825Nc0N_B5VOPawf4WS41sERtSrbvXtYfz4NGBHE,4321
+twidge/widgets/form.py,sha256=MZRF_CHJJRrGhFcn2UxHhBU9-k0KTviXiT7Y00boNVc,1356
+twidge/widgets/inline.py,sha256=_lql2zlwxMyNIDNwOED-3kiYMWc1hlGOFzswUmhPAdo,4832
+twidge/widgets/simple.py,sha256=YclUUA1uZ4vx9fWE1B1BTNUn3zFiptjtTWC3aCCaflA,3466
+twidge/widgets/templater.py,sha256=iHBENXY-LhdimuQs1-vqkxzjNj4RIWc3ig9tIa8Sf3Y,3797
+twidge/widgets/wrappers.py,sha256=vKqvYILYLmqUSI9EelZnThFaMdIV70moZ4_tpBQTdKM,6606
+twidge-1.2.2.dist-info/LICENSE,sha256=4PtbUmV39_L7uI2cWPKDIGcVt8V2Wylryz40yhF89aA,1074
+twidge-1.2.2.dist-info/METADATA,sha256=vzQyHr-Qj_MLLXgOYKCw3oKbXWaoOkL6nZUnBTe_Vro,1590
+twidge-1.2.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+twidge-1.2.2.dist-info/entry_points.txt,sha256=-I35OJ4_TwAaO49q2IHx9MFL0qCeH-8TT9nUS4RBEBE,46
+twidge-1.2.2.dist-info/RECORD,,
