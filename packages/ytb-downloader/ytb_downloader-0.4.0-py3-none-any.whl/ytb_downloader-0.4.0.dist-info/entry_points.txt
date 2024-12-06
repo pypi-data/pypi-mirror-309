@@ -1,0 +1,4 @@
+[console_scripts]
+ytb_downloader=ytb_downloader.main:download_single
+ytb_downloader_bulk=ytb_downloader.main:download_bulk
+
