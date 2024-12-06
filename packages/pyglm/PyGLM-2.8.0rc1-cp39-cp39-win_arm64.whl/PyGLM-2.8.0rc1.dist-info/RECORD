@@ -1,0 +1,16 @@
+PyGLM/__init__.py,sha256=l2ROznxgbk-kI9J3mhOcEdWQPtOrH2UjV3tZYtJE2ys,64
+PyGLM/__init__.pyi,sha256=twGzHxUxNN_4EcUSVrjq89vlz_uaIbTaqfDdhy6wGvw,744842
+PyGLM/glm.cp39-win_arm64.pyd,sha256=fS6Ioi6eli4kze_Al16W--eTWTtgVIMbkRcZCWmezEU,4089856
+PyGLM/glm_typing.py,sha256=wuIHze6AGu2q2FxjFxsXHXGb3ZW55xLcsqHXJL-ko7E,77503
+PyGLM-stubs/LICENSE,sha256=w_bBeA-Yym_2ahRV5KB3N95vXJyUt6xm_6Ek-x2sh9A,1054
+PyGLM-stubs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyGLM-stubs/glm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyGLM-stubs/glm/__init__.pyi,sha256=uFvjszFMlFC37M72k50MklEJBswSIoOXCtQgjTfVDtg,744846
+glm/__init__.py,sha256=LDPedI37rL-Noo1x375bzCQlzO2Uxqy0q-hVUgZm05Y,258
+glm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyGLM-2.8.0rc1.dist-info/COPYING,sha256=4z64NDEl0_SEcgTB4A8GF0N2x5dCsiFMGjPjiauRbg8,4370
+PyGLM-2.8.0rc1.dist-info/LICENSE,sha256=3UvVAO4h-9pn7CGYafHg3J8RK-cjiOtKGks1m06RpOc,885
+PyGLM-2.8.0rc1.dist-info/METADATA,sha256=m6QeDXsC43tzupJPLt2uDUzHCoyTr4zgjvMVTFVI_xU,13888
+PyGLM-2.8.0rc1.dist-info/WHEEL,sha256=a2IYrbKn1uOCpnBDYW59L4QcagQ-nA9zVzVBce5pigQ,99
+PyGLM-2.8.0rc1.dist-info/top_level.txt,sha256=2LLIxk25fLyIcPdDpDsxEFSEFtm-592AT8whYiaCr9I,22
+PyGLM-2.8.0rc1.dist-info/RECORD,,
