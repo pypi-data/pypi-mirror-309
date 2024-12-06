@@ -1,0 +1,33 @@
+tool = { rye = { dev-dependencies = ["pytest>=8.2.2", "marimo>=0.7.0"] } }
+
+[project]
+name = "Perspectra"
+version = "0.1.0"
+description = "Automatically extract and perspectively correct documents in images"
+readme = "readme.md"
+requires-python = ">=3.10"
+license = { text = "ISC" }
+authors = [{ name = "Adrian Sieber", email = "mail@adriansieber.com" }]
+keywords = ["document scanner", "perspective transformation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    'Topic :: Scientific/Engineering :: Image Recognition',
+]
+urls = { "Homepage" = "http://github.com/feramhq/perspectra" }
+dependencies = [
+    "imageio>=2.1.0",
+    "matplotlib>=2.0.0",
+    "numpy>=2.0.0",
+    "scikit-image>=0.24.0",
+    "plotly>=5.22.0",
+    "pandas>=2.2.2",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
