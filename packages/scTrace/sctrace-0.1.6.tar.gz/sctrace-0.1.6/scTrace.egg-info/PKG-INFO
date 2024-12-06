@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scTrace
+Version: 0.1.6
+Summary: scTrace+: enhance the cell fate inference by integrating the lineage-tracing and multi-faceted transcriptomic similarity information
+Home-page: https://github.com/czythu/scTrace
+Author: Zeyu Chen
+Author-email: chenzy22@mails.tsinghua.edu.cn
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scanpy
+Requires-Dist: leidenalg
+Requires-Dist: pyro-ppl
+Requires-Dist: POT
+Requires-Dist: node2vec
+Requires-Dist: scStateDynamics
+
+# scTrace+
+
+[![PyPI version](https://badge.fury.io/py/scTrace.svg)](https://pypi.org/project/scTrace/)
+
+## Introduction
+`scTrace+` is a computational method to enhance the cell fate inference by integrating the lineage-tracing and multi-faceted transcriptomic similarity information.
+
+## System Requirements
+- Python version: >= 3.7
+
+## Installation
+
+The Release version `scTrace+` python package can be installed directly via pip:
+```
+pip install scTrace
+```
