@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/ipysensitivityprofiler/__init__.py
+src/ipysensitivityprofiler/_controller.py
+src/ipysensitivityprofiler/_data.py
+src/ipysensitivityprofiler/_model.py
+src/ipysensitivityprofiler/_utils.py
+src/ipysensitivityprofiler/_view.py
+src/ipysensitivityprofiler.egg-info/PKG-INFO
+src/ipysensitivityprofiler.egg-info/SOURCES.txt
+src/ipysensitivityprofiler.egg-info/dependency_links.txt
+src/ipysensitivityprofiler.egg-info/requires.txt
+src/ipysensitivityprofiler.egg-info/top_level.txt
+tests/test_meta.py
