@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kkconfig
+Version: 0.0.2
+Summary: Package to help with configuration of local workspaces.
+Home-page: https://github.com/kkrizka/kkconfig
+Author: Karol Krizka
+Author-email: kkrizka@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Karol Krizka's Project Configuration
+Module to help with configuration of local workspaces.
+
+## Local Configuration
+The goal of the local configuration is to provide a mechanism for providing ]
+setting specific to the local workspaces (ie: paths to local data).
+
+The project should provide a module `config` that contains the following
+snipplet:
+
+```python
+from kkconfig import local
+
+mydatapath = '/default/path/to/data'
+
+local.load_settings('.myproject.yaml', globals())
+```
+
+The `load_settings` function will load the settings from the specified file (if
+it exists) and update the global namespace (aka `config` module globals) with
+the contents. The variables should also be provided this module to provide
+default values and show available settings.
