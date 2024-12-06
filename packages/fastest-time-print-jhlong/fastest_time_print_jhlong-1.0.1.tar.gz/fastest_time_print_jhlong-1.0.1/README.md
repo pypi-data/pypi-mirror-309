@@ -1,0 +1,96 @@
+# fastest_time_print
+
+## 项目简介
+fastest_time_print 是一个结合 sanitize_jhlong 包的功能强大的数据处理函数。它用于从文件中读取时间数据， 进行标准化处理、去重、排序，
+并输出最小的三个时间值
+
+## 安装依赖
+在使用此函数之前，请确保已安装 `sanitize_jhlong` 包：
+
+```python
+pip install sanitize_jhlong
+```
+
+## 函数功能
+* 数据清洗：借助`sanitize`函数，将时间格式化为`分钟.秒钟`的标准形式。
+* 去重处理：自动去除重复时间记录。
+* 排序输出：将时间从小到大排序，返回前三个最快的时间值。
+
+## 函数定义
+
+```python
+from sanitize_jhlong import sanitize
+
+def fastest_time_print(data_file):
+    '''
+    从文件中读取时间数据，标准化、去重、排序，并返回前三个时间值。
+    
+    参数：
+    - data_file: 字符串类型，包含时间数据的文件路径。
+
+    返回值：
+    - 一个列表，包含按升序排列的前三个时间值（字符串格式）。
+    - 如果文件无法读取，返回 None 并打印错误信息。
+    '''
+    try:
+        with open(data_file) as f:
+            data = f.readline()
+        data_clean = data.strip().split(',')
+        good_data = sorted(set(sanitize(each_t) for each_t in data_clean))[0:3]
+        return good_data      
+    except IOError as err:
+        print('find file error' + str(err))
+        return None
+
+```
+## 使用方法
+假设有一个名为`james.txt`的文件，内容如下：
+
+```markfile
+ 2:45,1-23,1:02,2:34,2:45,1-23
+```
+调用实例：
+```python
+from sanitize_jhlong import sanitize
+from my_time_library import fastest_time_print
+
+# 调用函数处理时间数据
+result = fastest_time_print("james.txt")
+print(result)  # 输出 ['1.02', '1.23', '2.34']
+```
+
+## 参数说明
+`data_file`：包含逗号分隔时间数据的文件路径，字符串类型
+
+## 返回值
+* 一个包含排序后前三个时间值的列表。
+* 如果文件读取失败，返回 `None`，并打印错误信息。
+
+## 实例输出
+对于以下文件内容：
+```python
+3:21,2:45,1-15,2:34,1:15,2:45
+```
+运行代码：
+```python
+result = fastest_time_print("james.txt")
+print(result)
+```
+输出结果为：
+```python
+['1.15', '2.34', '2.45']
+```
+## 贡献指南
+如果您有兴趣为 `sanitize-jhlong`项目做出贡献，欢迎提交 pull request 或 issue！
+我们乐意接受任何有助于改进项目的反馈和建议。
+
+## 联系方式
+如果您在使用过程中遇到问题，请联系作者：jhlong2024@163.com
+
+## makdown使用方法
+- **标题**（#）：用 `#` 表示一级标题，`##` 表示二级标题。
+- **代码块**（```）：使用三个反引号来包裹代码，使代码以块的形式显示。可以在反引号后面写上代码语言（如 `python`），这样会有语法高亮。
+- **列表**（-）：用 `-` 或 `*` 表示无序列表。（确保每个 - 号后面有空格）
+- 如果您想使用斜体，可以将内容包裹在单个` * `中；使用粗体则用两个 `* `：*这是斜体文本*
+**这是粗体文本**
+
