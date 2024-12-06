@@ -1,0 +1,5 @@
+itk
+numpy<2.0.0
+pre-commit
+torch>=2.1.0
+tqdm
