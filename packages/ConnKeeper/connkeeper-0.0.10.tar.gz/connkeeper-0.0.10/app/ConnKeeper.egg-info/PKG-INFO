@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ConnKeeper
+Version: 0.0.10
+Summary: Allows to save, manage and efficiently use rdbms connections and store them locally in one location.
+Home-page: https://github.com/ankit48365/ConnKeeper
+Author: Ankiz
+Author-email: ankit48365@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: SQLAlchemy<=2.0.36
+Requires-Dist: psycopg2>=2.9.10
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pyodbc>=5.2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# ConnKeeper
+Before running this python package :
+
+1. Create a variable with path, where you wish to manage and save your 'connections.yaml' file. call the variable as "conn_home"
+2. On the identified path, create a empty file named "connections.yaml"
+3. Example :
+      echo 'export conn_home="/home/Documents/mygit/.chsd/"' >> ~/.bashrc
+      source ~/.bashrc
+      cd ~/.chsd
+      sudo nano connections.yaml

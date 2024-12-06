@@ -1,0 +1,9 @@
+PyYAML>=6.0.2
+SQLAlchemy<=2.0.36
+psycopg2>=2.9.10
+pandas>=2.2.3
+pyodbc>=5.2.0
+
+[dev]
+pytest>=7.0
+twine>=4.0.2
