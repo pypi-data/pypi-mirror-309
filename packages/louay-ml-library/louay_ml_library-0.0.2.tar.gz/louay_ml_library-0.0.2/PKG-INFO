@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: louay_ml_library
+Version: 0.0.2
+Summary: A custom machine learning library containing several models
+Home-page: https://github.com/louay01/louay_ml_library
+Author: Louay El Masri
+Author-email: masrilouay5@gmai.com
+License: MIT
+Keywords: machine learning linear regression linear classifier neural networks decision trees SVM AI
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+This is a Machine Learning library designed to provide implementations of key algorithms, including:
+-Linear Regression
+-Polynomial Regression
+-Linear Classifier
+-Decision Trees
+-Support Vector Machine (SVM)
+-Neural Network
+
+This project was developed as part of a Machine Learning course under the supervision of Prof. Hedi Tebia.
+
+Features
+-Simple and intuitive API for building and training models
+-Implementation of core machine learning algorithms
+-Customizable hyperparameters for advanced users
+
+Installation
+Provide installation instructions if applicable (e.g., via pip or directly from the repository)
+
+Change Log
+==========
+
+0.01 (17/11/2024)
+-----------------
+- First Release
