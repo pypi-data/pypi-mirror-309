@@ -1,0 +1,12 @@
+geopandas
+requests
+shapely
+pandas
+numpy
+pyogrio
+
+[all]
+pyinpe[extra]
+
+[extra]
+pandas
