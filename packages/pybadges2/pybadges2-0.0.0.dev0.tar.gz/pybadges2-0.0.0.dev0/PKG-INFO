@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: pybadges2
+Version: 0.0.0.dev0
+Summary: Library and command-line tool for generating GitHub-style badges
+Requires-Python: >=3.9
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python
+Project-URL: Download, https://pypi.python.org/pypi/pybadges2
+Project-URL: Source, https://github.com/jdknight/pybadges2
