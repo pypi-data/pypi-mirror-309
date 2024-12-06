@@ -1,0 +1,34 @@
+meuw_bids_pftools.tools.context_blob_url_generator.generate_context_blob_url:
+  function: generate_context_blob_url
+  inputs:
+    search_result:
+      type:
+        - list
+      description: List of search result items.
+    account_name:
+      type:
+        - string
+      description: Azure Blob Storage account name.
+    container_name:
+      type:
+        - string
+      description: Azure Blob Storage container name.
+    generate_sas_urls:
+      type:
+        - int
+      description: 'Whether to generate SAS URLs for blobs (1 for true, 0 for false).'
+      default: 1
+    append_page_number:
+      type:
+        - int
+      description: 'Whether to append page numbers to the blob URLs (1 for true, 0 for false).'
+      default: 0
+    retrieve_metadata:
+      type:
+        - int
+      description: 'Whether to retrieve blob metadata (1 for true, 0 for false).'
+      default: 1
+  module: meuw_bids_pftools.tools.context_blob_url_generator
+  name: Context Blob URL Generator
+  description: Generates a context using blob URLs and optional metadata retrieval from Azure Blob Storage.
+  type: python
