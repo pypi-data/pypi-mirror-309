@@ -1,0 +1,2 @@
+[console_scripts]
+get-flag = pyramid2:get_flag

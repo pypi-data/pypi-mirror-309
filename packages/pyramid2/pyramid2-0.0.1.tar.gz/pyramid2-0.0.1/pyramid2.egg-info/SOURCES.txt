@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+pyramid2/__init__.py
+pyramid2.egg-info/PKG-INFO
+pyramid2.egg-info/SOURCES.txt
+pyramid2.egg-info/dependency_links.txt
+pyramid2.egg-info/entry_points.txt
+pyramid2.egg-info/top_level.txt
