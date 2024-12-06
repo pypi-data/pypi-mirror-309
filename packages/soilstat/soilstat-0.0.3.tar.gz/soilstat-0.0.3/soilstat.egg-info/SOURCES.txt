@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+soilstat/__init__.py
+soilstat.egg-info/PKG-INFO
+soilstat.egg-info/SOURCES.txt
+soilstat.egg-info/dependency_links.txt
+soilstat.egg-info/requires.txt
+soilstat.egg-info/top_level.txt
