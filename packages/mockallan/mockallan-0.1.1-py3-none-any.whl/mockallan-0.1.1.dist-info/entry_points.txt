@@ -1,0 +1,3 @@
+[console_scripts]
+mockallan = mockallan.main:main
+
