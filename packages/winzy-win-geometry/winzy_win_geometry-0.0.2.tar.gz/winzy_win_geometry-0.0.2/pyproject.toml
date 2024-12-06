@@ -1,0 +1,36 @@
+[project]
+name = "winzy-win-geometry"
+version = "0.0.2"
+description = "Get window geometry as a percentage of screen size."
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "Quartz ; sys_platform != 'win32'",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-win-geometry"
+Changelog = "https://github.com/sukhbinder/winzy-win-geometry/releases"
+Issues = "https://github.com/sukhbinder/winzy-win-geometry/issues"
+CI = "https://github.com/sukhbinder/winzy-win-geometry/actions"
+
+[project.entry-points."winzy.plugins"]
+wingeo = "winzy_win_geometry:wingeo_plugin"
+
+[project.scripts]
+wg = "winzy_win_geometry:wingeo_plugin.main"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

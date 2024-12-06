@@ -1,0 +1,7 @@
+winzy
+
+[:sys_platform != "win32"]
+Quartz
+
+[test]
+pytest
