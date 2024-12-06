@@ -1,0 +1,7 @@
+django_rest_framework_dango/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_framework_dango/middlewares.py,sha256=jWg4WvmSXB2rjC6YaRMpJvezy4Y_lX82hPQoeTXBv5s,2488
+django_rest_framework_dango/mixins.py,sha256=yDDjb6C1VmRiKsr2FZX--uck0ICmaHV9vF1UX9xjrjo,6027
+django_rest_framework_dango-0.1.3.dist-info/LICENSE,sha256=8DsrCKUOLsSXdal9J3s1rjUMdwS1uS8RX9niA7Cqobo,1126
+django_rest_framework_dango-0.1.3.dist-info/METADATA,sha256=a0ZRGla0jzqt9t-d77HzMVrmZ5LT6AR8QNv8xBZNyNY,6875
+django_rest_framework_dango-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_rest_framework_dango-0.1.3.dist-info/RECORD,,
