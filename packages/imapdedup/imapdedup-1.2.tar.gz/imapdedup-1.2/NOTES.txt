@@ -1,0 +1,5 @@
+# Building and publishing
+
+uv publish --token [GET THE TOKEN FROM 1Password]
+
+Uses details in ~/.pypirc.
