@@ -1,0 +1,51 @@
+name: Distribute Exe
+
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        submodules: 'recursive'
+
+    - name: Cargo Build
+      run: cargo build
+      working-directory: tegra_swizzle
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: py_tegra_swizzle.dll
+        path: py_tegra_swizzle\target\debug\py_tegra_swizzle.dll
+        if-no-files-found: error
+
+  attach:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: Download Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: py_tegra_swizzle.dll
+
+    - uses: montudor/action-zip@v1
+      with:
+        args: zip py_tegra_swizzle.zip py_tegra_swizzle.dll
+
+    - name: Attach to Release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        file: py_tegra_swizzle.zip
+        asset_name: py_tegra_swizzle-$tag.zip
+        tag: ${{ github.ref }}
+        overwrite: true

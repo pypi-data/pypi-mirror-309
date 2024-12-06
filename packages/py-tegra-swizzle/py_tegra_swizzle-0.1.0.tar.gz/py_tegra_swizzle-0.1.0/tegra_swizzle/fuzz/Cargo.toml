@@ -1,0 +1,47 @@
+
+[package]
+name = "tegra_swizzle_fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+arbitrary = { version = "1", features = ["derive"] }
+rand = "0.8.4"
+
+[dependencies.tegra_swizzle]
+path = ".."
+features = ["arbitrary"]
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "deswizzle"
+path = "fuzz_targets/deswizzle.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "swizzle_deswizzle"
+path = "fuzz_targets/swizzle_deswizzle.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "deswizzle_surface"
+path = "fuzz_targets/deswizzle_surface.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "swizzle_surface"
+path = "fuzz_targets/swizzle_surface.rs"
+test = false
+doc = false

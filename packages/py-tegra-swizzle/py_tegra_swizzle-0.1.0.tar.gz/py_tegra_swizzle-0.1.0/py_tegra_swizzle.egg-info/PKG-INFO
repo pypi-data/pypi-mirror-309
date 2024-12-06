@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: py-tegra-swizzle
+Version: 0.1.0
+Summary: Python bindings for the Rust library tegra-swizzle.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Rust
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py_tegra_swizzle
+
+PyO3 bindings for the rust repo [tegra_swizzle](https://github.com/ScanMountGoat/tegra_swizzle). Heavily WIP. 

@@ -1,0 +1,3 @@
+[submodule "tegra_swizzle"]
+	path = tegra_swizzle
+	url = https://github.com/ScanMountGoat/tegra_swizzle.git
