@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: compatlib
+Version: 0.0.0
+Summary: Helper tool to install and configure Flux Framework
+Home-page: https://github.com/compspec/compat-lib
+Author: Vanessasaurus
+Author-email: vsoch@users.noreply.github.com
+Maintainer: Vanessasaurus
+License: MIT
+Keywords: fuse,filesystem,recorder,compatibility
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: pyyaml
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+# compatlib
+
+> Python helpers for compat-lib set of tools in Go
+
+![PyPI - Version](https://img.shields.io/pypi/v/compatlib)
+
+This library provides parsers and models for filesystem recording (fs-record) output from the associated Go tooling.
+For more information, see the [main README](https://github.com/compspec/compat-lib).
+
+## License
+
+HPCIC DevTools is distributed under the terms of the MIT license.
+All new contributions must be made under this license.
+
+See [LICENSE](https://github.com/converged-computing/cloud-select/blob/main/LICENSE),
+[COPYRIGHT](https://github.com/converged-computing/cloud-select/blob/main/COPYRIGHT), and
+[NOTICE](https://github.com/converged-computing/cloud-select/blob/main/NOTICE) for details.
+
+SPDX-License-Identifier: (MIT)
+
+LLNL-CODE- 842614
