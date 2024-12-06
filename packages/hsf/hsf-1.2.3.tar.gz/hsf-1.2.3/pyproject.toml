@@ -1,0 +1,51 @@
+[project]
+name = "hsf"
+version = "1.2.3"
+description = "A simple yet exhaustive segmentation tool of the Hippocampal Subfields in T1w and T2w MRIs."
+license = {text = "MIT License"}
+readme = {file = "README.rst", content-type = "text/x-rst"}
+authors = [
+    {name = "Clément POIRET", email = "poiret.clement@outlook.fr"}
+]
+keywords = ["mri", "brain", "hippocampus", "segmentation", "deep learning"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+urls = {homepage = "https://hippomnesis.dev", repository = "https://github.com/clementpoiret/ROILoc"}
+requires-python = ">=3.9"
+dependencies = [
+  "antspyx~=0.5.0",
+  "hydra-core~=1.3.0",
+  "rich>=11.0.0",
+  "roiloc>=0.4.1",
+  "torchio~=0.20.0",
+  "xxhash~=3.2.0",
+  "requests>=2.32.3",
+  "pytest~=8.0.0",
+  "coverage[toml]~=7.6.0",
+]
+
+[dependency-groups]
+cpu = ["onnxruntime>=1.8.0"]
+gpu = ["onnxruntime-gpu>=1.8.0"]
+sparse = ["deepsparse>=1.4.0", "onnxruntime>=1.8.0"]
+
+[project.scripts]
+hsf = "hsf.factory:start"
+deepsparse_support = "hsf.engines:print_deepsparse_support"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.report]
+omit = ["hsf/welcome.py"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

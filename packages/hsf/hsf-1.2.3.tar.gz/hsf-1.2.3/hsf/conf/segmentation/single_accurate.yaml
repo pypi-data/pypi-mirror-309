@@ -1,0 +1,14 @@
+# Original models from Poiret, et al., 2024.
+# Uses a single model and test-time augmentation.
+# Current version: 4.0.0
+
+ca_mode: "1/2/3"
+models_path: "~/.hsf/models/single/"
+models:
+  arunet_bag_0.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0single_1706895706.onnx"
+    xxh3_64: "da825a3911d09411"
+
+segmentation:
+  test_time_augmentation: True
+  test_time_num_aug: 20
