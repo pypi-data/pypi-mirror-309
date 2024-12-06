@@ -1,0 +1,6 @@
+click
+psutil
+
+[llm]
+openai>1.0.1
+colorama
