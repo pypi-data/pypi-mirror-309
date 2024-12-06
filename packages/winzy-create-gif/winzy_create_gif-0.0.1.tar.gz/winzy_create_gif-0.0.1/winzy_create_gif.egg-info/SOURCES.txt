@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_create_gif.py
+winzy_create_gif/__init__.py
+winzy_create_gif.egg-info/PKG-INFO
+winzy_create_gif.egg-info/SOURCES.txt
+winzy_create_gif.egg-info/dependency_links.txt
+winzy_create_gif.egg-info/entry_points.txt
+winzy_create_gif.egg-info/requires.txt
+winzy_create_gif.egg-info/top_level.txt
