@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+custom_library_22/__init__.py
+custom_library_22/custom_library_22.py
+custom_library_22.egg-info/PKG-INFO
+custom_library_22.egg-info/SOURCES.txt
+custom_library_22.egg-info/dependency_links.txt
+custom_library_22.egg-info/requires.txt
+custom_library_22.egg-info/top_level.txt
+tests/__init__.py
+tests/test_custom_library.py
