@@ -1,0 +1,2 @@
+[console_scripts]
+hexaa_business_scraper = google_maps_scraper.main:scrape_data_cli
