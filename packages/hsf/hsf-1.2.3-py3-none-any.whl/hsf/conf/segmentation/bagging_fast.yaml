@@ -1,0 +1,26 @@
+# Original models from Poiret, et al., 2024.
+# Uses bootstrap aggregating and test-time augmentation.
+# Current version: 4.0.0
+
+ca_mode: "1/2/3"
+models_path: "~/.hsf/models/bagging/"
+models:
+  arunet_bag_0.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0b0_1706633574.onnx"
+    xxh3_64: "535af004dc7251af"
+  arunet_bag_1.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0b1_1706699484.onnx"
+    xxh3_64: "ca97ac4be073149f"
+  arunet_bag_2.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0b2_1706714241.onnx"
+    xxh3_64: "f9de9d5392460c3a"
+  arunet_bag_3.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0b3_1706858428.onnx"
+    xxh3_64: "85259d3c0c8baa21"
+  arunet_bag_4.onnx:
+    url: "https://huggingface.co/poiretclement/hsf/resolve/main/onnx/arunet_4.0.0b4_1706874562.onnx"
+    xxh3_64: "cb04f34305ec33af"
+
+segmentation:
+  test_time_augmentation: False
+  test_time_num_aug: 1
