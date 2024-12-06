@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-hive
+Version: 0.3.0
+Summary: llama-index readers hive integration
+License: MIT
+Keywords: HDFS,Hadoop,Hive
+Author: Your Name
+Author-email: you@example.com
+Maintainer: kasen
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: pyhive (>=0.7.0,<0.8.0)
+Requires-Dist: thrift-sasl (>=0.4.3,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Hive Loader
+
+```bash
+pip install llama-index-readers-hive
+```
+
+The Hive Loader returns a set of texts corresponding to documents from Hive based on the customized query.
+The user initializes the loader with Hive connection args and then using query to fetch data from Hive.
+
+## Usage
+
+Here's an example usage of the hiveReader to load 100 documents.
+
+```python
+from llama_index.readers.hive import HiveReader
+
+reader = HiveReader(
+    host="localhost",
+    port=10000,
+    database="PERSON_DB",
+    username="hiveuser_test",
+    auth="NOSASL",
+)
+
+query = "SELECT * FROM p1 LIMIT 100"
+documents = reader.load_data(query=query)
+```
+
+This loader is designed to be used as a way to load data into [LlamaIndex](https://github.com/run-llama/llama_index/).
+
