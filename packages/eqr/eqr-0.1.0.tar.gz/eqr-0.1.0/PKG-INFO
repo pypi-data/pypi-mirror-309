@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eqr
+Version: 0.1.0
+Summary: A python package to perform quantile regression with more meaningful epistemic uncertainty estimates through training set augmentation using synthetic data. A blend of discriminative and generative models.
+Author: Sebastian Khan
+Author-email: sebastiank17@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# eqr
+
+Epistemic Quantile Regression (EQR)
+
+Go here for [Documentation](https://spacetimekhantinuum.gitlab.io/eqr/).
+
+

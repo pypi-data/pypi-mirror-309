@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "eqr"
+version = "0.1.0"
+description = "A python package to perform quantile regression with more meaningful epistemic uncertainty estimates through training set augmentation using synthetic data. A blend of discriminative and generative models."
+authors = ["Sebastian Khan <sebastiank17@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
