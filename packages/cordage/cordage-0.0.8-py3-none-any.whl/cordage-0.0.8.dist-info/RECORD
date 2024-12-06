@@ -1,0 +1,11 @@
+cordage/__about__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+cordage/__init__.py,sha256=RkwYReHPjte8te-EYE0yj58hx2iQKnvQxbWdqLVosHE,1304
+cordage/context.py,sha256=wLwuesErLUz6kiOJYdd2TIJzYzoQAFvt7UtnwKUbUGs,17952
+cordage/exceptions.py,sha256=6CuAGRbuT919h7ygigKNsZMjFUX_KaH2m72OEN0NOJw,189
+cordage/experiment.py,sha256=hsTeozl-xxeDP47W_nRnYSbmLrgQnGLo3uL4rPlFKWk,24276
+cordage/global_config.py,sha256=0cB-RwuWlcoNQxuWi8w7Uh2Pp9fDyMd_nFPMCWitDp0,3982
+cordage/util.py,sha256=4a5jZ955a2DjiYG9o3G0JQlZzoOz5Idd38NlmSh6X5w,9651
+cordage-0.0.8.dist-info/METADATA,sha256=9rcrvctureK5DgucLFoNZSHoZbhY91Gaqf-Olq3fgJI,4606
+cordage-0.0.8.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+cordage-0.0.8.dist-info/licenses/LICENSE,sha256=9QsvIh2OYM32Vdf02NC1r9rSFLOmNzy2h4N1rIBoZNw,1067
+cordage-0.0.8.dist-info/RECORD,,
