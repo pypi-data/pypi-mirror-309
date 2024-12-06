@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: dynapsys
+Version: 0.1.0
+Summary: Dynamic Python System Deployment Tools
+Home-page: https://github.com/dynapsys/dynapsys
+Author: Tom
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: urllib3>=2.0.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: structlog>=23.1.0
+Requires-Dist: typing-extensions>=4.7.0; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: coverage>=7.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: sphinx>=6.0.0; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=1.2.0; extra == "dev"
+Requires-Dist: build>=0.10.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+Requires-Dist: wheel>=0.40.0; extra == "dev"
+Requires-Dist: pre-commit>=3.3.0; extra == "dev"
+
+# DynaPsys
+
+DynaPsys is a comprehensive Python package for automated deployment and management of web applications, with a focus on React applications. It provides tools for deployment automation, DNS management through Cloudflare, and process management using PM2.
+
+## Features
+
+- Automated deployment server for web applications
+- Cloudflare DNS management integration
+- Git repository support
+- PM2 process management
+- Base64 deployment support
+- Comprehensive logging system
+
+## Installation
+
+```bash
+pip install dynapsys
+```
+
+## Usage
+
+### Starting the Deployment Server
+
+```python
+from dynapsys.deployment import run_server
+
+# Start the server on port 8000 (default)
+run_server()
+
+# Or specify a custom port
+run_server(port=8080)
+```
+
+### Deploying an Application
+
+Send a POST request to the deployment server:
+
+```bash
+curl -X POST http://localhost:8000 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "domain": "your-domain.com",
+    "cf_token": "your-cloudflare-token",
+    "source": "https://github.com/username/repo.git"
+  }'
+```
+
+### Using Individual Components
+
+#### Git Operations
+
+```python
+from dynapsys.git import clone_git_repo, is_valid_git_url
+
+# Validate Git URL
+if is_valid_git_url("https://github.com/username/repo.git"):
+    # Clone repository
+    clone_git_repo("https://github.com/username/repo.git", "/path/to/target")
+```
+
+#### DNS Management
+
+```python
+from dynapsys.dns import update_cloudflare_dns
+
+# Update DNS records
+update_cloudflare_dns("your-domain.com", "your-cloudflare-token")
+```
+
+## Requirements
+
+- Python 3.6+
+- Git
+- Node.js and npm (for React applications)
+- PM2 (for process management)
+- Cloudflare API token (for DNS management)
+
+## Configuration
+
+The package uses environment variables for configuration:
+
+- `DYNAPSYS_LOG_LEVEL`: Logging level (default: DEBUG)
+- `DYNAPSYS_LOG_FILE`: Path to log file (default: deployment.log)
+- `DYNAPSYS_SITES_DIR`: Directory for deployed sites (default: /opt/reactjs/sites)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the Apache 2 License - see the LICENSE file for details.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
+
+## Todo
+
+See [TODO.md](TODO.md) for planned features and improvements.
