@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: mm-btc
+Version: 0.1.2
+Requires-Python: >=3.12
+Requires-Dist: bitcoinlib~=0.7.0
+Requires-Dist: bit~=0.8.0
+Requires-Dist: hdwallet~=2.2.1
+Requires-Dist: mm-std~=0.1.6
+Requires-Dist: typer>=0.13.0
