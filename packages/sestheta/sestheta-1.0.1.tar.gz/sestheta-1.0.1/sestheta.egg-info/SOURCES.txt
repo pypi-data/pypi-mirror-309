@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+sestheta/__init__.py
+sestheta.egg-info/PKG-INFO
+sestheta.egg-info/SOURCES.txt
+sestheta.egg-info/dependency_links.txt
+sestheta.egg-info/top_level.txt
