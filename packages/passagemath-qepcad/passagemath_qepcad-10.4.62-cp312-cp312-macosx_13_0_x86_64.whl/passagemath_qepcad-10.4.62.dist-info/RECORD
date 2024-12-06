@@ -1,0 +1,12 @@
+passagemath_qepcad.dylibs/libreadline.8.1.dylib,sha256=c8_bZVMiQbUErWkxV3aoIjxC23p_JoRmKImy4zhAXGo,398640
+sage_wheels/bin/qepcad,sha256=SGvXgs36P9XfQSEqT6uuSmQMALyvKb1feHloWOi8i2g,1047120
+sage_wheels/share/qepcad/qepcad.help,sha256=AwpDY6YBbInvkATC2tkPd7i7gTCgBqkEWYmTJvD_0T8,26213
+sage/all__sagemath_qepcad.py,sha256=UJmnqlV-AEw1repHtz7B4k7OGGdOq7I60O8AKjrlf6A,89
+sage/libs/all__sagemath_qepcad.py,sha256=6ROueGbQkNijsA5C_2DWDBUM0bWGt9LHsOEj60Rmi54,45
+sage/libs/qepcad.cpython-312-darwin.so,sha256=rktCk0XSaUms1MKseXhL3BURfztKRl-CdC55B6RB0vQ,55168
+sage/interfaces/qepcad.py,sha256=GFt1Ye_Mo4IA3qhH3xQaciGv_SWHg_bU5YQgZm5NJTQ,105750
+sage/interfaces/all__sagemath_qepcad.py,sha256=6ROueGbQkNijsA5C_2DWDBUM0bWGt9LHsOEj60Rmi54,45
+passagemath_qepcad-10.4.62.dist-info/RECORD,,
+passagemath_qepcad-10.4.62.dist-info/WHEEL,sha256=WRRjt_E0ax0jFLDDkTJAwUvXyfkI5K9zxkQYCZgpZUk,110
+passagemath_qepcad-10.4.62.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_qepcad-10.4.62.dist-info/METADATA,sha256=PiB3JRw6rzbu-qX7L9TdqHX4aFAtGqNgKrflSHO00ZA,3069
