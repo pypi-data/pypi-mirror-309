@@ -1,0 +1,16 @@
+setup.py
+./mercurydsa/__init__.py
+./mercurydsa/src/__init__.py
+./mercurydsa/src/cli.py
+./mercurydsa/src/core/__init__.py
+./mercurydsa/src/core/exceptions.py
+./mercurydsa/src/core/layout.py
+./mercurydsa/src/type/__init__.py
+./mercurydsa/src/type/deque.py
+./mercurydsa/src/type/linked_list.py
+./mercurydsa/src/type/stack.py
+mercurydsa.egg-info/PKG-INFO
+mercurydsa.egg-info/SOURCES.txt
+mercurydsa.egg-info/dependency_links.txt
+mercurydsa.egg-info/entry_points.txt
+mercurydsa.egg-info/top_level.txt
