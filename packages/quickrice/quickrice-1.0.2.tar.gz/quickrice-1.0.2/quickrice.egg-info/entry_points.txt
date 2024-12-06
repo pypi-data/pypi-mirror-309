@@ -1,0 +1,2 @@
+[console_scripts]
+quickrice = quickrice.main:main
