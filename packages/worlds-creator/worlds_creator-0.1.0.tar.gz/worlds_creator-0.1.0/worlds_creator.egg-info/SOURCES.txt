@@ -1,0 +1,15 @@
+LICENSE
+README.md
+main.py
+pyproject.toml
+setup.py
+utils/__init__.py
+utils/colors.py
+utils/create_world.py
+utils/utils.py
+utils/view_worlds.py
+worlds_creator.egg-info/PKG-INFO
+worlds_creator.egg-info/SOURCES.txt
+worlds_creator.egg-info/dependency_links.txt
+worlds_creator.egg-info/entry_points.txt
+worlds_creator.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+worlds = main:main
