@@ -1,0 +1,4 @@
+httpx
+parsel
+nest_asyncio
+prlps_fakeua
