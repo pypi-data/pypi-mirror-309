@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: devinmodule
+Version: 0.1.0
+Summary: A simple greetings module
+Author: Devin Mathew
+Author-email: devin@gofreelab.com
+Requires-Python: >=3.6
+
