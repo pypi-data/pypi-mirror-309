@@ -1,0 +1,19 @@
+templates:
+  path: /template
+vars:
+  var1: 42
+  var2: Default value
+
+/rootA:
+  links:
+    # Create a symlink to the file in rootB
+    fileB.yaml: /rootB/file.yaml
+  copy:
+    # Copy and rename `common_file.txt`
+    renamed_file.txt: /template/common_file.txt
+  templates+:
+    # Do not copy `common_file.txt` because we are renaming instead above
+    exclude: [ common_file.txt ]
+/rootB:
+  vars+:
+    var2: Overwritten

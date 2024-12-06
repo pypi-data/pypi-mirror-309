@@ -1,0 +1,66 @@
+name: CI
+run-name: >
+  CI (${{ github.event_name }})
+  ${{ github.event_name == 'pull_request' && format('PR#{0}', github.event.number) || '' }}
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: 0 0 * * 3
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pre-commit:
+    uses: ./.github/workflows/step_pre-commit.yaml
+
+  tests:
+    needs: [ pre-commit ]
+    uses: ./.github/workflows/step_test.yaml
+    with:
+      mask-experimental: ${{ github.event_name == 'push' }}
+
+  coverage:
+    name: 👀 coverage
+    needs: [ tests ]
+    uses: ./.github/workflows/step_coverage.yaml
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    if: github.event_name != 'schedule'
+
+  docs:
+    name: 📘 docs
+    needs: [ pre-commit ]
+    uses: ./.github/workflows/step_docs.yaml
+    with:
+      mask-experimental: ${{ github.event_name == 'push' }}
+
+  build:
+    needs: [ pre-commit ]
+    uses: ./.github/workflows/step_build.yaml
+
+  static-analysis:
+    needs: [ pre-commit ]
+    uses: ./.github/workflows/step_static-analysis.yaml
+    secrets:
+      QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+    if: github.event_name != 'schedule'
+
+  pass:
+    name: ✅ Pass
+    needs: [ pre-commit, tests, coverage, docs, build, static-analysis ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: re-actors/alls-green@release/v1
+        with:
+          allowed-skips: coverage, static-analysis
+          jobs: ${{ toJSON(needs) }}
+    if: always()

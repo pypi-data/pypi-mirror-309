@@ -1,0 +1,47 @@
+on:
+  workflow_call:
+    inputs:
+      mask-experimental:
+        type: boolean
+        default: true
+        description: Always report experimental test as successful
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: >
+      🐍 ${{ matrix.python-version }}
+      🌳 ${{ matrix.tmt-version || 'latest' }}
+      ⛩️ ${{ matrix.jinja-version || 'latest' }}
+      ${{ matrix.experimental && '[🧪 Experimental]' || '' }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.experimental || false }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.9", "3.x" ]
+        tmt-version: [ "" ]
+        jinja-version: [ "" ]
+        include:
+          - python-version: "3.x"
+            jinja-version: "main"
+            tmt-version: "main"
+            experimental: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install package
+        run: pip install -e .[test]
+      - name: Install fmf ${{ matrix.tmt-version }}
+        run: pip install fmf@git+https://github.com/teemtee/fmf@${{ matrix.tmt-version }}
+        if: matrix.tmt-version
+      - name: Install jinja ${{ matrix.jinja-version }}
+        run: pip install jinja2@git+https://github.com/pallets/jinja/@${{ matrix.tmt-version }}
+        if: matrix.jinja-version
+      - name: Test package
+        run: pytest
+        continue-on-error: ${{ matrix.experimental && inputs.mask-experimental}}

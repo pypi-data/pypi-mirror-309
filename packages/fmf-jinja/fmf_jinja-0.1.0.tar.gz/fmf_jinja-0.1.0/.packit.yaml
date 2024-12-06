@@ -1,0 +1,55 @@
+files_to_sync:
+  - src: .distro/
+    dest: ./
+    delete: true
+    filters:
+      - "protect .git*"
+      - "protect sources"
+      - "- plans/rpminspect.fmf"
+      - "- plans/rpmlint.fmf"
+
+upstream_package_name: fmf-jinja
+downstream_package_name: fmf-jinja
+specfile_path: .distro/fmf-jinja.spec
+
+upstream_tag_template: v{version}
+targets:
+  - fedora-all
+
+_:
+  copr_on_packit: &copr_on_packit
+    job: copr_build
+  copr_on_lecris: &copr_on_lecris
+    <<: *copr_on_packit
+    owner: lecris
+  tests: &tests
+    job: tests
+    trigger: pull_request
+    fmf_path: .distro
+
+jobs:
+  - <<: *copr_on_lecris
+    trigger: release
+    project: release
+  - <<: *copr_on_lecris
+    trigger: commit
+    branch: main
+    project: nightly
+  - <<: *tests
+    trigger: commit
+  - <<: *copr_on_packit
+    trigger: pull_request
+  - <<: *tests
+    trigger: pull_request
+  - job: propose_downstream
+    trigger: release
+    dist_git_branches:
+      - fedora-rawhide
+  - job: koji_build
+    trigger: commit
+    dist_git_branches:
+      - fedora-all
+  - job: bodhi_update
+    trigger: commit
+    dist_git_branches:
+      - fedora-branched
