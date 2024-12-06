@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include genetic_algorithm_py *.py
