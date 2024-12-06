@@ -1,0 +1,4 @@
+pymongo
+prompt_toolkit
+bson
+smtplib
