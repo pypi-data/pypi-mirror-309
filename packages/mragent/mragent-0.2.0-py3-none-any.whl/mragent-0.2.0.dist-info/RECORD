@@ -1,0 +1,10 @@
+mragent/__init__.py,sha256=XQQrWptVN-bg6tReTHoBHXvdNhYTnnlxBgqim3dcHa0,77
+mragent/agent_tool.py,sha256=LghHiWWbCA-bCa2zJ63y1H4QmAeS6An3ZwlL5yEhLHQ,24106
+mragent/agent_workflow.py,sha256=JzivYQmILDu6L9Cd5rFbyhH49PwF3rAbEHHXPb8goeE,45813
+mragent/agent_workflow_OE.py,sha256=doffHYG5rwPs-3D9pwTUuLzd-XxbVm3t9HPqaRGh6lo,686
+mragent/LLM.py,sha256=tKdQbDZMzjj3cGMSJefZmvcfaeqk3Nymi3tKb-9XQK4,3254
+mragent/template_text.py,sha256=YXVRtjqZ4ByA4SaSFG__5PHgOdBTiAceXp5aSeYhlbc,16293
+mragent-0.2.0.dist-info/LICENSE,sha256=SrfiwwP-0KleRyCGGtsyjBfigfo5CoXV-Sk_t29yrQw,11536
+mragent-0.2.0.dist-info/METADATA,sha256=m44LWrY1BgSVVNPYlB6b-A14E58LP4eY3BjfrNymQaI,9241
+mragent-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mragent-0.2.0.dist-info/RECORD,,
