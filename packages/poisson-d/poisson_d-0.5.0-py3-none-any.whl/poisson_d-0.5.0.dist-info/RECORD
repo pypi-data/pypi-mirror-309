@@ -1,0 +1,11 @@
+poisson_d/__init__.py,sha256=6jJPTR0GDA2kjkrQqH3QIqQjXR2QHGxBGp5Q9k8YLWc,123
+poisson_d/cli.py,sha256=jjANF2b9BRh-rox8oaJeCBVjZmf_XMdGCoj89l1jKoI,1531
+poisson_d/commands.py,sha256=x9kV5zFL20AJlVCSvcCb6Y4AC81gFfumMxpK--Oi6BI,3781
+poisson_d/concurrent.py,sha256=pRwWnbEu90suhY9qGvx5AVqYZ1S0FhDyBtqI08EQGAU,843
+poisson_d/poisson_d.py,sha256=e4Qkq1esM4uwsrn0yX9BEhp_Phd5YT4D8YaTcI2N6Mc,10607
+poisson_d-0.5.0.dist-info/AUTHORS.rst,sha256=1TfR9yF_1uz6pZ_wHYJWLiv7n7tDk7rmVOZzovutMk8,152
+poisson_d-0.5.0.dist-info/LICENSE,sha256=ydi2plcc0IqHGYN7FmoeeBj17tOEg0IWujfg13ElcFM,1064
+poisson_d-0.5.0.dist-info/METADATA,sha256=F9wczPHsV01W-ob43C9BzIJge8t2Sr-4OaPmb6xsE14,3458
+poisson_d-0.5.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+poisson_d-0.5.0.dist-info/top_level.txt,sha256=iiB1s_BbPLKpmvXYBgUlLQW__mcRzq20VgMNh-qGYJo,10
+poisson_d-0.5.0.dist-info/RECORD,,
