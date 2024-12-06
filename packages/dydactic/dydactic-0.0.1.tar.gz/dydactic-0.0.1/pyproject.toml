@@ -1,0 +1,9 @@
+[project]
+name = "dydactic"
+version = "0.0.1"
+description = "Validate iterables using Pydantic"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.9.2",
+]
