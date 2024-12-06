@@ -1,0 +1,8 @@
+giniindex/__init__.py,sha256=36fM8WTYxFbm4ZzdvZzvfSsb7Z9IUc4wRuInp0ZbUok,67
+giniindex/fetch_pdf.py,sha256=pliepmzsVD_lETBH1u4vUTFvH2v7lNkXRMpNP5b3p1U,629
+ranker/__init__.py,sha256=36fM8WTYxFbm4ZzdvZzvfSsb7Z9IUc4wRuInp0ZbUok,67
+ranker/fetch_pdf.py,sha256=pliepmzsVD_lETBH1u4vUTFvH2v7lNkXRMpNP5b3p1U,629
+giniindex-0.1.0.dist-info/METADATA,sha256=SX85079Gf5HhL7N7GxfopJ0sfoQckF5tZfgmp2CBx1U,451
+giniindex-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+giniindex-0.1.0.dist-info/top_level.txt,sha256=WeZSajr5VjOa0Yx_3qNFtQ1wJwzuN-gGA3b8Yx3qGoM,10
+giniindex-0.1.0.dist-info/RECORD,,
