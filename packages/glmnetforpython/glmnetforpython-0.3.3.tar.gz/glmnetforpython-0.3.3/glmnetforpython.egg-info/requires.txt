@@ -1,0 +1,6 @@
+joblib
+matplotlib
+nnetsauce
+numpy
+scipy
+scikit-learn
