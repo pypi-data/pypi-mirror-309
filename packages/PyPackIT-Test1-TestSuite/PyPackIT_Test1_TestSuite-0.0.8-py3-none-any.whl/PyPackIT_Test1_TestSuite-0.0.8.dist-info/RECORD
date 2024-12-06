@@ -1,0 +1,14 @@
+pypackit_test1_testsuite/__init__.py,sha256=Nn-jRFCgte1JdcPO1w94ASQPbXaCtOmVslZJDg1PazU,5579
+pypackit_test1_testsuite/__main__.py,sha256=HWxoyMvQhBaUJBWUnw45jSwWChellYO6rnuaUkxSGUM,3057
+pypackit_test1_testsuite/data_tests.py,sha256=OBXfrg8QJ9z5HX5ZvtGGM6GgH0NUCeo82Lq_Gv7C5MI,863
+pypackit_test1_testsuite/py.typed,sha256=o_skYYOgBqbwMt-5lUZDunyM7CcemHaJt2k9MsSACeY,61
+pypackit_test1_testsuite/data/__init__.py,sha256=vtnSCEdQfRJSMsSvIwNnb2ME6rRQF8bRxEUMtzzZsRA,617
+pypackit_test1_testsuite/data/config/__init__.py,sha256=EhxbjAWG-5nhtwThyO-gUoeUhoQlP_qdkPmFM6tlr1c,185
+pypackit_test1_testsuite/data/config/coverage.toml,sha256=yL7E_1HCvarXNUAy119iUiQ5MHColdet2aLOaUd3pT0,700
+pypackit_test1_testsuite/data/config/pytest.toml,sha256=uD7U3lgHXp8sQII1WFcSdJMpr1Ju9MWbgo9NhkA0L1k,1255
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/LICENSE-MIT,sha256=tTOamuUOATPZeUCWrzCnqmvEXSNcozbThxT2un5zAXk,1103
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/METADATA,sha256=_PgISdkXErMaQEKs3MeWoMFediqZwTWC8pkZSUmr2V8,11416
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/entry_points.txt,sha256=usvW8GXnUEp0wlos2UBDdB14jQEWne_Y7IxFx-LLf1s,84
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/top_level.txt,sha256=3KapgVN3EZFuc6Re0c_qRYdfrvLRfn4IlemxTORwk04,25
+PyPackIT_Test1_TestSuite-0.0.8.dist-info/RECORD,,
