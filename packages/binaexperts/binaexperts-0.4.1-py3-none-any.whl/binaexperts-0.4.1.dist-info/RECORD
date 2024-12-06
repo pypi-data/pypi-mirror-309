@@ -1,0 +1,17 @@
+binaexperts/__init__.py,sha256=SWoCmDqn_UlX-OJWnirovW9xBofg1yWQBZf-ekC5AoA,136
+binaexperts/convertors/__init__.py,sha256=Mx8JIoiHWfq9TLd7pNwaj7A39kc4fU5ilqxTPNppG8g,57
+binaexperts/convertors/base.py,sha256=0TFzTz-Hadvi8eQkJTFRJphRv3GthIuwlGIF4pzUaos,70960
+binaexperts/convertors/const.py,sha256=y5xtb7h75BrIzfHlD6F1t7ma3TVP3WoijYTJ7Oo8wgA,4342
+binaexperts/convertors/convertor.py,sha256=_aT8b8oCdeSeG4SdqfckTF16s5ADEMaQjVlPuNV0WnU,5262
+binaexperts/schema/binaexperts.json,sha256=6jsMTahAFoj8vTiwRc3NapIisiou8mYSsQ037eXE2sM,5281
+binaexperts/schema/coco.json,sha256=0kZ7lN98cztCm0Hcc2qyucxFRZF4StvCruyXX6akVJ4,1093
+binaexperts/schema/normalizer.json,sha256=rmmrmQc7wrHsgpW76QpSYyp_kjzcGy5i7bNXgMTyZO8,1706
+binaexperts/schema/yolo.json,sha256=-q-OcQpHrJxs8kfmoi6jAlsP7rCS2qOTcE7LVabRZUw,596
+binaexperts/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binaexperts/utils/loadhelpers.py,sha256=sTjbvQ0I3EKGh3M6b5RyqOB1r_iKnp5e3_Y7tgGqnn4,10313
+binaexperts/utils/utils.py,sha256=GRWCdqlGuJTzrP7_J24Rt9zQdQn3dONqJ2ejDZ8kBto,13200
+binaexperts-0.4.1.dist-info/LICENSE,sha256=7usw7M3SyE-Rp1g61YEbVtR2btiJon8KqCzAIWDQ8rA,1094
+binaexperts-0.4.1.dist-info/METADATA,sha256=QiI54sXnh97FNHeNhIy3J_BACilndQv8PqHQu_0HXBU,9092
+binaexperts-0.4.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+binaexperts-0.4.1.dist-info/top_level.txt,sha256=wXfL9O1_Ie_w4U37PyzoaPosFoQ6whwDMvKKCsGGvkE,12
+binaexperts-0.4.1.dist-info/RECORD,,
