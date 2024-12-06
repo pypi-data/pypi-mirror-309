@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spheres_packing_calculator"
+version = "0.1.4"
+description = "Calculates a precise packing density for spherical particles in a 3d cartesian region"
+readme = "README.md"
+license = {text = "GPL"}
+authors = [{name = "Freddie Barter", email = "fjbarter@outlook.com"}]
+dependencies = ["numpy", "scipy", "pyvista"]
+requires-python = ">=3.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["spheres_packing_calculator*"]
