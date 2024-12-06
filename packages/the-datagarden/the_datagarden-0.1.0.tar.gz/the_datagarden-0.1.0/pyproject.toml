@@ -1,0 +1,70 @@
+[project]
+name = "the-datagarden"
+version = "0.1.0"
+description = "Accessing public data made easy for everyone."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }  # Specifies the MIT license
+authors = [
+    { name = "Maarten de Ruyter", email = "maarten@the-datagarden.io" }
+]
+dependencies = [
+    "click>=8.1.7",
+    "pydantic>=2.9.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+    "ruff>=0.7.4",
+]
+
+[project.scripts]
+the-datagarden = "the_datagarden.cli:main"
+
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = [
+    "C",  # mccabe rules
+    "F",  # pyflakes rules
+    "E",  # pycodestyle error rules
+    "W",  # pycodestyle warning rules
+    "B",  # flake8-bugbear rules
+    "I",  # isort rules
+]
+ignore = [
+    "C901",  # max-complexity-10
+]
+
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "double"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+env_list = py312
+requires =
+    tox>=4.11.3
+    tox-uv>=0.1.0
+
+[testenv]
+package = wheel
+wheel_build_env = .pkg
+deps =
+    pytest>=8.3.3
+commands = pytest {posargs:tests}
+"""

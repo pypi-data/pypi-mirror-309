@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: the-datagarden
+Version: 0.1.0
+Summary: Accessing public data made easy for everyone.
+Author-email: Maarten de Ruyter <maarten@the-datagarden.io>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.7
+Requires-Dist: pydantic>=2.9.2
