@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gigadoom/__init__.py
+src/gigadoom/chat.py
+src/gigadoom.egg-info/PKG-INFO
+src/gigadoom.egg-info/SOURCES.txt
+src/gigadoom.egg-info/dependency_links.txt
+src/gigadoom.egg-info/top_level.txt
