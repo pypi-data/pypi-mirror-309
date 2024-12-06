@@ -1,0 +1,1 @@
+include ilionx_filtered_faiss_lookup/yamls/*.yaml

@@ -1,0 +1,2 @@
+[package_tools]
+filtered_faiss_lookup = ilionx_filtered_faiss_lookup.tools.utils:list_package_tools

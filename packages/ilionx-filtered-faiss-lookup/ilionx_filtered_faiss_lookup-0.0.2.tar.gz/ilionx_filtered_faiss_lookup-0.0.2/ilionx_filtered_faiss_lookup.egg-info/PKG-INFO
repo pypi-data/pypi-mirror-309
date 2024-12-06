@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: ilionx_filtered_faiss_lookup
+Version: 0.0.2
+Summary: This tool package can be used in AzureML Promptflow to search for similar documents in a FAISS index and filter the results based on metadata.
+Author: B.J. Koop

@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+ilionx_filtered_faiss_lookup/__init__.py
+ilionx_filtered_faiss_lookup.egg-info/PKG-INFO
+ilionx_filtered_faiss_lookup.egg-info/SOURCES.txt
+ilionx_filtered_faiss_lookup.egg-info/dependency_links.txt
+ilionx_filtered_faiss_lookup.egg-info/entry_points.txt
+ilionx_filtered_faiss_lookup.egg-info/top_level.txt
+ilionx_filtered_faiss_lookup/tools/__init__.py
+ilionx_filtered_faiss_lookup/tools/filtered_faiss_lookup.py
+ilionx_filtered_faiss_lookup/tools/utils.py
+ilionx_filtered_faiss_lookup/yamls/filtered_faiss_lookup.yaml
+tests/__init__.py
+tests/test_filtered_faiss_lookup.py

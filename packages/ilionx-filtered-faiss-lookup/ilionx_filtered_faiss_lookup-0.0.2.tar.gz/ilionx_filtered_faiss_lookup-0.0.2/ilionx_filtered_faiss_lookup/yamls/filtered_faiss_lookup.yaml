@@ -1,0 +1,13 @@
+ilionx_filtered_faiss_lookup.tools.filtered_faiss_lookup.filtered_faiss_lookup:
+  function: filtered_faiss_lookup
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    input_text:
+      type:
+      - string
+  module: ilionx_filtered_faiss_lookup.tools.filtered_faiss_lookup
+  name: Hello World Tool
+  description: This is hello world tool
+  type: python
