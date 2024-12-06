@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+wordfilegenerator.egg-info/PKG-INFO
+wordfilegenerator.egg-info/SOURCES.txt
+wordfilegenerator.egg-info/dependency_links.txt
+wordfilegenerator.egg-info/entry_points.txt
+wordfilegenerator.egg-info/top_level.txt
