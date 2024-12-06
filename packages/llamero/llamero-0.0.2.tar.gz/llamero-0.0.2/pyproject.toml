@@ -1,0 +1,60 @@
+[project]
+name = "llamero"
+dynamic = ["version"]
+description = "Tools to facilitate collaborating with LLMs"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "Jinja2>=3.1.2",
+    "tomli>=2.0.1",
+    "loguru>=0.7.0",
+    "fire>=0.5.0",
+    "tree-format>=0.1.2",
+    "pytest>=7.0",
+    "markdown2>=2.4.0",
+]
+
+[project.scripts]
+llamero = "llamero:__main__.cli"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/llamero/_version.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+# addopts = "-v --cov=readme_generator --cov=summary_generator"
+
+# [tool.readme.tree]
+# ignore_patterns = [
+#     "__pycache__",
+#     "*.pyc",
+#     ".git",
+#     ".venv",
+#     ".pytest_cache",
+#     ".vscode",
+#     ".idea",
+#     "*.egg-info",
+# ]
+
+# [tool.summary]
+# ignore_patterns = [
+#     "__pycache__",
+#     "*.pyc",
+#     ".git",
+#     ".github/workflows",  # Explicitly exclude workflows directory
+#     ".venv",
+#     ".pytest_cache",
+#     ".vscode",
+#     ".idea",
+#     "*.egg-info",
+#     "SUMMARY",
+#     ".coverage",
+# ]
