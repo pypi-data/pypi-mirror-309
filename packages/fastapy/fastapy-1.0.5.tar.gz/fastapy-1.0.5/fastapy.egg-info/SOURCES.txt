@@ -1,0 +1,9 @@
+LICENSE
+README.md
+fastapy.py
+pyproject.toml
+fastapy.egg-info/PKG-INFO
+fastapy.egg-info/SOURCES.txt
+fastapy.egg-info/dependency_links.txt
+fastapy.egg-info/top_level.txt
+tests/test_fastapy.py
