@@ -1,0 +1,80 @@
+La librairie niiif-niiif crée et publie le manifeste IIIF des fichiers JPEG et TIFF d'une donnée Nakala. 
+
+[Nakala](https://nakala.fr/) est un service de la TGIR (Très Grande Infrastructure de Recherche) Huma-Num permettant à des chercheurs, enseignants-chercheurs et équipes de recherche de partager, publier et valoriser tous types de données numériques documentées (fichiers textes, sons, images, vidéos, objets 3D, etc.) dans un entrepôt sécurisé afin de les publier en accord avec les principes du FAIR data (Facile à trouver, Accessible, Interopérable et Réutilisable).
+
+Les images déposées sur Nakala sont accessibles [à travers une API](https://api.nakala.fr/doc) compatible avec [IIIF Image API 3.0](https://iiif.io/api/image/3.0/) mais Huma-Num ne propose pas de service de création de manifestes, ces fichiers JSON qui permettent la lecture des images par des [visionneuses compatibles avec le protocole IIIF](https://iiif.io/guides/using_iiif_resources/).
+
+La librarie Python niiif-niiif propose donc de palier à ce manque.
+
+Plus précisément, niiif-niiif :
+
+- Vérifie si la donnée Nakala dont l'identifiant lui est donné en paramètre existe. Le cas échéant,
+- Supprime s'il existe l'ancien fichier metadata.json des fichiers de la donnée,
+- Crée un manifeste IIIF à partir des fichiers JPEG ou TIFF de la donnée Nakala,
+- Ajoute à la donnée Nakala le fichier metadata.json contenant le manifeste.
+
+Vous pouvez ensuite copier l'URL de téléchargement du fichier metadata.json déposé sur Nakala et la transmettre à une visionneuse IIIF (ex. [Mirador](https://mirador-dev.netlify.app/__tests__/integration/mirador/)).
+
+L'URL d'un fichier déposé sur Nakala est unique, l'URL du manifeste changera donc à chaque fois que vous le créerez avec niiif-niiif. Pensez à soumettre cette nouvelle URL à la visionneuse.
+
+Le serveur d'image IIIF [Cantaloupe](https://cantaloupe-project.github.io/) utilisé par Nakala n'étant compatible qu'avec IIIF Image API 3.0, niiif-niiif génère depuis
+sa version 0.2.0 des manifestes conformes à [IIIF Presentation API 3.0](https://beta.iiif.io/api/presentation/3.0/).
+
+Les manifestes de niiif-niiif ont été testés avec les visionneuses IIIF suivantes :
+
+- [UniversalViewer v4.0](https://uv-v4.netlify.app/)
+- [TIFY](https://tify.rocks/)
+- [Mirador](https://mirador-dev.netlify.app/__tests__/integration/mirador/)
+
+# Installation
+
+Pour utiliser le script, utilisez de préférence un gestionnaire d'environnement Python tel que [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+
+```bash
+# Vous pouvez définir le nom de l'environnement Python à votre convenance avec le paramètre -n.
+conda create -n niiif-niiif python=3.8
+# Activez l'environnement
+conda activate niiif-niiif
+# Installez la librairie niiif
+pip install niiif-niiif
+```
+
+# Utilisation
+
+Le script a besoin pour fonctionner de la clé d'API d'un compte utilisateur Nakala ayant des droits d'écriture sur la donnée Nakala pour laquelle vous souhaitez créer un manifeste. Cette clé d'API est à créer et à copier depuis le profil du compte Nakala.
+
+Le passage en paramètre d'au moins un label est obligatoire – [le label du manifeste](https://iiif.io/api/presentation/3.0/#label) est le titre affiché par la visionneuse. La langue du label doit être précisée (utiliser `none` si le label n'a pas de langue) en utilisant le [code de langue BCP 47](https://www.rfc-editor.org/info/bcp47).
+
+Il est possible de préciser en paramètre si le document doit être affiché de manière paginée (voir la propriété [behavior ](https://beta.iiif.io/api/presentation/3.0/#32-technical-properties) de IIIF Presentation API 3.0).
+
+Le label et la valeur de la propriété IIIF [requiredStatement](https://iiif.io/api/presentation/3.0/#requiredstatement) peuvent être précisés avec les paramètres -rslabel et -rsvalue.
+
+Aucun contrôle de validité du manifeste généré à partir des données de l'utilisateur n'est effectué par niiif-niiif. Pour vérifier la validité de vos manifestes, vous pouvez utiliser le service en ligne [Presentation API Validator](https://presentation-validator.iiif.io/).
+
+## En ligne de commande
+
+```bash
+# Activez l'environnement (si ce n'est pas déjà fait)
+conda activate niiif-niiif 
+# Pour afficher les arguments du script
+python -m niiif -h
+# Pour créer le manifeste de la donnée Nakala 10.34847/nkl.12121212 avec un affichage paginé dans la visioneuse IIIF de votre choix (le paramètre -behavior est optionnel) et les labels "Les Trois Petits Cochons" et "The Three Little Pigs".
+python -m niiif -apikey 12345678-12345678-1234578-12345678 -dataid 10.34847/nkl.12121212 -behavior paged -label "Les Trois Petits Cochons" fr -label "The Three Little Pigs" en
+# Pour créer le manifeste de la donnée Nakala 10.34847/nkl.12121212 avec le label sans langue "27B-6".
+python -m niiif -apikey 12345678-12345678-1234578-12345678 -dataid 10.34847/nkl.12121212 -label "27B-6" none
+# Pour créer le manifeste de la donnée Nakala 10.34847/nkl.12121212 avec le label sans langue "27B-6" et une information d'attribution de la donnée avec la propriété IIIF requiredStatement (voir https://iiif.io/api/presentation/3.0/#requiredstatement).
+python -m niiif -apikey 12345678-12345678-1234578-12345678 -dataid 10.34847/nkl.12121212 -label "27B-6" none -rslabel "Attribution" en -rsvalue "Provided by the Centre de recherche bretonne et celtique" en -rslabel "Attribution" fr -rsvalue "Mis à disposition par le Centre de recherche bretonne et celtique" fr
+```
+
+## Dans un script Python
+
+La fonction `create_data_manifest_if_data_exists(apiKey, dataIdentifier)` peut être importée depuis un script Python.
+
+```bash
+# Activez l'environnement (si ce n'est pas déjà fait)
+conda activate niiif-niiif 
+# Lancez python
+python
+>>> from niiif import create_data_manifest_if_data_exists
+>>> create_data_manifest_if_data_exists(apiKey='12345678-12345678-1234578-12345678', dataIdentifier='10.34847/nkl.12121212', behavior=None, required_statements=None, labels=[["Pomme", "fr"], ["Apple", "en"], ["Fruits", "fr"], ["Label sans langue", "none"]])
+```

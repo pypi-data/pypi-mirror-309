@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "niiif-niiif"
+version = "0.4.0"
+authors = [
+  { name="Jean-Baptiste Pressac" },
+]
+description = "Création et dépôt de manifestes IIIF pour des données déposées sur Nakala"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests",
+    "tqdm",
+]
+
+[project.urls]
+Homepage = "https://gitlab.huma-num.fr/jpressac/niiif-niiif"
+Issues = "https://gitlab.huma-num.fr/jpressac/niiif-niiif/-/issues"
+Changelog = "https://gitlab.huma-num.fr/jpressac/niiif-niiif/-/blob/master/CHANGELOG.md"
