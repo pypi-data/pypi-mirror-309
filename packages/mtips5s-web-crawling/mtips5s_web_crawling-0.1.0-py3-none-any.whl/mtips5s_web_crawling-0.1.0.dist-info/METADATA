@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mtips5s_web_crawling
+Version: 0.1.0
+Summary: Mo ta ngan gon ve package cua ban
+Home-page: https://github.com/khuongsatou/mtips5s_web_crawling.git
+Author: Nguyễn Văn Khương
+Author-email: vankhuong240499@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Các ghi chú setup:
+- 
+Các câu lệnh:
+vim
+esc[CMD] -> :wq save
+Ghi chú git khi conflict:
+git pull origin main
+B1 git rebase --continue
+B2 Chọn mới nhất [incoming]
+B3 git rebase --continue
+B4 git add
+B5 git commit -m "U"
+Các git LFS:
+- git lfs install
+- git lfs pull
+- git lfs track "*.psd"
+- git lfs fetch <remote> --include="*.psd"
+- git lfs fetch --all
+- git lfs clone
+- git lfs prune
