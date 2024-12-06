@@ -1,0 +1,17 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.md,sha256=64FBfeGSPGyIu6Rd4-N5wtrcCHw9SHt4683XvAbozlI,2734
+openpo/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpo/adapters/base.py,sha256=Tc-wEwW-8B046Qsn6TWDon6b7KFN0GujkRSR25wcZ5E,579
+openpo/adapters/postgres.py,sha256=OjifSz5-tmiAF3C3qYeQUTsVu-gk0uIPjQWG7jbMeeY,2584
+openpo/adapters/s3.py,sha256=XMfhcupidmPIHhqmJQzCxGz7xuHd2IJ2urpiwuBkF6s,2235
+openpo/client.py,sha256=apn0deNB9_HYAEjT-oaLufN13wV0P353U87RJW3b1rc,898
+openpo/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpo/internal/helper.py,sha256=WbJ7KZ9iUq6RYJb-WrL9NMSo2blLdVIO3_-IRtkV4Oo,177
+openpo/internal/prompt.py,sha256=nW9H-EkDA6HeUzzpsKaGwFym72ogHIs5cyEM3-v8fOk,362
+openpo/resources/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpo/resources/chat/chat.py,sha256=w-G5K6dgmUagKn1ptIyvgHWOE0Mq7yrjDcIcVcCHfMM,137
+openpo/resources/chat/completions.py,sha256=HnlOihQDweHodeH88XQ-ghdt3hP6dl2K5uLwdqpoS1k,7798
+openpo-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openpo-0.1.0.dist-info/METADATA,sha256=BQ8BVHDeRf2XGayYoY5tRkAtOFauWwIs7u88fz5Qu6s,3506
+openpo-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openpo-0.1.0.dist-info/RECORD,,
