@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dat1-cli
+Version: 0.0.1
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: typer >=0.9.0
+Requires-Dist: inquirer >=3.1.3
+Requires-Dist: boto3 >=1.35.43
+Requires-Dist: pyyaml >=6.0.2
+Requires-Dist: yaspin >=3.1.0
+
+# dat1-cli
