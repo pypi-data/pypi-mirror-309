@@ -1,0 +1,30 @@
+---
+name: virtual-environment
+channels:
+    # For most modules
+    - conda-forge
+    - defaults
+dependencies:
+    # python!
+    - python=3.12.*
+    # Necessary for kernel creation
+    - ipykernel
+    # Validation dependencies
+    - papermill
+    - nbformat
+    # Testing
+    - pytest
+    - tox
+    - tox-conda
+    - py
+    # Linting
+    - flake8
+    # Packaging
+    - setuptools
+    - wheel
+    - twine
+    - rfc3986
+    - keyring
+    - pip
+    - pip:
+      - build

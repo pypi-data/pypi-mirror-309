@@ -1,0 +1,194 @@
+---
+###############################################################################
+# CI Setup
+###############################################################################
+# A docker image in which conda has been installed into /opt/conda/
+# image: continuumio/miniconda3:4.9.2
+image: condaforge/miniforge3
+
+stages:
+  - Security
+  - Lint
+  - Test
+  - Build
+  - Upload
+
+before_script:
+  - which python
+  - python -V
+  - which mamba
+  - export CONDA_EXE=mamba
+  - mamba info
+  - mamba env list
+  - mamba list
+
+
+###############################################################################
+# SAST
+###############################################################################
+bandit-python-scan:
+  stage: Security
+  script:
+    - pip install bandit
+    - bandit -r */*py
+    - bandit -r -a vuln -i -l -o bandit-report.json -f json */*py
+    - bandit -r -a vuln -i -l -o bandit-report.html -f html */*py
+  only:
+    changes:
+      - jnbv/*
+      - tests/*
+  artifacts:
+    paths:
+      - bandit-report.*
+
+
+###############################################################################
+# Lint
+###############################################################################
+.trigger_for_lint_build_tests_template:
+  only: &trigger_for_lint_build_tests
+    changes:
+      - jnbv/*.py
+      - tests/*.py
+      - setup.py
+      - tox.ini
+
+lint:
+  stage: Lint
+  script:
+    - mamba install "tox<4.0" -y -c conda-forge
+    - tox -e lint
+  only: *trigger_for_lint_build_tests
+
+
+###############################################################################
+# Test
+###############################################################################
+# Simple build test
+build-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-build"
+  only: *trigger_for_lint_build_tests
+
+# Execution tests
+execution-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-execution-tests-{valid,invalid}-kernel"
+  only:
+    changes:
+      - jnbv/*.py
+      - tests/*.yml
+      - tests/*.h5
+      - tests/*.ipynb
+      - tests/test_execute_notebook.py
+      - pyproject.toml
+      - setup.py
+      - tox.ini
+
+# Reading tests
+reading-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-reading-tests"
+  only:
+    changes:
+      - jnbv/*.py
+      - tests/*.ipynb
+      - tests/test_read_notebook.py
+      - pyproject.toml
+      - setup.py
+      - tox.ini
+
+# Testing tests
+testing-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-testing-tests"
+  only:
+    changes:
+      - jnbv/*.py
+      - tests/*.ipynb
+      - tests/test_test_notebook.py
+      - pyproject.toml
+      - setup.py
+      - tox.ini
+
+# Comparison tests
+comparison-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-comparison-tests"
+  only:
+    changes:
+      - jnbv/*.py
+      - tests/*.ipynb
+      - tests/test_compare_notebook.py
+      - pyproject.toml
+      - setup.py
+      - tox.ini
+
+# Validation tests
+.trigger_for_validation_tests_template:
+  only: &trigger_for_validation_tests
+    changes:
+      - jnbv/*.py
+      - tests/*.yml
+      - tests/*.h5
+      - tests/*.ipynb
+      - tests/test_validate_notebook.py
+      - pyproject.toml
+      - setup.py
+      - tox.ini
+
+validation-tests:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-validation-tests-{valid,invalid}-kernel"
+  only: *trigger_for_validation_tests
+
+validation-tests-cli:
+  stage: Test
+  script:
+    - mamba install "tox<4.0" tox-conda py -y -c conda-forge
+    - tox -e "py3{8,9,10,11,12}-validation-tests-cli"
+  only: *trigger_for_validation_tests
+
+
+###############################################################################
+# Build
+###############################################################################
+build:
+  stage: Build
+  only:
+    refs:
+      - tags
+  script:
+    - mamba install setuptools wheel -y -c conda-forge
+    - pip install build
+    - python3 -m build
+  artifacts:
+    paths:
+      - dist/
+
+
+###############################################################################
+# Upload
+###############################################################################
+upload:
+  stage: Upload
+  only:
+    refs:
+      - tags
+  script:
+    - mamba install twine rfc3986 keyring -y -c conda-forge
+    - python3 -m twine upload --repository pypi dist/*
+  dependencies:
+    - build

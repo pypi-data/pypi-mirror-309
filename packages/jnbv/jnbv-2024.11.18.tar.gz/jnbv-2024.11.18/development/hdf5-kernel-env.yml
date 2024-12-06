@@ -1,0 +1,17 @@
+---
+name: hdf5-kernel-environment
+channels:
+    # For most modules
+    - conda-forge
+    - defaults
+dependencies:
+    # Necessary for kernel creation
+    - python
+    - ipykernel
+    # Analysis modules
+    - h5py
+    # Plotting utilities
+    - matplotlib
+    - widgetsnbextension
+    - ipywidgets
+    - ipympl

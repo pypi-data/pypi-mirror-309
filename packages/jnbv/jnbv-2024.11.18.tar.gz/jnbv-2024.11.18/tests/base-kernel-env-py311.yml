@@ -1,0 +1,19 @@
+---
+name: base-kernel-environment
+channels:
+    # For most modules
+    - conda-forge
+    - defaults
+dependencies:
+    # Specify python verison for testing purposes
+    - python==3.11.*
+    # Necessary for kernel creation
+    - ipykernel
+    # Testing
+    - pytest
+    # Building
+    - setuptools
+    - wheel
+    # jnbv dependencies
+    - papermill
+    - nbformat
