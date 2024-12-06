@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: longplayer
+Version: 0.1.2
+Summary: Longplayer, a thousand-year long musical composition, implemented in Python
+Home-page: https://github.com/TheLongplayerTrust/longplayer-python
+Author: Daniel Jones and Jem Finer
+Author-email: dan-code@erase.net
+Keywords: sound,music,time,soundart
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Communications
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Description-Content-Type: text/markdown
+Requires-Dist: soundfile
+Requires-Dist: sounddevice
+
+# Longplayer in Python
+
+[Longplayer](https://longplayer.org/) is a thousand year long musical composition by Jem Finer.
+
+This is an open-source implementation of Longplayer in Python, which can be run on any compatible computer with audio output.
+
+For more information about Longplayer, read an [overview of the piece](https://longplayer.org/about/overview/).
+
+## Requirements
+
+- Python 3
+- A Linux or macOS system with audio output
+
+## Installation
+
+On Linux (including Raspberry Pi), the `portaudio` library must be installed: `sudo apt install libportaudio2`
+
+To install Longplayer from the command line:
+
+```
+pip3 install longplayer
+```
+
+## Usage
+
+To run Longplayer from the command line, run:
+
+```
+longplayer
+```
+
+Press Ctrl-C to stop playback.
