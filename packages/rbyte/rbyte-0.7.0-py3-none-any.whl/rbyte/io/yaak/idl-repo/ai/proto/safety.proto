@@ -1,0 +1,56 @@
+syntax = "proto3";
+package osm;
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+import "location.proto";
+
+message Clip{
+    // GNSS locations from frames in the clip
+    repeated osm.LocationFix locations = 1;
+    // timestamps of start of clip
+    google.protobuf.Timestamp start_timestamp = 2;
+    // timestamps of end of clip
+    google.protobuf.Timestamp end_timestamp = 3;
+}
+
+// add known actions, extended to use other action from
+// different embodied AI platforms
+enum Action {
+    kia_eniro_unknown = 0;
+    kia_eniro_gas_pedal_normalized = 1;
+    kia_eniro_brake_pedal_normalized = 2;
+    kia_eniro_steering_angle_normalized = 3;
+}
+
+message Prediction{
+    // what type of action is it
+    Action action = 1;
+    // best action predicted by the model
+    float action_prediction = 2;
+    // probability of ground-truth action
+    float action_groundtruth_posterior = 3;
+    // Log prob of the ground-truth action
+    float action_groundtruth_logprob = 4;
+    // L1 norm between groundtruth and predicted action by the model
+    float action_l1_norm_prediction_and_groundtruth = 5;
+}
+// Scores from SafetyAI
+message SafetyScore {
+    // scale for evaluating competency
+    enum Evaluation {
+        unknown = 0;
+        above_average = 1;
+        nominal = 2;
+        slight_error = 3;
+        serious_error = 4;
+    }
+    // Which category it falls in according to fahraufgabenkatalog
+    Evaluation evaluation = 1;
+    // Model predictions
+    repeated Prediction predictions = 2;
+    // Information regarding the clip which was used to make the prediction
+    Clip clip = 3;
+    // Overall SafetyScore for this clip [0, 1.0]
+    float score = 4;
+}

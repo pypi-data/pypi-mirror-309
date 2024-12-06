@@ -1,0 +1,71 @@
+syntax = "proto3";
+package weather;
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+import "osm/proto/location.proto";
+
+// Message representing a single weather data point
+// https://openweathermap.org/weather-conditions
+message WeatherConditions {
+
+    // main weather conditions
+    enum Main {
+        Thunderstorm = 0;
+        Drizzle = 1;
+        Rain = 2;
+        Snow = 3;
+        Mist = 4;
+        Smoke = 5;
+        Haze = 6;
+        Dust = 7;
+        Fog = 8;
+        Sand = 9;
+        Ash = 10;
+        Squall = 11;
+        Tornado = 12;
+        Clear = 13;
+        Clouds = 14;
+    }
+
+    // lighting conditions
+    enum Lighting {
+        Day = 0;
+        Night = 1;
+        Transition = 2;
+    }
+
+    // Geolocation data, timestemp is defined within the Gnss message
+    osm.LocationFix location = 1;
+
+    // Precipitation amount in millimeters
+    float precipitation = 2;
+
+    // Visibility in meters
+    float visibility = 3;
+
+    // cloud cover in per-centage
+    float cloudcover = 4;
+
+    // General weather conditions
+    Main conditions = 5;
+
+    // detailed description of weather conditionss
+    string description = 6;
+
+    // Condition id from weather API
+    uint32 weather_id = 7;
+
+    // SunriseEpoc
+    google.protobuf.Timestamp sunriseEpoch = 8;
+
+    // SunsetEpoc
+    google.protobuf.Timestamp sunsetEpoch = 9;
+
+    // timestamp of the location
+    google.protobuf.Timestamp timestamp = 10;
+
+    // General lighting condition
+    Lighting lighting_condition = 11;
+
+}

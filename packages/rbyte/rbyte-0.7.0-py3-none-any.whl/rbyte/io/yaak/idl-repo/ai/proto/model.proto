@@ -1,0 +1,17 @@
+syntax = "proto3";
+package ai;
+option go_package = ".;pb";
+
+// Information about the model
+message ModelCard {
+    // Model store location (wandb link / s3) f.ex yaak/cargpt/model-ojp6qagn:v18
+    string model_url = 1;
+    // immutable model name f.ex run_id from wandb (ojp6qagn)
+    string model_name = 2;
+    // display name f.ex HLN-26M-700 (Heute Lidar Nicht)
+    string model_display_name = 3;
+    // notes or description from training run ?
+    string model_description = 4;
+    // model digest / hash, f.ex c5e134ab7b7b95e609352e386c408f70
+    string model_hash = 5;
+}

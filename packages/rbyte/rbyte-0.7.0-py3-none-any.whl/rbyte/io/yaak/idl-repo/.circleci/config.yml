@@ -1,0 +1,82 @@
+version: 2.1
+
+orbs:
+  gh: circleci/github-cli@2.2.0
+
+executors:
+  go:
+    docker:
+      - image: cimg/go:1.19.2
+
+jobs:
+  protoc:
+    executor: go
+    parameters:
+      branch:
+        type: string
+      github-username:
+        type: string
+        default: yaak-deploy-user-vp
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt-get update && sudo apt-get install -y protobuf-compiler
+            protoc --version
+            go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27.1
+            go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+      - run:
+          name: run protoc
+          command: |
+            mkdir pb
+            protoc --proto_path=intercom/proto --go_out=./pb --go-grpc_out=./pb @.circleci/protoc-filenames  --experimental_allow_proto3_optional
+      - run:
+          name: setup GH user
+          command: |
+            git config --global user.email "cloud@yaak.ai"
+            git config --global user.name "<< parameters.github-username >>"
+      - run: 
+          name: clone YAPI
+          command: |
+            git clone https://<< parameters.github-username >>:$GITHUB_TOKEN@github.com/yaak-ai/YAPI.git
+            cd YAPI
+            git checkout develop
+      - run: 
+          name: copy changes
+          command: |
+            cd YAPI
+            git checkout -b << parameters.branch >>
+            cp -r ../pb pkg/
+            git add -N .
+            # quit job if no changes
+            if ! [ -n "$(git diff --exit-code)" ]; then
+              echo "No changes to push. Exiting job."
+              circleci-agent step halt
+            fi
+            git status
+      - gh/setup
+      - run:  
+          name: push new branch and open PR
+          command: |
+            cd YAPI
+            git add .
+            git commit -m "Update protoc files"
+            git push --set-upstream origin << parameters.branch >>
+            gh pr create \
+              --base develop \
+              --head << parameters.branch >> \
+              --title "Update protobuf files" \
+              --body "This PR was generated [by CircleCI](https://app.circleci.com/pipelines/github/yaak-ai/idl-repo) because a commit was pushed to [yaak-ai/idl-repo](https://github.com/yaak-ai/idl-repo)" \
+              --fill
+
+workflows:
+  protoc:
+    jobs:
+      - protoc:
+          context: github-token
+          branch: protoc-update-$CIRCLE_SHA1
+          filters:
+            branches:
+              only:
+                - main

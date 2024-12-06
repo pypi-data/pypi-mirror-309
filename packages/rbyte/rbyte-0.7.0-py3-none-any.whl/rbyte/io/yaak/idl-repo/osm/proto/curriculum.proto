@@ -1,0 +1,70 @@
+syntax = "proto3";
+package osm;
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+import "osm/proto/location.proto";
+
+// Curriculum Points messages
+message CurriculumPoint {
+
+    enum ItemType {
+        RIGHT_BEFORE_LEFT = 0;
+        GIVE_WAY = 1;
+        PEDESTRIAN_CROSSING = 2;
+        BUS_STOP = 3;
+        TRAIN_CROSSING = 4;
+        TRAFFIC_CALMER = 5;
+        LOWERED_KERB = 6;
+        RIGHT_TURN_ON_RED = 7;
+        UNKNOWN = 8;
+    }
+
+    // OSM node for the item
+    LocationFix location = 1;
+    // Type of CI
+    ItemType type = 2;
+    // timestamp
+    google.protobuf.Timestamp timestamp = 10;
+
+}
+
+// Curriculum LineStrings messages
+message CurriculumLineString {
+
+    enum ItemType {
+        UNPROTECTED_LEFT = 0;
+        LEFT = 1;
+        UNPROTECTED_RIGHT_WITH_BIKE = 2;
+        PROTECTED_RIGHT_WITH_BIKE = 3;
+        PROTECTED_LEFT = 4;
+        MULTILANE_LEFT = 5;
+        MULTILANE_RIGHT = 6;
+        ROUNDABOUT = 7;
+        LIMITED_ACCESS_WAY = 8;
+        LIVING_STREET = 9;
+        LOW_SPEED_REGION = 10;
+        ONE_WAY = 11;
+        TRAM_TRACKS  = 12;
+        PRIORITY_FORWARD_BACKWARD = 13;
+        HILL_DRIVE = 14;
+        ROAD_NARROWS = 15;
+        ENTERING_MOVING_TRAFFIC = 16;
+        MERGE_IN_OUT_ON_HIGHWAY = 17;
+        PRIORITY_WAY = 18;
+        TUNNEL = 19;
+        WAY = 20;
+        UNKNOWN = 21;
+        PARKING = 22;
+        LANE_CHANGE = 23;
+    }
+
+    // Location of OSM nodes part of the way
+    repeated LocationFix locations = 1;
+    // CI type
+    ItemType type = 2;
+    // timestamps of start location
+    google.protobuf.Timestamp start = 3;
+    // timestamps of end location
+    google.protobuf.Timestamp end = 4;
+}

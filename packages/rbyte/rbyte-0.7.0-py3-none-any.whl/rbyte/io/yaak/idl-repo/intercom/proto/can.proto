@@ -1,0 +1,95 @@
+syntax = "proto3";
+package intercom;
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+
+// VehicleMotion message contains essential information about car's motion.
+// Fields are aggregated from different CAN messages.
+// Those fields should be available in every car DBC file.
+message VehicleMotion {
+  enum Gear {
+    P = 0;
+    R = 1;
+    N = 2;
+    D = 3;
+    B = 4;
+  }
+
+  google.protobuf.Timestamp time_stamp = 1;
+  // us since start drive command was received
+  uint64 session_timestamp = 19;
+
+  // kinematics
+  double acceleration_x = 2; // m/s^2
+  double acceleration_y = 3; // m/s^2
+  double acceleration_z = 4; // m/s^2
+  float speed = 5;           // km/h
+  float wheel_speed_fr = 6;  // km/h
+  float wheel_speed_fl = 7;  // km/h
+  float wheel_speed_rr = 8;  // km/h
+  float wheel_speed_rl = 9;  // km/h
+
+  // steering
+  float steering_angle = 10;            // deg
+  float steering_angle_normalized = 11; // -1.0..1.0
+
+  // pedals
+  float gas_pedal_normalized = 12;   // 0.0..1.0
+  float brake_pedal_normalized = 13; // 0.0..1.0
+  bool instructor_pedals_used = 18;
+
+  // gear
+  Gear gear = 15;
+
+  // display
+  float speed_dashboard = 16; // km/h
+  double mileage = 17;        // km
+
+  // speed limiter
+  bool speed_limiter_enabled = 20;
+  uint32 speed_limiter_target = 21; // km/h
+
+  // cruise control state
+  bool cruise_control_enabled = 22;
+  uint32 cruise_control_target = 23; // km/h
+}
+
+// VehicleState message is aggregated from various car state related CAN
+// messages.
+message VehicleState {
+  enum TurnSignal {
+    OFF = 0;
+    LEFT = 1;
+    RIGHT = 2;
+  }
+
+  enum WiperMode {
+    DISABLED = 0;
+    // enable wipers automaticaly when the car detects rains
+    AUTO = 1;
+    SLOW = 2;
+    FAST = 3;
+  }
+
+  google.protobuf.Timestamp time_stamp = 1;
+  // us since start drive command was received
+  uint64 session_timestamp = 19;
+
+  bool door_closed_fl = 2;
+  bool door_closed_fr = 3;
+  bool door_closed_rl = 4;
+  bool door_closed_rr = 5;
+
+  bool driver_seatbelt_on = 6;
+  bool passenger_seatbelt_on = 7;
+
+  bool headlight_high_beam_on = 8;
+  TurnSignal turn_signal = 9;
+
+  // wipers
+  WiperMode wipers_mode = 10;
+  uint32 wipers_rain_detect_sensitivity = 11;
+  // true if wipers are parked, false when they are moving
+  bool wipers_parked = 12;
+}

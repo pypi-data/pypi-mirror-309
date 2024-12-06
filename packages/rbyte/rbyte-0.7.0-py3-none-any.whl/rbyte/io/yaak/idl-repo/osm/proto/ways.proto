@@ -1,0 +1,83 @@
+syntax = "proto3";
+package osm;
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+import "osm/proto/location.proto";
+
+// OSM feature messages
+message Way {
+
+    enum Highway {
+        motorway = 0;
+        trunk = 1;
+        primary = 2;
+        secondary = 3;
+        tertiary = 4;
+        residential = 5;
+        motorway_link = 6;
+        trunk_link = 7;
+        primary_link = 8;
+        secondary_link = 9;
+        tertiary_link = 10;
+        living_street = 11;
+        service = 12;
+        unclassified = 13;
+        raceway = 14;
+        track = 15;
+    }
+
+    enum Surface {
+        paved = 0;
+        asphalt = 1;
+        concrete = 2;
+        sett = 3;
+        cobblestone = 4;
+        paving_stones = 5;
+        dirt = 6;
+        grass = 7;
+        ground = 8;
+        unpaved = 9;
+        unknown = 10;
+    }
+
+    // Location of each node which we map-matched to
+    repeated LocationFix locations = 1;
+    // road type
+    Highway highway = 2;
+    // surface type
+    Surface surface = 3;
+    // maximum speed
+    uint32 maxspeed = 4;
+    // Number of lanes
+    uint32 lanes = 5;
+    // lenght of the way in meters
+    float length = 6;
+    // timestamps of start location
+    google.protobuf.Timestamp start = 7;
+    // timestamps of end location
+    google.protobuf.Timestamp end = 8;
+}
+
+// Turn information from map-matching
+message Turn {
+
+    enum Type {
+        UTURN = 0;
+        SHARP_RIGHT = 1;
+        RIGHT = 2;
+        SLIGHT_RIGHT = 3;
+        STRAIGHT = 4;
+        SLIGHT_LEFT = 5;
+        LEFT = 6;
+        SHARP_LEFT = 7;
+        UNKNOWN = 8;
+    }
+
+    // turn location
+    LocationFix location = 1;
+    // type of turn
+    Type type = 2;
+    // location timestamp
+    google.protobuf.Timestamp timestamp = 3;
+}
