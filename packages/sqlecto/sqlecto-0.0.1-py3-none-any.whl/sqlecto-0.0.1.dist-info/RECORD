@@ -1,0 +1,9 @@
+sqlecto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlecto/converter.py,sha256=NE3CT0D2KzN5IFN4_LwFTfA7jqGXDVAivnMzN7JYGDA,4748
+sqlecto/main.py,sha256=A26MU7wx3NBexqT6F7jWQT0xJrwfMhlW1HmafA7Pci4,6225
+sqlecto/utils.py,sha256=z_JieyrmIAfJbbk-oxKwxEhcBdwZsPF66s-n3k73nPQ,1389
+sqlecto-0.0.1.dist-info/LICENSE,sha256=RVhAqNqNZ4K0c8-mmN82BrXnzXQE2YAfUUzdpqnr-UM,1077
+sqlecto-0.0.1.dist-info/METADATA,sha256=zEmCrO-yXucVH7bzmDdkIHDG85le2R4GQuhkXtUVpsw,4864
+sqlecto-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sqlecto-0.0.1.dist-info/entry_points.txt,sha256=42OtD6TZ71Qlq4eVoy53pIF3-DLdK2YbVj1qBO2_9KA,44
+sqlecto-0.0.1.dist-info/RECORD,,
