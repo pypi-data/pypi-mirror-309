@@ -1,0 +1,15 @@
+monzo_api_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monzo_api_wrapper/get_balances.py,sha256=kzWxY6guVy09ylSXh5-S5zgwTp0SdvxzBml7_JVAlEw,876
+monzo_api_wrapper/get_transactions.py,sha256=r_blxTBdqY2OhAvMA1Ihlr3XP__IdiL7iK0JzkQZP-o,2102
+monzo_api_wrapper/upload_balances.py,sha256=eGWnOuMmukhn2rzycPzWk-jlyvnwnztRDLetKkgG7e0,4059
+monzo_api_wrapper/upload_transactions.py,sha256=49HzkzWjn4Oj0AtqwvcrRTfdFRIF5-kpntXtY2Yw60Y,4327
+monzo_api_wrapper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monzo_api_wrapper/utils/custom_logger.py,sha256=Oc_ZckWh1mQEMVrNjdVnRkMpjSWih0cQEiCo5C_7G_A,9604
+monzo_api_wrapper/utils/db.py,sha256=HKhw8Z24WTts481-tq_E8etVRV7rNB09Wmh78OLuQrg,4709
+monzo_api_wrapper/utils/sql_templates.py,sha256=6zCZs51pLhB97tC2Q92Wa72AwN9WWfECPnOdQ6_xpBk,839
+tests/test_get_transactions.py,sha256=uEdJO-H0Cde2UVfdyPUb4Q0rSmHijFv1DMPGGTfxLkc,2239
+monzo_api_wrapper-0.1.1.dist-info/LICENSE,sha256=5nkUV5WQbrKOngHb0lm9emNU64pL6W5Ig8f5gGk4koM,1080
+monzo_api_wrapper-0.1.1.dist-info/METADATA,sha256=_Z3bXplxMvR0-tejzf6w7ijg_pFuUHTXPFxMFxUD7Jw,4388
+monzo_api_wrapper-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+monzo_api_wrapper-0.1.1.dist-info/top_level.txt,sha256=awZgElyZkLMMTN9xR9gV4e9CC9ZUU_uCgPUs7ut5fEs,24
+monzo_api_wrapper-0.1.1.dist-info/RECORD,,
