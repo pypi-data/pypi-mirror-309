@@ -1,0 +1,17 @@
+stylizedprint/__init__.py,sha256=nLtw-ZUFGL4G9eA-BZxdLXyrQTZXtBI_2-CuOnzfp-E,380
+stylizedprint/animations.py,sha256=hHfs5dHR_D8RY0xG_ugQkP9xvjmx2DgCiAIj6iVvVSM,1120
+stylizedprint/borders.py,sha256=5xviBM4wH3nTSMWuKP6DdnVM9UpiOXbLzfQkGPv5Fzo,607
+stylizedprint/colors.py,sha256=dfhgdvVtltJI_9Tk_8bDs1FnRBSSnbEokvtEiqpZOdU,1200
+stylizedprint/core.py,sha256=Ph_o-fiYfu2jBNqaBa4ueZE7FkLPaf5fnamPHwg6ARM,4243
+stylizedprint/formatting.py,sha256=LzjmTszR6TLPhv5OjqFS1d9I8o3cOeP4ok5aj-v72oM,650
+stylizedprint/prueba.py,sha256=wO-ALrQA8inl0tONuZ57MqETO7XtHqkBBcPzDT2WFA0,365
+stylizedprint/separator.py,sha256=0ZNqlKgr-zJfgNqaTs3HXWdwG0_Rv2Kl_S78t3ASAQE,1771
+stylizedprint/styles.py,sha256=LJ48aMX5Wm7PGZevtOgte_Uy-xl9J7NqWLTjLiiBbQw,597
+stylizedprint/themes.py,sha256=OUKr8grIM0rOeOhAzFqJjSXmGaCeGL3f-aukFehkof8,1014
+stylizedprint/themes_func.py,sha256=eHtNjKTfX8KhvAT-p4XXcyim5T3gOj2TLZ6iD0NL6Sw,635
+stylizedprint/utils.py,sha256=EXjfh_NKihYlQYXVXhazCgsCBd_AXToEMfABWkggrEk,323
+stylizedprint-0.2.0.dist-info/LICENSE,sha256=nyhJUgONARHnMvtyGI3nimWahTh3gpSayFIDkoSfHtM,1122
+stylizedprint-0.2.0.dist-info/METADATA,sha256=jvlZjXhtlc4jyWmHgQrvdX9sesPpUr__WS8apYQRlWM,8212
+stylizedprint-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+stylizedprint-0.2.0.dist-info/top_level.txt,sha256=vMGdnZ7GRKrhuN_iTa_Wyk1KCR_ksi7-86fp8fomDoY,14
+stylizedprint-0.2.0.dist-info/RECORD,,
