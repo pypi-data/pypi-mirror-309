@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+trolo/cli/__init__.py
+trolo/cli/cli.py
+trolo/trolo.egg-info/PKG-INFO
+trolo/trolo.egg-info/SOURCES.txt
+trolo/trolo.egg-info/dependency_links.txt
+trolo/trolo.egg-info/entry_points.txt
+trolo/trolo.egg-info/requires.txt
+trolo/trolo.egg-info/top_level.txt
