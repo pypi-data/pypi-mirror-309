@@ -1,0 +1,18 @@
+[MESSAGES CONTROL]
+disable = C0413,
+        E0401,
+        R0902,
+        R0903,
+        R0912,
+        R0913,
+        R0914,
+        R0915,
+        W0511,
+        chained-comparison,
+        unspecified-encoding,
+        broad-exception-raised,
+        no-member,
+        missing-docstring,
+        import-outside-toplevel
+
+# vim: ft=toml
