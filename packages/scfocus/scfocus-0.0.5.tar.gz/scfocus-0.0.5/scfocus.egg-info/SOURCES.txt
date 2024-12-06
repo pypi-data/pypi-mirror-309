@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+scfocus/Analysis.py
+scfocus/__init__.py
+scfocus/cli.py
+scfocus/environment.py
+scfocus/focus.py
+scfocus/model.py
+scfocus/utils.py
+scfocus.egg-info/PKG-INFO
+scfocus.egg-info/SOURCES.txt
+scfocus.egg-info/dependency_links.txt
+scfocus.egg-info/entry_points.txt
+scfocus.egg-info/requires.txt
+scfocus.egg-info/top_level.txt
