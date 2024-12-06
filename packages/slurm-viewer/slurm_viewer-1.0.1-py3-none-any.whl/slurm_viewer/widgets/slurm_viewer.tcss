@@ -1,0 +1,59 @@
+Horizontal {
+    height: auto;
+}
+
+DetailScreen {
+    align: center middle;
+    width: auto;
+    height: auto;
+    & > DataTable {
+        width: auto;
+        min-width: 50%;
+        height: auto;
+        background: $panel;
+        border: $accent-lighten-2;
+    }
+}
+
+DataTable {
+    border: $accent-lighten-2;
+}
+
+PlotextPlot {
+    border: $accent-lighten-2;
+}
+
+NodesWidget Label {
+    width: auto;
+    padding: 1 1;
+    text-align: right;
+}
+
+QueueWidget Label {
+    width: auto;
+    padding: 1 1;
+    text-align: right;
+}
+
+#horizontal_spacer {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}
+
+#nodes_show_all {
+    width: auto;
+    padding: 1 1;
+}
+
+#queue_label {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}
+
+#priority_label {
+    width: 1fr;
+    padding: 1 1;
+    text-align: right;
+}

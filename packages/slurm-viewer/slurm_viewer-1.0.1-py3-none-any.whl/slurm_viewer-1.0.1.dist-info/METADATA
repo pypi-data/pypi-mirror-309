@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: slurm-viewer
+Version: 1.0.1
+Summary: View a SLURM cluster and inspect nodes and jobs.
+Author-email: Patrick de Koning <pjhdekoning@lumc.nl>
+Project-URL: Homepage, https://gitlab.com/lkeb/slurm_viewer
+Keywords: XNAT,TUI
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Pydantic
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.0
+Requires-Dist: python-dateutil
+Requires-Dist: textual>=0.73.0
+Requires-Dist: textual-plotext
+Requires-Dist: tomlkit
+Requires-Dist: asyncssh
+Requires-Dist: eval-type-backport; python_version < "3.10"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: textual-dev; extra == "dev"
+Requires-Dist: interrogate; extra == "dev"
+Requires-Dist: types-python-dateutil; extra == "dev"
+Requires-Dist: setuptools-git-versioning; extra == "dev"
+
+# Slurm Viewer
+
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgitlab.com%2Flkeb%2Fslurm_viewer%2F-%2Fraw%2Fmain%2Fpyproject.toml)
+![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/lkeb%2Fslurm_viewer)
+![PyPI - License](https://img.shields.io/pypi/l/slurm-viewer)
+![PyPI - Status](https://img.shields.io/pypi/status/slurm-viewer)
+![PyPI - Version](https://img.shields.io/pypi/v/slurm-viewer)
+![PyPI - Format](https://img.shields.io/pypi/format/slurm-viewer)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/slurm-viewer)
+
+
+
+
+## Introduction
+
+View the status of a SLURM cluster, including nodes and queue. This application can be run on the cluster itself or any
+computer that can ssh into the cluster. Using it via a ssh connection, especially using a jump host can be slow.
+
+Features:
+- Overview of all nodes or just nodes in a set of partitions.
+- Limit to nodes with GPUs / available GPUs.
+- Show the running jobs on a selection of partitions and the jobs waiting to be scheduled.
+- Show the GPU memory used over the last 4 weeks.
+
+View the nodes in the selected partitions.
+![Slurmviewer Nodes](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/slurmviewer_nodes.svg "Nodes")
+View the queue of running and pending jobs.
+![Slurmviewer Queue](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/slurmviewer_queue.svg "Queue")
+View the GPU utilization and memory usage
+![Slurmviewer SPU](https://gitlab.com/lkeb/slurm_viewer/-/raw/main/slurmviewer_gpu.svg "GPU")
+
+## Installation
+
+```bash
+pip install slurm-viewer
+```
+
+## Usage
+
+Run `slurm-viewer-init` to create a default settings file stored in `~/.config/slurm-viewer/settings.toml`.
+Edit this to reflect your setup. Once you have finished run `slurm-viewer` to start the UI.
+
+## Settings
+
+The config files consist of several sections. You can add multiple slurm clusters.
+
+```toml
+[ui]
+node_columns = ["node_name", "state", "gpu_tot", "gpu_alloc", "gpu_avail", "gpu_type", "gpu_mem", "cpu_tot", "cpu_alloc", "cpu_avail", "mem_tot", "mem_alloc", "mem_avail", "cpu_gpu", "mem_gpu", "cpuload", "partitions", "active_features"]
+queue_columns = ["user", "job_id", "reason", "exec_host", "start_delay", "run_time", "time_limit", "command"]
+priority_columns = ["user_name", "job_id", "job_priority_n", "age_n", "fair_share_n", "partition_name"]
+
+[[clusters]]
+name = "cluster_1"
+partitions = ["cpu", "gpu"]
+node_name_ignore_prefix = ["node"]
+servers = ["cluster_1_logon_node_1", "cluster_1_logon_node_2"]
+
+[[clusters]]
+name = "cluster_2"
+partitions = ["cpu-short", "cpu-medium", "cpu-long", "gpu-short", "gpu-medium", "gpu-long"]
+server = "cluster_2.logon.node"
+
+```
+
+If you need to connect using a jumphost/gateway use the `~/.ssh/config` to setup the connections and use the `Host` name as
+the server.
+
+Example of a ssh config:
+
+```
+Host gateway_1
+  User my_user_name
+  HostName gateway.somewhere
+  
+Host cluster_1
+  User my_user_name
+  HostName logonnode.somewhere
+  ProxyCommand ssh -W %h:%p gateway_1
+```
