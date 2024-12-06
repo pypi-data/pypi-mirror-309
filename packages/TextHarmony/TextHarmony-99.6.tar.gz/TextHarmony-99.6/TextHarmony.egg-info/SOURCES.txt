@@ -1,0 +1,7 @@
+main.py
+setup.py
+TextHarmony.egg-info/PKG-INFO
+TextHarmony.egg-info/SOURCES.txt
+TextHarmony.egg-info/dependency_links.txt
+TextHarmony.egg-info/requires.txt
+TextHarmony.egg-info/top_level.txt
