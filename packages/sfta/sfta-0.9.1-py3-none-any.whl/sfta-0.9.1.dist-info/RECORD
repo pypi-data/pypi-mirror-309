@@ -1,0 +1,9 @@
+sfta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfta/_version.py,sha256=pF8TnH2QJF8nfDmcD7oPTrAOnioy05dV4YmYDzkT5Es,22
+sfta/cli.py,sha256=EbDdnvskkYb4eKQiDzNvVPQn2fvgvumRT0TtKk6hiwQ,4128
+sfta/core.py,sha256=MlU6wAWF2TDoxNMqwAajwrbXyMlRV3K-74if_OuBjLw,63317
+sfta/utilities.py,sha256=2AYDz3lI_Btcrn4CukIXev59cpKqV24zovx_6Shv_BE,4604
+sfta-0.9.1.dist-info/entry_points.txt,sha256=HbBcxtAyoOej6HE_YpjAS_XrAMPoWLbm8DTT6kp2lXE,38
+sfta-0.9.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+sfta-0.9.1.dist-info/METADATA,sha256=W7aaP0QsqUNBeJCsx7h31BXZubjs4dvw9dCcvc-Jn_U,3854
+sfta-0.9.1.dist-info/RECORD,,
