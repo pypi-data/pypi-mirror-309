@@ -1,0 +1,13 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+  <permission
+      id="imio.gdpr.ManageControlPanel"
+      title="imio.gdpr: Manage control panel">
+    <role name="Manager"/>
+    <role name="Site Administrator"/>
+  </permission>
+
+</configure>
