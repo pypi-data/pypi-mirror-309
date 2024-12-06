@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["mm21 <mm21.dev@gmail.com>"]
+classifiers = [
+  # Get the list of trove classifiers here: https://pypi.org/classifiers/
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Development Status :: 1 - Planning",
+  "Natural Language :: English",
+  "License :: OSI Approved :: MIT License"
+]
+name = "alchemizer"
+packages = [{include = "alchemizer"}]
+version = "0.1.0"
+description = "Meta-framework to facilitate development of frameworks using identity map and unit of work patterns"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+
+[tool.black]
+line-length = 80
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
