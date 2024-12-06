@@ -1,0 +1,170 @@
+[
+  {
+    "model": "djangoldp_tems_trial6.trial6category",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:54:52.359Z",
+      "update_date": "2024-11-11T12:54:52.360Z",
+      "name": "VO-English"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6category",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:55:30.268Z",
+      "update_date": "2024-11-11T12:55:30.269Z",
+      "name": "German"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6format",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:54:23.928Z",
+      "update_date": "2024-11-11T12:54:23.929Z",
+      "name": "TXT"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6format",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:55:08.941Z",
+      "update_date": "2024-11-11T12:55:08.942Z",
+      "name": "MP3"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-13T16:36:45.403Z",
+      "update_date": "2024-11-13T16:36:45.405Z",
+      "name": "frontières borders"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-13T16:36:52.411Z",
+      "update_date": "2024-11-13T16:36:52.411Z",
+      "name": "displayeurope"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2024-11-13T16:36:58.522Z",
+      "update_date": "2024-11-13T16:36:58.523Z",
+      "name": "EU"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 4,
+    "fields": {
+      "creation_date": "2024-11-13T16:37:07.094Z",
+      "update_date": "2024-11-13T16:37:07.095Z",
+      "name": "EUSecurity"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 5,
+    "fields": {
+      "creation_date": "2024-11-13T16:37:14.036Z",
+      "update_date": "2024-11-13T16:37:14.037Z",
+      "name": "ForeignPolicy"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 6,
+    "fields": {
+      "creation_date": "2024-11-13T16:37:20.914Z",
+      "update_date": "2024-11-13T16:37:20.915Z",
+      "name": "Immigration"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 7,
+    "fields": {
+      "creation_date": "2024-11-13T16:37:26.832Z",
+      "update_date": "2024-11-13T16:37:26.833Z",
+      "name": "Refugees"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6keyword",
+    "pk": 8,
+    "fields": {
+      "creation_date": "2024-11-13T16:37:33.077Z",
+      "update_date": "2024-11-13T16:37:33.078Z",
+      "name": "security"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6object",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:53:16.938Z",
+      "update_date": "2024-11-13T18:23:36.153Z",
+      "title": "Standard Time podcast S1E24",
+      "description": "<p>The #EU likes to promote its devotion to human rights, but you  won’t need a magnifying glass to see that this agenda falls short when  it comes to #border regimes, #migration and especially, non-European  #refugees.</p>\r\n<p>Our guests are Sedra Arab, Gustavo de la Orden Bosch, and Philipp  Ther #borders #migration #EU #EUSecurity #Security #ForeignPolicy  #refugees #history #EuropeanHistory #immigration #asylum #EPElections  #racism #anti-racism #humanrights #MigrationPact\r\nStandard Time, Eurozine’s weekly talk show is a Display Europe  production, offering thoughtful conversations on topics with a  cross-European interest. Make sure to subscribe to our channel to watch our latest episodes</p>",
+      "copyright": "Copyright",
+      "website": "https://cba.media/?post_type=post&p=666825",
+      "subtitle": "Fortifying Europe",
+      "editor": "Eurozine - Salma Shaka",
+      "contributors": "uploader : Eurozine : office@eurozine.com : https:\\\\/\\\\/www.eurozine…thors\\\\/standard-time\\\\",
+      "author": "Author",
+      "platform": "Platform",
+      "licences": [2, 3],
+      "images": [],
+      "providers": [1],
+      "keywords": [1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:54:55.653Z",
+      "update_date": "2024-11-11T12:54:57.841Z",
+      "name": "Subtitles_akajelakzeja.txt",
+      "size": 200000,
+      "format": 1,
+      "category": 1,
+      "object": 2
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:55:18.476Z",
+      "update_date": "2024-11-11T12:55:18.477Z",
+      "name": "Transcription_akajelakzeja.MP3",
+      "size": 200000,
+      "format": 2,
+      "category": 1,
+      "object": 2
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial6.trial6asset",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2024-11-11T12:55:32.777Z",
+      "update_date": "2024-11-11T12:55:32.778Z",
+      "name": "Transcription V2_akajelakzeja.OGG",
+      "size": 200000,
+      "format": 2,
+      "category": 2,
+      "object": 2
+    }
+  }
+]

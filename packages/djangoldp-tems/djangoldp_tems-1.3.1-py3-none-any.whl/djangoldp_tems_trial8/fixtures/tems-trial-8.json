@@ -1,0 +1,115 @@
+[
+  {
+    "model": "djangoldp_tems_trial8.trial8category",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:23:32.539Z",
+      "update_date": "2024-11-11T12:23:32.541Z",
+      "name": "Category"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:25:13.352Z",
+      "update_date": "2024-11-11T12:25:13.353Z",
+      "name": "3D Studio"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:25:20.645Z",
+      "update_date": "2024-11-11T12:25:20.646Z",
+      "name": "AutoCAD drawing 2013"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8compatibility",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2024-11-11T12:25:28.051Z",
+      "update_date": "2024-11-11T12:25:28.052Z",
+      "name": "FBX"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8format",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:21:52.494Z",
+      "update_date": "2024-11-11T12:21:52.495Z",
+      "name": "Category"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8keyword",
+    "pk": 2,
+    "fields": {
+      "creation_date": "2024-11-11T12:24:59.333Z",
+      "update_date": "2024-11-11T12:24:59.334Z",
+      "name": "Castle"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8keyword",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2024-11-11T12:25:05.827Z",
+      "update_date": "2024-11-11T12:25:05.828Z",
+      "name": "Keyword"
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8location",
+    "pk": 1,
+    "fields": {
+      "creation_date": "2024-11-11T12:24:08.674Z",
+      "update_date": "2024-11-11T12:24:08.675Z",
+      "name": "Geonames location name",
+      "address": "Unknown",
+      "city": "Melbourne",
+      "state": "AU",
+      "country": "Australia",
+      "latitude": "0E-7",
+      "longitude": "0E-7",
+      "elevation": 0
+    }
+  },
+  {
+    "model": "djangoldp_tems_trial8.trial8object",
+    "pk": 3,
+    "fields": {
+      "creation_date": "2024-11-11T12:25:32.883Z",
+      "update_date": "2024-11-12T09:52:12.873Z",
+      "title": "Title",
+      "description": "Lorem ipsum dolor sit amet consectetur. Et nulla lacus magna sagittis quam. Leo proin urna semper egestas. Nisl ut tincidunt massa nulla venenatis sem lacus quam duis. A etiam parturient nunc vel. Feugiat ultrices sed feugiat venenatis posuere. Enim eget nunc feugiat interdum. Justo scelerisque ornare ut egestas ullamcorper risus justo. Pellentesque facilisi aliquam tellus lacus non suspendisse.\r\n\r\nFacilisis nulla felis in est mauris magna dictum diam. Diam nulla eu duis arcu risus. Sed mi vulputate auctor vitae curabitur. Libero volutpat vestibulum consectetur rutrum tortor leo in ut. Id sem nam dignissim nec. Eu sollicitudin et sed sapien.",
+      "copyright": "https://startinblox.com",
+      "website": "https://startinblox.com",
+      "identifier": "XXX-000-XXX",
+      "historical_period": "XXX-000-XXX",
+      "polygons": 67342,
+      "summits": 34602,
+      "geometry": "Polygonal Géométrie",
+      "uv_layers": true,
+      "vertex_colors": true,
+      "rigged_geometry": false,
+      "file_size": 491700,
+      "vertives": 0,
+      "textures": 5,
+      "materials": 20,
+      "animations": 0,
+      "original_material": "HD Cam",
+      "format": 1,
+      "category": 1,
+      "location": 1,
+      "licences": [1],
+      "images": [1],
+      "providers": [1],
+      "keywords": [2, 3],
+      "compatibilities": [1, 2, 3]
+    }
+  }
+]
