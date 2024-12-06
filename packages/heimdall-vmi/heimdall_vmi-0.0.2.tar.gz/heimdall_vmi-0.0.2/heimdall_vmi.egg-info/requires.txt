@@ -1,0 +1,12 @@
+click
+coloredlogs
+inquirer3
+requests
+tqdm
+ipython
+traitlets
+humanfriendly
+capstone
+
+[test]
+pytest
