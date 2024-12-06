@@ -1,0 +1,2 @@
+[console_scripts]
+sc3020 = sc3020.project:main
