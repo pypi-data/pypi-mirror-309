@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: taufeeq-cli-resume
+Version: 1.0.0
+Summary: Print Taufeeq's resume in the terminal.
+Author: Taufeeq Riyaz
+Author-email: contact.taufeeq@gmail.com
+Requires-Dist: rich

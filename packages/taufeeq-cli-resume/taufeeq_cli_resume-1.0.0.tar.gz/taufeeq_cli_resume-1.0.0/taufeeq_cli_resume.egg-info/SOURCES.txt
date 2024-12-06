@@ -1,0 +1,9 @@
+setup.py
+taufeeq_cli_resume/__init__.py
+taufeeq_cli_resume/resume.py
+taufeeq_cli_resume.egg-info/PKG-INFO
+taufeeq_cli_resume.egg-info/SOURCES.txt
+taufeeq_cli_resume.egg-info/dependency_links.txt
+taufeeq_cli_resume.egg-info/entry_points.txt
+taufeeq_cli_resume.egg-info/requires.txt
+taufeeq_cli_resume.egg-info/top_level.txt

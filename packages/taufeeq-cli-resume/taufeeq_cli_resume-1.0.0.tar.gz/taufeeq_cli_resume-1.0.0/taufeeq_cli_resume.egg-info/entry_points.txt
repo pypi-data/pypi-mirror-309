@@ -1,0 +1,2 @@
+[console_scripts]
+taufeeq-resume = taufeeq_cli_resume.resume:display_resume
