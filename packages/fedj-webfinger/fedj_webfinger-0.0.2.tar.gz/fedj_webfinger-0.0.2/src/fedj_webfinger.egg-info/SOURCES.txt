@@ -1,0 +1,16 @@
+pyproject.toml
+src/fedj_webfinger/__init__.py
+src/fedj_webfinger/admin.py
+src/fedj_webfinger/apps.py
+src/fedj_webfinger/models.py
+src/fedj_webfinger/tests.py
+src/fedj_webfinger/views.py
+src/fedj_webfinger.egg-info/PKG-INFO
+src/fedj_webfinger.egg-info/SOURCES.txt
+src/fedj_webfinger.egg-info/dependency_links.txt
+src/fedj_webfinger.egg-info/requires.txt
+src/fedj_webfinger.egg-info/top_level.txt
+src/fedj_webfinger/migrations/0001_initial.py
+src/fedj_webfinger/migrations/0002_alter_alias_value_alter_link_href_alter_link_rel_and_more.py
+src/fedj_webfinger/migrations/0003_alter_linkproperty_name_alter_linktitle_link.py
+src/fedj_webfinger/migrations/__init__.py
