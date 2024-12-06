@@ -1,0 +1,3 @@
+import Kratos
+
+def SetBulkRadiusForShapeFiltering(input_model_part: Kratos.ModelPart) -> None: ...
