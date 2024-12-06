@@ -1,0 +1,2 @@
+[console_scripts]
+readme_ready = readme_ready.__main__:main
