@@ -1,0 +1,2 @@
+[console_scripts]
+brainsets = brainsets.cli:cli
