@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: graphbook_huggingface
+Version: 0.0.3
+Summary: Graphbook Hugging Face Plugin for no-code Hugging Face AI pipelines
+Home-page: https://graphbook.ai
+License: MIT
+Keywords: huggingface,ml,workflow,pipelines,pytorch,data science,machine learning,ai
+Author: Richard Franklin
+Author-email: rsamf@graphbook.ai
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Documentation, https://docs.graphbook.ai
+Project-URL: Repository, https://github.com/graphbookai/graphbook
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://graphbook.ai">
+    <img src="assets/graphbook-hf-banner.png" alt="Logo" width=512>
+  </a>
+
+  <h1 align="center">Graphbook Hugging Face</h1>
+
+  <p align="center">
+    Build No Code Hugging Face AI Pipelines
+  </p>
+</p>
+
+You can build efficient DAG workflows or AI pipelines without any code. This is a Graphbook plugin that lets you drag and drop Hugging Face models and datasets onto Graphbook workflows. This plugin contains a web panel for searching and drag-and-dropping models and datasets from [Huggingface Hub](https://huggingface.co/) onto their graphbook workflows.
+
+<img src="assets/example-hf-pipeline.png" alt="Example Pipeline with Hugging Face" with=1024>
+
+## Packaged Nodes
+
+Graphbook Hugging Face contains the following nodes:
+
+* `TransformersPipeline` step for model usage from transformers package
+* `HuggingfaceDataset` step for dataset usage from the datasets package
+* And numerous `Post Processing/*` steps for post processing of model outputs
+
+## Getting started
+1. `pip install graphbook_huggingface graphbook transformers datasets`
+1. `graphbook --config hf.config.yaml`
+
+

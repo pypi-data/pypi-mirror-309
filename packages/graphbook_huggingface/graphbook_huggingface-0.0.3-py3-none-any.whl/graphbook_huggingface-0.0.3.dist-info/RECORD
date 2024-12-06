@@ -1,0 +1,10 @@
+graphbook_huggingface/__init__.py,sha256=jM_O80TRUXTP7CvJy7yMxCLjsPuWjnZDCM78swWki3w,584
+graphbook_huggingface/dist/bundle.js,sha256=Djo_zezxvMZ7W5VfPj0qYDt6svYpDHpnIS9Gd6z9xf8,28507
+graphbook_huggingface/dist/bundle.js.LICENSE.txt,sha256=rF0_-lQ8dc89gLAn9h7BDSZkihB0fxhbGu0K4yO_LPc,2775
+graphbook_huggingface/hf_datasets.py,sha256=7S0BqcpqIejrzogQmtQ_L18CKRWX9kI35iVwDHjnNTs,2669
+graphbook_huggingface/hf_pipeline.py,sha256=h3ceikre44gRAYt-k_EDJ6CPtVS5dvXcli61X8jGKrA,5031
+graphbook_huggingface/hf_postprocessing.py,sha256=Wue3r5EzDDVpcuspL2iYYHProGHrOn5RdqQeYSq97oA,4512
+graphbook_huggingface-0.0.3.dist-info/LICENSE,sha256=zLOLajCXGxmn2_nxPiOxD2KwjdqoG7LQ-Mm86s6-zwY,1069
+graphbook_huggingface-0.0.3.dist-info/METADATA,sha256=_86KhtECNoLe2ONC9UWFLM717j_e2BNHR3RxZwHCDU8,2054
+graphbook_huggingface-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+graphbook_huggingface-0.0.3.dist-info/RECORD,,
