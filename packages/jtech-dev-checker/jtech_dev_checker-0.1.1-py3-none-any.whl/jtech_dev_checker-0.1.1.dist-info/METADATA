@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jtech-dev-checker
+Version: 0.1.1
+Summary: 
+Author: Angelo Vicente Filho
+Author-email: angelo.vicente@veolia.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: langchain-google-genai (>=2.0.5,<3.0.0)
+Requires-Dist: pypdf (>=5.1.0,<6.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Jtech Dev Checker
