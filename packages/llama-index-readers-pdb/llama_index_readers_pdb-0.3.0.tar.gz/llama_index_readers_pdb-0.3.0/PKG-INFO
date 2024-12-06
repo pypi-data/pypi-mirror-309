@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-pdb
+Version: 0.3.0
+Summary: llama-index readers pdb integration
+License: MIT
+Keywords: Protein Data Bank,academic papers,pdb,proteins
+Author: Your Name
+Author-email: you@example.com
+Maintainer: joshuakto
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Protein Data Bank (PDB) publication Loader
+
+```bash
+pip install llama-index-readers-pdb
+```
+
+This loader fetches the abstract of PDB entries using the RCSB (Research Collaboratory for Structural Bioinformatics) or EBI (European Bioinformatics Institute) REST api.
+
+## Usage
+
+To use this loader, simply pass an array of PDB ids into `load_data`:
+
+```python
+from llama_index.readers.pdb import PdbAbstractReader
+
+loader = PdbAbstractReader()
+documents = loader.load_data(pdb_id=["1cbs"])
+```
+
+This loader is designed to be used as a way to load data into [LlamaIndex](https://github.com/run-llama/llama_index/).
+
