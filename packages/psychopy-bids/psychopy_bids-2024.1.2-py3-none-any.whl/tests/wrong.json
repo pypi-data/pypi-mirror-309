@@ -1,0 +1,26 @@
+{
+    "onset": {
+        "LongName": "",
+        "Description": ""
+    },
+    "duration": {
+        "LongName": "",
+        "Description": ""
+    },
+    "trial_type": {
+        "LongName": "",
+        "Description": ""
+    },
+    "response_time": {
+        "LongName": "",
+        "Description": ""
+    },
+    "value": {
+        "LongName": "",
+        "Description": ""
+    },
+    "stim_file: {
+        "LongName": "",
+        "Description": ""
+    }
+}
