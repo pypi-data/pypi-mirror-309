@@ -1,0 +1,3 @@
+[console_scripts]
+pyfmm-gui = pyfmm_gui.main:main
+pyfmm_gui = pyfmm_gui.main:main

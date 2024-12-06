@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyfmm_gui/__init__.py
+pyfmm_gui/_version.py
+pyfmm_gui/main.py
+pyfmm_gui/main.ui
+pyfmm_gui/subwidget.py
+pyfmm_gui/utils.py
+pyfmm_gui.egg-info/PKG-INFO
+pyfmm_gui.egg-info/SOURCES.txt
+pyfmm_gui.egg-info/dependency_links.txt
+pyfmm_gui.egg-info/entry_points.txt
+pyfmm_gui.egg-info/top_level.txt
