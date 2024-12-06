@@ -1,0 +1,11 @@
+shastun/__init__.py,sha256=XdkVdfLA9vARn4TL5Ayx7b1jFbgv5dR9EYVp_nXBSCY,213
+shastun/board.py,sha256=hWs--XlkjSTFDBDzativo7BDAWC8B1n0fNni7l1Qhlo,575
+shastun/dice.py,sha256=nyj8XWh0QXqf3aSghfYzN4hT6C1gRPlw0B62KyabL54,839
+shastun/game.py,sha256=qunYDDRtHHXCTOaGXkzpw8vuaUkvRVtBDUNbMSnBcSQ,967
+shastun/match.py,sha256=X-fIWgSd6eNeZ17IKUfmeTofhatTbz-G8Ob6eKFdcdE,2291
+shastun/player.py,sha256=w9x5U1CDTaIxG3WyvI0QhxAMatrFiXQmz06FZ8GsD9E,93
+shastun/throw.py,sha256=C0X-f8zif1pCnZraDzdb2MD2bsDrNSclTAeYf5JWINs,712
+shastun-0.1.1.dist-info/METADATA,sha256=BGf6l8c4nJliwiTSVK1KX9JM-TfPiWofvv-2_skykmE,2921
+shastun-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+shastun-0.1.1.dist-info/entry_points.txt,sha256=d-DgzOMENNfQ2VNMOztEgFpFxFffuOcwGl6KXc-ThuA,37
+shastun-0.1.1.dist-info/RECORD,,
