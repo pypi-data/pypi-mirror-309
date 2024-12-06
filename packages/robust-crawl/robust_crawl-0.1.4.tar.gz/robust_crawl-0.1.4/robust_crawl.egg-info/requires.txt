@@ -1,0 +1,13 @@
+gevent
+playwright
+tenacity
+brotli
+numpy
+requests
+pyyaml
+bs4
+fake_useragent
+openai
+httpx
+socksio
+PySocks
