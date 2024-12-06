@@ -1,0 +1,6 @@
+llama_index/embeddings/deepinfra/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/embeddings/deepinfra/__init__.py,sha256=6mNxGiXIObOLrZA6Jxfau5WSc-l-P9wJx_JxqP0wasY,129
+llama_index/embeddings/deepinfra/base.py,sha256=fO1xuYSoWG6Maau1oTQKtp9xKKo2uSDnihyYNtvjJs4,7530
+llama_index_embeddings_deepinfra-0.3.0.dist-info/METADATA,sha256=Qk-QxK1aP5q5M0O2ifydAEdf9zRbMg_1EkIfO5GuNtk,2175
+llama_index_embeddings_deepinfra-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_deepinfra-0.3.0.dist-info/RECORD,,
