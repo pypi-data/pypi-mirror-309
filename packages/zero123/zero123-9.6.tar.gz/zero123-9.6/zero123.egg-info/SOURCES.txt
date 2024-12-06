@@ -1,0 +1,7 @@
+main.py
+setup.py
+zero123.egg-info/PKG-INFO
+zero123.egg-info/SOURCES.txt
+zero123.egg-info/dependency_links.txt
+zero123.egg-info/requires.txt
+zero123.egg-info/top_level.txt
