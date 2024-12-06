@@ -1,0 +1,217 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymablock"
+dynamic = ["version"]
+authors = [
+  {name="Pymablock developers"},
+]
+description = "Numerical and symbolic implementation of quasi-degenerate perturbation theory"
+readme = "README.md"
+# This project follows https://scientific-python.org/specs/spec-0000/
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "sympy>=1.12",
+    "python-mumps>=0.0.1,<0.1",
+    "packaging>=22.0",  # For version parsing
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+[tool.hatch.version]
+source = "vcs"
+[tool.hatch.build.hooks.vcs]
+version-file = "pymablock/_version.py"
+
+[project.urls]
+"Documentation" = "https://pymablock.readthedocs.io/en/latest/"
+"Repository" = "https://gitlab.kwant-project.org/qt/pymablock"
+"Bug Tracker" = "https://gitlab.kwant-project.org/qt/pymablock/-/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pymablock"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "pymablock",
+  "README.md",
+  "LICENSE",
+  "pyproject.toml",
+  "pytest.ini",
+  "AUTHORS.md",
+  "CITATION.cff",
+]
+
+[tool.ruff]
+line-length = 90
+exclude = [
+  "paper",  # not part of the library
+  "pymablock/_version.py",  # generated automatically
+  "docs/source/conf.py",
+  "pymablock/__init__.py",
+  "trace_perturbation/*",  # not part of the library
+]
+lint.extend-select = [
+  "N",
+  "D",
+  "W",
+  "I",
+  "T10",
+  "Q",
+  "RSE",
+  "RET",
+  "TCH",
+  "INT",
+  "ARG",
+  "R",
+  "FLY",
+  "RUF",
+]
+lint.ignore = [
+"N802",  # invalid-function-name
+"N803",  # invalid-argument-name
+"N806",  # non-lowercase-variable-in-function
+]
+lint.fixable = ["ALL"]
+lint.unfixable = []
+[tool.ruff.lint.extend-per-file-ignores]
+"pymablock/block_diagonalization.py" = [
+  "RET503",  # implicit-return
+  "RET504",  # unnecessary-assign
+]
+"pymablock/tests/*.py" = [
+  "RET504",
+  "D",  # documentation in tests not necessary
+]
+
+[tool.coverage.run]
+include = [
+  "pymablock/*",
+]
+omit = [
+  "pymablock/algorithms.py",
+]
+
+[tool.mypy]
+# Not using mypy yet, but this is a start.
+python_version = "3.10"
+allow_redefinition = true
+[[tool.mypy.overrides]]
+module = [
+  "scipy",
+  "scipy.sparse",
+  "scipy.sparse.linalg",
+  "scipy.sparse.linalg._interface",
+]
+ignore_missing_imports = true
+
+[tool.codespell]
+skip = "*.cls,*.bst,*.bib"
+ignore-words-list = "nwo,groth,ket,braket"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+pymablock = { path = ".", editable = true }
+
+# Pixi dependencies
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "pytest-randomly", "pytest-regressions", "pytest-ruff"]
+docs = ["sphinx-book-theme>=1.1.0", "sphinx-tippy"]
+
+[tool.pixi.dependencies]
+python = ">=3.11"
+numpy = ">=1.24"
+scipy = ">=1.10"
+sympy = ">=1.12"
+python-mumps = ">=0.0.1,<0.1"
+packaging = ">=22.0" # For version parsing
+
+[tool.pixi.build-dependencies]
+git = "*"
+
+[tool.pixi.feature.docs.dependencies]
+kwant = "*"
+myst-nb = "*"
+matplotlib-base = "*"
+sphinx-togglebutton = "*"
+sphinx-copybutton = "*"
+git = "*"
+make = "*"
+
+[tool.pixi.feature.test.dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-randomly = "*"
+pytest-regressions = "*"
+# pytest-ruff is not on conda
+
+[tool.pixi.feature.minimal.dependencies]
+python = "~=3.11.0"
+numpy = "~=1.24.0"
+scipy = "~=1.10.0"
+sympy = "~=1.12.0"
+
+[tool.pixi.feature.mid.dependencies]
+python = "~=3.12.0"
+numpy = "~=1.26.0"
+scipy = "~=1.13.0"
+sympy = "~=1.13.0"
+
+[tool.pixi.feature.latest.dependencies]
+python = "~=3.13.0"
+numpy = ">=2.1.0"
+scipy = ">=1.14.0"
+sympy = ">=1.13.0"
+
+[tool.pixi.feature.publish.dependencies]
+hatch = ">=1.7.0,<1.13"
+hatch-vcs = ">=0.4.0,<0.5"
+git = "*"
+
+[tool.pixi.feature.precommit.dependencies]
+pre-commit = "*"
+git = "*"
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+docs = { features = ["docs"], solve-group = "mid" }
+minimal = { features = ["minimal", "test"], solve-group = "minimal" }
+mid = { features = ["mid", "test"], solve-group = "mid" }
+latest = { features = ["latest", "test"], solve-group = "default" }
+precommit = { features = ["precommit"], no-default-feature = true }
+publish = { features = ["publish"], no-default-feature = true }
+
+# Tasks
+
+[tool.pixi.feature.test.tasks]
+tests = "pytest -W error -W ignore:ast.NameConstant:DeprecationWarning"
+
+[tool.pixi.tasks]
+tests-minimal = "pixi run -e minimal tests"
+tests-mid = "pixi run -e mid tests"
+tests-latest = "pixi run -e latest tests"
+tests-all = { depends-on = ["tests-minimal", "tests-mid", "tests-latest"] }
+
+[tool.pixi.feature.docs.tasks]
+docs-build = "python -c \"from matplotlib import pyplot\" && make -C docs/ html SPHINXOPTS=\"-WT --keep-going -n\""
+
+[tool.pixi.feature.precommit.tasks]
+git = "git"
+pre-commit = "pre-commit"
+
+[tool.pixi.feature.publish.tasks]
+build = "hatch build"
+publish = "hatch publish -u __token__"
