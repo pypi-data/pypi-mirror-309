@@ -1,0 +1,7 @@
+[console_scripts]
+print1 = Easify.main:print_1
+print2 = Easify.main:print_2
+print_ap = Easify.main:print_ap
+print_dt = Easify.main:print_dt
+print_km = Easify.main:print_km
+print_preprocessing = Easify.main:print_preprocessing_code
