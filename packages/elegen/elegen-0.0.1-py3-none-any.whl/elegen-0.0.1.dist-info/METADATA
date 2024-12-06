@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: elegen
+Version: 0.0.1
+Summary: For generating elevation and other data on a lattice, for worldbuilding or other purposes
+Author: Wesley Kuhron Jones
+Project-URL: Homepage, https://github.com/Kuhron/elegen
+Project-URL: Issues, https://github.com/Kuhron/elegen/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# elgen
+For generating elevation and other data on a lattice, for worldbuilding or other purposes
