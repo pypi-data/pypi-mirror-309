@@ -1,0 +1,14 @@
+coreframe/__init__.py,sha256=MbPROKrtsd117NNGqicLdErNvdfJPSXSCNxP6rOa7gk,163
+coreframe/cache.py,sha256=PuwmTOzgG3CGQhx_1F7lWnsYvSJq2o6u_OJjFUz-PEY,6237
+coreframe/config.py,sha256=tE3dKk7vZuyJzjQpAfsBpgMZzdITzfs21ogUht1sY5A,1217
+coreframe/corearray.py,sha256=O48rrtSRnB9r4GUHJ-evkg07XqqdIMc0DCuQiBYr0t8,6538
+coreframe/coredataset.py,sha256=D2JK4faYNWMxeCTF9ZzSkmxIO91imsDPg_NJmNLTlYw,11487
+coreframe/parallel.py,sha256=ZX6vWFwlXfQSm9ap67LfsbXMHSgDJ1wChYz0b5kiPHs,7149
+coreframe/_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coreframe/_utils/apply_by_area.py,sha256=xczqZiIci4SKjz7bDn2sCy5tfboXh8_ToQrkQtjSlQ4,1955
+coreframe/_utils/apply_by_time.py,sha256=vxukpBiWC66TtaarZuWbzB0EPrsiDu7LkCQvbsEpWkk,6490
+coreframe-1.0.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+coreframe-1.0.0.dist-info/METADATA,sha256=ED7UmGCkJ35JO_7so_f-gUa8XNDsrximmFxpjF03HoU,853
+coreframe-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+coreframe-1.0.0.dist-info/top_level.txt,sha256=TNlYR7a_cuDVeKgMyxo0wGVOREm9nxx5pumvMVkrAag,10
+coreframe-1.0.0.dist-info/RECORD,,
