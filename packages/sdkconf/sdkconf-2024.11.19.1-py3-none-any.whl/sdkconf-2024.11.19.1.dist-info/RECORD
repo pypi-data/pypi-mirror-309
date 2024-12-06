@@ -1,0 +1,11 @@
+sdkconf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdkconf/_version.py,sha256=RpdanfyCpi3Rp1jKufloYpLYqdasFJB07Bzwi-5q-bw,426
+sdkconf/templates/sdkconf/python/conf,sha256=_lmoxUlln5kQJRlk2Il2k4jSokwIItjGnjtTrdnM8Pk,1260
+sdkconf/templates/sdkconf/python/install,sha256=m5p-6Av5u1wrCq2-R2BM1zGXJ5xwV6a2ZxYcV_sgbLo,23
+sdkconf/templates/sdkconf/python/verify,sha256=pkcp_zNCn1RFM0CY1clgW98ZLEmyR80uebbx_QtOxfY,69
+sdkconf-2024.11.19.1.dist-info/AUTHORS,sha256=NSLQA6f11q_Uz8BqK5bDb0CUStH1XflTYCJoQ8I7Sog,264
+sdkconf-2024.11.19.1.dist-info/LICENSE,sha256=jFA9b0OQyHjWxK-uOilRyzO3RNXhELbgT4c73g0FLU0,1478
+sdkconf-2024.11.19.1.dist-info/METADATA,sha256=ndZqniCM4gYIsMC_DX1VNC9obNnFuJfifS6IqRow5ok,270
+sdkconf-2024.11.19.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sdkconf-2024.11.19.1.dist-info/top_level.txt,sha256=KJpUIRQ_vAvwyAnGP5xYlGzUaPJBx3wgzULq0zlQQ3c,8
+sdkconf-2024.11.19.1.dist-info/RECORD,,
