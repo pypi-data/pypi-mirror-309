@@ -1,0 +1,9 @@
+README.md
+setup.py
+fiap_valteci/__init__.py
+fiap_valteci/core.py
+fiap_valteci_package.egg-info/PKG-INFO
+fiap_valteci_package.egg-info/SOURCES.txt
+fiap_valteci_package.egg-info/dependency_links.txt
+fiap_valteci_package.egg-info/top_level.txt
+tests/test_core.py
