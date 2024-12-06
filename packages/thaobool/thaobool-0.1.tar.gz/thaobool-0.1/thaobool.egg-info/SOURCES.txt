@@ -1,0 +1,7 @@
+setup.py
+thaobool/__init__.py
+thaobool/bool_alias.py
+thaobool.egg-info/PKG-INFO
+thaobool.egg-info/SOURCES.txt
+thaobool.egg-info/dependency_links.txt
+thaobool.egg-info/top_level.txt
