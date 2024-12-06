@@ -1,0 +1,11 @@
+django_migration_cleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/.DS_Store,sha256=PJ0-tF5g4hiYjCRq74avFSksXSdBu6XdY4wFwNLzCTI,6148
+django_migration_cleaner/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/commands/delete_migrations.py,sha256=TtGpfGJz3EUaer8AoH8W29PVpTTliJm4Yhg7hTd3PgY,2949
+django_migration_cleaner-0.0.1.dist-info/LICENSE,sha256=5LzlJyFw4l7-DaH__HmrBPKNet0x15j-r-WiecLgakM,1070
+django_migration_cleaner-0.0.1.dist-info/METADATA,sha256=zytNiah_uam9TfH8526a8YuSSLIOjbB63ha6GPYr9Ek,2619
+django_migration_cleaner-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_migration_cleaner-0.0.1.dist-info/entry_points.txt,sha256=fcnkfCIgSLvEclPJZJhBpLazIHqhtu-jSxUtgzo_7TQ,87
+django_migration_cleaner-0.0.1.dist-info/top_level.txt,sha256=mX7lwl9578pfuAb0_8EkqGDy96lRSBKn5wpLA6LACAs,25
+django_migration_cleaner-0.0.1.dist-info/RECORD,,
