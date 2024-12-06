@@ -1,0 +1,4 @@
+appdirs
+uv
+setuptools
+semi-secret>=1.0.4
