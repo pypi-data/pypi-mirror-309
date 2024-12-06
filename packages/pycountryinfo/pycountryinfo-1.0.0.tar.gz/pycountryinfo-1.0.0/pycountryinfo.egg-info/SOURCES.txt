@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+data/additional_countries_data.json
+data/countries.json
+pycountryinfo/__init__.py
+pycountryinfo/country_info.py
+pycountryinfo/country_types.py
+pycountryinfo/test_country_info.py
+pycountryinfo.egg-info/PKG-INFO
+pycountryinfo.egg-info/SOURCES.txt
+pycountryinfo.egg-info/dependency_links.txt
+pycountryinfo.egg-info/requires.txt
+pycountryinfo.egg-info/top_level.txt
