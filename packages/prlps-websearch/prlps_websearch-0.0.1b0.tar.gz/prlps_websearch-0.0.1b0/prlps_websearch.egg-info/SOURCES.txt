@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+prlps_fakeua/__init__.py
+prlps_fakeua/fakeua.py
+prlps_text_replacer/__init__.py
+prlps_websearch/__init__.py
+prlps_websearch.egg-info/PKG-INFO
+prlps_websearch.egg-info/SOURCES.txt
+prlps_websearch.egg-info/dependency_links.txt
+prlps_websearch.egg-info/requires.txt
+prlps_websearch.egg-info/top_level.txt
