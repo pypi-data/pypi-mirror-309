@@ -1,0 +1,5 @@
+aiohttp
+asyncache
+cachetools
+python-socketio[asyncio_client]
+msgpack
