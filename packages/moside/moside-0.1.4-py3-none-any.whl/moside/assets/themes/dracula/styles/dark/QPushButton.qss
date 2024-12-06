@@ -1,0 +1,19 @@
+QPushButton {
+    border: 2px solid rgb(52, 59, 72);
+    border-radius: 5px;
+    background-color: rgb(52, 59, 72);
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: rgb(57, 65, 80);
+    border: 2px solid rgb(61, 70, 86);
+}
+QPushButton:pressed {
+    background-color: rgb(35, 40, 49);
+    border: 2px solid rgb(43, 50, 61);
+}
+QPushButton::icon {
+    width: 16px; /* 图标宽度 */
+    height: 16px; /* 图标高度 */
+    margin-right: 10px; /* 图标与文本之间的间距 */
+}

@@ -1,0 +1,7 @@
+QWidget{
+    color: rgb(196, 196, 196);
+    placeholder-text-color: rgba(113, 126, 149, 255);
+}
+QWidget:disabled{
+    color: rgba(113, 126, 149, 255);
+}
