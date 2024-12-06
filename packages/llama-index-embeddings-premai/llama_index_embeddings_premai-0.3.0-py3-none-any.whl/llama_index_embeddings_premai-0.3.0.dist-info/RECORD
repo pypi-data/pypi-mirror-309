@@ -1,0 +1,7 @@
+llama_index/embeddings/premai/__init__.py,sha256=Psorvc_0K4gKDNOi0BCSDUlvOdBNWF0hrzjVdVvA_8g,96
+llama_index/embeddings/premai/base.py,sha256=KGNU-u1rjTJhL229tKF7DnTLG8flf9yeKw34VDqYacQ,2971
+llama_index/embeddings/premai/poetry.lock,sha256=qS0AOFP5AuNHN18gW1mdAUE7S4Tu8Ljh6dYaz0lZD0A,387828
+llama_index/embeddings/premai/pyproject.toml,sha256=YRxNCTO7z6YbUi89JWFimSY9FNqUItYiVvEKv7C36TY,1445
+llama_index_embeddings_premai-0.3.0.dist-info/METADATA,sha256=ovGcqsiRlYFyZF20U4NBNkKCyJX-8RKXZoRp_I_S4Rs,659
+llama_index_embeddings_premai-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_premai-0.3.0.dist-info/RECORD,,
