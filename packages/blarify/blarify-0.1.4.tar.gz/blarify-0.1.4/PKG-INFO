@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: blarify
+Version: 0.1.4
+Summary: A simple graph builder based on LSP calls
+Home-page: https://blar.io
+License: MIT
+Author: Juan Vargas
+Author-email: juan@blar.io
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: neo4j (>=5.25.0,<6.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: tree-sitter (>=0.23.2,<0.24.0)
+Requires-Dist: tree-sitter-javascript (>=0.23.0,<0.24.0)
+Requires-Dist: tree-sitter-python (>=0.23.2,<0.24.0)
+Requires-Dist: tree-sitter-ruby (>=0.23.0,<0.24.0)
+Requires-Dist: websockets (>=13.1,<14.0)
+Project-URL: Repository, https://github.com/blarApp/code-base-agent
+Description-Content-Type: text/markdown
+
+This repo introduces a method to represent a local code repository as a graph structure. The objective is to allow an LLM to traverse this graph to understand the code logic and flow. Providing the LLM with the power to debug, refactor, and optimize queries.
+
+# Language Server proxy initialization
+```
+./lsp-ws-proxy/target/debug/lsp-ws-proxy --listen 5000 -- solargraph stdio -- jedi-language-server  -- typescript-language-server --stdio
+```
+
+# Example
+<img src="https://raw.githubusercontent.com/blarApp/lsp-poc/refs/heads/main/docs/visualisation.png"></img>
+This graph was generated from a Ruby on Rails project.
+
