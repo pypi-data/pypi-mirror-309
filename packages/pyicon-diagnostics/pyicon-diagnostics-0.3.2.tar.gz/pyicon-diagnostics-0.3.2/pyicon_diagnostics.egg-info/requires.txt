@@ -1,0 +1,15 @@
+numpy
+matplotlib
+netcdf4
+xarray
+zarr
+pandas
+cmocean
+scipy
+ipdb
+ipywidgets
+jupytext
+pytest
+healpy
+cftime
+cartopy
