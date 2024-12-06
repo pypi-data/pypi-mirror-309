@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lusofona-pckg
+Version: 0.0.1
+Summary: My first Python package
+Home-page: https://github.com/rui-moreira-21600035
+Author: Rui Moreira
+Author-email: rui.moreira619@gmail.com
+License: BSD 2-clause
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn

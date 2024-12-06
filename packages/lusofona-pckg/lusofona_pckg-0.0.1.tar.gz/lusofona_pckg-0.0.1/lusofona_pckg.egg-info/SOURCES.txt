@@ -1,0 +1,6 @@
+setup.py
+lusofona_pckg.egg-info/PKG-INFO
+lusofona_pckg.egg-info/SOURCES.txt
+lusofona_pckg.egg-info/dependency_links.txt
+lusofona_pckg.egg-info/requires.txt
+lusofona_pckg.egg-info/top_level.txt
