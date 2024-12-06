@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mongoapi/__init__.py
+mongoapi.egg-info/PKG-INFO
+mongoapi.egg-info/SOURCES.txt
+mongoapi.egg-info/dependency_links.txt
+mongoapi.egg-info/requires.txt
+mongoapi.egg-info/top_level.txt
