@@ -1,0 +1,4 @@
+textual==0.83.0
+pyperclip
+argcomplete
+unidiff
