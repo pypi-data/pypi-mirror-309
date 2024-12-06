@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sodiumicu2023
+Version: 1.0.0.1
+Summary: A local webpage launcher using webpage from sodium.icu:2023
+Home-page: https://github.com/Ace-tyl/sodiumicu2023
+Author: Ace-tyl
+Author-email: hcl_10@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+The webpage launcher using webpage from sodium.icu:2023
