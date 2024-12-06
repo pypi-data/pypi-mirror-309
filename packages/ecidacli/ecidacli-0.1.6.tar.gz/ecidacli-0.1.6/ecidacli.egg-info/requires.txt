@@ -1,0 +1,5 @@
+pyyaml
+importlib-metadata
+packaging
+kafka-python
+requests
