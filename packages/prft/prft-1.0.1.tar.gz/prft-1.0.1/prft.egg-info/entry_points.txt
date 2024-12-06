@@ -1,0 +1,2 @@
+[console_scripts]
+pft = project_file_tree.prft:main
