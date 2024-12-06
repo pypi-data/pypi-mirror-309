@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: free_ocr
+Version: 0.1.0
+Summary: A simple OCR tool using Together AI.
+Home-page: https://github.com/yourusername/free_ocr
+Author: Your Name
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0.0
+
+# free_ocr
+
+A Python package for OCR using Together AI.
+
+## Installation
+
+```bash
+pip install free_ocr

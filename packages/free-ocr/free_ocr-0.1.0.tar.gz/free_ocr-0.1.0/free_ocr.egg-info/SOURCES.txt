@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+free_ocr/__init__.py
+free_ocr/ocr.py
+free_ocr.egg-info/PKG-INFO
+free_ocr.egg-info/SOURCES.txt
+free_ocr.egg-info/dependency_links.txt
+free_ocr.egg-info/requires.txt
+free_ocr.egg-info/top_level.txt
