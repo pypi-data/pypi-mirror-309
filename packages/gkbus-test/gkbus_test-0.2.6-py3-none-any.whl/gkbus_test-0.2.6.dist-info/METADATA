@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gkbus_test
+Version: 0.2.6
+Summary: High-level KWP over K-line/CANbus library
+Author: Dante383
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scapy ==2.5.0
+Requires-Dist: pyserial ==3.5
+
+# GKBus
+
+High-level KWP over K-Line/CANbus library powering the [GKFlasher](https://github.com/dante383/GKFlasher)
+
+**WARNING: This library is in highly experimental stage, it was decoupled from GKFlasher's code to make development easier.**
+You shouldn't use it yet. The code will be cleaned up and API documentation will be created after reaching MVP stage of GKFlasher
