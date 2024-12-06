@@ -1,0 +1,12 @@
+clock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clock/main.py,sha256=uKcuEsCTEzEiZtUkIgGCG8X-NiVl8USlp9Uc9_E1A18,6063
+clock/utils.py,sha256=2egD3Z7P2BAzyRulWBWhg-vuuXMasP1g-k995F4ne6U,3184
+clock/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clock/commands/command_in.py,sha256=35D-ua07_8sbSADSVBbPS6eoNsu4On8f3ULtcifVIYI,310
+clock/local_db/LocalDatabase.py,sha256=kU1EFNy7-6BQOuNBBs30RRa5E4ox7yZFVaVRfsAzSNE,4901
+clock/local_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloxz-0.4.3.dist-info/METADATA,sha256=IK4Y_kYPJSC7bTJm4jXW45JRe1dc_lCNWlk-N5nIjGo,349
+cloxz-0.4.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+cloxz-0.4.3.dist-info/entry_points.txt,sha256=Y819PQ21hNqldwd5on4xF_Z8FNdmlGxUlTdeFCJF1fg,40
+cloxz-0.4.3.dist-info/top_level.txt,sha256=bJF3a_HjVGcJD2aNDbQCQqTWuprNv62hVMLyzJx5iic,6
+cloxz-0.4.3.dist-info/RECORD,,
