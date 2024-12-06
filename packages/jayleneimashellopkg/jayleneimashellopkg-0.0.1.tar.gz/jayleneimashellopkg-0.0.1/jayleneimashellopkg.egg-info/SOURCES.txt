@@ -1,0 +1,8 @@
+setup.py
+jayleneimashello/__init__.py
+jayleneimashello/main.py
+jayleneimashellopkg.egg-info/PKG-INFO
+jayleneimashellopkg.egg-info/SOURCES.txt
+jayleneimashellopkg.egg-info/dependency_links.txt
+jayleneimashellopkg.egg-info/requires.txt
+jayleneimashellopkg.egg-info/top_level.txt
