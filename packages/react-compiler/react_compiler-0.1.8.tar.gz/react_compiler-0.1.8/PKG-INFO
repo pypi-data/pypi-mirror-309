@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: react-compiler
+Version: 0.1.8
+Summary: Redundancy-Aware Code Generation for Tensor Expressions
+Home-page: https://github.com/habanero-lab/react
+Author: Tong Zhou
+Author-email: zt9465@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ast-transforms
+
+ReACT is a set of code generation techniques that 
