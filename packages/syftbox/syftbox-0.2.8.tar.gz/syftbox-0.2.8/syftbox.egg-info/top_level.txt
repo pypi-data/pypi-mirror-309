@@ -1,0 +1,9 @@
+default_apps
+dist
+docker
+docs
+fetchers
+notebooks
+projects
+syftbox
+tests
