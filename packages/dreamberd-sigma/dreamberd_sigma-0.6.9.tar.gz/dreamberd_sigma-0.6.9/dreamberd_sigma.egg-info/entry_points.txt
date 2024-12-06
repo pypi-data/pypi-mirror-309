@@ -1,0 +1,2 @@
+[console_scripts]
+dreamberd-sigma = dreamberd.__init__:main
