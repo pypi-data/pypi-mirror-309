@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fastProxy/__init__.py
+fastProxy/fastProxy.py
+fastProxy/logger.py
+fastProxy.egg-info/PKG-INFO
+fastProxy.egg-info/SOURCES.txt
+fastProxy.egg-info/dependency_links.txt
+fastProxy.egg-info/requires.txt
+fastProxy.egg-info/top_level.txt

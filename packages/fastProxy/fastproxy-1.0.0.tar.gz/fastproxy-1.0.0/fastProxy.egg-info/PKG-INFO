@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fastProxy
+Version: 1.0.0
+Summary: Fast and reliable proxy scraper with comprehensive validation and logging
+Home-page: https://github.com/1UC1F3R616/fastProxy
+Download-URL: https://github.com/1UC1F3R616/fastProxy/archive/v_1.0.0.tar.gz
+Author: 1UC1F3R616
+Author-email: kushchoudhary8@gmail.com
+License: MIT
+Keywords: proxy,free,threaded,python3,logging,validation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: fire
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
