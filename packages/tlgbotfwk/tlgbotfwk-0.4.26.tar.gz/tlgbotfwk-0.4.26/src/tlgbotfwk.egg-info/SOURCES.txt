@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bot/__init__.py
+src/bot/core.py
+src/bot/handlers.py
+src/bot/settings.py
+src/bot/util_decorators.py
+src/bot/util_functions.py
+src/tlgbotfwk.egg-info/PKG-INFO
+src/tlgbotfwk.egg-info/SOURCES.txt
+src/tlgbotfwk.egg-info/dependency_links.txt
+src/tlgbotfwk.egg-info/requires.txt
+src/tlgbotfwk.egg-info/top_level.txt
