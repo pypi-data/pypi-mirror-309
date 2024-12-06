@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: headergen_extension
+Version: 1.0.0
+Summary: A Jupyter extension to convert your undocumented notebooks to documented notebooks
+Home-page: https://github.com/rishma123/headergen1
+Author: Rishma Merkaje Nanaiah
+Author-email: rishmamn@mail.upb.de
+License: MIT
+Classifier: Framework :: Jupyter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: notebook >=6.0.0
+Requires-Dist: jupyterlab >=3.0.0
+
+# Headergen
+
+Headergen_extension is a Jupyter Notebook extension that helps convert undocumented notebooks to documented notebooks.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd headergen1
