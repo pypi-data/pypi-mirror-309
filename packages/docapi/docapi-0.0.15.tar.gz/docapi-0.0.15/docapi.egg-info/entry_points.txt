@@ -1,0 +1,2 @@
+[console_scripts]
+docapi = docapi.main:run
