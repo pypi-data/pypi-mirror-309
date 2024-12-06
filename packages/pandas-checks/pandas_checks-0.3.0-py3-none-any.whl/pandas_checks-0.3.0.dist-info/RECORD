@@ -1,0 +1,12 @@
+pandas_checks/DataFrameChecks.py,sha256=ZwpvngUwF82OcENRS0FTeq0JrOw7ftTFzgWQciI2qVw,73548
+pandas_checks/SeriesChecks.py,sha256=de_Vq7n7ZiVtT6TTnhpNkzH8RbTpQSaGXtXtqzsvPuI,59232
+pandas_checks/__init__.py,sha256=j592q1MFTdgKQgPc3m9k9rm3dJtNWmgGQNJe37thIFI,872
+pandas_checks/display.py,sha256=cERHHgtZWb9NH5zOnHFjRK9CqtQOR4vAYpdzK_sV3qY,12322
+pandas_checks/options.py,sha256=jNK-HQDqYyM3wE8d4MEl_7ZBqDIT20MEBdoQ6eKRYO8,12324
+pandas_checks/run_checks.py,sha256=0kZbbGySpYc-jIBJJvLo0ycUtlFcALnSxYQoW8tZ3h8,2292
+pandas_checks/timer.py,sha256=oxoDXkYhmCWQDUFO6I_P-qp1eUid1sEXAI6jr5ZmpJQ,2686
+pandas_checks/utils.py,sha256=lPuQ84ocST5drZWyn8cq3HwQW1vVDPbaYVk3tuW88W0,3062
+pandas_checks-0.3.0.dist-info/LICENSE,sha256=C-NIHnUdvdJ6D9W5xI4Usseff58pGRqiZ5ZmtJz-va4,1634
+pandas_checks-0.3.0.dist-info/METADATA,sha256=JKLIllgCTOsd5MyD_fgRBEFWMBGjegrmQgkiqc36l8c,21271
+pandas_checks-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pandas_checks-0.3.0.dist-info/RECORD,,
