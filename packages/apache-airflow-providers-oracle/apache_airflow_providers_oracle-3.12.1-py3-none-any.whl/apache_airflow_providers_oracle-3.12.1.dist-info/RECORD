@@ -1,0 +1,15 @@
+airflow/providers/oracle/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/oracle/__init__.py,sha256=-FZK7mwTTVKzb3oYgsc2HnZ1NmBpc0CfbPcDn-iFw8Q,1494
+airflow/providers/oracle/get_provider_info.py,sha256=WwesUMHSvYPr6LhTBx8TiQoqWBRQgRYQCs4BYyMWdV8,3341
+airflow/providers/oracle/example_dags/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/oracle/example_dags/example_oracle.py,sha256=a_B6-hhGTfwB-0dyU207wvNkgOlk5LxLtsPY8yR1WTs,2192
+airflow/providers/oracle/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/oracle/hooks/oracle.py,sha256=ClfxQXilQWl2CqAztxduqL5MUzKzjghhtQoVNyYqLoc,18711
+airflow/providers/oracle/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/oracle/operators/oracle.py,sha256=n04jZ8KeKsj9NNEyLBt3C_WxyPu0_4yzUBHktJ9sKZM,4193
+airflow/providers/oracle/transfers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/oracle/transfers/oracle_to_oracle.py,sha256=l_r1rpLyXbx1OyZqYp0dnJS6MhY5d-YVZ9U1U6tfJJU,3569
+apache_airflow_providers_oracle-3.12.1.dist-info/entry_points.txt,sha256=SdhizoGiTmHuHT4jfG9X9npSAwFkt4wK2fW7jamgPzE,102
+apache_airflow_providers_oracle-3.12.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+apache_airflow_providers_oracle-3.12.1.dist-info/METADATA,sha256=nXPvzgfNo6p1PJ62jUef-4h28J3BtIsLtbLPhnPmLpk,6132
+apache_airflow_providers_oracle-3.12.1.dist-info/RECORD,,
