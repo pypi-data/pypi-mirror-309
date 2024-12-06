@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pixelpop/__init__.py
+pixelpop/pixelpop.py
+pixelpop.egg-info/PKG-INFO
+pixelpop.egg-info/SOURCES.txt
+pixelpop.egg-info/dependency_links.txt
+pixelpop.egg-info/top_level.txt
