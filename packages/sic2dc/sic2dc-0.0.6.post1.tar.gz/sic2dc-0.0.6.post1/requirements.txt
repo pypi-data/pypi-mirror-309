@@ -1,0 +1,5 @@
+deepdiff
+pydantic
+pydantic_core
+ruamel.yaml
+ruamel.yaml.clib
