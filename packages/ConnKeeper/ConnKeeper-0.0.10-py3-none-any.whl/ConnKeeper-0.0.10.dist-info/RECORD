@@ -1,0 +1,12 @@
+conn_wizard/__init__.py,sha256=6AyfB_YWSRJzXDQAeX4N0_YkbpGjcDazqyZv-ftAWLs,519
+conn_wizard/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conn_wizard/src/connection_manager.py,sha256=JyM73EdqSFYwMzprOp1JW1laAQ5ubhQhfqosYAFU0uw,5285
+conn_wizard/src/connection_utility.py,sha256=oZzWWX4jKJ5BeKkUXvcUbvx07SeOK76G3ee4jfz8TRg,3117
+conn_wizard/src/load_connections.py,sha256=v73l1wTkUm9chRyoUkpIABMZ00kK2T44uDUsTCGThzw,3543
+conn_wizard/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conn_wizard/test/test.py,sha256=7aJC7MrKCguY-hBIZLyDqfqQlwYNYuaaB4E6i2zDjLE,430
+ConnKeeper-0.0.10.dist-info/LICENSE,sha256=Lx-Q2UmMHyX_KNFnJ20PVlYazVIZcFbfK2n1jnHlOH8,1064
+ConnKeeper-0.0.10.dist-info/METADATA,sha256=TMwUbBlMc00jzYndxc5Mh1pj1j8vBL_kategfP3OAgM,1196
+ConnKeeper-0.0.10.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ConnKeeper-0.0.10.dist-info/top_level.txt,sha256=YdiK25CC4WyKjrhGJN4aPGs4_jx1H8YDyZdL18YxslY,12
+ConnKeeper-0.0.10.dist-info/RECORD,,
