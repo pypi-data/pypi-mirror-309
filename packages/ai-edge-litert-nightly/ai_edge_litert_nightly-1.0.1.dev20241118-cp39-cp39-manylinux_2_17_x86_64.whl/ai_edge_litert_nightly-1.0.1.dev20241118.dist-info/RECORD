@@ -1,0 +1,10 @@
+ai_edge_litert/__init__.py,sha256=-KQOVuZ3H4GT4XxWRAwsPFoDoF3bjGKRAQUKxag2v8U,55
+ai_edge_litert/_pywrap_tensorflow_interpreter_wrapper.so,sha256=Vbv9qqGKP-ty8a2i2VB2XqbLQ6CThSt4950GMV7ZSXQ,6464864
+ai_edge_litert/interpreter.py,sha256=2sJfoNwPDaojj81-mB4BLW6_6zmB1Who_BoWouDm6JA,40050
+ai_edge_litert/metrics_interface.py,sha256=dVu6SmbnQUntPgE5o6BxHVMyemwli-7F6tDfVMGrlYI,1542
+ai_edge_litert/metrics_portable.py,sha256=hQ4dC75UblrKTRxkbwG-LoWAO6_Fe3SX_ehuOVqCMnY,2048
+ai_edge_litert/schema_py_generated.py,sha256=j1mIWi3QiiY0kVRcugNdqVcTGfRiaZmR6jb7AvwVUyM,649242
+ai_edge_litert_nightly-1.0.1.dev20241118.dist-info/METADATA,sha256=jh8lPDxVK-DkFA9xZlAOCX1OMT_KEDrO_y3xfzd2XCA,1465
+ai_edge_litert_nightly-1.0.1.dev20241118.dist-info/WHEEL,sha256=ZjLugKzod6Z-SjJLrJzitPRHaaebPS-WcRzsD9ln-ZI,112
+ai_edge_litert_nightly-1.0.1.dev20241118.dist-info/top_level.txt,sha256=WcDZgG99n0a0xDS_ipL8ZWy956g1v5fVyR3FH96VDT0,15
+ai_edge_litert_nightly-1.0.1.dev20241118.dist-info/RECORD,,
