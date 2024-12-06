@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: scrapethedocs
+Version: 0.1.0
+Summary: Scrapethedocs is a Python-based tool designed to efficiently scrape and extract documentation from Python package websites 
+Keywords: webscraping,documentation
+Author-email: Viktor Chekhovoi <viktor.chekhovoi@gmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: aiohttp === 3.10.5
+Requires-Dist: beautifulsoup4 == 4.12.3
+Requires-Dist: types-requests == 2.31.0.2
+Requires-Dist: requests == 2.32.3
+Requires-Dist: scrapethedocs[docs,dev] ; extra == "all"
+Requires-Dist: black == 24.8.0 ; extra == "dev"
+Requires-Dist: flake8 == 4.0.1 ; extra == "dev"
+Requires-Dist: pytest == 8.3.3 ; extra == "dev"
+Requires-Dist: pytest-cov == 6.0.0 ; extra == "dev"
+Requires-Dist: coverage == 7.6.4 ; extra == "dev"
+Requires-Dist: pytest-mock == 3.14.0 ; extra == "dev"
+Requires-Dist: pylint == 3.3.1 ; extra == "dev"
+Requires-Dist: isort == 5.13.2 ; extra == "dev"
+Requires-Dist: pre-commit == 4.0.1 ; extra == "dev"
+Requires-Dist: pyright == 1.1.387 ; extra == "dev"
+Project-URL: Homepage, https://github.com/viktorChekhovoi/scrapethedocs
+Provides-Extra: all
+Provides-Extra: dev
+
+# scrapethedocs
+Scrapethedocs is a Python-based tool designed to efficiently scrape and extract documentation from Python package websites. Whether you need to collect API references, examples, or any other relevant documentation for analysis or offline use, Scrapethedocs automates the process, making it easy to gather information from various Python package docs.
+

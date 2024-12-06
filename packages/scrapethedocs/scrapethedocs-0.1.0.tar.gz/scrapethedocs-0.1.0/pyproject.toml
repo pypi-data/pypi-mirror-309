@@ -1,0 +1,79 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "scrapethedocs"
+version = "0.1.0"
+description = "Scrapethedocs is a Python-based tool designed to efficiently scrape and extract documentation from Python package websites "
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["webscraping", "documentation"]
+urls = {Homepage = "https://github.com/viktorChekhovoi/scrapethedocs"}
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp === 3.10.5",
+    "beautifulsoup4 == 4.12.3",
+    "types-requests == 2.31.0.2",
+    "requests == 2.32.3",
+]
+authors = [
+    { name="Viktor Chekhovoi", email="viktor.chekhovoi@gmail.com" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "black == 24.8.0",
+    "flake8 == 4.0.1",
+    "pytest == 8.3.3",
+    "pytest-cov == 6.0.0",
+    "coverage == 7.6.4",
+    "pytest-mock == 3.14.0",
+    "pylint == 3.3.1",
+    "isort == 5.13.2",
+    "pre-commit == 4.0.1",
+    "pyright == 1.1.387",
+]
+all = ["scrapethedocs[docs,dev]"]
+
+
+[tool.setuptools]
+py-modules = ["scrapethedocs"]
+
+[tool.black]
+line-length = 140
+target-version = ["py312"]
+
+[tool.pylint.format]
+max-line-length = 140
+max-locals = 25
+
+[tool.pylint.basic]
+good-names = ''',df,e,tg,i,j,k,id,logger,n,on,tz,x,y,z,r,ex,ey,,s,f,v,a,b,mu,fn,op,q,cf,tb'''
+additional-builtins = '''reveal_type'''
+[tool.pylint.message_control]
+disable = '''cyclic-import,too-many-arguments,too-few-public-methods,logging-fstring-interpolation,logging-not-lazy,not-callable,no-member,unsubscriptable-object,pointless-string-statement,wrong-import-order,not-an-iterable,no-else-return,unsupported-membership-test,abstract-class-instantiated,unpacking-non-sequence'''
+extension-pkg-allow-list = ["pymssql._mssql"]
+
+[tool.pylint.miscellaneous]
+notes = '''FIXME,XXX'''
+
+[tool.pylint.similarities]
+min-similarity-lines = 4
+ignore-comments = "yes"
+ignore-docstrings = "yes"
+ignore-imports = "yes"
+
+[tool.pylint.main]
+extension-pkg-whitelist = ""
+ignore-paths = ["^docs/*"]
+
+
+[tool.isort]
+skip = ["__init__.py"]
+profile = "black"
