@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fiap_valteci-package
+Version: 1.0.0
+Summary: Descricao da sua lib fiap_valteci
+Home-page: https://github.com/valteci/
+Author: valteci
+Author-email: valtecijunior@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# Fiap_valteci
+A simple example library.
+## Installation
+```sh
+pip install fiap_valteci
+```
+## Usage
+```python
+from fiap_valteci import hello_world
+print(hello_world())
+```
