@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: se2dataanalysis
+Version: 0.0.1
+Summary: Add your description here
+Author-email: Stephan Lukasczyk <stephan@pynguin.eu>
+License: EUPL-1.2
+Requires-Python: >=3.10
+Requires-Dist: polars-lts-cpu>=1.14.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: seaborn>=0.13.2
+Description-Content-Type: text/markdown
+
+# se2dataanalysis—Tools for Data Analysis

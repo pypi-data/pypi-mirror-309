@@ -1,0 +1,107 @@
+# SPDX-FileCopyrightText: 2024 Stephan Lukasczyk <stephan@pynguin.eu>
+#
+# SPDX-License-Identifier: EUPL-1.2
+
+[project]
+name = "se2dataanalysis"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Stephan Lukasczyk", email = "stephan@pynguin.eu" }
+]
+requires-python = ">=3.10"
+license = { text = "EUPL-1.2" }
+dependencies = [
+    "polars-lts-cpu>=1.14.0",
+    "rich>=13.9.4",
+    "scipy>=1.14.1",
+    "seaborn>=0.13.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+preview = true
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
+preview = true
+
+[tool.ruff.lint]
+select = [
+    "A",     # flake8-builtins
+    "ARG",   # flake8-unused-arguments
+    "B",     # bugbear
+    "BLE",   # flake8-blind-except
+    "C4",    # flake8-comprehensions
+    "C90",   # mccabe
+    "D",     # pydocstyle
+    "ERA",   # flake8-eradicate
+    "F",     # pyflakes
+    "FA",    # flake8-future-annotations
+    "FBT",   # flake8-boolean-trap
+    "FIX",   # flake8-fixme
+    "FLY",   # flynt
+    "FURB",  # refurb
+    "G",     # flake8-logging-format
+    "ICN",   # flake8-import-conventions
+    "INT",   # flake8-gettext
+    "ISC",   # flake8-implicit-str-concat
+    "LOG",   # flake8-logging
+    "N",     # flake8-naming
+    "NPY",   # numpy
+    "PD",    # pandas-vet
+    "PERF",  # perflint
+    "PGH",   # pygrep-hooks
+    "PIE",   # flake8-pie
+    "PL",    # pylint
+    "PT",    # flake8-pytest-style
+    "PTH",   # flake8-use-pathlib
+    "PYI",   # flake8-pyi
+    "Q",     # flake8-quotes
+    "RET",   # flake8-return
+    "RSE",   # flake8-raise
+    "RUF",   # ruff
+    "S",     # flake8-bandit
+    "SIM",   # flake8-simplify
+    "SLF",   # flake8-self
+    "SLOT",  # flake8-slots
+    "TCH",   # flake8-type-checking
+    "TID",   # flake8-tidy-imports
+    "T20",   # flake8-print
+    "UP",    # pyupgrade
+    "W",     # pycodestyle
+]
+ignore = [
+    "FIX002",  # valid TODO comments
+    "ISC001",  # single-line-implicit-string-concatenation (causes issues with formatter)
+    "RUF003",  # comment contains ambiguous en dash, did you mean hyphen minus
+]
+# Allow unused variables when underscore-prefixed:
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"test/**/*.py" = [
+    "S101",  # Use of `assert` detected
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.119.3",
+    "mkdocs >=1.6.1",
+    "mkdocs-material >=9.5.44",
+    "mkdocstrings[python] >=0.27.0",
+    "pytest>=8.3.3",
+    "pytest-cov>=6.0.0",
+]
