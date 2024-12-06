@@ -1,0 +1,2 @@
+[console_scripts]
+urad = uRAD:main
