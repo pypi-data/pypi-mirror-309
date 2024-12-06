@@ -1,0 +1,5 @@
+llama_index/readers/confluence/__init__.py,sha256=NtpDFY53OeaCHpyEVvwJhzPaYQxxziUE12qqah0vRAE,97
+llama_index/readers/confluence/base.py,sha256=AF6wrPeJd4PZr6z3QZ4tQ7JMzAcMjiO2h5DT-LQ_LFg,31239
+llama_index_readers_confluence-0.3.0.dist-info/METADATA,sha256=RjDY2ZM1MV4luL0VRIBIXfNtSWPpyVBLjV9thC1wzdU,6153
+llama_index_readers_confluence-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_confluence-0.3.0.dist-info/RECORD,,
