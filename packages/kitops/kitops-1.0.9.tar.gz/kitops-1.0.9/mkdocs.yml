@@ -1,0 +1,19 @@
+site_name: KitOps Manager Documentation
+
+theme:
+  name: "material"
+
+plugins: 
+  - mkdocstrings
+
+nav:
+  - Introduction: index.md
+  - Before You Begin: before-you-begin.md
+  - How-To Guides: how-to-guides.md
+  - API Reference: 
+      - Overview: reference/index.md
+      - ModelKitManager: reference/manager.md
+      - ModelKitReference: reference/reference.md
+      - UserCredentials: reference/user.md
+      - Kitfile: reference/kitfile.md
+      - Kit Commands: reference/kit.md
