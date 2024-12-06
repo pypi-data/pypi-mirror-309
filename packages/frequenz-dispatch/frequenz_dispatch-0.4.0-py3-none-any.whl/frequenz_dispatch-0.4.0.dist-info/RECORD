@@ -1,0 +1,13 @@
+frequenz/dispatch/__init__.py,sha256=Q6PJrKCMlMTiEDqYKXXCzefmZjTf5ycWnF4JSsE321A,1074
+frequenz/dispatch/_dispatch.py,sha256=U06kaMzhiQ9jdt8OUw0MRS_fYyLfRK9ObJFXevwh5E4,8677
+frequenz/dispatch/_dispatcher.py,sha256=3vx-WePhqWcm6ef8PEVGinyTWz8A9DtENyAo9dyPzx4,9518
+frequenz/dispatch/_event.py,sha256=70fhuxMJ4CY_Gi-9kGh5URFpguD2WeXUgn3g1tevbTQ,801
+frequenz/dispatch/_managing_actor.py,sha256=xZgJgaCeA3J6WLmpoqztlsh2i3sMS9KTAxH_ffiduVM,6278
+frequenz/dispatch/actor.py,sha256=sAVJQFTxgHffPSAlG5XeHilpZWvI4warCRSTrOlmn6E,14318
+frequenz/dispatch/conftest.py,sha256=kxmvkzTdvGfh7SiDINIFX0FG9PU0EoKROl9YY75zN8w,409
+frequenz/dispatch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz_dispatch-0.4.0.dist-info/LICENSE,sha256=zt0sW1KvE_KWE2ILOabrQYlfOoP0zUZXC3xCLrzGpIA,1089
+frequenz_dispatch-0.4.0.dist-info/METADATA,sha256=SYiyrSXwHRzzMmJmiME2gPrn3AO-b_JwRCD6abeuk8A,7518
+frequenz_dispatch-0.4.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+frequenz_dispatch-0.4.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_dispatch-0.4.0.dist-info/RECORD,,
