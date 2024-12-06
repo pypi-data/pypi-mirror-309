@@ -1,0 +1,47 @@
+
+import re
+
+import requests
+
+
+class QujingByHttp:
+    def __init__(self, host, port=61000):
+        self.host = host
+        self.port = port
+        self.base_setting_url = f"http://{self.host}:{self.port}"
+        self.base_invoke_url = f"http://{self.host}:$port/invoke"
+
+    def get_pid(self, packages:list):
+        # 获取包名对应的进程号，即端口号
+        url = f"{self.base_setting_url}/manualguid"
+        resp = requests.get(url, timeout=10)
+        ports = {package: re.findall(f"<td>{package}</td>.*?<td>(.*?)</td>", resp.text, re.S) for package in packages}
+        ports = {package: int(port[0]) for package, port in ports.items() if len(port)}
+        return ports
+    
+    def set_app(self, packages:list):
+        # 设置目标app，设置后才能通过invoke接口调用
+        url = f"{self.base_setting_url}/settargetapp"
+        data = {i: i for i in packages}
+        resp = requests.get(url, params=data)
+        return resp.status_code == 200
+
+    def invoke(self, port:int, params=None):
+        # 调用目标app内部函数的接口
+        url = self.base_invoke_url.replace("$port", str(port))
+        try:
+            resp = requests.post(url, data=params)
+        except Exception as e:
+            return {"code": 500, "data": str(e), "type": "error"}
+        # 处理返回的数据
+        _text = resp.text.strip()
+        if _text.startswith("Base64#"):
+            datatype = "base64"
+            data = _text[7:]
+        elif _text.startswith("raw#"):
+            datatype = "raw"
+            data = _text[4:]
+        else:
+            datatype = "raw"
+            data = _text
+        return {"code": resp.status_code, "data": data, "type": datatype}
