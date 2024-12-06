@@ -1,0 +1,10 @@
+requests
+pymongo
+openai
+anthropic
+google-generativeai
+python-dotenv
+
+[test]
+pytest
+pytest-cov
