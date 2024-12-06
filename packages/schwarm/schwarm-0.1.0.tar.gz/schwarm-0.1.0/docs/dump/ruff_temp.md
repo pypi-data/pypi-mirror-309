@@ -1,0 +1,980 @@
+# Ruff Configuration Guide
+
+This guide explains our Ruff configuration in detail, showing what each rule does, why we chose it, and examples of what it catches.
+
+## Our Configuration
+
+```toml
+[tool.ruff]
+# Rule selection
+select = ["E", "F", "I", "B", "C4", "UP", "N", "SIM", "D"]
+ignore = ["E501", "B006", "C901"]
+line-length = 100
+
+# Additional settings
+target-version = "py38"
+fix = true
+ignore-init-module-imports = true
+respect-gitignore = true
+show-fixes = true
+cache-dir = ".ruff_cache"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.mccabe]
+# Maximum complexity allowed for functions
+max-complexity = 12
+```
+
+## Rule Sets Explained
+
+### E - pycodestyle Errors
+Basic Python style enforcement.
+
+```python
+# E201 - Whitespace after '('
+# Bad
+function( argument)
+# Good
+function(argument)
+
+# E225 - Missing whitespace around operator
+# Bad
+x=1
+# Good
+x = 1
+
+# E271 - Multiple spaces after keyword
+# Bad
+if   x == 1:
+# Good
+if x == 1:
+```
+
+### F - Pyflakes
+Logical and runtime error detection.
+
+```python
+# F401 - Unused imports
+# Bad
+import sys  # Never used
+x = 1
+
+# F821 - Undefined name
+# Bad
+x = undefined_variable
+
+# F841 - Unused variable
+# Bad
+def func():
+    x = 1  # Never used
+    return 2
+```
+
+### I - isort
+Import organization and sorting.
+
+```python
+# Bad
+import sys
+import os
+import pandas as pd
+from mymodule import thing
+from typing import List
+
+# Good
+from typing import List
+
+import os
+import sys
+
+import pandas as pd
+
+from mymodule import thing
+```
+
+### B - flake8-bugbear
+Catches bug risks and code patterns that might indicate errors.
+
+```python
+# B007 - Loop variable overwritten
+# Bad
+for x in range(10):
+    pass
+x = 1  # Overshadows loop variable
+
+# B904 - Within an except clause, raise exceptions with raise ... from err
+# Bad
+try:
+    do_something()
+except Exception as e:
+    raise ValueError("Failed")
+# Good
+try:
+    do_something()
+except Exception as e:
+    raise ValueError("Failed") from e
+
+# B010 - Do not call setattr with a constant attribute value
+# Bad
+setattr(self, "name", "value")
+# Good
+self.name = "value"
+```
+
+### C4 - flake8-comprehensions
+Optimizes comprehension patterns and makes them more Pythonic.
+
+```python
+# C400 - Unnecessary generator - use list comprehension
+# Bad
+list(x for x in range(10))
+# Good
+[x for x in range(10)]
+
+# C401 - Unnecessary generator - use set comprehension
+# Bad
+set(x for x in range(10))
+# Good
+{x for x in range(10)}
+
+# C402 - Unnecessary generator - use dict comprehension
+# Bad
+dict((x, x) for x in range(10))
+# Good
+{x: x for x in range(10)}
+```
+
+### UP - pyupgrade
+Modernizes Python code syntax.
+
+```python
+# UP001 - Use dict union operator
+# Bad (Python 3.8+)
+{**x, **y}
+# Good
+x | y
+
+# UP007 - Use X | Y for type unions
+# Bad
+from typing import Union
+x: Union[int, str]
+# Good
+x: int | str
+
+# UP015 - Unnecessary open mode "b"
+# Bad
+open("file", "rb").read().decode()
+# Good
+open("file", "r", encoding="utf-8").read()
+```
+
+### N - pep8-naming
+Enforces Python naming conventions.
+
+```python
+# N801 - Class name should use CapWords
+# Bad
+class my_class:
+# Good
+class MyClass:
+
+# N802 - Function name should be lowercase
+# Bad
+def MyFunction():
+# Good
+def my_function():
+
+# N803 - Argument name should be lowercase
+# Bad
+def function(BadName):
+# Good
+def function(good_name):
+```
+
+### SIM - flake8-simplify
+Suggests simpler code alternatives.
+
+```python
+# SIM101 - Multiple isinstance calls
+# Bad
+if isinstance(x, int) or isinstance(x, float):
+# Good
+if isinstance(x, (int, float)):
+
+# SIM108 - Use ternary operator
+# Bad
+if condition:
+    x = 1
+else:
+    x = 2
+# Good
+x = 1 if condition else 2
+
+# SIM401 - Use dict.get
+# Bad
+value = my_dict[key] if key in my_dict else default
+# Good
+value = my_dict.get(key, default)
+```
+
+### D - pydocstyle (Google Convention)
+Enforces consistent documentation style.
+
+```python
+# D100-D103 - Missing docstring
+# Bad
+def function(x):
+    pass
+
+# Good
+def function(x):
+    """Do something with x."""
+    pass
+
+# D201 - No blank lines after function docstring
+# Bad
+def function():
+    """Do something.
+    
+    """
+    pass
+
+# Good
+def function():
+    """Do something."""
+    pass
+
+# D300 - Use triple double quotes
+# Bad
+def function():
+    '''Do something.'''
+    
+# Good
+def function():
+    """Do something."""
+```
+
+## Ignored Rules Explained
+
+### E501 - Line Length
+```python
+# We ignore this because:
+# 1. Modern editors wrap lines
+# 2. Some lines (URLs, long strings) are better long
+# 3. We set line-length = 100 as a guideline, not strict rule
+
+# This is fine in our config:
+def function_with_a_very_long_name(parameter_one: str, parameter_two: str, parameter_three: str = "default_value"):
+    pass
+```
+
+### B006 - Mutable Default Arguments
+```python
+# We ignore this because when used carefully, mutable defaults can be useful
+# Just document when you use them!
+
+# This is allowed in our config:
+def append_to_history(item: str, history: list = []):
+    """Append to history list.
+    
+    Note: Uses mutable default intentionally to maintain history.
+    """
+    history.append(item)
+    return history
+```
+
+### C901 - Complex Function
+```python
+# We ignore this because:
+# 1. Sometimes complexity is necessary
+# 2. Breaking up functions can make code harder to follow
+# 3. Better to focus on readability than arbitrary metrics
+
+# This is allowed in our config:
+def process_data(data: dict) -> dict:
+    if condition1:
+        if condition2:
+            for item in data:
+                if condition3:
+                    # Complex but clear processing
+                    pass
+    return data
+```
+
+## McCabe Complexity
+
+The McCabe complexity metric measures code complexity by counting the number of decision points in a function. Our configuration sets:
+
+```toml
+[tool.ruff.mccabe]
+max-complexity = 12
+```
+
+Example complexity calculations:
+
+```python
+# Complexity: 1 (base) = 1
+def simple_function():
+    return True
+
+# Complexity: 1 (base) + 1 (if) = 2
+def simple_condition():
+    if x > 0:
+        return True
+    return False
+
+# Complexity: 1 (base) + 2 (if/elif) + 1 (for) = 4
+def medium_complexity():
+    for i in range(10):
+        if i > 5:
+            return True
+        elif i < 0:
+            return False
+    return None
+
+# Complexity: 1 (base) + 3 (if/elif/else) + 2 (while/if) + 2 (try/except) = 8
+def higher_complexity():
+    while True:
+        if condition1:
+            try:
+                if x > 0:
+                    return True
+                elif x < 0:
+                    return False
+                else:
+                    continue
+            except ValueError:
+                break
+    return None
+
+# This would trigger a warning (complexity > 12):
+def too_complex():
+    for i in range(10):
+        if condition1:
+            try:
+                if x > 0:
+                    while True:
+                        if y > 0:
+                            if z > 0:
+                                try:
+                                    if w > 0:
+                                        return True
+                                except ValueError:
+                                    continue
+            except TypeError:
+                continue
+        elif condition2:
+            return False
+    return None
+```
+
+When to refactor complex functions:
+1. Split into smaller, focused functions
+2. Use early returns to reduce nesting
+3. Move complex logic into helper methods
+4. Consider using strategy pattern for complex conditions
+
+Example refactoring:
+
+```python
+# Before (complex)
+def process_data(data):
+    if not data:
+        return None
+    
+    results = []
+    for item in data:
+        if item.type == "A":
+            if item.value > 0:
+                try:
+                    result = complex_calculation(item)
+                    if result > threshold:
+                        results.append(result)
+                except ValueError:
+                    continue
+        elif item.type == "B":
+            # Similar nested logic...
+    return results
+
+# After (simplified)
+def process_data(data):
+    if not data:
+        return None
+    
+    return [
+        result
+        for item in data
+        if should_process_item(item)
+        for result in [try_calculate_result(item)]
+        if result is not None
+    ]
+
+def should_process_item(item):
+    return (item.type == "A" and item.value > 0) or item.type == "B"
+
+def try_calculate_result(item):
+    try:
+        result = complex_calculation(item)
+        return result if result > threshold else None
+    except ValueError:
+        return None
+```
+
+## Additional Rule Sets
+
+### RUF - Ruff-specific Rules
+Ruff's own rule set for Python-specific issues.
+
+```python
+# RUF001 - String contains ambiguous unicode character
+# Bad
+string = "café"  # Contains ambiguous 'é'
+# Good
+string = "café"  # Uses proper unicode 'é'
+
+# RUF002 - Docstring contains ambiguous unicode character
+# Similar to RUF001 but for docstrings
+
+# RUF003 - Comment contains ambiguous unicode character
+# Similar to RUF001 but for comments
+```
+
+### PL - Pylint
+Additional code quality checks from Pylint.
+
+```python
+# PLR0911 - Too many return statements
+def too_many_returns(x: int) -> str:
+    if x < 0:
+        return "negative"
+    if x == 0:
+        return "zero"
+    if x < 10:
+        return "small"
+    if x < 100:
+        return "medium"
+    if x < 1000:
+        return "large"
+    return "huge"
+
+# PLR0912 - Too many branches
+# Similar to C901, but specifically for if/elif chains
+
+# PLR0913 - Too many arguments
+# Bad
+def function(a, b, c, d, e, f, g, h):
+    pass
+# Good
+def function(config: Config):
+    pass
+```
+
+### PTH - Pathlib
+Enforces consistent use of pathlib over os.path.
+
+```python
+# PTH123 - os.path function used
+# Bad
+import os
+path = os.path.join("dir", "file.txt")
+# Good
+from pathlib import Path
+path = Path("dir") / "file.txt"
+
+# PTH118 - os.path.exists() called
+# Bad
+import os
+if os.path.exists("file.txt"):
+    pass
+# Good
+from pathlib import Path
+if Path("file.txt").exists():
+    pass
+```
+
+## Ready to Copy-Paste Configuration
+
+Here's a complete, production-ready configuration:
+
+```toml
+[tool.ruff]
+# Rule selection
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "D",   # pydocstyle
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "SIM", # flake8-simplify
+    "RUF", # Ruff-specific rules
+    "PL",  # Pylint
+    "PTH"  # Use pathlib
+]
+
+# Ignored rules
+ignore = [
+    "E501",   # Line length violations
+    "B006",   # Mutable defaults
+    "PLR0913", # Too many arguments
+    "D107",   # Missing docstring in __init__
+    "D203",   # One blank line before class docstring
+    "D213",   # Multi-line docstring summary should start at second line
+]
+
+# Basic settings
+line-length = 100
+target-version = "py310"
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+# Safety and usability
+unfixable = ["F401"]  # Don't auto-remove unused imports
+unsafe-fixes = false  # Be conservative with fixes
+respect-gitignore = true
+show-fixes = true
+
+# Error formatting
+format = "grouped"  # Group errors by rule
+show-source = true  # Show source code generating error
+
+# Ignore patterns per file
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "I001"]  # Allow unused imports in __init__.py
+"tests/**/*" = ["D", "PLR2004"]   # Less strict for tests
+
+# Docstring settings
+[tool.ruff.pydocstyle]
+convention = "google"
+ignore-decorators = ["typing.overload", "property"]
+
+# Import organization
+[tool.ruff.isort]
+force-single-line = false
+lines-after-imports = 2
+known-first-party = ["your_project_name"]  # Add your project name
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+# Complexity checker
+[tool.ruff.mccabe]
+max-complexity = 12
+```
+
+## Optional Rule Sets and Settings
+
+Depending on your project's needs, you might want to add these:
+
+### ANN - Type Annotations
+Enforces consistent type annotations.
+
+```python
+# ANN001 - Missing type annotation for arguments
+# Bad
+def process(data):
+    pass
+# Good
+def process(data: list[str]) -> None:
+    pass
+
+# ANN201 - Missing return type annotation
+# Bad
+def get_value():
+    return 42
+# Good
+def get_value() -> int:
+    return 42
+```
+
+### S - Security
+Security-related checks (great for web applications).
+
+```python
+# S101 - Use of assert detected
+# Bad (asserts can be disabled with -O)
+assert user.is_admin
+# Good
+if not user.is_admin:
+    raise PermissionError
+
+# S106 - Possible hardcoded password
+# Bad
+password = "hardcoded_secret"
+# Good
+password = os.getenv("PASSWORD")
+```
+
+### ERA - Comments and TODOs
+Manages commented-out code and TODO comments.
+
+```python
+# ERA001 - Found commented-out code
+# Bad
+# def old_function():
+#     pass
+
+# ERA002 - Found commented-out TODO
+# Bad
+# TODO: fix this later
+```
+
+### COM - Commas
+Controls comma placement in multiline statements.
+
+```python
+# COM812 - Missing trailing comma
+# Bad
+x = [
+    1,
+    2
+]
+# Good
+x = [
+    1,
+    2,
+]
+```
+
+### TID - Tidy Imports
+Manages import tidiness.
+
+```python
+# TID252 - Relative imports
+# Bad
+from ..utils import helper
+# Good
+from myproject.utils import helper
+```
+
+To enable these optional rules, add them to your `select` list:
+
+```toml
+[tool.ruff]
+select = [
+    # ... your existing rules ...
+    "ANN",  # Type annotations
+    "S",    # Security
+    "ERA",  # Comments and TODOs
+    "COM",  # Commas
+    "TID",  # Tidy imports
+]
+
+# You might want to ignore some specific rules
+ignore = [
+    # ... your existing ignores ...
+    "ANN101",  # Missing type annotation for self
+    "ANN102",  # Missing type annotation for cls
+    "S101",    # Use of assert detected
+]
+
+# Optional quote configuration
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+
+# Optional import preferences and package choices
+[tool.ruff.flake8-import-conventions]
+[tool.ruff.flake8-import-conventions.aliases]
+numpy = "np"
+pandas = "pd"
+matplotlib = "plt"
+
+[tool.ruff.flake8-import-conventions.extend-aliases]
+# Prefer orjson over json
+json = "orjson"
+
+[tool.ruff.isort]
+# Known third-party imports to influence import order and warnings
+known-third-party = [
+    "click",    # Prefer click over argparse
+    "orjson",   # Prefer orjson over json
+    "pytest",   # Prefer pytest over unittest
+    "pandas"
+]
+
+# Add rules to force preferred packages
+[tool.ruff]
+select = [
+    # ... your existing rules ...
+    "UP",    # pyupgrade
+    "RUF100",# Unused noqa directive
+    "PT",    # Pytest style enforcement
+]
+
+extend-select = [
+    "UP035",  # Prefer json.loads over json.dumps (will suggest orjson due to above config)
+    "PT001",  # Use `@pytest.fixture()` over `@pytest.fixture`
+    "PT002",  # Configuration for pytest.raises() should be in `match=` parameter
+    "PT003",  # `scope='function'` is the default for @pytest.fixture
+    "PT004",  # Fixture names should not contain an f- prefix
+    "PT005",  # Fixtures should not contain an f- prefix
+    "PT006",  # Wrong name type in `@pytest.mark.parametrize`
+    "PT007",  # Wrong values type in `@pytest.mark.parametrize`
+    "PT008",  # Use `@pytest.mark.asyncio` instead of `@pytest.mark.async`
+    "PT009",  # Use a regular `assert` instead of unittest-style assertions
+    "PT010",  # `pytest.raises(ValueError)` should be used as a context manager
+    "PT011",  # `pytest.raises()` should be used as a context manager
+    "PT012",  # `pytest.raises()` should be used as a context manager
+    "PT013",  # Found incorrect import of pytest
+    "PT014",  # Found duplicate test cases in `@pytest.mark.parametrize`
+    "PT015",  # Assertion always fails
+    "PT016",  # No assert in test method
+    "PT017",  # Found assertion on exception
+    "PT018",  # Wrong assertion method
+    "PT019",  # Fixture in parametrize
+    "PT020",  # Test case missing name parameter
+    "PT021",  # Use `@pytest.mark.parametrize()`
+    "PT022",  # No teardown in fixture
+    "PT023",  # Use `@pytest.mark.usefixtures()`
+]
+
+[tool.ruff.per-file-ignores]
+# Don't flag unittest usage in specific files if needed
+"tests_legacy/**/*" = ["PT"]  # Ignore pytest warnings in legacy test code
+
+extend-select = [
+    "UP035",  # Prefer `json.loads` over `json.dumps` (will suggest orjson due to above config)
+]
+
+[tool.ruff.per-file-ignores]
+# Don't flag argparse usage in specific files if needed
+"cli_legacy/**/*" = ["UP036"]  # Ignore argparse warnings in legacy CLI code
+
+
+
+
+```toml
+target-version = "py38"  # Enables Python 3.8+ syntax features
+fix = true              # Automatically fix what can be fixed
+respect-gitignore = true  # Don't check files in .gitignore
+show-fixes = true       # Show what was automatically fixed
+```
+
+## Common Workflows
+
+### 1. Check Single File
+```bash
+ruff check file.py
+```
+
+### 2. Fix All Issues
+```bash
+ruff check --fix .
+```
+
+### 3. Show All Rules
+```bash
+ruff rule 'E***'  # Shows all pycodestyle rules
+```
+
+### 4. Format Imports Only
+```bash
+ruff check --select I --fix .
+```
+
+## VS Code Integration
+
+### Basic Settings
+```jsonc
+{
+    // Basic Ruff integration
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": true,
+        "source.organizeImports.ruff": true
+    },
+    
+    // Ruff workspace analysis
+    "ruff.lint.run": "onType",           // Analyze as you type
+    "ruff.enable": true,                 // Enable Ruff
+    "ruff.organizeImports": true,        // Enable import organization
+    "ruff.fixAll": true,                 // Enable auto-fixing
+    
+    // Full workspace analysis
+    "ruff.lint.args": [
+        "--config=${workspaceFolder}/pyproject.toml",  // Use workspace config
+        "--force-exclude",               // Respect exclude patterns
+        "--no-cache",                    // Don't use cache for full analysis
+        "--verbose"                      // Show detailed output
+    ],
+    
+    // Optional: Disable other linters to avoid conflicts
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+    
+    // Use both Ruff and Pylance
+    "python.analysis.diagnosticMode": "workspace",  // Pylance workspace analysis
+    "python.analysis.typeCheckingMode": "basic",   // Pylance type checking
+    
+    // Optional: Show code actions for all problems
+    "editor.codeActionsOnSaveTimeout": 750,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    }
+}
+```
+
+### Advanced Configuration
+For larger projects, you might want more specific settings:
+
+```jsonc
+{
+    // Performance settings for large workspaces
+    "ruff.lint.debounce": 500,          // Wait time before analyzing
+    "ruff.format.args": [
+        "--config=${workspaceFolder}/pyproject.toml",
+        "--line-length=100",
+        "--target-version=py310"
+    ],
+    
+    // Path settings
+    "ruff.path": ["${workspaceFolder}"],  // Additional paths to analyze
+    "ruff.importStrategy": "fromEnvironment", // Use workspace Python environment
+    
+    // Lint specific file types
+    "ruff.lint.patterns": [
+        "**/*.py",
+        "**/*.pyi",
+        "**/pyproject.toml"
+    ],
+
+    // Show both Pylance and Ruff diagnostics
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "error",
+        "reportUnusedVariable": "warning"
+    },
+    "ruff.severityOverrides": {
+        "E": "Error",
+        "F": "Error",
+        "I": "Information"
+    }
+}
+```
+
+### Best Practices for Workspace Analysis
+
+1. **Project Structure**
+   ```plaintext
+   workspace/
+   ├── .vscode/
+   │   └── settings.json    # Project-specific VS Code settings
+   ├── pyproject.toml       # Ruff configuration
+   ├── .ruff.cache/        # Cache directory
+   └── src/                # Your Python code
+   ```
+
+2. **Performance Tips**
+   - Use `.gitignore` and Ruff's `exclude` to skip unnecessary files
+   - Consider using `ruff.lint.run`: "onSave" for large projects
+   - Enable caching for faster subsequent runs
+   ```jsonc
+   {
+       "ruff.lint.args": [
+           "--cache-dir=.ruff_cache",
+           "--config=${workspaceFolder}/pyproject.toml"
+       ]
+   }
+   ```
+
+3. **Multi-Root Workspaces**
+   For projects with multiple Python packages:
+   ```jsonc
+   {
+       "ruff.lint.args": [
+           "--config=${workspaceFolder}/pyproject.toml",
+           "--extend-select=I,N,D,UP"
+       ],
+       "ruff.workspaceFolder": "${workspaceFolder}"
+   }
+   ```
+
+4. **Combining with Pylance**
+   ```jsonc
+   {
+       // Pylance for type checking
+       "python.analysis.diagnosticMode": "workspace",
+       "python.analysis.typeCheckingMode": "basic",
+       "python.analysis.indexing": true,
+       
+       // Ruff for linting
+       "ruff.lint.run": "onType",
+       "ruff.enable": true,
+       
+       // Avoid duplicate diagnostics
+       "python.analysis.diagnosticSeverityOverrides": {
+           "reportUnusedImport": "none",  // Let Ruff handle this
+           "reportUnusedVariable": "none"  // Let Ruff handle this
+       }
+   }
+   ```
+
+5. **Problem Matchers**
+   Create a `.vscode/tasks.json` for running Ruff workspace analysis:
+   ```jsonc
+   {
+       "version": "2.0.0",
+       "tasks": [
+           {
+               "label": "Ruff Workspace Analysis",
+               "type": "shell",
+               "command": "ruff check .",
+               "problemMatcher": {
+                   "owner": "python",
+                   "fileLocation": ["relative", "${workspaceFolder}"],
+                   "pattern": {
+                       "regexp": "^(.+):(\\d+):(\\d+): (.+)$",
+                       "file": 1,
+                       "line": 2,
+                       "column": 3,
+                       "message": 4
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+This setup provides comprehensive workspace analysis with both Ruff and Pylance, while maintaining good performance and usability.
+```
+
+## Git Pre-commit Hook
+
+```yaml
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.1.3
+    hooks:
+    -   id: ruff
+        args: [--fix]
+```
+
+## When to Disable Rules
+
+Sometimes it makes sense to disable rules for specific lines. Use comments like:
+
+```python
+# For a single line:
+x = 1  # noqa: E402
+
+# For a block of code:
+# ruff: noqa: E402, E501
+def some_function():
+    pass
+
+# To disable specific rules for the whole file:
+"""Module docstring."""
+# ruff: noqa: D100, D101, D102
+```
+
+Remember: The goal of these rules is to help write better code, not to make coding harder. If a rule is consistently getting in your way, we can discuss adjusting the configuration.
