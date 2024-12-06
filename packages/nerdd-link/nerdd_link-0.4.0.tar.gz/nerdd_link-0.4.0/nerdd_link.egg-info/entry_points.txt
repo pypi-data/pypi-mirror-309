@@ -1,0 +1,3 @@
+[console_scripts]
+nerdd_job_server = nerdd_link.cli:run_job_server
+nerdd_prediction_server = nerdd_link.cli:run_prediction_server
