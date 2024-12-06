@@ -1,0 +1,9 @@
+lemenv/__init__.py,sha256=21TH0mHNx64MxGNQ7lDyCHgQyw3AEDMcYuw4sTh8G8s,90
+lemenv/cli.py,sha256=5lmX3AbSE0opacTaQEm-sJcGrz436h5RLFFSInKPghM,2831
+lemenv/manager.py,sha256=Qkj0nnEv2iunB40yRCEgwIDjMuMMQJKeFHkhKGzrVbQ,16138
+lemenv/utils.py,sha256=dvXH2zWuUjRCCKzBGajNdLGM18WLdMviUpjD-rTmeQI,12605
+lemenv-0.1.0.dist-info/METADATA,sha256=v3MSTxBmDL2VXhp0PU2EtdmiyT3QxGNaZfMsiGgA47g,4749
+lemenv-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+lemenv-0.1.0.dist-info/entry_points.txt,sha256=dXr30cC0Ap6ypKRJXoXU2__FvcD2Fm8nM3cZmTLx6po,42
+lemenv-0.1.0.dist-info/licenses/LICENSE,sha256=Qisut6Z5xNbmmE0SsCUcHZtrZCHabMGn2n9OzGsyGGo,1110
+lemenv-0.1.0.dist-info/RECORD,,
