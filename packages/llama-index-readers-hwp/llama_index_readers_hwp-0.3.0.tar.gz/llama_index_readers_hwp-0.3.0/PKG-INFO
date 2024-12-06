@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-hwp
+Version: 0.3.0
+Summary: llama-index readers hwp integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: olefile (>=0.47,<0.48)
+Description-Content-Type: text/markdown
+
+# HWP Loader
+
+```bash
+pip install llama-index-readers-file
+```
+
+This loader reads the HWP file, which is the format of many official documents in South Korea.
+
+## Usage
+
+To use this loader, you need to pass in a file name. It's fine whether the file is compressed or not.
+
+```python
+from llama_index.readers.file import HWPReader
+from pathlib import Path
+
+hwp_path = Path("/path/to/hwp")
+reader = HWPReader()
+documents = reader.load_data(file=hwp_path)
+```
+
