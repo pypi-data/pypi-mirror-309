@@ -1,0 +1,9 @@
+numpy>=1.25
+
+[dev]
+pdoc
+pylsp-mypy
+pylsp-rope
+pytest
+python-lsp-isort
+python-lsp-server[all]
