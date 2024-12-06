@@ -1,0 +1,150 @@
+
+[all]
+psutil
+opentelemetry-distro
+opentelemetry-exporter-otlp
+sphinx
+sphinx-rtd-theme
+confluent-kafka
+fastapi
+pydantic
+uvicorn
+six
+jsonschema
+protobuf
+requests
+flake8
+pytest
+pytest-timeout
+requests-mock
+avro<2,>=1.11.1
+pyrsistent
+
+[all:python_version < "3.0"]
+pyrsistent==0.16.1
+
+[all:python_version <= "3.7"]
+urllib3<2.0.0
+
+[all:python_version == "3.7"]
+fastavro<1.8.0
+
+[all:python_version > "3.0"]
+pyrsistent
+
+[all:python_version > "3.7"]
+urllib3<3,>=2.0.0
+fastavro<2
+
+[avro]
+requests
+avro<2,>=1.11.1
+
+[avro:python_version == "3.7"]
+fastavro<1.8.0
+
+[avro:python_version > "3.7"]
+fastavro<2
+
+[dev]
+sphinx
+sphinx-rtd-theme
+confluent-kafka
+fastapi
+pydantic
+uvicorn
+six
+jsonschema
+protobuf
+requests
+flake8
+pytest
+pytest-timeout
+requests-mock
+avro<2,>=1.11.1
+pyrsistent
+
+[dev:python_version < "3.0"]
+pyrsistent==0.16.1
+
+[dev:python_version <= "3.7"]
+urllib3<2.0.0
+
+[dev:python_version == "3.7"]
+fastavro<1.8.0
+
+[dev:python_version > "3.0"]
+pyrsistent
+
+[dev:python_version > "3.7"]
+urllib3<3,>=2.0.0
+fastavro<2
+
+[docs]
+sphinx
+sphinx-rtd-theme
+requests
+avro<2,>=1.11.1
+pyrsistent
+jsonschema
+protobuf
+
+[docs:python_version == "3.7"]
+fastavro<1.8.0
+
+[docs:python_version > "3.7"]
+fastavro<2
+
+[examples]
+confluent-kafka
+fastapi
+pydantic
+uvicorn
+six
+jsonschema
+protobuf
+requests
+
+[examples:python_version < "3.0"]
+pyrsistent==0.16.1
+
+[examples:python_version > "3.0"]
+pyrsistent
+
+[json]
+pyrsistent
+jsonschema
+requests
+
+[protobuf]
+protobuf
+requests
+
+[schemaregistry]
+requests
+
+[soaktest]
+psutil
+opentelemetry-distro
+opentelemetry-exporter-otlp
+
+[tests]
+flake8
+pytest
+pytest-timeout
+requests-mock
+requests
+avro<2,>=1.11.1
+pyrsistent
+jsonschema
+protobuf
+
+[tests:python_version <= "3.7"]
+urllib3<2.0.0
+
+[tests:python_version == "3.7"]
+fastavro<1.8.0
+
+[tests:python_version > "3.7"]
+urllib3<3,>=2.0.0
+fastavro<2

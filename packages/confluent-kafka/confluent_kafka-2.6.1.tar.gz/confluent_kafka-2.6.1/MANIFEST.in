@@ -1,0 +1,4 @@
+include README.md
+include src/confluent_kafka/src/*.[ch]
+prune tests
+prune docs
