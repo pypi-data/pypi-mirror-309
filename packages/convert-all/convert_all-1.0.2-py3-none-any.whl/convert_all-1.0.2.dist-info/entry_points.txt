@@ -1,0 +1,4 @@
+[console_scripts]
+convert = converter.core:convert
+convert-all = converter.core:convert
+
