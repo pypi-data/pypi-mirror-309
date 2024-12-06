@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ARTOF
+Version: 0.0.1
+Summary: The ARTOF is a tool to read, process and analyze data collected from angle resolved time of flight (ARToF) sensors of the PS-ISRR.
+Home-page: https://codebase.helmholtz.cloud/carl.meier/artof
+Author: Carl Magnus Meier
+Author-email: magnus.meier@helmholtz-berlin.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# ARTOF
+The ARToFLoader is a tool to read, process and analyze data collected from angle resolved time of flight (ARToF) sensors of the PS-ISRR.
