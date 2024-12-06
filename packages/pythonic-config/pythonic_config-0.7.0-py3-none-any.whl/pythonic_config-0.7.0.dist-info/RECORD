@@ -1,0 +1,10 @@
+config/__init__.py,sha256=esKNT-2dW0s1cGzJ9o5DAv1Vhbrs2aaCHfBKN2mLlrQ,603
+config/config.py,sha256=MclcBOz5jZon2PUvcAqaD3ETaxZnTtc-zpPBhAIk8kQ,16081
+config/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config/trace.py,sha256=Kms0wPBKz2EdiRyW4fMKlTFSDNjvXN0F2mT-i8RaU8c,6489
+pythonic_config-0.7.0.dist-info/LICENSE,sha256=9P3stFpI9ie6ETRUK7FDCfyGjmSxSg0TQ9dfbn2K1EQ,1099
+pythonic_config-0.7.0.dist-info/METADATA,sha256=6EU_kpI2kdKspchg8G7FXxn1zzn3LMmwjLGhHpZTI5c,6883
+pythonic_config-0.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pythonic_config-0.7.0.dist-info/top_level.txt,sha256=9hK4m828QBN59kTX5IVy40cPd9zUw5QWQF2AlSrXCJ4,7
+pythonic_config-0.7.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pythonic_config-0.7.0.dist-info/RECORD,,
