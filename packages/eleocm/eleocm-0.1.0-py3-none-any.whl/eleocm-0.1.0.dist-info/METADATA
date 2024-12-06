@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eleocm
+Version: 0.1.0
+Summary: A library to calculate eleocm based on ship speed, wind speed, and sea wave height.
+Author: Zesheng Jing
+Author-email: 394050399@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# oil_consumption
+
+This Python library calculates oil consumption for ships based on speed, wind speed, and significant wave height (SWH).
+
+## Installation
+
+```bash
+pip install oil_consumption
