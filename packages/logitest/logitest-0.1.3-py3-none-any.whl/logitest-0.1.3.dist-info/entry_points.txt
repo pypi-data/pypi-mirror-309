@@ -1,0 +1,2 @@
+[console_scripts]
+logitest = logitest.__init__:create_test_cases_cli
