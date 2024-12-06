@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zwpython/__init__.py
+zwpython.egg-info/PKG-INFO
+zwpython.egg-info/SOURCES.txt
+zwpython.egg-info/dependency_links.txt
+zwpython.egg-info/top_level.txt
