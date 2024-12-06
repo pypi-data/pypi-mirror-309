@@ -1,0 +1,13 @@
+logger_py/__init__.py,sha256=39XdRz1AxkCcfddM10094N4PgIMvAsd20HGQVGh-SC4,204
+logger_py/logger.py,sha256=8E9iBcjRtsZwiZzrlN-caa3ZCphAq1bXkUgLqEclBPc,3378
+logger_py/config/__init__.py,sha256=kRKhQv23r_GCC1vaJVjSk4Hpi4hKhUnbuGiJwhyqkK4,256
+logger_py/config/log_config.py,sha256=MmiDOptZEr2bo2ZSd13ZMZJ_amOBSWeH_0wVzYg054Q,963
+logger_py/config/option.py,sha256=ORy53-WczF10Mowi1ddcoBGg4nTMEpDQ5T_stxpDXjs,953
+logger_py/config/tracer_config.py,sha256=0uay2UP1dQoaMRkRkoDwBbPMAxQgaIS04N1fqVM1qKA,508
+logger_py/mylogger/__init__.py,sha256=xwPb4Ps8fa-uy8I4VW5lcOEfywGAaf0umgoX2v0EEBE,300
+logger_py/mylogger/abstract.py,sha256=xYsqO3zNvYums0vLJyIN2rRfM745q8HgTsSybVKAN0A,454
+logger_py/mylogger/my_structlog.py,sha256=BSKWcDUKqEna8cxBfwh48laUjkFTQM4H81DX8wnejR8,3023
+everfir_logger-0.1.5.dist-info/METADATA,sha256=mx75Zvy7fbkePL0FwKjkZIH0COk-MC8-TCaXtBlcrKg,1486
+everfir_logger-0.1.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+everfir_logger-0.1.5.dist-info/top_level.txt,sha256=rHvilRjeAF9BXgNUj-u0JwuBXuXu366TxqE2iRtdvfM,10
+everfir_logger-0.1.5.dist-info/RECORD,,
