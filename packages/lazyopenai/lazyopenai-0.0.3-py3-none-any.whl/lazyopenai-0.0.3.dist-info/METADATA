@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: lazyopenai
+Version: 0.0.3
+Author-email: narumi <toucans-cutouts0f@icloud.com>
+Requires-Python: >=3.11
+Requires-Dist: openai>=1.54.4
+Requires-Dist: pydantic-settings>=2.6.1
+Description-Content-Type: text/markdown
+
+# Lazy OpenAI
