@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+zwpy/__init__.py
+zwpy.egg-info/PKG-INFO
+zwpy.egg-info/SOURCES.txt
+zwpy.egg-info/dependency_links.txt
+zwpy.egg-info/top_level.txt
