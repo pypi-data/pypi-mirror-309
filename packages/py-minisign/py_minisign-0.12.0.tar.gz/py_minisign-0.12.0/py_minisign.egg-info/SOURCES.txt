@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+minisign/__init__.py
+minisign/exceptions.py
+minisign/helpers.py
+minisign/minisign.py
+py_minisign.egg-info/PKG-INFO
+py_minisign.egg-info/SOURCES.txt
+py_minisign.egg-info/dependency_links.txt
+py_minisign.egg-info/requires.txt
+py_minisign.egg-info/top_level.txt
+tests/test_minisign.py
