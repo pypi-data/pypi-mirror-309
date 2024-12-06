@@ -1,0 +1,12 @@
+honeybee-energy>=1.109.17
+honeybee-revive>=0.0.9
+pandas>=2.2.3
+plotly>=5.24.1
+ph-units>=1.5.15
+rich>=13.8.1
+
+[dev]
+black
+isort
+pytest
+coverage
