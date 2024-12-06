@@ -1,0 +1,2 @@
+[console_scripts]
+pyreachx = pyreachx.cli:main

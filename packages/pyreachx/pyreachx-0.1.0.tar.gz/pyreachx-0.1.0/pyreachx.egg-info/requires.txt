@@ -1,0 +1,17 @@
+ast2json>=0.3.0
+click>=7.0
+networkx>=2.5
+jinja2>=2.11.0
+PyYAML>=5.1.0
+
+[test]
+pytest>=6.0.0
+pytest-cov>=2.0.0
+pytest-mock>=3.0.0
+black>=21.0
+isort>=5.0.0
+mypy>=0.900
+flake8>=4.0.0
+flake8-bugbear>=21.0.0
+flake8-docstrings>=1.6.0
+flake8-import-order>=0.18.0
