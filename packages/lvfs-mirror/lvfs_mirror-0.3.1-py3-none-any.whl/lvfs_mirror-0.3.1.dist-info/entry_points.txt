@@ -1,0 +1,3 @@
+[console_scripts]
+lvfs-mirror=lvfs_mirror.lvfs_mirror:main
+
