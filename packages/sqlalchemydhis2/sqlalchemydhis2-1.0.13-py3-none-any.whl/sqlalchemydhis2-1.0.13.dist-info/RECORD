@@ -1,0 +1,15 @@
+sqlalchemy_dhis2/__init__.py,sha256=uqTEKWP8wrhYz3tKyzkubAjQhAdsxhgzZdqCLxrf6Z8,916
+sqlalchemy_dhis2/array.py,sha256=vPUzjLDtqcHtUy8bMmuxnqM7k1RYzBkGJbgYqsnq4vQ,483
+sqlalchemy_dhis2/connection.py,sha256=Zfj0S5VAq6itgS5CS0xcrsI5_c2Z9AKVJyQQruSyg4g,11838
+sqlalchemy_dhis2/constants.py,sha256=OSKlvtBpMBdAphlU71MNP7WCofqB4iyduQ7bfd-o3o0,91
+sqlalchemy_dhis2/exceptions.py,sha256=5DnAYXfnJZTZSLumI-LePVAomCVR1_H8JHW32MKWOCk,926
+sqlalchemy_dhis2/jsonhttp_dialect.py,sha256=9p8oaErQXJQ-ajoemJH1rMgf5RIrwli5tYO5F88CyEM,2723
+sqlalchemy_dhis2/message_formatter.py,sha256=RjRE68gGCAShW8HlSsJ4T402LxWq6Rio_D9QyOAVYDU,232
+sqlalchemy_dhis2/table_reflect.py,sha256=q5A9d84qLJVKfKBnEurydidlfsBsr6WEJaw4ps5J3Ts,4084
+sqlalchemy_dhis2/type_map.py,sha256=ykj7zGPOZXhPSbXoNfkNB5KzsXxR9_Tw4DExOcqgL9o,1623
+sqlalchemydhis2-1.0.13.dist-info/LICENSE,sha256=uEsMtbJ7MBH8zShKa5UYeihgJJcDL8KxDKeBjrvtpaU,11348
+sqlalchemydhis2-1.0.13.dist-info/METADATA,sha256=F7kb10BTKQyd6xoZnux3hG3LIoESx9C2dcJv8NlFi4s,1215
+sqlalchemydhis2-1.0.13.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sqlalchemydhis2-1.0.13.dist-info/entry_points.txt,sha256=CI6XdCLPpc0-4VJq6KTZrbkpUo86gbCuNiDToYOpXeQ,80
+sqlalchemydhis2-1.0.13.dist-info/top_level.txt,sha256=jhqCJA1DhLOYcLb3FZdjxpCRHLjL7k0UbASxebJfLzM,17
+sqlalchemydhis2-1.0.13.dist-info/RECORD,,
