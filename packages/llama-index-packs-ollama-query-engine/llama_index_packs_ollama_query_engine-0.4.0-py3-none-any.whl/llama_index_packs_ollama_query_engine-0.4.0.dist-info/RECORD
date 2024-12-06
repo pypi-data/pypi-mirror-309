@@ -1,0 +1,5 @@
+llama_index/packs/ollama_query_engine/__init__.py,sha256=JyAxBsubAtNSmxN81QsyS3qjpvIKgLUW3fVJojkaS14,114
+llama_index/packs/ollama_query_engine/base.py,sha256=LaDc5LxjeP9euzDL6_tSwq5azq46UCmlnVi5gQIwrHU,4478
+llama_index_packs_ollama_query_engine-0.4.0.dist-info/METADATA,sha256=V4vafAwZA-wobVJgMKd8xQH94_bAlj4SwcbHT0KW11A,2084
+llama_index_packs_ollama_query_engine-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_packs_ollama_query_engine-0.4.0.dist-info/RECORD,,
