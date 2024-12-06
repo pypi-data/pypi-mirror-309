@@ -1,0 +1,15 @@
+chonkie/__init__.py,sha256=5MgHVQO9Fnl9RjQQyEmr384zPpDA5zDHcugHq1VHmbU,601
+chonkie/chunker/__init__.py,sha256=2oqGGwJfFeBE_Nwe1mcErxptkGPw7KsmsBxCi4DSpMQ,496
+chonkie/chunker/base.py,sha256=frPxI38MMd2m0PT1slHLOpbr_sfgr6-V7t3XJb1B1ZY,7871
+chonkie/chunker/sdpm.py,sha256=lv3hJpwo4O-gsGKziSYT66MCgR1_1W9Lv4PBI5zc7oo,5298
+chonkie/chunker/semantic.py,sha256=q4gJvvGTl6GZhBeyf63EOsPkcXSLVOX2J5DKr1kRXZw,16454
+chonkie/chunker/sentence.py,sha256=yToaD-kNOKDIQiepBgayrRxV0CHYTdOsKH8ciFqnemw,11308
+chonkie/chunker/token.py,sha256=PkIsjzjoJrJqaCJiQ7ibsUyrb5PQpqOY4-S8w1wbjak,5168
+chonkie/chunker/word.py,sha256=IboMdziGThYHDkUXPK4KRX-rU4TDP7XgPBpmb6bOzEA,4903
+chonkie/embeddings/__init__.py,sha256=AvaAumFBGK4RixjXgL-lXEbbdh4Oic8m-16_REA8zKo,62
+chonkie/embeddings/base.py,sha256=a6Zoi5gslLPutlQYsAleHy1tRNCC4rnKhJCMHcn2x48,5286
+chonkie-0.2.0.dist-info/LICENSE,sha256=9p4m9unVoO-4D3nvK8wxLd0IPACqs5o-M801lIGW-BI,1072
+chonkie-0.2.0.dist-info/METADATA,sha256=xKaAnGX4i8ddPqMX-AJoWkXnr3OTKaU9nLXICw_z1hU,8133
+chonkie-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+chonkie-0.2.0.dist-info/top_level.txt,sha256=7_LLe6HmH6Sux_FyGEL5fyljRG7ICusNjtamIHxhYXc,8
+chonkie-0.2.0.dist-info/RECORD,,
