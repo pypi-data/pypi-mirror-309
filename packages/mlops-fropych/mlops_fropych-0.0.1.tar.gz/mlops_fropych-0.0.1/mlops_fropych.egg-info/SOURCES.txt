@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mlops/__init__.py
+mlops/config.py
+mlops/dataset.py
+mlops/predict.py
+mlops/train.py
+mlops_fropych.egg-info/PKG-INFO
+mlops_fropych.egg-info/SOURCES.txt
+mlops_fropych.egg-info/dependency_links.txt
+mlops_fropych.egg-info/top_level.txt
+tests/test_basic.py
