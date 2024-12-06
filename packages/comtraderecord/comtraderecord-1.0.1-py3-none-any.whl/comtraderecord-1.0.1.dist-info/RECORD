@@ -1,0 +1,11 @@
+comtraderecord/ComtradeParser.py,sha256=28_4GnNk67-AYBP6XGUrdBzC74gvf6PgZyEvpp5ab-8,7708
+comtraderecord/__init__.py,sha256=xmz_1zZ9dBFgVUl7VSElrzn8CUIGlc27uAouqrHedoI,201
+comtraderecord/_version.py,sha256=B9zy9er_odoedRELyU_FR_0tnm2bXTPiXKv-OjjUmmY,120
+comtraderecord/comtradeWriter.py,sha256=H6XKKGOFJcrWSBM5WZLCeIueV4fSlnfuMmLd3bHg8ew,3583
+comtraderecord/pyComtrade.py,sha256=3cpBH8s0TGb7UBTFo5YJ0R1-klTS-1KdeXEN7Q5CIqs,11433
+comtraderecord/pyRelayAlg.py,sha256=NkSWtbB91wO7y-Kvat-vl-hXLheosnKeW9Ooq_PcdlA,3191
+comtraderecord-1.0.1.data/data/requirements.txt,sha256=IoiAvU41bVo0PFHwJaTdwDoMn8eTO6XAvowjZK-iZ8g,13
+comtraderecord-1.0.1.dist-info/METADATA,sha256=fLJCaN3Qkb51lvECKXOR6-247cFVMiUGTkvx5Ak0vqk,441
+comtraderecord-1.0.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+comtraderecord-1.0.1.dist-info/top_level.txt,sha256=6vhlCixTtiIgkEoP_XGAYdquoFfHoe6Almf0BYxRUIs,15
+comtraderecord-1.0.1.dist-info/RECORD,,
