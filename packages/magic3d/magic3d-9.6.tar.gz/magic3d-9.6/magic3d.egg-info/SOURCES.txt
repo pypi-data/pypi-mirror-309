@@ -1,0 +1,7 @@
+main.py
+setup.py
+magic3d.egg-info/PKG-INFO
+magic3d.egg-info/SOURCES.txt
+magic3d.egg-info/dependency_links.txt
+magic3d.egg-info/requires.txt
+magic3d.egg-info/top_level.txt
