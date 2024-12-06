@@ -1,0 +1,14 @@
+opencv-python
+numpy
+pillow
+pywin32
+comtypes
+PyQt5
+pyscreeze
+pyyaml
+aiofiles
+pydantic
+injector
+APScheduler
+dataclasses
+python-dotenv
