@@ -1,0 +1,16 @@
+LICENSE.md
+README.rst
+pyproject.toml
+src/fedibooster/__init__.py
+src/fedibooster/app.py
+src/fedibooster/config.py
+src/fedibooster/control.py
+src/fedibooster.egg-info/PKG-INFO
+src/fedibooster.egg-info/SOURCES.txt
+src/fedibooster.egg-info/dependency_links.txt
+src/fedibooster.egg-info/entry_points.txt
+src/fedibooster.egg-info/requires.txt
+src/fedibooster.egg-info/top_level.txt
+tests/test_checks.py
+tests/test_config.py
+tests/test_post_recorder.py
