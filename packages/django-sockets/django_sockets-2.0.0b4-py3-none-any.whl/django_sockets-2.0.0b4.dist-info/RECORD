@@ -1,0 +1,11 @@
+django_sockets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sockets/broadcaster.py,sha256=p9Q9h-FTPpI29HwVyE7zjR0ojw4eCIEu8KYbQgu0P0E,2461
+django_sockets/middleware.py,sha256=MsR7ePg6vUZUK5dJM2aNRGhlFzG6cnE8ycMNeYhvjYA,1715
+django_sockets/pubsub.py,sha256=mf_v7w8efnRxYQhFn7Df6w1jJllLZ7S_m30fRzIJzJg,12548
+django_sockets/sockets.py,sha256=YpPrYvhXXfA4kMOADekTvXSF9TZ6krtpPDy2rkx7nGo,9728
+django_sockets/utils.py,sha256=0x7wydSi83TmujT5vX9n8H0aLSnHDoukVuVErwkXIyU,1192
+django_sockets-2.0.0b4.dist-info/LICENSE,sha256=lWsmWo1t9v94zSBfnvvyFFVyAKworr9FQWvXDmk-Peo,1072
+django_sockets-2.0.0b4.dist-info/METADATA,sha256=O0KuhYQC5KDgXW_Wbpn_SmClnb7OEg3j_-ZA0udmgfU,14871
+django_sockets-2.0.0b4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_sockets-2.0.0b4.dist-info/top_level.txt,sha256=V4H73fZaPpKLIl3GqUGNQ-QW0lqv7B8NamEOJPh-ZCg,15
+django_sockets-2.0.0b4.dist-info/RECORD,,
