@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+sysinsight/__init__.py
+sysinsight/__main__.py
+sysinsight/sysinsight.py
+system_insight.egg-info/PKG-INFO
+system_insight.egg-info/SOURCES.txt
+system_insight.egg-info/dependency_links.txt
+system_insight.egg-info/entry_points.txt
+system_insight.egg-info/requires.txt
+system_insight.egg-info/top_level.txt
