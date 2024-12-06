@@ -1,0 +1,2 @@
+include examples/msg_defs/*.yaml
+include src/pyrtma/core_defs/*.yaml
