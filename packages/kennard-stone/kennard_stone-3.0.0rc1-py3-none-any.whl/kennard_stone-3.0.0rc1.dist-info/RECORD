@@ -1,0 +1,14 @@
+kennard_stone/__init__.py,sha256=PO48zmG-5_lezZPh63TiV2xLueuiIQ1M9DXoKrbBbzw,385
+kennard_stone/_deprecated.py,sha256=xbrTTPpy7mxor2MbSC2CX2nJB_xBksReGxEs-568WWk,3511
+kennard_stone/_core/_core.py,sha256=pe9aT5H9x6-rkIa9qwFP56mlbfgSog2DWCCvoOCOYRg,20723
+kennard_stone/logging/__init__.py,sha256=5RRTX01Mvy2i75EV13hysWAEPYlatvb430jSDutSm7A,506
+kennard_stone/logging/_logging.py,sha256=h0nFqhHWKpUnjaA0EDmgqco4r0QhDakdXxX9Voz4XEU,4555
+kennard_stone/utils/__init__.py,sha256=DtIma54jnf5bzdODA4_aJtReMxeIXli9IY9CehHzKaU,117
+kennard_stone/utils/_pairwise.py,sha256=I3wRQ7q2fwOAvbdY5bR09ZDVU7Cy7bJSz_tYdP966K0,3942
+kennard_stone/utils/_type_alias.py,sha256=2mQSOa4keCRCZu0-KoTRRocXtjCzTTZwKrKp7_5oosY,835
+kennard_stone/utils/_utils.py,sha256=GZWHwSP5vwDg5fb_HBSWjmLvUhap0sDt_AvHATsPVnU,910
+kennard_stone-3.0.0rc1.dist-info/LICENSE,sha256=RNcYpdZhxXjfl-re6XsdD_sR1jl9cQKaY5z6a2C_dbM,1063
+kennard_stone-3.0.0rc1.dist-info/METADATA,sha256=uoc9HnXHS-DJJD72GdFDiJeM4Jvd2N8LR7kQBtRQPas,11598
+kennard_stone-3.0.0rc1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+kennard_stone-3.0.0rc1.dist-info/top_level.txt,sha256=1gH9oRlnfCXkGIPsFmPGt01Z6OFlLNtsQSQHHrUYkos,14
+kennard_stone-3.0.0rc1.dist-info/RECORD,,
