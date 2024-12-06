@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nonebot-plugin-zepplife"
+version = "0.1.2"
+description = "基于NoneBot框架的ZeppLife数据修改机器人插件"
+authors = ["1296 <hh1296@foxmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/1296lol/nonebot-plugin-zepplife"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.2.0"
+nonebot-adapter-onebot = "^2.2.0"
+httpx = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
