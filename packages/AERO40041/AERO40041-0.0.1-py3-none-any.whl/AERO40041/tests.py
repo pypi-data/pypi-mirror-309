@@ -1,0 +1,90 @@
+import numpy as np
+
+
+    
+
+def test_forward(forward):
+     
+
+    N_Neurons=[1, 30, 1]
+
+    W1 = np.arange(N_Neurons[1] * N_Neurons[0]).reshape(N_Neurons[1], N_Neurons[0])
+    W2 = np.arange(N_Neurons[2] * N_Neurons[1]).reshape(N_Neurons[2], N_Neurons[1])
+    b1 = np.zeros((N_Neurons[1],1))
+    b2 = np.zeros((N_Neurons[2],1))
+ 
+    n1_t = 2175.0
+    a1_t = 28.999909200140102
+    n2_t = 434.9999091960174
+    a2_t = 434.9999091960174
+
+    tol=1e-4
+
+    try:
+        n1, a1, n2, a2 = forward( np.array([[5]]), W1, W2, b1, b2 )
+    except:
+        print("Your forward function does not seem to run.")
+
+    if(np.abs(np.sum(n1)-n1_t)<tol and np.abs(np.sum(a1)-a1_t)<tol and np.abs(np.sum(n2)-n2_t)<tol and np.abs(np.sum(a2)-a2_t)<tol ):
+        print("Passed!")
+    else:
+        print("This has not passed our test. This does not necessarily mean it is incorrect (for instance if you have changed the order of arguments or return values it might produce a false negative). It is recommended you recheck you code or ask for assistance if you cannot spot any issues.")
+
+
+
+def test_cost(cost):
+     
+
+    N_Neurons=[1, 30, 1]
+
+    W1 = np.arange(N_Neurons[1] * N_Neurons[0]).reshape(N_Neurons[1], N_Neurons[0])
+    W2 = np.arange(N_Neurons[2] * N_Neurons[1]).reshape(N_Neurons[2], N_Neurons[1])
+    b1 = np.zeros((N_Neurons[1],1))
+    b2 = np.zeros((N_Neurons[2],1))
+ 
+    c_t = 5362091.033332357
+
+    tol=1e-2
+
+    try:
+        c = cost( np.array([[5]]), np.array([[5]]), W1, W2, b1, b2 )
+    except:
+        print("Your cost function does not seem to run.")
+
+    if(np.abs(c-c_t)<tol ):
+        print("Passed!")
+    else:
+        print("This has not passed our test. This does not necessarily mean it is incorrect. It is recommended you recheck you code or ask for assistance if you cannot spot any issues.")
+
+def test_backward(backward):
+    N_Neurons=[1, 30, 1]
+
+    W1 = np.arange(N_Neurons[1] * N_Neurons[0]).reshape(N_Neurons[1], N_Neurons[0])*66.9
+    W2 = np.arange(N_Neurons[2] * N_Neurons[1]).reshape(N_Neurons[2], N_Neurons[1])*6.1
+    b1 = np.zeros((N_Neurons[1],1))+5.4
+    b2 = np.zeros((N_Neurons[2],1))+10.4
+
+    n1 = np.arange(N_Neurons[1]).reshape((N_Neurons[1],1))*10.01
+    a1 = np.arange(N_Neurons[1]).reshape((N_Neurons[1],1))*20.02
+    n2 = np.arange(N_Neurons[2]).reshape((N_Neurons[2],1))*10.03
+    a2 = np.arange(N_Neurons[2]).reshape((N_Neurons[2],1))*20.04
+
+    a_t = 29101.500001301905
+    b_t = 20070.9
+    c_t = 162.00000026038148
+    d_t = 12.4
+
+    tol=1e-2
+
+    a, b, c, d = backward( np.array([[5]]), np.array([[5]]), n1, a1, n2, a2, W1, W2, b1, b2, 0.1 )
+    
+    try:
+        a, b, c, d = backward( np.array([[5]]), np.array([[5]]), n1, a1, n2, a2, W1, W2, b1, b2, 0.1 )
+    except:
+        print("Your backward function does not seem to run.")
+
+    if(np.abs(np.sum(a)-a_t)<tol and np.abs(np.sum(b)-b_t)<tol and np.abs(np.sum(c)-c_t)<tol and np.abs(np.sum(d)-d_t)<tol ):
+        print("Passed!")
+    else:
+        print("This has not passed our test. This does not necessarily mean it is incorrect (for instance if you have changed the order of arguments the test might produce a false negative). It is recommended you recheck you code or ask for assistance if you cannot spot any issues.")
+    
