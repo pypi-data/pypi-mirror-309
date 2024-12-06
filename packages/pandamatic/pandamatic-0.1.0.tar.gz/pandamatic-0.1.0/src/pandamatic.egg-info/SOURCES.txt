@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pandamatic/__init__.py
+src/pandamatic.egg-info/PKG-INFO
+src/pandamatic.egg-info/SOURCES.txt
+src/pandamatic.egg-info/dependency_links.txt
+src/pandamatic.egg-info/requires.txt
+src/pandamatic.egg-info/top_level.txt
