@@ -1,0 +1,5 @@
+llama_index/readers/slack/__init__.py,sha256=2vTo5E-D1_Ghf00u_xww_EjdtlWdlK1gDp2dZaCSf7c,82
+llama_index/readers/slack/base.py,sha256=ky12LiYlTf_eFmjTuWgnwXc9FBBTkWPvxnpUZCb80js,12171
+llama_index_readers_slack-0.3.0.dist-info/METADATA,sha256=hfIBOm27bkYgNL_qNMZmyIH8F9qIVRP8k3VGh_jgLZk,1962
+llama_index_readers_slack-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_slack-0.3.0.dist-info/RECORD,,
