@@ -1,0 +1,8 @@
+python_artifact_signer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_artifact_signer/main.py,sha256=AZbvYfVe06WbA_D0IGtXXFSdrZzZsSoKKjF1wjQHJlQ,10442
+python_artifact_signer/merkle_proof.py,sha256=HZ77A5Ksapy9MfobhQ6XbqaZeDGTCP3iZeinvrrnCZg,11349
+python_artifact_signer/util.py,sha256=wzH_y2s9Sjcs9geq4icsX-jHlRoOdhLhKMsASoISgOA,2869
+python_artifact_signer-0.4.0.dist-info/METADATA,sha256=Vq8q2S6BBwOrR8zdXEo-nLb__4LCijXWpMsQ3wtmBjM,1593
+python_artifact_signer-0.4.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+python_artifact_signer-0.4.0.dist-info/entry_points.txt,sha256=ANDZj9X_S6u_Bmqu2hWwsmlsdFAhla-OQGp93ptr0Ic,75
+python_artifact_signer-0.4.0.dist-info/RECORD,,
