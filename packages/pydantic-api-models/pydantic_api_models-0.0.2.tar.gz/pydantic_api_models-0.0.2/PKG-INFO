@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pydantic-api-models
+Version: 0.0.2
+Summary: Make API self-explanatory with pydantic
+Home-page: https://github.com/stevieflyer/pydantic-api-models
+License: MIT
+Keywords: pydantic,api,data-models
+Author: stevieflyer
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pydantic[email] (>=2.9.2,<3.0.0)
+Project-URL: Repository, https://github.com/stevieflyer/pydantic-api-models
+Description-Content-Type: text/markdown
+
+# Pydantic API Models
+

@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pydantic-api-models"
+version = "0.0.2"
+description = "Make API self-explanatory with pydantic"
+packages = [{ include = "pydantic_api" }]
+authors = ["stevieflyer"]
+readme = "README.md"
+repository = "https://github.com/stevieflyer/pydantic-api-models"
+homepage = "https://github.com/stevieflyer/pydantic-api-models"
+keywords = ["pydantic", "api", "data-models"]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = { "version" = "^2.9.2", "extras" = ["email"] }
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
