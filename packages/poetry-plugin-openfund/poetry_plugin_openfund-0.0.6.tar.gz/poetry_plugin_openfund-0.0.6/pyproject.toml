@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "poetry-plugin-openfund"
+version = "0.0.6"
+description = "Poetry plugin that updates dependencies and bumps their versions in pyproject.toml file"
+authors = ["Mousa Zeid Baker"]
+packages = [
+    { include = "poetry_plugin_openfund", from = "src" },
+]
+license = "MIT"
+readme = "README.md"
+
+keywords=[
+    "packaging",
+    "dependency",
+    "poetry",
+    "update",
+    "upgrade",
+]
+classifiers=[
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+poetry = "^1.8.4"
+binance-futures-connector = "^4.1.0"
+binance-connector = "^3.9.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.21.0"
+pytest = "^7.4.4"
+pytest-mock = "^3.14.0"
+
+[tool.pytest.ini_options] # mandatory section name
+# addopts = "-vs --no-header --no-summary" # force cmd flags
+addopts = "-vs --no-header --no-summary"
+log_cli = 1
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s.%(msecs)03d - %(filename)s:%(lineno)d - %(funcName)s - %(levelname)s - %(message)s"
+log_cli_datefmt = "%Y-%m-%d-%H:%M:%S"
+testpaths = [ # what directories contain tests
+    "tests",
+]
+
+[tool.poetry.plugins."poetry.application.plugin"]
+openfund = "poetry_plugin_openfund.plugin:OpenfundApplicationPlugin"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
