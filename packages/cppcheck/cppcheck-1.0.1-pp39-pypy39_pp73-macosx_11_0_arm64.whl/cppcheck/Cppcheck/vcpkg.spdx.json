@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/cppcheck-arm64-osx-2.16.0-65c4a0a8-8037-4a43-9b56-1c0096921395",
+  "name": "cppcheck:arm64-osx@2.16.0 af1fb193a2c4e8443a9edc1366c8c4f977689f13b7f50aa40df4bf9408820bfc",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-09-30-ab8988503c7cffabfd440b243a383c0a352a023d"
+    ],
+    "created": "2024-11-19T15:51:15Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "cppcheck",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2.16.0",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "https://github.com/danmar/cppcheck",
+      "licenseConcluded": "GPL-3.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "static analysis of C/C++ code",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "cppcheck:arm64-osx",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "af1fb193a2c4e8443a9edc1366c8c4f977689f13b7f50aa40df4bf9408820bfc",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "GPL-3.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "danmar/cppcheck",
+      "downloadLocation": "git+https://github.com/danmar/cppcheck@2.16.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b224d4d62be1802c322f57a0674a01caecf3d034d36396d8375c302a518a6d5f0ca9160a2a94eaa33b498ff0bbd092785f0489abef30de8af446b5d381f44922"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//Users/runner/work/cppcheck-wheel/cppcheck-wheel/cmake/vcpkg/ports/cppcheck/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "17aaa1f668e5e5d950b2084458357389990c346525173d9be620fbbd6508f609"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//Users/runner/work/cppcheck-wheel/cppcheck-wheel/cmake/vcpkg/ports/cppcheck/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7994766895f829adecbabb0b3fa6ac97936bd80554f61145f3c2d62fc9b67aa5"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}
