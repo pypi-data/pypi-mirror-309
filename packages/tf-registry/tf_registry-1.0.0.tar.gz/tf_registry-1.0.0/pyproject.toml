@@ -1,0 +1,56 @@
+[project]
+name = "tf-registry"
+version = "1.0.0"
+description = "An API client for the public Terraform registry"
+authors = [
+  {name = "Josh Holbrook", email = "josh.holbrook@gmail.com"}
+]
+readme = "README.md"
+dependencies = [
+  "go-flag",
+  "pytest-recording>=0.13.2",
+  "python-hcl2",
+  "requests",
+  "syrupy>=4.7.2",
+]
+keywords = []
+license = { text = "BSD-3" }
+classifiers = [
+    "Programming Language :: Python",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = [
+  "flake8",
+  "flake8-black",
+  "pytest",
+  "black",
+  "isort",
+  "jupyter-console",
+  "toml",
+  "validate-pyproject[all]",
+]
+
+[tool.isort]
+profile = "appnexus"
+known_application = "tf_registry"
+
+[tool.pyright]
+include = ["tf_registry", "tests"]
+
+[tool.pytest]
+addopts = "--verbose -s"
+testpaths = [ "tests" ]
+
+[tool.setuptools]
+packages = [ "tf_registry" ]

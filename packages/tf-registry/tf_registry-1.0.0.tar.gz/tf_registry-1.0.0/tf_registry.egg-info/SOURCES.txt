@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+tests/test_registry_api.py
+tf_registry/__init__.py
+tf_registry.egg-info/PKG-INFO
+tf_registry.egg-info/SOURCES.txt
+tf_registry.egg-info/dependency_links.txt
+tf_registry.egg-info/requires.txt
+tf_registry.egg-info/top_level.txt

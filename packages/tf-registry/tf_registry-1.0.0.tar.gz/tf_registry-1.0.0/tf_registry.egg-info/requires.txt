@@ -1,0 +1,15 @@
+go-flag
+pytest-recording>=0.13.2
+python-hcl2
+requests
+syrupy>=4.7.2
+
+[dev]
+flake8
+flake8-black
+pytest
+black
+isort
+jupyter-console
+toml
+validate-pyproject[all]
