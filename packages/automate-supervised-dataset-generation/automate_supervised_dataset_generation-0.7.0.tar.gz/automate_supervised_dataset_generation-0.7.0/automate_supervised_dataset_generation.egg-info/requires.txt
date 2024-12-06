@@ -1,0 +1,9 @@
+mpire
+playwright
+transformers
+torch
+torchvision
+hyperopt==0.2.5
+hpsklearn==0.1.0
+numpy==1.23
+languagemodels
