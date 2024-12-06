@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/cvm_sqlite/__init__.py
+src/cvm_sqlite/cvm_data_processor.py
+src/cvm_sqlite/database.py
+src/cvm_sqlite/file_manager.py
+src/cvm_sqlite/utils.py
+src/cvm_sqlite.egg-info/PKG-INFO
+src/cvm_sqlite.egg-info/SOURCES.txt
+src/cvm_sqlite.egg-info/dependency_links.txt
+src/cvm_sqlite.egg-info/requires.txt
+src/cvm_sqlite.egg-info/top_level.txt
