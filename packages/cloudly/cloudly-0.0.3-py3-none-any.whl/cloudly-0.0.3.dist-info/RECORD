@@ -1,0 +1,8 @@
+cloudly/__init__.py,sha256=z61Z43YYOC0xT01V7KPkk-CIzW6H5uFc-XO-njuc9iQ,62
+cloudly/gcp/__init__.py,sha256=tlxgjZ29ZFIHsZrv1vojkAoyq2CfSOeLJ5MT62LGdH4,34
+cloudly/gcp/auth.py,sha256=nCk0CNoVjzo0Zyk0PvzEfD_x45KOjhDo_3Cpn0625lo,4601
+cloudly/gcp/secretmanager.py,sha256=2ubksEwNSx_ZwcHcVaCZcPCWrRcq2pQLazWXaFXoEkI,450
+cloudly-0.0.3.dist-info/LICENSE,sha256=F1jdR0huymkR-1KYphIoAmIt9ngrPdy-IP2lUqw8XGc,1067
+cloudly-0.0.3.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+cloudly-0.0.3.dist-info/METADATA,sha256=4L3U0gHxOrnrlN8QnQy0ePwRkVgCMTHdf2I1JX790Rw,939
+cloudly-0.0.3.dist-info/RECORD,,
