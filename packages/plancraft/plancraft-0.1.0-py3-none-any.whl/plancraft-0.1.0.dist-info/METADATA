@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: plancraft
+Version: 0.1.0
+Summary: Plancraft: an evaluation dataset for planning with LLM agents
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate >=1.0.1
+Requires-Dist: coloredlogs >=10.0
+Requires-Dist: daemoniker >=0.2.3
+Requires-Dist: datasets >=3.0.2
+Requires-Dist: dill >=0.3.1.1
+Requires-Dist: einops >=0.8.0
+Requires-Dist: flaky >=3.8.1
+Requires-Dist: hf-transfer >=0.1.8
+Requires-Dist: huggingface-hub >=0.26.1
+Requires-Dist: hydra-core >=1.3.2
+Requires-Dist: imagehash >=4.0.0
+Requires-Dist: imageio >=2.36.0
+Requires-Dist: inflection >=0.3.1
+Requires-Dist: ipython >=7.5.0
+Requires-Dist: jinja2 >=2.11.2
+Requires-Dist: lxml >=4.3.3
+Requires-Dist: matplotlib >=3.9.2
+Requires-Dist: networkx >=3.2.1
+Requires-Dist: numpy <1.24,>=1.16.2
+Requires-Dist: openai >=1.52.2
+Requires-Dist: opencv-python >=4.1.0.25
+Requires-Dist: pandas >=2.1.0
+Requires-Dist: peft >=0.13.2
+Requires-Dist: pillow >=8.0.0
+Requires-Dist: psutil >=5.6.2
+Requires-Dist: pydantic >=2.9.2
+Requires-Dist: pyglet >=2.0.18
+Requires-Dist: pyro4 >=4.76
+Requires-Dist: python-dotenv >=1.0.1
+Requires-Dist: pyyaml >=6.0.2
+Requires-Dist: requests >=2.20.0
+Requires-Dist: seaborn >=0.13.2
+Requires-Dist: setuptools >=49.2.0
+Requires-Dist: tinydb >=4.8.2
+Requires-Dist: torch >=2.5.0
+Requires-Dist: torchvision >=0.20.0
+Requires-Dist: tqdm >=4.32.2
+Requires-Dist: transformers >=4.43.3
+Requires-Dist: typing >=3.6.6
+Requires-Dist: wandb >=0.18.5
+Requires-Dist: xmltodict ==0.12.0
+Provides-Extra: full
+Requires-Dist: gym <=0.23.1,>=0.19.0 ; extra == 'full'
+
+# plancraft
+Plancraft is a minecraft environment and agent that innovates on planning LLM agents with a retriever
