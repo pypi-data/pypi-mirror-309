@@ -1,0 +1,479 @@
+Metadata-Version: 2.1
+Name: llmer
+Version: 1.0.0
+Summary: llmer is a lightweight Python library designed to streamline the development of applications leveraging large language models (LLMs). It provides high-level APIs and utilities for parallel processing, runtime management, file handling, and prompt generation, reducing the overhead of repetitive tasks.
+Home-page: https://github.com/pydaxing/llmer
+Author: pydaxing
+Author-email: pydaxing@gmail.com
+Keywords: llmer leveraging large language models
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsonlines
+Requires-Dist: PyYAML
+Requires-Dist: setuptools
+Requires-Dist: tqdm
+Requires-Dist: openai
+
+# LLMER: Simplify LLM Application Development
+
+`llmer` is a lightweight Python library designed to streamline the development of applications leveraging large language models (LLMs). It provides high-level APIs and utilities for parallel processing, runtime management, file handling, and prompt generation, reducing the overhead of repetitive tasks.
+
+---
+
+## Features
+- **OpenAI Calling**:
+- **Parallel Processing**: Execute functions in parallel with thread pools or async tasks.
+- **Runtime Management**: Handle execution timeouts and thread-safe locks with decorators.
+- **File Utilities**: Work seamlessly with YAML, JSONL, and Base64 encoded images.
+- **Prompt Management**: Generate ChatML-compliant prompts for conversational models.
+- **More Features**: Comming soon...
+---
+
+## Installation
+To install `llmer`, use:
+```bash
+pip install llmer
+```
+
+## Quick Start Example
+
+```python
+from llmer.parallel.thread_pool import ThreadPool
+
+
+@ThreadPool(parallel_count=4)
+def square(num):
+  return num ** 2
+
+
+tasks = [{"num": i} for i in range(10)]
+results = square(tasks)
+print(results)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+## Module Overview
+The project is organized into the following modules:
+
+### 1. OpenAI Calling
+- **`Azure`**: Calling language models hosted on Microsoft Azure.
+- **`OpenAI`**: Calling language models from OpenAI and the models that deployed within openai style.
+
+### 2. Parallel Processing
+- **`OpenAI Calling`**: Calling azure models and the models that deployed within openai style.
+- **`ThreadPool`**: Execute functions in parallel using a thread pool.
+- **`MultiThread`**: Execute functions with multi threads.
+- **`AsyncParallel`**: Asynchronous parallel execution for async function.
+- **`AsyncExecutor`**: Flexible async execution manager for non-async function.
+
+### 3. Runtime Management
+- Timeout decorators for functions (include generator-based functions).
+- Parallel-safe locks with customizable timeout settings.
+
+### 4. File Utilities
+- Read and write JSONL and YAML files.
+- Encode images to Base64 strings with optional MIME type prefixes.
+
+### 5. Prompt Management
+- Generate ChatML-compatible prompts for LLM-based conversational agents.
+
+## API Documentation
+
+## 1. Model Integration
+
+The `Model` module within `llmer` provides an abstraction layer for integrating with various large language models (LLMs) from different providers. The goal is to simplify the process of querying these models, handling the communication, and retrieving the results in a consistent way. Currently, the module supports integration with Azure models and the models that deployed within openai style as well.
+
+### 1.1 Azure
+
+The Azure model integration allows users to interact with language models hosted on Microsoft Azure.
+
+Azure provides scalable language models for tasks such as text generation, question answering, function call, and more. 
+
+**Usage Example**:
+
+```python
+from llmer.model import Azure
+
+openai_api_key = "xxxx"
+openai_model_name = "gpt-4o"
+openai_api_version = 'xxxx'
+openai_api_base = "xxxx"
+
+headers = {}
+
+gpt4o = Azure(
+  headers=headers,
+  api_key=openai_api_key,
+  api_version=openai_api_version,
+  endpoint=openai_api_base,
+  timeout=10,
+  retry=2
+)
+
+gpt_response = gpt4o.chat(
+  model=openai_model_name,
+  temperature=0.1,
+  stream=True,
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Can you tell me the weather today?"},
+  ],
+  response_format=None,
+)
+
+for chunk in gpt_response:
+  print(chunk)
+```
+
+
+### 1.2 OpenAI Style
+
+The `llmer` library also supports integration with OpenAI's models, providing an easy-to-use interface for interacting with OpenAI's language models, such as GPT-3 and GPT-4 and other models that deployed within openai style.
+
+**Usage Example**:
+
+```python
+from llmer.model import Azure, OpenAI
+
+claude_api_key = "xxxx"
+claud_model_name = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+claude_api_base = "xxxx"
+
+headers = {}
+
+claude = OpenAI(
+  headers=headers,
+  api_key=claude_api_key,
+  endpoint=claude_api_base,
+  timeout=10,
+  retry=2
+)
+
+response = claude.chat(
+  model=claud_model_name,
+  temperature=0.1,
+  stream=True,
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Can you tell me the weather today?"},
+  ],
+  response_format=None,
+)
+for chunk in response:
+  print(chunk)
+```
+
+
+
+## 2. Parallel Execution
+
+### 2.1 ThreadPool
+Executes a function in parallel using a thread pool.
+
+**Usage Example**:
+
+```python
+from llmer.parallel.thread_pool import ThreadPool
+
+
+@ThreadPool(parallel_count=3)
+def add_one(num):
+  return num + 1
+
+
+tasks = [{"num": i} for i in range(5)]
+results = add_one(tasks)
+print(results)  # Output: [1, 2, 3, 4, 5]
+```
+
+### 2.2 MultiThread
+Provides explicit control over multi threads execution.
+
+**Usage Example**:
+
+```python
+from llmer.parallel.multi_thread import MultiThread
+
+
+@MultiThread(parallel_count=2)
+def multiply(num):
+  return num * 2
+
+
+tasks = [{"num": i} for i in range(4)]
+results = multiply(tasks)
+print(results)  # Output: [0, 2, 4, 6]
+```
+
+### 2.3 AsyncParallel
+Executes asynchronous tasks in parallel with limited concurrency.
+
+**Usage Example**:
+
+```python
+import asyncio
+from llmer.parallel.async_parallel import AsyncParallel
+
+
+@AsyncParallel(parallel_count=2)
+async def async_task(num):
+  await asyncio.sleep(1)
+  return num * 10
+
+
+tasks = [{"num": i} for i in range(4)]
+results = asyncio.run(async_task(tasks))
+print(results)  # Output: [0, 10, 20, 30]
+```
+
+
+### 2.4 AsyncExecutor
+Executes tasks in parallel using asynchronous execution for non-async functions.
+
+**Usage Example**:
+
+```python
+import asyncio
+import time
+from llmer.parallel.async_executor import AsyncExecutor
+
+
+@AsyncExecutor(parallel_count=2)
+def async_task(num):
+  time.sleep(1)
+  return num * 5
+
+
+tasks = [{"num": i} for i in range(4)]
+results = asyncio.run(async_task(tasks))
+print(results)  # Output: [0, 5, 10, 15]
+```
+
+
+## 3. Runtime Management
+
+### 3.1 Timeout Decorator
+
+The `timeout` decorator allows you to set a time limit for a function to execute. If the function exceeds the specified time, an `ExecutionTimeoutError` is raised.
+
+**Usage Example**:
+
+```python
+import time
+from llmer.runtime.context import timeout
+from llmer.runtime.exceptions import ExecutionTimeoutError
+
+
+@timeout(3)  # Set timeout to 3 seconds
+def long_running_function():
+  time.sleep(5)  # Simulate a long task
+
+
+try:
+  long_running_function()
+except ExecutionTimeoutError as e:
+  print(e)  # Output: Function 'long_running_function' timed out after 3 seconds
+```
+
+
+### 3.2 Parallel Safe Lock Decorator
+
+The `parallel_safe_lock` decorator ensures that a function can only be executed if it successfully acquires a lock. If the function cannot acquire the lock within the specified timeout, it raises a `AcquireLockTimeoutError`. This is useful when functions are working with shared resources and you want to prevent concurrent execution of these functions.
+
+**Usage Example**:
+
+```python
+from llmer.runtime import parallel_safe_lock, AcquireLockTimeoutError
+import threading
+from time import sleep
+
+lock = threading.Lock()
+
+
+@parallel_safe_lock(lock, seconds=0.5)
+def write_data(data: str):
+  print(f"Writing data: {data}")
+  sleep(0.6)
+
+
+def task():
+  try:
+    write_data("some data")
+  except AcquireLockTimeoutError as e:
+    print(e)  # Output: critical_section acquires lock, timeout exceeded 0.5
+
+
+threads = []
+for _ in range(3):
+  t = threading.Thread(target=task)
+  t.start()
+  threads.append(t)
+
+for t in threads:
+  t.join()
+```
+
+## 4. File Utilities
+
+The `file.py` module provides utilities for file handling, such as reading from and writing to JSONL and YAML files, and converting images to Base64 encoded strings.
+
+### 4.1 File to List
+
+The `file_to_list()` function reads a JSONL file and returns its contents as a list of dictionaries. The path can be either absolute or relative to the script directory.
+
+#### Parameters:
+- `path` (Optional[str]): The path to the JSONL file. If not provided, it defaults to reading from the current script directory.
+
+**Usage Example**:
+
+```python
+from llmer.file import file_to_list
+
+# Example usage: Reading a JSONL file from the current script directory
+data = file_to_list("data.jsonl")
+print(data)
+# Output: List of dictionaries read from the JSONL file
+```
+
+This function is useful for reading structured data (such as JSONL format) and processing it in memory as a list.
+
+
+### 4.2 File to List
+
+The `list_to_file()` function saves a list of data (e.g., dictionaries, strings, etc.) into a JSONL file. You can specify the mode in which the file should be opened (`'w'` for write, `'a'` for append).
+
+#### Parameters:
+- `data` (List[Any]): The data to be saved into the file. It should be a list, and each item in the list will be written to a new line in the JSONL file.
+- `path` (Optional[str]): The path to the JSONL file. If not provided, it defaults to the current script directory.
+- `mode` (str, default 'w'): The mode in which the file is opened. 'w' will overwrite the file, and 'a' will append data to the file.
+
+**Usage Example**:
+
+```python
+from llmer.file import list_to_file
+
+# Example data to save
+data = [{"name": "John", "age": 30}, {"name": "Jane", "age": 25}]
+
+# Example usage: Saving a list of dictionaries to a JSONL file
+list_to_file(data, "output.jsonl")
+```
+This function is useful for saving structured data in JSONL format, which is efficient for large datasets and stream processing.
+
+
+
+### 4.3 YAML Reader
+
+The `yaml_reader()` function reads a YAML configuration file and returns its contents as a Python dictionary. The function assumes the YAML file is structured correctly and returns the parsed data.
+
+#### Parameters:
+- `path` (Optional[str]): The path to the YAML file. If not an absolute path, it will be joined with the current script's directory.
+
+**Usage Example**:
+
+```python
+from llmer.file import yaml_reader
+
+# Example YAML file path
+yaml_file = "config.yaml"
+
+# Example usage: Reading a YAML configuration file
+config = yaml_reader(yaml_file)
+
+print(config)
+```
+
+This function is useful for loading configuration files or structured data in YAML format, which is commonly used for application settings and configurations.
+
+### 4.4 Image to Base64
+
+The `image_to_base64()` function converts an image file into a Base64-encoded string. Optionally, it can include a data URI prefix for embedding images directly in web content or other use cases.
+
+#### Parameters:
+- `path` (Optional[str]): The path to the image file (can be relative or absolute).
+- `prefix` (bool, optional): If `True`, adds a data URI prefix to the Base64 string. Default is `False`.
+
+**Usage Example**:
+
+```python
+from llmer.file import image_to_base64
+
+# Example image file path
+image_file = "example.png"
+
+# Convert image to Base64 without prefix
+encoded_image = image_to_base64(image_file)
+
+print(encoded_image)
+
+# Convert image to Base64 with prefix
+encoded_image_with_prefix = image_to_base64(image_file, prefix=True)
+
+print(encoded_image_with_prefix)
+```
+
+
+## 5. Prompt Utilities
+
+### 5.1 ChatML Formatter
+
+The `chatml()` function formats a list of messages into the ChatML format, which is commonly used for processing conversations in a structured way for language models. This function creates a string where each message is wrapped with appropriate tags for system, user, and assistant roles.
+
+#### Parameters:
+- `messages` (List[Dict[str, str]]): A list of messages where each message is a dictionary containing the keys:
+    - `role` (str): The role of the speaker, e.g., `"system"`, `"user"`, or `"assistant"`.
+    - `content` (str): The content of the message.
+
+**Usage Example**:
+
+```python
+from llmer.prompt import chatml
+
+# Example messages
+messages = [
+  {"role": "system", "content": "You are a helpful assistant."},
+  {"role": "user", "content": "Can you tell me the weather today?"},
+  {"role": "assistant", "content": "The weather is sunny with a chance of rain."}
+]
+
+# Format messages into ChatML
+formatted_message = chatml(messages)
+
+print(formatted_message)
+```
+
+```text
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Can you tell me the weather today?<|im_end|>
+<|im_start|>assistant
+The weather is sunny with a chance of rain.<|im_end|>
+<|im_start|>assistant
+```
+
+This function is essential for formatting messages in a way that is compatible with APIs or models that use the ChatML format for structured input.
+
+
+
+
+## Contributing
+Feel free to contribute to this project. You can open an issue or submit a pull request.
+
+## Contact info
+You can contact at pydaxing@gmail.com
