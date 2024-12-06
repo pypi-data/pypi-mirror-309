@@ -1,0 +1,7 @@
+lxml
+six>=1.5.2
+tqdm
+pillow
+matplotlib
+opencv-python
+numpy

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: moyan
+Version: 1.3.5
+Summary: moyan private tools
+Author: moyan
+Author-email: ice_moyan@163.com
+Requires-Dist: lxml
+Requires-Dist: six>=1.5.2
+Requires-Dist: tqdm
+Requires-Dist: pillow
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: numpy
