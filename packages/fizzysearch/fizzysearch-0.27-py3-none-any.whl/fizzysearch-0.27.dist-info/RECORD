@@ -1,0 +1,12 @@
+fizzysearch/__init__.py,sha256=mAhqp4EpW7JHlCXjGay1M9_ePdWx9khSFk5AfKJuhLQ,126
+fizzysearch/__main__.py,sha256=h2qB0vlT5n4VxTD624zAjrSlOHJN6fgpQzNHlFWJj7Y,1415
+fizzysearch/bloomtyper.py,sha256=guRPfdQfkMFRsd_f6xOoXP7x62BhYapaVi1P-UnIsSU,3308
+fizzysearch/fts.py,sha256=RiYZsyhwZsMCceM0CUsb5MRQMxTrCA4kMUBuTs9Db78,4379
+fizzysearch/geo.py,sha256=xcoCxXDNrJxKlbezzjlVCyDw_3EdIi01Xwb7ohARGmQ,61
+fizzysearch/rdf2vec.py,sha256=k1idG901S22RbmwhrMDVONGWEPC63eSMM91fR3bgNso,4893
+fizzysearch/reader.py,sha256=ViE7dB1-Kgb9iGMUFlyHZF1QcLMjAbfN4ewJd7v89N0,2527
+fizzysearch/rewriting.py,sha256=E2Aqi1oWzG87UlpmAdZy6gdjcfOOOOKQ75BFEzWR6J4,4582
+fizzysearch-0.27.dist-info/LICENSE,sha256=RC2yR2DjJ_Y2NKX2-TvSOpb-0yUpaqHK7ktFLQ4DbZA,1152
+fizzysearch-0.27.dist-info/METADATA,sha256=fONTiTjXMWBPNsMS-9GH9odIk7Zyw2HZAY8ZQ05uw1M,1974
+fizzysearch-0.27.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fizzysearch-0.27.dist-info/RECORD,,
