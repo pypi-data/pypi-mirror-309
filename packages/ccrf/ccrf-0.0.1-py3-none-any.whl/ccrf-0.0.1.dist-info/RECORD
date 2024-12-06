@@ -1,0 +1,11 @@
+ccrf/__init__.py,sha256=tXF3CXyLuzVmeRFBOZxB3X_tdyu46i7s9qcq_g-nVLU,110
+ccrf/ccrf.py,sha256=p09d3lcKoIz2pljg6LXbYR9xRyeTuabKtvmlG0pchZg,12607
+ccrf/crf.py,sha256=ySRYrQxOqobNGIPjPdtD2vKNaCH_SkwX5gyLFpbdoRc,7910
+ccrf/hidden_wfa.py,sha256=e4stlh22W7fkqUxmFA8UCz2289521Ope8yR4-E4SPdY,7777
+ccrf/multiple_crf.py,sha256=jhb6UQ2LxmIIiIUqWDPVBEL0LH1SxDkjGSQ0CMrCH48,4973
+ccrf/utils.py,sha256=KSwuSiYmp60nxTRbzfN-_hzWdg3WS50WHp9BpqsQ-FY,475
+ccrf-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ccrf-0.0.1.dist-info/METADATA,sha256=2goYGqoIfbdEduLq_3JCd9Q7hkGFluoVtsaKWVEt7ug,853
+ccrf-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ccrf-0.0.1.dist-info/top_level.txt,sha256=kB_bmYzFnRrGnkRdEGZCtDbzIOnXDPmKP0enIIa8_Qs,5
+ccrf-0.0.1.dist-info/RECORD,,
