@@ -1,0 +1,12 @@
+hidraw.cpython-38-aarch64-linux-gnu.so,sha256=B4-OzU93CN9EngYZZkQWgOlOlytfj98wl3AtHw-FgL4,856169
+hid.cpython-38-aarch64-linux-gnu.so,sha256=ptf1sxg-502KSDAzwtgx6a_efMfAzUnCj6muSYX8MHo,856665
+hidapi-0.14.0.post4.dist-info/top_level.txt,sha256=5ctutQxA7sn2fMMSJeBeStHDU2EpfxJJXp4cPMnNlK0,11
+hidapi-0.14.0.post4.dist-info/RECORD,,
+hidapi-0.14.0.post4.dist-info/LICENSE-orig.txt,sha256=5jLNUPjrzvcZIXbWdsHnwFOmT--R6bYllOkhWJBnpuk,87
+hidapi-0.14.0.post4.dist-info/LICENSE.txt,sha256=J2wcJ7uqNP1i9Okq18-ff48ZPARAydqGw4neDa4ZL0c,558
+hidapi-0.14.0.post4.dist-info/METADATA,sha256=USTe6nRC3LEadcEVhlzYa4c4eJKVITn-hKlEUOnZZ9Y,3560
+hidapi-0.14.0.post4.dist-info/LICENSE-gpl3.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+hidapi-0.14.0.post4.dist-info/WHEEL,sha256=1KRHL-iIjsS_6K58v1t3bnpT29tAZFAJn3Z45bY_ekI,111
+hidapi-0.14.0.post4.dist-info/LICENSE-bsd.txt,sha256=W073Q50vgqKvV_H7SpA2bdiIo9VkROWDVEHdF_8xxxY,1517
+hidapi.libs/libusb-1-7c032910.0.so.0.3.0,sha256=ggT5oV_x7TKEKqocFI3nM0obq3ea-UKnhI2NtWxNUIQ,201121
+hidapi.libs/libudev-be6fe603.so.1.6.3,sha256=xjC2sOnnDCV_n52xM2vhiBTsqLPqIBhNWvhBcbLFN1Q,135641
