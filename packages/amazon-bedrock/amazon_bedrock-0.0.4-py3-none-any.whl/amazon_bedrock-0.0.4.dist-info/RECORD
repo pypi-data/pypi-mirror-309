@@ -1,0 +1,10 @@
+amazon_bedrock/__init__.py,sha256=BO5RrOgKL6YQAmxrZnLsvg3MBKeCOBHz0eIJyLNXm_E,52
+amazon_bedrock/bedrock.py,sha256=q71xsgqbV5_iG3oQnYkDUdkVoc-r8K14ESG_wW2rUtk,346
+amazon_bedrock/resources/__init__.py,sha256=FtMslttXi7iqY3uxKvHWy9lTb3BC7Iqz48p_xU3Jl60,102
+amazon_bedrock/resources/api_resource.py,sha256=CZjYaSlPuvwfr9lo3UKQa5FrzgYf291Mq1lzINjHS9E,246
+amazon_bedrock/resources/models.py,sha256=ddh6gvOJygDz7bwBxlmYoVUcEpnrUmbQ4g-ziAA7OFs,804
+amazon_bedrock-0.0.4.dist-info/LICENSE,sha256=C-rGDAO6RkjfN4QCBeoau6WUoIIA4mZUVP8mq2XpAhw,945
+amazon_bedrock-0.0.4.dist-info/METADATA,sha256=vFkNlkE6u4aLohs2sH49KZZzrML2JUlZRuKEPCMI7as,1952
+amazon_bedrock-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+amazon_bedrock-0.0.4.dist-info/top_level.txt,sha256=ZTl825q6dsRbvUQE7TcqzgkJbhy4BJ78HzKwyarFQHA,15
+amazon_bedrock-0.0.4.dist-info/RECORD,,
