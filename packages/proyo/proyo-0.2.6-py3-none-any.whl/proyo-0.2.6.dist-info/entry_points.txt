@@ -1,0 +1,2 @@
+[console_scripts]
+proyo = proyo.__main__:main
