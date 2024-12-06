@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: random-jokes
+Version: 0.1.0
+Summary: A simple package to generate random jokes
+Keywords: jokes,funny,random
+Author: Hasit Parmar
+Author-email: hasit.parmar@crestdata.ai
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "random-jokes"
+version = "0.1.0"
+description = "A simple package to generate random jokes"
+authors = ["Hasit Parmar <hasit.parmar@crestdata.ai>"]
+readme = "README.md"
+keywords = ["jokes", "funny", "random"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+random-joke = "random_jokes.jokes:get_random_joke"
