@@ -1,0 +1,5 @@
+llama_index/storage/chat_store/redis/__init__.py,sha256=cg8OUASdxzpu8OMv5dUQV9L-2s3a5TjJmX3WsAT-3c4,99
+llama_index/storage/chat_store/redis/base.py,sha256=CqTKQJAAXIRgeL1ek4VS7IudEO_rztzh8bptqPX_hn0,15254
+llama_index_storage_chat_store_redis-0.4.0.dist-info/METADATA,sha256=rsr7l_lsDq2al42jzofzKCBpRZBJVz_s0Fc-rPt_12s,707
+llama_index_storage_chat_store_redis-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_chat_store_redis-0.4.0.dist-info/RECORD,,
