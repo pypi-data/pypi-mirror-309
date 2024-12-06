@@ -1,0 +1,54 @@
+[project]
+name = "go-flag"
+version = "1.0.0"
+description = "Add your description here"
+authors = [
+  {name = "Josh Holbrook", email = "josh.holbrook@gmail.com"}
+]
+readme = "README.md"
+dependencies = []
+keywords = ["go", "golang", "flag", "options", "cli"]
+license = { text = "BSD-3" }
+classifiers = [
+    "Programming Language :: Python",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Go",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = [
+  "flake8",
+  "flake8-black",
+  "pytest",
+  "black",
+  "isort",
+  "jupyter-console",
+  "mkdocs",
+  "mkdocs-bootstrap386",
+  "mkdocstrings[python]",
+  "toml",
+  "validate-pyproject[all]",
+]
+
+[tool.isort]
+profile = "appnexus"
+known_application = "flag"
+
+[tool.pyright]
+include = ["flag", "tests"]
+
+[tool.pytest]
+addopts = "--verbose -s"
+testpaths = [ "tests" ]
+
+[tool.setuptools]
+packages = [ "flag" ]
