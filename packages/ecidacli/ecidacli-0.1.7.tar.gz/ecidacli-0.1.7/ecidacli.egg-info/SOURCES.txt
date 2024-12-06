@@ -1,0 +1,12 @@
+README.md
+docker_interface.py
+ecidacli.py
+setup.py
+ecida-templates/__init__.py
+ecida-templates/module.py
+ecidacli.egg-info/PKG-INFO
+ecidacli.egg-info/SOURCES.txt
+ecidacli.egg-info/dependency_links.txt
+ecidacli.egg-info/entry_points.txt
+ecidacli.egg-info/requires.txt
+ecidacli.egg-info/top_level.txt
