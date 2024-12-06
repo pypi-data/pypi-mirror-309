@@ -1,0 +1,2 @@
+[console_scripts]
+bh-vim = bh_vim.__main__:main

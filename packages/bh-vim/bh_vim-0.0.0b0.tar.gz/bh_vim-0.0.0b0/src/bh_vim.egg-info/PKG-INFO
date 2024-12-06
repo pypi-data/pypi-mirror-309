@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bh-vim
+Version: 0.0.0b0
+Summary: Vim configuration dotfiles.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: bh-bump==0.1.3rc1

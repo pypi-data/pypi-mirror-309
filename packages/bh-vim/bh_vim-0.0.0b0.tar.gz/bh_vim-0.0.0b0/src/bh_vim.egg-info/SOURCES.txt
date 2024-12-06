@@ -1,0 +1,12 @@
+MANIFEST.in
+pyproject.toml
+src/bh_vim/__init__.py
+src/bh_vim/__main__.py
+src/bh_vim.egg-info/PKG-INFO
+src/bh_vim.egg-info/SOURCES.txt
+src/bh_vim.egg-info/dependency_links.txt
+src/bh_vim.egg-info/entry_points.txt
+src/bh_vim.egg-info/requires.txt
+src/bh_vim.egg-info/top_level.txt
+src/bh_vim/cmds/vim/__init__.py
+tests/test_dummy.py
