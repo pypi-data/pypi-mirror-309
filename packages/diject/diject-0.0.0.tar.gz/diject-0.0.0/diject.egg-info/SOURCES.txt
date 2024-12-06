@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+diject/__init__.py
+diject.egg-info/PKG-INFO
+diject.egg-info/SOURCES.txt
+diject.egg-info/dependency_links.txt
+diject.egg-info/requires.txt
+diject.egg-info/top_level.txt
