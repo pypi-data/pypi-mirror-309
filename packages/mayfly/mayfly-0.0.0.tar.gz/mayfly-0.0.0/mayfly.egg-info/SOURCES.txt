@@ -1,0 +1,6 @@
+pyproject.toml
+mayfly/__init__.py
+mayfly.egg-info/PKG-INFO
+mayfly.egg-info/SOURCES.txt
+mayfly.egg-info/dependency_links.txt
+mayfly.egg-info/top_level.txt
