@@ -1,0 +1,11 @@
+pdftranscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdftranscript/config.py,sha256=aI8EUTjv6XN0BgaMAQuwHTWOGp2oaxBGQuqWEl_GhFo,1612
+pdftranscript/pdf2html.py,sha256=kIP7SzDSGstJRrJ2frLvBWk977AvuxUXhOWw16jetHk,1373
+pdftranscript/test.py,sha256=oqlckaR4hehL1NiPVb_lHEPn7GrwQVfamK86yDz1DFc,475
+pdftranscript/transcript.py,sha256=ASFCATcVFMRGjOovnIXI71nFH2fZjLV6F-aAWvHZqYg,13417
+pdftranscript/ttf.py,sha256=3jwqDvwNCVBBXlVP-oVWfbsFbt2Bg_ozcALVT3IF4L4,6261
+pdftranscript-1.0.dist-info/METADATA,sha256=demXW7rMRoQZbxsfeYv9L9HsScb_ZnX81xI8xvl3-rI,3444
+pdftranscript-1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pdftranscript-1.0.dist-info/entry_points.txt,sha256=sb2T-fi5-Qxg19c3m7KECI41pLwE-dty10rHD9crc9E,129
+pdftranscript-1.0.dist-info/licenses/LICENSE.txt,sha256=gtJDddz5ueQCAnaqOcK_MiIY5C9639mYhePfFsLbCMM,1055
+pdftranscript-1.0.dist-info/RECORD,,
