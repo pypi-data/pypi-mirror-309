@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: shutil-ext
+Version: 0.1.0
+Summary: shutil extensions
+Project-URL: Documentation, https://github.com/Xiang Wang/shutil-ext#readme
+Project-URL: Issues, https://github.com/Xiang Wang/shutil-ext/issues
+Project-URL: Source, https://github.com/Xiang Wang/shutil-ext
+Author-email: Xiang Wang <ramwin@qq.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: duration2>=0.7.1
+Description-Content-Type: text/markdown
+
+# shutil-ext
+shutil extensions
+
+[![PyPI - Version](https://img.shields.io/pypi/v/shutil-ext.svg)](https://pypi.org/project/shutil-ext)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/shutil-ext.svg)](https://pypi.org/project/shutil-ext)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install shutil-ext
+```
+
+## License
+
+`shutil-ext` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
