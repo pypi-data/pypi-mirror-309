@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: shakshippm-31
+Version: 0.1.0
+Summary: A package manager that installs adaboost, sklearn, dataframe, and pandas
+Home-page: https://github.com/yourusername/sppm
+Author: shakshi
+Author-email: shakshibisht7@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: dataframe
+
+# SPPM
+
+SPPM is a Python package that installs AdaBoost, sklearn, dataframe, and pandas in one go.
+
+## Installation
+
+```bash
+pip install sppm
