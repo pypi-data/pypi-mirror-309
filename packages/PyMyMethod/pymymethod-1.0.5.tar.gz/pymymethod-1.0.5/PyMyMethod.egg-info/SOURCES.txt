@@ -1,0 +1,11 @@
+setup.py
+PyMyMethod/Method.py
+PyMyMethod/ScreenControl.py
+PyMyMethod/__init__.py
+PyMyMethod/parentMethod.py
+PyMyMethod/parentScreen.py
+PyMyMethod.egg-info/PKG-INFO
+PyMyMethod.egg-info/SOURCES.txt
+PyMyMethod.egg-info/dependency_links.txt
+PyMyMethod.egg-info/requires.txt
+PyMyMethod.egg-info/top_level.txt
