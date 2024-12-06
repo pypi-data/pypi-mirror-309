@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "h5glance"
+authors = [{name = "European XFEL GmbH", email = "da-support@xfel.eu"}]
+maintainers = [{name = "Thomas Kluyver"}]
+readme = "README.rst"
+dependencies = [
+    "h5py >=2.10",
+    "htmlgen",
+]
+requires-python = ">=3.9"
+classifiers = ["License :: OSI Approved :: BSD License"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Source = "https://github.com/European-XFEL/h5glance"
+Changelog = "https://github.com/European-XFEL/h5glance/blob/master/CHANGES.rst"
+
+[project.scripts]
+h5glance = "h5glance.terminal:main"
+h5glance-html = "h5glance.html_cli:main"
