@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ibb_acik_veri_portali
+Version: 0.2.0
+Summary: Lorem ipsum dolor sit amet.
+Author: Arı Bilgi
+Author-email: example@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# IBB AÃ§Ä±k Veri PortalÄ±
+
+**IBB AÃ§Ä±k Veri PortalÄ±** projesi, Ä°stanbul BÃ¼yÃ¼kÅŸehir Belediyesi'nin (Ä°BB) AÃ§Ä±k Veri PortalÄ± Ã¼zerinden veri Ã§ekmek, analiz etmek ve kullanÄ±cÄ± dostu bir biÃ§imde sunmak amacÄ±yla geliÅŸtirilmiÅŸtir. Bu paket, veri Ã§ekme ve iÅŸleme iÅŸlemlerini kolaylaÅŸtÄ±rarak veri bilimciler, araÅŸtÄ±rmacÄ±lar ve geliÅŸtiriciler iÃ§in gÃ¼Ã§lÃ¼ bir araÃ§ seti sunar.
+
+## Ã–zellikler
+
+- Belirli bir `park_id`'ye gÃ¶re park verilerini JSON formatÄ±nda getirme.
+- Ä°BB'nin park verilerini bir pandas `DataFrame` nesnesi olarak dÃ¶nÃ¼ÅŸtÃ¼rme.
+- Tek bir park verisini pandas `Series` formatÄ±nda sunma.
+- Kolay ve hÄ±zlÄ± API baÄŸlantÄ±larÄ±.
+
+## Kurulum
+
+Projenizi `PyPI` Ã¼zerinden yÃ¼kleyebilirsiniz:
+
+```bash
+pip install ibb-acik-veri-portali
+```
+
+## KullanÄ±m
+
+### Temel KullanÄ±m
+
+```
+from ibb_acik_veri_portali import json, dataframe, series
+
+# TÃ¼m park verilerini Ã§ekme
+tum_parklar = json()
+print(tum_parklar)
+
+# Belirli bir parkÄ±n detaylarÄ±
+park_detayi = json(park_id=1)
+print(park_detayi)
+
+# Park verilerini pandas DataFrame olarak Ã§ekme
+df = dataframe()
+print(df.head())
+
+# Tek bir parkÄ± pandas Series formatÄ±nda Ã§ekme
+park_series = series(park_id=1)
+print(park_series)
+```
+
+## BaÄŸÄ±mlÄ±lÄ±klar
+
+- `pandas`
+- `requests`
+
+Bu baÄŸÄ±mlÄ±lÄ±klarÄ± projenizle birlikte kurabilirsiniz:
+
+```bash
+pip install pandas requests
+```
+
+## KatkÄ±da Bulunma
+
+KatkÄ±da bulunmak iÃ§in lÃ¼tfen bir [issue](https://github.com/kullanici/ibb-acik-veri-portali/issues) oluÅŸturun veya bir pull request gÃ¶nderin.
+
+## Lisans
+
+Bu proje MIT LisansÄ± ile lisanslanmÄ±ÅŸtÄ±r. Daha fazla bilgi iÃ§in `LICENSE` dosyasÄ±na gÃ¶z atabilirsiniz.
+
+## Ä°letiÅŸim
+
+SorularÄ±nÄ±z veya Ã¶nerileriniz iÃ§in [e-posta adresiniz] Ã¼zerinden bizimle iletiÅŸime geÃ§ebilirsiniz.
