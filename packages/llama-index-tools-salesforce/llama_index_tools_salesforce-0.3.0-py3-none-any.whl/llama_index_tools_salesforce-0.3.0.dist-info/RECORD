@@ -1,0 +1,5 @@
+llama_index/tools/salesforce/__init__.py,sha256=tXSLMvYEjwPiSvelBNoPOYX0Uy0dpBePs4kVVLV5h4A,99
+llama_index/tools/salesforce/base.py,sha256=qdtpju3p3vLrIafl8U86BTLQzUOQu3OBaiJqIzKLFuU,1854
+llama_index_tools_salesforce-0.3.0.dist-info/METADATA,sha256=a9VIzxbKRnVmKBhll9sD_4Vkbo0VWv1GOTIyWgBOsQw,2112
+llama_index_tools_salesforce-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_tools_salesforce-0.3.0.dist-info/RECORD,,
