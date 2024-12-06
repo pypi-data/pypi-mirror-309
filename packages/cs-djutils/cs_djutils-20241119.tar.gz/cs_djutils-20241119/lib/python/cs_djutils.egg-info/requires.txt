@@ -1,0 +1,4 @@
+cs.cmdutils>=20241119
+cs.lex>=20241119.1
+django
+typeguard
