@@ -1,0 +1,630 @@
+openapi: 3.0.1
+info:
+  title: Verzeichnisdienst Web-API
+  description: "Diese Spezifikation beschreibt ausschließlich die technische Schnittstelle der synchronen Web-API des Verzeichnisdiensts. Es wird keine Aussage darüber getroffen, wie der Dienst zu betreiben oder in den Übertragungsweg für regulierte Marktprozesse zu integrieren ist. Der Anwendungskontext wird durch übergreifende Regelungen in den zwei EDI@energy-Dokumenten \"Regelungen zum Übertragungsweg für API-Webdienste\" und \"Regelungen zum Verzeichnisdienst\" definiert.\r\n\r\nDie Schnittstellen des Verzeichnisdiensts umfassen sowohl eine synchrone Web-API als auch eine asynchrone WebSocket-API. Die jeweils gültige Fassung und deren zwei öffentlich abrufbare Internetadressen sind im EDI@Energy-Dokument \"Verzeichnisdienst API\" festgelegt und ebenfalls unter www.edi-energy.de(https://www.edi-energy.de) abrufbar.\r\n\r\nDie synchrone Web-API ist in dieser Spezifikation beschrieben und MUSS durch eine Implementierung umgesetzt werden. Die Spezifikation der asynchronen WebSocket-API muss ebenfalls umgesetzt werden.\r\n\r\n### Begriffliche Konventionen\r\n\r\nDie Schlüsselwörter \"MÜSSEN\" (Englisch \"MUST\"), \"DÜRFEN NICHT\" (Englisch \"MUST NOT\"), \"ERFORDERLICH\" (Englisch \"REQUIRED\"), \"SOLL\" (Englisch \"SHALL\"), \"SOLL NICHT\" (Englisch \"SHALL NOT\"), \"SOLLTE\" (Englisch \"SHOULD\"), \"SOLLTE NICHT\" (Englisch \"SHOULD NOT\"), \"EMPFOHLEN\" (Englisch \"RECOMMENDED\"), \"DÜRFEN\" (Englisch \"MAY\"), and \"FREIWILLIG\" (Englisch \"OPTIONAL\") in diesem Dokument sind gemäß [RFC2119] zu interpretieren. Dabei spielt die Groß- und Kleinschreibung keine Rolle.\r\n\r\n\r\n### Einträge im Verzeichnis\r\n\r\nDas Verzeichnis besteht aus einer Menge an Einträgen, welche die Kommunikationsparameter für den Aufruf von API-Webdiensten beschreiben. Jeder Eintrag ist eindeutig einem API-Anbieter und der Hauptversion eines konkreten API-Webdiensts zugeordnet. Weiterhin kann je API-Anbieter und Hauptversion eines API-Webdiensts maximal ein Eintrag im Verzeichnis vorhanden sein. Die Zuordnung eines Eintrags zu einem API-Webdienst findet über die API-Kennung (Feld *apiId*), zu einem API-Anbieter über dessen kontextspezifische Kennung (Feld *providerId*) und zu einer Hauptversion über die Angabe der Major-Version gemäß den Vorgaben zur Versionierung aus dem edi@enery-Dokument \"API-Guidelines\" (Feld *majorVersion*) statt.\r\n\r\nDer Inhalt und das Format der genannten Kennungen ist nicht Bestandteil dieser Spezifikation, sondern wird durch übergreifende Regelungen definiert. Im Kontext des Verzeichnisdiensts werden die Kennungen ausschließlich als textuelle Werte behandelt und nicht inhaltlich interpretiert.\r\n\r\nDie Verzeichniseinträge werden als JSON-Objekte repräsentiert und haben das Schema [ApiRecord](#model-ApiRecord).\r\n\r\n#### Subscriptions\r\n\r\nDer Verzeichnisdienst bietet einen Mechanismus, um Clients in Echtzeit über Änderungen an den Verzeichnisinhalten zu informieren. Dazu KANN ein Client ausgewählte Verzeichniseinträge abonnieren. Solange ein solches Abonnement besteht, MUSS der Server den entsprechenden Client über Änderungen an den jeweiligen Verzeichniseinträgen benachrichtigen. Dieses Konzept wird im Rahmen der vorliegenden Spezifikation als *Subscription* bezeichnet.\r\n\r\nEine Subscription gilt als *aktiv* und MUSS durch den Server bedient werden, sobald dieser dem Client die Einrichtung der Subscription bestätigt hat. Eine einmal eingerichtete Subscription bleibt für die gesamte Lebensdauer der verwendeten WebSocket-Verbindung oder bis zu einer expliziten Kündigung durch den Client oder den Server aktiv. Anschließend wird die Subscription als *gekündigt* bezeichnet und DARF durch den Server NICHT mehr bedient werden. Es KANN jedoch nach einer Kündigung über die bestehende WebSocket-Verbindung wieder eine neue Subscription für denselben Verzeichniseintrag erstellt werden. Für unterschiedliche Einträge DÜRFEN zudem mehrere Subscriptions parallel und unabhängig voneinander angefordert werden.\r\n\r\nDie Schnittstellen für die Verwaltung von Subscriptions sowie zum Versenden von Benachrichtungen werden durch die Spezifikation der asynchronen WebSocket-API des Verzeichnisdiensts beschrieben.\r\n\r\n#### Redirects\r\n\r\nFür einzelne Verzeichniseinträge KANN über die synchrone Web-API des Verzeichnisdiensts die Weiterleitung an einen anderen Verzeichnisdienst-Server konfiguriert werden, im Rahmen dieser Spezifikation als *Redirect* bezeichnet. Die Einrichtung oder das Löschen von einem Redirect MUSS über die asynchrone WebSocket-Schnittstelle vom Server an den Client signalisiert werden. Direkte Abfragen von Verzeichniseinträgen, für die ein Redirect eingerichtet ist, werden durch die synchrone Web-API per HTTP Redirect an die im Redirect hinterlegte Ziel-URL weitergeleitet. Ein Client MUSS einem solchen HTTP Redirect als Antwort auf seinen GET Request für einen Verzeichniseintrag folgen. Durch die Absicherung auf der Transportschicht und die Signatur von Verzeichniseinträgen (s. Kapitel \"Sicherheit\") ist die Sicherheit der Kommunikation und der übertragenen Verzeichniseinträge auch beim Folgen des HTTP Redirects gewährleistet.\r\n\r\nDie Verwaltung von Redirects ist unabhängig von der Existenz eines entsprechenden Verzeichniseintrags, d.h., ein Eintrag kann, muss jedoch nicht existieren. Bestehende Einträge bleiben durch die Erzeugung oder das Löschen von Redirects unberührt. Existierende Redirects können mit einer neuen Ziel-URL überschrieben werden.\r\n\r\nRedirects unterstützen die automatisierte Migration von Verzeichniseinträgen zwischen verschiedenen Verzeichnisdienst-Servern und tragen zur unterbrechungsfreien Kommunikation im Datenaustausch der regulierten Prozesse bei. Die Vorgaben und Verfahren für einen solchen Wechsel sind nicht Bestandteil dieser Spezifikation, sondern werden durch übergreifende Regelungen definiert.\r\n\r\n#### Statusmodell\r\n\r\nDer Verzeichnisdienst verfügt über ein Statusmodell, um den Lebenszyklus eines API-Webdiensts abzubilden. Über den Status im Verzeichniseintrag (Feld *status*) kann beschrieben werden, in welchem Zustand sich ein API-Endpunkt befindet. Sofern API-Nutzer den Status auswerten und bei Aufrufen berücksichtigen, werden verschiedene Szenarien bei der Einführung, der Inbetriebnahme, dem Testen, der Wartung und der Außerbetriebnahme von API-Webdiensten unterstützt und es besteht die Möglichkeit, die entsprechenden Prozesse zu automatisieren, indem das Statusmodell durch die verschiedenen Statuswerte das Deployment und den Betrieb sowie die Beschaffung von Zertifikaten von der (produktiven) Nutzung eines API-Webdiensts entkoppelt.\r\n\r\nDie folgenden Statuswerte mit ihrer jeweiligen Bedeutung sind vorgesehen:\r\n\r\n* __Offline:__ Der API-Webdienst steht nicht zur Verfügung und kann nicht durch einen Client aufgerufen werden.\r\n* __Test:__ Der API-Webdienst steht nur im Test-Modus zur Verfügung, d.h., Requests werden entgegengenommen und beantwortet, es findet jedoch keine fachliche Verarbeitung statt. Dieser Status dient vorwiegend der Überprüfung der technischen Interoperabilität mit Client-Implementierungen.\r\n* __Maintenance:__ Der API-Webdienst befindet sich im Wartungsmodus und steht temporär nicht zur Verfügung.\r\n* __Online:__ Der API-Webdienst steht zur Verfügung und kann durch einen Client aufgerufen werden.\r\n\r\n\r\n### Sicherheit\r\n\r\n#### Transportschicht\r\n\r\nDie Kommuniktation mit dem Verzeichnisdienst MUSS per TLS abgesichert sein, wobei die Anforderungen aus Kapitel 4 \"TLS-Kommunikation im WAN und in der\r\nMarktkommunikation\" in [TR-03116-3](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-3.html) an das TLS-Protokoll gelten.\r\n\r\nClients MÜSSEN sich mit TLS-Zertifikaten der Klasse EMT.API aus der SM-PKI authentifizieren. Andernfalls MUSS der Server den empfangenen HTTP Request mit den unten beschriebenen HTTP Status Codes ablehnen.\r\n\r\n#### Signatur von Verzeichniseinträgen\r\n\r\nJeder Eintrag im Verzeichnis MUSS durch den verantwortlichen API-Anbieter signiert werden. Dabei MUSS der private Schlüssel eines Signaturzertifikats der Klasse EMT.API aus der SM-PKI verwendet werden.\r\n\r\nAls Signaturverfahren MUSS *JSON Web Signature* (JWS, RFC 7515) mit *JWS Compact Serialization* angewendet werden. Analog zu den Vorgaben in Kapitel 9 \"Inhaltsdatensicherung in der Marktkommunikation\" in [TR-03116-3](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-3.html) MÜSSEN die dort referenzierten Algorithmen ECDSA zur Signatur- und SHA256 zur Hash-Berechnung genutzt werden.\r\n\r\nIm *JWS Protected Header* MÜSSEN ausschließlich die Parameter \"alg\" (Algorithm) mit dem Wert \"http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256\" und \"typ\" (Type) mit dem Wert \"JWT\" in der genannten Reihenfolge vorhanden sein; weitere Parameter DÜRFEN NICHT hinzugefügt werden. Der serialisierte JWS Protected Header ist demnach konstant und hat den folgenden Wert:\r\n\r\n* eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNlY2RzYS1zaGEyNTYiLCJ0eXAiOiJKV1QifQ\r\n\r\nDer *JWS Payload* besteht aus dem JSON-Objekt mit dem Schema [ApiRecord](#model-ApiRecord), welches den zu signierenden Verzeichniseintrag darstellt. Das Objekt MUSS dabei in seiner kanonischen Form gemäß RFC 8785 serialisiert sein.\r\n\r\nDie Signaturdaten MÜSSEN über die folgenden HTTP Header übertragen werden:\r\n\r\n* __X-BDEW-CERT:__ Das verwendete Signaturzertifikat, kodiert entsprechend Kapitel 2.1 aus RFC 9440.\r\n* __X-BDEW-SIGNATURE:__ Der base64url-kodierte Wert von *JWS Signature* gemäß RFC 7515. Um Redundanzen zu vermeiden, werden bei der Serialisierung der Signatur der *JWS Protected Header*, der *JWS Payload* sowie die Trennzeichen \".\" weggelassen, da sich die vollständige JWS aus dem übertragenen JSON-Objekt und dem Header X-BDEW-SIGNATURE rekonstruieren lässt.\r\n\r\n---\r\n"
+  version: 1.0.0
+paths:
+  /info/service/v1:
+    get:
+      tags:
+        - Infos
+      summary: Abfragen von Informationen über den bereitgestellten Verzeichnisdienst.
+      description: >-
+        Die Abfrage liefert Informationen über die Version der angebotenen
+        Schnittstelle des Verzeichnisdiensts sowie die Kontaktdaten des
+        technischen Betreibers.
+      responses:
+        "200":
+          description: >-
+            Die Anfrage wurde erfolgreich verarbeitet. Der Response Body enthält
+            die angefragten Informationen.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ServiceInfo"
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Das TLS-Client-Zertifikat ist nicht vertrauenswürdig oder gehört
+            nicht zur Klasse EMT.API.
+        "405":
+          description: Die verwendete HTTP-Methode ist im aktuellen Kontext ungültig.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+  /record/{providerId}/{apiId}/{majorVersion}/v1:
+    get:
+      tags:
+        - Records
+      summary: Abfragen eines Eintrags im Verzeichnis.
+      description: >-
+        Die Abfrage liefert den zu den Parametern passenden Eintrag und den HTTP
+        Status Code 200 (OK) zurück, sofern der Eintrag vorhanden und kein
+        Redirect konfiguriert ist. Wenn ein Redirect konfiguriert ist, wird der
+        Client per HTTP Status Code 307 (Temporary Redirect) an den
+        konfigurierten Endpunkt weitergeleitet. Andernfalls wird der HTTP Status
+        Code 404 (Not Found) zurückgegeben.
+      parameters:
+        - name: providerId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Anbieters; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: apiId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: majorVersion
+          in: path
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: >-
+            Die Anfrage wurde erfolgreich verarbeitet. Der Response Body enthält
+            den angefragten Verzeichniseintrag.
+          headers:
+            X-BDEW-CERT:
+              description: >-
+                Das verwendete Signaturzertifikat; Hinweise in Kapitel "Signatur
+                von Verzeichniseinträgen" beachten.
+              schema:
+                type: string
+                description: >-
+                  Das verwendete Signaturzertifikat; Hinweise in Kapitel
+                  "Signatur von Verzeichniseinträgen" beachten.
+                format: ""
+            X-BDEW-SIGNATURE:
+              description: >-
+                Die Signatur des Verzeichniseintrags; Hinweise in Kapitel
+                "Signatur von Verzeichniseinträgen" beachten.
+              schema:
+                type: string
+                description: >-
+                  Die Signatur des Verzeichniseintrags; Hinweise in Kapitel
+                  "Signatur von Verzeichniseinträgen" beachten.
+                format: ""
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiRecord"
+        "307":
+          description: >-
+            Für den angeforderten Eintrag ist eine Weiterleitung zu einem
+            anderen Verzeichnisdienst-Server aktiv.
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Das TLS-Client-Zertifikat ist nicht vertrauenswürdig oder gehört
+            nicht zur Klasse EMT.API.
+        "404":
+          description: Der angefragte Eintrag ist im Verzeichnis nicht vorhanden.
+        "405":
+          description: Die verwendete HTTP-Methode ist im aktuellen Kontext ungültig.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+    put:
+      tags:
+        - Records
+      summary: Anlegen oder aktualisieren eines Eintrags im Verzeichnis. (OPTIONAL)
+      description: "Dieser optionale Endpunkt bietet eine Selfservice-Möglichkeit zum Anlegen und Aktualisieren bestehender Einträge im Verzeichnis. Ein API-Anbieter ist nur berechtigt, Einträge für seine eigene Kennung (*providerId*) zu verwalten; die Authentifizierung geschieht über das TLS-Client-Zertifikat.\r\n\r\nEs gelten die folgenden Einschränkungen an die Parametrisierung der Anfrage:\r\n\r\n* Die Werte von *providerId* in der URL und im Request Body MÜSSEN mit dem OU-Attribut im Subject des TLS-Client-Zertifikats und des verwendeten Signaturzertifikats übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 403 (Forbidden) zurückgeben.\r\n* Die Werte von *apiId* in der URL und im Request Body MÜSSEN übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben.\r\n* Die Werte von *majorVersion* in der URL und im Request Body MÜSSEN übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben.\r\n* Wenn bereits ein Eintrag für den API-Webdienst des API-Anbieters im Verzeichnis existiert, dann MUSS der Wert von *revision* im Request Body gleich oder um eins größers sein als der Wert im bestehenden Eintrag, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben. Dabei MUSS der Wert des HTTP Headers *X-BDEW-EXPECTED-REVISION* dem um eins inkrementiert Wert von *revision* des bestehenden Verzeichniseintrags entsprechen.\r\n* Wenn bereits ein Eintrag für den API-Webdienst des API-Anbieters im Verzeichnis existiert und der Wert von *revision* im Request Body dem bestehenden Eintrag entspricht, dann MÜSSEN auch die weiteren Parameter im Request Body identisch zum bestehenden Eintrag sein und eine Implementierung mit dem HTTP Status Code 204 (No Content) antworten, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben. Der bestehende Eintrag MUSS in jedem Fall unverändert bleiben.\r\n* Wenn bereits ein Eintrag für den API-Webdienst des API-Anbieters im Verzeichnis existiert und der Wert von *revision* im Request Body nicht dem bestehenden Eintrag entspricht, dann MUSS der Parameter *lastUpdated* im Request Body neuer im Vergleich zum bestehenden Eintrag sein, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben.\r\n* Wenn derzeit kein Eintrag für den API-Webdienst des API-Anbieters im Verzeichnis existiert, dann MUSS der Wert von *revision* im Request Body entweder den Wert \"1\", falls der Eintrag bisher in dem angefragten Verzeichnis noch nicht existiert hat, oder den um eins inkrementiert Wert von *revision* des zuletzt vorhandenen Verzeichniseintrags aufweisen. Ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 400 (Bad Request) zurückgeben. Dabei MUSS der Wert des HTTP Headers *X-BDEW-EXPECTED-REVISION* den Wert \"1\" aufweisen, falls der Eintrag bisher in dem angefragten Verzeichnis noch nicht existiert hat, oder dem um eins inkrementiert Wert von *revision* des zuletzt vorhandenen Verzeichniseintrags entsprechen.\r\n            \r\nDas übermittelte Signaturzertifikat MUSS server-seitig entsprechend den Vorgaben in [TR-03109-4](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Smart-metering/Smart-Meterin-PKI/TechnRichtlinie/tr_03109-4.html) validiert werden. Ebenso MUSS die übermittelte Signatur server-seitig validiert werden. Schlägt die Validierung fehl, DARF der Eintrag im Verzeichnis NICHT angelegt bzw. aktualisiert und MUSS der Request mit dem HTTP Status Code 400 (Bad Request) abgelehnt werden.\r\n\r\nEine Implementierung MUSS den HTTP Status Code 405 zurückgeben, wenn der Selfservice nicht unterstützt wird."
+      parameters:
+        - name: providerId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Anbieters; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: apiId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: majorVersion
+          in: path
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: X-BDEW-CERT
+          in: header
+          description: >-
+            Das verwendete Signaturzertifikat; Hinweise in Kapitel "Signatur von
+            Verzeichniseinträgen" beachten.
+          required: true
+          schema:
+            type: string
+        - name: X-BDEW-SIGNATURE
+          in: header
+          description: >-
+            Die Signatur des Verzeichniseintrags; Hinweise in Kapitel "Signatur
+            von Verzeichniseinträgen" beachten.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Der aktualisierte, vollständige Verzeichniseintrag.
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ApiRecord"
+        required: true
+      responses:
+        "201":
+          description: Ein neuer Eintrag wurde erfolgreich im Verzeichnis angelegt.
+        "204":
+          description: Der bestehende Eintrag wurde erfolgreich aktualisiert.
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+          headers:
+            X-BDEW-EXPECTED-REVISION:
+              description: >-
+                MUSS vorhanden sein, wenn der Wert von *revision* im Request
+                Body nicht den oben beschriebenen Einschränkungen an die
+                Parametrisierung der Anfrage entspricht. DARF ansonsten NICHT
+                vorhanden sein.
+              schema:
+                type: integer
+                description: >-
+                  MUSS vorhanden sein, wenn der Wert von *revision* im Request
+                  Body nicht den oben beschriebenen Einschränkungen an die
+                  Parametrisierung der Anfrage entspricht. DARF ansonsten NICHT
+                  vorhanden sein.
+                format: ""
+        "403":
+          description: >-
+            Die authentifizierungsrelevanten Parameter der Anfrage sind ungültig
+            oder inkonsistent (s. Einschränkungen der Parametrisierung).
+        "405":
+          description: Der Selfservice wird nicht unterstützt.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+    delete:
+      tags:
+        - Records
+      summary: Löschen eines Eintrags im Verzeichnis. (OPTIONAL)
+      description: "Dieser optionale Endpunkt bietet eine Selfservice-Möglichkeit zum Löschen bestehender Einträge im Verzeichnis. Ein API-Anbieter ist nur berechtigt, Einträge für seine eigene Kennung (*providerId*) zu löschen; die Authentifizierung geschieht über das TLS-Client-Zertifikat.\r\n\r\nEs gelten die folgenden Einschränkungen an die Parametrisierung der Anfrage:\r\n            \r\n* Der Wert von *providerId* in der URL MUSS mit dem OU-Attribut im Subject des TLS-Client-Zertifikats übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 403 (Forbidden) zurückgeben.\r\n* Wenn der Eintrag für den API-Webdienst des API-Anbieters im Verzeichnis nicht existieren, dann MUSS eine Implementierung den HTTP Status Code 204 (No Content) zurückgeben.\r\n  \r\nEine Implementierung MUSS den HTTP Status Code 405 zurückgeben, wenn der Selfservice nicht unterstützt wird."
+      parameters:
+        - name: providerId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Anbieters; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: apiId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: majorVersion
+          in: path
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "204":
+          description: Der Eintrag wurde erfolgreich aus dem Verzeichnis entfernt.
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Die authentifizierungsrelevanten Parameter der Anfrage sind ungültig
+            oder inkonsistent (s. Einschränkungen der Parametrisierung).
+        "404":
+          description: Der Eintrag ist im Verzeichnis nicht vorhanden.
+        "405":
+          description: Der Selfservice wird nicht unterstützt.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+  /redirect/{providerId}/{apiId}/{majorVersion}/v1:
+    put:
+      tags:
+        - Redirects
+      summary: >-
+        Konfigurieren eines Redirects für einen Eintrag im Verzeichnis.
+        (OPTIONAL)
+      description: "Dieser optionale Endpunkt bietet eine Selfservice-Möglichkeit zum Konfigurieren von Redirects für die Abfrage von Einträgen im Verzeichnis. Ein API-Anbieter ist nur berechtigt, Redirects für seine eigene Kennung (*providerId*) anzulegen; die Authentifizierung geschieht über das TLS-Client-Zertifikat. Bestehende Redirects werden mit der neuen Ziel-URL überschrieben.\r\n\r\nEs gelten die folgenden Einschränkungen an die Parametrisierung der Anfrage:\r\n\r\n* Der Wert von *providerId* in der URL MUSS mit dem OU-Attribut im Subject des TLS-Client-Zertifikats übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 403 (Forbidden) zurückgeben.\r\n  \r\nEine Implementierung MUSS den HTTP Status Code 405 zurückgeben, wenn der Selfservice nicht unterstützt wird."
+      parameters:
+        - name: providerId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Anbieters; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: apiId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: majorVersion
+          in: path
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: url
+          in: query
+          description: >-
+            Ziel-URL, an die Abfragen für den entsprechenden Verzeichniseintrag
+            weitergeleitet werden sollen. Die URL MUSS auf einen
+            Verzeichnisdienst gemäß der vorliegenden Spezifikation verweisen.
+            Beim Anlegen des Redirects findet keine Prüfung statt, ob die URL
+            auf einen gültigen Verzeichnisdienst verweist.
+          required: true
+          schema:
+            type: string
+      responses:
+        "201":
+          description: Der Redirect wurde erfolgreich eingerichtet.
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Die authentifizierungsrelevanten Parameter der Anfrage sind ungültig
+            oder inkonsistent (s. Einschränkungen der Parametrisierung).
+        "405":
+          description: Der Selfservice wird nicht unterstützt.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+    delete:
+      tags:
+        - Redirects
+      summary: Löschen eines Redirects für einen Eintrag im Verzeichnis. (OPTIONAL)
+      description: "Dieser optionale Endpunkt bietet eine Selfservice-Möglichkeit zum Löschen bestehender Redirects für die Abfrage von Einträgen im Verzeichnis. Ein API-Anbieter ist nur berechtigt, Redirects für seine eigene Kennung (*providerId*) zu löschen; die Authentifizierung geschieht über das TLS-Client-Zertifikat.\r\n\r\nEs gelten die folgenden Einschränkungen an die Parametrisierung der Anfrage:\r\n\r\n* Der Wert von *providerId* in der URL MUSS mit dem OU-Attribut im Subject des TLS-Client-Zertifikats übereinstimmen, ansonsten MUSS eine Implementierung den Request ablehnen und den HTTP Status Code 403 (Forbidden) zurückgeben.\r\n  \r\nEine Implementierung MUSS den HTTP Status Code 405 zurückgeben, wenn der Selfservice nicht unterstützt wird."
+      parameters:
+        - name: providerId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Anbieters; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: apiId
+          in: path
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+          required: true
+          schema:
+            type: string
+        - name: majorVersion
+          in: path
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        "200":
+          description: >-
+            Der Redirect wurde erfolgreich gelöscht. Wird auch zurückgegeben,
+            falls kein entsprechender Redirect vorhanden war.
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Die authentifizierungsrelevanten Parameter der Anfrage sind ungültig
+            oder inkonsistent (s. Einschränkungen der Parametrisierung).
+        "405":
+          description: Der Selfservice wird nicht unterstützt.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+  /ws/subscriptions/v1:
+    get:
+      tags:
+        - Subscriptions
+      summary: Verbinden mit der asynchronen WebSocket-API des Servers.
+      description: "Mit dem Request an diese Ressource kann der Aufrufer eine Verbindung zur asynchronen WebSocket-API des Verzeichnisdienst-Servers aufbauen. Wenn der Verbindungsaufbau erfolgreich war, wird der HTTP Status Code 101 (Switching Protocols) zurückgegeben und andernfalls die unten beschriebenen Fehler.\r\n            \r\nDas Protokoll für den Nachrichtenaustausch über die etablierte WebSocket-Verbindung ist in [*TODO: Referenz auf AsyncAPI-Spec hinzufügen*] definiert."
+      parameters:
+        - name: Host
+          in: header
+          description: >-
+            MUSS gemäß [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+            mit dem Host-Namen und optional dem Port belegt sein.
+          schema:
+            type: string
+        - name: Upgrade
+          in: header
+          description: >-
+            MUSS gemäß [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+            mit dem Wert *websocket* belegt sein.
+          schema:
+            type: string
+        - name: Connection
+          in: header
+          description: >-
+            MUSS gemäß [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+            mit dem Wert *Upgrade* belegt sein.
+          schema:
+            type: string
+        - name: Sec-WebSocket-Key
+          in: header
+          description: >-
+            MUSS gemäß [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+            belegt sein.
+          schema:
+            type: string
+        - name: Sec-WebSocket-Version
+          in: header
+          description: >-
+            MUSS gemäß [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+            mit dem Wert *13* belegt sein.
+          schema:
+            type: string
+      responses:
+        "101":
+          description: >-
+            Die WebSocket-Verbindung konnte erfolgreich aufgebaut werden. Alle
+            folgenden, über die bestehende Verbindung übertragenen Nachrichten
+            MÜSSEN konform zum Protokoll der asynchronen WebSocket-API des
+            Verzeichnisdiensts sein.
+          headers:
+            Upgrade:
+              description: >-
+                MUSS gemäß [RFC
+                6455](https://datatracker.ietf.org/doc/html/rfc6455) mit dem
+                Wert *websocket* belegt sein.
+              schema:
+                type: string
+                description: >-
+                  MUSS gemäß [RFC
+                  6455](https://datatracker.ietf.org/doc/html/rfc6455) mit dem
+                  Wert *websocket* belegt sein.
+                format: ""
+            Connection:
+              description: >-
+                MUSS gemäß [RFC
+                6455](https://datatracker.ietf.org/doc/html/rfc6455) mit dem
+                Wert *Upgrade* belegt sein.
+              schema:
+                type: string
+                description: >-
+                  MUSS gemäß [RFC
+                  6455](https://datatracker.ietf.org/doc/html/rfc6455) mit dem
+                  Wert *Upgrade* belegt sein.
+                format: ""
+            Sec-WebSocket-Accept:
+              description: >-
+                MUSS gemäß [RFC
+                6455](https://datatracker.ietf.org/doc/html/rfc6455) belegt
+                sein.
+              schema:
+                type: string
+                description: >-
+                  MUSS gemäß [RFC
+                  6455](https://datatracker.ietf.org/doc/html/rfc6455) belegt
+                  sein.
+                format: ""
+        "400":
+          description: >-
+            Die Anfrage enthält Fehler und kann durch den Server nicht
+            verarbeitet werden.
+        "403":
+          description: >-
+            Das TLS-Client-Zertifikat ist nicht vertrauenswürdig oder gehört
+            nicht zur Klasse EMT.API.
+        "405":
+          description: Die verwendete HTTP-Methode ist im aktuellen Kontext ungültig.
+        "429":
+          description: Das Limit an Anfragen wurde überschritten.
+        "500":
+          description: Bei der Bearbeitung der Anfrage ist ein interner Fehler aufgetreten.
+        "503":
+          description: Die Anfrage kann temporär nicht verarbeitet werden.
+        "504":
+          description: Bei der Bearbeitung der Anfrage ist ein Timeout aufgetreten.
+components:
+  schemas:
+    ApiRecord:
+      required:
+        - apiId
+        - lastUpdated
+        - majorVersion
+        - providerId
+        - revision
+        - status
+        - url
+      type: object
+      properties:
+        providerId:
+          minLength: 1
+          type: string
+          description: >-
+            Eindeutige Kennung des verantwortlichen API-Anbieters; Hinweise in
+            Kapitel "Einträge im Verzeichnis" beachten.
+        apiId:
+          minLength: 1
+          type: string
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel "Einträge
+            im Verzeichnis" beachten.
+        majorVersion:
+          type: integer
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel "Einträge im
+            Verzeichnis" beachten.
+          format: int32
+        url:
+          type: string
+          description: >-
+            Adresse des Endpunkts, an dem der API-Webdienst aufgerufen werden
+            kann.
+          format: uri
+        additionalMetadata:
+          type: object
+          additionalProperties:
+            type: string
+          description: >-
+            Zusätzliche Informationen über den Aufruf oder die Antworten des
+            entsprechenden API-Webdiensts in Form von Schlüssel-Wert-Paaren.
+            Dieses Feld ist optional und es wird durch übergreifende Regelungen
+            außerhalb dieser Spezifikation sowie durch die Spezifikation des
+            entsprechenden API-Webdiensts festgelegt, welche Informationen zu
+            hinterlegen sind.
+          nullable: true
+        lastUpdated:
+          type: string
+          description: Zeitpunkt der letzten Aktualisierung des Verzeichniseintrags.
+          format: date-time
+        revision:
+          type: integer
+          description: >-
+            Fortlaufende Revisionsnummer des Verzeichniseintrags. Wird bei jeder
+            Aktualisierung des Eintrags inkrementiert.
+          format: int64
+        status:
+          enum:
+            - Offline
+            - Test
+            - Maintenance
+            - Online
+          type: string
+          description: >-
+            Aktueller Status des hinterlegten API-Endpunkts; Hinweise in Kapitel
+            "Statusmodell" beachten.
+      additionalProperties: false
+      description: Eintrag im Verzeichnis.
+      example:
+        providerId: "1234567890123"
+        apiId: example
+        majorVersion: 1
+        url: https://www.example.org/api/resource/v1
+        additionalMetadata: null
+        lastUpdated: "2024-10-01T00:00:00+00:00"
+        revision: 1
+        status: Test
+    ContactInfo:
+      type: object
+      properties:
+        email:
+          type: string
+          description: Email-Adresse des technischen Supports.
+          nullable: true
+        phone:
+          type: string
+          description: Telefonnummer des technischen Supports.
+          nullable: true
+      additionalProperties: false
+      description: "<p>Kontaktdaten des technischen Betreibers.</p>\r\n<p>\r\n  <i>\r\n    <b>Hinweis:</b> Die einzelnen Felder sind OPTIONAL, jedoch MUSS mindestens eins befüllt sein.</i>\r\n</p>"
+    ServiceInfo:
+      required:
+        - contact
+        - lastUpdated
+        - revision
+        - version
+      type: object
+      properties:
+        version:
+          minLength: 1
+          type: string
+          description: Vollqualifizierte Versionsnummer der implementierten Schnittstelle.
+        contact:
+          $ref: "#/components/schemas/ContactInfo"
+        lastUpdated:
+          type: string
+          description: Zeitpunkt der letzten Aktualisierung dieser Information.
+          format: date-time
+        revision:
+          type: integer
+          description: >-
+            Fortlaufende Revisionsnummer dieser Information. Beginnt bei 1 und
+            wird bei jeder Aktualisierung inkrementiert.
+          format: int64
+      additionalProperties: false
+      description: Informationen über den bereitgestellten Verzeichnisdienst.
+      example:
+        version: 1.0.0
+        contact:
+          email: support@example.org
+          phone: +49 555 12345678
+        lastUpdated: "2024-10-01T00:00:00+00:00"
+        revision: 1

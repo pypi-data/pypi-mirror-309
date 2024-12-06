@@ -1,0 +1,803 @@
+asyncapi: 3.0.0
+info:
+  title: Verzeichnisdienst WebSocket-API
+  version: 1.0.0
+  description: >
+    Diese Spezifikation beschreibt ausschließlich die technische Schnittstelle
+    der asynchronen WebSocket-API des Verzeichnisdiensts. Es wird keine Aussage
+    darüber getroffen, wie der Dienst zu betreiben oder in den Übertragungsweg
+    für regulierte Marktprozesse zu integrieren ist. Der Anwendungskontext wird
+    durch übergreifende Regelungen in den zwei EDI@energy-Dokumenten "Regelungen
+    zum Übertragungsweg für API-Webdienste" und "Regelungen zum
+    Verzeichnisdienst" definiert.
+
+
+    Die Schnittstellen des Verzeichnisdiensts umfassen sowohl eine synchrone
+    Web-API als auch eine asynchrone WebSocket-API. Die jeweils gültige Fassung
+    und deren zwei öffentlich abrufbare Internetadresse sind im
+    EDI@Energy-Dokument "Verzeichnisdienst API" festgelegt und ebenfalls unter
+    www.edi-energy.de(https://www.edi-energy.de) abrufbar.
+
+
+    Die asynchrone WebSocket-API ist in dieser Spezifikation beschrieben und
+    MUSS durch eine Implementierung umgesetzt werden. Die Spezifikation der
+    synchronen Web-API muss ebenfalls umgesetzt werden.
+
+
+
+    ### Begriffliche Konventionen
+
+
+    Die Schlüsselwörter "MÜSSEN" (Englisch "MUST"), "DÜRFEN NICHT" (Englisch
+    "MUST NOT"), "ERFORDERLICH" (Englisch "REQUIRED"), "SOLL" (Englisch
+    "SHALL"), "SOLL NICHT" (Englisch "SHALL NOT"), "SOLLTE" (Englisch "SHOULD"),
+    "SOLLTE NICHT" (Englisch "SHOULD NOT"), "EMPFOHLEN" (Englisch
+    "RECOMMENDED"), "DÜRFEN" (Englisch "MAY"), and "FREIWILLIG" (Englisch
+    "OPTIONAL") in diesem Dokument sind gemäß [RFC2119] zu interpretieren. Dabei
+    spielt die Groß- und Kleinschreibung keine Rolle.
+
+
+    ### Einträge im Verzeichnis
+
+
+    Das Verzeichnis besteht aus einer Menge an Einträgen, welche die
+    Kommunikationsparameter für den Aufruf von API-Webdiensten beschreiben.
+    Jeder Eintrag ist eindeutig einem API-Anbieter und der Hauptversion eines
+    konkreten API-Webdiensts zugeordnet. Weiterhin kann je API-Anbieter und
+    Hauptversion eines API-Webdiensts maximal ein Eintrag im Verzeichnis
+    vorhanden sein. Die Zuordnung eines Eintrags zu einem API-Webdienst findet
+    über die API-Kennung (Feld *apiId*), zu einem API-Anbieter über dessen
+    kontextspezifische Kennung (Feld *providerId*) und zu einer Hauptversion
+    über die Angabe der Major-Version gemäß den Vorgaben zur Versionierung aus
+    dem edi@enery-Dokument "API-Guidelines" (Feld *majorVersion*) statt.
+
+
+    Der Inhalt und das Format der genannten Kennungen ist nicht Bestandteil
+    dieser Spezifikation, sondern wird durch übergreifende Regelungen definiert.
+    Im Kontext des Verzeichnisdiensts werden die Kennungen ausschließlich als
+    textuelle Werte behandelt und nicht inhaltlich interpretiert.
+
+
+    Die Verzeichniseinträge werden als JSON-Objekte repräsentiert und haben das
+    Schema [ApiRecord](#schema-ApiRecord).
+
+
+    #### Subscriptions
+
+
+    Der Verzeichnisdienst bietet einen Mechanismus, um Clients in Echtzeit über
+    Änderungen an den Verzeichnisinhalten zu informieren. Dazu KANN ein Client
+    ausgewählte Verzeichniseinträge abonnieren. Solange ein solches Abonnement
+    besteht, MUSS der Server den entsprechenden Client über Änderungen an den
+    jeweiligen Verzeichniseinträgen benachrichtigen. Dieses Konzept wird im
+    Rahmen der vorliegenden Spezifikation als *Subscription* bezeichnet.
+
+
+    Eine Subscription gilt als *aktiv* und MUSS durch den Server bedient werden,
+    sobald dieser dem Client die Einrichtung der Subscription bestätigt hat.
+    Eine einmal eingerichtete Subscription bleibt für die gesamte Lebensdauer
+    der verwendeten WebSocket-Verbindung oder bis zu einer expliziten Kündigung
+    durch den Client oder den Server aktiv. Anschließend wird die Subscription
+    als *gekündigt* bezeichnet und DARF durch den Server NICHT mehr bedient
+    werden. Es KANN jedoch nach einer Kündigung über die bestehende
+    WebSocket-Verbindung wieder eine neue Subscription für denselben
+    Verzeichniseintrag erstellt werden. Für unterschiedliche Einträge DÜRFEN
+    zudem mehrere Subscriptions parallel und unabhängig voneinander angefordert
+    werden.
+
+
+    Die Schnittstellen für die Verwaltung von Subscriptions sowie zum Versenden
+    von Benachrichtungen werden durch die vorliegende Spezifikation beschrieben.
+
+
+    #### Redirects
+
+
+    Für einzelne Verzeichniseinträge KANN über die synchrone Web-API des
+    Verzeichnisdiensts die Weiterleitung an einen anderen
+    Verzeichnisdienst-Server konfiguriert werden, im Rahmen dieser Spezifikation
+    als *Redirect* bezeichnet. Die Einrichtung oder das Löschen von einem
+    Redirect MUSS über die in diesem Dokument beschriebene Schnittstelle vom
+    Server an den Client signalisiert werden. Direkte Abfragen von
+    Verzeichniseinträgen, für die ein Redirect eingerichtet ist, werden durch
+    die synchrone Web-API per HTTP Redirect an die im Redirect hinterlegte
+    Ziel-URL weitergeleitet. Ein Client MUSS einem solchen HTTP Redirect als
+    Antwort auf seinen GET Request für einen Verzeichniseintrag folgen. Durch
+    die Absicherung auf der Transportschicht und die Signatur von
+    Verzeichniseinträgen (s. Kapitel [Sicherheit](#sicherheit)) ist die
+    Sicherheit der Kommunikation und der übertragenen Verzeichniseinträge auch
+    beim Folgen des HTTP Redirects gewährleistet.
+
+
+    Die Verwaltung von Redirects ist unabhängig von der Existenz eines
+    entsprechenden Verzeichniseintrags, d.h., ein Eintrag kann, muss jedoch
+    nicht existieren. Bestehende Einträge bleiben durch die Erzeugung oder das
+    Löschen von Redirects unberührt. Existierende Redirects können mit einer
+    neuen Ziel-URL überschrieben werden.
+
+
+    Redirects unterstützen die automatisierte Migration von Verzeichniseinträgen
+    zwischen verschiedenen Verzeichnisdienst-Servern und tragen zur
+    unterbrechungsfreien Kommunikation im Datenaustausch der regulierten
+    Prozesse bei. Die Vorgaben und Verfahren für einen solchen Wechsel sind
+    nicht Bestandteil dieser Spezifikation, sondern werden durch übergreifende
+    Regelungen definiert.
+
+
+    #### Statusmodell
+
+
+    Der Verzeichnisdienst verfügt über ein Statusmodell, um den Lebenszyklus
+    eines API-Webdiensts abzubilden. Über den Status im Verzeichniseintrag (Feld
+    *status*) kann beschrieben werden, in welchem Zustand sich ein API-Endpunkt
+    befindet. Sofern API-Nutzer den Status auswerten und bei Aufrufen
+    berücksichtigen, werden verschiedene Szenarien bei der Einführung, der
+    Inbetriebnahme, dem Testen, der Wartung und der Außerbetriebnahme von
+    API-Webdiensten unterstützt und es besteht die Möglichkeit, die
+    entsprechenden Prozesse zu automatisieren, indem das Statusmodell durch die
+    verschiedenen Statuswerte das Deployment und den Betrieb sowie die
+    Beschaffung von Zertifikaten von der (produktiven) Nutzung eines
+    API-Webdiensts entkoppelt.
+
+
+    Die folgenden Statuswerte mit ihrer jeweiligen Bedeutung sind vorgesehen:
+
+
+    * __Offline:__ Der API-Webdienst steht nicht zur Verfügung und kann nicht
+    durch einen Client aufgerufen werden.
+
+    * __Test:__ Der API-Webdienst steht nur im Test-Modus zur Verfügung, d.h.,
+    Requests werden entgegengenommen und beantwortet, es findet jedoch keine
+    fachliche Verarbeitung statt. Dieser Status dient vorwiegend der Überprüfung
+    der technischen Interoperabilität mit Client-Implementierungen.
+
+    * __Maintenance:__ Der API-Webdienst befindet sich im Wartungsmodus und
+    steht temporär nicht zur Verfügung.
+
+    * __Online:__ Der API-Webdienst steht zur Verfügung und kann durch einen
+    Client aufgerufen werden.
+
+
+
+    ### Sicherheit
+
+
+    #### Transportschicht
+
+
+    Die Kommuniktation mit dem Verzeichnisdienst MUSS per TLS abgesichert sein,
+    wobei die Anforderungen aus Kapitel 4 "TLS-Kommunikation im WAN und in der
+    Marktkommunikation" in
+    [TR-03116-3](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-3.html)
+    an das TLS-Protokoll gelten.
+
+
+    Clients MÜSSEN sich mit TLS-Zertifikaten der Klasse EMT.API aus der SM-PKI
+    authentifizieren. Andernfalls MUSS der Server eingehende Verbindungsanfragen
+    wie in der Spezifikation der synchronen Web-API des Verzeichnisdiensts
+    beschriebenen ablehnen.
+
+
+    #### Signatur von Verzeichniseinträgen
+
+
+    Jeder Eintrag im Verzeichnis MUSS durch den verantwortlichen API-Anbieter
+    signiert werden. Dabei MUSS der private Schlüssel eines Signaturzertifikats
+    der Klasse EMT.API aus der SM-PKI verwendet werden.
+
+
+    Als Signaturverfahren MUSS *JSON Web Signature* (JWS, RFC 7515) mit *JWS
+    Compact Serialization* angewendet werden. Analog zu den Vorgaben in Kapitel
+    9 "Inhaltsdatensicherung in der Marktkommunikation" in
+    [TR-03116-3](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-3.html)
+    MÜSSEN die dort referenzierten Algorithmen ECDSA zur Signatur- und SHA256
+    zur Hash-Berechnung genutzt werden.
+
+
+    Im *JWS Protected Header* MÜSSEN ausschließlich die Parameter "alg"
+    (Algorithm) mit dem Wert
+    "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256" und "typ" (Type) mit
+    dem Wert "JWT" in der genannten Reihenfolge vorhanden sein; weitere
+    Parameter DÜRFEN NICHT hinzugefügt werden. Der serialisierte JWS Protected
+    Header ist demnach konstant und hat den folgenden Wert:
+
+
+    *
+    eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNlY2RzYS1zaGEyNTYiLCJ0eXAiOiJKV1QifQ
+
+
+    Der *JWS Payload* besteht aus dem JSON-Objekt mit dem Schema
+    [ApiRecord](#schema-ApiRecord), welches den zu signierenden
+    Verzeichniseintrag darstellt. Das Objekt MUSS dabei in seiner kanonischen
+    Form gemäß RFC 8785 serialisiert sein.
+
+
+    Die Signaturdaten MÜSSEN in Form eines JSON-Objekts mit dem Schema
+    [SignedApiRecord](#schema-SignedApiRecord) übertragen werden. An das Format
+    der einzelnen Felder dieses Objekts gelten die folgenden Anforderungen:
+
+
+    * __signingCert:__ Das verwendete Signaturzertifikat, kodiert entsprechend
+    Kapitel 2.1 aus RFC 9440.
+
+    * __signature:__ Der base64url-kodierte Wert von *JWS Signature* gemäß RFC
+    7515. Um Redundanzen zu vermeiden, werden bei der Serialisierung der
+    Signatur der *JWS Protected Header*, der *JWS Payload* sowie die
+    Trennzeichen "." weggelassen, da sich die vollständige JWS aus dem
+    signierten JSON-Objekt und dem Feld "signature" rekonstruieren lässt.
+
+
+    ---
+defaultContentType: application/json
+channels:
+  subscriptions:
+    address: /ws/subscriptions/v1
+    bindings:
+      ws:
+        method: GET
+    messages:
+      SubscriptionRequestMessage:
+        $ref: "#/components/messages/SubscriptionRequestMessage"
+      DirectoryNotificationMessage:
+        $ref: "#/components/messages/DirectoryNotificationMessage"
+operations:
+  subscribe:
+    action: send
+    channel:
+      $ref: "#/channels/subscriptions"
+    messages:
+      - $ref: "#/channels/subscriptions/messages/SubscriptionRequestMessage"
+    summary: Verwalten von Subscriptions
+    description: >-
+      Der Client teilt dem Server über diese Operation mit, für welche
+      Verzeichniseinträge der Client über Änderungen informiert werden möchte.
+      Über den Parameter *requested* können neue Subscriptions angefordert
+      werden. Über den Parameter *canceled* können bestehende Subscriptions
+      gekündigt werden.
+
+
+      Der Server MUSS dem Client auf die Anfrage über die Operation
+      [notify](#operation-receive-notify) antworten. Eine neu angeforderte
+      Subscription gilt erst als aktiv, wenn diese durch den Server bestätigt
+      wurde. Ebenso gilt eine Subscription erst als gekündigt, wenn dies durch
+      den Server bestätigt wurde.
+
+
+      Es gelten die folgenden Einschränkungen an die Parametrisierung der
+      Operation:
+
+
+      * Die Referenz auf einen konkreten Verzeichniseintrag (Objekt
+      [ApiRecordRef](#schema-ApiRecordRef)) DARF NICHT im Parameter *requested*
+      und im Parameter *canceled* gleichzeitig enthalten sein. Ansonsten MUSS
+      der Server den Request ablehnen und mit einem HTTP Status Code 400 (Bad
+      Request) im [Error](#schema-Error)-Objekt der Operation
+      [notify](#operation-receive-notify) antworten.
+  notify:
+    action: receive
+    channel:
+      $ref: "#/channels/subscriptions"
+    messages:
+      - $ref: "#/channels/subscriptions/messages/DirectoryNotificationMessage"
+    summary: Benachrichtigen des Clients
+    description: >-
+      Der Server benachrichtigt den Client mittels dieser Operation über
+      Änderungen an Verzeichniseinträgen, aktive und gekündigte Subscriptions
+      sowie aufgetretene Fehler. Die Benachrichtigungen werden asynchron durch
+      den Server als Antwort auf die Operation
+      [subscribe](#operation-send-subscribe) sowie ereignisbasiert versendet.
+
+
+      #### Benachrichtigungen bei Subscriptions
+
+
+      Der Server MUSS den Client über diese Operation benachrichtigen, wenn der
+      Client zuvor Subscriptions über die Operation
+      [subscribe](#operation-send-subscribe) angefordert bzw. gekündigt hat.
+      Sofern bei der Einrichtung bzw. Kündigung der Subscriptions server-seitig
+      keine Fehler aufgetreten sind, sind die Felder der Benachrichtigung nach
+      den folgenden Regeln zu belegen:
+
+
+      * __subscriptionId:__ MUSS aus der entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      übernommen werden.
+
+
+      * __serviceInfo:__ DARF ausgelassen werden. SOLLTE durch den Server
+      gesetzt werden, wenn die Benachrichtigung als Antwort auf die erste
+      [subscribe](#operation-send-subscribe)-Operation des jeweiligen Clients
+      erstellt wird.
+
+
+      * __modified:__ MUSS alle vorhandenen Verzeichniseinträge ohne
+      konfigurierten Redirect enthalten, die im Parameter *requested* der
+      entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      referenziert sind und für die eine Subscription erfolgreich eingerichtet
+      wurde, sofern der jeweilige Parameter *knownRevision* im Request den Wert
+      0 hat bzw. fehlt oder kleiner ist als der Wert des Felds *revision* des
+      entsprechenden Eintrags.
+
+
+      * __redirected:__ MUSS die Referenzen auf alle vorhandenen
+      Verzeichniseinträge mit konfiguriertem Redirect enthalten, die im
+      Parameter *requested* der entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      referenziert sind und für die eine Subscription erfolgreich eingerichtet
+      wurde. Das Feld *url* MUSS dabei auf die jeweils konfigurierte Ziel-URL
+      des entsprechenden Redirects gesetzt werden.
+
+
+      * __deleted:__ MUSS die Referenzen auf alle nicht vorhandenen
+      Verzeichniseinträge enthalten, die im Parameter *requested* der
+      entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      referenziert sind und für die eine Subscription erfolgreich eingerichtet
+      wurde.
+
+
+      * __canceled:__ MUSS alle Referenzen aus dem Parameter *canceled* der
+      entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      enthalten und für diese den Wert *true* im Feld *canceledByClient* setzen.
+      Außerdem MUSS für jede abgelehnte Subscription (s.u.) ein Objekt mit dem
+      Wert *false* im Feld *canceledByClient* vorhanden sein. Das Feld *reason*
+      SOLLTE für abgelehnte Subscriptions mit einer aussagekräftigen Begründung
+      befüllt werden.
+
+
+      * __error:__ DARF NICHT gesetzt sein.
+
+
+      Alle vom Client angefragten und nicht explizit über das Feld *canceled*
+      abgelehnten Subscriptions gelten implizit mit der gesendeten
+      Benachrichtigung als bestätigt. Der Server MUSS den Client von der
+      Bestätigung bis zur expliziten Kündigung einer Subscription oder dem
+      Schließen der WebSocket-Verbindung entsprechend den Regeln in Abschnitt
+      [Ereignisbasierte
+      Benachrichtigungen](#ereignisbasierte-benachrichtigungen) über Änderungen
+      an den entsprechenden Verzeichniseinträgen informieren. Über Einträge ohne
+      aktive Subscription DARF der Server den Client NICHT informieren. Alle im
+      Feld *canceled* referenzierten Subscriptions gelten mit der
+      Benachrichtigung des Clients als gekündigt.
+
+
+      Angefragte Subscriptions dürfen nur dann abgelehnt werden, wenn der Server
+      zu keinem Zeitpunkt in der Lage ist bzw. sein wird, den entsprechenden
+      Verzeichniseintrag bereitzustellen; ansonsten MUSS die Subscription
+      bestätigt werden, auch wenn derzeitig kein Eintrag vorhanden oder ein
+      Redirect eingerichtet ist. Eine abgelehnte Subscription MUSS wie eine
+      gekündigte Subscription behandelt werden.
+
+
+      Die Verwaltung von Subscriptions MUSS server-seitig idempontent sein,
+      d.h., wird durch einen Client eine Subscription für einen
+      Verzeichniseintrag, zu dem bereits für diesen Client eine Subscription
+      existiert, angefragt, bleibt die existierende Subscription weiter bestehen
+      und es wird keine zweite eingerichtet. Für die Benachrichtigung des
+      Clients gelten in diesem Fall dieselben Regeln, als wäre die Subscription
+      noch nicht vorhanden. Ebenso DARF die Kündigung einer nicht existierenden
+      Subscription NICHT als Fehler signalisiert werden, sondern MUSS so
+      behandelt werden, als würde die Subscription zum Zeitpunkt der Kündigung
+      existieren.
+
+
+      #### Ereignisbasierte Benachrichtigungen
+
+
+      Neben der Reaktion auf die
+      [subscribe](#operation-send-subscribe)-Operation MÜSSEN mit dieser
+      Operation zudem Änderungen an den Verzeichnisinhalten ereignisbasiert
+      durch den Server an die Clients signalisiert werden. Der Server MUSS alle
+      Clients, die eine aktive Subscriptions für die betroffenen
+      Verzeichniseintrage haben, über die Änderungen benachrichtigen und DARF
+      Clients, die keine aktive Subscription für die betroffenen Einträge haben,
+      NICHT über diese Operation informieren. Für die folgenden Ereignisse MUSS
+      durch den Server eine
+      [DirectoryNotificationMessage](#message-DirectoryNotificationMessage)
+      versendet werden:
+
+
+      * Update der Service-Version oder Änderung der Kontaktdaten des
+      technischen Betreibers: Das Feld *serviceInfo* MUSS die aktuellen Daten
+      enthalten.
+
+
+      * Hinzufügen oder Aktualisierung eines Verzeichniseintrags ohne
+      konfigurierten Redirect: Der aktuelle Eintrag MUSS im Feld *modified*
+      enthalten sein und DARF NICHT in einem der anderen Felder referenziert
+      werden.
+
+
+      * Löschen eines Verzeichniseintrags ohne konfigurierten Redirect: Der
+      Eintrag MUSS im Feld *deleted* enthalten sein und DARF NICHT in einem der
+      anderen Felder referenziert werden.
+
+
+      * Konfiguration eines Redirects für einen Verzeichniseintrag: Der Eintrag
+      MUSS im Feld *redirected* inkl. der konfigurierten Ziel-URL referenziert
+      sein und DARF NICHT in einem der anderen Felder enthalten sein bzw.
+      referenziert werden.
+
+
+      * Löschen eines Redirects für einen Verzeichniseintrag: Der Eintrag MUSS
+      im Feld *redirected* referenziert sein, wobei das Feld *url* NICHT gesetzt
+      sein DARF. Sofern ein Verzeichniseintrag zu dem gelöschten Redirect
+      existiert, MUSS dieser im Feld *modified* enthalten sein und ansonsten im
+      Feld *deleted* referenziert werden. In einem anderen als den genannten
+      Feldern unter den beschriebenen Bedingungen DARF der Eintrag NICHT
+      enthalten sein bzw. referenziert werden.
+
+
+      * Änderung der Voraussetzungen für die Bereitstellung eines
+      Verzeichniseintrags: Sofern sich die Voraussetzung für die Bereitstellung
+      eines Verzeichniseintrags so ändern, dass der Server die Anfrage einer
+      Subscription wie im Abschnitt [Benachrichtigungen bei
+      Subscriptions](#benachrichtigungen-bei-subscriptions) beschrieben ablehnen
+      würde, MUSS der Eintrag im Feld *canceled* referenziert werden. Das Feld
+      *canceledByClient* MUSS dabei mit dem Wert *false* belegt und das Feld
+      *reason* mit einer aussagekräftigen Begründung befüllt sein.
+
+
+      Die Felder *subscriptionId* und *error* DÜRFEN bei einer ereignisbasierten
+      Benachrichtigung NICHT gesetzt sein.
+
+
+      Die [DirectoryNotificationMessage](#message-DirectoryNotificationMessage)
+      SOLLTE so schnell wie möglich nach dem Eintreten des Ereignisses versendet
+      werden. Der Server DARF dabei über mehrere Ereignisse innerhalb einer
+      Nachricht informieren. Sofern mehrere Ereignisse denselben
+      Verzeichniseintrag betreffen, MUSS ausschließlich das neuste dieser
+      Ereignisse in der Benachrichtigung enthalten sein. Für andere als die
+      beschriebenen Ereignisse DÜRFEN Benachrichtigungen NICHT versendet werden;
+      ausgenommen sind Benachrichtungen bei Fehlern (s. folgenden Abschnitt).
+
+
+      #### Benachrichtigungen bei Fehlern
+
+
+      Wenn bei der Operation [subscribe](#operation-send-subscribe)
+      server-seitig Fehler auftreten, die Anfrage nicht vollständig verarbeitet
+      werden kann oder bei der ereignisbasierten Verarbeitung von Subscriptions
+      ein *kritischer Fehler* (s.u.) auftritt, MUSS der Client über den Fehler
+      informiert werden. Weiterhin DARF der Server über nicht-kritische Fehler
+      aus der ereignisbasierten Verarbeitung von Subscriptions benachrichtigen.
+      Anstatt Nachrichten wie in den vorausgegangenen Abschnitten beschrieben zu
+      senden, MÜSSEN die Felder der Benachrichtigung nach den folgenden Regeln
+      belegt werden:
+
+
+      * __subscriptionId:__ MUSS gesetzt sein und aus der entsprechenden
+      [SubscriptionRequestMessage](#message-SubscriptionRequestMessage)
+      übernommen werden, wenn der Fehler durch die Operation
+      [subscribe](#operation-send-subscribe) ausgelöst wurde und der Wert aus
+      der Nachricht ausgelesen werden kann, und DARF ansonsten NICHT gesetzt
+      werden.
+
+
+      * __serviceInfo:__ SOLLTE gesetzt werden.
+
+
+      * __modified:__ DARF NICHT gesetzt sein.
+
+
+      * __redirected:__ DARF NICHT gesetzt sein.
+
+
+      * __deleted:__ DARF NICHT gesetzt sein.
+
+
+      * __canceled:__ DARF NICHT gesetzt sein.
+
+
+      * __error:__ MUSS gesetzt sein. Das Feld *request* MUSS befüllt werden,
+      wenn der Fehler durch die Operation [subscribe](#operation-send-subscribe)
+      ausgelöst wurde und das Feld *subscriptionId* nicht gesetzt ist, und DARF
+      ansonsten NICHT gesetzt werden.
+
+
+      Der Zustand von bestehenden Subscriptions DARF bei der Benachrichtigung
+      über Fehler server-seitig NICHT verändert werden. Bei *kritischen
+      Fehlern*, bei denen der Server die korrekte Behandlung der bestehenden
+      Subscriptions nicht mehr gewährleisten kann, MUSS der Server die
+      WebSocket-Verbindung zum entsprechenden Client nach der Übertragung der
+      Benachrichtigung beenden.
+components:
+  messages:
+    DirectoryNotificationMessage:
+      description: >-
+        Benachrichtigung vom Server an den Client über Änderungen am
+        Verzeichnis.
+      payload:
+        $ref: "#/components/schemas/DirectoryNotification"
+    SubscriptionRequestMessage:
+      description: >-
+        Nachricht vom Client an den Server, um die aktiven Subscriptions zu
+        verwalten.
+      payload:
+        $ref: "#/components/schemas/SubscriptionRequest"
+  schemas:
+    ApiRecord:
+      type: object
+      title: ApiRecord
+      description: Eintrag im Verzeichnis.
+      required:
+        - providerId
+        - apiId
+        - majorVersion
+        - url
+        - lastUpdated
+        - revision
+        - status
+      properties:
+        providerId:
+          type: string
+          description: >-
+            Eindeutige Kennung des verantwortlichen API-Anbieters; Hinweise in
+            Kapitel [Einträge im Verzeichnis](#einträge-im-verzeichnis)
+            beachten.
+        apiId:
+          type: string
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel [Einträge
+            im Verzeichnis](#einträge-im-verzeichnis) beachten.
+        majorVersion:
+          type: integer
+          description: >-
+            Major-Version des API-Webdiensts; Hinweise in Kapitel [Einträge im
+            Verzeichnis](#einträge-im-verzeichnis) beachten.
+        url:
+          type: string
+          description: >-
+            Adresse des Endpunkts, an dem der API-Webdienst aufgerufen werden
+            kann.
+        additionalMetadata:
+          type: object
+          additionalProperties:
+            type: string
+          description: >-
+            Zusätzliche Informationen über den Aufruf oder die Antworten des
+            entsprechenden API-Webdiensts in Form von Schlüssel-Wert-Paaren.
+            Dieses Feld ist optional und es wird durch übergreifende Regelungen
+            außerhalb dieser Spezifikation sowie durch die Spezifikation des
+            entsprechenden API-Webdiensts festgelegt, welche Informationen zu
+            hinterlegen sind.
+        lastUpdated:
+          type: string
+          description: Zeitpunkt der letzten Aktualisierung des Verzeichniseintrags.
+        revision:
+          type: integer
+          minimum: 1
+          description: >-
+            Fortlaufende Revisionsnummer des Verzeichniseintrags. Wird bei jeder
+            Aktualisierung des Eintrags inkrementiert.
+        status:
+          type: string
+          description: >-
+            Aktueller Status des hinterlegten API-Endpunkts; Hinweise in Kapitel
+            [Statusmodell](#statusmodell) beachten.
+          enum:
+            - Offline
+            - Test
+            - Maintenance
+            - Online
+      additionalProperties: false
+    ApiRecordRef:
+      type: object
+      title: ApiRecordRef
+      description: Verweis auf einen Eintrag im Verzeichnis.
+      required:
+        - providerId
+        - apiId
+        - majorVersion
+      properties:
+        providerId:
+          type: string
+          description: >-
+            Eindeutige Kennung des verantwortlichen API-Anbieters; Hinweise in
+            Kapitel [Einträge im Verzeichnis](#einträge-im-verzeichnis)
+            beachten.
+        apiId:
+          type: string
+          description: >-
+            Eindeutige Kennung des API-Webdiensts; Hinweise in Kapitel [Einträge
+            im Verzeichnis](#einträge-im-verzeichnis) beachten.
+        majorVersion:
+          type: integer
+          description: >-
+            Major Version des API-Webdiensts; Hinweise in Kapitel [Einträge im
+            Verzeichnis](#einträge-im-verzeichnis) beachten.
+      additionalProperties: false
+    DirectoryNotification:
+      type: object
+      title: DirectoryNotification
+      description: Benachrichtigung vom Verzeichnisdienst über Änderungen am Verzeichnis.
+      required:
+        - timestamp
+      properties:
+        subscriptionId:
+          type: string
+          description: >-
+            ID des [SubscriptionRequest](#schema-SubscriptionRequest)-Objekts,
+            auf den sich die Benachrichtigung bezieht.
+        timestamp:
+          type: string
+          description: >-
+            Der Zeitpunkt, an dem diese Benachrichtigung erzeugt wurde. Der Wert
+            MUSS gemäß ISO 8601 formatiert und als UTC angeben werden.
+        serviceInfo:
+          $ref: "#/components/schemas/ServiceInfo"
+        modified:
+          type: array
+          description: Hinzugefügte oder geänderte Verzeichniseinträge.
+          items:
+            $ref: "#/components/schemas/SignedApiRecord"
+        redirected:
+          type: array
+          description: Konfigurierte Redirects für Verzeichniseinträge.
+          items:
+            type: object
+            required:
+              - recordRef
+            properties:
+              recordRef:
+                $ref: "#/components/schemas/ApiRecordRef"
+              url:
+                type: string
+                description: >-
+                  Konfigurierte Ziel-URL des Redirects. Ist nicht vorhanden,
+                  wenn der Redirect entfernt wurde.
+            additionalProperties: false
+        deleted:
+          type: array
+          description: Gelöschte Verzeichniseinträge.
+          items:
+            $ref: "#/components/schemas/ApiRecordRef"
+        canceled:
+          type: array
+          description: Beendete Subscriptions.
+          items:
+            type: object
+            required:
+              - recordRef
+              - canceledByClient
+            properties:
+              recordRef:
+                $ref: "#/components/schemas/ApiRecordRef"
+              canceledByClient:
+                type: boolean
+                description: >-
+                  Zeigt an, ob die Subscription durch den Client (true) oder
+                  durch den Server (false) beendet wurde.
+              reason:
+                type: string
+                description: >-
+                  Erläuternde Beschreibung, weshalb die Subscription beendet
+                  wurde.
+            additionalProperties: false
+        error:
+          $ref: "#/components/schemas/Error"
+      additionalProperties: false
+    Error:
+      type: object
+      title: Error
+      description: Beschreibung eines aufgetretenen Fehlers.
+      required:
+        - statusCode
+        - description
+      properties:
+        statusCode:
+          type: integer
+          minimum: 0
+          description: HTTP Status Code, der den Fehler beschreibt.
+        description:
+          type: string
+          description: Informativer Text, der den Fehler beschreibt.
+        request:
+          type: string
+          description: Base64-kodierter SubscriptionRequest, der den Fehler ausgelöst hat.
+      additionalProperties: false
+    ServiceInfo:
+      type: object
+      title: ServiceInfo
+      description: Informationen über den bereitgestellten Verzeichnisdienst.
+      required:
+        - version
+        - feed
+        - contact
+        - lastUpdated
+        - revision
+      properties:
+        version:
+          type: string
+          description: >-
+            Vollqualifizierte Versionsnummer der implementierten Schnittstelle
+            des Verzeichnisdiensts.
+        contact:
+          type: object
+          description: >-
+            Kontaktdaten des technischen Betreibers.
+
+
+            *__Hinweis:__ Die einzelnen Felder sind OPTIONAL, jedoch MUSS
+            mindestens eins befüllt sein.*
+          properties:
+            email:
+              type: string
+              description: E-Mail-Adresse des technischen Supports.
+            phone:
+              type: string
+              description: Telefonnummer des technischen Supports.
+          additionalProperties: false
+        lastUpdated:
+          type: string
+          description: Zeitpunkt der letzten Aktualisierung dieser Information.
+        revision:
+          type: integer
+          minimum: 1
+          description: >-
+            Fortlaufende Revisionsnummer dieser Information. Beginnt bei 1 und
+            wird bei jeder Aktualisierung inkrementiert.
+      additionalProperties: false
+    SignedApiRecord:
+      type: object
+      title: SignedApiRecord
+      description: Signierter Verzeichniseintrag.
+      required:
+        - content
+        - signature
+        - signingCert
+      properties:
+        content:
+          $ref: "#/components/schemas/ApiRecord"
+        signature:
+          type: string
+          description: >-
+            Die Signatur des Verzeichniseintrags; Hinweise in Kapitel [Signatur
+            von Verzeichniseinträgen](#signatur-von-verzeichniseinträgen)
+            beachten.
+        signingCert:
+          type: string
+          description: >-
+            Das verwendete Signaturzertifikat; Hinweise in Kapitel [Signatur von
+            Verzeichniseinträgen](#signatur-von-verzeichniseinträgen) beachten.
+      additionalProperties: false
+    SubscriptionRequest:
+      type: object
+      title: SubscriptionRequest
+      description: Anfrage und Kündigung von Subscriptions.
+      required:
+        - id
+      properties:
+        id:
+          type: string
+          description: >-
+            ID des Subscription Requests. Wird durch den Client selbst gewählt
+            und innerhalb des Verzeichnisdiensts nicht ausgewertet. Dieser Wert
+            wird zur Korrelation vom Request in die dazugehörige
+            [DirectoryNotification](#schema-DirectoryNotification) übernommen.
+        requested:
+          type: array
+          description: Zu erstellende Subscriptions.
+          items:
+            type: object
+            required:
+              - recordRef
+            properties:
+              recordRef:
+                $ref: "#/components/schemas/ApiRecordRef"
+              knownRevision:
+                type: integer
+                minimum: 0
+                description: >-
+                  Beim Client bekannte Revision des angeforderten
+                  Verzeichniseintrags. Der Wert 0 oder die Abwesenheit dieses
+                  Felds bedeutet, dass dem Client kein Eintrag bekannt ist.
+            additionalProperties: false
+        canceled:
+          type: array
+          description: Zu kündigende Subscriptions.
+          items:
+            $ref: "#/components/schemas/ApiRecordRef"
+      additionalProperties: false
