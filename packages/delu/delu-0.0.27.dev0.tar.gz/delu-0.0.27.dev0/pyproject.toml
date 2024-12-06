@@ -1,0 +1,85 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+authors = [{ name = "Yury Gorishniy" }]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["numpy >=1.21,<3", "torch >=1.9,<3"]
+dynamic = ["version", "description"]
+keywords = [
+    "artificial intelligence",
+    "deep learning",
+    "library",
+    "python",
+    "pytorch",
+    "torch",
+]
+license = { file = "LICENSE" }
+name = "delu"
+requires-python = ">=3.9"
+urls = { Documentation = "https://yura52.github.io/delu", Code = "https://github.com/Yura52/delu" }
+
+[dependency-groups]
+dev = [
+    # Documentation
+    "furo ==2024.8.6",
+    "pdoc ==15.0.0",
+    "sphinx ==7.4.7",
+    "sphinxcontrib-spelling ==8.0.0",
+    "sphinx-copybutton ==0.5.2",
+    "sphinx-design ==0.6.1",
+    "sphinx-remove-toctrees ==1.0.0.post1",
+    # Development
+    "coverage ==7.6.7",
+    "flit ==3.10.1",
+    "mypy ==1.13.0",
+    "pip ==24.3.1",
+    "pre-commit-hooks ==5.0.0",
+    "pytest ==8.3.3",
+    "ruff ==0.7.4",
+    "xdoctest ==1.2.0",
+    # Other
+    "jupyterlab ==4.3.1",
+]
+
+[tool.uv]
+resolution = "lowest-direct"
+
+[tool.coverage.run]
+branch = true
+omit = ["delu/tests/*"]
+source = ["delu"]
+
+[tool.flit.module]
+name = "delu"
+
+[tool.flit.sdist]
+exclude = ["**/.DS_Store"]
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "delu.*.tests.*"
+ignore_errors = true
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+extend-select = ["RUF", "UP", "E501", "E731"]
