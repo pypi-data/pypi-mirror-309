@@ -1,0 +1,18 @@
+name: {{ cookiecutter.plugin_name }}
+code: {{ cookiecutter.plugin_code }}
+version: {{ cookiecutter.version }}
+readme: README.md
+description: {{ cookiecutter.description }}
+category: {{ cookiecutter.category }}
+actions:
+  train:
+    dataset: datamaker
+    entrypoint: plugin.train.train
+  deployment:
+    entrypoint: plugin.inference.MockNetInference
+  inference:
+    method: restapi
+    endpoints:
+      - method: get
+  test:
+    entrypoint: plugin.test.test
