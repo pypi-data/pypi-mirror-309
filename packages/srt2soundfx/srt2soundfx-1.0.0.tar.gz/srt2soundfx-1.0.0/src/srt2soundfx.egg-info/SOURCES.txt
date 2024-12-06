@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/srt2soundfx/__init__.py
+src/srt2soundfx/audio_placer.py
+src/srt2soundfx/chatgpt_interface.py
+src/srt2soundfx/main.py
+src/srt2soundfx/sound_generator.py
+src/srt2soundfx/srt_merger.py
+src/srt2soundfx/srt_parser.py
+src/srt2soundfx.egg-info/PKG-INFO
+src/srt2soundfx.egg-info/SOURCES.txt
+src/srt2soundfx.egg-info/dependency_links.txt
+src/srt2soundfx.egg-info/top_level.txt
