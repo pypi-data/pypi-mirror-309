@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = bytecrypt.__main__:main
