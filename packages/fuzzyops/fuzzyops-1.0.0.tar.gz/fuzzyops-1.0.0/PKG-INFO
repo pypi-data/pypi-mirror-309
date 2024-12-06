@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fuzzyops
+Version: 1.0.0
+Summary: A brief description of your project
+Home-page: https://github.com/Kotya2001/FuzzyOps  # URL вашего репозитория
+Author: Kotya2001
+Author-email: your_email@example.com
+License: MIT  # Или другая лицензия
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+
+UNKNOWN
+
