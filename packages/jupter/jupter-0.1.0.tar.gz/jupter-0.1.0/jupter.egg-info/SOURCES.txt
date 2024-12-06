@@ -1,0 +1,7 @@
+setup.py
+jupter.egg-info/PKG-INFO
+jupter.egg-info/SOURCES.txt
+jupter.egg-info/dependency_links.txt
+jupter.egg-info/top_level.txt
+my_package/__init__.py
+my_package/module.py
