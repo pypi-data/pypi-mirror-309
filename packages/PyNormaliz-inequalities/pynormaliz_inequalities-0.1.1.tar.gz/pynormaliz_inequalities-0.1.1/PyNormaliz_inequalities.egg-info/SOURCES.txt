@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+PyNormaliz_inequalities/__init__.py
+PyNormaliz_inequalities/inequalities.py
+PyNormaliz_inequalities.egg-info/PKG-INFO
+PyNormaliz_inequalities.egg-info/SOURCES.txt
+PyNormaliz_inequalities.egg-info/dependency_links.txt
+PyNormaliz_inequalities.egg-info/requires.txt
+PyNormaliz_inequalities.egg-info/top_level.txt
+tests/test_inequalities.py
