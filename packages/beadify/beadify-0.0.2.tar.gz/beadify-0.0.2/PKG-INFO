@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: beadify
+Version: 0.0.2
+Summary: A lightweight, efficient tool tailored for hobbyists looking to deploy multiple applications on a single Ubuntu-based VPS (Virtual Private Server)
+Author: Tomisin Abiodun
+Author-email: decave.12357@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: paramiko
+Requires-Dist: pydantic
