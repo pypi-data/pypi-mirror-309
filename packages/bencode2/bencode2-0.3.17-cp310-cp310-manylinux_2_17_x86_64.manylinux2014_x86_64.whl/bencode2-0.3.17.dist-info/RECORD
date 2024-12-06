@@ -1,0 +1,9 @@
+bencode2-0.3.17.dist-info/RECORD,,
+bencode2-0.3.17.dist-info/METADATA,sha256=xLusHQHjHDCX03tH_olqHhzW6A1IJNRX-6KZBvMFyJg,5096
+bencode2-0.3.17.dist-info/WHEEL,sha256=sZM_NeUMz2G4fDenMf11eikcCxcLaQWiYRmjwQBavQs,137
+bencode2/__decoder.py,sha256=pGUoVbL6EFe6yWeNxleO2WOJNDfy7jpXPQ0gLHU6Ido,6166
+bencode2/__encoder.py,sha256=ky4hMgkpZNe7PtoqYaTroyTsoH9ZDKLqxYICQpL-kbk,4196
+bencode2/__bencode.cpython-310-x86_64-linux-gnu.so,sha256=yIIqrFVylCnXEV-p817Tjvz328P2CotN8P_a55bFHqc,421960
+bencode2/__init__.py,sha256=H7VTW80hlELobN5j9dhyUi2l0pUuOon8ibTW2kVG78Y,383
+bencode2/__init__.pyi,sha256=FNG1ePuioPN4scDW64SDdVNNzmscr8CyIWILcKb5pDE,244
+bencode2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
