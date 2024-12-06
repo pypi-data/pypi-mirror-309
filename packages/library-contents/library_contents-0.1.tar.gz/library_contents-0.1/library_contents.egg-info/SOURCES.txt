@@ -1,0 +1,9 @@
+setup.py
+library_contents/__init__.py
+library_contents/priority.py
+library_contents/summary.py
+library_contents/verify.py
+library_contents.egg-info/PKG-INFO
+library_contents.egg-info/SOURCES.txt
+library_contents.egg-info/dependency_links.txt
+library_contents.egg-info/top_level.txt
