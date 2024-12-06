@@ -1,0 +1,5 @@
+llama_index/embeddings/clip/__init__.py,sha256=OUnHgR7xOqfgLG5GxmFGkCXxiwWxxHQDVMgeDCL9h4s,88
+llama_index/embeddings/clip/base.py,sha256=CH8w44C-70ozFZFH5YXRJrGgTyBmEPGT8n6sURAqN9g,4716
+llama_index_embeddings_clip-0.3.0.dist-info/METADATA,sha256=PqKVkBN9XG0aJnKNdtYbgT8lAPYFaQtlyRX6Jezzvf8,808
+llama_index_embeddings_clip-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_clip-0.3.0.dist-info/RECORD,,
