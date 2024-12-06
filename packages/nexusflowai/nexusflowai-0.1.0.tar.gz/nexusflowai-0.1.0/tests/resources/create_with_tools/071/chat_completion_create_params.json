@@ -1,0 +1,452 @@
+{
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "model": "nexus-tool-use-20241029-Q",
+    "messages": [
+        {
+            "role": "system",
+            "content": "Current Date: 2024-09-04 (YYYY-MM-DD)\n- Use the search_data function to retrieve the necessary data, storing the result in a pointer to the data table handle.\n- Determine if any computations are needed based on the query intent.\n- Sometimes, you might need to pull more data using search_data once you hit a point where you need more data in the middle of the process.\n- For transforming the pulled data, use the various computation functions passing the data table pointer.\n- Continue applying operations and printing samples until the correct format is achieved.\n- Generate the visualization using the chosen function. You might need to visualize multiple times.\n- always issue as many calls as you can to fully answer the user query\n- search_data returns information about all stocks, please use apply_filter to get the required stock symbol\n- always finish up using a visualization function for a table or chart\n- The first data handle starts as handle 0, increasing by 1. Each operation (except for display_chart and display_table) creates a new data handle that can be used for subsequent operations."
+        },
+        {
+            "role": "user",
+            "metadata": {
+                "title": null,
+                "nf_messages": null
+            },
+            "content": "apple stock last month"
+        },
+        {
+            "content": "search_data(table_name='stock_prices', columns=['symbol', 'date', 'price']); apply_filter(data_handle=0, column='symbol', value='AAPL', operand='equals'); apply_filter(data_handle=1, column='date', value='2024-08-01', operand='greater_than'); apply_filter(data_handle=2, column='date', value='2024-09-01', operand='less_than'); display_chart(data_handle=3, chart_type='line', parameters={'title': 'Apple Stock Price Last Month', 'x_column': 'date', 'y_column': 'price'})",
+            "role": "assistant",
+            "tool_calls": [
+                {
+                    "id": "call_520eeb87-6af8-4323-81d3-fc05084a6256",
+                    "function": {
+                        "arguments": "{\"table_name\": \"stock_prices\", \"columns\": [\"symbol\", \"date\", \"price\"]}",
+                        "name": "search_data"
+                    },
+                    "type": "function",
+                    "execution_result": {
+                        "text": "\nRetrieved Data Handle 0: with columns symbol, date, price\nTable Preview:\n  symbol        date       price\n0   AAPL  2014-09-27  198.291731\n1   AAPL  2014-09-28  204.037569\n2   AAPL  2014-09-29  202.378715\n3   AAPL  2014-09-30  210.889797\n4   AAPL  2014-10-01  207.046191\n5   AAPL  2014-10-02  206.459571\n6   AAPL  2014-10-03  206.909184\n7   AAPL  2014-10-04  208.536896\n8   AAPL  2014-10-05  210.220054\n9   AAPL  2014-10-06  209.422068",
+                        "type": "text"
+                    }
+                }
+            ],
+            "parsed": null,
+            "function_call": null
+        },
+        {
+            "content": "\"\\nRetrieved Data Handle 0: with columns symbol, date, price\\nTable Preview:\\n  symbol        date       price\\n0   AAPL  2014-09-27  198.291731\\n1   AAPL  2014-09-28  204.037569\\n2   AAPL  2014-09-29  202.378715\\n3   AAPL  2014-09-30  210.889797\\n4   AAPL  2014-10-01  207.046191\\n5   AAPL  2014-10-02  206.459571\\n6   AAPL  2014-10-03  206.909184\\n7   AAPL  2014-10-04  208.536896\\n8   AAPL  2014-10-05  210.220054\\n9   AAPL  2014-10-06  209.422068\"",
+            "role": "tool",
+            "tool_call_id": "call_520eeb87-6af8-4323-81d3-fc05084a6256"
+        },
+        {
+            "content": "apply_filter(data_handle=0, column='symbol', value='AAPL', operand='equals');apply_filter(data_handle=1, column='date', value='2024-08-01', operand='greater_than');apply_filter(data_handle=2, column='date', value='2024-09-01', operand='less_than');display_chart(data_handle=3, chart_type='line', parameters={'title': 'Apple Stock Price Last Month', 'x_column': 'date', 'y_column': 'price'})",
+            "role": "assistant",
+            "tool_calls": [
+                {
+                    "id": "call_ee3471c9-eec1-4a84-bf08-9e660a6d9900",
+                    "function": {
+                        "arguments": "{\"data_handle\": 0, \"column\": \"symbol\", \"value\": \"AAPL\", \"operand\": \"equals\"}",
+                        "name": "apply_filter"
+                    },
+                    "type": "function",
+                    "execution_result": {
+                        "text": "\nRetrieved Data Handle 1: with columns symbol, date, price\nTable Preview:\n  symbol        date       price\n0   AAPL  2014-09-27  198.291731\n1   AAPL  2014-09-28  204.037569\n2   AAPL  2014-09-29  202.378715\n3   AAPL  2014-09-30  210.889797\n4   AAPL  2014-10-01  207.046191\n5   AAPL  2014-10-02  206.459571\n6   AAPL  2014-10-03  206.909184\n7   AAPL  2014-10-04  208.536896\n8   AAPL  2014-10-05  210.220054\n9   AAPL  2014-10-06  209.422068",
+                        "type": "text"
+                    }
+                }
+            ],
+            "parsed": null,
+            "function_call": null
+        },
+        {
+            "content": "\"\\nRetrieved Data Handle 1: with columns symbol, date, price\\nTable Preview:\\n  symbol        date       price\\n0   AAPL  2014-09-27  198.291731\\n1   AAPL  2014-09-28  204.037569\\n2   AAPL  2014-09-29  202.378715\\n3   AAPL  2014-09-30  210.889797\\n4   AAPL  2014-10-01  207.046191\\n5   AAPL  2014-10-02  206.459571\\n6   AAPL  2014-10-03  206.909184\\n7   AAPL  2014-10-04  208.536896\\n8   AAPL  2014-10-05  210.220054\\n9   AAPL  2014-10-06  209.422068\"",
+            "role": "tool",
+            "tool_call_id": "call_ee3471c9-eec1-4a84-bf08-9e660a6d9900"
+        },
+        {
+            "content": "apply_filter(data_handle=1, column='date', value='2024-08-01', operand='greater_than');apply_filter(data_handle=2, column='date', value='2024-09-01', operand='less_than');display_chart(data_handle=3, chart_type='line', parameters={'title': 'Apple Stock Price Last Month', 'x_column': 'date', 'y_column': 'price'})",
+            "role": "assistant",
+            "tool_calls": [
+                {
+                    "id": "call_c7c87de5-c3cb-4a62-bb4d-9fc707070123",
+                    "function": {
+                        "arguments": "{\"data_handle\": 1, \"column\": \"date\", \"value\": \"2024-08-01\", \"operand\": \"greater_than\"}",
+                        "name": "apply_filter"
+                    },
+                    "type": "function",
+                    "execution_result": {
+                        "text": "\nRetrieved Data Handle 2: with columns symbol, date, price\nTable Preview:\n     symbol        date       price\n3597   AAPL  2024-08-02  415.855173\n3598   AAPL  2024-08-03  389.469157\n3599   AAPL  2024-08-04  385.407701\n3600   AAPL  2024-08-05  399.191739\n3601   AAPL  2024-08-06  400.188258\n3602   AAPL  2024-08-07  413.808313\n3603   AAPL  2024-08-08  421.413171\n3604   AAPL  2024-08-09  429.447524\n3605   AAPL  2024-08-10  426.700471\n3606   AAPL  2024-08-11  407.577644",
+                        "type": "text"
+                    }
+                }
+            ],
+            "parsed": null,
+            "function_call": null
+        },
+        {
+            "content": "\"\\nRetrieved Data Handle 2: with columns symbol, date, price\\nTable Preview:\\n     symbol        date       price\\n3597   AAPL  2024-08-02  415.855173\\n3598   AAPL  2024-08-03  389.469157\\n3599   AAPL  2024-08-04  385.407701\\n3600   AAPL  2024-08-05  399.191739\\n3601   AAPL  2024-08-06  400.188258\\n3602   AAPL  2024-08-07  413.808313\\n3603   AAPL  2024-08-08  421.413171\\n3604   AAPL  2024-08-09  429.447524\\n3605   AAPL  2024-08-10  426.700471\\n3606   AAPL  2024-08-11  407.577644\"",
+            "role": "tool",
+            "tool_call_id": "call_c7c87de5-c3cb-4a62-bb4d-9fc707070123"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "search_data",
+                "description": "Gets the specified columns from the given table name. All tables return information about all stocks; please use apply_computation with the `filter` argument to get specific stock information.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "table_name": {
+                            "type": "string",
+                            "description": "A table to search. Available tables: stocks, stock_prices, financial_metrics",
+                            "enum": [
+                                "stocks",
+                                "stock_prices",
+                                "financial_metrics"
+                            ]
+                        },
+                        "columns": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "A list of columns corresponding to keywords in the user query. Available columns for each table:\n    - stocks: name [The full name of the stock], symbol [The stock symbol], sector [The sector of the stock]\n    - stock_prices: symbol [The symbol associated with the stock], date [The date of the stock price], price [The price of the stock], volume [The volume of the stock]\n    - financial_metrics: date [The date of the financial metrics], symbol [The stock symbol], market_cap [The market capitalization of the stock], pe_ratio [The price-to-earnings ratio of the stock], dividend_yield [The dividend yield of the stock], eps [The earnings per share of the stock], revenue [The revenue of the stock], net_income [The net income of the stock]"
+                        }
+                    },
+                    "required": [
+                        "table_name",
+                        "columns"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "moving_average",
+                "description": "Calculates the moving average for a specified column.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The column from the data handle to apply the computation to."
+                        },
+                        "window": {
+                            "type": "integer",
+                            "description": "The window size for the computation."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column",
+                        "window"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "percentage_change",
+                "description": "Computes the percentage change between consecutive values in a column.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The column from the data handle to apply the computation to."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "rolling_volatility",
+                "description": "Computes the rolling standard deviation for a specified column.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The column from the data handle to apply the computation to."
+                        },
+                        "window": {
+                            "type": "integer",
+                            "description": "The window size for the computation."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column",
+                        "window"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "cumulative_return",
+                "description": "Calculates the cumulative return based on the values in a specified column.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The column from the data handle to apply the computation to."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "sort_data",
+                "description": "Sorts the data by the value of a particular column.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The column from the data handle to apply the computation to."
+                        },
+                        "ascending": {
+                            "type": "boolean",
+                            "description": "Whether to sort in ascending order (True) or descending order (False)."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column",
+                        "ascending"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "truncate_data",
+                "description": "Truncates the data to the specified number of rows, taking the top rows.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data."
+                        },
+                        "num_rows": {
+                            "type": "integer",
+                            "description": "The number of rows to display."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "num_rows"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "display_chart",
+                "description": "Creates various types of chart visualizations. This function generates different types of charts or plots using the specified data and parameters.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data table."
+                        },
+                        "chart_type": {
+                            "type": "string",
+                            "enum": [
+                                "line",
+                                "bar",
+                                "histogram",
+                                "scatter",
+                                "pie",
+                                "box",
+                                "heatmap"
+                            ],
+                            "description": "The type of chart to create."
+                        },
+                        "parameters": {
+                            "type": "object",
+                            "description": "A dictionary of required parameters for the chosen chart type.",
+                            "properties": {
+                                "title": {
+                                    "type": "string",
+                                    "description": "The title of the chart."
+                                },
+                                "x_column": {
+                                    "type": "string",
+                                    "description": "The column to use for the x-axis (required for line, bar, scatter, box, and heatmap charts)."
+                                },
+                                "y_column": {
+                                    "type": "string",
+                                    "description": "The column to use for the y-axis (required for line, bar, scatter, box, and heatmap charts)."
+                                },
+                                "column": {
+                                    "type": "string",
+                                    "description": "The column to use for histogram charts."
+                                },
+                                "bins": {
+                                    "type": "integer",
+                                    "description": "The number of bins for histogram charts (optional)."
+                                },
+                                "values_column": {
+                                    "type": "string",
+                                    "description": "The column containing values for pie and heatmap charts."
+                                },
+                                "labels_column": {
+                                    "type": "string",
+                                    "description": "The column containing labels for pie charts."
+                                }
+                            },
+                            "required": [
+                                "title"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "chart_type",
+                        "parameters"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "display_table",
+                "description": "Displays data in a tabular format. This function generates a table view of the specified data.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "An integer representing a handle to the input data table."
+                        },
+                        "parameters": {
+                            "type": "object",
+                            "description": "A dictionary of required and optional parameters for the table display.",
+                            "properties": {
+                                "caption": {
+                                    "type": "string",
+                                    "description": "The caption for the table."
+                                },
+                                "column_ids": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "description": "A list of column names to include in the table."
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "description": "The maximum number of rows to display in the table."
+                                },
+                                "order_by": {
+                                    "type": "string",
+                                    "description": "The column to use for sorting the table."
+                                },
+                                "ascending": {
+                                    "type": "boolean",
+                                    "description": "Whether to sort in ascending order (True) or descending order (False)."
+                                }
+                            },
+                            "required": [
+                                "caption",
+                                "column_ids"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "parameters"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "apply_filter",
+                "description": "Applies a filtering operation on the specified column of the provided data handle and generates a new data handle. This function allows you to filter data based on various comparison operations.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "data_handle": {
+                            "type": "integer",
+                            "description": "The identifier of the data handle to operate on. This should be a valid handle obtained from a previous operation or data loading function."
+                        },
+                        "column": {
+                            "type": "string",
+                            "description": "The name of the column within the data handle to apply the filter on. The column name should exist in the data handle."
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "The value to filter by. This will be compared against the values in the specified column. For date filtering, use the format 'YYYY-MM-DD'."
+                        },
+                        "operand": {
+                            "type": "string",
+                            "enum": [
+                                "less_than",
+                                "greater_than",
+                                "equals",
+                                "not_equals",
+                                "regex"
+                            ],
+                            "description": "The comparison operation to use for filtering. 'regex' will provide a wildcard value in value and use this to filter using wildcard expressions/regex."
+                        }
+                    },
+                    "required": [
+                        "data_handle",
+                        "column",
+                        "value",
+                        "operand"
+                    ]
+                }
+            }
+        }
+    ]
+}

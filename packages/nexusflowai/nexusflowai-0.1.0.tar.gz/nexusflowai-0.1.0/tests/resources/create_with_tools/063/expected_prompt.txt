@@ -1,0 +1,39 @@
+Function:
+def call_with_no_parameters():
+
+Instruction: a system prompt
+
+with new lines
+
+the newlines below this should not be stripped
+
+Turn 1:
+Previous Original Plan: assistant has responded here!
+
+here are some newlines
+
+the newlines below this should not be stripped
+
+
+
+Previous User Query: the first user query
+
+here are some newlines
+
+the newlines below this should not be stripped
+
+
+ <turn_end>
+
+Current Turn:
+User Query: no parameters
+
+here are some newlines
+
+the newlines below this should not be stripped
+
+
+
+ <human_end>
+
+Call:

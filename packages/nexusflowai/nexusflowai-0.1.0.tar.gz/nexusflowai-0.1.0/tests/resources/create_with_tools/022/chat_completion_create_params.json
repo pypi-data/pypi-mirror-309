@@ -1,0 +1,534 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the city for location ID 1?"
+    },
+    {
+      "content": "get_city_for_location(location_id=1)",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_e1b35b5e-61ff-4bbc-9c90-032630471b7b",
+          "function": {
+            "arguments": "{\"location_id\": 1}",
+            "name": "get_city_for_location"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e1b35b5e-61ff-4bbc-9c90-032630471b7b",
+      "content": "\"New York\""
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "_similarity_search",
+        "description": "Return a list of data that matches the given query.\n\nSimilarity score is jaccard similarity based on the number of shared characters between the query and the data.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "description": "The data to search."
+            },
+            "query": {
+              "type": "string",
+              "description": "The query to search for."
+            },
+            "key": {
+              "type": "string",
+              "description": "The key to search in."
+            }
+          },
+          "required": [
+            "data",
+            "query",
+            "key"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "The list of matching data."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "find_foods_by_name",
+        "description": "Find foods with the given name.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "food": {
+              "type": "string",
+              "description": "The food name to search for."
+            }
+          },
+          "required": [
+            "food"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "The list of matching foods."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "find_locations_by_name",
+        "description": "Find locations with the given city name.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string",
+              "description": "The city name to search for."
+            }
+          },
+          "required": [
+            "city"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "The list of matching locations."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "find_users_by_name",
+        "description": "Find users with the given name.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The name to search for."
+            }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "The list of matching users."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_city_for_location",
+        "description": "Get the city for the location with the given location ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location_id": {
+              "type": "integer",
+              "description": "The location's ID."
+            }
+          },
+          "required": [
+            "location_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The city name for the location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_time_for_location",
+        "description": "Get the current time for the location with the given location ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location_id": {
+              "type": "integer",
+              "description": "The location's ID."
+            }
+          },
+          "required": [
+            "location_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The current time for the location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_user_id",
+        "description": "Get the current user's ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "returns": {
+          "type": "integer",
+          "description": "The current user's ID."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_weather_for_location",
+        "description": "Get the current weather for the location with the given location ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location_id": {
+              "type": "integer",
+              "description": "The location's ID."
+            }
+          },
+          "required": [
+            "location_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The current weather for the location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_food_allergic_ingredients",
+        "description": "Get the list of allergic ingredients for the food with the given food ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "food_id": {
+              "type": "integer",
+              "description": "The food's ID."
+            }
+          },
+          "required": [
+            "food_id"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The list of allergic ingredients."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_food_calories",
+        "description": "Get the calories per serving for the food with the given food ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "food_id": {
+              "type": "integer",
+              "description": "The food's ID."
+            }
+          },
+          "required": [
+            "food_id"
+          ]
+        },
+        "returns": {
+          "type": "integer",
+          "description": "The calories per serving of the food."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_food_info",
+        "description": "Find the food with the given food ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "food_id": {
+              "type": "integer",
+              "description": "The food's ID."
+            }
+          },
+          "required": [
+            "food_id"
+          ]
+        },
+        "returns": {
+          "type": "object",
+          "description": "The food's data."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_food_name",
+        "description": "Get the name of the food with the given food ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "food_id": {
+              "type": "integer",
+              "description": "The food's ID."
+            }
+          },
+          "required": [
+            "food_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The name of the food."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_location_info",
+        "description": "Find the location with the given location ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "description": "The location's ID."
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "returns": {
+          "type": "object",
+          "description": "The location's data."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_email",
+        "description": "Get the email of the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The user's email."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_favorite_color",
+        "description": "Get the favorite color of the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The user's favorite color."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_favorite_foods",
+        "description": "Get the list of favorite foods of the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "The list of favorite foods."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_info",
+        "description": "Find the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        "returns": {
+          "type": "object",
+          "description": "The user's data."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_location",
+        "description": "Get the location ID of the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        },
+        "returns": {
+          "type": "integer",
+          "description": "The user's location ID."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_user_name",
+        "description": "Get the name of the user with the given user ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "description": "The user's ID."
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The user's name."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather_at_location",
+        "description": "Get the current weather at the location with the given location ID.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location_id": {
+              "type": "integer",
+              "description": "The location's ID."
+            }
+          },
+          "required": [
+            "location_id"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The current weather at the location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "list_user_ids",
+        "description": "List all the user IDs.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The list of user IDs."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Function:
+def first_call(single_param: str = None):
+    """
+    This is the
+    first docstring.
+
+    Parameters:
+    - single_param (str):  Default value: None. (Optional)
+    """
+
+Function:
+def second_call(param_one=None, param_two: int = None):
+
+Turn 1:
+Previous User Query: first query <turn_end>
+
+Current Turn:
+User Query: two calls <human_end>
+
+Call:

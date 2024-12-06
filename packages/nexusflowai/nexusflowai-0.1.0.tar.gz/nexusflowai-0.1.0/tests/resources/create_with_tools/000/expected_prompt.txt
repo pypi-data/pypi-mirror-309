@@ -1,0 +1,45 @@
+Function:
+def requests_get(url: str = 'http://www.omdbapi.com/', headers: Dict = None, timeout: int = None, params: Dict[str, str] = None, allow_redirects: bool = True, auth: List[str] = None, cert: str = 'None', cookies: Dict[str, str] = None, proxies: Dict[str, str] = None, stream: bool = False, verify: str = True):
+    """
+    Sends a GET request to the specified URL.
+
+    Parameters:
+    - url (str): Fetches the age rating of a movie from the OMDB API. Default value: 'http://www.omdbapi.com/'.
+    - headers (Dict):  Default value: None. (Optional) Has keys:
+    - timeout (int): How many seconds to wait for the server to send data before giving up. Default value: None. (Optional)
+    - params (Dict[str, str]):  Default value: None. (Optional) Has keys:
+        - i (str): A valid IMDb ID (e.g., tt1285016).
+        - t (str): Movie title to search for.
+        - type (str): Type of result to return. Valid options are 'movie', 'series', and 'episode'.
+        - y (str): Year of release.
+        - plot (str): Return short or full plot. Default is 'short'.
+        - r (str): The data type to return. Default is 'json'.
+        - callback (str): JSONP callback name.
+        - v (int): API version (reserved for future use). Default is 1.
+        - apikey (str): API Key provided for this API
+    - allow_redirects (bool): A Boolean to enable/disable redirection. Default value: True. (Optional)
+    - auth (List[str]): A tuple to enable a certain HTTP authentication. Default value: None. (Optional)
+    - cert (str): A String or Tuple specifying a cert file or key. Default value: 'None'. (Optional)
+    - cookies (Dict[str, str]): Dictionary of cookies to send with the request. Default value: None. (Optional)
+    - proxies (Dict[str, str]): Dictionary of the protocol to the proxy url. Default value: None. (Optional)
+    - stream (bool): A Boolean indication if the response should be immediately downloaded (False) or streamed (True). Default value: False. (Optional)
+    - verify (str): A Boolean or a String indication to verify the servers TLS certificate or not. Default value: True. (Optional)
+    """
+
+Function:
+def out_of_domain(user_query: str) -> None:
+    """
+    This function is designed to handle out-of-domain queries from the user.
+    If the user provides any input user query that is out of the domain of the other APIs provided above,
+    this function should be used with the input user query as the string.
+
+    Parameters:
+    - user_query (str): The input string that is out of domain.
+
+    Returns nothing.
+    """
+
+Current Turn:
+User Query: Can you provide me with the full plot details of the movie 'Inception', which was released in 2010, and ensure the data returned is in JSON format? API key is 'c035a149' <human_end>
+
+Call:

@@ -1,0 +1,129 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "gcybflyun@sample.net"
+    },
+    {
+      "content": "type_character(character='g'); type_character(character='c'); type_character(character='y'); type_character(character='b'); type_character(character='f'); type_character(character='l'); type_character(character='y'); type_character(character='u'); type_character(character='n'); type_character(character='@'); type_character(character='s'); type_character(character='a'); type_character(character='m'); type_character(character='p'); type_character(character='l'); type_character(character='e'); type_character(character='.'); type_character(character='n'); type_character(character='e'); type_character(character='t')",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_03b1b119-5900-4a4e-8142-fea3b73c9a48",
+          "function": {
+            "arguments": "{\"character\": \"g\"}",
+            "name": "type_character"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_03b1b119-5900-4a4e-8142-fea3b73c9a48",
+      "content": "\"g\""
+    },
+    {
+      "content": "type_character(character='c');type_character(character='y');type_character(character='b');type_character(character='f');type_character(character='l');type_character(character='y');type_character(character='u');type_character(character='n');type_character(character='@');type_character(character='s');type_character(character='a');type_character(character='m');type_character(character='p');type_character(character='l');type_character(character='e');type_character(character='.');type_character(character='n');type_character(character='e');type_character(character='t')",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_f65b35cf-6c38-463d-a072-20f38380cece",
+          "function": {
+            "arguments": "{\"character\": \"c\"}",
+            "name": "type_character"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_f65b35cf-6c38-463d-a072-20f38380cece",
+      "content": "\"c\""
+    },
+    {
+      "content": "type_character(character='y');type_character(character='b');type_character(character='f');type_character(character='l');type_character(character='y');type_character(character='u');type_character(character='n');type_character(character='@');type_character(character='s');type_character(character='a');type_character(character='m');type_character(character='p');type_character(character='l');type_character(character='e');type_character(character='.');type_character(character='n');type_character(character='e');type_character(character='t')",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_1e216c77-f08f-4897-a74e-31e9aa0abdfa",
+          "function": {
+            "arguments": "{\"character\": \"y\"}",
+            "name": "type_character"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_1e216c77-f08f-4897-a74e-31e9aa0abdfa",
+      "content": "\"y\""
+    },
+    {
+      "content": "type_character(character='b');type_character(character='f');type_character(character='l');type_character(character='y');type_character(character='u');type_character(character='n');type_character(character='@');type_character(character='s');type_character(character='a');type_character(character='m');type_character(character='p');type_character(character='l');type_character(character='e');type_character(character='.');type_character(character='n');type_character(character='e');type_character(character='t')",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_0beb8dc6-d5a0-4d38-8a72-0e4c948f33d1",
+          "function": {
+            "arguments": "{\"character\": \"b\"}",
+            "name": "type_character"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_0beb8dc6-d5a0-4d38-8a72-0e4c948f33d1",
+      "content": "\"b\""
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "type_character",
+        "description": "Print the given character. Accepts only a single character, like type_writer(letter='@')",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "character": {
+              "type": "string",
+              "description": "Print the given character. Accepts only a single character, like type_character(character='@')"
+            }
+          },
+          "required": [
+            "character"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "type_letter",
+        "description": "Print the given letter. Accepts only a single letter, like type_writer(letter='a')",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "letter": {
+              "type": "string",
+              "description": "Print the given letter. Accepts only a single letter, like type_writer(letter='a')"
+            }
+          },
+          "required": [
+            "letter"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+get_current_time_at_location(lat_long=get_latitude_longitude(location='New York')); get_timezone(lat_long=get_latitude_longitude(location='Palo Alto'))

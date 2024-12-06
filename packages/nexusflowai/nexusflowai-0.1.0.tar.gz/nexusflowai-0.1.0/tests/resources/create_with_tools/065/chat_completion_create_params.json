@@ -1,0 +1,13 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Please generate a function call."
+        },
+        {
+            "role": "fake role",
+            "content": "What's the weather like New York?"
+        }
+    ]
+}

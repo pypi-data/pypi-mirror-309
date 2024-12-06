@@ -1,0 +1,49 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Please generate a function call."
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "add",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "left": {
+                            "type": "boolean"
+                        },
+                        "right": {
+                            "type": "null"
+                        }
+                    }
+                },
+                "description": "Call this function with two arguments."
+            }
+        }
+    ],
+    "response_format": {
+        "title": "Person",
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "age": {
+                "type": "integer"
+            },
+            "email": {
+                "type": "string",
+                "format": "email"
+            }
+        },
+        "required": [
+            "name",
+            "age"
+        ]
+    }
+}

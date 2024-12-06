@@ -1,0 +1,49 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "gcybflyun@sample.net"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "type_character",
+        "description": "Print the given character. Accepts only a single character, like type_writer(letter='@')",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "character": {
+              "type": "string",
+              "description": "Print the given character. Accepts only a single character, like type_character(character='@')"
+            }
+          },
+          "required": [
+            "character"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "type_letter",
+        "description": "Print the given letter. Accepts only a single letter, like type_writer(letter='a')",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "letter": {
+              "type": "string",
+              "description": "Print the given letter. Accepts only a single letter, like type_writer(letter='a')"
+            }
+          },
+          "required": [
+            "letter"
+          ]
+        }
+      }
+    }
+  ]
+}

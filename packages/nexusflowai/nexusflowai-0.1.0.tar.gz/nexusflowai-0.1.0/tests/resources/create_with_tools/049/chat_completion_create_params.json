@@ -1,0 +1,1149 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want to check how many vulnerabilities are related to Microsoft Exchange 2010?"
+    },
+    {
+      "content": "searchCVE(cpeName='microsoft:exchange_server:2010')",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_e25b33eb-e20f-4ae1-85a3-c5a3438f0e15",
+          "function": {
+            "arguments": "{\"cpeName\": \"microsoft:exchange_server:2010\"}",
+            "name": "searchCVE"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_e25b33eb-e20f-4ae1-85a3-c5a3438f0e15",
+      "content": "[]"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "compare_cvecpes",
+        "description": "Compare two lists of CVE/CPE objects and provide a detailed comparison summary.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cvecpeList1": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "properties": {
+                      "cveId": {
+                        "type": "string",
+                        "description": "Unique identifier for a CVE object."
+                      }
+                    },
+                    "required": [
+                      "cveId"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "cpeName": {
+                        "type": "string",
+                        "description": "Unique identifier for a CPE object."
+                      }
+                    },
+                    "required": [
+                      "cpeName"
+                    ]
+                  }
+                ]
+              },
+              "description": "First list of CVE/CPE objects."
+            },
+            "cvecpeList2": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "properties": {
+                      "cveId": {
+                        "type": "string",
+                        "description": "Unique identifier for a CVE object."
+                      }
+                    },
+                    "required": [
+                      "cveId"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "cpeName": {
+                        "type": "string",
+                        "description": "Unique identifier for a CPE object."
+                      }
+                    },
+                    "required": [
+                      "cpeName"
+                    ]
+                  }
+                ]
+              },
+              "description": "Second list of CVE/CPE objects."
+            }
+          },
+          "required": [
+            "cvecpeList1",
+            "cvecpeList2"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "A detailed comparison summary of the two input lists, including common items, items unique to each list, and summaries of each list."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "countCVEsBySeverity",
+        "description": "Analyze a list of CVE objects, and return a dictionary with counts of CVEs according to their 'cvssV3Severity'.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cve_list": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cvssV3Severity": {
+                    "type": "string",
+                    "enum": [
+                      "LOW",
+                      "MEDIUM",
+                      "HIGH",
+                      "CRITICAL"
+                    ],
+                    "description": "The CVSS Version 3.x severity of the CVE."
+                  }
+                }
+              },
+              "description": "A list of dictionary objects each representing a CVE. Each dictionary should include a 'cvssV3Severity' key."
+            }
+          },
+          "required": [
+            "cve_list"
+          ]
+        },
+        "returns": {
+          "type": "object",
+          "properties": {
+            "LOW": {
+              "type": "integer",
+              "description": "Count of CVEs with LOW severity."
+            },
+            "MEDIUM": {
+              "type": "integer",
+              "description": "Count of CVEs with MEDIUM severity."
+            },
+            "HIGH": {
+              "type": "integer",
+              "description": "Count of CVEs with HIGH severity."
+            },
+            "CRITICAL": {
+              "type": "integer",
+              "description": "Count of CVEs with CRITICAL severity."
+            }
+          },
+          "description": "A dictionary with keys as 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL' and values as counts of CVEs having corresponding 'cvssV3Severity'."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "count_cvecpe_items",
+        "description": "Count the number of CVE and CPE items in a list of CVE/CPE objects.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cvecpeList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "properties": {
+                      "cveId": {
+                        "type": "string",
+                        "description": "Unique identifier for a CVE object."
+                      }
+                    },
+                    "required": [
+                      "cveId"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "cpeName": {
+                        "type": "string",
+                        "description": "Unique identifier for a CPE object."
+                      }
+                    },
+                    "required": [
+                      "cpeName"
+                    ]
+                  }
+                ]
+              },
+              "description": "List of CVE/CPE objects to be counted."
+            }
+          },
+          "required": [
+            "cvecpeList"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "A formatted string containing the total count of items, count of CVE items, and count of CPE items in the input list."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "filterCVEByLanguage",
+        "description": "Filters CVE objects and returns those with descriptions in a specific language.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cve_list": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "description": "A list of CVE objects."
+            },
+            "language": {
+              "type": "string",
+              "description": "ISO 639-1 language code to filter by."
+            }
+          },
+          "required": [
+            "cve_list",
+            "language"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "CVE objects that contain a description in the specified language."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "filterCVEsBySeverity",
+        "description": "Returns a list of CVE objects from the given collection that have the provided severity level.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cveList": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "description": "List of objects containing a collection of CVEs."
+            },
+            "severityLevel": {
+              "type": "string",
+              "description": "The severity level to filter the CVEs. Accepts 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'.",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH",
+                "CRITICAL"
+              ]
+            }
+          },
+          "required": [
+            "cveList",
+            "severityLevel"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "CVE objects from the given list that have the provided severity level."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "filterDeprecatedCPEs",
+        "description": "Loop through the CPE objects in the list and return the ones that are not deprecated.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cpeList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "deprecated": {
+                    "type": "boolean",
+                    "description": "Indicates whether the CPE object is deprecated."
+                  }
+                }
+              },
+              "description": "A list of CPE objects. Each CPE object has a 'deprecated' key. If the value of this key is False, it means the CPE object is not deprecated."
+            }
+          },
+          "required": [
+            "cpeList"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "This function will return a list of non-deprecated CPE objects."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "getCPEName",
+        "description": "Extract the CPE name from a CPE object.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cpeObject": {
+              "type": "object",
+              "description": "A CPE object containing the 'cpeName' field."
+            }
+          },
+          "required": [
+            "cpeObject"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The CPE name retrieved from the CPE object."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_first_object_from_list",
+        "description": "Retrieves the first object from a given list of CVE or CPE items. If the list is empty, it returns None.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "list_of_objects": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "description": "List containing CVE or CPE objects from which the function will pick out the first object."
+            }
+          },
+          "required": [
+            "list_of_objects"
+          ]
+        },
+        "returns": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "The first CVE or CPE object in the list."
+            },
+            {
+              "type": "null",
+              "description": "Returned if the input list is empty."
+            }
+          ],
+          "description": "The first CVE or CPE object in the list, or None if the list is empty."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mergeCPEs",
+        "description": "Merge two lists of CPE objects into a single list, avoiding duplicates based on cpeNameId.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "list1": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cpeNameId": {
+                    "type": "string",
+                    "description": "Unique identifier for the CPE object."
+                  }
+                },
+                "required": [
+                  "cpeNameId"
+                ]
+              },
+              "description": "First list of CPE objects."
+            },
+            "list2": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cpeNameId": {
+                    "type": "string",
+                    "description": "Unique identifier for the CPE object."
+                  }
+                },
+                "required": [
+                  "cpeNameId"
+                ]
+              },
+              "description": "Second list of CPE objects."
+            }
+          },
+          "required": [
+            "list1",
+            "list2"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cpeNameId": {
+                "type": "string",
+                "description": "Unique identifier for the CPE object."
+              }
+            },
+            "required": [
+              "cpeNameId"
+            ]
+          },
+          "description": "A combined list of CPE objects from both input lists, with duplicates removed based on cpeNameId."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mergeCVEs",
+        "description": "Merge two lists of CVE objects into a single list, avoiding duplicates based on cveId.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "list1": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cveId": {
+                    "type": "string",
+                    "description": "Unique identifier for the CVE object."
+                  }
+                },
+                "required": [
+                  "cveId"
+                ]
+              },
+              "description": "First list of CVE objects."
+            },
+            "list2": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cveId": {
+                    "type": "string",
+                    "description": "Unique identifier for the CVE object."
+                  }
+                },
+                "required": [
+                  "cveId"
+                ]
+              },
+              "description": "Second list of CVE objects."
+            }
+          },
+          "required": [
+            "list1",
+            "list2"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cveId": {
+                "type": "string",
+                "description": "Unique identifier for the CVE object."
+              }
+            },
+            "required": [
+              "cveId"
+            ]
+          },
+          "description": "A combined list of CVE objects from both input lists, with duplicates removed based on cveId."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "searchCPE",
+        "description": "Search for CPE (Common Platform Enumeration) entries based on various criteria. All parameters are optional. If not provided, they won't be used in filtering. Date parameters should be provided in 'YYYY-MM-DD' format. The function uses case-insensitive matching for string comparisons where applicable, except when keywordExactMatch is true. Date range filtering is only applied if both start and end dates are provided. The function searches through a predefined CPE_DB. In a real implementation, this function would interact with the NVD (National Vulnerability Database) API. The 'verbose' parameter, if set to true, would print a GET request URL, simulating an API call. The actual implementation may include more fields in the returned CPE objects than those specified in the 'returns' schema.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cpeNameId": {
+              "type": "string",
+              "description": "Specific CPE Name ID to search for."
+            },
+            "cpeMatchString": {
+              "type": "string",
+              "description": "Partial CPE name to match against."
+            },
+            "keywordExactMatch": {
+              "type": "boolean",
+              "default": false,
+              "description": "If true, perform an exact match on the keyword."
+            },
+            "keywordSearch": {
+              "type": "string",
+              "description": "Keyword to search in CPE titles."
+            },
+            "lastModStartDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Start date for last modification filter (YYYY-MM-DD)."
+            },
+            "lastModEndDate": {
+              "type": "string",
+              "format": "date",
+              "description": "End date for last modification filter (YYYY-MM-DD)."
+            },
+            "matchCriteriaId": {
+              "type": "string",
+              "description": "Specific match criteria ID to filter by."
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Maximum number of results to return."
+            },
+            "key": {
+              "type": "string",
+              "description": "API key for authentication (not used in this mock version)."
+            },
+            "delay": {
+              "type": "integer",
+              "default": 6,
+              "description": "Delay between API requests in seconds (not used in this mock version)."
+            },
+            "verbose": {
+              "type": "boolean",
+              "default": false,
+              "description": "If true, print the request URL."
+            }
+          }
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cpeNameId": {
+                "type": "string",
+                "description": "The CPE Name ID."
+              },
+              "cpeName": {
+                "type": "string",
+                "description": "The full CPE name."
+              },
+              "titles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "description": "Title of the CPE."
+                    }
+                  }
+                },
+                "description": "List of titles associated with the CPE."
+              },
+              "lastModified": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date of last modification."
+              },
+              "matchCriteria": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "List of match criteria associated with the CPE."
+              }
+            },
+            "required": [
+              "cpeNameId",
+              "cpeName",
+              "titles",
+              "lastModified"
+            ]
+          },
+          "description": "A list of CPE objects matching the search criteria."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "searchCVE",
+        "description": "Search for CVE (Common Vulnerabilities and Exposures) entries based on various criteria. All parameters are optional. If not provided, they won't be used in filtering. Date parameters should be provided in 'YYYY-MM-DD' format. The function uses case-insensitive matching for string comparisons where applicable. Date range filtering is only applied if both start and end dates are provided. The function searches through a predefined CVE_DB, which is not represented in this schema. Additional keyword arguments (**kwargs) are accepted but not used in the current implementation. The actual implementation may include more fields in the returned CVE objects than those specified in the 'returns' schema.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "keywordSearch": {
+              "type": "string",
+              "description": "Keyword to search for in CVE descriptions."
+            },
+            "cvssV2Severity": {
+              "type": "string",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH",
+                "CRITICAL"
+              ],
+              "description": "CVSS V2 severity level to filter by."
+            },
+            "cvssV3Severity": {
+              "type": "string",
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH",
+                "CRITICAL"
+              ],
+              "description": "CVSS V3 severity level to filter by."
+            },
+            "cveId": {
+              "type": "string",
+              "description": "Specific CVE ID to search for."
+            },
+            "lastModStartDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Start date for last modification date range (YYYY-MM-DD)."
+            },
+            "lastModEndDate": {
+              "type": "string",
+              "format": "date",
+              "description": "End date for last modification date range (YYYY-MM-DD)."
+            },
+            "pubStartDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Start date for publication date range (YYYY-MM-DD)."
+            },
+            "pubEndDate": {
+              "type": "string",
+              "format": "date",
+              "description": "End date for publication date range (YYYY-MM-DD)."
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Maximum number of results to return."
+            },
+            "cvssV2Metrics": {
+              "type": "string",
+              "description": "CVSS V2 metrics string to filter by."
+            },
+            "hasCertAlerts": {
+              "type": "boolean",
+              "description": "Filter for CVEs with CERT alerts."
+            },
+            "hasOval": {
+              "type": "boolean",
+              "description": "Filter for CVEs with OVAL definitions."
+            },
+            "hasCertNotes": {
+              "type": "boolean",
+              "description": "Filter for CVEs with CERT notes."
+            },
+            "cpeName": {
+              "type": "string",
+              "description": "CPE name to filter affected products."
+            },
+            "isVulnerable": {
+              "type": "boolean",
+              "description": "Filter for vulnerable/not vulnerable CVEs."
+            },
+            "key": {
+              "type": "string",
+              "description": "API key for authentication (if required)."
+            }
+          }
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cveId": {
+                "type": "string",
+                "description": "The CVE identifier."
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of the vulnerability."
+              },
+              "cvssV2Severity": {
+                "type": "string",
+                "enum": [
+                  "LOW",
+                  "MEDIUM",
+                  "HIGH",
+                  "CRITICAL"
+                ],
+                "description": "CVSS V2 severity of the vulnerability."
+              },
+              "cvssV3Severity": {
+                "type": "string",
+                "enum": [
+                  "LOW",
+                  "MEDIUM",
+                  "HIGH",
+                  "CRITICAL"
+                ],
+                "description": "CVSS V3 severity of the vulnerability."
+              },
+              "lastModifiedDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date of last modification."
+              },
+              "publishedDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date of publication."
+              }
+            },
+            "required": [
+              "cveId",
+              "description",
+              "lastModifiedDate",
+              "publishedDate"
+            ]
+          },
+          "description": "A list of CVE objects matching the search criteria."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "search_backup_keywords",
+        "description": "Search using backup keywords if the initial search returns no results. If the initial cvecpeList is empty, the function will perform a backup search. The backup search uses either searchCVE or searchCPE based on the backup_keyword. If 'cve' is in the backup_keyword (case-insensitive), searchCVE is used; otherwise, searchCPE is used. The searchCVE and searchCPE functions are not defined in this schema and may need separate representations.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cvecpeList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "properties": {
+                      "cveId": {
+                        "type": "string",
+                        "description": "Unique identifier for a CVE object."
+                      }
+                    },
+                    "required": [
+                      "cveId"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "cpeName": {
+                        "type": "string",
+                        "description": "Unique identifier for a CPE object."
+                      }
+                    },
+                    "required": [
+                      "cpeName"
+                    ]
+                  }
+                ]
+              },
+              "description": "The initial search results."
+            },
+            "backup_keyword": {
+              "type": "string",
+              "description": "The backup keyword to use if initial results are empty."
+            }
+          },
+          "required": [
+            "cvecpeList",
+            "backup_keyword"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "oneOf": [
+              {
+                "properties": {
+                  "cveId": {
+                    "type": "string",
+                    "description": "Unique identifier for a CVE object."
+                  }
+                },
+                "required": [
+                  "cveId"
+                ]
+              },
+              {
+                "properties": {
+                  "cpeName": {
+                    "type": "string",
+                    "description": "Unique identifier for a CPE object."
+                  }
+                },
+                "required": [
+                  "cpeName"
+                ]
+              }
+            ]
+          },
+          "description": "Either the initial results or results from the backup search."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sortCPEsByLastMod",
+        "description": "Sorts a list of object collections of CPEs by their last modification time.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cpeList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "lastModified": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The last modification time of the CPE in ISO 8601 format."
+                  }
+                }
+              },
+              "description": "The list of object collections of CPEs that need to be sorted."
+            },
+            "descending": {
+              "type": "boolean",
+              "default": true,
+              "description": "If True, sort in descending order. Defaults to True."
+            }
+          },
+          "required": [
+            "cpeList"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "Sorted list of CPE objects."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sortCVEsByCVSSv2Score",
+        "description": "Sorts a list of CVE objects by their CVSS Version 2.0 base scores.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cve_list": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cvssV2Score": {
+                    "type": "number",
+                    "description": "The CVSS Version 2.0 base score of the CVE."
+                  }
+                }
+              },
+              "description": "List of CVE objects."
+            },
+            "descending": {
+              "type": "boolean",
+              "default": true,
+              "description": "If True, sort in descending order. Defaults to True."
+            }
+          },
+          "required": [
+            "cve_list"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "Sorted list of CVE objects."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sortCVEsByCVSSv3Score",
+        "description": "Sorts a list of CVE objects by their CVSS Version 3.x base scores.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cve_list": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cvssV3Score": {
+                    "type": "number",
+                    "description": "The CVSS Version 3.x base score of the CVE."
+                  }
+                }
+              },
+              "description": "List of CVE objects."
+            },
+            "descending": {
+              "type": "boolean",
+              "default": true,
+              "description": "If True, sort in descending order. Defaults to True."
+            }
+          },
+          "required": [
+            "cve_list"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "Sorted list of CVE objects."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sortCVEsByModDate",
+        "description": "Sorts a list of CVE objects by their last modification date.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cve_list": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The last modification date of the CVE in ISO 8601 format."
+                  }
+                }
+              },
+              "description": "List of CVE objects."
+            },
+            "descending": {
+              "type": "boolean",
+              "default": true,
+              "description": "If True, sort in descending order. Defaults to True."
+            }
+          },
+          "required": [
+            "cve_list"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "Sorted list of CVE objects."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "summarize_cvecpes",
+        "description": "Summarize a list of CVE/CPE items, providing various statistics and information about the items. The function processes both CPE and CVE items, identified by the presence of 'cpeName' or 'cveId' respectively. For CPE items, it extracts vendor and product type information from the CPE name. For CVE items, it counts unique CVE IDs and summarizes severity levels. The function tracks the earliest and latest modification dates across all items. If the input list is empty, it returns a simple 'No items to summarize.' message. The returned string is formatted with multiple lines and sections for readability. Date strings in the input are expected to be in ISO 8601 format (YYYY-MM-DD). The function uses Python's datetime and Counter classes, which are not directly representable in JSON schema.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cvecpeList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "properties": {
+                      "cpeName": {
+                        "type": "string",
+                        "description": "Unique identifier for a CPE object."
+                      },
+                      "lastModified": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Last modification date of the CPE item."
+                      }
+                    },
+                    "required": [
+                      "cpeName",
+                      "lastModified"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "cveId": {
+                        "type": "string",
+                        "description": "Unique identifier for a CVE object."
+                      },
+                      "cvssV3Severity": {
+                        "type": "string",
+                        "enum": [
+                          "CRITICAL",
+                          "HIGH",
+                          "MEDIUM",
+                          "LOW",
+                          "UNKNOWN"
+                        ],
+                        "description": "CVSS V3 severity of the CVE."
+                      },
+                      "lastModifiedDate": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Last modification date of the CVE item."
+                      }
+                    },
+                    "required": [
+                      "cveId",
+                      "lastModifiedDate"
+                    ]
+                  }
+                ]
+              },
+              "description": "List of CVE/CPE objects to be summarized."
+            }
+          },
+          "required": [
+            "cvecpeList"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "A formatted string containing a summary of the input CVE/CPE list, including total items, unique vendors, product types, CVE counts, severity distribution, and modification date range."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "verify_and_process_data_range_end",
+        "description": "Verify and process the end date of a date range, ensuring it's not more than 90 days after the start date. The function expects dates in 'YYYY-MM-DD' format. If the difference between start and end dates is 90 days or less, the original end date is returned. If the difference is more than 90 days, a new date 90 days after the start date is returned. The function uses Python's datetime and timedelta classes, which are not directly representable in JSON schema.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "startdate": {
+              "type": "string",
+              "format": "date",
+              "description": "The start date of the range in YYYY-MM-DD format."
+            },
+            "enddate": {
+              "type": "string",
+              "format": "date",
+              "description": "The end date of the range in YYYY-MM-DD format."
+            }
+          },
+          "required": [
+            "startdate",
+            "enddate"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "format": "date",
+          "description": "The processed end date, either the original end date if within 90 days of the start date, or a date 90 days after the start date."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "verify_and_process_data_range_start",
+        "description": "Verify and process the start date of a date range, ensuring it's not more than 90 days before the end date. The function expects dates in 'YYYY-MM-DD' format. If the difference between start and end dates is 90 days or less, the original start date is returned. If the difference is more than 90 days, a new date 90 days before the end date is returned. The function uses Python's datetime and timedelta classes, which are not directly representable in JSON schema.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "startdate": {
+              "type": "string",
+              "format": "date",
+              "description": "The start date of the range in YYYY-MM-DD format."
+            },
+            "enddate": {
+              "type": "string",
+              "format": "date",
+              "description": "The end date of the range in YYYY-MM-DD format."
+            }
+          },
+          "required": [
+            "startdate",
+            "enddate"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "format": "date",
+          "description": "The processed start date, either the original start date if within 90 days of the end date, or a date 90 days before the end date."
+        }
+      }
+    }
+  ]
+}

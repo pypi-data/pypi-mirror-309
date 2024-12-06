@@ -1,0 +1,45 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "first query"
+        },
+        {
+            "role": "user",
+            "content": "two calls"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "first_call",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "single_param": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "This is the\nfirst docstring."
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "second_call",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "param_one": {},
+                        "param_two": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

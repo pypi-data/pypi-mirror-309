@@ -1,0 +1,9 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "no tools"
+        }
+    ]
+}

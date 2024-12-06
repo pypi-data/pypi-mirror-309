@@ -1,0 +1,21 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "hello",
+            "description": "Hello world.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "a": {
+                        "type": "string",
+                        "default": "hi"
+                    }
+                },
+                "required": [
+                    "a"
+                ]
+            }
+        }
+    }
+]

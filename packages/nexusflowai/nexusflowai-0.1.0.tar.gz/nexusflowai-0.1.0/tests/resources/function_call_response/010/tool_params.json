@@ -1,0 +1,21 @@
+[
+    {
+        "function": {
+            "name": "frank",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "type": "str"
+                    },
+                    "d": {
+                        "type": "int"
+                    },
+                    "z": {
+                        "type": "abcdef"
+                    }
+                }
+            }
+        }
+    }
+]

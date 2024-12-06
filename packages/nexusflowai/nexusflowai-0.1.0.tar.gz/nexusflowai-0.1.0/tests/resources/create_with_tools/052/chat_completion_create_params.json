@@ -1,0 +1,44 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "content": "get_weather(location='Boston')",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": [
+                {
+                    "id": "call_id1",
+                    "function": {
+                        "arguments": "{\n  \"location\": \"Boston\", \"unit\": \"celsius\" \n}",
+                        "name": "get_weather"
+                    },
+                    "type": "function"
+                }
+            ],
+            "refusal": null
+        },
+        {
+            "role": "tool",
+            "content": "\"22°C\"",
+            "tool_call_id": "call_idX"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_current_location",
+                "description": "Returns the current location. ONLY use this if the user has not provided an explicit location in the query.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                },
+                "returns": {
+                    "type": "string",
+                    "description": "The current location as a string (e.g., 'Austin')."
+                }
+            }
+        }
+    ]
+}

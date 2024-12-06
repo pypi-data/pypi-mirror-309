@@ -1,0 +1,10 @@
+[
+    {
+        "name": "b",
+        "arguments": "{\"c\": 2}"
+    },
+    {
+        "name": "g",
+        "arguments": "{\"h\": 3}"
+    }
+]

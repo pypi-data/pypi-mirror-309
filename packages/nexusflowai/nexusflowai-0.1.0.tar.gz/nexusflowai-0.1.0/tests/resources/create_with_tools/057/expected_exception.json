@@ -1,0 +1,4 @@
+{
+    "expected_exception": "AssertionError",
+    "match": "No user query was found"
+}

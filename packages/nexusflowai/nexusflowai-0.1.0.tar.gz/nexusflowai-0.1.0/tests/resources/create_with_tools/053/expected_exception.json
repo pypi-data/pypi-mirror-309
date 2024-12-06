@@ -1,0 +1,4 @@
+{
+    "expected_exception": "AssertionError",
+    "match": "Invalid parameter: 'tool_call_id' of 'call_idX' not found in any 'tool_calls' of previous messages."
+}

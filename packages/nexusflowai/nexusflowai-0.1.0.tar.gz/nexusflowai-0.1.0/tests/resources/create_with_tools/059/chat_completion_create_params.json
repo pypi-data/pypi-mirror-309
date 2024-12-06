@@ -1,0 +1,21 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "no parameters"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "call_with_no_parameters",
+                "parameters": {
+                    "type": "object",
+                    "properties": {}
+                }
+            }
+        }
+    ]
+}

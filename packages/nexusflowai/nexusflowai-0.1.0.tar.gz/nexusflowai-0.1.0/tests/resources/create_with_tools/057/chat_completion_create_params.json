@@ -1,0 +1,22 @@
+{
+    "messages": [],
+    "model": "nexus-tool-use-20240816",
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_current_location",
+                "description": "Returns the current location. ONLY use this if the user has not provided an explicit location in the query.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                },
+                "returns": {
+                    "type": "string",
+                    "description": "The current location as a string (e.g., 'Austin')."
+                }
+            }
+        }
+    ]
+}

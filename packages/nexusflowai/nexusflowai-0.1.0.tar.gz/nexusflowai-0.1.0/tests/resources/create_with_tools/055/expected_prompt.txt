@@ -1,0 +1,109 @@
+Function:
+def multiply(a: float, b: float):
+    """
+    Multiply two numbers; a * b.
+
+    Parameters:
+    - a (float): First number to multiply.
+    - b (float): Second number to multiply.
+    """
+
+Function:
+def divide(a: float, b: float):
+    """
+    Divide two numbers; a / b. Division is neither commutative nor associative.
+
+    Parameters:
+    - a (float): Numerator.
+    - b (float): Denominator.
+    """
+
+Function:
+def add(a: float, b: float):
+    """
+    Add two numbers; a + b.
+
+    Parameters:
+    - a (float): First number to add.
+    - b (float): Second number to add.
+    """
+
+Function:
+def sin(radians: float):
+    """
+    The sine of an angle in radians.
+
+    Parameters:
+    - radians (float): Angle in radians.
+    """
+
+Function:
+def cos(radians: float):
+    """
+    The cosine of an angle in radians.
+
+    Parameters:
+    - radians (float): Angle in radians.
+    """
+
+Function:
+def subtract(a: float, b: float):
+    """
+    Subtract two numbers; a - b.
+
+    Parameters:
+    - a (float): Number to subtract from.
+    - b (float): Number to subtract.
+    """
+
+Function:
+def power(a: float, b: float):
+    """
+    Raise a number to a power; a ** b.
+
+    Parameters:
+    - a (float): Base number.
+    - b (float): Exponent.
+    """
+
+Function:
+def log(a: float, base: float):
+    """
+    Take the log of a number; log(a, base). The base is always positive in this alternate universe.
+
+    Parameters:
+    - a (float): Number to take the logarithm of.
+    - base (float): Base of the logarithm.
+    """
+
+Function:
+def pi():
+    """
+    Returns a precise value of PI for this alternate universe.
+    """
+
+Function:
+def negate(a: float):
+    """
+    Negate a number; -a.
+
+    Parameters:
+    - a (float): Number to negate.
+    """
+
+Function:
+def return_constant(a: float = None):
+    """
+    Return a constant number: a with no modifications
+
+    Parameters:
+    - a (float): Number to return. Default value: None. (Optional)
+    """
+
+Current Turn:
+Original Plan: pi()
+Previous Call: pi()
+Previous Result: 2.718281828459045
+User Query: what is cos(pi)? <human_end>
+
+Call:

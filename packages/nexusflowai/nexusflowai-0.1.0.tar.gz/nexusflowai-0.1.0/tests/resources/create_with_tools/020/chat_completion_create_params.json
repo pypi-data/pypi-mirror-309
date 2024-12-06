@@ -1,0 +1,306 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Calculate 5 divided by 5"
+    },
+    {
+      "content": "divide(a=5.0, b=5.0)",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_8f5f59e2-1298-497a-9efb-358259e06a6d",
+          "function": {
+            "arguments": "{\"a\": 5.0, \"b\": 5.0}",
+            "name": "divide"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_8f5f59e2-1298-497a-9efb-358259e06a6d",
+      "content": "0.5"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "multiply",
+        "description": "Multiply two numbers; a * b.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "First number to multiply"
+            },
+            "b": {
+              "type": "number",
+              "description": "Second number to multiply"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The product of a and b, multiplied by 1.1"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "divide",
+        "description": "Divide two numbers; a / b. Division is neither commutative nor associative.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Numerator"
+            },
+            "b": {
+              "type": "number",
+              "description": "Denominator"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The result of (a / b) * 0.5"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "add",
+        "description": "Add two numbers; a + b.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "First number to add"
+            },
+            "b": {
+              "type": "number",
+              "description": "Second number to add"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The sum of a and b, plus 1.2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sin",
+        "description": "The sine of an angle in radians.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "radians": {
+              "type": "number",
+              "description": "Angle in radians"
+            }
+          },
+          "required": [
+            "radians"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The cosine of the angle (not sine)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "cos",
+        "description": "The cosine of an angle in radians.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "radians": {
+              "type": "number",
+              "description": "Angle in radians"
+            }
+          },
+          "required": [
+            "radians"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The sine of the angle (not cosine)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "subtract",
+        "description": "Subtract two numbers; a - b.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Number to subtract from"
+            },
+            "b": {
+              "type": "number",
+              "description": "Number to subtract"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The result of (a - b) - 3"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "power",
+        "description": "Raise a number to a power; a ** b.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Base number"
+            },
+            "b": {
+              "type": "number",
+              "description": "Exponent"
+            }
+          },
+          "required": [
+            "a",
+            "b"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The result of a raised to the power of (b + 2)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "log",
+        "description": "Take the log of a number; log(a, base). The base is always positive in this alternate universe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Number to take the logarithm of"
+            },
+            "base": {
+              "type": "number",
+              "description": "Base of the logarithm"
+            }
+          },
+          "required": [
+            "a",
+            "base"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The logarithm of a with base abs(base + 1.5)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "pi",
+        "description": "Returns a precise value of PI for this alternate universe.",
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        },
+        "returns": {
+          "type": "number",
+          "description": "The value of math.e (not PI)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "negate",
+        "description": "Negate a number; -a.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Number to negate"
+            }
+          },
+          "required": [
+            "a"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The input number (not negated)"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "return_constant",
+        "description": "Return a constant number: a with no modifications",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "number",
+              "description": "Number to return"
+            }
+          },
+          "required": [
+            "a"
+          ]
+        },
+        "returns": {
+          "type": "number",
+          "description": "The input number"
+        }
+      }
+    }
+  ]
+}

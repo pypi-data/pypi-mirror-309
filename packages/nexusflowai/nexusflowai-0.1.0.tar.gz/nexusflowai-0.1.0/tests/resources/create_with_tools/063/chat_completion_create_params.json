@@ -1,0 +1,34 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "the first user query\n\nhere are some newlines\n\nthe newlines below this should not be stripped\n\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "assistant has responded here!\n\nhere are some newlines\n\nthe newlines below this should not be stripped\n\n\n",
+            "tool_calls": []
+        },
+        {
+            "role": "user",
+            "content": "no parameters\n\nhere are some newlines\n\nthe newlines below this should not be stripped\n\n\n\n"
+        },
+        {
+            "role": "system",
+            "content": "a system prompt\n\nwith new lines\n\nthe newlines below this should not be stripped\n\n\n\n"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "call_with_no_parameters",
+                "parameters": {
+                    "type": "object",
+                    "properties": {}
+                }
+            }
+        }
+    ]
+}

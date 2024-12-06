@@ -1,0 +1,16 @@
+@dataclass
+class Person:
+    name: str
+    age: int
+    email: Optional[str] = None
+
+Function:
+def extract_item(value: Person): 
+    """
+    Please extract the necessary information in the format requested using the data-classes above and pass them in.
+    """
+
+Current Turn:
+User Query: Please generate a function call. <human_end>
+
+Call:

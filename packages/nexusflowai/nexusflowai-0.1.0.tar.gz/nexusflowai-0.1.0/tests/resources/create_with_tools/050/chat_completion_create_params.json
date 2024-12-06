@@ -1,0 +1,88 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Please generate a function call."
+        },
+        {
+            "content": "get_weather(location='Boston')",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": [
+                {
+                    "id": "call_id1",
+                    "function": {
+                        "arguments": "{\n  \"location\": \"Boston\", \"unit\": \"celsius\" \n}",
+                        "name": "get_weather"
+                    },
+                    "type": "function"
+                }
+            ],
+            "refusal": null
+        },
+        {
+            "role": "tool",
+            "content": "\"22°C\"",
+            "tool_call_id": "call_id1"
+        },
+        {
+            "role": "user",
+            "content": "What's the weather like San Francisco."
+        },
+        {
+            "content": "get_weather(location='San Francisco')",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": [
+                {
+                    "id": "call_id2",
+                    "function": {
+                        "arguments": "{\n  \"location\": \"California\", \"unit\": \"celsius\" \n}",
+                        "name": "get_weather"
+                    },
+                    "type": "function"
+                }
+            ],
+            "refusal": null
+        },
+        {
+            "role": "tool",
+            "content": "\"15°C\"",
+            "tool_call_id": "call_id2"
+        },
+        {
+            "role": "user",
+            "content": "What's the weather like New York?"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_weather",
+                "description": "Get the current weather in a given location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {
+                            "type": "string",
+                            "description": "The city and state, e.g. San Francisco, CA"
+                        },
+                        "unit": {
+                            "type": "string",
+                            "enum": [
+                                "celsius",
+                                "fahrenheit"
+                            ],
+                            "description": "The temperature unit to use"
+                        }
+                    },
+                    "required": [
+                        "location"
+                    ]
+                }
+            }
+        }
+    ]
+}

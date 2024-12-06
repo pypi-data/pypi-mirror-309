@@ -1,0 +1,281 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "after calculating the sin of 1.5 radians, divide the result by cos of 1.5 radians"
+        },
+        {
+            "content": "sin(radians=1.5)",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": [
+                {
+                    "id": "call_1KGM9H2meia4yS4rDRVCHSd7",
+                    "function": {
+                        "arguments": "{\"radians\": 1.5}",
+                        "name": "sin"
+                    },
+                    "type": "function"
+                }
+            ],
+            "refusal": null
+        },
+        {
+            "role": "tool",
+            "tool_call_id": "call_1KGM9H2meia4yS4rDRVCHSd7",
+            "content": "0.0707372016677029"
+        },
+        {
+            "content": "cos(radians=1.5)",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": [
+                {
+                    "id": "call_KWMixE1S7opFb9hBsvia3vv3",
+                    "function": {
+                        "arguments": "{\"radians\": 1.5}",
+                        "name": "cos"
+                    },
+                    "type": "function"
+                }
+            ],
+            "refusal": null
+        },
+        {
+            "role": "tool",
+            "tool_call_id": "call_KWMixE1S7opFb9hBsvia3vv3",
+            "content": "0.9974949866040544"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "multiply",
+                "description": "Multiply two numbers; a * b.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "First number to multiply"
+                        },
+                        "b": {
+                            "type": "number",
+                            "description": "Second number to multiply"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "b"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "divide",
+                "description": "Divide two numbers; a / b. Division is neither commutative nor associative.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Numerator"
+                        },
+                        "b": {
+                            "type": "number",
+                            "description": "Denominator"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "b"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "add",
+                "description": "Add two numbers; a + b.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "First number to add"
+                        },
+                        "b": {
+                            "type": "number",
+                            "description": "Second number to add"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "b"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "sin",
+                "description": "The sine of an angle in radians.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "radians": {
+                            "type": "number",
+                            "description": "Angle in radians"
+                        }
+                    },
+                    "required": [
+                        "radians"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "cos",
+                "description": "The cosine of an angle in radians.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "radians": {
+                            "type": "number",
+                            "description": "Angle in radians"
+                        }
+                    },
+                    "required": [
+                        "radians"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "subtract",
+                "description": "Subtract two numbers; a - b.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Number to subtract from"
+                        },
+                        "b": {
+                            "type": "number",
+                            "description": "Number to subtract"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "b"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "power",
+                "description": "Raise a number to a power; a ** b.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Base number"
+                        },
+                        "b": {
+                            "type": "number",
+                            "description": "Exponent"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "b"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "log",
+                "description": "Take the log of a number; log(a, base). The base is always positive in this alternate universe.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Number to take the logarithm of"
+                        },
+                        "base": {
+                            "type": "number",
+                            "description": "Base of the logarithm"
+                        }
+                    },
+                    "required": [
+                        "a",
+                        "base"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "pi",
+                "description": "Returns a precise value of PI for this alternate universe.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "negate",
+                "description": "Negate a number; -a.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Number to negate"
+                        }
+                    },
+                    "required": [
+                        "a"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "return_constant",
+                "description": "Return a constant number: a with no modifications",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {
+                            "type": "number",
+                            "description": "Number to return"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

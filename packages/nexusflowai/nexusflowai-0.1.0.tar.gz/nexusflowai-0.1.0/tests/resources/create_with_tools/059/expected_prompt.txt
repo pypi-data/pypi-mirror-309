@@ -1,0 +1,7 @@
+Function:
+def call_with_no_parameters():
+
+Current Turn:
+User Query: no parameters <human_end>
+
+Call:

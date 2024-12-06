@@ -1,0 +1,289 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What's the ID of the weather station closest to me?"
+    },
+    {
+      "content": "get_nearest_station_id(nearby_stations=find_nearby_stations(lat_long=get_latitude_longitude(location=get_current_location())))",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_24ec1998-abe0-4e54-9dfb-84ce771964f6",
+          "function": {
+            "arguments": "{}",
+            "name": "get_current_location"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_24ec1998-abe0-4e54-9dfb-84ce771964f6",
+      "content": "\"London\""
+    },
+    {
+      "content": "get_nearest_station_id(nearby_stations=find_nearby_stations(lat_long=get_latitude_longitude(location='London')))",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_4e183e11-cd44-4e93-8951-5cd013494578",
+          "function": {
+            "arguments": "{\"location\": \"London\"}",
+            "name": "get_latitude_longitude"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_4e183e11-cd44-4e93-8951-5cd013494578",
+      "content": "[51.5072, 0.1276]"
+    },
+    {
+      "content": "get_nearest_station_id(nearby_stations=find_nearby_stations(lat_long=[51.5072, 0.1276]))",
+      "role": "assistant",
+      "function_call": null,
+      "tool_calls": [
+        {
+          "id": "call_564ae42d-755d-4938-b1c1-1cd04c977500",
+          "function": {
+            "arguments": "{\"lat_long\": [51.5072, 0.1276]}",
+            "name": "find_nearby_stations"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_564ae42d-755d-4938-b1c1-1cd04c977500",
+      "content": "[{\"station_id\": \"EGLL\", \"name\": \"London Heathrow Airport\", \"distance\": 24.0}]"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "find_nearby_stations",
+        "description": "This endpoint provides a list of nearby weather stations for a given geographical location.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "lat_long": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "description": "A list containing the latitude and longitude."
+            }
+          },
+          "required": [
+            "lat_long"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "A list of dictionaries about the various stations near the specified location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_location",
+        "description": "Returns the current location. ONLY use this if the user has not provided an explicit location in the query.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "returns": {
+          "type": "string",
+          "description": "The current location as a string (e.g., 'Austin')."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_time_at_location",
+        "description": "Returns the current time at a given location.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "lat_long": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "description": "The latitude and longitude of the location."
+            }
+          },
+          "required": [
+            "lat_long"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The current time at the specified location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_hourly_observation",
+        "description": "Returns hourly observations between start_time and end_time.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "station_id": {
+              "type": "string",
+              "description": "The station_id for the station of interest."
+            },
+            "start_time": {
+              "type": "string",
+              "description": "The start time in 'YYYY-MM-DD' format."
+            },
+            "end_time": {
+              "type": "string",
+              "description": "The end time in 'YYYY-MM-DD' format."
+            },
+            "time_zone": {
+              "type": "string",
+              "description": "The timezone string ID for the location."
+            }
+          },
+          "required": [
+            "station_id",
+            "start_time",
+            "end_time",
+            "time_zone"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "description": "A list of hourly observations for the specified station and timespan."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_latitude_longitude",
+        "description": "Given a city name, this function provides the latitude and longitude of the specific location.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "description": "The name of the location (e.g., 'Austin', 'Austin Airport')."
+            }
+          },
+          "required": [
+            "location"
+          ]
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "A list containing the latitude and longitude of the location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_nearest_station_id",
+        "description": "Given a list of nearby stations, returns the one nearest to you and provides the system ID for it alone.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nearby_stations": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "description": "A list of nearby stations in dictionary format."
+            }
+          },
+          "required": [
+            "nearby_stations"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The station_id for the nearest station in the list."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_timezone",
+        "description": "This function retrieves the timezone for a given latitude and longitude.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "lat_long": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "description": "The latitude and longitude of the area."
+            }
+          },
+          "required": [
+            "lat_long"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The timezone string ID for the specified location."
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "subtract_time_delta",
+        "description": "Subtracts a time delta from the date part of a given date time string and returns the new date string.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "date_time_str": {
+              "type": "string",
+              "description": "The date time string in 'YYYY-MM-DD' format."
+            },
+            "delta_days": {
+              "type": "integer",
+              "description": "Number of days to subtract. Must be greater than 0."
+            }
+          },
+          "required": [
+            "date_time_str",
+            "delta_days"
+          ]
+        },
+        "returns": {
+          "type": "string",
+          "description": "The new date string after subtracting the delta."
+        }
+      }
+    }
+  ]
+}

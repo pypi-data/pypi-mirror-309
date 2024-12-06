@@ -1,0 +1,4 @@
+{
+    "expected_exception": "AssertionError",
+    "match": "Expected at least one of `tools` or `response_format`."
+}

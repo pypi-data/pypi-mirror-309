@@ -1,0 +1,14 @@
+Function:
+def add(left: bool = None, right: None = None):
+    """
+    Call this function with two arguments.
+
+    Parameters:
+    - left (bool):  Default value: None. (Optional)
+    - right (None):  Default value: None. (Optional)
+    """
+
+Current Turn:
+User Query: Please generate a function call. <human_end>
+
+Call:

@@ -1,0 +1,4 @@
+{
+    "expected_exception": "TypeError",
+    "match": "Expected but found no function calls"
+}

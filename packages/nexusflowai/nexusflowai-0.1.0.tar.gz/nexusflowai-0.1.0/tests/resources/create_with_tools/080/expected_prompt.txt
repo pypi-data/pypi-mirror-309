@@ -1,0 +1,23 @@
+@dataclass
+class Step:
+    explanation: str
+    output: str
+
+
+@dataclass
+class MathReasoning:
+    steps: List[Step]
+    final_answer: str
+
+Function:
+def extract_item(value: MathReasoning): 
+    """
+    Please extract the necessary information in the format requested using the data-classes above and pass them in.
+    """
+
+Instruction: You are a helpful math tutor. Guide the user through the solution step by step.
+
+Current Turn:
+User Query: how can I solve 8x + 7 = -23 <human_end>
+
+Call:

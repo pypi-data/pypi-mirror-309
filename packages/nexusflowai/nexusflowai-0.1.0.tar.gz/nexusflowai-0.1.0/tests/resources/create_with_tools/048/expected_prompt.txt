@@ -1,0 +1,229 @@
+Function:
+def compare_cvecpes(cvecpeList1: List[object], cvecpeList2: List[object]) -> str:
+    """
+    Compare two lists of CVE/CPE objects and provide a detailed comparison summary.
+
+    Parameters:
+    - cvecpeList1 (List[object]): First list of CVE/CPE objects.
+    - cvecpeList2 (List[object]): Second list of CVE/CPE objects.
+    """
+
+Function:
+def countCVEsBySeverity(cve_list: List[Dict[str, str]]) -> Dict[str, int]:
+    """
+    Analyze a list of CVE objects, and return a dictionary with counts of CVEs according to their 'cvssV3Severity'.
+
+    Parameters:
+    - cve_list (List[Dict[str, str]]): A list of dictionary objects each representing a CVE. Each dictionary should include a 'cvssV3Severity' key.
+    """
+
+Function:
+def count_cvecpe_items(cvecpeList: List[object]) -> str:
+    """
+    Count the number of CVE and CPE items in a list of CVE/CPE objects.
+
+    Parameters:
+    - cvecpeList (List[object]): List of CVE/CPE objects to be counted.
+    """
+
+Function:
+def filterCVEByLanguage(cve_list: List[object], language: str) -> List[object]:
+    """
+    Filters CVE objects and returns those with descriptions in a specific language.
+
+    Parameters:
+    - cve_list (List[object]): A list of CVE objects.
+    - language (str): ISO 639-1 language code to filter by.
+    """
+
+Function:
+def filterCVEsBySeverity(cveList: List[object], severityLevel: str) -> List[object]:
+    """
+    Returns a list of CVE objects from the given collection that have the provided severity level.
+
+    Parameters:
+    - cveList (List[object]): List of objects containing a collection of CVEs.
+    - severityLevel (str): The severity level to filter the CVEs. Accepts 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'.
+    """
+
+Function:
+def filterDeprecatedCPEs(cpeList: List[Dict[str, bool]]) -> List[object]:
+    """
+    Loop through the CPE objects in the list and return the ones that are not deprecated.
+
+    Parameters:
+    - cpeList (List[Dict[str, bool]]): A list of CPE objects. Each CPE object has a 'deprecated' key. If the value of this key is False, it means the CPE object is not deprecated.
+    """
+
+Function:
+def getCPEName(cpeObject: object) -> str:
+    """
+    Extract the CPE name from a CPE object.
+
+    Parameters:
+    - cpeObject (object): A CPE object containing the 'cpeName' field.
+    """
+
+Function:
+def get_first_object_from_list(list_of_objects: List[object]):
+    """
+    Retrieves the first object from a given list of CVE or CPE items. If the list is empty, it returns None.
+
+    Parameters:
+    - list_of_objects (List[object]): List containing CVE or CPE objects from which the function will pick out the first object.
+    """
+
+Function:
+def mergeCPEs(list1: List[Dict[str, str]], list2: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """
+    Merge two lists of CPE objects into a single list, avoiding duplicates based on cpeNameId.
+
+    Parameters:
+    - list1 (List[Dict[str, str]]): First list of CPE objects.
+    - list2 (List[Dict[str, str]]): Second list of CPE objects.
+    """
+
+Function:
+def mergeCVEs(list1: List[Dict[str, str]], list2: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """
+    Merge two lists of CVE objects into a single list, avoiding duplicates based on cveId.
+
+    Parameters:
+    - list1 (List[Dict[str, str]]): First list of CVE objects.
+    - list2 (List[Dict[str, str]]): Second list of CVE objects.
+    """
+
+Function:
+def searchCPE(cpeNameId: str = None, cpeMatchString: str = None, keywordExactMatch: bool = False, keywordSearch: str = None, lastModStartDate: str = None, lastModEndDate: str = None, matchCriteriaId: str = None, limit: int = None, key: str = None, delay: int = 6, verbose: bool = False) -> List[Dict[str, str]]:
+    """
+    Search for CPE (Common Platform Enumeration) entries based on various criteria. All parameters are optional. If not provided, they won't be used in filtering. Date parameters should be provided in 'YYYY-MM-DD' format. The function uses case-insensitive matching for string comparisons where applicable, except when keywordExactMatch is true. Date range filtering is only applied if both start and end dates are provided. The function searches through a predefined CPE_DB. In a real implementation, this function would interact with the NVD (National Vulnerability Database) API. The 'verbose' parameter, if set to true, would print a GET request URL, simulating an API call. The actual implementation may include more fields in the returned CPE objects than those specified in the 'returns' schema.
+
+    Parameters:
+    - cpeNameId (str): Specific CPE Name ID to search for. Default value: None. (Optional)
+    - cpeMatchString (str): Partial CPE name to match against. Default value: None. (Optional)
+    - keywordExactMatch (bool): If true, perform an exact match on the keyword. Default value: False. (Optional)
+    - keywordSearch (str): Keyword to search in CPE titles. Default value: None. (Optional)
+    - lastModStartDate (str): Start date for last modification filter (YYYY-MM-DD). Default value: None. (Optional)
+    - lastModEndDate (str): End date for last modification filter (YYYY-MM-DD). Default value: None. (Optional)
+    - matchCriteriaId (str): Specific match criteria ID to filter by. Default value: None. (Optional)
+    - limit (int): Maximum number of results to return. Default value: None. (Optional)
+    - key (str): API key for authentication (not used in this mock version). Default value: None. (Optional)
+    - delay (int): Delay between API requests in seconds (not used in this mock version). Default value: 6. (Optional)
+    - verbose (bool): If true, print the request URL. Default value: False. (Optional)
+    """
+
+Function:
+def searchCVE(keywordSearch: str = None, cvssV2Severity: str = None, cvssV3Severity: str = None, cveId: str = None, lastModStartDate: str = None, lastModEndDate: str = None, pubStartDate: str = None, pubEndDate: str = None, limit: int = None, cvssV2Metrics: str = None, hasCertAlerts: bool = None, hasOval: bool = None, hasCertNotes: bool = None, cpeName: str = None, isVulnerable: bool = None, key: str = None) -> List[Dict[str, str]]:
+    """
+    Search for CVE (Common Vulnerabilities and Exposures) entries based on various criteria. All parameters are optional. If not provided, they won't be used in filtering. Date parameters should be provided in 'YYYY-MM-DD' format. The function uses case-insensitive matching for string comparisons where applicable. Date range filtering is only applied if both start and end dates are provided. The function searches through a predefined CVE_DB, which is not represented in this schema. Additional keyword arguments (**kwargs) are accepted but not used in the current implementation. The actual implementation may include more fields in the returned CVE objects than those specified in the 'returns' schema.
+
+    Parameters:
+    - keywordSearch (str): Keyword to search for in CVE descriptions. Default value: None. (Optional)
+    - cvssV2Severity (str): CVSS V2 severity level to filter by. Default value: None. (Optional) Available values:
+        - 'LOW'
+        - 'MEDIUM'
+        - 'HIGH'
+        - 'CRITICAL'
+    - cvssV3Severity (str): CVSS V3 severity level to filter by. Default value: None. (Optional) Available values:
+        - 'LOW'
+        - 'MEDIUM'
+        - 'HIGH'
+        - 'CRITICAL'
+    - cveId (str): Specific CVE ID to search for. Default value: None. (Optional)
+    - lastModStartDate (str): Start date for last modification date range (YYYY-MM-DD). Default value: None. (Optional)
+    - lastModEndDate (str): End date for last modification date range (YYYY-MM-DD). Default value: None. (Optional)
+    - pubStartDate (str): Start date for publication date range (YYYY-MM-DD). Default value: None. (Optional)
+    - pubEndDate (str): End date for publication date range (YYYY-MM-DD). Default value: None. (Optional)
+    - limit (int): Maximum number of results to return. Default value: None. (Optional)
+    - cvssV2Metrics (str): CVSS V2 metrics string to filter by. Default value: None. (Optional)
+    - hasCertAlerts (bool): Filter for CVEs with CERT alerts. Default value: None. (Optional)
+    - hasOval (bool): Filter for CVEs with OVAL definitions. Default value: None. (Optional)
+    - hasCertNotes (bool): Filter for CVEs with CERT notes. Default value: None. (Optional)
+    - cpeName (str): CPE name to filter affected products. Default value: None. (Optional)
+    - isVulnerable (bool): Filter for vulnerable/not vulnerable CVEs. Default value: None. (Optional)
+    - key (str): API key for authentication (if required). Default value: None. (Optional)
+    """
+
+Function:
+def search_backup_keywords(cvecpeList: List[object], backup_keyword: str) -> List[object]:
+    """
+    Search using backup keywords if the initial search returns no results. If the initial cvecpeList is empty, the function will perform a backup search. The backup search uses either searchCVE or searchCPE based on the backup_keyword. If 'cve' is in the backup_keyword (case-insensitive), searchCVE is used; otherwise, searchCPE is used. The searchCVE and searchCPE functions are not defined in this schema and may need separate representations.
+
+    Parameters:
+    - cvecpeList (List[object]): The initial search results.
+    - backup_keyword (str): The backup keyword to use if initial results are empty.
+    """
+
+Function:
+def sortCPEsByLastMod(cpeList: List[Dict[str, str]], descending: bool = True) -> List[object]:
+    """
+    Sorts a list of object collections of CPEs by their last modification time.
+
+    Parameters:
+    - cpeList (List[Dict[str, str]]): The list of object collections of CPEs that need to be sorted.
+    - descending (bool): If True, sort in descending order. Defaults to True. Default value: True. (Optional)
+    """
+
+Function:
+def sortCVEsByCVSSv2Score(cve_list: List[Dict[str, float]], descending: bool = True) -> List[object]:
+    """
+    Sorts a list of CVE objects by their CVSS Version 2.0 base scores.
+
+    Parameters:
+    - cve_list (List[Dict[str, float]]): List of CVE objects.
+    - descending (bool): If True, sort in descending order. Defaults to True. Default value: True. (Optional)
+    """
+
+Function:
+def sortCVEsByCVSSv3Score(cve_list: List[Dict[str, float]], descending: bool = True) -> List[object]:
+    """
+    Sorts a list of CVE objects by their CVSS Version 3.x base scores.
+
+    Parameters:
+    - cve_list (List[Dict[str, float]]): List of CVE objects.
+    - descending (bool): If True, sort in descending order. Defaults to True. Default value: True. (Optional)
+    """
+
+Function:
+def sortCVEsByModDate(cve_list: List[Dict[str, str]], descending: bool = True) -> List[object]:
+    """
+    Sorts a list of CVE objects by their last modification date.
+
+    Parameters:
+    - cve_list (List[Dict[str, str]]): List of CVE objects.
+    - descending (bool): If True, sort in descending order. Defaults to True. Default value: True. (Optional)
+    """
+
+Function:
+def summarize_cvecpes(cvecpeList: List[object]) -> str:
+    """
+    Summarize a list of CVE/CPE items, providing various statistics and information about the items. The function processes both CPE and CVE items, identified by the presence of 'cpeName' or 'cveId' respectively. For CPE items, it extracts vendor and product type information from the CPE name. For CVE items, it counts unique CVE IDs and summarizes severity levels. The function tracks the earliest and latest modification dates across all items. If the input list is empty, it returns a simple 'No items to summarize.' message. The returned string is formatted with multiple lines and sections for readability. Date strings in the input are expected to be in ISO 8601 format (YYYY-MM-DD). The function uses Python's datetime and Counter classes, which are not directly representable in JSON schema.
+
+    Parameters:
+    - cvecpeList (List[object]): List of CVE/CPE objects to be summarized.
+    """
+
+Function:
+def verify_and_process_data_range_end(startdate: str, enddate: str) -> str:
+    """
+    Verify and process the end date of a date range, ensuring it's not more than 90 days after the start date. The function expects dates in 'YYYY-MM-DD' format. If the difference between start and end dates is 90 days or less, the original end date is returned. If the difference is more than 90 days, a new date 90 days after the start date is returned. The function uses Python's datetime and timedelta classes, which are not directly representable in JSON schema.
+
+    Parameters:
+    - startdate (str): The start date of the range in YYYY-MM-DD format.
+    - enddate (str): The end date of the range in YYYY-MM-DD format.
+    """
+
+Function:
+def verify_and_process_data_range_start(startdate: str, enddate: str) -> str:
+    """
+    Verify and process the start date of a date range, ensuring it's not more than 90 days before the end date. The function expects dates in 'YYYY-MM-DD' format. If the difference between start and end dates is 90 days or less, the original start date is returned. If the difference is more than 90 days, a new date 90 days before the end date is returned. The function uses Python's datetime and timedelta classes, which are not directly representable in JSON schema.
+
+    Parameters:
+    - startdate (str): The start date of the range in YYYY-MM-DD format.
+    - enddate (str): The end date of the range in YYYY-MM-DD format.
+    """
+
+Current Turn:
+User Query: I want to check how many vulnerabilities are related to Microsoft Exchange 2010? <human_end>
+
+Call:

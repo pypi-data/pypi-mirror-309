@@ -1,0 +1,191 @@
+Function:
+def _similarity_search(data: List[object], query: str, key: str) -> List[object]:
+    """
+    Return a list of data that matches the given query.
+    
+    Similarity score is jaccard similarity based on the number of shared characters between the query and the data.
+
+    Parameters:
+    - data (List[object]): The data to search.
+    - query (str): The query to search for.
+    - key (str): The key to search in.
+    """
+
+Function:
+def find_foods_by_name(food: str) -> List[object]:
+    """
+    Find foods with the given name.
+
+    Parameters:
+    - food (str): The food name to search for.
+    """
+
+Function:
+def find_locations_by_name(city: str) -> List[object]:
+    """
+    Find locations with the given city name.
+
+    Parameters:
+    - city (str): The city name to search for.
+    """
+
+Function:
+def find_users_by_name(name: str) -> List[object]:
+    """
+    Find users with the given name.
+
+    Parameters:
+    - name (str): The name to search for.
+    """
+
+Function:
+def get_city_for_location(location_id: int) -> str:
+    """
+    Get the city for the location with the given location ID.
+
+    Parameters:
+    - location_id (int): The location's ID.
+    """
+
+Function:
+def get_current_time_for_location(location_id: int) -> str:
+    """
+    Get the current time for the location with the given location ID.
+
+    Parameters:
+    - location_id (int): The location's ID.
+    """
+
+Function:
+def get_current_user_id() -> int:
+    """
+    Get the current user's ID.
+    """
+
+Function:
+def get_current_weather_for_location(location_id: int) -> str:
+    """
+    Get the current weather for the location with the given location ID.
+
+    Parameters:
+    - location_id (int): The location's ID.
+    """
+
+Function:
+def get_food_allergic_ingredients(food_id: int) -> List[str]:
+    """
+    Get the list of allergic ingredients for the food with the given food ID.
+
+    Parameters:
+    - food_id (int): The food's ID.
+    """
+
+Function:
+def get_food_calories(food_id: int) -> int:
+    """
+    Get the calories per serving for the food with the given food ID.
+
+    Parameters:
+    - food_id (int): The food's ID.
+    """
+
+Function:
+def get_food_info(food_id: int) -> object:
+    """
+    Find the food with the given food ID.
+
+    Parameters:
+    - food_id (int): The food's ID.
+    """
+
+Function:
+def get_food_name(food_id: int) -> str:
+    """
+    Get the name of the food with the given food ID.
+
+    Parameters:
+    - food_id (int): The food's ID.
+    """
+
+Function:
+def get_location_info(id: int) -> object:
+    """
+    Find the location with the given location ID.
+
+    Parameters:
+    - id (int): The location's ID.
+    """
+
+Function:
+def get_user_email(user_id: int) -> str:
+    """
+    Get the email of the user with the given user ID.
+
+    Parameters:
+    - user_id (int): The user's ID.
+    """
+
+Function:
+def get_user_favorite_color(user_id: int) -> str:
+    """
+    Get the favorite color of the user with the given user ID.
+
+    Parameters:
+    - user_id (int): The user's ID.
+    """
+
+Function:
+def get_user_favorite_foods(user_id: int) -> List[int]:
+    """
+    Get the list of favorite foods of the user with the given user ID.
+
+    Parameters:
+    - user_id (int): The user's ID.
+    """
+
+Function:
+def get_user_info(id: int) -> object:
+    """
+    Find the user with the given user ID.
+
+    Parameters:
+    - id (int): The user's ID.
+    """
+
+Function:
+def get_user_location(user_id: int) -> int:
+    """
+    Get the location ID of the user with the given user ID.
+
+    Parameters:
+    - user_id (int): The user's ID.
+    """
+
+Function:
+def get_user_name(user_id: int) -> str:
+    """
+    Get the name of the user with the given user ID.
+
+    Parameters:
+    - user_id (int): The user's ID.
+    """
+
+Function:
+def get_weather_at_location(location_id: int) -> str:
+    """
+    Get the current weather at the location with the given location ID.
+
+    Parameters:
+    - location_id (int): The location's ID.
+    """
+
+Function:
+def list_user_ids() -> List[str]:
+    """
+    List all the user IDs.
+    """
+
+Current Turn:
+User Query: What is the city for location ID 1? <human_end>
+
+Call:

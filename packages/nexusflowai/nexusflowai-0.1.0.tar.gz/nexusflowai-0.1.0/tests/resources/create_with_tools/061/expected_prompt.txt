@@ -1,0 +1,26 @@
+Function:
+def function_one(arg1: float = None, arg2=None, arg3: object = None):
+    """
+    This function has three parameters.
+
+    Parameters:
+    - arg1 (float):  Default value: None. (Optional)
+    - arg3 (object):  Default value: None. (Optional)
+    """
+
+Function:
+def function_two(first_arg: list = None, second_arg=None):
+
+Function:
+def function_three(parameter=None):
+    """
+    This function
+    has one
+    parameter.
+    """
+
+Current Turn:
+User Query: This query has
+multiple lines. <human_end>
+
+Call:

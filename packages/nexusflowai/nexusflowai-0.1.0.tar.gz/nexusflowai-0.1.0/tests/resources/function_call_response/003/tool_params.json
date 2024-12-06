@@ -1,0 +1,20 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "vt_add_comment_to_ip_address",
+            "description": "With this function you can post a comment for a specific IP address. The body for the POST request must be the JSON representation of a comment object. Notice however that you don't need to provide an ID for the object, as they are automatically generated for new comments. However, please note that you will need to provide a valid data JSON for using this function. Any word starting with # in your comment's text will be considered a tag, and added to the comment's tag attribute. Returns a Comment object.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "object"
+                    }
+                },
+                "required": [
+                    "data"
+                ]
+            }
+        }
+    }
+]

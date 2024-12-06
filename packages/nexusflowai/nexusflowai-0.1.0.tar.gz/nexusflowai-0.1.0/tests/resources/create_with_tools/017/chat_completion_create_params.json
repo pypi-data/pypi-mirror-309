@@ -1,0 +1,371 @@
+{
+    "model": "nexus-tool-use-20240816",
+  "messages": [
+    {
+      "role": "user",
+      "content": "During last night's basketball game, one of the star players was on fire, attempting a whopping 30 free throws. It's generally known that the average success rate for free throws hovers around 50%. I'm curious, with that success probability, what are the chances that the player made exactly 15 out of those 30 attempts?"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "add_binary_numbers",
+        "description": "Calculates the sum of two binary numbers.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calc_binomial_probability",
+        "description": "Computes the probability of successes in multiple trials.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_cosine_similarity",
+        "description": "Calculates cosine similarity.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_density",
+        "description": "Returns the density of an object.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_displacement",
+        "description": "Computes an object's displacement.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_electrostatic_potential_energy",
+        "description": "Calculates electrostatic potential energy.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_final_velocity",
+        "description": "Computes the final velocity of an object.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_future_value",
+        "description": "Computes the future value of an investment.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_investment_value",
+        "description": "Computes investment growth over time.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_mean",
+        "description": "Computes the average of numbers.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_nutritional_needs",
+        "description": "Calculates a person's nutritional needs.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_permutations",
+        "description": "Calculates permutations of elements.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_standard_deviation",
+        "description": "Calculates the standard deviation.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate_triangle_area",
+        "description": "Calculates the area of a triangle.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "convert_currency",
+        "description": "Converts currency using the ExchangeRate-API.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "estimate_derivative",
+        "description": "Estimates a function's derivative at a point.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "find_term_on_urban_dictionary",
+        "description": "Retrieves a term's definition from Urban Dictionary.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "geometry_area_circle",
+        "description": "Calculates the area of a circle.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_active_covid_case_by_country",
+        "description": "Retrieves current active COVID cases for a country.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_company_name_by_stock_name",
+        "description": "Retrieves a company's name from its stock symbol.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_coordinate_by_ip_address",
+        "description": "Determines the geographical coordinates of an IP address.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_coordinates_from_city",
+        "description": "Retrieves geographic coordinates using the Maps.co Geocoding API.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_covid_death_by_country",
+        "description": "Returns the latest total COVID deaths for a country.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_distance",
+        "description": "Computes the distance between two points in a plane.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_fibonacci_sequence",
+        "description": "Calculates Fibonacci numbers.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_prime_factors",
+        "description": "Determines the prime factors of a number.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_product_name_by_amazon_ASIN",
+        "description": "Retrieves the price of a product from Amazon.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_rating_by_amazon_ASIN",
+        "description": "Retrieves a product's Amazon rating.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_stock_history",
+        "description": "Retrieves the current stock price.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_stock_price_by_stock_name",
+        "description": "Retrieves the current stock price.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_time_zone_by_coord",
+        "description": "Determines the timezone of a location.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather_data",
+        "description": "Fetches weather data from the Open-Meteo API.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_zipcode_by_ip_address",
+        "description": "Retrieves the zipcode for an IP address.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "linear_regression",
+        "description": "Calculates the linear regression at a specified point.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mat_mul",
+        "description": "Multiplies two matrices.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "math_factorial",
+        "description": "Computes the factorial of a number.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "math_gcd",
+        "description": "Finds the greatest common divisor of two numbers.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "math_lcm",
+        "description": "Calculates the least common multiple of two numbers.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "maxPoints",
+        "description": "Determines the maximum points aligning on a single line.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mortgage_calculator",
+        "description": "Computes the monthly mortgage payment.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "out_of_domain",
+        "description": "This function is designed to handle out-of-domain queries from the user.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "quadratic_roots",
+        "description": "Finds the roots of a quadratic equation.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "retrieve_city_based_on_zipcode",
+        "description": "Determines the city for a given zipcode.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "retrieve_holiday_by_year",
+        "description": "Lists annual holidays.",
+        "parameters": {}
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sort_array",
+        "description": "Sorts numbers.",
+        "parameters": {}
+      }
+    }
+  ]
+}

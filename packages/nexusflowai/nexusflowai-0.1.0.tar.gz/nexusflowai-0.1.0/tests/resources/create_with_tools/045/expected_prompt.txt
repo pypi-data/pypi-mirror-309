@@ -1,0 +1,82 @@
+Function:
+def find_nearby_stations(lat_long: List[float]) -> List[object]:
+    """
+    This endpoint provides a list of nearby weather stations for a given geographical location.
+
+    Parameters:
+    - lat_long (List[float]): A list containing the latitude and longitude.
+    """
+
+Function:
+def get_current_location() -> str:
+    """
+    Returns the current location. ONLY use this if the user has not provided an explicit location in the query.
+    """
+
+Function:
+def get_current_time_at_location(lat_long: List[float]) -> str:
+    """
+    Returns the current time at a given location.
+
+    Parameters:
+    - lat_long (List[float]): The latitude and longitude of the location.
+    """
+
+Function:
+def get_hourly_observation(station_id: str, start_time: str, end_time: str, time_zone: str) -> List[object]:
+    """
+    Returns hourly observations between start_time and end_time.
+
+    Parameters:
+    - station_id (str): The station_id for the station of interest.
+    - start_time (str): The start time in 'YYYY-MM-DD' format.
+    - end_time (str): The end time in 'YYYY-MM-DD' format.
+    - time_zone (str): The timezone string ID for the location.
+    """
+
+Function:
+def get_latitude_longitude(location: str) -> List[float]:
+    """
+    Given a city name, this function provides the latitude and longitude of the specific location.
+
+    Parameters:
+    - location (str): The name of the location (e.g., 'Austin', 'Austin Airport').
+    """
+
+Function:
+def get_nearest_station_id(nearby_stations: List[object]) -> str:
+    """
+    Given a list of nearby stations, returns the one nearest to you and provides the system ID for it alone.
+
+    Parameters:
+    - nearby_stations (List[object]): A list of nearby stations in dictionary format.
+    """
+
+Function:
+def get_timezone(lat_long: List[float]) -> str:
+    """
+    This function retrieves the timezone for a given latitude and longitude.
+
+    Parameters:
+    - lat_long (List[float]): The latitude and longitude of the area.
+    """
+
+Function:
+def subtract_time_delta(date_time_str: str, delta_days: int) -> str:
+    """
+    Subtracts a time delta from the date part of a given date time string and returns the new date string.
+
+    Parameters:
+    - date_time_str (str): The date time string in 'YYYY-MM-DD' format.
+    - delta_days (int): Number of days to subtract. Must be greater than 0.
+    """
+
+Current Turn:
+Original Plan: get_nearest_station_id(nearby_stations=find_nearby_stations(lat_long=get_latitude_longitude(location=get_current_location())))
+Previous Call: get_current_location()
+Previous Result: London
+Previous Call: get_latitude_longitude(location='London')
+Previous Result: [51.5072, 0.1276]
+User Query: What's the ID of the weather station closest to me? <human_end>
+
+Call:

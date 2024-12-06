@@ -1,0 +1,23 @@
+Function:
+def search_tickets(statuses: List[str]):
+    """
+    This function searches for software engineering tickets by their status. The query by the engineer can mention multiple statuses or none of the statuses.
+
+    Parameters:
+    - statuses (List[str]): This function searches for software engineering tickets by their status. 
+    The query by the engineer can mention multiple statuses or none of the statuses.
+    
+    Available statuses:
+    - 'PENDING': The ticket is newly created and needs action from the engineer.
+    - 'IN_PROGRESS': The ticket is actively being worked on by the engineer.
+    - 'REVIEW_REQUESTED': The engineer has requested review of the ticket from other engineers.
+    - 'WAITING_FOR_USER': The engineer has requested more information about the ticket from the user and the user has not responded. The engineer is now blocked by user.
+    - 'USER_RESPONSE_RECEIVED': A response has been received from the user (The engineer is unblocked and needs to review responses).
+    - 'RESOLVED': The ticket is successfully closed (investigation completed), not active anymore, or does not need action from anyone anymore.
+    - 'CANCELLED': The ticket is unsuccessfully closed.
+    """
+
+Current Turn:
+User Query: can you see how many tickets I could not finish today? <human_end>
+
+Call:

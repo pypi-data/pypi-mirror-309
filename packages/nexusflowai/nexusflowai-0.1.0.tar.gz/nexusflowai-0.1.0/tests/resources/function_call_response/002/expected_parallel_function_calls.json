@@ -1,0 +1,32 @@
+[
+    [
+        "negate(a=5.0)",
+        "multiply(a=9.0, b=negate(a=5.0))",
+        "sin(radians=1.0)",
+        "subtract(a=multiply(a=9.0, b=negate(a=5.0)), b=sin(radians=1.0))"
+    ],
+    [
+        "add(a=1.0, b=5.0)",
+        "multiply(a=4.0, b=10.0)",
+        "subtract(a=add(a=1.0, b=5.0), b=multiply(a=4.0, b=10.0))",
+        "cos(radians=subtract(a=add(a=1.0, b=5.0), b=multiply(a=4.0, b=10.0)))"
+    ],
+    [
+        "pi()"
+    ],
+    [
+        "pi()",
+        "negate(a=pi())",
+        "add(a=1.0, b=5.0)",
+        "subtract(a=negate(a=pi()), b=add(a=1.0, b=5.0))"
+    ],
+    [
+        "add(a=4.0, b=6.0)",
+        "power(a=3.0, b=3.0)",
+        "multiply(a=add(a=4.0, b=6.0), b=power(a=3.0, b=3.0))",
+        "pi()",
+        "sin(radians=pi())",
+        "cos(radians=sin(radians=pi()))",
+        "subtract(a=multiply(a=add(a=4.0, b=6.0), b=power(a=3.0, b=3.0)), b=cos(radians=sin(radians=pi())))"
+    ]
+]

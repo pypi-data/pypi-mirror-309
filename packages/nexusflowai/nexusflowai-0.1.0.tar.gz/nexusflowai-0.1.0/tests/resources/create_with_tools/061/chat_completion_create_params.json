@@ -1,0 +1,58 @@
+{
+    "model": "nexus-tool-use-20240816",
+    "messages": [
+        {
+            "role": "user",
+            "content": "This query has\nmultiple lines."
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "function_one",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "arg1": {
+                            "type": "number"
+                        },
+                        "arg2": {},
+                        "arg3": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "description": "This function has three parameters."
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "function_two",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "first_arg": {
+                            "type": "array"
+                        },
+                        "second_arg": {}
+                    }
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "function_three",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "parameter": {}
+                    }
+                },
+                "description": "This function\nhas one\nparameter."
+            }
+        }
+    ]
+}

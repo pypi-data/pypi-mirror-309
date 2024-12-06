@@ -1,0 +1,1 @@
+power(pi=2.718281828459045, b=negate(negate=add(cos=5.0, sin=0.0)))

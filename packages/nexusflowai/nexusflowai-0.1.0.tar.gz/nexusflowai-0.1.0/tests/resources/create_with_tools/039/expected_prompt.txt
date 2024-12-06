@@ -1,0 +1,55 @@
+Function:
+def type_character(character: str):
+    """
+    Print the given character. Accepts only a single character, like type_writer(letter='@')
+
+    Parameters:
+    - character (str): Print the given character. Accepts only a single character, like type_character(character='@').
+    """
+
+Function:
+def type_letter(letter: str):
+    """
+    Print the given letter. Accepts only a single letter, like type_writer(letter='a')
+
+    Parameters:
+    - letter (str): Print the given letter. Accepts only a single letter, like type_writer(letter='a').
+    """
+
+Current Turn:
+Original Plan: type_character(character='g'); type_character(character='c'); type_character(character='y'); type_character(character='b'); type_character(character='f'); type_character(character='l'); type_character(character='y'); type_character(character='u'); type_character(character='n'); type_character(character='@'); type_character(character='s'); type_character(character='a'); type_character(character='m'); type_character(character='p'); type_character(character='l'); type_character(character='e'); type_character(character='.'); type_character(character='n'); type_character(character='e'); type_character(character='t')
+Previous Call: type_character(character='g')
+Previous Result: g
+Previous Call: type_character(character='c')
+Previous Result: c
+Previous Call: type_character(character='y')
+Previous Result: y
+Previous Call: type_character(character='b')
+Previous Result: b
+Previous Call: type_character(character='f')
+Previous Result: f
+Previous Call: type_character(character='l')
+Previous Result: l
+Previous Call: type_character(character='y')
+Previous Result: y
+Previous Call: type_character(character='u')
+Previous Result: u
+Previous Call: type_character(character='n')
+Previous Result: n
+Previous Call: type_character(character='@')
+Previous Result: @
+Previous Call: type_character(character='s')
+Previous Result: s
+Previous Call: type_character(character='a')
+Previous Result: a
+Previous Call: type_character(character='m')
+Previous Result: m
+Previous Call: type_character(character='p')
+Previous Result: p
+Previous Call: type_character(character='l')
+Previous Result: l
+Previous Call: type_character(character='e')
+Previous Result: e
+User Query: gcybflyun@sample.net <human_end>
+
+Call:

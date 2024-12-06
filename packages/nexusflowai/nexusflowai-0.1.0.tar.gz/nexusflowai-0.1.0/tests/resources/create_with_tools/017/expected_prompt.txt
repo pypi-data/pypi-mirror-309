@@ -1,0 +1,274 @@
+Function:
+def add_binary_numbers():
+    """
+    Calculates the sum of two binary numbers.
+    """
+
+Function:
+def calc_binomial_probability():
+    """
+    Computes the probability of successes in multiple trials.
+    """
+
+Function:
+def calculate_cosine_similarity():
+    """
+    Calculates cosine similarity.
+    """
+
+Function:
+def calculate_density():
+    """
+    Returns the density of an object.
+    """
+
+Function:
+def calculate_displacement():
+    """
+    Computes an object's displacement.
+    """
+
+Function:
+def calculate_electrostatic_potential_energy():
+    """
+    Calculates electrostatic potential energy.
+    """
+
+Function:
+def calculate_final_velocity():
+    """
+    Computes the final velocity of an object.
+    """
+
+Function:
+def calculate_future_value():
+    """
+    Computes the future value of an investment.
+    """
+
+Function:
+def calculate_investment_value():
+    """
+    Computes investment growth over time.
+    """
+
+Function:
+def calculate_mean():
+    """
+    Computes the average of numbers.
+    """
+
+Function:
+def calculate_nutritional_needs():
+    """
+    Calculates a person's nutritional needs.
+    """
+
+Function:
+def calculate_permutations():
+    """
+    Calculates permutations of elements.
+    """
+
+Function:
+def calculate_standard_deviation():
+    """
+    Calculates the standard deviation.
+    """
+
+Function:
+def calculate_triangle_area():
+    """
+    Calculates the area of a triangle.
+    """
+
+Function:
+def convert_currency():
+    """
+    Converts currency using the ExchangeRate-API.
+    """
+
+Function:
+def estimate_derivative():
+    """
+    Estimates a function's derivative at a point.
+    """
+
+Function:
+def find_term_on_urban_dictionary():
+    """
+    Retrieves a term's definition from Urban Dictionary.
+    """
+
+Function:
+def geometry_area_circle():
+    """
+    Calculates the area of a circle.
+    """
+
+Function:
+def get_active_covid_case_by_country():
+    """
+    Retrieves current active COVID cases for a country.
+    """
+
+Function:
+def get_company_name_by_stock_name():
+    """
+    Retrieves a company's name from its stock symbol.
+    """
+
+Function:
+def get_coordinate_by_ip_address():
+    """
+    Determines the geographical coordinates of an IP address.
+    """
+
+Function:
+def get_coordinates_from_city():
+    """
+    Retrieves geographic coordinates using the Maps.co Geocoding API.
+    """
+
+Function:
+def get_covid_death_by_country():
+    """
+    Returns the latest total COVID deaths for a country.
+    """
+
+Function:
+def get_distance():
+    """
+    Computes the distance between two points in a plane.
+    """
+
+Function:
+def get_fibonacci_sequence():
+    """
+    Calculates Fibonacci numbers.
+    """
+
+Function:
+def get_prime_factors():
+    """
+    Determines the prime factors of a number.
+    """
+
+Function:
+def get_product_name_by_amazon_ASIN():
+    """
+    Retrieves the price of a product from Amazon.
+    """
+
+Function:
+def get_rating_by_amazon_ASIN():
+    """
+    Retrieves a product's Amazon rating.
+    """
+
+Function:
+def get_stock_history():
+    """
+    Retrieves the current stock price.
+    """
+
+Function:
+def get_stock_price_by_stock_name():
+    """
+    Retrieves the current stock price.
+    """
+
+Function:
+def get_time_zone_by_coord():
+    """
+    Determines the timezone of a location.
+    """
+
+Function:
+def get_weather_data():
+    """
+    Fetches weather data from the Open-Meteo API.
+    """
+
+Function:
+def get_zipcode_by_ip_address():
+    """
+    Retrieves the zipcode for an IP address.
+    """
+
+Function:
+def linear_regression():
+    """
+    Calculates the linear regression at a specified point.
+    """
+
+Function:
+def mat_mul():
+    """
+    Multiplies two matrices.
+    """
+
+Function:
+def math_factorial():
+    """
+    Computes the factorial of a number.
+    """
+
+Function:
+def math_gcd():
+    """
+    Finds the greatest common divisor of two numbers.
+    """
+
+Function:
+def math_lcm():
+    """
+    Calculates the least common multiple of two numbers.
+    """
+
+Function:
+def maxPoints():
+    """
+    Determines the maximum points aligning on a single line.
+    """
+
+Function:
+def mortgage_calculator():
+    """
+    Computes the monthly mortgage payment.
+    """
+
+Function:
+def out_of_domain():
+    """
+    This function is designed to handle out-of-domain queries from the user.
+    """
+
+Function:
+def quadratic_roots():
+    """
+    Finds the roots of a quadratic equation.
+    """
+
+Function:
+def retrieve_city_based_on_zipcode():
+    """
+    Determines the city for a given zipcode.
+    """
+
+Function:
+def retrieve_holiday_by_year():
+    """
+    Lists annual holidays.
+    """
+
+Function:
+def sort_array():
+    """
+    Sorts numbers.
+    """
+
+Current Turn:
+User Query: During last night's basketball game, one of the star players was on fire, attempting a whopping 30 free throws. It's generally known that the average success rate for free throws hovers around 50%. I'm curious, with that success probability, what are the chances that the player made exactly 15 out of those 30 attempts? <human_end>
+
+Call:
