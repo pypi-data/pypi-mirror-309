@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: poisson_d
+Version: 0.2.0
+Summary: poisson disc implementation in python
+Author-email: Qi HU <hu.verrerie@gmail.com>
+Maintainer-email: Qi HU <hu.verrerie@gmail.com>
+License: MIT license
+Project-URL: bugs, https://github.com/iyunbo/poisson_d/issues
+Project-URL: changelog, https://github.com/iyunbo/poisson_d/blob/master/changelog.md
+Project-URL: homepage, https://github.com/iyunbo/poisson_d
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: typer
+Requires-Dist: imageio ==2.36.0
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+=========
+poisson-d
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/poisson_d.svg
+        :target: https://pypi.python.org/pypi/poisson_d
+
+.. image:: https://img.shields.io/travis/iyunbo/poisson_d.svg
+        :target: https://travis-ci.com/iyunbo/poisson_d
+
+.. image:: https://readthedocs.org/projects/poisson-d/badge/?version=latest
+        :target: https://poisson-d.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+poisson disc implementation in python
+
+
+* Free software: MIT license
+* Documentation: https://poisson-d.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

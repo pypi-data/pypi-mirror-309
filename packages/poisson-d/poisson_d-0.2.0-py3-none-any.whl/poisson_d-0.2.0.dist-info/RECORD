@@ -1,0 +1,10 @@
+poisson_d/__init__.py,sha256=xDGEoyzj_eQnZQXZTpJgDZKis9vw5z0O-tLCVeRPHug,128
+poisson_d/cli.py,sha256=8vtjMNZyzm9imxuWUA3aM-XGll8Aw2GMqUqzthS3XmE,1321
+poisson_d/commands.py,sha256=T52QKUV7hky45L9rOujvqmNQsFVrughsW0qhBnzpXxU,3932
+poisson_d/poisson_d.py,sha256=aYOhIgY-dW8CXybs9wOyBk-DSVvrx2dztPDiv5FXyvo,10996
+poisson_d-0.2.0.dist-info/AUTHORS.rst,sha256=O8qKlMr4EzE9GSSOuNhrDlILHqZp_XyYPwxvtD4W_cc,157
+poisson_d-0.2.0.dist-info/LICENSE,sha256=LO8laQZZVkSJaccbT70C-3R3KqAXcPsP9wxnrHr_JpY,1069
+poisson_d-0.2.0.dist-info/METADATA,sha256=XiempOYsskknXvbfPXdwN1AZPjpgFX9ktwPdjp8QeWs,1603
+poisson_d-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+poisson_d-0.2.0.dist-info/top_level.txt,sha256=iiB1s_BbPLKpmvXYBgUlLQW__mcRzq20VgMNh-qGYJo,10
+poisson_d-0.2.0.dist-info/RECORD,,
