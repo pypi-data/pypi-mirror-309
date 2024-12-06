@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: vixf
+Version: 0.0.1
+Summary: Edit X11 text fields with an external text editor
+Author-email: Tom Ryder <tom@sanctum.geek.nz>
+Project-URL: Homepage, https://sanctum.geek.nz/
+Project-URL: Source, https://dev.sanctum.geek.nz/cgit/vixf.git/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Environment :: X11 Applications
+Classifier: Topic :: Terminals :: Terminal Emulators/X Terminals
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynput
+Requires-Dist: pyperclip
+
+vixf
+====
+
+Allow editing X11 fields with terminal editor in $VISUAL.  Use keyboard
+automation to select-all and copy text from the field, save it into a file,
+edit that file with the terminal editor, and when the editor is done, read the
+(presumably modified) text back from the file and paste it over the original
+text.
