@@ -1,0 +1,2 @@
+[console_scripts]
+genai-rest-proj-build = genai_rest_builder.cli:create_gen_ai_project_structure
