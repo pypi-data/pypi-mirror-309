@@ -1,0 +1,2 @@
+[console_scripts]
+box-object-detection = box_object_detection.app:main

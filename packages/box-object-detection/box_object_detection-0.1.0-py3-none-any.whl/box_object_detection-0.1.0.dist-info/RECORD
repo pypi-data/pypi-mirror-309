@@ -1,0 +1,8 @@
+box_object_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+box_object_detection/app.py,sha256=pfL6N-6PPLvLrYYNfaC5tc66FHAoucEO5KGG24QKKVQ,2834
+box_object_detection-0.1.0.dist-info/LICENSE.yaml,sha256=ZAA5fZIjeeook93_4BqI0abS7Gs6Pfz0isTcgoLdCm8,328
+box_object_detection-0.1.0.dist-info/METADATA,sha256=9CBxpnTj8YbKfAmVqq7OXgT_2Ahe5RZ80gnYixkMMXk,980
+box_object_detection-0.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+box_object_detection-0.1.0.dist-info/entry_points.txt,sha256=jIC0Z06YrpkJ6ZubMcX-2eQNhTKSpNHxhPrvMgGONdw,71
+box_object_detection-0.1.0.dist-info/top_level.txt,sha256=ypfcbp96BDM6IZpmQXy864EYJhMu0EsOZO9fGWPIUS0,21
+box_object_detection-0.1.0.dist-info/RECORD,,
