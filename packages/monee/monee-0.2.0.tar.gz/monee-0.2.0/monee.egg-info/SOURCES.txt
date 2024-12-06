@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+monee.egg-info/PKG-INFO
+monee.egg-info/SOURCES.txt
+monee.egg-info/dependency_links.txt
+monee.egg-info/requires.txt
+monee.egg-info/top_level.txt
