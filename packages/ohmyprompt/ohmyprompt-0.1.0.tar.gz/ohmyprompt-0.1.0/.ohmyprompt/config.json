@@ -1,0 +1,759 @@
+{
+  "exclude_patterns": {
+    "directories": [
+      ".*",
+      "__*",
+      ".git",
+      ".venv",
+      "__pycache__",
+      "node_modules",
+      "dist",
+      "build"
+    ],
+    "files": [
+      "*.pyc",
+      "*.pyo",
+      "*.pyd",
+      ".DS_Store",
+      ".env"
+    ]
+  },
+  "tools": {
+    "mypy": {
+      "name": "Mypy",
+      "description": "Python 静态类型检查器",
+      "enabled": true,
+      "command": "mypy",
+      "options": {
+        "paths": {
+          "name": "检查路径",
+          "description": "要检查的文件或目录路径，多个路径用空格分隔",
+          "value": {
+            "type": "text",
+            "value": "src/"
+          }
+        },
+        "show-error-codes": {
+          "name": "显示错误代码",
+          "description": "在错误消息中显示错误代码",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "pretty": {
+          "name": "美化输出",
+          "description": "使用彩色和格式化的输出",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "python-version": {
+          "name": "Python 版本",
+          "description": "指定 Python 版本",
+          "value": {
+            "type": "select",
+            "value": "3.12",
+            "choices": [
+              "3.7",
+              "3.8",
+              "3.9",
+              "3.10",
+              "3.11",
+              "3.12"
+            ],
+            "choices_desc": {
+              "3.7": "使用 Python 3.7 的类型检查规则",
+              "3.8": "使用 Python 3.8 的类型检查规则",
+              "3.9": "使用 Python 3.9 的类型检查规则",
+              "3.10": "使用 Python 3.10 的类型检查规则",
+              "3.11": "使用 Python 3.11 的类型检查规则",
+              "3.12": "使用 Python 3.12 的类型检查规则"
+            }
+          }
+        },
+        "ignore-missing-imports": {
+          "name": "忽略缺失导入",
+          "description": "忽略未找到的导入模块",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "check-untyped-defs": {
+          "name": "检查未标注类型的函数",
+          "description": "检查没有类型注解的函数",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "warn-unused-configs": {
+          "name": "警告未使用的配置",
+          "description": "显示未使用的配置项警告",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "strict": {
+          "name": "严格模式",
+          "description": "启用所有严格的类型检查选项",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "disallow-any-generics": {
+          "name": "禁止泛型使用 Any",
+          "description": "禁止在泛型类型中使用 Any",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "disallow-subclassing-any": {
+          "name": "禁止继承 Any",
+          "description": "禁止继承 Any 类型",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "disallow-untyped-decorators": {
+          "name": "禁止无类型装饰器",
+          "description": "禁止使用未标注类型的装饰器",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "disallow-untyped-calls": {
+          "name": "禁止调用无类型函数",
+          "description": "禁止调用未标注类型的函数",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "follow-imports": {
+          "name": "导入跟踪模式",
+          "description": "设置如何处理导入模块",
+          "value": {
+            "type": "select",
+            "value": "normal",
+            "choices": [
+              "normal",
+              "silent",
+              "skip",
+              "error"
+            ],
+            "choices_desc": {
+              "normal": "正常跟踪和检查导入",
+              "silent": "跟踪导入但不报告错误",
+              "skip": "不跟踪导入",
+              "error": "将导入标记为错误"
+            }
+          }
+        },
+        "no-namespace-packages": {
+          "name": "禁用命名空间包",
+          "description": "禁用 PEP 420 命名空间包支持",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "show-column-numbers": {
+          "name": "显示列号",
+          "description": "在错误消息中显示列号",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "show-error-context": {
+          "name": "显示错误上下文",
+          "description": "显示导致错误的代码上下文",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "show-traceback": {
+          "name": "显示回溯",
+          "description": "显示错误的完整回溯信息",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "incremental": {
+          "name": "增量检查",
+          "description": "启用增量类型检查",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "cache-dir": {
+          "name": "缓存目录",
+          "description": "设置增量检查缓存目录",
+          "value": {
+            "type": "text",
+            "value": ".mypy_cache"
+          }
+        },
+        "strict-optional": {
+          "name": "严格可选类型",
+          "description": "启用严格的可选类型检查",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "warn-redundant-casts": {
+          "name": "警告冗余转换",
+          "description": "警告不必要的类型转换",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "warn-unused-ignores": {
+          "name": "警告未使用的忽略",
+          "description": "警告未使用的 # type: ignore 注释",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "allow-redefinition": {
+          "name": "允许重定义",
+          "description": "允许在同一个块中重定义变量",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "implicit-reexport": {
+          "name": "隐式重导出",
+          "description": "允许在 __init__.py 隐式重导出",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "strict-equality": {
+          "name": "严格相等性",
+          "description": "对不兼容类型使用 == 和 != 时发出警告",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "html-report": {
+          "name": "HTML报告目录",
+          "description": "生成HTML格式的类检查报告",
+          "value": {
+            "type": "text",
+            "value": ""
+          }
+        },
+        "txt-report": {
+          "name": "文本报告目录",
+          "description": "生成文本格式的类型检查报告",
+          "value": {
+            "type": "text",
+            "value": ""
+          }
+        },
+        "junit-xml": {
+          "name": "JUnit XML报告",
+          "description": "生成JUnit XML格式的测试报告",
+          "value": {
+            "type": "text",
+            "value": ""
+          }
+        },
+        "platform": {
+          "name": "目标平台",
+          "description": "设置目标平台(操作系统)",
+          "value": {
+            "type": "select",
+            "value": "darwin",
+            "choices": [
+              "linux",
+              "darwin",
+              "win32"
+            ],
+            "choices_desc": {
+              "linux": "Linux 平台",
+              "darwin": "macOS 平台",
+              "win32": "Windows 平台"
+            }
+          }
+        }
+      }
+    },
+    "radon": {
+      "name": "Radon",
+      "description": "Python 代码复杂度分析工具",
+      "enabled": true,
+      "command": "radon",
+      "options": {
+        "commands": {
+          "name": "分析命令",
+          "description": "选择要执行的分析命令(可多选)",
+          "value": {
+            "type": "multi_select",
+            "value": [
+              "cc",
+              "mi",
+              "raw"
+            ],
+            "choices": [
+              "cc",
+              "mi",
+              "raw",
+              "hal"
+            ],
+            "choices_desc": {
+              "cc": "圈复杂度分析 - 计算代码的复杂度评分(A-F)",
+              "mi": "可维护性指标 - 计算代码的可维护性评分(A-C)",
+              "raw": "原始指标 - 计算代码行数等基础指标",
+              "hal": "Halstead复杂度 - 计算代码的Halstead复杂度指标"
+            }
+          }
+        },
+        "paths": {
+          "name": "分析路径",
+          "description": "要分析的文件或目录路径，多个路径用空格分隔",
+          "value": {
+            "type": "text",
+            "value": "src/"
+          }
+        },
+        "cc_min": {
+          "name": "CC最低复杂度等级",
+          "description": "只显示大于等于此复杂度等级的函数",
+          "value": {
+            "type": "select",
+            "value": "C",
+            "choices": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "choices_desc": {
+              "A": "1-5 分 - 低复杂度(简单代码块)",
+              "B": "6-10 分 - 低复杂度(结构良好且稳定)",
+              "C": "11-20 分 - 中等复杂度(稍微复杂)",
+              "D": "21-30 分 - 较高复杂度(更复杂)",
+              "E": "31-40 分 - 高复杂度(复杂,需警惕)",
+              "F": "41+ 分 - 极高复杂度(容易出错,不稳定)"
+            }
+          }
+        },
+        "cc_max": {
+          "name": "CC最高复杂度等级",
+          "description": "只显示小于等于此复杂度等级的函数",
+          "value": {
+            "type": "select",
+            "value": "F",
+            "choices": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          }
+        },
+        "show_complexity": {
+          "name": "显示复杂度分数",
+          "description": "显示具体的复杂度分数",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "average": {
+          "name": "显示平均复杂度",
+          "description": "显示分析范围内的平均复杂度",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "total_average": {
+          "name": "显示总体平均复杂度",
+          "description": "显示所有代码块的平均复杂度，不受min/max限制",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "no_assert": {
+          "name": "忽略断言",
+          "description": "不计算断言语句的复杂度",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "order": {
+          "name": "排序方式",
+          "description": "结果排序方式",
+          "value": {
+            "type": "select",
+            "value": "SCORE",
+            "choices": [
+              "SCORE",
+              "LINES",
+              "ALPHA"
+            ],
+            "choices_desc": {
+              "SCORE": "按复杂度分数排序",
+              "LINES": "按代码行数排序",
+              "ALPHA": "按名称字母顺序排序"
+            }
+          }
+        },
+        "mi_min": {
+          "name": "MI最低等级",
+          "description": "只显示大于等于此可维护性等级的结果",
+          "value": {
+            "type": "select",
+            "value": "A",
+            "choices": [
+              "A",
+              "B",
+              "C"
+            ],
+            "choices_desc": {
+              "A": "20-100分 - 非常好维护",
+              "B": "10-19分 - 一般可维护",
+              "C": "0-9分 - 难以维护"
+            }
+          }
+        },
+        "mi_max": {
+          "name": "MI最高等级",
+          "description": "只显示小于等于此可维护性等级的结果",
+          "value": {
+            "type": "select",
+            "value": "C",
+            "choices": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        },
+        "multi": {
+          "name": "多行字符串处理",
+          "description": "不将多行字符串计入注释",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "show_mi": {
+          "name": "显示MI值",
+          "description": "显示具体的可维护性指标值",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "summary": {
+          "name": "显示汇总",
+          "description": "在分析结束时显示指标汇总",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "functions": {
+          "name": "函数级别分析",
+          "description": "在函数级别而不是文件级别计算指标",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "json": {
+          "name": "JSON输出",
+          "description": "以JSON格式输出结果",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "xml": {
+          "name": "XML输出",
+          "description": "以XML格式输出结果(专门用于Jenkins的CCM插件)",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "exclude": {
+          "name": "排除模式",
+          "description": "排除匹配这些glob模式的文件路径",
+          "value": {
+            "type": "text",
+            "value": "tests/*,docs/*,**/migrations/*,**/venv/*"
+          }
+        },
+        "ignore": {
+          "name": "忽略目录",
+          "description": "忽略匹配这些glob模式的目录",
+          "value": {
+            "type": "text",
+            "value": "tests,docs"
+          }
+        },
+        "include_ipynb": {
+          "name": "包含Jupyter笔记本",
+          "description": "在分析中包含IPython Notebook中的Python代码",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "ipynb_cells": {
+          "name": "分析Notebook单元格",
+          "description": "单独报告.ipynb文件中的各个单元格",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "output_file": {
+          "name": "输出文件",
+          "description": "将输出保存到指定文件",
+          "value": {
+            "type": "text",
+            "value": ""
+          }
+        }
+      }
+    },
+    "ruff": {
+      "name": "Ruff",
+      "description": "快速的 Python linter 和格式化工具",
+      "enabled": true,
+      "command": "ruff check",
+      "options": {
+        "fix": {
+          "name": "自动修复",
+          "description": "自动修复发现的问题",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "select": {
+          "name": "启用规则",
+          "description": "选择要启用的规则代码",
+          "value": {
+            "type": "multi_select",
+            "value": [
+              "E",
+              "F",
+              "UP",
+              "B",
+              "SIM",
+              "I"
+            ],
+            "choices": [
+              "E",
+              "F",
+              "I",
+              "UP",
+              "B",
+              "C",
+              "D",
+              "ERA",
+              "N",
+              "PL",
+              "RUF",
+              "S",
+              "T",
+              "W",
+              "COM",
+              "Q",
+              "SIM",
+              "PTH",
+              "RET",
+              "ISC",
+              "ICN",
+              "PIE",
+              "E4",
+              "E7",
+              "E9",
+              "F401",
+              "F403",
+              "B001",
+              "I001"
+            ],
+            "choices_desc": {
+              "E": "pycodestyle错误 - 代码风格错误检查",
+              "F": "Pyflakes - 语法错误和未定义名称检查",
+              "I": "isort - 导入语句排序和格式化",
+              "UP": "pyupgrade - 推荐使用新版本Python特性",
+              "B": "flake8-bugbear - 检测潜在的bug和设计问题",
+              "C": "flake8-comprehensions - 列表推导式最佳实践",
+              "D": "pydocstyle - 文档字符串风格检查",
+              "ERA": "eradicate - 检测注释掉的代码",
+              "N": "pep8-naming - 命名规范检查",
+              "PL": "Pylint - 代码分析和错误检测",
+              "RUF": "Ruff特有规则 - Ruff独有的检查规则",
+              "S": "flake8-bandit - 安全漏洞检查",
+              "T": "flake8-print - 检测print语句",
+              "W": "pycodestyle警告 - 代码风格警告",
+              "COM": "flake8-commas - 逗号使用规范",
+              "Q": "flake8-quotes - 引号使用规范",
+              "SIM": "flake8-simplify - 代码简化建议",
+              "PTH": "flake8-use-pathlib - 推荐使用pathlib",
+              "RET": "flake8-return - 返回值规范",
+              "ISC": "flake8-implicit-str-concat - 字符串拼接规范",
+              "ICN": "flake8-import-conventions - 导入约定检查",
+              "PIE": "flake8-pie - Python改进建议",
+              "E4": "Python语法错误",
+              "E7": "语句错误(如循环变量覆盖)",
+              "E9": "运行时错误(如缩进问题)",
+              "F401": "未使用的导入",
+              "F403": "from module import * 使用",
+              "B001": "不要使用裸except语句",
+              "I001": "import排序错误"
+            }
+          }
+        },
+        "ignore": {
+          "name": "忽略规则",
+          "description": "忽略指定的规则",
+          "value": {
+            "type": "multi_select",
+            "value": [],
+            "choices": []
+          }
+        },
+        "line-length": {
+          "name": "行长度",
+          "description": "最大行长度",
+          "value": {
+            "type": "number",
+            "value": 120,
+            "min": 60,
+            "max": 120
+          }
+        },
+        "respect-gitignore": {
+          "name": "遵循 gitignore",
+          "description": "遵循 .gitignore 文件的规则",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        },
+        "show-fixes": {
+          "name": "显示修复",
+          "description": "显示将要进行的修复",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "output-format": {
+          "name": "输出格式",
+          "description": "设置输出格式,以获取更详细的信息",
+          "value": {
+            "type": "select",
+            "value": "json",
+            "choices": [
+              "text",
+              "json",
+              "json-lines",
+              "gitlab",
+              "github",
+              "full",
+              "grouped",
+              "pylint",
+              "azure"
+            ],
+            "choices_desc": {
+              "text": "默认文本格式",
+              "json": "JSON格式",
+              "json-lines": "每行一个JSON对象",
+              "gitlab": "GitLab兼容格式",
+              "github": "GitHub兼容格式",
+              "full": "完整详细信息",
+              "grouped": "按文件分组的信息",
+              "pylint": "Pylint格式",
+              "azure": "Azure Pipeline格式"
+            }
+          }
+        },
+        "statistics": {
+          "name": "显示统计",
+          "description": "显示错误统计信息和每个规则的违规计数",
+          "value": {
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "target-version": {
+          "name": "目标 Python 版本",
+          "description": "设置目标 Python 版本",
+          "value": {
+            "type": "select",
+            "value": "py312",
+            "choices": [
+              "py37",
+              "py38",
+              "py39",
+              "py310",
+              "py311",
+              "py312"
+            ]
+          }
+        },
+        "extend-select": {
+          "name": "扩展规则",
+          "description": "扩展要检查的规则",
+          "value": {
+            "type": "multi_select",
+            "value": [],
+            "choices": []
+          }
+        },
+        "per-file-ignores": {
+          "name": "按文件忽略",
+          "description": "为特定文件设置忽略规则",
+          "value": {
+            "type": "text",
+            "value": ""
+          }
+        },
+        "extend-ignore": {
+          "name": "扩展忽略",
+          "description": "扩展要忽略的规则",
+          "value": {
+            "type": "multi_select",
+            "value": [],
+            "choices": []
+          }
+        }
+      }
+    }
+  },
+  "update_interval": 3600
+}

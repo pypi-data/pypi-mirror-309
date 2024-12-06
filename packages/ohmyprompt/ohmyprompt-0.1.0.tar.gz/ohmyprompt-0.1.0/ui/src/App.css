@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.markdown-body ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.markdown-body li {
+  position: relative;
+  padding-left: 1em;
+}
+
+.markdown-body li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: var(--foreground);
+}
+
+.markdown-body li li {
+  margin-left: 1em;
+}
+
+/* 基本列表样式 */
+.markdown-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+.markdown-list-item {
+  margin: 0.25rem 0;
+}
+
+/* 文件结构列表样式 */
+.file-structure-list {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+.file-structure-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.file-structure-item::before {
+  content: "-";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--foreground);
+}
+
+/* 嵌套的文件结构列表 */
+.file-structure-list .file-structure-list {
+  margin-left: 1rem;
+}
+
+/* Mermaid 图表样式 */
+.mermaid {
+  background: transparent;
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 类图特定样式 */
+.mermaid .classGroup rect {
+  fill: var(--background);
+  stroke: var(--border);
+}
+
+.mermaid .classGroup .label {
+  fill: var(--foreground);
+}
+
+.mermaid .relation {
+  stroke: var(--muted-foreground);
+}
+
+.mermaid .relationshipLine {
+  stroke: var(--border);
+}
+
+.mermaid .classLabel .label {
+  fill: var(--foreground);
+}
+
+/* 深色模式适配 */
+[data-theme='dark'] .mermaid .classGroup rect {
+  fill: var(--muted);
+  stroke: var(--border);
+}
+
+[data-theme='dark'] .mermaid .classGroup .label {
+  fill: var(--foreground);
+}
+
+[data-theme='dark'] .mermaid .relation {
+  stroke: var(--muted-foreground);
+}
+
+[data-theme='dark'] .mermaid #arrowhead path {
+  fill: var(--muted-foreground);
+  stroke: var(--muted-foreground);
+}
