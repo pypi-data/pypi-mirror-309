@@ -1,0 +1,86 @@
+Metadata-Version: 2.3
+Name: pitot
+Version: 0.3.2
+Summary: Toolbox for aeronautic units and conversions
+Author-email: Xavier Olive <git@xoolive.org>, Junzi Sun <j.sun-1@tudelft.nl>
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: impunity>=1.0.5
+Requires-Dist: numpy>=2.0.2; python_version < '3.10'
+Requires-Dist: numpy>=2.1.3; python_version >= '3.10'
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pyproj<3.7.1; python_version < '3.10'
+Requires-Dist: pyproj>=3.7.0; python_version >= '3.10'
+Requires-Dist: typing-extensions>=4.12.2
+Description-Content-Type: text/markdown
+
+# pitot
+
+![tests](https://github.com/atmdata/pitot/actions/workflows/run-tests.yml/badge.svg)
+![Code Coverage](https://img.shields.io/codecov/c/github/atmdata/pitot.svg)
+![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue.svg)
+![Code style: black](https://img.shields.io/badge/code%20style-black-black.svg)
+![License](https://img.shields.io/pypi/l/pitot.svg)\
+![PyPI version](https://img.shields.io/pypi/v/pitot)
+![PyPI downloads](https://img.shields.io/pypi/dm/pitot)
+![Conda version](https://img.shields.io/conda/vn/conda-forge/pitot)
+![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pitot.svg)
+
+pitot is a Python toolbox providing efficient aeronautic calculations.
+
+Implementations are:
+
+- **efficient**, based on NumPy or state-of-the-art libraries;
+- provided with **typing stubs**;
+- unambiguous with **physical units**, with the help of the [`impunity`](https://achevrot.github.io/impunity/) library, based on annotations.
+
+The following functions are currently available:
+
+- International Standard Atmosphere (temperature, density, pressure, and speed of sound);
+- conversions between various air speeds: CAS, TAS, EAS and Mach number;
+- geodetic calculations (distance, bearing, great circle, etc.) on a WGS84 ellipsoid.
+
+## Installation
+
+### Latest release
+
+```sh
+pip install pitot
+```
+
+### Development version
+
+```sh
+poetry install
+```
+
+## Basic usage
+
+## Contributions
+
+Any input, feedback, bug report or contribution is welcome.
+
+Before opening a PR, please check your commits follow a number of safeguards with hooks to install as follows:
+
+```sh
+poetry run pre-commit install
+```
+
+Then you should prefix you `git commit` commands as follows:
+
+```sh
+poetry run git commit -m "fantastic commit message"
+```
