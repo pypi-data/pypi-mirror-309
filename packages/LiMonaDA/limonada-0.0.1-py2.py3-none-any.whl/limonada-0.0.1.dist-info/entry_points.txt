@@ -1,0 +1,3 @@
+[console_scripts]
+limon=limonada.limon:main
+
