@@ -1,0 +1,2 @@
+[winzy.plugins]
+wingeo = winzy_win_geometry:wingeo_plugin
