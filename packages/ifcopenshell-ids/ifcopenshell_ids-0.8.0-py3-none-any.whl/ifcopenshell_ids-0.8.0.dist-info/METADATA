@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ifcopenshell-ids
+Version: 0.8.0
+Summary: IFC toolkit optimized for IDS validation in WASM/Pyodide
+Requires-Python: >=3.8
+Requires-Dist: typing-extensions
+Requires-Dist: lark
+
