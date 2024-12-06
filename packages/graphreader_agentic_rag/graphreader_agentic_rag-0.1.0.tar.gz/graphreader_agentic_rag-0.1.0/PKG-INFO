@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: graphreader_agentic_rag
+Version: 0.1.0
+Summary: Graphreader Implementation
+Author: Cristian C dos Santos
+Author-email: perestra.ccds@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi[standard] (>=0.115.5,<0.116.0)
+Requires-Dist: ipykernel (>=6.29.5,<7.0.0)
+Requires-Dist: langchain-community (>=0.3.7,<0.4.0)
+Requires-Dist: langchain-core (>=0.3.17,<0.4.0)
+Requires-Dist: langchain-openai (>=0.2.8,<0.3.0)
+Requires-Dist: langchain-text-splitters (>=0.3.2,<0.4.0)
+Requires-Dist: langgraph (>=0.2.45,<0.3.0)
+Requires-Dist: neo4j (>=5.26.0,<6.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: tiktoken (>=0.8.0,<0.9.0)
+Description-Content-Type: text/markdown
+
+# Graphreader
+
+
+
+## Getting started
+
+
+
+## Add your files
+
+
+
+
+
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
+
+from graphreader.chains.neo4j_utils import result_sources
+
+https://towardsdatascience.com/implementing-graphreader-with-neo4j-and-langgraph-e4c73826a8b7
