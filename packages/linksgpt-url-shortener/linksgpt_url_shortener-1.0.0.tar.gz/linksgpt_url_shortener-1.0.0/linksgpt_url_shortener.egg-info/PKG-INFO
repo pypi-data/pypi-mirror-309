@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: linksgpt-url-shortener
+Version: 1.0.0
+Summary: LinksGPT URL Shortener Python SDK. It supports AI-driven URL shortening and expansion, custom domains, team roles, customizable QR codes, tracking and in-depth analytics, deep linking and enhanced link security.
+Home-page: https://github.com/LinksGPT/url-shortener-sdk-python
+Author: LinksGPT
+Author-email: service@linksgpt.com
+License: MIT License
+Keywords: LinksGPT,URL Shortener,URL Expander,Short Link,SEO
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LinksGPT URL Shortener Python SDK
+[LinksGPT](https://www.linksgpt.com/) URL Shortener SDK, provides an easy way to interact with the [LinksGPT API](https://dev.linksgpt.com/docs/links/create), enabling developers to build applications that leverage the power of LinksGPT's features.
+
+[LinksGPT](https://www.linksgpt.com/) is a professional link management platform for custom short urls, brand building and conversion optimization. It offers intelligent URL shortening and expansion, custom domains, team roles, customizable QR codes, tracking and AI-based in-depth analytics, deep linking, openAPI and enhanced link security. Powered by AI, it provides intelligent insights and recommendations based on user behavior and click patterns, support data-driven brand strategies and marketing decisions.
+
+## Requirements
+
+Python 2.7 and 3.4+
+
+## Installation & Usage
+### pip install
+
+```sh
+pip install linksgpt-url-shortener
+```
+Then import the package:
+```python
+import linksgpt_url_shortener
+```
+
+## Getting Started
+
+```python
+from __future__ import print_function
+import time
+import linksgpt_url_shortener
+from linksgpt_url_shortener.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: ApiKeyAuth
+configuration = linksgpt_url_shortener.Configuration()
+configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+
+# create an instance of the API class
+api_instance = linksgpt_url_shortener.V1DomainsApi(linksgpt_url_shortener.ApiClient(configuration))
+
+try:
+    # List your domains
+    api_response = api_instance.list_domains()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling V1DomainsApi->list_domains: %s\n" % e)
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *https://app.linksgpt.com*
+
+API document: [LinksGPT DEV API Documentation & API Explorer](https://dev.linksgpt.com/docs/users/detail)
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*V1DomainsApi* | list_domains | **GET** /api/v1/domains | List your domains
+*V1LinksApi* | create_link | **POST** /api/v1/links | Create a new link
+*V1LinksApi* | delete_link | **DELETE** /api/v1/links/{id} | Delete a link
+*V1LinksApi* | get_link_by_id | **GET** /api/v1/links/{id} | Get a link
+*V1LinksApi* | list_links | **GET** /api/v1/links | List links
+*V1LinksApi* | list_tags | **GET** /api/v1/links/tags | List tags
+*V1LinksApi* | update_link | **PUT** /api/v1/links/{id} | Update a link
+*V1LinksApi* | update_link_tags | **PUT** /api/v1/links/{id}/tags | Update the tags
+*V1UsersApi* | get_account_details | **GET** /api/v1/users/me | Get account details
+
+## Source Code
+
+GitHub Repo: [url-shortener-sdk-python](https://github.com/LinksGPT/url-shortener-sdk-python)
+
+## Author
+
+service@linksgpt.com
+
+
