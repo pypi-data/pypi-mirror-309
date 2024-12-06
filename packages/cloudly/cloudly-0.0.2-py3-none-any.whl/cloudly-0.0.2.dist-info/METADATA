@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: cloudly
+Version: 0.0.2
+Summary: Utilities for cloud computing.
+Author-email: Zepu Zhang <zepu.zhang@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: numpydoc ; extra == "doc"
+Requires-Dist: pydata-sphinx-theme ; extra == "doc"
+Requires-Dist: google-auth ; extra == "gcp"
+Requires-Dist: google-api-core ; extra == "gcp"
+Requires-Dist: google-cloud-secret-manager ; extra == "gcp"
+Requires-Dist: pytest-asyncio ; extra == "test"
+Project-URL: Source, https://github.com/zpz/cloudly
+Provides-Extra: doc
+Provides-Extra: gcp
+Provides-Extra: test
+
+cloudly
+=======
+
+Some utilities for cloud computation.
+
+Read the `documentation <https://cloudly.readthedocs.io/en/latest/>`_.
+
