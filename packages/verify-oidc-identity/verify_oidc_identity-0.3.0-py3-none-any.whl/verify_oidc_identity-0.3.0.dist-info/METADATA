@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: verify-oidc-identity
+Version: 0.3.0
+Summary: Verify OIDC JWT identity tokens using OIDC discovery
+License: MIT
+Author: Rich Wareham
+Author-email: rich.verify-oidc-identity@richwareham.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jwcrypto (>=1.5.6,<2.0.0)
+Requires-Dist: validators (>=0.34.0,<0.35.0)
+Project-URL: Changelog, https://github.com/rjw57/verify-oidc-identity/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://rjw57.github.io/verify-oidc-identity
+Project-URL: Homepage, https://github.com/rjw57/verify-oidc-identity
+Project-URL: Issues, https://github.com/rjw57/verify-oidc-identity/issues
+Project-URL: Repository, https://github.com/rjw57/verify-oidc-identity.git
+Description-Content-Type: text/markdown
+
+# Python library to verify OIDC tokens using OIDC discovery
+
+[![PyPI - Version](https://img.shields.io/pypi/v/verify-oidc-identity)](https://pypi.org/p/verify-oidc-identity/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/verify-oidc-identity)
+[![GitHub Release](https://img.shields.io/github/v/release/rjw57/verify-oidc-identity)](https://github.com/rjw57/verify-oidc-identity/releases)
+[![Test suite status](https://github.com/rjw57/verify-oidc-identity/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rjw57/verify-oidc-identity/actions/workflows/main.yml?query=branch%3Amain)
+
