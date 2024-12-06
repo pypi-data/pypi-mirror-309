@@ -1,0 +1,14 @@
+README.md
+license
+pyproject.toml
+erspy/erspy.py
+erspy_DanDLion.egg-info/PKG-INFO
+erspy_DanDLion.egg-info/SOURCES.txt
+erspy_DanDLion.egg-info/dependency_links.txt
+erspy_DanDLion.egg-info/requires.txt
+erspy_DanDLion.egg-info/top_level.txt
+erspy_dandlion.egg-info/PKG-INFO
+erspy_dandlion.egg-info/SOURCES.txt
+erspy_dandlion.egg-info/dependency_links.txt
+erspy_dandlion.egg-info/requires.txt
+erspy_dandlion.egg-info/top_level.txt

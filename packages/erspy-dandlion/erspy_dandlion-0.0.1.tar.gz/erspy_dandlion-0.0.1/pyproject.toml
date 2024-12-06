@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erspy_dandlion"
+version = "0.0.1"
+authors = [
+  { name="dandlion", email="info@expandingeden.games" },
+]
+description = "Enables networking between Python applications and Escape Room Software (ERS)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "paho-mqtt",
+]
+
+[project.urls]
+Homepage = "https://github.com/OrganicPepper/erspy"
+Issues = "https://github.com/OrganicPepper/erspy/issues"
