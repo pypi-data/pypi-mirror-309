@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: RelativeAbundance
+Version: 0.2.2
+Summary: A package for assessing target engagement via relative abundance
+Author: Lillian Tatka
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
