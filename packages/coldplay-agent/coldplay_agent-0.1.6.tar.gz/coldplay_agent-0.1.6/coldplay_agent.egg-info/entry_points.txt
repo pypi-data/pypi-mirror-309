@@ -1,0 +1,3 @@
+[console_scripts]
+coldplayagent = app.main:main
+coldplayagent-init = app.init:initialize
