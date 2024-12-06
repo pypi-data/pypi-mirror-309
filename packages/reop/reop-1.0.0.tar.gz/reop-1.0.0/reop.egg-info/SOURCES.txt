@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+reop.egg-info/PKG-INFO
+reop.egg-info/SOURCES.txt
+reop.egg-info/dependency_links.txt
+reop.egg-info/top_level.txt
