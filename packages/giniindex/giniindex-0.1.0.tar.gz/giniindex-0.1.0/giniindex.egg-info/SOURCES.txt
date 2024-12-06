@@ -1,0 +1,8 @@
+README.md
+setup.py
+giniindex/__init__.py
+giniindex/fetch_pdf.py
+giniindex.egg-info/PKG-INFO
+giniindex.egg-info/SOURCES.txt
+giniindex.egg-info/dependency_links.txt
+giniindex.egg-info/top_level.txt
