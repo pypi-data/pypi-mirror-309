@@ -1,0 +1,5 @@
+CONF_DIR = "/conf/"
+JOB_SAVE_DIR = "/cron/jobs/"
+JOB_KILLER_DIR = "/cron/killer/"
+JOB_WORKER_DIR = "/cron/workers/"
+JOB_LOCK_DIR = "/cron/lock/"
