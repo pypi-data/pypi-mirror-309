@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: rlane-fidelity
+Version: 1.0.2
+Summary: Process Fidelity transaction files
+Keywords: fidelity,python,trading,stocks,reports
+Author-Email: Russel Lane <russel@rlane.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business :: Financial
+Project-URL: Homepage, https://github.com/russellane/fidelity
+Requires-Python: >=3.10
+Requires-Dist: rich>=13.9.4
+Requires-Dist: rlane-libcli>=1.0.8
+Description-Content-Type: text/markdown
+
+### fidelity - Process Fidelity transaction files
+
+#### Usage
+    fidelity [--use-datafiles] [-h] [-v] [-V] [--config FILE]
+             [--print-config] [--print-url] [--completion [SHELL]]
+             [FILES ...]
+    
+Process downloaded Fidelity history files.
+
+#### Datafile options
+    --use-datafiles     Process the `CSV` files defined under `datafiles` in
+                        the config file (default: `False`).
+    FILES               The `CSV` file(s) to process.
+
+#### Configuration File
+  The configuration file defines these elements:
+  
+      `datafiles` (str):  Points to the `CSV` files to process. May
+                          begin with `~`, and may contain wildcards.
+
+#### General options
+    -h, --help          Show this help message and exit.
+    -v, --verbose       `-v` for detailed output and `-vv` for more detailed.
+    -V, --version       Print version number and exit.
+    --config FILE       Use config `FILE` (default: `~/.fidelity.toml`).
+    --print-config      Print effective config and exit.
+    --print-url         Print project url and exit.
+    --completion [SHELL]
+                        Print completion scripts for `SHELL` and exit
+                        (default: `bash`).
