@@ -1,0 +1,4 @@
+tcrutils>=13.0.4
+hikari>=2.1.0
+hikari-miru>=4.2.0,<5.0.0
+hikari-arc>=1.4.0

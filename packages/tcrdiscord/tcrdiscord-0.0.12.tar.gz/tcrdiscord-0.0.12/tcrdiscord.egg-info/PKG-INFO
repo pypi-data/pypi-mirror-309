@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tcrdiscord
+Version: 0.0.12
+Summary: Various utilities for working with the hikari library and the Discord API.
+Home-page: https://github.com/anamoyee/tcrdiscord
+Author: anamoyee
+License: GPL-3.0 license
+Project-URL: Source, https://github.com/anamoyee/tcrdiscord
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tcrutils>=13.0.4
+Requires-Dist: hikari>=2.1.0
+Requires-Dist: hikari-miru<5.0.0,>=4.2.0
+Requires-Dist: hikari-arc>=1.4.0
+
+# TCRDiscord
+
+Various utilities for working with the `hikari` library (+ its derivatives) and the Discord API.
+
+
