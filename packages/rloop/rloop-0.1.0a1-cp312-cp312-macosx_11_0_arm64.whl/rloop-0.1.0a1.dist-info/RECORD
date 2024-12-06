@@ -1,0 +1,11 @@
+rloop-0.1.0a1.dist-info/METADATA,sha256=d_ID649MKw4ktXFOgf-it-Tg7ZkQQLbi9jkTX5A9qw4,2112
+rloop-0.1.0a1.dist-info/WHEEL,sha256=EIhSLQ9M9teIuaTrx2V6G3NQFhsKpYkGvsvJCaKboDA,104
+rloop-0.1.0a1.dist-info/licenses/LICENSE,sha256=F-jMGrubB7sqAGZ-EKeHaU6uQN0QTY0CmVhPZrfHsPo,1486
+rloop/__init__.py,sha256=PXoWAfLtIIsHr29oX9U8gGvaT9rt5cRCz_SsU-i1NGk,303
+rloop/futures.py,sha256=CC99BixD9TKO6mZyJyFFtsTTAUWUF7MDyf0w0FU-sls,768
+rloop/utils.py,sha256=w7prQMudFvVftMT7tCcGxS8bMROiqgwLXexZzDSHt9k,1757
+rloop/loop.py,sha256=6UFbslkbHvGAyRH2-iNQY_d6c2T_QrRZSC4F_MUewcE,21226
+rloop/_compat.py,sha256=XJtOS-1BuVFa0Gb6b9ucYpCB6bNeXOsd5LF--dgQ7Ac,93
+rloop/_rloop.pyi,sha256=eG3EgeqzIvXKR_39xoLFdAaKUnYfh3nwzk17xX47p1M,933
+rloop/_rloop.cpython-312-darwin.so,sha256=HqeqSvM22D89XxuEPkB0R1nOOJR2c7n0LqPkNcH2FOI,676704
+rloop-0.1.0a1.dist-info/RECORD,,
