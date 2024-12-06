@@ -1,0 +1,5 @@
+[console_scripts]
+pyic_anim = scripts.pyic_anim:main
+pyic_fig = scripts.pyic_fig:main
+pyic_intake = scripts.pyic_intake:main
+pyic_sec = scripts.pyic_sec:main
