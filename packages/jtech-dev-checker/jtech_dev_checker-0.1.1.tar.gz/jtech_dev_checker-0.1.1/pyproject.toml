@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jtech-dev-checker"
+version = "0.1.1"
+description = ""
+authors = ["Angelo Vicente Filho <angelo.vicente@veolia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+langchain-google-genai = "^2.0.5"
+pypdf = "^5.1.0"
+pypdf2 = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+jtech-check = "jtech_dev_checker.pre_commit_integration:main"
