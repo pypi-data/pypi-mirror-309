@@ -1,0 +1,17 @@
+[project]
+name = "packaging-tutorial-homeless"
+version = "0.1.0"
+description = "Homeless: tested in the toughest times. ✅"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Repository = "https://gitlab.com/redtk/packaging_tutorial"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["parking/packaging_tutorial"]
