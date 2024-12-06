@@ -1,0 +1,9 @@
+mlops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlops/config.py,sha256=Iuvy82Azejz1SSHUlFuoHSe4sAMCASyKv1EYSf8YOu4,308
+mlops/dataset.py,sha256=mkUpzLotmd-QKrZnoTyejARMpl5iZ4ryPzLPd4OQnd0,1600
+mlops/modeling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlops/modeling/train.py,sha256=IV8-aWNVZhoLQ_ULMvDXaWRBU8DEIb4VdjGvmY740PA,2964
+mlops_ivan_pleshakov-0.0.2.dist-info/METADATA,sha256=_jOHkp0VURXVQ15PJA3BVN1c4x18A8ycX7MNUQtg4XE,3791
+mlops_ivan_pleshakov-0.0.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mlops_ivan_pleshakov-0.0.2.dist-info/top_level.txt,sha256=--7wLiLl45mvQQQArHnQ-USLTKpDk_7noq7gOOKt5Hk,6
+mlops_ivan_pleshakov-0.0.2.dist-info/RECORD,,
