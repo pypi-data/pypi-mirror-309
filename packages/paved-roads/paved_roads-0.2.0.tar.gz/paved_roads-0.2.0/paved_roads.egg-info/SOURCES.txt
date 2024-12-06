@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+paved_roads.egg-info/PKG-INFO
+paved_roads.egg-info/SOURCES.txt
+paved_roads.egg-info/dependency_links.txt
+paved_roads.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
