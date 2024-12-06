@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashcrack-tool"
+version = "1.2"
+description = "A tool for hash cracking with additional utilities"
+authors = [
+  {name = "ente0"}
+]  
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+[project.entry-points."console_scripts"]
+hashcrack = "hashCrack.hashCrack:main"
+
+[project.urls]
+Homepage = "https://github.com/ente0v1/hashCrack"
+Issues = "https://github.com/ente0v1/hashCrack/issues"
