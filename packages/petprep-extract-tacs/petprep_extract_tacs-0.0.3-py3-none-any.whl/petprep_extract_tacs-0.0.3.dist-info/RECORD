@@ -1,0 +1,17 @@
+petprep_extract_tacs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petprep_extract_tacs/bids.py,sha256=M_tEyw9v81DEMV4kRHqx7slwGNhzGcLR7DgpuRiGZvM,17000
+petprep_extract_tacs/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petprep_extract_tacs/interfaces/fs_model.py,sha256=TrtT7W-W03llYpiHajr1Yi_iUP7npfHjAilB7IY0rZw,10118
+petprep_extract_tacs/interfaces/fs_preprocess.py,sha256=JmqRsZLL-oIi9ugY91rJrMLj8Rz9qaBYakJ-luTDKS0,8122
+petprep_extract_tacs/interfaces/petsurfer.py,sha256=7xqOck8-kOmxT3z6jm-W9XwLQUFEvSvcrBt8kNlLtuQ,20256
+petprep_extract_tacs/interfaces/segment.py,sha256=lEC53CVcmUjkJ9yL96IPwudXXrkdbNJlOnxby7atwls,8971
+petprep_extract_tacs/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+petprep_extract_tacs/utils/merge_tacs.py,sha256=qoVzpHCArd4ZylGol1UOp5IFYa0iGO3d76HGUj1nVgg,5948
+petprep_extract_tacs/utils/pet.py,sha256=9WQrWY4L4GOj043OBX7Z3yduSjuFWyKlV-b2qmm7KRE,1169
+petprep_extract_tacs/utils/utils.py,sha256=mVpc4qN6Gr_TEFXPTOtPfPJ3GaM4rutFTGsN38pm3-s,13821
+petprep_extract_tacs-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+petprep_extract_tacs-0.0.3.dist-info/METADATA,sha256=lbai-vFOnvbo2YpmZmerblCrUVmGcVZt0WcvZKMIWcQ,265
+petprep_extract_tacs-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+petprep_extract_tacs-0.0.3.dist-info/entry_points.txt,sha256=0MJ7uY3uX0OFd41NF6wcSgynF3Tze7HWPFyNCrI7NbU,71
+petprep_extract_tacs-0.0.3.dist-info/top_level.txt,sha256=4y3x4YwePj95Q1LSILirRJet8cJoIwg7MjfLQwh8q5Y,21
+petprep_extract_tacs-0.0.3.dist-info/RECORD,,

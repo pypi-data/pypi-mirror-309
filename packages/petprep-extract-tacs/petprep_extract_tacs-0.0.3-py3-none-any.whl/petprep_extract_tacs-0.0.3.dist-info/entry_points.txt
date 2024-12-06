@@ -1,0 +1,2 @@
+[console_scripts]
+petprep_extract_tacs = petprep_extract_tacs.run:main
