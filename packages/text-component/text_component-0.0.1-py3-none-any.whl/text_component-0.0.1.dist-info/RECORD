@@ -1,0 +1,16 @@
+cv_text_element/__init__.py,sha256=0PrbMWuOM5hI83OdfWXqTURq9yzn0mUfu7e4xX7Zzek,726
+cv_text_element/example.py,sha256=38g7ep5eyoVFNI3lvqWw0-RajWmBiz0KzcEUrXIRdC8,413
+cv_text_element/frontend/build/asset-manifest.json,sha256=Gy3ENodbSpPNC5hjTDwWWeCJdVQZKhMQhVmdaX8l0F4,374
+cv_text_element/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+cv_text_element/frontend/build/bootstrap.min.css.map,sha256=8SM4U2NQpCLGTQLW5D_x3qSTwxVq2CP-GXYc3V1WwFs,589892
+cv_text_element/frontend/build/index.html,sha256=OkoSjsUth22BHouVn9d0vtusKopBVHY9PVZObb9da1k,553
+cv_text_element/frontend/build/static/css/main.5f9db33f.css,sha256=i9A1mWtcT59XgNkv9-KnXz9CZCyBe0qyMDc0rYX1NSg,626
+cv_text_element/frontend/build/static/css/main.5f9db33f.css.map,sha256=F7Vmrt_Bl6QifSlV1G5dDWPYUpssA4pwz37okmw7aeg,1478
+cv_text_element/frontend/build/static/js/main.108928b6.js,sha256=kX0bPgiPHiRi-UoLQOHsJyF5lK31vfBN089ioDkDYvk,341616
+cv_text_element/frontend/build/static/js/main.108928b6.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+cv_text_element/frontend/build/static/js/main.108928b6.js.map,sha256=J2ty5y3lCVCfyuzVRA-mil2wPeuUzROm2B3Mv0O7fWY,1367919
+text_component-0.0.1.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+text_component-0.0.1.dist-info/METADATA,sha256=DXPx9eCl8rDi21bYjrPSWsEMFeyQ4hzVCxAI8exI98Q,564
+text_component-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+text_component-0.0.1.dist-info/top_level.txt,sha256=D84pMo9qlee4NrPzbviT5Bcrz6YQWXbgWkxOBl-PxFE,16
+text_component-0.0.1.dist-info/RECORD,,
