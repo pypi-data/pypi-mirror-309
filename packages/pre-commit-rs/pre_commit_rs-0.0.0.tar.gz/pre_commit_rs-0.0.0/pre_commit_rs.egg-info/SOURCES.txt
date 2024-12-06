@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+licenses/asottile_cfgv
+licenses/pre-commit_pre-commit
+pre_commit_rs/__init__.py
+pre_commit_rs/__main__.py
+pre_commit_rs.egg-info/PKG-INFO
+pre_commit_rs.egg-info/SOURCES.txt
+pre_commit_rs.egg-info/dependency_links.txt
+pre_commit_rs.egg-info/top_level.txt
