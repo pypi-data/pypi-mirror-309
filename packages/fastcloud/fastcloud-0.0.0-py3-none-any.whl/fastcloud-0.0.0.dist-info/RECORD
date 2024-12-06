@@ -1,0 +1,14 @@
+fastCloud/__init__.py,sha256=2aiby8H8jL5nFgPRMS9-ULjDO1W5q0iSp7ooF-pnm34,123
+fastCloud/core/__init__.py,sha256=nII9UQMnd0yCguhT3rGq9xu5hyk2MkcZ8pNakOPr5dE,200
+fastCloud/core/cloud_storage_factory.py,sha256=JqRNzyhJUEy59U1cr-bparNlDMUWJFPoi3BGyfru8Yc,1007
+fastCloud/core/i_cloud_storage.py,sha256=xbyweNGZr48hNJ6Rd7JieVM9xfGXD4WBaq9z9HQfwZc,1588
+fastCloud/core/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastCloud/core/providers/azure_storage.py,sha256=XcKbC9PtByRwM7VYFPtTr4hN6x3ACS66sj9k1SD2Fss,3093
+fastCloud/core/providers/s3_storage.py,sha256=diO6CEVP10__Tce0D-1SIbNvgZjCZ_5QycPx4PqqblE,4983
+fastCloud/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastCloud/test/test.py,sha256=eCg2QkD2CtVca2TrZWOqz5JpQ650a13U7qJMJrvLjxQ,846
+fastcloud-0.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+fastcloud-0.0.0.dist-info/METADATA,sha256=gMbRZxcCNUK8xOX0sP5UgahW4iLZTjcC-Z-d7JsN4sM,3596
+fastcloud-0.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+fastcloud-0.0.0.dist-info/top_level.txt,sha256=mmCfMkxY-pE0iuET97TaziI9MbAS8VN9llyRzjdp69c,10
+fastcloud-0.0.0.dist-info/RECORD,,
