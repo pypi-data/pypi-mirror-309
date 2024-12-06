@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Minter
+Version: 1.0.1
+Summary: a lib to mint nft's on any EVM chain
+Author: SpicyPenguin
+License-File: LICENSE
+Requires-Dist: kvsqlite
+Requires-Dist: web3
+
+Minter: A Python library for fast, effortless minting of NFTs from collections on EVM-compatible networks. Simplify blockchain integration with ease.
