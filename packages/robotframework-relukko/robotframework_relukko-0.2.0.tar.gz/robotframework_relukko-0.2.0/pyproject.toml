@@ -1,0 +1,49 @@
+[project]
+name = "robotframework-relukko"
+authors = [
+    {name = "Reto Zingg", email = "g.d0b3rm4n@gmail.com"},
+]
+readme = "README.md"
+
+# https://pypi.org/pypi?%3Aaction=list_classifiers
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Robot Framework :: Library",
+]
+requires-python = ">=3.12"
+dynamic = ["version", "description"]
+dependencies = [
+    "requests >=2.32.3",
+    "pyrelukko == 0.3.0",
+    "robotframework >=7.1",
+]
+
+[tool.flit.module]
+name = "Relukko"
+
+[tool.flit.sdist]
+exclude = [".gitignore", "utils"]
+
+[project.urls]
+Homepage = "https://gitlab.com/relukko/robotframework-relukko"
+Issues = "https://gitlab.com/relukko/robotframework-relukko/-/issues"
+
+[build-system]
+requires = ["flit_core >=3.2,<4", "semantic-version >= 2.10"]
+build-backend = "flit_core.buildapi"
+
+[tool.pylint.main]
+# Files or directories to be skipped. They should be base names, not paths.
+ignore = ["LICENSE", "notes.md", "pyproject.toml", "version.py",
+          "README.md", "relukko.html", "get_version.py",]
+
+[tool.pylint.basic]
+# Naming style matching correct module names.
+# module-naming-style = "snake_case"
+module-naming-style = "PascalCase"
+
+[tool.pylint.format]
+# Regexp for a line that is allowed to be longer than the limit.
+# ignore-long-lines = "^\\s*(# )?<?https?://\\S+>?$"
+ignore-long-lines = "^.*\\[https?://.*?\\|.*?\\]\\.?$"
