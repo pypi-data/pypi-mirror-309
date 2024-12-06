@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyvdirs"
+description = "Python package to locally manage directories"
+version = "1.0.0"
+authors = [
+  {name = "Valeria Pais", email = "valeriarpais@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["directories", "local"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Repository = "https://github.com/0xInfty/PyVDirs.git"
+Homepage = "https://github.com/0xInfty/PyVDirs"
+Issues = "https://github.com/0xInfty/PyVDirs/issues"

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+pyvdirs/dirs.py
+pyvdirs.egg-info/PKG-INFO
+pyvdirs.egg-info/SOURCES.txt
+pyvdirs.egg-info/dependency_links.txt
+pyvdirs.egg-info/top_level.txt

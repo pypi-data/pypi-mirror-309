@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyvdirs
+Version: 1.0.0
+Summary: Python package to locally manage directories
+Author-email: Valeria Pais <valeriarpais@gmail.com>
+License: MIT License
+Project-URL: Repository, https://github.com/0xInfty/PyVDirs.git
+Project-URL: Homepage, https://github.com/0xInfty/PyVDirs
+Project-URL: Issues, https://github.com/0xInfty/PyVDirs/issues
+Keywords: directories,local
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyVDirs
+
+A simple package to manage directories locally, never explicitely defining them inside the code.
+
+## Getting Started
+
+### Installation
+
+This package can easily be installed using `pip`:
+
+```bash
+pip install pyvdirs
+```
+
+It is good practice to always create a Python virtual environment before installing new packages.
+
+## Additional Information
+
+### Main Author Contact
+
+Valeria Pais - @vrpais - valeriarpais@gmail.com
