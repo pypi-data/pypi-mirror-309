@@ -1,0 +1,14 @@
+beautifulsoup4
+cloudscraper
+matplotlib
+numpy
+pandas
+pipreqs
+plotly
+pytest
+python_dateutil
+Requests
+seaborn
+setuptools
+statsmodels
+yfinance
