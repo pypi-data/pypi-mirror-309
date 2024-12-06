@@ -1,0 +1,13 @@
+django_mail_model_template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mail_model_template/admin.py,sha256=X_sMPK0408DSRGIm2M4yzmkooNE3QbCOEHquLzaNwqM,320
+django_mail_model_template/apps.py,sha256=gve6KKPRwoCb-cpXauRsmWhAqlZeLeJzQ3XV_LoCOs8,181
+django_mail_model_template/factory.py,sha256=an549xiVVfzazQQtNKj6Kk2zdoxqniPBpPRhfvLHICE,323
+django_mail_model_template/models.py,sha256=kVjvKmw899uJdO0nhzwGVdIW6at0KYMJCIUvmuxZU1w,388
+django_mail_model_template/utils.py,sha256=38q6jKHYSIRbfgoCPJhEpQqmnFTNTTFEVd6ss58j0Pw,1505
+django_mail_model_template/migrations/0001_initial.py,sha256=QndZO6DqTtanAO0LLFkzjpfnFc1aRLnhourqcaOhWqo,978
+django_mail_model_template/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mail_model_template-0.0.12.dist-info/LICENSE,sha256=GZShU362C2WCHS5l0utda8nuRktgYw5j081NDQ0B7SI,1069
+django_mail_model_template-0.0.12.dist-info/METADATA,sha256=fNxXdbiJRxTRqrw-A8eHsMnzW0kfEzgAC1BLDXoyp5I,3307
+django_mail_model_template-0.0.12.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_mail_model_template-0.0.12.dist-info/top_level.txt,sha256=7_zo-R0n_G0ImU4cen0BmwQW1VNcgjG-c4BOWC-zMws,27
+django_mail_model_template-0.0.12.dist-info/RECORD,,
