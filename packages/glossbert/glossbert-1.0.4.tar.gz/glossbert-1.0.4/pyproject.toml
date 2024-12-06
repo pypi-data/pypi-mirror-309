@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glossbert"
+version = "1.0.4"
+authors = [
+  { name="José María Cruz Lorite", email="josemariacruzlorite@gmail.com" },
+]
+description = "Python package for Word Sentence Disambiguation (WSD) using GlossBERT model and NLTK WordNet."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "transformers",
+    "nltk"
+]
+
+[project.urls]
+Homepage = "https://github.com/cruzlorite/glossbert"
+
