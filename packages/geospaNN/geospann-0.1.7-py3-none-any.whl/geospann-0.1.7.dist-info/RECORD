@@ -1,0 +1,11 @@
+geospaNN/PDP.py,sha256=grX98aw92tw2XPTkt0EkhT6ggxaTePAVaiYg3Z5py2g,2845
+geospaNN/R.py,sha256=KQUYrrvbEz0lPjzvjH_qLq3xtKu45nfHJVbEDgKATZo,1440
+geospaNN/__init__.py,sha256=3ZXtJQBGmzFkPYTLISm8Eb1azYZNFD5MIxMJjv7tAII,101
+geospaNN/main.py,sha256=cbpsTRq-frZNsYk1G7C6v2M3GrdaWtzXl8B64-nLp6k,12227
+geospaNN/model.py,sha256=TueafnH45TPtTKIc0HN7oA-znDQ_n_YNDepeK_lH9qU,15214
+geospaNN/utils.py,sha256=hroCJ0GlUWIAvIRJ7tApLqqfFw-XQo1Q7LWK5a0t8w8,43839
+geospaNN/visualize.py,sha256=mAy_u8CnYVima42O1Bq41eLpTr1KGvyhnQm_ri4LUzM,2760
+geospann-0.1.7.dist-info/METADATA,sha256=m9HyBcLDFjcwntMzpWdl5nNEJIbKpFnXEtpagihUxeE,13909
+geospann-0.1.7.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+geospann-0.1.7.dist-info/licenses/LICENSE,sha256=fTV-nbMw-Y046jYKVO7DGVaPd2RA7pKxl8jGpozD0d8,1071
+geospann-0.1.7.dist-info/RECORD,,
