@@ -1,0 +1,2 @@
+[console_scripts]
+bepp = bepp:main

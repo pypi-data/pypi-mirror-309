@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: bepp
+Version: 0.0.1
+Summary: An opinionated script to gather, clean up and merge transactions from Banca Etica and PayPal.
+Author-email: Tommi <surfing@tommi.space>
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Italian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Database
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.13
+Requires-Dist: currencyconverter>=0.17.34
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: rich-argparse>=1.6.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: xlrd>=2.0.1
+Description-Content-Type: text/markdown
+
+# BEPP
+
+A specific and opinionated helper to merge and clean transactions summaries from [Banca Etica](https://bancaetica.it) and [PayPal](https://paypal.com).
+
+## Notes
+
+- bepp assumes that inside the specified directory all Excel files are Banca Etica’s “estratto conto” files, and all CSV files are PayPal’s transaction summaries.
