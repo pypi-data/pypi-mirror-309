@@ -1,0 +1,2 @@
+[console_scripts]
+checks = checks.cli:main
