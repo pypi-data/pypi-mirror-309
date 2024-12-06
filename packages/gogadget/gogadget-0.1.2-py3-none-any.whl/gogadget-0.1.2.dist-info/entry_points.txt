@@ -1,0 +1,4 @@
+[console_scripts]
+gogadget=gogadget.main:app
+whispergg=gogadget.whisper:cli
+
