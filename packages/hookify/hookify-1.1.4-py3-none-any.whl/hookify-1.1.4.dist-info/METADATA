@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hookify
+Version: 1.1.4
+Summary: A modern library which allows you to efficiently and quickly send Discord webhooks.
+Author: Discord >> @mcananas
+Description-Content-Type: text/markdown
+
+## **Introduction**
+
+The **hookify** library is a modern, quick and beginner-friendly library, which allows you to easily send Discord webhooks with any configuration you want.
+
+There's no need to struggle with POST requests anymore - this library does it all for you!
+
+## **Commands**
+
+- ```hookify.send()``` - Sends a webhook to the Discord API.
+
+*Example use:*
+
+```py
+hookify.send(URL, 'Hello!', embeds=[{"title": "Embed 1!", "description": "Hello!"}, {"title": "Embed 2!"}])
+```
+
+## **Arguments**
+
+- `webhook_url` | Link to the webhook. (Required)
+
+- `content` | Content of the message. (Required if no embeds)
+
+- `username` | Overrides the predefined username.
+
+- `avatar_url` | Overrides the predefined avatar URL.
+
+- `embeds` | A **list of arrays** containing embeds and their properties.
+Webhook arguments could be found [here](https://birdie0.github.io/discord-webhooks-guide/discord_webhook.html) or in the official Discord documentation.
+
+## **1.1.4 update log**
+- (19/11/2024) changed the `README.md` file
+
+## **Contact**
+
+*discord >>> `mcananas`*
