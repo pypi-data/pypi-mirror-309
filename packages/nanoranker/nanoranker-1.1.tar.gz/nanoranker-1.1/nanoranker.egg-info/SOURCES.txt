@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nanoranker/__init__.py
+nanoranker.egg-info/PKG-INFO
+nanoranker.egg-info/SOURCES.txt
+nanoranker.egg-info/dependency_links.txt
+nanoranker.egg-info/requires.txt
+nanoranker.egg-info/top_level.txt
+nanoranker/resources/reranker_nn_v2_state_dict.pth
+nanoranker/resources/universal-sentence-encoder-multilingual.onnx
