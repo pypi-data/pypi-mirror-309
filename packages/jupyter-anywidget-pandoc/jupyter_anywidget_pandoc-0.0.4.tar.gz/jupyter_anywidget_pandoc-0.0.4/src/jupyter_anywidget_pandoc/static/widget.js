@@ -1,0 +1,1 @@
+function a({model:e,el:t}){let n=document.createElement("button");n.innerHTML=`count is ${e.get("value")}`,n.addEventListener("click",()=>{e.set("value",e.get("value")+1),e.save_changes()}),e.on("change:value",()=>{n.innerHTML=`count is ${e.get("value")}`}),t.classList.add("jupyter_anywidget_pandoc"),t.appendChild(n)}var c={render:a};export{c as default};
