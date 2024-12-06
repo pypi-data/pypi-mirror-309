@@ -1,0 +1,4 @@
+[console_scripts]
+rft = rft.bin.main_client:main
+rft-daemon = rft.bin.main_daemon:main
+rofi-tmux = rft.bin.main_client:main
