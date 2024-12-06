@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vector-sdk"
+version = "0.1.1"
+description = "Universal SDK for Vector DBs"
+authors = [
+    {name = "Dhruv Anand", email = "dhruv.anand@ainorthstartech.com"},
+    {name = "Hadi Khan", email = "hadikhan.techx@gmail.com"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []  # Kept empty as in the main branch
+
+[project.urls]
+Homepage = "https://github.com/dhruv-anand-aintech/vector-sdk.git"
+"Bug Tracker" = "https://github.com/dhruv-anand-aintech/vector-sdk/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "ruff>=0.1.6",
+    "uv>=0.1.0",
+    "build",
+    "pre-commit",
+    "qdrant-client[fastembed]"
+]
+
+[project.scripts]
+vector-sdk = "vector_sdk.main:main"
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py312"
+
+# Add these new settings
+extend-exclude = [".env", ".venv", "venv", "docs"]
+fix = true
+unsafe-fixes = false
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "W", "I", "N", "UP"]
+ignore = [
+    "D100",     # Missing docstring in public module
+    "D104",     # Missing docstring in public package
+    "T201",     # Print found
+    "FBT001",   # Boolean positional arg in function definition
+    "FBT002",   # Boolean default value in function definition
+    "UP007",    # Use X | Y for type annotations
+    "E501",     # Line too long (handled by formatter)
+    "F841",     # Ignore Unused variables during the development phase TODO: remove later
+    "B904",     # TODO: Remove this ignore and properly handle exception chaining
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+known-first-party = ["vector_sdk"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "D103"]  # Ignore assert statements and docstrings in tests
+"__init__.py" = ["D104"]      # Ignore docstrings in __init__ files
