@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: west-ic-antenna
+Version: 0.13.1
+Summary: WEST ICRH Antenna Electrical Model
+License: LICENSE
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipywidgets>=8.1.5
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: networkx>=3.4.2
+Requires-Dist: numpy>=2.1.3
+Requires-Dist: scikit-rf>=1.4.1
+Requires-Dist: tqdm>=4.67.0
+Provides-Extra: test
+Requires-Dist: pytest>=8.3.3; extra == "test"
+Provides-Extra: docs
+Requires-Dist: ipykernel>=6.29.5; extra == "docs"
+Requires-Dist: nbsphinx>=0.9.5; extra == "docs"
+Requires-Dist: pandoc>=2.4; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=3.0.2; extra == "docs"
+Requires-Dist: sphinx>=8.1.3; extra == "docs"
+
+[![PyPI version](https://badge.fury.io/py/west-ic-antenna.svg)](https://badge.fury.io/py/west-ic-antenna)
+
+# WEST ICRH Antenna Electrical Model
+
+This code is a numerical model of the WEST Ion Cyclotron Resonance Antenna. The code builds the electrical circuit of an antenna, connecting the different parts of the antenna separately full-wave calculated. The front-face of the antenna, evaluated using bespoke antenna code or full-wave software, is given as an input. The antenna tuning capacitors can be automatically optimized for a given frequency. The voltages and currents at the capacitors can be evaluated for a given antenna excitation (power and phase).   
+
+
+## Antenna Digital Twin
+
+You can test the antenna model online with Binder:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jhillairet/WEST_IC_antenna/HEAD?filepath=doc%2Fdigital_twin.ipynb)
+
+## Installation
+
+The package can be installed via pypi:
+
+`pip install west-ic-antenna`
+
+## References
+- Hillairet, J., 2020. RF network analysis of the WEST ICRH antenna with the open-source python scikit-RF package. AIP Conference Proceedings 2254, 070010. https://doi.org/10/ghbw5p (free version https://hal-cea.archives-ouvertes.fr/cea-02459571/document)

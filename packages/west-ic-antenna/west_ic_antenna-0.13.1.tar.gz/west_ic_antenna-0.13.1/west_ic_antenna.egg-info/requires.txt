@@ -1,0 +1,16 @@
+ipywidgets>=8.1.5
+matplotlib>=3.9.2
+networkx>=3.4.2
+numpy>=2.1.3
+scikit-rf>=1.4.1
+tqdm>=4.67.0
+
+[docs]
+ipykernel>=6.29.5
+nbsphinx>=0.9.5
+pandoc>=2.4
+sphinx-rtd-theme>=3.0.2
+sphinx>=8.1.3
+
+[test]
+pytest>=8.3.3

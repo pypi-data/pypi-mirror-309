@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+west_ic_antenna/__init__.py
+west_ic_antenna/antenna.py
+west_ic_antenna/digital_twin.py
+west_ic_antenna/topica.py
+west_ic_antenna.egg-info/PKG-INFO
+west_ic_antenna.egg-info/SOURCES.txt
+west_ic_antenna.egg-info/dependency_links.txt
+west_ic_antenna.egg-info/requires.txt
+west_ic_antenna.egg-info/top_level.txt
+west_ic_antenna/data/Sparameters/front_faces/PetraM/convert_to_s4p.py
+west_ic_antenna/test/__init__.py
+west_ic_antenna/test/test_antenna.py
