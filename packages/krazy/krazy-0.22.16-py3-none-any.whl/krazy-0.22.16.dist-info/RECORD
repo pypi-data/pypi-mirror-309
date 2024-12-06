@@ -1,0 +1,14 @@
+krazy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+krazy/data_science.py,sha256=zVOG2YPnhE5P0Vc9bMaU--1KAFkTiiOnjwAU_rxOwGE,6550
+krazy/frontend_tkinter_ready.py,sha256=1NEGJaTsU5eCEDQB_McIQUTVPgfoc4DA3e7H4-wewf8,10182
+krazy/gsheet_initialize.py,sha256=NExOuM2Viy9o-k5fZEAnaJyMEnh2GSlEpgYbXL6d5ak,3382
+krazy/postgres_utilities.py,sha256=iezbrVzudr0zCFFhFsyeKpOVNHaLaM1Atxy17pUP7Ps,8367
+krazy/reconciler.py,sha256=DBr-7pwllgD10Yj0Dae85RYGHyltohzNHBxYnaKScmQ,13910
+krazy/sql_utilities.py,sha256=mfv6fc0pl5ix3HbRb8OO3MpZk4M7ht92_WI1JfgnyjY,6704
+krazy/sqlite_utilities.py,sha256=Vb9jd1PSrpQYHlaT0qC0QBKa_C8BMUCjhIuH2PDvvQo,2237
+krazy/utility_functions.py,sha256=Yp9bYO3x58u-fiT2Fw5mF0WlijsLNml3iOOppZTY_-g,35380
+krazy-0.22.16.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+krazy-0.22.16.dist-info/METADATA,sha256=J5bbhQV2a1EVWN8W3rDpdIt9Hx6HeWNG1f4GKGJ_3GE,1021
+krazy-0.22.16.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+krazy-0.22.16.dist-info/top_level.txt,sha256=1A4tuHV-s2cR5OMtOwlmxOWhHdlWK9sjJkkKwbcOn9g,6
+krazy-0.22.16.dist-info/RECORD,,
