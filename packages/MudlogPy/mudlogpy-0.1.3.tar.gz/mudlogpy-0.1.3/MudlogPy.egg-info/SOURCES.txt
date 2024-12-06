@@ -1,0 +1,8 @@
+README.md
+setup.py
+MudlogPy/Mudlog.py
+MudlogPy/__init__.py
+MudlogPy.egg-info/PKG-INFO
+MudlogPy.egg-info/SOURCES.txt
+MudlogPy.egg-info/dependency_links.txt
+MudlogPy.egg-info/top_level.txt
