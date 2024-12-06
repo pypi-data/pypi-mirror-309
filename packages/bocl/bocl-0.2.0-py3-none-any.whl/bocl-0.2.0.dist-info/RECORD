@@ -1,0 +1,11 @@
+bocl/OCLWrapper.py,sha256=1CsIOvuFBXDA9YJ6ZdZBSmNH7di9zeUcYmXTrU8PHUo,1624
+bocl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bocl/evaluator.py,sha256=qa_iDRcZmlSgpli81A5tC0aFIRYCBoz8yKHevogEwkg,20775
+models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/library_object.py,sha256=giIhqklaYHparvKi1D20T0udD2LODCgxg_nZtW_ZDDQ,10467
+models/researcher_object.py,sha256=p4BVlDf9fQmKhcYu7K8Vca7Si4sTIoQ88ILFkYSvy1g,8849
+models/team_player_object.py,sha256=IzkDMZq5h1Xk3WgX3i-kASJFB5w38PQSllR6BgfAcn4,5297
+bocl-0.2.0.dist-info/METADATA,sha256=xjPd_UFZrUJqRawXwpeVzESRnUegH0CoGGfnzlgq_d0,3352
+bocl-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bocl-0.2.0.dist-info/top_level.txt,sha256=d5ZFSziu4ds27nZoZcgWLHKMJsID-7w5M7grHxSYjoE,12
+bocl-0.2.0.dist-info/RECORD,,
