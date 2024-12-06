@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+librepythonista_py_edit/__init__.py
+librepythonista_py_edit/cell_edit.py
+librepythonista_py_edit/hello.py
+librepythonista_python_editor.egg-info/PKG-INFO
+librepythonista_python_editor.egg-info/SOURCES.txt
+librepythonista_python_editor.egg-info/dependency_links.txt
+librepythonista_python_editor.egg-info/requires.txt
+librepythonista_python_editor.egg-info/top_level.txt
