@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+email_free_fast_email/__init__.py
+email_free_fast_email.egg-info/PKG-INFO
+email_free_fast_email.egg-info/SOURCES.txt
+email_free_fast_email.egg-info/dependency_links.txt
+email_free_fast_email.egg-info/top_level.txt
