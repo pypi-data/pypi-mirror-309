@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: VedicCrypto
+Version: 0.0.9
+Summary: A library that creates equations from any devangiri text and the equations could be converted to graphs or sounds
+Home-page: UNKNOWN
+Author: Suvidh Pawar / Bhupendra Pawar
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.md
+Requires-Dist: sympy
+
+UNKNOWN
+
