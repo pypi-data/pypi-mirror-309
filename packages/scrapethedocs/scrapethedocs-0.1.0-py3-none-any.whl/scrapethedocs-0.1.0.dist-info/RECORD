@@ -1,0 +1,8 @@
+scrapethedocs/__init__.py,sha256=wVSBfVkc3oSvjIzZhak_dcitgtHLZwr9hScCNT6OEMA,4094
+scrapethedocs/_helpers.py,sha256=D6hyP8J1RV-NsdvHTf_2RiuPRyx4dhswSiEdanzAnLw,785
+scrapethedocs/_link_extraction.py,sha256=WnCEkCkkm1cO14_2lo99pW3r8LT05V5WE06PXQn0bgs,1969
+scrapethedocs/_text_extraction.py,sha256=1SxH-JhIHMseemGcjlD0PiJ1Scest5rkDp_AKTX1y5Q,5428
+scrapethedocs-0.1.0.dist-info/LICENSE,sha256=EU8Ngao_cyHoOLXsKLXN9SMedwwr1HZry9S2AX9_Uj4,1073
+scrapethedocs-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+scrapethedocs-0.1.0.dist-info/METADATA,sha256=dOnvKBzu5JfdE2EbI228pLpo2PVKNf31mt4RKjVySGs,1733
+scrapethedocs-0.1.0.dist-info/RECORD,,
