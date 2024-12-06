@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+flickpaysdk.egg-info/PKG-INFO
+flickpaysdk.egg-info/SOURCES.txt
+flickpaysdk.egg-info/dependency_links.txt
+flickpaysdk.egg-info/requires.txt
+flickpaysdk.egg-info/top_level.txt
+src/main.py
+src/sdk/__init__.py
+src/sdk/flickpay.py
+src/sdk/types.py
