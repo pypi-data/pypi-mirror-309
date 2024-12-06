@@ -1,0 +1,209 @@
+Metadata-Version: 2.1
+Name: retinafacex
+Version: 0.1.2
+Summary: RetinaFaceX (X-extended): Lightweight Face Detection Library
+Home-page: https://github.com/yakhyo/retinafacex
+Author: Yakhyokhuja Valikhujaev
+Author-email: yakhyo9696@gmail.com
+License: MIT
+Keywords: retinaface,face detection,deep learning,onnx,opencv
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: requests
+Requires-Dist: torch
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# RetinaFaceX (X-extended): Lightweight Face Detection Library
+
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+[![PyPI Version](https://img.shields.io/pypi/v/retinafacex.svg)](https://pypi.org/project/retinafacex/)
+[![Build Status](https://github.com/yakhyo/retinafacex/actions/workflows/build.yml/badge.svg)](https://github.com/yakhyo/retinafacex/actions)
+[![Downloads](https://pepy.tech/badge/retinafacex)](https://pepy.tech/project/retinafacex)
+[![Code Style: PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg)](https://www.python.org/dev/peps/pep-0008/)
+
+</div>
+
+RetinaFaceX is a lightweight face detection library designed for high-performance face localization and landmark detection. The library supports ONNX models and provides utilities for bounding box visualization and landmark plotting. To train RetinaFace model, see https://github.com/yakhyo/retinaface-pytorch.
+
+---
+
+## Features
+
+- High-speed face detection using ONNX models.
+- Accurate facial landmark localization (e.g., eyes, nose, and mouth).
+- Easy-to-use API for inference and visualization.
+- Customizable confidence thresholds for bounding box filtering.
+
+---
+
+## Installation
+
+### Using pip
+
+```bash
+pip install retinafacex
+```
+
+### Local installation using pip
+
+**Clone the repository**
+
+```bash
+git clone https://github.com/yakhyo/retinafacex.git
+cd retinafacex
+```
+
+**Install using pip**
+
+```bash
+pip install .
+```
+
+---
+
+## Quick Start
+
+### Initialize the Model
+
+```python
+from retinafacex import RetinaFace
+
+# Initialize the RetinaFace model
+retinaface_inference = RetinaFace(
+    model="retinaface_mnet_v2",  # Model name
+    conf_thresh=0.5,            # Confidence threshold
+    pre_nms_topk=5000,          # Pre-NMS Top-K detections
+    nms_thresh=0.4,             # NMS IoU threshold
+    post_nms_topk=750           # Post-NMS Top-K detections
+)
+```
+
+### Run Inference
+
+```python
+import cv2
+from retinafacex.visualization import draw_detections
+
+# Load an image
+image_path = "assets/test.jpg"
+original_image = cv2.imread(image_path)
+
+# Perform inference
+boxes, landmarks = retinaface_inference.detect(original_image)
+
+# Visualize results
+draw_detections(original_image, (boxes, landmarks), vis_threshold=0.6)
+
+# Save the output image
+output_path = "output.jpg"
+cv2.imwrite(output_path, original_image)
+print(f"Saved output image to {output_path}")
+```
+
+---
+
+### Evaluation results of available models on WiderFace
+
+| RetinaFace ONNX Backbones | Easy       | Medium     | Hard       |
+| ------------------------- | ---------- | ---------- | ---------- |
+| retinaface_mnetv1_025     | 88.48%     | 87.02%     | 80.61%     |
+| retinaface_mnetv1_050     | 89.42%     | 87.97%     | 82.40%     |
+| retinaface_mnetv1         | 90.59%     | 89.14%     | 84.13%     |
+| retinaface_mnetv2         | 91.70%     | 91.03%     | 86.60%     |
+| retinaface_r18            | 92.50%     | 91.02%     | 86.63%     |
+| retinaface_r34            | **94.16%** | **93.12%** | **88.90%** |
+
+## API Reference
+
+### RetinaFace Class
+
+#### Initialization
+
+```python
+RetinaFace(
+    model: str,
+    conf_thresh: float = 0.5,
+    pre_nms_topk: int = 5000,
+    nms_thresh: float = 0.4,
+    post_nms_topk: int = 750
+)
+```
+
+- `model`: Model name (e.g., retinaface_mnet_v2).
+  - retinaface_mnet025
+  - retinaface_mnet050
+  - retinaface_mnet_v1
+  - retinaface_mnet_v2
+  - retinaface_r18
+  - retinaface_r34
+- `conf_thresh`: Minimum confidence threshold for detections.
+- `pre_nms_topk`: Maximum number of detections to keep before NMS.
+- `nms_thresh`: IoU threshold for Non-Maximum Suppression.
+- `post_nms_topk`: Maximum number of detections to keep after NMS.
+
+#### `detect(image: np.ndarray, max_num: Optional[int] = 0, metric: Literal["default", "max"] = "default", center_weight: Optional[float] = 2.0) -> Tuple[np.ndarray, np.ndarray]`
+
+- **Description**: Performs face detection on the input image and returns bounding boxes and landmarks for detected faces.
+
+- **Inputs**:
+
+  - `image` (`np.ndarray`): The input image as a NumPy array in BGR format.
+  - `max_num` (`Optional[int]`, default=`0`): The maximum number of faces to return. If `0`, all detected faces are returned.
+  - `metric` (`Literal["default", "max"]`, default=`"default"`): The metric for prioritizing detections:
+    - `"default"`: Prioritize detections closer to the image center.
+    - `"max"`: Prioritize detections with larger bounding box areas.
+  - `center_weight` (`Optional[float]`, default=`2.0`): A weight factor for prioritizing faces closer to the center of the image.
+
+- **Outputs**:
+  - `Tuple[np.ndarray, np.ndarray]`: A tuple containing:
+    - `bounding_boxes` (`np.ndarray`): An array of bounding boxes, each represented as `[x_min, y_min, x_max, y_max, confidence]`.
+    - `landmarks` (`np.ndarray`): An array of facial landmarks, each represented as `[(x1, y1), ..., (x5, y5)]`.
+
+---
+
+## Visualization Utilities
+
+### `draw_detections(original_image, detections, vis_threshold)`
+
+- Draws bounding boxes and landmarks on the image.
+- Filters detections below the confidence threshold.
+
+---
+
+## Contributing
+
+We welcome contributions to enhance the library! Feel free to:
+
+- Submit bug reports or feature requests.
+- Fork the repository and create a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+- Based on the RetinaFace model for face detection ([https://github.com/yakhyo/retinaface-pytorch](https://github.com/yakhyo/retinaface-pytorch)).
+- Inspired by InsightFace and other face detection projects.
+
+---
