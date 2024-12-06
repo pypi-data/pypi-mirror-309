@@ -1,0 +1,9 @@
+init.py,sha256=7ciDTfn8zBR4XGsnjhJAVk0YLoYl-Im1v0Cyp2B7PHk,2018
+main.py,sha256=MMGkAQe0iyHJLHLsKjTvO_2l3M01fVjvv618pgTlZmU,107
+backend/__init__.py,sha256=0SP8Ms7E_MfOQy-OrkgOQYJNZvDEDBwc_SF-4nlmPdg,4001
+backend/schema.py,sha256=MX1g1Agq47AJNm6bkvEAPWfxZHEzfM5mStMGqscRKbQ,161
+frontend/__init__.py,sha256=onAA9g7wBE78pxq2YeeEG2pxY23uf9OEtRndmsZ2HNg,949
+python_qt6_gtk-0.1.0.dist-info/METADATA,sha256=k1qs6zEKG8rW8yFR2WL8WeiNxlrU5f2B5zQAKwJ_96U,160
+python_qt6_gtk-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+python_qt6_gtk-0.1.0.dist-info/top_level.txt,sha256=eDNXA7VLVOPowVmqmWJz9xR_9Qf1U_UKYQovtBudzPQ,27
+python_qt6_gtk-0.1.0.dist-info/RECORD,,
