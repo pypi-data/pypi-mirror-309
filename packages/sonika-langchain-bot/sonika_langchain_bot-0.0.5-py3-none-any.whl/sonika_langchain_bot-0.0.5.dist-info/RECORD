@@ -1,0 +1,13 @@
+sonika_langchain_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sonika_langchain_bot/langchain_bdi.py,sha256=aCo6d2vhn5d1xGmN3Ldpa8DStJUSLuhDPZ3y4iXILIg,7329
+sonika_langchain_bot/langchain_bot_agent_bdi.py,sha256=ueN2dP8nuBO9gV81sXIEP8BrWK8b3jglpDNSOIsPa58,9005
+sonika_langchain_bot/langchain_clasificator.py,sha256=_58LRwd2G8u-KKgFnp9FSZtxBg4vyVbeD5aS5ny4Hcs,1889
+sonika_langchain_bot/langchain_class.py,sha256=tPc_aKbhYYv1DUwIEuaDDFpIwKOdfmMuJWOKjX6Iyco,953
+sonika_langchain_bot/langchain_files.py,sha256=SEyqnJgBc_nbCIG31eypunBbO33T5AHFOhQZcghTks4,381
+sonika_langchain_bot/langchain_models.py,sha256=8gC7rDxGI0JcNn-MADyLQ5rK8mgOS1iVjLsV8kCQi9k,1578
+sonika_langchain_bot/langchain_tools.py,sha256=y7wLf1DbUua3QIvz938Ek-JIMOuQhrOIptJadW8OIsU,466
+sonika_langchain_bot-0.0.5.dist-info/LICENSE,sha256=O8VZ4aU_rUMAArvYTm2bshcZ991huv_tpfB5BKHH9Q8,1064
+sonika_langchain_bot-0.0.5.dist-info/METADATA,sha256=eVnVxq9Oo89qa_g8k2DgBTsBftt-ruac2BHhSKodgDw,1447
+sonika_langchain_bot-0.0.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sonika_langchain_bot-0.0.5.dist-info/top_level.txt,sha256=UsTTSZFEw2wrPSVh4ufu01e2m_E7O_QVYT_k4zCQaAE,21
+sonika_langchain_bot-0.0.5.dist-info/RECORD,,
