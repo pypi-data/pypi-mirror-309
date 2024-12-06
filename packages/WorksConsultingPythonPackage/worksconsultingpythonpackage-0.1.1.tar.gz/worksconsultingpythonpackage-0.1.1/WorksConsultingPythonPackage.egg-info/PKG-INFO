@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: WorksConsultingPythonPackage
+Version: 0.1.1
+Summary: Python package created and maintained by Works Consulting LLC
+Home-page: 
+Author: Gabriel Morin
+Author-email: gabe@gisworks.com
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
