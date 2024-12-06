@@ -1,0 +1,7 @@
+requests
+pick
+PyYAML
+urllib3
+
+[:platform_system == "Windows"]
+pywin32
