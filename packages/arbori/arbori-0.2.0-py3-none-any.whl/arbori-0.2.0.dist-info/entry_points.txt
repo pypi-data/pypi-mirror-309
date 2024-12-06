@@ -1,0 +1,2 @@
+[console_scripts]
+arbori = arbori.__main__:arbori
