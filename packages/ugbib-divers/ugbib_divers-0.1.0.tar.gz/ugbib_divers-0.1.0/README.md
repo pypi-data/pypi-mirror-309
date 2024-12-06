@@ -1,0 +1,56 @@
+ugbib_divers
+============
+
+ugb_divers enthält Module ohne weitere Abhängigkeiten. Das sind:
+
+* bibGlobal
+* bibGymbols
+
+
+bibGlobal
+---------
+
+Enthält eine Klasse glb, die es erlaubt, globale Variablen mehreren eingebundenen
+Modulen verfügbar zu machen.
+
+
+### Nutzung
+
+Z.B. Datenbank-Connection, die von einer App oder einem Modul hergestellt wird, kann
+als `glb.DB` Modul-übergreifend verwendet werden.
+
+
+### Beispiel
+
+```python
+from bibglobal import glb
+
+glb.setup('DB')
+glb.DB = sqlite3.connect('...')
+Cur = glb.DB.cursor()
+Cur.execute('...')
+Cur.close
+```
+
+
+bibSymbols
+----------
+
+Enthält Symbole aus dem UTF-8 Zeichensatz mit hilfreichen Abkürzungen
+
+
+### Anwendung
+
+Ursprünglich wurde diese Sammlung für Textual Formulare gebaut, um "Icons" für
+Mini-Buttons zu haben. Selbstverständlich kann es aber auch anders verwendet werden.
+
+
+### Beispiel
+
+```python
+from bibsymbols import Symbols
+
+S = Symbols()
+
+print(S.first)
+```
