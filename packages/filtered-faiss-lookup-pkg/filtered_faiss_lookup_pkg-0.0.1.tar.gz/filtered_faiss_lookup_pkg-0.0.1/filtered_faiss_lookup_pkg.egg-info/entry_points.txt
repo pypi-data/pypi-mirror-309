@@ -1,0 +1,2 @@
+[package_tools]
+my_tools = filtered_faiss_lookup_pkg.tools.utils:list_package_tools

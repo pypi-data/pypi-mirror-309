@@ -1,0 +1,26 @@
+my_tool_package.tools.custom_lookup_tool.custom_lookup_function:
+  name: Filtered FAISS Lookup
+  type: python
+  inputs:
+    query:
+      type:
+        - string
+    filters:
+      type:
+        - string
+    top_k:
+      type:
+        - int
+    container_name:
+      type:
+        - string
+    storage:
+      type:
+        - CustomConnection
+    openai:
+      type:
+        - AzureOpenAIConnection
+  description: This tool is used to get filtered similarity search results from a
+    FAISS index.
+  module: my_tool_package.tools.custom_lookup_tool
+  function: custom_lookup_function

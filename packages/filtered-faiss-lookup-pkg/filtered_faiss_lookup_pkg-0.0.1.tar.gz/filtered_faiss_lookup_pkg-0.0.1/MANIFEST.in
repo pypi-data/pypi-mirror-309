@@ -1,0 +1,1 @@
+include filtered_faiss_lookup_pkg/yamls/*.yaml
