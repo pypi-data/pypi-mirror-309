@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-flare-common
+Version: 0.0.2
+Summary: Python modules that are used across multiple Flare projects.
+Author-email: Matej Janezic <matej@flare.network>, Luka Avbreht <luka@flare.network>
+Project-URL: Homepage, https://github.com/flare-foundation/py-flare-common
+Project-URL: Issues, https://github.com/flare-foundation/py-flare-common/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: eth-abi ==5.1.0
+Requires-Dist: eth-hash[pycryptodome] ==0.7.0
+Requires-Dist: attrs ==24.2.0
+
+# py-flare-merkle-tree
