@@ -1,0 +1,9 @@
+llama_index/BUILD,sha256=bgY2MuK6X_yT3KZ0aGz7A81yO2vNVEGY2dmNQxi06nk,56
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/firestore/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/vector_stores/firestore/__init__.py,sha256=7MNUSt7hQ4706RzCrvYvJw0jNLbP7gQ6F__DTKmXTyk,110
+llama_index/vector_stores/firestore/base.py,sha256=8_brUOCyIlUBtq3w-kMPd7NuQDE_d4aLv_RF2RXeVQY,8514
+llama_index/vector_stores/firestore/utils.py,sha256=k4ncknNp2wcf_YgqDyac6bZsLG6OeTI8dARoyHQ-r1U,1004
+llama_index_vector_store_firestore-0.3.0.dist-info/METADATA,sha256=u_y-pKp-BoPdG4JsjegpxUS5zFEGj59-ztMH5znsSzQ,1554
+llama_index_vector_store_firestore-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_store_firestore-0.3.0.dist-info/RECORD,,
