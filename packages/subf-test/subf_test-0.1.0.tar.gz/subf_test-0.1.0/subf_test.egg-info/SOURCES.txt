@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+subf/__init__.py
+subf_test.egg-info/PKG-INFO
+subf_test.egg-info/SOURCES.txt
+subf_test.egg-info/dependency_links.txt
+subf_test.egg-info/top_level.txt
