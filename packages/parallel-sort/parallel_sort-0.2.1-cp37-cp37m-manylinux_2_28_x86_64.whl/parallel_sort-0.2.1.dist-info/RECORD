@@ -1,0 +1,12 @@
+parallel_sort.libs/libtbb-79d9bc54.so.2,sha256=4BE_Gp4115ZvWXf9S2soe3XsZz21HUvflk0rB3zqZPY,317977
+parallel_sort-0.2.1.dist-info/top_level.txt,sha256=q4ftudMgG8v0nm5vPfSW9-HM9GsX-r5-4OpngxGbhB8,14
+parallel_sort-0.2.1.dist-info/RECORD,,
+parallel_sort-0.2.1.dist-info/LICENSE,sha256=ISC9SNXUpXaG0CVvslz5jO3N5m7PvrGuDkfff6QbyZI,1077
+parallel_sort-0.2.1.dist-info/METADATA,sha256=LbesQ7sxlUKqwXLqEsuAYScjhMAa8raczmFfGVtSEGU,4195
+parallel_sort-0.2.1.dist-info/WHEEL,sha256=b79Oiwj0qymylbEAL1CtY7GBaMP1ooxouut30pqD4V8,113
+parallel_sort/extension.cpython-37m-x86_64-linux-gnu.so,sha256=qblJcrBzRuPE5KlaV0YDoKPvOp6OHM2iEMvdNvT43aQ,11711729
+parallel_sort/__init__.py,sha256=PNrqS0xf6OLiptww9_48YzRm5Ayq-son2Uu25laIJjE,246
+parallel_sort/_version.py,sha256=EGgkE0P_mNhgdajRtJIZJnyl0yMGRYakJYoPnb92ETI,160
+parallel_sort/src/parallel_sort.pyx,sha256=tjBglFWF6R78zpGqUwQD1hLAOixd2kB9-50J9TFXKc8,2942
+parallel_sort/src/parallel_sort.cpp,sha256=fz9uM6-J0enPOz8o8iuCo-na8QzgaEBdHFE-h4Zbjsg,1903030
+parallel_sort/src/parallel_sort.hpp,sha256=gPzZ9ITGBT_JRKgDwQgQi-iBMH-vkDTEp2vTu9ZO9Vc,1392
