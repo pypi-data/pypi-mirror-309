@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: graphcalc
+Version: 0.1.11
+Summary: A Python package for graph computation functions
+Home-page: https://github.com/randydavila/graphcalc
+Author: Randy Davila
+Author-email: rrd6@rice.edu
+License: MIT
+Project-URL: Documentation, https://graphcalc.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/yourusername/graphcalc
+Project-URL: PyPI, https://pypi.org/project/graphcalc/
+Keywords: graph theory,networkx,graph computation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backports.tarfile==1.2.0
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: charset-normalizer==3.4.0
+Requires-Dist: contourpy==1.3.0
+Requires-Dist: cycler==0.12.1
+Requires-Dist: docutils==0.21.2
+Requires-Dist: exceptiongroup==1.2.2
+Requires-Dist: fonttools==4.54.1
+Requires-Dist: idna==3.10
+Requires-Dist: importlib-metadata==8.5.0
+Requires-Dist: importlib-resources==6.4.5
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==6.0.1
+Requires-Dist: jaraco.functools==4.1.0
+Requires-Dist: keyring==25.5.0
+Requires-Dist: kiwisolver==1.4.7
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.5.0
+Requires-Dist: networkx==3.2.1
+Requires-Dist: nh3==0.2.18
+Requires-Dist: numpy==2.0.2
+Requires-Dist: packaging==24.2
+Requires-Dist: pillow==11.0.0
+Requires-Dist: pkginfo==1.10.0
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: PuLP==2.9.0
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: pyparsing==3.2.0
+Requires-Dist: pytest==8.3.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: readme-renderer==44.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.9.4
+Requires-Dist: six==1.16.0
+Requires-Dist: tomli==2.1.0
+Requires-Dist: twine==5.1.1
+Requires-Dist: typing-extensions==4.12.2
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: zipp==3.21.0
+
+# GraphCalc
+[![Documentation Status](https://readthedocs.org/projects/graphcalc/badge/?version=latest)](https://graphcalc.readthedocs.io/en/latest/?badge=latest)
+
+
+## Overview
+
+`graphcalc` is a Python package for performing a variety of graph computations, including maximum clique detection, chromatic number calculation, and vertex cover identification. It is built on top of `networkx` and provides efficient implementations of fundamental graph theory algorithms.
+
+## Features
+
+- **Maximum Clique**: Finds the maximum clique in a given graph.
+- **Chromatic Number**: Computes the minimum number of colors required for graph coloring.
+- **Vertex and Edge Cover**: Determines vertex and edge covers.
+- **Matching and Independence**: Calculates maximum matching and independent sets.
+- **Domination Number and its Variants**: Calculates the domination number, total domination number, and many other domination variants.
+- **Degree Sequence Invariants**: Calculates the residue, annihilaiton number, the slater number and more!
+- **Zero Forcing**: Calculates the zero forcing number, the total zero forcing number, the positive semidefinite zero forcing number, and the power domination number.
+
+## Installation
+
+To install `graphcalc`, make sure you have Python 3.7 or higher, then install it:
+
+```bash
+pip install graphcalc
+```
+
+
+## Example Usage
+```python
+import networkx as nx
+import graphcalc as gc
+
+# Calculate and print the independence number of the Petersen graph.
+G = nx.petersen_graph()
+print(f"independence number of G = {gc.independence_number(G)}")
+
+# Calculate and print the domination number of the Petersen graph.
+print(f"domination number of G = {gc.domination_number(G)}")
+
+# Calculate and print the zero forcing number of the Petersen graph.
+print(f"zero forcing number of G = {gc.zero_forcing_number(G)}")
+```
+
+
+### Author
+Randy Davila, PhD
+
+
