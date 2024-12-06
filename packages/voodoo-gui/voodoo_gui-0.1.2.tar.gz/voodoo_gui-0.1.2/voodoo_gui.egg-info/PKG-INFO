@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: voodoo-gui
+Version: 0.1.2
+Summary: A Python library to create UIs like Streamlit but with simple syntax
+Author: yusuf karatoprak
+Author-email: yusuf.karatoprak@voodoopy.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: Flask
+Requires-Dist: requests
+Requires-Dist: flask_cors
+
+<<<<<<< HEAD
+
+# Voodoo GUI
+=======
+<h1 align="center">
+  <img src="favicon.png" alt="Voodoo Icon" width="100" />
+  <br>
+
+</h1>
+
+## Voodoo GUI
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+
+Voodoo GUI is a simple Python library to create user interfaces like Streamlit but with an intuitive and simpler syntax.
+
+## Installation
+
+```bash
+pip install voodoo-gui
+```
+
+## Usage
+
+Example code to create a simple page:
+
+```python
+from voodoo.gui import Gui
+import voodoo.gui.builder as vo
+
+text = "Original text"
+
+with vo.Page() as page:
+<<<<<<< HEAD
+    vo.text("# Getting started with voodoo GUI", mode="md")
+    vo.text(f"My text: {text}")
+
+=======
+    vo.text("# Getting started with voodoo GUI", mode="big")
+    vo.text(f"My text: {text}")
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+    vo.input(f"{text}")
+
+Gui(page).run(debug=True)
+```
+
+Then run:
+
+```bash
+<<<<<<< HEAD
+python voodoopy_gui_example.py
+=======
+python basic.py
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+```
+
+Access the page on `localhost:3000`.
+    
+<<<<<<< HEAD
+## How it Works with A Sample 
+
+The project uses the `voodoo.gui` library to create a GUI with two panels:
+
+- **Doctor Appointment Panel**: Allows users to input a doctor's name and surname and submit or cancel the appointment. The information is printed to the console.
+- **Patient Info Panel**: Allows users to input a patient's name and surname and submit or cancel the appointment. The information is printed to the console.
+
+=======
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+# Voodoo Hospital System
+
+This project demonstrates the usage of the `voodoo.gui` library to build a GUI for managing doctor and patient information in a hospital system. The system allows users to input doctor and patient details and either submit or cancel these assignments.
+
+## Features
+
+- **Doctor Appointment Panel**: 
+  - Input fields for doctor name and surname.
+  - Buttons for submitting or canceling the appointment.
+
+- **Patient Info Panel**:
+  - Input fields for patient name and surname.
+  - Buttons for submitting or canceling the patient appointment.
+
+## Installation
+
+1. Ensure you have `voodoo.gui` installed in your Python environment.
+2. Clone or download the project files.
+
+```bash
+git clone https://github.com/your-repository-url
+cd your-project-directory
+
+<<<<<<< HEAD
+=======
+## How it Works with A Sample 
+
+The project uses the `voodoo.gui` library to create a GUI with two panels:
+
+- **Doctor Appointment Panel**: Allows users to input a doctor's name and surname and submit or cancel the appointment. The information is printed to the console.
+- **Patient Info Panel**: Allows users to input a patient's name and surname and submit or cancel the appointment. The information is printed to the console.
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+
+### Code Overview
+
+```python
+from voodoo.gui import Gui
+import voodoo.gui.builder as vo
+
+def submit(state):
+    print(f"Doctor Info: {state['input1']} , {state['input2']}")
+
+def cancel(state):
+    print(f"Doctor Assignment Cancelled Info: {state['input1']} , {state['input2']}")
+
+def submitpatient(state):
+    print(f"Patient Info: {state['input3']} , {state['input4']}")
+
+def cancelpatient(state):
+    print(f"Patient Assignment Cancelled Info: {state['input3']} , {state['input4']}")
+
+if __name__ == "__main__":
+    with vo.Page() as page:
+        with vo.Panel() as panel1:
+<<<<<<< HEAD
+            panel1.text("Doctor Appointment", mode="md") \
+=======
+            panel1.text("Doctor Appointment", mode="big") \
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+                  .input(id="input1", text="Doctor Name") \
+                  .input(id="input2", text="Doctor SurName") \
+                  .button("Submit", "submit") \
+                  .button("Cancel", "cancel")
+
+        page.add_panel(panel1)
+        
+        with vo.Panel() as panel2:
+<<<<<<< HEAD
+            panel2.text("Patient Info", mode="md") \
+=======
+            panel2.text("Patient Info", mode="big") \
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
+                  .input(id="input3", text="Patient Name") \
+                  .input(id="input4", text="Patient SurName") \
+                  .button("Submit for Patient", "submitpatient") \
+                  .button("Cancel Appointment", "cancelpatient")
+
+        page.add_panel(panel2)
+
+        page.Setup(title="System Voodoo Hospital")
+    
+    Gui(page).run(debug=True)
+```
+<<<<<<< HEAD
+
+![Output](sample.png)
+=======
+![Output](sample.png)
+>>>>>>> d75fc182e04c58809afe7b9cb15fbbc48f4da97c
