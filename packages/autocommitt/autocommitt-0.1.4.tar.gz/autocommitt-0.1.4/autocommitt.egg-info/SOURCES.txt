@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+autocommitt/__init__.py
+autocommitt/cli.py
+autocommitt/main.py
+autocommitt.egg-info/PKG-INFO
+autocommitt.egg-info/SOURCES.txt
+autocommitt.egg-info/dependency_links.txt
+autocommitt.egg-info/entry_points.txt
+autocommitt.egg-info/requires.txt
+autocommitt.egg-info/top_level.txt
