@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+InfSumPy.egg-info/PKG-INFO
+InfSumPy.egg-info/SOURCES.txt
+InfSumPy.egg-info/dependency_links.txt
+InfSumPy.egg-info/requires.txt
+InfSumPy.egg-info/top_level.txt
+infsumpy/__init__.py
+infsumpy/infsum.py
+infsumpy/utils.py
