@@ -1,0 +1,11 @@
+poligrain/__init__.py,sha256=7C4xDOnB-mPQDQwd-MUoS1BYYKGt1VuW_LiAwgOnkbE,685
+poligrain/example_data.py,sha256=BPpcmHUMFa-j1JHp5Rfig6Y3jUz9M_5ux1jB0nj4oXU,3148
+poligrain/plot_map.py,sha256=bfd8o9lMafLzXaG75oC44p28QLEPIMgtM7kumZwISCs,11989
+poligrain/plot_metadata.py,sha256=KlSg7905q5v81TsHZ5x0isiwZb6QjjQSWntAbh0m3O4,10059
+poligrain/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poligrain/spatial.py,sha256=mAlTq-l0xM4nHvyZxg-zR-7m6sIMtE4AtKZbK5vZzek,37473
+poligrain/xarray.py,sha256=AP0SI2hQA7z-JFMmpKLikdUMeox9R0RqtQSRWTmZH4E,2440
+poligrain-0.2.1.dist-info/LICENSE,sha256=y4xPHWqfSq8pGnLZ4C-itPWJk04YfCOJXMm4SbGJy8k,1530
+poligrain-0.2.1.dist-info/METADATA,sha256=TAxxt0qpJlBBBATKnz-r-ueGJxJUxF_EzDxH5VEArnE,3673
+poligrain-0.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+poligrain-0.2.1.dist-info/RECORD,,
