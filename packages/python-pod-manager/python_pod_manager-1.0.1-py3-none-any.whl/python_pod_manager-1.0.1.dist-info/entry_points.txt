@@ -1,0 +1,2 @@
+[console_scripts]
+pypodman = pypodman.utils.cli:main
