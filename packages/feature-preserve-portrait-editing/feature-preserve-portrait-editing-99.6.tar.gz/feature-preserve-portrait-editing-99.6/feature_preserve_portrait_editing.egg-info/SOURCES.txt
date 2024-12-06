@@ -1,0 +1,7 @@
+main.py
+setup.py
+feature_preserve_portrait_editing.egg-info/PKG-INFO
+feature_preserve_portrait_editing.egg-info/SOURCES.txt
+feature_preserve_portrait_editing.egg-info/dependency_links.txt
+feature_preserve_portrait_editing.egg-info/requires.txt
+feature_preserve_portrait_editing.egg-info/top_level.txt
