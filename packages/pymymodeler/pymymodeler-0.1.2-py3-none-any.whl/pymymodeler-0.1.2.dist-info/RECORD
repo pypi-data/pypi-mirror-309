@@ -1,0 +1,9 @@
+pymymodeler/__init__.py,sha256=wTff8LY3vC5Kkb2iKu8WWFOKgzs1qZiXHqqERuo3Gg8,293
+pymymodeler/engines.py,sha256=MWe1AhOlxWWIa25cHzuKby2Jv8hwIog-jKcdwNz5tkk,215
+pymymodeler/gen_pydantic_model.py,sha256=Ju1oPnuB2y67bWgEkwpJ8IpfwL0NjPece_8LDfdEskc,4723
+pymymodeler/gen_sql_model.py,sha256=CSYBz0mY9lq7kYXYxrPYU2IO0_5uYXn4Dwynl9N7y30,615
+pymymodeler-0.1.2.dist-info/LICENSE,sha256=r9qmwmfVqKm0_38s7skMNg3xRFmoQyz58YlSZUH2HFA,1066
+pymymodeler-0.1.2.dist-info/METADATA,sha256=J_6e-xCiUG0tm8kYFImy37b2Slrtw45JH7bBJXsWTOg,1022
+pymymodeler-0.1.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pymymodeler-0.1.2.dist-info/top_level.txt,sha256=jC6oIu7zYgcr7FhLLzBVH5qNCKuPIGBz_B5W1s_BKv8,12
+pymymodeler-0.1.2.dist-info/RECORD,,
