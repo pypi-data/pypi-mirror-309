@@ -1,0 +1,9 @@
+codelint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codelint/checker.py,sha256=wzDc16e6P00BhqTAyggpOjR9YEKQwsLBt-YCfNJyI9Q,587
+codelint/model.py,sha256=hYNbYxxSUQLeeoTrMI6xxXg6wg3QjbK_PWEs-DvxYDE,3147
+codelint-0.1.5.dist-info/LICENSE,sha256=YGd5aIwwkpnmC2le7CkJSYCRqrIfPVZpP2o52si1f_k,1072
+codelint-0.1.5.dist-info/METADATA,sha256=Zb7qzunYcf8b5H-2wM_LEZSdyR8B1HMjrofMWrJgNG0,4811
+codelint-0.1.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+codelint-0.1.5.dist-info/entry_points.txt,sha256=S-DKgEfH63X2_L81TyeuyW7r-PnwoQhJqA6Yf3LkoXs,51
+codelint-0.1.5.dist-info/top_level.txt,sha256=X-zmYycH-b3t82oziqkpJHEUNVVo9De-Lel74KLULaw,9
+codelint-0.1.5.dist-info/RECORD,,
