@@ -1,0 +1,11 @@
+LICENSE.txt
+README.txt
+setup.cfg
+setup.py
+colby/cb.py
+colby/init.py
+colby.egg-info/PKG-INFO
+colby.egg-info/SOURCES.txt
+colby.egg-info/dependency_links.txt
+colby.egg-info/requires.txt
+colby.egg-info/top_level.txt
