@@ -1,0 +1,15 @@
+Django<5.2,>=5.0
+
+[dev]
+wllegal[lint,test]
+
+[lint]
+pre-commit==4.0.1
+
+[test]
+wllegal[weblate]
+coverage==7.6.7
+translate-toolkit
+
+[weblate]
+Weblate[postgres]>=5.0
