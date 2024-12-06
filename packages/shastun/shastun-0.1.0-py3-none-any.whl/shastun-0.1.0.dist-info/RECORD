@@ -1,0 +1,16 @@
+shastun/__init__.py,sha256=cGjNT1tmaLvssoYy1UiZkl92Ecgr1ZU5owMLGp1QVCs,66
+shastun/actors/__init__.py,sha256=anLuigGRZ2bExJ1nTuutCLJ9GWKbIW96t9UlR93WK2U,123
+shastun/actors/computer.py,sha256=DzMHsew31IzI8ONrUrzXZdM8i1PHJ98d9rv6_c1E144,137
+shastun/actors/player.py,sha256=9h2HY4CUfPRS1WA8HK7XqfVW_1wRyDT86Ba53gUNqrE,221
+shastun/actors/user.py,sha256=JEi2iKN-y8d8riI9kJ9m3dwqfG2ObY_0qqby2xpSv8A,115
+shastun/models/__init__.py,sha256=Jo47Ho480YpGxBnr7Q9SMyE4aP1pngTtzRNwuMVMuEQ,111
+shastun/models/board.py,sha256=hWs--XlkjSTFDBDzativo7BDAWC8B1n0fNni7l1Qhlo,575
+shastun/models/dice.py,sha256=9dPmUuBbsgzWDfVGKaj-QYZpPkV4slA6Lu6_l_w-bfk,773
+shastun/models/throw.py,sha256=XstaQzxw10PSQJVvzP0zZXze5G0o2TV_w_7Px9AjrDw,846
+shastun/states/__init__.py,sha256=MwplIr4hZoxNYrPG1DL4uHgjZGHcqgJB-Nwuq_ezU9E,77
+shastun/states/game.py,sha256=ZhLNFSm1UKusiMF5sPC0jTCNX8WE_sDeJnkdnxMSses,955
+shastun/states/match.py,sha256=XFiJEl0Dcy3hJ0N_V_VFVZWy1t-DwjK6ZxBd9EFzixU,2277
+shastun-0.1.0.dist-info/METADATA,sha256=-vxFh7f0-EJoLrESXVXDFBWPKBtZwb0-2WexiLcdpgQ,2921
+shastun-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+shastun-0.1.0.dist-info/entry_points.txt,sha256=d-DgzOMENNfQ2VNMOztEgFpFxFffuOcwGl6KXc-ThuA,37
+shastun-0.1.0.dist-info/RECORD,,
