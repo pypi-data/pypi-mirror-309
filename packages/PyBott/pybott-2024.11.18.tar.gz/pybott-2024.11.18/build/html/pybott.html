@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Description of the functions &mdash; PyBott Stable Novembre 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=4cd4d7b5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pybott" href="modules.html" />
+    <link rel="prev" title="PyBott" href="README.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyBott
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">PyBott</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Description of the functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pybott.bott">pybott.bott module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.all_bott"><code class="docutils literal notranslate"><span class="pre">all_bott()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.all_bott_vect"><code class="docutils literal notranslate"><span class="pre">all_bott_vect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.bott"><code class="docutils literal notranslate"><span class="pre">bott()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.bott_matrix"><code class="docutils literal notranslate"><span class="pre">bott_matrix()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.bott_vect"><code class="docutils literal notranslate"><span class="pre">bott_vect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.compute_uv"><code class="docutils literal notranslate"><span class="pre">compute_uv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.phase_diagram"><code class="docutils literal notranslate"><span class="pre">phase_diagram()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.phase_diagram_disorder"><code class="docutils literal notranslate"><span class="pre">phase_diagram_disorder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.plot_phase_diagram"><code class="docutils literal notranslate"><span class="pre">plot_phase_diagram()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.bott.sorting_eigenvalues"><code class="docutils literal notranslate"><span class="pre">sorting_eigenvalues()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pybott.spin_bott">pybott.spin_bott module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-steps">Key steps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#functions-included">Functions included:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.spin_bott.all_spin_bott"><code class="docutils literal notranslate"><span class="pre">all_spin_bott()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.spin_bott.get_p_sigma_p_bott"><code class="docutils literal notranslate"><span class="pre">get_p_sigma_p_bott()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.spin_bott.make_projector"><code class="docutils literal notranslate"><span class="pre">make_projector()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.spin_bott.plot_psp_spectrum"><code class="docutils literal notranslate"><span class="pre">plot_psp_spectrum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybott.spin_bott.spin_bott"><code class="docutils literal notranslate"><span class="pre">spin_bott()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pybott">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pybott</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Description of the functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pybott.bott">pybott.bott module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.all_bott"><code class="docutils literal notranslate"><span class="pre">all_bott()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.all_bott_vect"><code class="docutils literal notranslate"><span class="pre">all_bott_vect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.bott"><code class="docutils literal notranslate"><span class="pre">bott()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.bott_matrix"><code class="docutils literal notranslate"><span class="pre">bott_matrix()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.bott_vect"><code class="docutils literal notranslate"><span class="pre">bott_vect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.compute_uv"><code class="docutils literal notranslate"><span class="pre">compute_uv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.phase_diagram"><code class="docutils literal notranslate"><span class="pre">phase_diagram()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.phase_diagram_disorder"><code class="docutils literal notranslate"><span class="pre">phase_diagram_disorder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.plot_phase_diagram"><code class="docutils literal notranslate"><span class="pre">plot_phase_diagram()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.bott.sorting_eigenvalues"><code class="docutils literal notranslate"><span class="pre">sorting_eigenvalues()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pybott.spin_bott">pybott.spin_bott module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#key-steps">Key steps:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions-included">Functions included:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.spin_bott.all_spin_bott"><code class="docutils literal notranslate"><span class="pre">all_spin_bott()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.spin_bott.get_p_sigma_p_bott"><code class="docutils literal notranslate"><span class="pre">get_p_sigma_p_bott()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.spin_bott.make_projector"><code class="docutils literal notranslate"><span class="pre">make_projector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.spin_bott.plot_psp_spectrum"><code class="docutils literal notranslate"><span class="pre">plot_psp_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pybott.spin_bott.spin_bott"><code class="docutils literal notranslate"><span class="pre">spin_bott()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pybott">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyBott</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Description of the functions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pybott.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="description-of-the-functions">
+<h1>Description of the functions<a class="headerlink" href="#description-of-the-functions" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-pybott.bott">
+<span id="pybott-bott-module"></span><h2>pybott.bott module<a class="headerlink" href="#module-pybott.bott" title="Link to this heading"></a></h2>
+<p>Code to compute the Bott index following the definition given by
+T. A. Loring and M. B. Hastings in
+<a class="reference external" href="https://iopscience.iop.org/article/10.1209/0295-5075/92/67004/meta">https://iopscience.iop.org/article/10.1209/0295-5075/92/67004/meta</a></p>
+<p>The <strong>Bott index</strong> measures the commutativity of projected position operators,
+providing a topological invariant that helps distinguish topological insulators
+from trivial insulators.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.all_bott">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">all_bott</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ham</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dagger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.all_bott" title="Link to this definition"></a></dt>
+<dd><p>Compute the Bott index for a given Hamiltonian and lattice for all energy levels
+or up to a specified limit.</p>
+<p>This function calculates the Bott index for each energy state in the system,
+from the lowest to the highest energy state, unless a stopping point is specified
+via the <cite>energy_max</cite> parameter.</p>
+<p>The Bott index is computed for each eigenstate, and its evolution can be tracked
+across the energy spectrum of the system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates
+of the lattice sites.</p></li>
+<li><p><strong>ham</strong> (<em>ndarray</em>) – Hamiltonian matrix of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,</span> <span class="pre">orb</span> <span class="pre">*</span> <span class="pre">N_sites)</span></code>.
+The Hamiltonian must be Hermitian.</p></li>
+<li><p><strong>orb</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of orbitals considered per lattice site. Default is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p><strong>dagger</strong> (<em>bool</em><em>, </em><em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, computes the Bott index using the Hermitian conjugate
+(dagger) of the projected position operators. If <code class="docutils literal notranslate"><span class="pre">False</span></code>, computes using
+the inverse of the position operators. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>energy_max</strong> (<em>float</em><em>, </em><em>optional</em>) – The maximum energy to consider. If not <code class="docutils literal notranslate"><span class="pre">0</span></code>, the function
+will compute the Bott index only for eigenstates with energy less than
+<code class="docutils literal notranslate"><span class="pre">energy_max</span></code>. Default is <code class="docutils literal notranslate"><span class="pre">0</span></code>, meaning the function computes the Bott
+index for all energy levels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where the keys are the energy values and the values
+are the corresponding Bott index calculated for each energy level.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the Hamiltonian is not Hermitian.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The function iterates over all the eigenstates (or up to the specified limit)
+and computes the Bott index for each state. This allows one to track the
+evolution of the topological properties of the system across its entire energy
+spectrum. This is particularly useful in systems with energy-dependent
+topological transitions.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.all_bott_vect">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">all_bott_vect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dagger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">inf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.all_bott_vect" title="Link to this definition"></a></dt>
+<dd><p>Compute the Bott index for all energy levels or up to a specified limit.</p>
+<p>This function calculates the Bott index for each energy state in the system,
+sequentially from the lowest to the highest energy state, unless a stopping
+point is specified via the <cite>energy_max</cite> parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates
+of the lattice sites.</p></li>
+<li><p><strong>evects</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,</span> <span class="pre">orb</span> <span class="pre">*</span> <span class="pre">N_sites)</span></code> containing
+the eigenvectors of the system.</p></li>
+<li><p><strong>energies</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,)</span></code> containing the energy
+values corresponding to the eigenstates. These energies may differ
+from the eigenvalues of the Hamiltonian for more complex systems.</p></li>
+<li><p><strong>orb</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of orbitals considered per lattice site. Default is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p><strong>dagger</strong> (<em>bool</em><em>, </em><em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, computes the Bott index using the Hermitian conjugate
+(dagger) of the projected position operators. If <code class="docutils literal notranslate"><span class="pre">False</span></code>, computes using
+the inverse of the position operators. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>energy_max</strong> (<em>float</em><em>, </em><em>optional</em>) – The maximum energy to consider. If not <code class="docutils literal notranslate"><span class="pre">np.inf</span></code>, the
+calculation will only be performed for eigenstates with energy less than
+<code class="docutils literal notranslate"><span class="pre">energy_max</span></code>. Default is <code class="docutils literal notranslate"><span class="pre">np.inf</span></code>, meaning the function computes the
+Bott index for all energy levels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where the keys are the energy values and the values
+are the corresponding Bott index calculated for each energy level.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the Hamiltonian is not Hermitian.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The function iterates over all the eigenstates (or up to the specified limit)
+and computes the Bott index for each state. This allows one to track the
+evolution of the topological properties of the system across its entire energy
+spectrum. This is particularly useful in systems with energy-dependent
+topological transitions.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.bott">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">bott</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ham</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fermi_energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dagger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.bott" title="Link to this definition"></a></dt>
+<dd><p>Calculate the Bott index of a system described by a given Hamiltonian and lattice.</p>
+<p>This function calculates the Bott index, which is a topological invariant used to
+distinguish topological phases in a system described by the Hamiltonian. If the
+Hamiltonian is not Hermitian, you must compute the eigenvalues and eigenvectors
+independently and use <cite>bott_vect</cite> instead. If the theoretical width of the gap is
+provided and the Hamiltonian is large, eigenvalues and eigenvectors will be computed
+in a restricted Hilbert space to save computation time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates of the
+lattice sites.</p></li>
+<li><p><strong>ham</strong> (<em>ndarray</em>) – Hamiltonian matrix of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,</span> <span class="pre">orb</span> <span class="pre">*</span> <span class="pre">N_sites)</span></code>.
+Must be Hermitian.</p></li>
+<li><p><strong>fermi_energy</strong> (<em>float</em><em>, </em><em>optional</em>) – Value of energy for which the Bott index is computed, must
+be in the bulk gap to match the Chern number. Not defined outside of the bulk
+gap but usually gives 0. Optional.</p></li>
+<li><p><strong>gap</strong> (<em>tuple</em><em> of </em><em>float</em><em>, </em><em>optional</em>) – Energy gap used for filtering eigenvalues when calculating the Bott
+index. Must be a tuple of two ordered real numbers. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the entire
+spectrum is computed. Optional.</p></li>
+<li><p><strong>orb</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of orbitals considered per lattice site. Default is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p><strong>dagger</strong> (<em>bool</em>) – Specifies the method to compute the Bott index. If <code class="docutils literal notranslate"><span class="pre">True</span></code>,
+uses the dagger of the projected position operator; otherwise, it computes
+the inverse of the operator.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The computed Bott index.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the Hamiltonian is not Hermitian, or if <cite>gap</cite> is not a
+valid tuple of floats.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.bott_matrix">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">bott_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u_mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v_mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dagger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.bott_matrix" title="Link to this definition"></a></dt>
+<dd><p>This function computes the Bott index for two invertible matrices, <cite>U</cite> and <cite>V</cite>.
+The Bott index is a topological invariant used to distinguish different topological
+phases. The function either computes the standard Bott index or uses the dagger
+of the projected position operator depending on the value of the <cite>dagger</cite> parameter.</p>
+<p>The Bott index is mathematically defined as:</p>
+<div class="math notranslate nohighlight">
+\[\text{Bott}(U, V) = \frac{1}{2 \pi i} \text{Tr} \log (UVU^{- 1} V^{- 1})\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u_mat</strong> (<em>ndarray</em>) – The matrix <code class="docutils literal notranslate"><span class="pre">U</span></code>.</p></li>
+<li><p><strong>v_mat</strong> (<em>ndarray</em>) – The matrix <code class="docutils literal notranslate"><span class="pre">V</span></code>.</p></li>
+<li><p><strong>dagger</strong> (<em>bool</em><em>, </em><em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the method uses the conjugate transpose (dagger)
+of the matrices in the Bott index computation. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>, in which
+case the inverse matrices are used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The computed Bott index.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>np.linalg.LinAlgError</strong> – If either of the matrices <code class="docutils literal notranslate"><span class="pre">U</span></code> or <code class="docutils literal notranslate"><span class="pre">V</span></code> is
+not invertible.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.bott_vect">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">bott_vect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fermi_energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dagger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.bott_vect" title="Link to this definition"></a></dt>
+<dd><p>Compute the Bott index for a given set of eigenvectors and energies.</p>
+<p>This function computes the Bott index, which is useful when the Hamiltonian is
+not Hermitian, and there is a need for additional preparation of the eigenvalues
+and eigenvectors before sending them to the Bott routine. This can be particularly
+useful in systems beyond tight-binding models. See the example on topological
+photonic systems provided in the documentation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates
+of the lattice sites.</p></li>
+<li><p><strong>evects</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,</span> <span class="pre">orb</span> <span class="pre">*</span> <span class="pre">N_sites)</span></code> containing
+the eigenvectors.</p></li>
+<li><p><strong>energies</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,)</span></code> containing the energies.
+These energies may differ from the eigenvalues of the Hamiltonian in more
+complex systems beyond tight-binding models.</p></li>
+<li><p><strong>fermi_energy</strong> (<em>float</em><em>, </em><em>optional</em>) – Energy value at which the Bott index is computed. It must
+be within the bulk gap to match the Chern number. Outside of the bulk gap,
+it usually returns 0. Default is <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p><strong>orb</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of orbitals considered per lattice site. Default is <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p><strong>dagger</strong> (<em>bool</em><em>, </em><em>optional</em>) – Specifies which method to use for computing the Bott index.
+If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the method uses the dagger of the projected position operator;
+otherwise, it computes the inverse of the operator. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Bott index value.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.compute_uv">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">compute_uv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eigenvectors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_omega</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.compute_uv" title="Link to this definition"></a></dt>
+<dd><p>Compute U and V matrices, which are the projected position operators.</p>
+<p>This function computes the U and V matrices (projected position operators) based
+on the given lattice coordinates and eigenvectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates
+of the lattice sites.</p></li>
+<li><p><strong>eigenvectors</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(orb</span> <span class="pre">*</span> <span class="pre">N_sites,</span> <span class="pre">orb</span> <span class="pre">*</span> <span class="pre">N_sites)</span></code>
+containing the eigenvectors.</p></li>
+<li><p><strong>pos_omega</strong> (<em>int</em>) – Position of the frequency in the ordered list of frequencies.</p></li>
+<li><p><strong>orb</strong> (<em>int</em>) – Number of orbitals.</p></li>
+<li><p><strong>lx</strong> (<em>float</em><em>, </em><em>optional</em>) – Size of the sample along the x-axis. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the function will
+determine it automatically.</p></li>
+<li><p><strong>ly</strong> (<em>float</em><em>, </em><em>optional</em>) – Size of the sample along the y-axis. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the function will
+determine it automatically.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">u_proj</span></code> and <code class="docutils literal notranslate"><span class="pre">v_proj</span></code>, which are the projected position operators
+on the x and y coordinates, respectively.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of (ndarray, ndarray)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.phase_diagram">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">phase_diagram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lattice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ham_function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fermi_energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_of_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'phase_diagram.csv'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.phase_diagram" title="Link to this definition"></a></dt>
+<dd><p>Generate a phase diagram by calculating the Bott index for each pair of parameters in p1 and p2.</p>
+<p>This function calculates the Bott index for each pair of parameter values from <cite>p1</cite> and <cite>p2</cite>
+and generates a phase diagram. The results are saved in a CSV file, with columns for <cite>p1</cite>,
+<cite>p2</cite>, and the corresponding Bott index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lattice</strong> (<em>ndarray</em>) – Array of shape <code class="docutils literal notranslate"><span class="pre">(N_sites,</span> <span class="pre">2)</span></code> containing the coordinates of the lattice sites.</p></li>
+<li><p><strong>ham_function</strong> (<em>callable</em>) – Callable function that generates the Hamiltonian matrix given the parameters.
+It should have the signature <code class="docutils literal notranslate"><span class="pre">ham_function(param1,</span> <span class="pre">param2)</span></code> and return the Hamiltonian matrix.</p></li>
+<li><p><strong>p1</strong> (<em>list</em>) – List of values for the first parameter to vary in the phase diagram.</p></li>
+<li><p><strong>p2</strong> (<em>list</em>) – List of values for the second parameter to vary in the phase diagram.</p></li>
+<li><p><strong>fermi_energy</strong> (<em>float</em><em>, </em><em>optional</em>) – The Fermi energy at which to calculate the Bott index. Default is <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p><strong>name_of_file</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the output CSV file where the phase diagram will be saved.
+Default is <code class="docutils literal notranslate"><span class="pre">&quot;phase_diagram.csv&quot;</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Output<span class="colon">:</span></dt>
+<dd class="field-even"><p>A CSV file containing the phase diagram with columns for <cite>p1</cite>, <cite>p2</cite>, and the corresponding Bott index.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function iterates over each combination of values from <cite>p1</cite> and <cite>p2</cite>, calculates the Bott
+index for each pair, and writes the results to the specified CSV file. The resulting file can
+be used to visualize the topological phases as a function of the two parameters.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.phase_diagram_disorder">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">phase_diagram_disorder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ham_lattice_function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disorder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_of_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'phase_diagram_disorder.csv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_realisations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.phase_diagram_disorder" title="Link to this definition"></a></dt>
+<dd><p>Generate a phase diagram by calculating the averaged Bott index over multiple disorder realizations
+for a range of energy levels.</p>
+<p>This function computes the Bott index for a series of energy levels and disorder strengths,
+averaging the results over multiple disorder realizations. The phase diagram is saved to a CSV file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ham_lattice_function</strong> (<em>callable</em>) – Callable function that generates the lattice and Hamiltonian matrix
+given a disorder parameter. It should have the signature <code class="docutils literal notranslate"><span class="pre">ham_lattice_function(disorder_value)</span></code>
+and return a tuple <code class="docutils literal notranslate"><span class="pre">(lattice,</span> <span class="pre">hamiltonian)</span></code>.</p></li>
+<li><p><strong>disorder</strong> (<em>list</em>) – A list of disorder strength values to use in generating the Hamiltonian.</p></li>
+<li><p><strong>energies</strong> (<em>list</em>) – A list of energy levels at which the Bott index will be calculated.</p></li>
+<li><p><strong>name_of_file</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the output CSV file where the phase diagram will be saved.
+Default is <code class="docutils literal notranslate"><span class="pre">&quot;phase_diagram_disorder.csv&quot;</span></code>.</p></li>
+<li><p><strong>n_realisations</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of disorder realizations to compute for each pair of
+(disorder, energy) values. The average Bott index over all realizations will be saved in
+the CSV file. Default is 1.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Output<span class="colon">:</span></dt>
+<dd class="field-even"><p>Writes a CSV file with columns “energy”, “disorder”, and the averaged Bott index
+over all realizations for each combination of disorder and energy.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The function outputs a progress bar showing the progress of the calculations across disorder values.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.plot_phase_diagram">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">plot_phase_diagram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'phase_diagram.csv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_fig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Phase</span> <span class="pre">Diagram'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_fig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'phase_diagram.pdf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xkey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'p2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ykey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'p1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'p2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'p1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorbar_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Bott</span> <span class="pre">Index'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fontsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coolwarm'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.plot_phase_diagram" title="Link to this definition"></a></dt>
+<dd><p>Plot a phase diagram from a CSV file generated by the <cite>phase_diagram</cite> function.</p>
+<p>This function reads a CSV file containing the phase diagram data (with columns ‘p1’, ‘p2’, and ‘Bott Index’)
+and generates a heatmap plot. The phase diagram can be saved as a figure in PDF format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the CSV file to read, which contains columns ‘p1’, ‘p2’, and ‘Bott Index’.
+Default is <code class="docutils literal notranslate"><span class="pre">&quot;phase_diagram.csv&quot;</span></code>.</p></li>
+<li><p><strong>title_fig</strong> (<em>str</em><em>, </em><em>optional</em>) – The title of the plot. Default is <code class="docutils literal notranslate"><span class="pre">&quot;Phase</span> <span class="pre">Diagram&quot;</span></code>.</p></li>
+<li><p><strong>save_fig</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the file to save the plot. Default is <code class="docutils literal notranslate"><span class="pre">&quot;phase_diagram.pdf&quot;</span></code>.</p></li>
+<li><p><strong>xkey</strong> (<em>str</em><em>, </em><em>optional</em>) – The key for the x-axis data in the CSV file. Default is <code class="docutils literal notranslate"><span class="pre">&quot;p2&quot;</span></code>.</p></li>
+<li><p><strong>ykey</strong> (<em>str</em><em>, </em><em>optional</em>) – The key for the y-axis data in the CSV file. Default is <code class="docutils literal notranslate"><span class="pre">&quot;p1&quot;</span></code>.</p></li>
+<li><p><strong>xlabel</strong> (<em>str</em><em>, </em><em>optional</em>) – Label for the x-axis. Default is <code class="docutils literal notranslate"><span class="pre">&quot;p2&quot;</span></code>.</p></li>
+<li><p><strong>ylabel</strong> (<em>str</em><em>, </em><em>optional</em>) – Label for the y-axis. Default is <code class="docutils literal notranslate"><span class="pre">&quot;p1&quot;</span></code>.</p></li>
+<li><p><strong>colorbar_label</strong> (<em>str</em><em>, </em><em>optional</em>) – Label for the colorbar. Default is <code class="docutils literal notranslate"><span class="pre">&quot;Bott</span> <span class="pre">Index&quot;</span></code>.</p></li>
+<li><p><strong>fontsize</strong> (<em>int</em><em>, </em><em>optional</em>) – Size of all the fonts in the plot. Default is 20.</p></li>
+<li><p><strong>cmap</strong> (<em>str</em><em>, </em><em>optional</em>) – The colormap to use for the heatmap. Default is <code class="docutils literal notranslate"><span class="pre">&quot;coolwarm&quot;</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Output<span class="colon">:</span></dt>
+<dd class="field-even"><p>Displays a heatmap plot of the phase diagram, with an option to save the plot as a PDF file.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The function assumes that the input CSV file contains the following columns: ‘p1’, ‘p2’, and ‘Bott Index’.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.bott.sorting_eigenvalues">
+<span class="sig-prename descclassname"><span class="pre">pybott.bott.</span></span><span class="sig-name descname"><span class="pre">sorting_eigenvalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.bott.sorting_eigenvalues" title="Link to this definition"></a></dt>
+<dd><p>This function sorts the eigenvalues and eigenvectors in
+ascending or descending order depending on the <cite>rev</cite> flag. Useful
+when the energy are not exactly the eigenvalues, typically in
+photonics systems or non Hermitian systems in general.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>evals</strong> (<em>ndarray</em>) – Array containing the eigenvalues to be sorted.</p></li>
+<li><p><strong>evects</strong> (<em>ndarray</em>) – Array containing the corresponding eigenvectors.</p></li>
+<li><p><strong>rev</strong> (<em>bool</em><em>, </em><em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the eigenvalues and eigenvectors are sorted in descending
+order; otherwise, they are sorted in ascending order. Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the sorted eigenvalues and the corresponding
+sorted eigenvectors.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of (ndarray, ndarray)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pybott.spin_bott">
+<span id="pybott-spin-bott-module"></span><h2>pybott.spin_bott module<a class="headerlink" href="#module-pybott.spin_bott" title="Link to this heading"></a></h2>
+<p>Code to compute the spin Bott index following the definition given by
+Huaqing Huang and Feng Liu in
+<a class="reference external" href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.125130">https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.125130</a></p>
+<p>The <strong>Spin Bott index</strong> is used to characterize quantum spin Hall (QSH) states in both periodic and non-periodic systems.</p>
+<p>The Spin Bott index is an extension of the Bott index that incorporates spin, allowing it to identify quantum spin Hall states. It involves projecting the spin operator onto the occupied states and calculating the Bott index separately for the spin-up and spin-down sectors. The Spin Bott index is defined as half the difference between the Bott indices of these two spin sectors.</p>
+<section id="key-steps">
+<h3>Key steps:<a class="headerlink" href="#key-steps" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Construct the projector onto the occupied states.</p></li>
+<li><p>Calculate the projected position operators.</p></li>
+<li><p>Compute the Bott index from the commutativity of the position operators.</p></li>
+<li><p>For the Spin Bott index, introduce the projected spin operator and compute Bott indices for spin-up and spin-down components.</p></li>
+</ol>
+</section>
+<section id="functions-included">
+<h3>Functions included:<a class="headerlink" href="#functions-included" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><cite>make_projector</cite>: Creates the projector matrix.</p></li>
+<li><p><cite>get_p_sigma_p_bott</cite>: Computes the PσP operator for the spin Bott index.</p></li>
+<li><p><cite>plot_psp_spectrum</cite>: Visualizes the spectrum of the PσP operator.</p></li>
+<li><p><cite>spin_bott</cite>: Calculates the spin Bott index for a given system configuration.</p></li>
+<li><p><cite>all_spin_bott</cite>: Computes the spin Bott index for all eigenvalues of PσP.</p></li>
+</ul>
+<p>This method is applicable to both periodic and non-periodic systems, including disordered systems.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.spin_bott.all_spin_bott">
+<span class="sig-prename descclassname"><span class="pre">pybott.spin_bott.</span></span><span class="sig-name descname"><span class="pre">all_spin_bott</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_psp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.spin_bott.all_spin_bott" title="Link to this definition"></a></dt>
+<dd><p>Calculate the spin Bott index for all eigenvalues of the PσP operator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grid</strong> (<em>array</em>) – The grid defining the system.</p></li>
+<li><p><strong>evals</strong> (<em>array</em>) – Array of eigenvalues of the Hamiltonian.</p></li>
+<li><p><strong>evects</strong> (<em>array</em>) – Array of eigenvectors of the Hamiltonian.</p></li>
+<li><p><strong>sigma</strong> (<em>numpy.ndarray</em>) – The spin operator matrix (σ).</p></li>
+<li><p><strong>threshold_psp</strong> (<em>float</em><em>, </em><em>optional</em>) – Threshold for the PσP projection. Defaults to 0.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where each eigenvalue of PσP maps to its corresponding spin Bott index.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.spin_bott.get_p_sigma_p_bott">
+<span class="sig-prename descclassname"><span class="pre">pybott.spin_bott.</span></span><span class="sig-name descname"><span class="pre">get_p_sigma_p_bott</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omega</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.spin_bott.get_p_sigma_p_bott" title="Link to this definition"></a></dt>
+<dd><p>Calculate the projected spin operator PσP using the eigenvectors and eigenvalues.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>w</strong> (<em>array</em>) – Array of eigenvalues.</p></li>
+<li><p><strong>vl</strong> (<em>array</em>) – Array of left eigenvectors.</p></li>
+<li><p><strong>vr</strong> (<em>array</em>) – Array of right eigenvectors.</p></li>
+<li><p><strong>sigma</strong> (<em>numpy.ndarray</em>) – The spin operator matrix (σ).</p></li>
+<li><p><strong>omega</strong> (<em>float</em>) – Threshold energy for the projection.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The PσP projected spin operator.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.spin_bott.make_projector">
+<span class="sig-prename descclassname"><span class="pre">pybott.spin_bott.</span></span><span class="sig-name descname"><span class="pre">make_projector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.spin_bott.make_projector" title="Link to this definition"></a></dt>
+<dd><p>Create a projector from the left and right eigenvectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vl</strong> (<em>array</em>) – Array of left eigenvectors.</p></li>
+<li><p><strong>vr</strong> (<em>array</em>) – Array of right eigenvectors.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The projector matrix constructed from the eigenvectors.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.spin_bott.plot_psp_spectrum">
+<span class="sig-prename descclassname"><span class="pre">pybott.spin_bott.</span></span><span class="sig-name descname"><span class="pre">plot_psp_spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold_energy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w_psp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_psp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.spin_bott.plot_psp_spectrum" title="Link to this definition"></a></dt>
+<dd><p>Plot the spectrum of the PσP operator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>threshold_energy</strong> (<em>float</em>) – Threshold value for energy levels to plot.</p></li>
+<li><p><strong>w_psp</strong> (<em>array</em>) – Array of eigenvalues of the PσP operator.</p></li>
+<li><p><strong>name_psp</strong> (<em>str</em>) – Filename to save the plot as a PDF.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pybott.spin_bott.spin_bott">
+<span class="sig-prename descclassname"><span class="pre">pybott.spin_bott.</span></span><span class="sig-name descname"><span class="pre">spin_bott</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fermi_energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_bott</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_psp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_psp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'spectrum_psp'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pybott.spin_bott.spin_bott" title="Link to this definition"></a></dt>
+<dd><p>Calculate the spin Bott index for a given set of eigenvalues and eigenvectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grid</strong> (<em>array</em>) – The grid defining the system.</p></li>
+<li><p><strong>evals</strong> (<em>array</em>) – Array of eigenvalues of the Hamiltonian.</p></li>
+<li><p><strong>evects</strong> (<em>array</em>) – Array of eigenvectors of the Hamiltonian.</p></li>
+<li><p><strong>sigma</strong> (<em>numpy.ndarray</em>) – The spin operator matrix (σ).</p></li>
+<li><p><strong>threshold_psp</strong> (<em>float</em><em>, </em><em>optional</em>) – Threshold for the PσP projection. Defaults to 0.</p></li>
+<li><p><strong>threshold_energy</strong> (<em>float</em><em>, </em><em>optional</em>) – Threshold for energy levels. Defaults to 0.</p></li>
+<li><p><strong>plot_psp</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to plot the PσP spectrum. Defaults to False.</p></li>
+<li><p><strong>name_psp</strong> (<em>str</em><em>, </em><em>optional</em>) – Filename to save the PσP plot as a PDF.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The spin Bott index of the system.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pybott">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pybott" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="README.html" class="btn btn-neutral float-left" title="PyBott" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="pybott" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Pierre Wulles.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

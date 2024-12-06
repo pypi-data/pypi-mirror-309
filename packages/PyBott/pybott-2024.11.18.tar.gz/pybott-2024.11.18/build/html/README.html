@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quickstart &mdash; PyBott Stable Novembre 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=4cd4d7b5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Description of the functions" href="pybott.html" />
+    <link rel="prev" title="PyBott documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyBott
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#haldane-model">Haldane model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#photonic-crystal">Photonic crystal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kane-mele-model">Kane-Mele Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pybott.html">Description of the functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">pybott</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyBott</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Quickstart</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading"></a></h1>
+<p><img alt="Python Version" src="https://img.shields.io/badge/python-3.12-blue" />
+<img alt="License" src="https://img.shields.io/badge/license-GNU%20GPL-blue" />
+<a class="reference external" href="https://gitlab.com/starcluster/pybott"><img alt="GitLab" src="https://img.shields.io/badge/GitLab-Repository-blue" /></a>
+<img alt="Status" src="https://img.shields.io/badge/status-active-brightgreen" />
+<img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen" />
+<img alt="Scientific Software" src="https://img.shields.io/badge/category-scientific-blue" /></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pybott</span></code> package provides tools for calculating the <a class="reference external" href="https://arxiv.org/abs/1005.4883"><strong>Bott
+index</strong></a>, topological invariant that
+can be used in real space to distinguish topological insulators from
+trivial insulators. This index measures the commutativity of projected
+position operators, and is based on the formalism described by
+T. A. Loring and M. B. Hastings. This package also allow to compute
+the <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.126401"><strong>spin Bott
+index</strong></a>
+as well as functions to assist in creating phase diagrams.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pybott
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>Here are three examples of PyBott applications. Explanations are
+minimal, and the codes show only the use of PyBott, not how the
+Hamiltonian are defined, for that you can download the associated
+files by clicking on the section’s titles.</p>
+<section id="haldane-model">
+<h3><a class="reference external" href="https://gitlab.com/starcluster/pybott/-/blob/main/tests/minimal.py">Haldane model</a><a class="headerlink" href="#haldane-model" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pythtb</span> <span class="kn">import</span> <span class="o">*</span> 
+<span class="kn">from</span> <span class="nn">pybott</span> <span class="kn">import</span> <span class="n">bott</span>
+
+<span class="c1"># Define the parameters of the Haldane model</span>
+<span class="n">n_side</span> <span class="o">=</span> <span class="mi">16</span>  <span class="c1"># Grid size for the model</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="mi">1</span>       <span class="c1"># NN coupling</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="mf">0.3</span><span class="n">j</span>    <span class="c1"># NNN complex coupling</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mi">1</span>    <span class="c1"># On-site mass term</span>
+<span class="n">fermi_energy</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Energy level in the gap where the Bott index is calculated</span>
+
+<span class="c1">### Define the Haldane model using the `pythTB` library</span>
+<span class="c1">### lat=[[1.0,0.0],[0.5,np.sqrt(3.0)/2.0]] ...</span>
+
+<span class="n">lattice</span> <span class="o">=</span> <span class="n">fin_model</span><span class="o">.</span><span class="n">get_orb</span><span class="p">()</span>
+<span class="n">ham</span> <span class="o">=</span> <span class="n">fin_model</span><span class="o">.</span><span class="n">_gen_ham</span><span class="p">()</span>
+
+<span class="n">bott_index</span> <span class="o">=</span> <span class="n">bott</span><span class="p">(</span><span class="n">lattice</span><span class="p">,</span> <span class="n">ham</span><span class="p">,</span> <span class="n">fermi_energy</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Bott index for the given parameters δ=</span><span class="si">{</span><span class="n">delta</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">t2</span><span class="si">=}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">bott_index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This code should output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>The<span class="w"> </span>Bott<span class="w"> </span>index<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>given<span class="w"> </span>parameters<span class="w"> </span><span class="nv">δ</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>and<span class="w"> </span><span class="nv">t2</span><span class="o">=</span><span class="m">0</span>.3j<span class="w"> </span>is:<span class="w"> </span><span class="m">0</span>.9999999999999983
+</pre></div>
+</div>
+<p>In this example, we use the
+<a class="reference external" href="https://www.physics.rutgers.edu/pythtb/">pythTB</a> library to create a
+finite piece of the <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.61.2015">Haldane
+model</a>,
+which is a well-known model in condensed matter physics used to
+simulate topological insulators without an external magnetic
+field. The model is defined on a hexagonal lattice with both
+nearest-neighbor (NN) couplings and complex next-nearest-neighbor
+(NNN) couplings, as well as an on-site mass term.  After constructing
+the model, we cut out a finite system from which we extract the
+coordinate lattice and the Hamiltonian. Finally, we use the bott
+function to compute the Bott index for a given fermi energy chosen in
+the bulk gap.</p>
+</section>
+<section id="photonic-crystal">
+<h3><a class="reference external" href="https://gitlab.com/starcluster/pybott/-/blob/main/tests/minimal_pc_archive.zip">Photonic crystal</a><a class="headerlink" href="#photonic-crystal" title="Link to this heading"></a></h3>
+<p>In this example, we model a photonic honeycomb crystal, which
+introduces additional complexity compared to electronic systems. Here,
+the interactions are mediated by the electromagnetic field, and the
+system can break time-reversal symmetry using an external magnetic
+field, represented by <code class="docutils literal notranslate"><span class="pre">delta_b</span></code>. Additionally, the inversion symmetry
+can be broken by the term <code class="docutils literal notranslate"><span class="pre">delta_ab</span></code>. For an extensive description of
+this system, you can read <a class="reference external" href="https://scipost.org/SciPostPhysCore.7.3.051">this paper</a>.</p>
+<p>Since the system involves light polarization, we need to account for
+the polarization effects when computing the Bott index.</p>
+<p>Note that this system, unlike the Haldane model, is not Hermitian;
+therefore, this must be taken into account when computing the Bott
+index. Additionally, the frequencies of the system are not the
+eigenvalues $\lambda$ but $-\mathrm{Re}(\lambda)/2$. This requires special
+treatment, which is performed before using the provided function
+sorting_eigenvalues.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">pybott</span> <span class="kn">import</span> <span class="n">bott_vect</span><span class="p">,</span><span class="n">sorting_eigenvalues</span>
+
+<span class="n">ham</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;effective_hamiltonian_light_honeycomb_lattice.npy&quot;</span><span class="p">)</span>
+<span class="c1"># The matrix is loaded directly because calculating it is not straightforward.</span>
+<span class="c1"># For more details, refer to Antezza and Castin: https://arxiv.org/pdf/0903.0765</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;honeycomb_grid.npy&quot;</span><span class="p">)</span> <span class="c1"># Honeycomb structure</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">7</span>
+
+<span class="n">delta_b</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">delta_ab</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">modified_ham</span> <span class="o">=</span> <span class="n">break_symmetries</span><span class="p">(</span><span class="n">ham</span><span class="p">,</span> <span class="n">delta_b</span><span class="p">,</span> <span class="n">delta_ab</span><span class="p">)</span>
+
+<span class="n">evals</span><span class="p">,</span> <span class="n">evects</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">modified_ham</span><span class="p">)</span>
+
+<span class="n">frequencies</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">evals</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="n">frequencies</span><span class="p">,</span> <span class="n">evects</span> <span class="o">=</span> <span class="n">sorting_eigenvalues</span><span class="p">(</span>
+    <span class="n">frequencies</span><span class="p">,</span> <span class="n">evects</span><span class="p">,</span> <span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">b_pol</span> <span class="o">=</span> <span class="n">bott_vect</span><span class="p">(</span>
+    <span class="n">grid</span><span class="p">,</span>
+    <span class="n">evects</span><span class="p">,</span>
+    <span class="n">frequencies</span><span class="p">,</span>
+    <span class="n">omega</span><span class="p">,</span>
+    <span class="n">orb</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">dagger</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The Bott index for the given parameters Δ_B=</span><span class="si">{</span><span class="n">delta_b</span><span class="si">}</span><span class="s2"> and Δ_AB=</span><span class="si">{</span><span class="n">delta_ab</span><span class="si">}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">b_pol</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This code should output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>The<span class="w"> </span>Bott<span class="w"> </span>index<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>given<span class="w"> </span>parameters<span class="w"> </span><span class="nv">Δ_B</span><span class="o">=</span><span class="m">12</span><span class="w"> </span>and<span class="w"> </span><span class="nv">Δ_AB</span><span class="o">=</span><span class="m">5</span><span class="w"> </span>is:<span class="w"> </span>-0.9999999999999082
+</pre></div>
+</div>
+</section>
+<section id="kane-mele-model">
+<h3><a class="reference external" href="https://gitlab.com/starcluster/pybott/-/blob/main/tests/minimal_km_archive.zip">Kane-Mele Model</a><a class="headerlink" href="#kane-mele-model" title="Link to this heading"></a></h3>
+<p>In this example, we calculate the spin Bott index for the <a class="reference external" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.226801">Kane-Mele
+model</a>,
+which is a fundamental model in condensed matter physics for studying
+quantum spin Hall insulators. The Kane-Mele model incorporates both
+spin-orbit coupling and Rashba interaction, leading to topological
+insulating phases with distinct spin properties.</p>
+<p>The system is defined on a honeycomb lattice, and interactions are
+mediated through parameters like nearest-neighbor hopping (t1),
+next-nearest-neighbor spin-orbit coupling (t2), and Rashba coupling
+(rashba). Additionally, on-site energies (esite) introduce mass terms
+that can break certain symmetries in the system.</p>
+<p>To compute the spin Bott index, we need to account for the spin of the
+system, which is done using the $\sigma_z$ spin operator.</p>
+<p>Note that if ths Rashba term is too strong, differentiating between
+spin-up states and spin-down states might not be possible, resulting
+in a wrong computation of the index.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">pybott</span> <span class="kn">import</span> <span class="n">spin_bott</span>
+<span class="kn">from</span> <span class="nn">kanemele</span> <span class="kn">import</span> <span class="n">kane_mele_model</span>
+
+<span class="c1"># Parameters for the finite Kane-Mele model</span>
+<span class="n">nx</span><span class="p">,</span> <span class="n">ny</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">esite</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="mf">0.2</span><span class="n">j</span>
+<span class="n">rashba</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+<span class="c1"># Parameters for spin Bott</span>
+<span class="n">fermi_energy</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">threshold_bott</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span>
+
+<span class="c1"># Build the Kane-Mele model and solve for eigenvalues/eigenvectors</span>
+<span class="n">lattice</span><span class="p">,</span> <span class="n">evals</span><span class="p">,</span> <span class="n">evects</span> <span class="o">=</span> <span class="n">kane_mele_model</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">esite</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">rashba</span><span class="p">,</span> <span class="n">pbc</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">n_sites</span> <span class="o">=</span> <span class="n">evals</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">get_sigma_bott</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the σ_z spin operator for Bott index calculation.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">kron</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]]),</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+
+
+<span class="n">sigma</span> <span class="o">=</span> <span class="n">get_sigma_bott</span><span class="p">(</span><span class="n">n_sites</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">lattice_x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">lattice</span><span class="p">,</span> <span class="n">lattice</span><span class="p">))</span>
+
+<span class="c1"># Calculate and print the spin Bott index</span>
+<span class="n">name_psp</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;psp_spectrum_</span><span class="si">{</span><span class="n">n_sites</span><span class="si">=}</span><span class="s2">_</span><span class="si">{</span><span class="n">esite</span><span class="si">=}</span><span class="s2">_</span><span class="si">{</span><span class="n">t2</span><span class="si">=}</span><span class="s2">_</span><span class="si">{</span><span class="n">rashba</span><span class="si">=}</span><span class="s2">.pdf&quot;</span>
+
+<span class="n">c_sb</span> <span class="o">=</span> <span class="n">spin_bott</span><span class="p">(</span>
+    <span class="n">lattice_x2</span><span class="p">,</span>
+    <span class="n">evals</span><span class="p">,</span>
+    <span class="n">evects</span><span class="p">,</span>
+    <span class="n">sigma</span><span class="p">,</span>
+    <span class="n">fermi_energy</span><span class="p">,</span>
+    <span class="n">threshold_bott</span><span class="p">,</span>
+    <span class="n">plot_psp</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">name_psp</span><span class="o">=</span><span class="n">name_psp</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;The spin Bott index computed in the Kane-Mele model for the given parameters </span><span class="si">{</span><span class="n">esite</span><span class="si">=}</span><span class="s2">, </span><span class="si">{</span><span class="n">t2</span><span class="si">=}</span><span class="s2"> and </span><span class="si">{</span><span class="n">rashba</span><span class="si">=}</span><span class="s2"> is: </span><span class="si">{</span><span class="n">c_sb</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+</pre></div>
+</div>
+<p>This code should output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>The<span class="w"> </span>spin<span class="w"> </span>Bott<span class="w"> </span>index<span class="w"> </span>computed<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>Kane-Mele<span class="w"> </span>model<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>given<span class="w"> </span>parameters<span class="w"> </span><span class="nv">esite</span><span class="o">=</span><span class="m">0</span>.1,<span class="w"> </span><span class="nv">t2</span><span class="o">=</span><span class="m">0</span>.2j<span class="w"> </span>and<span class="w"> </span><span class="nv">rashba</span><span class="o">=</span><span class="m">0</span>.2<span class="w"> </span>is:<span class="w"> </span><span class="m">1</span>.0000000000000013
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="PyBott documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pybott.html" class="btn btn-neutral float-right" title="Description of the functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Pierre Wulles.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
