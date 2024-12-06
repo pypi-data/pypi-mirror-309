@@ -1,0 +1,6 @@
+PyYAML==6.0.2
+setuptools==68.2.0
+requests
+jsonschema==4.23.0
+opencv-python==4.10.0.84
+numpy==2.1.1
