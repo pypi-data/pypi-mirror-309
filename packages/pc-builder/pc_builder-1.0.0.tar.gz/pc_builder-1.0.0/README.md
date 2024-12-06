@@ -1,0 +1,88 @@
+# PC Builder
+
+## Overview
+
+The **PC Builder** is an application designed to help users plan and
+configure their ideal personal computer setup.
+It allows users to select components based on their needs,
+budget, and preferences, providing recommendations and compatibility checks.
+
+## Team Members
+
+- **Domantas Petkevičius** - Back-End Developer, Team Leader
+- **Dagnis Matulis** - Back-End Developer
+- **Juozas Krukauskas** - Front-End Developer
+- **Simona Vytytė** - Front-End Developer
+
+## Project Description
+
+The PC Builder application provides an intuitive interface for users to:
+
+- Browse and select various computer components (CPU, GPU, RAM, etc.)
+- Add and remove parts from their personal build and display the current configurations.
+- Get compatibility checks for selected components.
+- View estimated costs based on selected parts.
+
+## Technologies Used
+
+- **Programming Language:** *python*
+- **Frameworks:** *click* for CLI interface
+- **Testing:** *pytest* and *unittest* for unit and integration testing
+- **Build Tools:** *tox* for testing automation and building, *PyInstaller* for creating executable files
+
+## Infrastructure Management
+
+The project uses Git for version control and GitHub for repository hosting. Continuous integration and testing are set up using **tox**, which automates the testing and build processes.
+
+## Getting Started
+
+This guide provides instructions for users to set up the PC Builder project, run tests, and build the application from source.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- **Python 3.7 or later**: Download and install Python from [python.org](https://www.python.org/downloads/).
+- **pip**: This usually comes pre-installed with Python. You can check if you have pip installed by running:
+  ```bash
+  pip --version
+  ```
+
+### Building and running the application
+
+- Clone the repository https://github.com/mif-it-se-2024/group-project-pc-builders
+- Navigate to the Project Directory
+  ```bash
+  cd pc_builder
+  ```
+- Create a Virtual Environment (Optional but Recommended)
+
+  Windows:
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+  Linux:
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+- Install Project Dependencies
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+- Run tests and build the application
+  ```bash
+  tox
+  ```
+
+- Launch the application
+  ```bash
+  cd dist
+  ```
+  ```bash
+  pcbuilder.exe ( Windows ) or ./pcbuilder ( Linux )
+  ```
