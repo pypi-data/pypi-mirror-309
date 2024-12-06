@@ -1,0 +1,16 @@
+django_pygments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pygments/models.py,sha256=e1TdI3UjYATiLJlKehRUCzJ4GoFaZiOm_iLpWHPxrgc,31
+django_pygments/urls.py,sha256=gXh0KMce2-7KrWbz9foq7P4eGnKH6tN_VOl4F_w-m4k,125
+django_pygments/utils.py,sha256=9-86yOHTOmzEJzynngkqa3H_yiYfrkyKcb8edmPRTzg,2460
+django_pygments/views.py,sha256=PvhOvdPdK8nVw-Btg4vUd0R21IbwslfTZ90fTD0ZNJ0,914
+django_pygments/static/django_pygments/css/demo.css,sha256=QPsm_ziMcojSdmV_rhrKEhxV18AqbaUUF7juLSeWCVg,268
+django_pygments/static/django_pygments/css/pygments_default.css,sha256=aQEBXaNpzIOeLNaM65Io8hiWY3_zx7GVNAdgaSPTHFI,3989
+django_pygments/templates/django_pygments/demo.html,sha256=IqS-LEmbHS5SZSIUINgCTanWe7QMw5ZBI9qyQilwlZ0,4543
+django_pygments/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pygments/templatetags/pygmentify.py,sha256=ksxgutIPna6saDSdsQ622SQ5F1G0YYKXzJEX5kpH7l8,1687
+django_pygments-0.8.dist-info/AUTHORS,sha256=VTyNxDnJXbF3bwxl-X45BVPG5Aw7cLGWaWTttXboEnc,259
+django_pygments-0.8.dist-info/LICENSE,sha256=AhqUZe5SRCqva5MGuxe9PPd8f0YoskidjB1rAug0Rro,1521
+django_pygments-0.8.dist-info/METADATA,sha256=QS_mLDkddI6na1eif676FGaZ8As2ZZQUHnBc58M5Bik,2736
+django_pygments-0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_pygments-0.8.dist-info/top_level.txt,sha256=STl8rHFhbSR8_z-LQPc2NyHE6cMPgdKnRo2D1pkbx68,16
+django_pygments-0.8.dist-info/RECORD,,
