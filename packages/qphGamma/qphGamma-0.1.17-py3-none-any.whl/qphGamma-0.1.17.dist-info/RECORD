@@ -1,0 +1,17 @@
+qphGamma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qphGamma/constants.py,sha256=41aQFHMFQ3ZunOiYrooZBKTWBFU8t9YEO9CrJqi9MzQ,916
+qphGamma/daligault_energy_avg_gamma.py,sha256=uxUiNNbWf0iaNUevyE2mNKDqZcjQAAORNH8PxdhgtmQ,4089
+qphGamma/daligault_gamma.py,sha256=d5PNai3w2OkbV3ZhTSpZMzRk0rF5VOvNUBzjCAG6VMs,6083
+qphGamma/fermi_gas_dos.py,sha256=kLeEj-U2yZmupETNtLvJgHoJoaT1_IZ3tpvO0UjR0nY,852
+qphGamma/fermi_gas_params.py,sha256=GBwPbDNvXbDM4op_RD_c9__62V5GjDr1asdZ39dbY8s,1519
+qphGamma/fermi_liquid_energy_avg_gamma.py,sha256=1VWZjiZQWPkAWRAVagtWQuxZ-jS7GRnCTG_dCpXa5E8,2847
+qphGamma/fermi_liquid_gamma.py,sha256=yrfjcKByYq7VpIY6f6VTgnJfumpb7U4B2R_gAfiG9C8,2915
+qphGamma/gw_energy_avg_gamma.py,sha256=mnU5DqkwX9HDZv4Bjf9vU-qKQQc4ihWvksxSIC-cab0,4155
+qphGamma/gw_gamma.py,sha256=eqOddLKzyLGbD9Attq__1JhR9oacXPHMDItXfIHRmko,4150
+qphGamma/vasp_dos.py,sha256=d82yBvhA_eVAniz9P5pojjejpQZ_-FCBmP-l3Vx7QAU,2468
+qphGamma/vasp_param.py,sha256=w0qwKyIegCkgNwEiQKkUAmppyK8cBb9vqRXiNcWe9a4,3883
+qphGamma-0.1.17.dist-info/LICENSE.txt,sha256=hbbpOyNPHKNodx6JfrmOw1een-GdU0DIlaeiQ1h4KIY,1075
+qphGamma-0.1.17.dist-info/METADATA,sha256=KBTKguBXAZPgNE7R5nfgVEz-lXKWGifzpNoYv4_FxF8,1324
+qphGamma-0.1.17.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+qphGamma-0.1.17.dist-info/top_level.txt,sha256=1VuIiG4-OMNflJ6OeKoQmkjlC-BiY7Ri9Mzmlxqm3q0,9
+qphGamma-0.1.17.dist-info/RECORD,,
