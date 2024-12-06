@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/funmedia.egg-info/PKG-INFO
+src/funmedia.egg-info/SOURCES.txt
+src/funmedia.egg-info/dependency_links.txt
+src/funmedia.egg-info/requires.txt
+src/funmedia.egg-info/top_level.txt
