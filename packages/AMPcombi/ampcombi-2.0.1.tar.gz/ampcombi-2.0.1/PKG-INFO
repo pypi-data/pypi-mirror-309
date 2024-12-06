@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: AMPcombi
+Version: 2.0.1
+Summary: A parsing tool for AMP tools.
+Home-page: http://pypi.python.org/pypi/AMPcombi/
+Author: Anan Ibrahim, Louisa Perelo
+Author-email: ananhamido@hotmail.com, louperelo@gmail.com
+License: LICENSE.txt
+Keywords: Proteomics,Antimicrobial peptides,MMSeqs2Standardization,Formatting,Functional annotation
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas==1.5.2
+Requires-Dist: numpy==1.26.4
+Requires-Dist: biopython==1.80
+Requires-Dist: colorama==0.4.6
+Requires-Dist: requests
+
+# AMPcombi : A parsing, filtering and annotation workflow for tools predicting AntiMicrobial Peptide genes
+
+<img src="https://raw.githubusercontent.com/Darcy220606/AMPcombi/main/docs/amp-combi-logo.png" width="300" height="250" /> 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Install with Bioconda](https://anaconda.org/bioconda/ampcombi/badges/downloads.svg)](https://anaconda.org/bioconda/ampcombi) [![Install with Bioconda](https://anaconda.org/bioconda/ampcombi/badges/version.svg)](https://anaconda.org/bioconda/ampcombi)
+
+
+**AMPcombi and its submodules provide a command-line interface to:**
+
+- parse the results of multiple antimicrobial peptide (AMP) prediction tools into a single table
+- align the AMP hits against a reference AMP database for functional and structural classifications
+- filter the AMP hits according to their physio-chemical properties
+- cluster the filtered AMP hits into AMP families
+- predict signaling peptides if present along the prepropeptide sequence
+
+📕 The full documentation for AMPcombi can be accessed [here](https://ampcombi.readthedocs.io/en/v.2.0.1/).
+
+📎 If you plan to use AMPcombi please don't forget to **cite** us 💚
