@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pymembrane
+Version: 0.0.3
+Summary: A Python package for membrane filtration modeling and optimization
+Home-page: https://github.com/ROMDHANA/pymembrane
+Author: Hedi ROMDHANA
+Author-email: hedi.romdhana@agroparistech.fr
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/ROMDHANA/pymembrane/issues
+Project-URL: Documentation, https://pymembrane.readthedocs.io/
+Project-URL: Source Code, https://github.com/ROMDHANA/pymembrane
+Keywords: wastewater,wastewater treatment,membrane,food process,simulation,optimization
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.20.3
+Requires-Dist: matplotlib >=3.4.0
+Requires-Dist: scipy >=1.7.3
+Requires-Dist: pandas >=1.2.0
+Requires-Dist: SALib >=1.3.13
+Requires-Dist: cryptography
+
+# pymembrane
+
+PyMembrane is a Python library for modeling, simulating, and optimizing membrane-based food processes and wastewater treatment. It includes models for spiral membrane mass transfer, osmotic pressure calculations, and more.
+
+## Simulation of Solute Mass Transfer in a Spiral Membrane
+
+This project provides tools to simulate the transfer of solutes in a spiral membrane, including the modeling of different transport phenomena involved in the process.
+
+
+For more details, visit the documentation at: https://pymembrane.readthedocs.io/
