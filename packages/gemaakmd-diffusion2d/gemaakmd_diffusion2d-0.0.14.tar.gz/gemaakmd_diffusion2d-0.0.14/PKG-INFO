@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: gemaakmd_diffusion2d
+Version: 0.0.14
+Summary: SSE Python Exercise
+Home-page: https://github.com/mgemaakbar/diffusion2D
+Author: Muhammad Gema Akbar
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: numpy>=2.1.0
+
+# diffusion2D
+
+## Instructions for students
+
+Please follow the instructions in [pypi_exercise.md](https://github.com/Simulation-Software-Engineering/Lecture-Material/blob/main/03_building_and_packaging/pypi_exercise.md).
+
+The code used in this exercise is based on [Chapter 7 of the book "Learning Scientific Programming with Python"](https://scipython.com/book/chapter-7-matplotlib/examples/the-two-dimensional-diffusion-equation/).
+
+## Project description
+
+This code solves the diffusion equation in 2D over a square domain which is at a certain temperature and a circular disc at the center which is at a higher temperature. This code solves the diffusion equation using the Finite Difference Method. The thermal diffusivity and initial conditions of the system can be changed by the user. The code produces four plots at various timepoints of the simulation. The diffusion process can be clearly observed in these plots.
+
+## Installing the package
+
+To install from TestPyPI (at the time this README is written, the latest version on TestPyPI is 0.0.14):
+    
+```pip3 install -i https://test.pypi.org/simple/ gemaakmd-diffusion2d===0.0.14```
+
+or you can install without specifcying the version:
+
+```pip3 install -i https://test.pypi.org/simple/ gemaakmd-diffusion2d```
+
+### Using pip3 to install from PyPI
+
+At the time this README is written, latest version on PyPI is 0.0.14.
+
+```pip3 install gemaakmd-diffusion2d===0.0.14```
+
+or you can install without specifcying the version:
+
+```pip3 install gemaakmd-diffusion2d```
+
+### Required dependencies
+
+Matplotlib:
+
+```pip3 install matplotlib```
+
+Numpy:
+
+```pip3 install numpy```
+
+## Running this package
+
+You can include this line to use the solve() method:
+
+```from gemaakmd_diffusion2d import diffusion2d```
+
+``` diffusion2d.solve()```
+
+## Citing
+
+
