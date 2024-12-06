@@ -1,0 +1,7 @@
+setup.py
+jupseco/__init__.py
+jupseco/module.py
+jupseco.egg-info/PKG-INFO
+jupseco.egg-info/SOURCES.txt
+jupseco.egg-info/dependency_links.txt
+jupseco.egg-info/top_level.txt
