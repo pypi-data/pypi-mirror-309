@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: seatools-codegen
+Version: 1.0.1
+Summary: Cookiecutter-seatools-python 代码生成拓展包
+Home-page: https://gitee.com/dragons96/cookiecutter-seatools-python-codegen
+Author: dragons96
+Author-email: 521274311@qq.com
+License: MIT license
+Keywords: seatools,codegen
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: loguru
+
+# Cookiecutter-seatools-python-codegen
+
+Cookiecutter-seatools-python 代码生成拓展包
+
+## 仓库地址:
+1. https://github.com/seatools-py/cookiecutter-seatools-python-codegen
+2. https://gitee.com/seatools-py/cookiecutter-seatools-python-codegen
+
+## Cookiecutter-seatools-python 模板项目地址
+1. https://github.com/seatools-py/cookiecutter-seatools-python
+2. https://gitee.com/seatools-py/cookiecutter-seatools-python
+
+## Seatools 工具包地址
+1. https://github.com/seatools-py/seatools
+2. https://gitee.com/seatools-py/seatools
