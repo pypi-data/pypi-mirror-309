@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ibb_api_arsivi/__init__.py
+ibb_api_arsivi/ispark.py
+ibb_api_arsivi.egg-info/PKG-INFO
+ibb_api_arsivi.egg-info/SOURCES.txt
+ibb_api_arsivi.egg-info/dependency_links.txt
+ibb_api_arsivi.egg-info/requires.txt
+ibb_api_arsivi.egg-info/top_level.txt
