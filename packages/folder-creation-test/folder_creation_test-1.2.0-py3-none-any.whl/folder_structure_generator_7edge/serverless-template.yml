@@ -1,0 +1,108 @@
+service: {{service_name}}
+frameworkVersion: "3"
+useDotenv: true
+deprecationNotificationMode: error
+disabledDeprecations:
+  - UNSUPPORTED_CLI_OPTIONS
+  - CLI_OPTIONS_SCHEMA_V3
+  - CONFIG_VALIDATION_MODE_DEFAULT_V3
+provider:
+  name: aws
+  endpointType: REGIONAL
+  runtime: {{runtime}}
+  deploymentBucket:
+    name: ${ssm:DEPLOYMENT_BUCKET}  # SSM parameter for the deployment bucket name
+    maxPreviousDeploymentArtifacts: 10
+    blockPublicAccess: true
+  stage: ${opt:stage, 'dev'}  # Stage defaults to 'dev', can be overridden with --stage
+  region: ${env:REGION}  # Region set from environment variable
+  versionFunctions: false
+  environment:
+    STAGE: ${self:provider.stage}  # Stage environment variable for Lambda functions
+    DEBUG: ${env:DEBUG}  # Debug environment variable for Lambda functions
+    REGION: ${env:REGION}  # Region environment variable for Lambda functions
+
+  http:
+    cors: true
+    authorizers:
+      cognito-auth:
+        identitySource: $request.header.Authorization
+        issuerUrl: https://cognito-idp.${env:REGION}.amazonaws.com/${ssm:COGNITO_USER_POOL_ID}  # Cognito User Pool issuer URL from SSM parameter
+        audience: ${ssm:COGNITO_CLIENT_ID}  # Cognito Client ID from SSM parameter
+
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:*
+            - cognito-idp:*
+            - ses:*
+            - mobiletargeting:*
+            - s3:*
+            - pinpoint:*
+          Resource: "*"
+
+package:
+  patterns:
+    - "!./node_modules/**"
+    - ./handlers/**
+    - ./data/**
+    - ./utils/**
+    - ./lib/**
+
+functions:
+  add-user:
+    handler: handlers/add.handler
+    layers:
+      - ${ssm:COMMON_LIB_ARN_PYTHON}  # ARN for the common Python layer from SSM
+    events:
+      - http:
+          path: /
+          method: post
+          cors:
+            origins:
+              - "*"
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Requested-With
+              - Accept
+              - Requestid
+              - Access-Control-Allow-Header
+          authorizer:
+            arn: ${ssm:COGNITO_AUTH_ARN}  # Cognito Auth ARN for securing the endpoint
+
+resources:
+  Resources:
+    GatewayResponseDefault4XX:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: DEFAULT_4XX
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'
+
+custom:
+  packageExternal:
+    external:
+      - "../../lib"
+  customDomain:
+    rest:
+      domainName: ${ssm:DOMAIN_NAME}  # Custom domain name from SSM parameter
+      stage: ${opt:stage, self:provider.stage}  # Stage for the custom domain
+      basePath: v1/${self:service}  # API base path
+      certificateName: ${ssm:DOMAIN_CERTIFICATE}  # SSL certificate for the domain from SSM
+      createRoute53Record: true  # Automatically create Route 53 DNS record
+      securityPolicy: tls_1_2
+      endpointType: REGIONAL
+
+plugins:
+  - serverless-offline
+  - serverless-package-external
+  - serverless-domain-manager
