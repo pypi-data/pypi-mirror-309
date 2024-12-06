@@ -1,0 +1,11 @@
+snap_sort/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snap_sort/cli.py,sha256=MPUMj4HsXIaDO3uL9AV-vRE8nIUunDOSyO3c_3vNCic,2358
+snap_sort/exposure.py,sha256=kIF9yS2KhD6LKhi0RGWHZU9Do8HFu2xn2C_zDGwaBBE,2503
+snap_sort/find_similar.py,sha256=pFITwFFTL6bAOyWnr2P6kqomVvOUNgd7VXwcGUVVZ98,2860
+snap_sort/redo.py,sha256=Oodp2NXQkKY6W4mOPu_iiFClayg66yapJ2poUCjCszg,1650
+snap_sort/semantic.py,sha256=QCFuvhQcvrDxDRqhRq8E5sfebJ33ZmocDbxGZ_JaP3E,8192
+cli_snapsort-0.1.1.dist-info/METADATA,sha256=xHGZAPStlk2EgLkCo1I_XTU_oxus2Zk-JW_HQ6XLgS4,1570
+cli_snapsort-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+cli_snapsort-0.1.1.dist-info/entry_points.txt,sha256=r685aacRDVQZ2lcV_LCRVa5r3eLTuEKXYi6mBei2-7o,52
+cli_snapsort-0.1.1.dist-info/top_level.txt,sha256=E4RSh9JKEPYgokE0nFutxrwrBB2zG2aftqOEbOCw38o,10
+cli_snapsort-0.1.1.dist-info/RECORD,,
