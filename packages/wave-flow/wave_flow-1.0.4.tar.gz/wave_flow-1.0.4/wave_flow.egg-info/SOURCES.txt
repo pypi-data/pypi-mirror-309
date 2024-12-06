@@ -1,0 +1,8 @@
+README.md
+setup.py
+WaveFlow/__init__.py
+wave_flow.egg-info/PKG-INFO
+wave_flow.egg-info/SOURCES.txt
+wave_flow.egg-info/dependency_links.txt
+wave_flow.egg-info/requires.txt
+wave_flow.egg-info/top_level.txt
