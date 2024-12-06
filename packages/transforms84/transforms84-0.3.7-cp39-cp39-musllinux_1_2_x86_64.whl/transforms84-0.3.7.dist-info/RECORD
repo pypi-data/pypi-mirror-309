@@ -1,0 +1,13 @@
+transforms84-0.3.7.dist-info/top_level.txt,sha256=mxRdltwPgCTwa4oTSH0BVoSkAkpDN6nX_JlThimOORQ,13
+transforms84-0.3.7.dist-info/RECORD,,
+transforms84-0.3.7.dist-info/METADATA,sha256=nuSmXk_mQEsJNX0Qxvpytn4O0ChADo7cGBgBc257_8c,8476
+transforms84-0.3.7.dist-info/WHEEL,sha256=w7x3LVNqyyBubwwEmCiCD5IV4o1v1FCYgr2OoAsfOos,110
+transforms84/helpers.cpython-39-x86_64-linux-gnu.so,sha256=sVFg9lCZQFiMBkx3paEW-D25gm5H7Ij3yMIgMdreE70,88609
+transforms84/systems.py,sha256=YPATDwzlarlAeLyBIT1edfPigfj7nNQiKyut416wMTg,1658
+transforms84/distances.pyi,sha256=SgduScYFYNqNvCLWUI6SXqflSnQkLYfc_pyeh7TeAPI,453
+transforms84/transforms.cpython-39-x86_64-linux-gnu.so,sha256=tW32ZnaYG4UmGP7voIicztglnnAip_gtzkpDD0fOFg0,231089
+transforms84/distances.cpython-39-x86_64-linux-gnu.so,sha256=eHR1Vb2wlNJXy6GhtF9vYDUQvgj-Zghx76uf3YZt7Sk,46209
+transforms84/__init__.py,sha256=J0I0c7-a50EOnWXMryTu_E6xhXSYFBPjVpeYP_a3vRI,22
+transforms84/transforms.pyi,sha256=DyjylJr7IsDsmYyYe1ZNJhPGJ7XEjtr70vdkqgZ7pE4,5178
+transforms84/helpers.pyi,sha256=tqbHGXEwsV0zVvp1W9BmDSv2YqVtsvIJki-ZKGx-FkM,1935
+transforms84.libs/libgomp-1f0f45f5.so.1.0.0,sha256=JYZuzgiypSabjFLxXb3Nm6c4Q12fyT_uNMXOENwHwuE,336801
