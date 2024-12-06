@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyimagelocator
+Version: 0.1.0
+Summary: It was created out of the need to locate RGBA images with alpha background in given images.
+Home-page: https://github.com/Jonathannavaxd/ImageLocator
+Author: Jhonatan Navarro
+Author-email: Jonathannavaxd@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mi Biblioteca
+
+Esta es una biblioteca de ejemplo para saludar.
+
+## Instalación
+
+Puedes instalar la biblioteca usando pip:

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/pyimagelocator.egg-info/PKG-INFO
+src/pyimagelocator.egg-info/SOURCES.txt
+src/pyimagelocator.egg-info/dependency_links.txt
+src/pyimagelocator.egg-info/top_level.txt
