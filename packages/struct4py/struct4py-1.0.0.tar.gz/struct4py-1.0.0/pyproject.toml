@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "struct4py"
+version = "1.0.0"
+description = "Matlab like structure for python, allowing for fast and easy indexing"
+authors = ["ahartlba <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ahartlba/struct4py"
+packages = [{ include = "struct4py" }]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.1.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
