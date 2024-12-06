@@ -1,0 +1,37 @@
+{
+    "debugMode": true,
+    "syncThemes": true,
+    "colors": {
+        "primary-background": "#101316",
+        "primary-text": "#bfc3c4"
+    },
+    "language-considerations": {
+        "python": [".py"],
+        "c": [".c"],
+        "json": [".json"],
+        "rust": [".rs"],
+        "cpp": [".cpp"],
+        "javascript": [".js"],
+        "html": [".html"],
+        "css": [".css"],
+        "cs": [".cs"],
+        "java": [".java"],
+        "text": [".txt"],
+        "haskell": [".hs"],
+        "go": [".go"],
+        "ruby": [".rb"],
+        "kotlin": [".kt", ".kts", ".ktm"],
+        "typescript": [".ts"],
+        "php": [".php"],
+        "swift": [".swift"],
+        "jsx": [".jsx"],
+        "tsx": [".tsx"],
+        "r": [".r"]
+    },
+    "tools-preferences": {
+        "tool-replace": true 
+    },
+    "layouts": {
+        "terminal-span": "editor"
+    }
+}
