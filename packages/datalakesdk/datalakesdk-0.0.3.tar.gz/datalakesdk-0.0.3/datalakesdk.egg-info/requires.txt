@@ -1,0 +1,4 @@
+Pillow
+moviepy
+pydantic
+requests
