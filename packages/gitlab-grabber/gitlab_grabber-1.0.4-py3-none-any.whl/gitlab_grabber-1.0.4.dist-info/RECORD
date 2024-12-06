@@ -1,0 +1,16 @@
+gitlab_grabber/__init__.py,sha256=wd6n7h80_b2FiXJXNNs8du4hnx4ykHQL4lhEXBM2KVE,20
+gitlab_grabber/cli/__init__.py,sha256=WGA9nQ8xkm_1NczRLlH5d9CrN6iWdmYddGCXgMOhsM4,110
+gitlab_grabber/cli/cli.py,sha256=vnwaRA43DUMRYIVomkvvMA8U40VFMEs9ICUzeXue-7Q,2784
+gitlab_grabber/gitlab/__init__.py,sha256=devDdKm4c_BNR0WPQPpdZFhQv4K8VSn3sEfzECQ6qiQ,170
+gitlab_grabber/gitlab/clone_repository.py,sha256=bsxIrT3pAmj7Lk8BCPHAkB2lRqP8mZZNyckU3O-U5j4,3557
+gitlab_grabber/gitlab/project_handler.py,sha256=bfzY4u9k85Ucx8NsYgKo0gZjjwcsBMFvXwrRPRN3a40,1379
+gitlab_grabber/http_client/__init__.py,sha256=qfpPr6TIaNTtj00LjJqIL0i9lAqRrVlT8iJEXsD7kas,84
+gitlab_grabber/http_client/client.py,sha256=JyHV_NFzCFv7O7TvpcCTEMwmMawK6NAjZbgR59FTEOQ,3680
+gitlab_grabber/logger/__init__.py,sha256=UR2dCuNLp0TfvJaJGv-YAo4Z2uc1IcW4oZ46RfBQqNw,139
+gitlab_grabber/logger/formatter.py,sha256=ypfAXAUlgKknA4vxqPzQNwXC03rwLrIJ9qF1TlXsZCU,456
+gitlab_grabber/logger/logger.py,sha256=kEC3EMPxTobukUFYCIzAaw5xQqh8h7a0Doy-AG-Tk-0,1324
+gitlab_grabber/main.py,sha256=BbJdfykwxA0p0PGdOouQ1MRy8RCUGhsL-rqiHIQKEec,636
+gitlab_grabber-1.0.4.dist-info/METADATA,sha256=LJVWmDheanApXuWjKEqYAxrhZ9iHd60T_QFUB9c5XiE,1507
+gitlab_grabber-1.0.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+gitlab_grabber-1.0.4.dist-info/entry_points.txt,sha256=AYDq3WRSKAoallnXhwGQblEazjl8KDm43AomMpKDjh4,59
+gitlab_grabber-1.0.4.dist-info/RECORD,,
