@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: simpleSQLiteDB
+Version: 1.1.1
+Summary: simpleSQLiteDB is a python module to simplify the usage of SQLite3 and more begginer friendly for those starting off with SQL in python. It does the task of creating connections, cursors etc, to enable clean code. It makes the whole process more modular to allow for ease of use for more than 1 database
+Home-page: https://github.com/KingHacker9000/simpleDB
+Author: Ashish Ajin Thomas
+Author-email: Coolioboss7@gmail.com
+License: MIT
+License-File: LICENSE.txt

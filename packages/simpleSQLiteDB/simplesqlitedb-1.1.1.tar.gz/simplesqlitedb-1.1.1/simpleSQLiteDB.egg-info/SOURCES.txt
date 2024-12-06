@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.cfg
+setup.py
+simpleDB.py
+simpleSQLiteDB.egg-info/PKG-INFO
+simpleSQLiteDB.egg-info/SOURCES.txt
+simpleSQLiteDB.egg-info/dependency_links.txt
+simpleSQLiteDB.egg-info/top_level.txt
