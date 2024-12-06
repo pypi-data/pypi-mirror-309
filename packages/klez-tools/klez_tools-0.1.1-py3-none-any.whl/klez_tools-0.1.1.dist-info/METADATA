@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: klez-tools
+Version: 0.1.1
+Summary: A simple tool to encode names using numeric cryptography logic.
+Home-page: https://ammo.lol/Klez
+Author: Joseph Klez
+Author-email: klez@cock.li
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+
+# klez-tools
+
+A simple tool to encode names using numeric cryptography logic.
+
+## Installation
+
+To install, use pip:
+
+```
+pip install klez-tools
+```
+
+## Usage
+
+To use the tool, run:
+
+```
+klez-tools
+```
+
+
