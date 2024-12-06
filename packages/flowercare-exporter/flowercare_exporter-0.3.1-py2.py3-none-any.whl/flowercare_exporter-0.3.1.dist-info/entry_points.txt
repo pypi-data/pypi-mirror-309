@@ -1,0 +1,3 @@
+[console_scripts]
+flowercare_exporter=flowercare_exporter.main:main
+
