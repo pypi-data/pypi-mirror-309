@@ -1,0 +1,11 @@
+bindy/__init__.py,sha256=0xel08GP45AeD9oKeY24odZfwyahjPIUyveeqRZbFY4,131
+bindy/bindy.py,sha256=8Z9bhjs7ciyZhyJHXqzboQaWtoA7IZi5NbDcr8BEdTE,4862
+bindy/lowlevel.py,sha256=rMegr4kI86vvodwKcEdT2O-ttFTPrcePR2TLKUj43Ic,3474
+bindy/debian/libbindy.so,sha256=4Aoh9Qp6GXkczHGUlcACaUlcIwL2OHC6ekRdyA8WPvY,5915504
+bindy/win32/bindy.dll,sha256=dQxTVQ2FHkvn8ANOZLZvZhM4r37ausNmtJx9GEHexJ4,3774464
+bindy/win64/bindy.dll,sha256=ppuzahT6VfUYzympoa6GtwfZftGZ1yAqlPv8rmqeqLw,5386752
+bindy-1.0.0.dist-info/METADATA,sha256=S5xUdBlU8jjLrK5CUA7uo2oHxXKcEB_cLQU_fQxUHjU,2479
+bindy-1.0.0.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+bindy-1.0.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bindy-1.0.0.dist-info/license_files/LICENSE,sha256=7pXz0thqsxXUWVhIKQJj6f7ow4NpBOvTRpV6AWnle8A,1100
+bindy-1.0.0.dist-info/RECORD,,
