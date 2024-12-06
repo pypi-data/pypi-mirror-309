@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/stactools/glad_glclu2020/__init__.py
+src/stactools/glad_glclu2020/commands.py
+src/stactools/glad_glclu2020/metadata.py
+src/stactools/glad_glclu2020/stac.py
+src/stactools/glad_glclu2020/data/annual_classes.csv
+src/stactools/glad_glclu2020/data/change_classes.csv
+src/stactools_glad_glclu2020.egg-info/PKG-INFO
+src/stactools_glad_glclu2020.egg-info/SOURCES.txt
+src/stactools_glad_glclu2020.egg-info/dependency_links.txt
+src/stactools_glad_glclu2020.egg-info/requires.txt
+src/stactools_glad_glclu2020.egg-info/top_level.txt
+tests/test_commands.py
+tests/test_stac.py
