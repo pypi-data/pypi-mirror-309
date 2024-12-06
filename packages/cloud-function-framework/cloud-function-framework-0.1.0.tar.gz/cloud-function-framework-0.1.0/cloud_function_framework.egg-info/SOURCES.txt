@@ -1,0 +1,8 @@
+README.md
+setup.py
+cloud_function_framework.egg-info/PKG-INFO
+cloud_function_framework.egg-info/SOURCES.txt
+cloud_function_framework.egg-info/dependency_links.txt
+cloud_function_framework.egg-info/entry_points.txt
+cloud_function_framework.egg-info/requires.txt
+cloud_function_framework.egg-info/top_level.txt
