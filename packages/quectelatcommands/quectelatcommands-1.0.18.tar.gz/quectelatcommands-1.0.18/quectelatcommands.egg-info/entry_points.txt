@@ -1,0 +1,3 @@
+[console_scripts]
+quectelGnssATCommandsCLI = quectelatcommands.quectelGnssATCommands:main
+quectelModemATCommandsCLI = quectelatcommands.quectelModemATCommands:main
