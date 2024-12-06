@@ -1,0 +1,25 @@
+[package]
+name = "load_data_from_postgresql_rs"
+version = "0.1.2"
+edition = "2021"
+
+[lib]
+name = "load_data_from_postgresql_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = { version = "0.4.38", features = ["serde"] }
+polars = { version = "0.44.2", features = ["polars-io"] }
+dotenv = "0.15.0"
+postgres = { version = "0.19.9", features = ["with-chrono-0_4"] }
+openssl = "0.10.68"
+postgres-openssl = "0.5.0"
+pyo3 = "0.21.0"
+pyo3-polars = "0.18.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+debug = true
+overflow-checks = false
+debug-assertions = false
