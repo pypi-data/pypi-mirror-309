@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dimc
+Version: 0.2.0
+Summary: A utility for debugging dimensions of tensors and objects.
+Home-page: https://github.com/ohshane/dimc
+Author: Shane Oh
+Author-email: ohshane71@gmail.com
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dimc
+`dimc` is a utility for debugging tensor dimensions and objects.
+It wraps functions and prints input/output dimensions.
+
+## Installation
+```bash
+pip install dimc
+pip install git+https://github.com/ohshane/dimc.git
+```
