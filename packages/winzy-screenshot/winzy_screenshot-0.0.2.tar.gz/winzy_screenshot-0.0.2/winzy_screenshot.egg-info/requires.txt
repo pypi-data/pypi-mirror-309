@@ -1,0 +1,6 @@
+winzy
+pynput
+pillow
+
+[test]
+pytest
