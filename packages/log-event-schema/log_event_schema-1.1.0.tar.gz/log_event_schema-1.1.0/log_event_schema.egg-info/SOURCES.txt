@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+log_event_schema.egg-info/PKG-INFO
+log_event_schema.egg-info/SOURCES.txt
+log_event_schema.egg-info/dependency_links.txt
+log_event_schema.egg-info/top_level.txt

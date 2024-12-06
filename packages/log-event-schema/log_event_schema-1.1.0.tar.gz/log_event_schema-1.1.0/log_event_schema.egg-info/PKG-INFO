@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: log-event-schema
+Version: 1.1.0
+Summary: Lilt Log Event Schema
+Home-page: https://github.com/lilt/log-event-schema
+Author: AdiFe-code
+Author-email: aditya.sharma@lilt.com
+License-File: LICENSE
+
+    Lilt schema to type definition convertor in python for logging events
+    
