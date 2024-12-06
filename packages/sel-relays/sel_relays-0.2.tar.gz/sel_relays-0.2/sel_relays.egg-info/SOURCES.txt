@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+sel_relays/__init__.py
+sel_relays/sel300.py
+sel_relays/sel700.py
+sel_relays.egg-info/PKG-INFO
+sel_relays.egg-info/SOURCES.txt
+sel_relays.egg-info/dependency_links.txt
+sel_relays.egg-info/top_level.txt
