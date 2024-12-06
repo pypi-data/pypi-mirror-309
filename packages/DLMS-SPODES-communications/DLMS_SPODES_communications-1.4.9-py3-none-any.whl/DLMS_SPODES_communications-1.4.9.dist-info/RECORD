@@ -1,0 +1,10 @@
+DLMS_SPODES_communications/__init__.py,sha256=UvY4Oev9cs_fyfXzowEBZC7W7Gh1cgOJO6Zn09ldZss,529
+DLMS_SPODES_communications/base.py,sha256=zCn-9kIkp-XYD5gX8jDvifh2T2E42rts7YNUx1eoLIw,1710
+DLMS_SPODES_communications/ble.py,sha256=QcVLveaYbq47poHfZfNDPFcOP1dkBU8b94Yjm2OuD2c,5908
+DLMS_SPODES_communications/network.py,sha256=X1dbaoTuj_ZhdFp6LkUYqqFjocYn9i9dKrWshFCKvuQ,668
+DLMS_SPODES_communications/serial_port.py,sha256=xxroMPtyyqIqxtlScbi11vYsyBabdW_SV3fUAkzBvPc,2154
+DLMS_SPODES_communications-1.4.9.dist-info/METADATA,sha256=7DBr1H7IE12zjVU0rAkE7YcGJUH6mZgnhRr-ppzDIEk,628
+DLMS_SPODES_communications-1.4.9.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+DLMS_SPODES_communications-1.4.9.dist-info/entry_points.txt,sha256=gUbvS0jyIyVx4IjIF_zhNh39Ml5RhQENRhgntDdG-nI,79
+DLMS_SPODES_communications-1.4.9.dist-info/top_level.txt,sha256=GqSTHVMHyFj8j_JUaLnhUx3d-IEJBeyK2RVVHtIKj-c,27
+DLMS_SPODES_communications-1.4.9.dist-info/RECORD,,
