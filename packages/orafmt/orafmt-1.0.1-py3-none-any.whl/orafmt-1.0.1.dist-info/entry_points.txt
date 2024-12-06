@@ -1,0 +1,3 @@
+[console_scripts]
+orafmt=orafmt.cli:main
+
