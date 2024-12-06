@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: funa
+Version: 0.0.2
+Summary: Bunch of trash made in style. Use with caution.
+Project-URL: Homepage, https://github.com/Funasitien/funa.py
+Project-URL: Issues, https://github.com/Funasitien/funa.py/issues
+Author-email: Funasitien DreamCloud <funasitien@dreamclouds.fr>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ⛅ FUNA.PY
+*Funa.py is a collection of trash functions taht do things in style.*
+
+> [!WARNING]
+> This extension is work in progress and could contain security issues. **PROCEED WITH CAUTION.**
