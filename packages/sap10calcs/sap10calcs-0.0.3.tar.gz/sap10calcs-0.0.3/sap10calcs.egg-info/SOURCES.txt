@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+sap10calcs/__init__.py
+sap10calcs/_generate_auto_classes.py
+sap10calcs/classes_RdSAP_Schema_21_0_0.py
+sap10calcs/classes_SAP_Schema_19_1_0.py
+sap10calcs/functions.py
+sap10calcs/instances.py
+sap10calcs.egg-info/PKG-INFO
+sap10calcs.egg-info/SOURCES.txt
+sap10calcs.egg-info/dependency_links.txt
+sap10calcs.egg-info/requires.txt
+sap10calcs.egg-info/top_level.txt
+tests/test_functions.py
+tests/test_instances.py
