@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+spikeweb/__init__.py
+spikeweb/spikeweb.py
+spikeweb.egg-info/PKG-INFO
+spikeweb.egg-info/SOURCES.txt
+spikeweb.egg-info/dependency_links.txt
+spikeweb.egg-info/requires.txt
+spikeweb.egg-info/top_level.txt
+spikeweb/templates/__init__.py
