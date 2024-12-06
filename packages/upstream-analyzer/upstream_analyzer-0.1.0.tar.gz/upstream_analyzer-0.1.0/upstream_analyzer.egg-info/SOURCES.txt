@@ -1,0 +1,9 @@
+README.md
+setup.py
+upstream_analyzer/__init__.py
+upstream_analyzer/analyze_basin.py
+upstream_analyzer.egg-info/PKG-INFO
+upstream_analyzer.egg-info/SOURCES.txt
+upstream_analyzer.egg-info/dependency_links.txt
+upstream_analyzer.egg-info/requires.txt
+upstream_analyzer.egg-info/top_level.txt
