@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jr-portal-gun"
+version = "0.1.0"
+description = ""
+authors = ["Jorge Roldan <roldanjrgl@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+jr-portal-gun = "jr_portal_gun.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
