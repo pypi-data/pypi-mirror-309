@@ -1,0 +1,11 @@
+lazuardy_anfis/__init__.py,sha256=2xxmygNP_FijwE4AIGMsjjywPvBXokpgt-T_pwSQIPo,269
+lazuardy_anfis/anfis.py,sha256=EnGDhDRyfE9odL2mZfGJ8LNQucqSVM5GPqNggZ6hT1g,12011
+lazuardy_anfis/anfis_gpu.py,sha256=TLeRegneTRku5D6nTUAFp5NtkXWIoqJ5XL82p3vSBdg,13425
+lazuardy_anfis/membershipfunction.py,sha256=k48gwjn2E3zL4PWYg1vcp5UuQsCZvQoheSNZTCTx9Ns,823
+lazuardy_anfis/tests.py,sha256=1bCAGTTF4MNWzemjBK16glrlhysWD1BAY0Mk2psD67Q,1666
+lazuardy_anfis/tests_gpu.py,sha256=uQLV9O8tH5OEvxhSmPi6qUoY3P-ncHtfZmCOotixzSk,1629
+lazuardy_anfis-0.0.7.dist-info/LICENSE,sha256=b65kMwnPFALWeo7f9IP6yF9EorIzvOZ9ZJ8vonmlORM,1080
+lazuardy_anfis-0.0.7.dist-info/METADATA,sha256=sghWuGktxI0wLAzrSYiQGO0Lo-QvAEy7ck5ijwSLaQc,4263
+lazuardy_anfis-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lazuardy_anfis-0.0.7.dist-info/top_level.txt,sha256=oAq1qN_-dBVpOdj_Zvt2m_rh-BiP6i_yXgt5PpGy48M,15
+lazuardy_anfis-0.0.7.dist-info/RECORD,,
