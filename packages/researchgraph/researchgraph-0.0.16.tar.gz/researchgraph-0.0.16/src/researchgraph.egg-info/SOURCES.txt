@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/researchgraph/__init__.py
+src/researchgraph.egg-info/PKG-INFO
+src/researchgraph.egg-info/SOURCES.txt
+src/researchgraph.egg-info/dependency_links.txt
+src/researchgraph.egg-info/requires.txt
+src/researchgraph.egg-info/top_level.txt
