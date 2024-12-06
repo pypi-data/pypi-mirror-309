@@ -1,0 +1,7 @@
+main.py
+setup.py
+latentnerf.egg-info/PKG-INFO
+latentnerf.egg-info/SOURCES.txt
+latentnerf.egg-info/dependency_links.txt
+latentnerf.egg-info/requires.txt
+latentnerf.egg-info/top_level.txt
