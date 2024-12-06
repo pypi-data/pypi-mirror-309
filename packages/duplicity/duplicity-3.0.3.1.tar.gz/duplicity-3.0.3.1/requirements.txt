@@ -1,0 +1,35 @@
+
+##### basic requirements #####
+
+fasteners>=0.19
+python-gettext>=5.0
+setuptools
+
+##### backend libraries #####
+
+atom==0.10.5 ; python_version <= "3.12"
+atom>=0.11.0 ; python_version >= "3.13"
+azure-storage-blob
+b2sdk
+boto3
+botocore
+boxsdk[jwt]
+dropbox
+gdata-python3
+google-api-python-client
+google-auth-oauthlib
+httplib2
+jottalib
+keyring
+lxml
+mediafire
+megatools
+paramiko
+pexpect
+psutil
+pydrive2
+pyrax
+python-swiftclient
+python-keystoneclient
+requests
+requests-oauthlib
