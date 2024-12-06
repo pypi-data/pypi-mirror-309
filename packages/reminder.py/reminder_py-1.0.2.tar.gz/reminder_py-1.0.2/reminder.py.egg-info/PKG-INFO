@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: reminder.py
+Version: 1.0.2
+Summary: An async Python schedule reminders with custom event triggers on due time.
+Author-email: Snifo <Snifo@mail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/mrsnifo/reminder.py
+Project-URL: Documentation, https://reminderpy.readthedocs.io/latest/
+Project-URL: Issue tracker, https://github.com/mrsnifo/reminder.py/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# reminder.py
+
+[![PyPI - Version](https://img.shields.io/pypi/v/reminder.py?color=teal)](https://pypi.org/project/reminder.py)
+[![Python Versions](https://img.shields.io/pypi/pyversions/reminder.py?color=teal)](https://pypi.org/project/reminder.py)
+
+A Python library to manage scheduled reminders, events, and callbacks, designed for asynchronous operations.
+
+## Installation
+
+To install **reminder.py**, use the appropriate command for your operating system:
+
+For Windows:
+
+```bash
+py -3 -m pip install --upgrade reminder.py
+```
+
+For macOS/Linux:
+
+```bash
+python3 -m pip install --upgrade reminder.py
+```
+
+## Quick Start
+
+Here’s a simple example to get you started with reminder.py:
+
+```python
+from reminder import Reminder, Schedule
+from datetime import timedelta
+
+reminder = Reminder()
+
+reminder.add_schedule('Task 1: Timer for 1 minute', timedelta(minutes=1))
+reminder.add_schedule('Task 2: Reminder in 30 seconds', timedelta(seconds=30), callback='task_reminder')
+reminder.add_schedule('Task 3: Another reminder in 30 seconds', timedelta(seconds=30), callback='task_reminder')
+
+@reminder.event
+async def on_initiate():
+    print(f"Reminder has been initiated")
+    
+@reminder.event
+async def on_schedule(schedule: Schedule):
+    print(f"Triggered schedule: {schedule.title}")
+
+@reminder.event
+async def on_task_reminder(schedule: Schedule):
+    print(f"Custom reminder callback triggered for schedule: {schedule.title}")
+
+reminder.run()
+
+```
+
+
+
+## Documentation
+
+For more detailed instructions,
+visit the [reminder.py Documentation](https://reminderpy.readthedocs.io/latest/).
