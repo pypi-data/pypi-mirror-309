@@ -1,0 +1,12 @@
+webhook_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webhook_bridge/api/__init__.py,sha256=2xQ3qBCzWoSd6aFXCGT61D-Nu6IZkd7XDusQPaoqDGw,408
+webhook_bridge/api/call_plugin.py,sha256=d9p6ZuCgpXbiJlnEA197USmYvpfgzqcWt-oz9Uu3VbM,2531
+webhook_bridge/api/list_plugins.py,sha256=R5BnAB8o9pWVca9-FZ2_EkhHlMd8Rj68zw7mHbFH2V4,773
+webhook_bridge/filesystem.py,sha256=7j5uDCv5K-rCIgaUDHAMqIrbibQFBUtzBrLY184Q7AI,867
+webhook_bridge/models.py,sha256=lbLAib0aH9DjRkx9YudAuXlV6BZ2Wr_Xk-dA09FxwJQ,401
+webhook_bridge/plugin.py,sha256=XaZZTXQuo8W24Umsn1QA4VKkv50qBAvAdvofm8FuIEg,1292
+webhook_bridge/server.py,sha256=2TBBL3gu_UlN6Eukgbs8O0PPEjr_RRP9yM5MkR0ArR8,818
+webhook_bridge-0.2.0.dist-info/LICENSE,sha256=FC-QIHegrTLM3sEWA7FMtmVJhhgXAbA18q3gHgY3JEA,1061
+webhook_bridge-0.2.0.dist-info/METADATA,sha256=NOFgw_3fYmYbqxjCz1zOqLSSHofOvvZQFXrnlStKvvc,2316
+webhook_bridge-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+webhook_bridge-0.2.0.dist-info/RECORD,,
