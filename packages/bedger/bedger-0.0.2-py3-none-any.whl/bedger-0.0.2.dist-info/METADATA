@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bedger
+Version: 0.0.2
+Summary: Edge monitoring software for secure and efficient device management.
+Author: Henk van den Brink
+Author-email: henk.vandenbrink@bedger.io
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+
