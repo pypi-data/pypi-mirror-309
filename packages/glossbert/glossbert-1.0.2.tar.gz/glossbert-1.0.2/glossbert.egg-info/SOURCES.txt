@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-pypi.yaml
+glossbert/__init__.py
+glossbert/glossbert.py
+glossbert.egg-info/PKG-INFO
+glossbert.egg-info/SOURCES.txt
+glossbert.egg-info/dependency_links.txt
+glossbert.egg-info/requires.txt
+glossbert.egg-info/top_level.txt
