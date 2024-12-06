@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CongressLib"
+version = "0.1.2"
+description = "A Python wrapper for the Congress.gov API."
+authors = [
+    {name = "Harry He", email = "zih028@ucsd.edu"}
+]
+license = {text = "MIT"}
+
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "typing-extensions"
+]
+readme = "README.md"
+keywords = ["Congress", "politics", "government", "legislation"]
+
+[project.urls]
+Repository = "https://github.com/harryziyuhe/CongressLib"
+Issues = "https://github.com/harryziyuhe/CongressLib/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
