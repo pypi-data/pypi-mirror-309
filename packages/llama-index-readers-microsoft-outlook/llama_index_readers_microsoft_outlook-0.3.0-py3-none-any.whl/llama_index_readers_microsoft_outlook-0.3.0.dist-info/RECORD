@@ -1,0 +1,5 @@
+llama_index/readers/microsoft_outlook/__init__.py,sha256=9GPq-pTf-UiLmqJP8w82sfcLs5O8SX8oAzRlpQ0on9o,124
+llama_index/readers/microsoft_outlook/base.py,sha256=anGK2N6rqrqaqhCgFEzTQ0tBAm-axq8rGKQYRuphKAE,3931
+llama_index_readers_microsoft_outlook-0.3.0.dist-info/METADATA,sha256=L-ATu2E6-GdWU5yjcx_OKHgapKDFmq7mubR5mczEmdY,2744
+llama_index_readers_microsoft_outlook-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_microsoft_outlook-0.3.0.dist-info/RECORD,,
