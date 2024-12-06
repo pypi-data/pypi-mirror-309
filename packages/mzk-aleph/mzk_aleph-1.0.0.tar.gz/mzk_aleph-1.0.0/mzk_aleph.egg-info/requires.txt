@@ -1,0 +1,6 @@
+lxml
+pymarc
+requests
+
+[yaz]
+yaz

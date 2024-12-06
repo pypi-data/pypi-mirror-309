@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mzk_aleph
+Version: 1.0.0
+Summary: Aleph client for multiple Aleph instances developed by MZK
+Author: Robert Randiak
+Author-email: randiak@mzk.com
+Requires-Python: >=3.6
+Requires-Dist: lxml
+Requires-Dist: pymarc
+Requires-Dist: requests
+Provides-Extra: yaz
+Requires-Dist: yaz; extra == "yaz"
