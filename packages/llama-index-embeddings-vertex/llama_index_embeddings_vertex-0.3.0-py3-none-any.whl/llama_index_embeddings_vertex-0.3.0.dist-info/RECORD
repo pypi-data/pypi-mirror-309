@@ -1,0 +1,6 @@
+llama_index/embeddings/vertex/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/embeddings/vertex/__init__.py,sha256=pwbiiLVP24y18VeN83knZktlLKR9vqJSxV4lhteJ46s,219
+llama_index/embeddings/vertex/base.py,sha256=6NOGi6lpf-WCe3rOUHFkIk2LfJC66PfD4fD15-_YpyA,11256
+llama_index_embeddings_vertex-0.3.0.dist-info/METADATA,sha256=Ja3W9WoDsgHwdUHKNDlU8eELo78OthKW86iveXfcki8,2635
+llama_index_embeddings_vertex-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_vertex-0.3.0.dist-info/RECORD,,
