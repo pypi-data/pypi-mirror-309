@@ -1,0 +1,8 @@
+ximalaya/__init__.py,sha256=vCKj36BHioXKcWUskFYCMrY3CniKHUfCIbehIeLIXT4,80
+ximalaya/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ximalaya/api/user.py,sha256=rsQFF1xowA0pSLjdkSY4Yz7AUgJDQp7AQfgQaIMoqFA,3133
+ximalaya/client.py,sha256=JGYuy-9ledzjMso7MuD9EX_T9ubrzRNHIE3jlg_NoDk,698
+ximalaya-0.2.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ximalaya-0.2.0.dist-info/METADATA,sha256=hKIwgHuL8Dekc87BeNEZGGx1p2ogPfzJ_J8Co-C7wxg,881
+ximalaya-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ximalaya-0.2.0.dist-info/RECORD,,
