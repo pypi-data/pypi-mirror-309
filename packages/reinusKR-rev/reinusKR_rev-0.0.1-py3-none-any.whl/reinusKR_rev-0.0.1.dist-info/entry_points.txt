@@ -1,0 +1,3 @@
+[console_scripts]
+reinusKR-rev = reinusKR_rev.reinusKR_rev:connect
+
