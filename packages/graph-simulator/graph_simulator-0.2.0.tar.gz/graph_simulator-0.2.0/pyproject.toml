@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph_simulator"
+authors = [
+    {name = "Joakim B. Andersen", email = "blach.andersen@gmail.com"},
+]
+description = "A tool to simulate from graphs"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "gymnasium>=0.29.1",
+    "scipy>=1.14.0",
+    "PyYAML>=6.0.1",
+    "numpy>=2.0.1",
+    "networkx>=3.3"
+]
+version = "0.2.0"
