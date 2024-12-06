@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mt-system"
+dynamic = ["version"]
+description = "Python library of MT system."
+authors = [
+    { name = "Shota Fukuda", email = "st_fukuda@outlook.jp" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9,<3.14"
+dependencies = [
+    "scikit-learn>=1.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/stfukuda/mt-system.git"
+Documentation = "https://stfukuda.github.io/mt-system/"
+# Source = "None"
+# Issues = "None"
+# Changelog = "None"
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "pandas",
+]
+lint = [
+    "ruff",
+    "bandit[toml]",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-include-markdown-plugin",
+    "mkdocstrings[python]",
+]
+
+[tool.ruff]
+target-version = "py39"
+extend-include = [".git"]
+
+[tool.bandit]
+skips = ["B101", "B601"]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
