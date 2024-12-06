@@ -1,0 +1,3 @@
+[console_scripts]
+repo_structure=repo_structure.__main__:repo_structure
+
