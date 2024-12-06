@@ -1,0 +1,25 @@
+from proyo.script_locals import *
+
+folder: str = ...
+
+from os import listdir
+from os.path import isdir, join, basename
+
+dest = basename(folder)
+subparsers = parser.add_subparsers(dest=dest)
+subparsers.required = True
+for i in listdir(folder):
+    if isdir(join(folder, i)):
+        subparser = subparsers.add_parser(i)
+        proyo.sub(i, parser=subparser).parse()
+
+... = dest
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+folder: str = ...
+dest: str = ...
+
+subfolder = getattr(args, dest)
+proyo.sub(subfolder).run()
+proyo.only_collect([])
