@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/test_arithmetic.py
+watdog.egg-info/PKG-INFO
+watdog.egg-info/SOURCES.txt
+watdog.egg-info/dependency_links.txt
+watdog.egg-info/top_level.txt
+yaml/__init__.py
+yaml/arithmetic.py
+yaml/geometry.py
