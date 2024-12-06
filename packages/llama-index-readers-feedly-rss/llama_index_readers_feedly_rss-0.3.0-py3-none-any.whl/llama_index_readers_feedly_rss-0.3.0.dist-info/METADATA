@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-feedly-rss
+Version: 0.3.0
+Summary: llama-index readers feedly_rss integration
+License: MIT
+Keywords: feedly,rss
+Author: Your Name
+Author-email: you@example.com
+Maintainer: kychanbp
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: feedly-client (>=0.26,<0.27)
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Feedly Loader
+
+```bash
+pip install llama-index-readers-feedly-rss
+```
+
+This loader fetches the entries from a list of RSS feeds subscribed in [Feedly](https://feedly.com). You must initialize the loader with your [Feedly API token](https://developer.feedly.com), and then pass the category name which you want to extract.
+
+## Usage
+
+```python
+from llama_index.readers.feedly_rss import FeedlyRssReader
+
+loader = feedlyRssReader(bearer_token="[YOUR_TOKEN]")
+documents = loader.load_data(category_name="news", max_count=100)
+```
+
+## Dependencies
+
+[feedly-client](https://pypi.org/project/feedly-client/)
+
