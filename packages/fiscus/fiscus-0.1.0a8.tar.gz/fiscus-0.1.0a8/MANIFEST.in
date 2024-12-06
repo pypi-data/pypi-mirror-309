@@ -1,0 +1,12 @@
+# Include all Python files in the src/fiscus package
+recursive-include src/fiscus *.py
+
+# Include essential files
+include README.md
+include LICENSE
+
+# Exclude unnecessary files and directories
+prune tests
+exclude *.pyc
+exclude *.pyo
+recursive-exclude src/fiscus __pycache__

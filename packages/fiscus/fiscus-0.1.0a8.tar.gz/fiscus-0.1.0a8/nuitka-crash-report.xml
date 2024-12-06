@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="2.4.11" nuitka_commercial_version="not installed" completion="error exit message (1)" exit_message="Failed unexpectedly in Scons C backend compilation.">
+  <scons_error_reports>
+    <scons_error_report>
+      <command>"/opt/homebrew/bin/ccache" "/usr/bin/clang" -o "module.scons-debug.os" -c -std=c11 -flto -fvisibility=hidden -fwrapv -pipe -w -fvisibility=hidden -fvisibility-inlines-hidden --target=arm64-macos14.0 -O3 -fPIC -D_XOPEN_SOURCE -D__NUITKA_NO_ASSERT__ -D_NUITKA_CONSTANTS_FROM_MACOS_SECTION -D_NUITKA_FROZEN=0 -D_NUITKA_MODULE "-I/Users/dallen/Dev/Fiscus - SDKs/Python SDK/myvenv/lib/python3.12/site-packages/nuitka/build/inline_copy/zlib" -I/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/include/python3.12 -I. "-I/Users/dallen/Dev/Fiscus - SDKs/Python SDK/myvenv/lib/python3.12/site-packages/nuitka/build/include" "-I/Users/dallen/Dev/Fiscus - SDKs/Python SDK/myvenv/lib/python3.12/site-packages/nuitka/build/static_src" "-I/Users/dallen/Dev/Fiscus - SDKs/Python SDK/myvenv/lib/python3.12/site-packages/nuitka/build/inline_copy/libbacktrace" "module.scons-debug.c"</command>
+      <stderr>
+module.scons-debug.c:758:30: error: expected ';' after top level declaratorstatic PyObject *PyInit_scons-debug_phase2(PyObject *module) {                             ^                             ;1 error generated.
+</stderr>
+    </scons_error_report>
+  </scons_error_reports>
+  <module name="scons-debug" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="src/fiscus/exceptions.build/scons-debug.py">
+    <optimization-time pass="1" time="0.00" micro_passes="3" />
+    <optimization-time pass="2" time="0.00" micro_passes="1" />
+    <module_usages>
+      <module_usage name="sys" finding="absolute" line="3" />
+      <module_usage name="os" finding="excluded" line="4" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="5" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <performance>
+    <memory_usage name="after_launch" value="53968896" />
+    <memory_usage name="before_c_code_generation" value="54214656" />
+    <memory_usage name="before_running_scons" value="56377344" />
+  </performance>
+  <data_composer blob_size="4390" total="108">
+    <module_data filename="__bytecode.const" input_size="0" blob_name=".bytecode" blob_size="3" />
+    <module_data filename="__constants.const" input_size="1938" blob_name="" blob_size="783" />
+    <module_data filename="module.scons-debug.const" input_size="3880" blob_name="scons-debug" blob_size="3561" />
+  </data_composer>
+  <command_line>
+    <option value="--module" />
+    <option value="src/fiscus/exceptions.build/scons-debug.py" />
+    <option value="--output-dir=nuitka_test_output" />
+    <option value="--nofollow-imports" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="eventlet" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python3.12" python_flavor="Homebrew Python" python_version="3.12.7" os_name="Darwin" os_release="14.5" arch_name="arm64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}" />
+      <path value="${cwd}/src/fiscus/exceptions.build" />
+      <path value="${sys.prefix}/bin" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/nuitka_test_output/scons-debug.cpython-312-darwin.so" />
+</nuitka-compilation-report>

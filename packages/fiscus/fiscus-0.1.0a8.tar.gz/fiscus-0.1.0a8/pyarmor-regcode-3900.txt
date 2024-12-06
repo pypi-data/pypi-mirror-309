@@ -1,0 +1,35 @@
+Dear Fiscus Flows, Inc.,
+
+Thank you for purchasing Pyarmor, this registration code is authorized to you
+
+lIWjkb_nyAzr1Ee2UEibctL02g5g6OtPO0Kksi_9Y2yiEKcKq4k-9Ypp87_XEp328He7WGKDwgg_G9N04LMfJ4t9luIydZLDYdiA7f6Eb1c_ZO6OZcvpgjclURgd3MQjSJmszpd6noHXrf4PRV4aSrb4QZ-0HSlaPuagsTY5yrcQ41JxxNBmr33PoWKiDWW6
+
+This code is only for Pyarmor < 8.0, please register Pyarmor by the following way:
+
+1. Open the following url in any web browser to activate this registration code at first, waiting for a while, a reg-file generally named "pyarmor-regfile-3900.zip" will be downloaded
+
+    https://api.dashingsoft.com/product/key/activate/lIWjkb_nyAzr1Ee2UEibctL02g5g6OtPO0Kksi_9Y2yiEKcKq4k-9Ypp87_XEp328He7WGKDwgg_G9N04LMfJ4t9luIydZLDYdiA7f6Eb1c_ZO6OZcvpgjclURgd3MQjSJmszpd6noHXrf4PRV4aSrb4QZ-0HSlaPuagsTY5yrcQ41JxxNBmr33PoWKiDWW6/
+
+2. Then register Pyarmor by this ".zip" file, it can be used unlimited times
+
+    pyarmor register /path/to/pyarmor-regfile-3900.zip
+
+Please backup "pyarmor-regfile-3900.zip" carefully, otherwise pyarmor can't be registered in any new machine, and THERE IS NO LOST FOUND SERVICE.
+
+Check there is no "Trial" in version information
+
+    pyarmor -v
+
+After registration successfully, remove all the obfuscated scripts by trial version, then obfuscate them again.
+
+Pyarmor is well document, here is the latest documentation
+
+    https://pyarmor.readthedocs.io/en/v7.7/
+
+Do not reply to this email for technical issues, if there is any question, check the following guide
+
+    https://pyarmor.readthedocs.io/en/v7.7/questions.html
+
+Best Regards
+Pyarmor Team
+

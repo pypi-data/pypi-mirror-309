@@ -1,0 +1,18 @@
+FROM python:3.9-slim
+
+# Install necessary packages
+RUN apt-get update && \
+    apt-get install -y build-essential tree && \
+    pip install --upgrade pip
+
+# Install Nuitka
+RUN pip install nuitka
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the project into the container
+COPY . /app
+
+# Set the entry point to the build script
+ENTRYPOINT ["/bin/bash", "build_and_deploy.sh"]
