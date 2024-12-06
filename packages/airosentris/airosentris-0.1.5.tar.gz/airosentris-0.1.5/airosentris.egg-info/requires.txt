@@ -1,0 +1,6 @@
+requests==2.32.3
+python-dotenv
+apify-client
+tweepy
+selenium
+webdriver-managergputil==1.4.0psutil==6.0.0py-cpuinfo==9.0.0pika==1.3.2
