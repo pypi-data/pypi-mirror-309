@@ -1,0 +1,10 @@
+build
+twine
+chardet
+markdown
+
+[dev]
+check-manifest
+
+[test]
+coverage
