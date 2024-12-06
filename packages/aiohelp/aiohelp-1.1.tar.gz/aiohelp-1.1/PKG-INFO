@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: aiohelp
+Version: 1.1
+Summary: Easy tool for help commands in aiogram
+Author: ilpy
+Author-email: <ilpy@proton.me>
+Requires-Dist: aiogram
