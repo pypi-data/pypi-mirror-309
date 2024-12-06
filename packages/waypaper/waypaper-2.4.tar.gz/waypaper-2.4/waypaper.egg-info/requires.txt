@@ -1,0 +1,7 @@
+PyGObject
+importlib_metadata
+platformdirs
+Pillow
+imageio
+imageio-ffmpeg
+screeninfo
