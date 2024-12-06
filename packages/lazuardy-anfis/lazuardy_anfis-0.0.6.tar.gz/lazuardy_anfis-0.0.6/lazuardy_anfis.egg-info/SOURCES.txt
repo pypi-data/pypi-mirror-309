@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lazuardy_anfis/__init__.py
+lazuardy_anfis/anfis.py
+lazuardy_anfis/membershipfunction.py
+lazuardy_anfis/tests.py
+lazuardy_anfis.egg-info/PKG-INFO
+lazuardy_anfis.egg-info/SOURCES.txt
+lazuardy_anfis.egg-info/dependency_links.txt
+lazuardy_anfis.egg-info/requires.txt
+lazuardy_anfis.egg-info/top_level.txt
