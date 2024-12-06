@@ -1,0 +1,13 @@
+matplotlib
+spacy
+networkx
+nltk
+shapely>=2.0.1
+pandas
+community
+python-louvain
+numpy
+setuptools
+scipy
+chardet
+deep_translator
