@@ -1,0 +1,8 @@
+nanoranker/__init__.py,sha256=jhdo_2JxmFg_F3_9soUtxyUqlTweJLbvK331Bkq_MHk,2830
+nanoranker/resources/reranker_nn_v2_state_dict.pth,sha256=QH038jGd4D2yeSMtfCUPv_apKGPx3W08U2AhVR-Br_E,53649520
+nanoranker/resources/universal-sentence-encoder-multilingual.onnx,sha256=uLBbAfCGEJTwR1yyiK0bMDroruLr6W5lDSEIBdXKcPc,71794489
+nanoranker-1.1.dist-info/LICENSE,sha256=X-lH5P_PW1gmoVCca0JLL-9y6rfuse1GKYqX5sGyM2I,1066
+nanoranker-1.1.dist-info/METADATA,sha256=2WVomaY43fE3QStthCk0q3CMKW9mVhbkCkUJfLokeJ4,6772
+nanoranker-1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nanoranker-1.1.dist-info/top_level.txt,sha256=bC9G1NuO_CGpXSyejUcHSinAGxgJG1KlEudU0IB-RXY,11
+nanoranker-1.1.dist-info/RECORD,,
