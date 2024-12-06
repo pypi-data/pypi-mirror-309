@@ -1,0 +1,244 @@
+Metadata-Version: 2.1
+Name: polySim
+Version: 0.1.1
+Summary: Polycrystalline microstructure simulation package
+Home-page: https://github.com/nikolspace/polySim
+Author: Nikhil Chaurasia Sandeep Sangal, Shikhar Krishn Jha
+Author-email: nikolspace@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+polySim
+Version: 0.1.1
+License: MIT License
+Author: Nikhil Chaurasia, Sandeep Sangal and Shikhar K. Jha
+Email: nikolspace@gmail.com
+
+#Table of Contents
+
+#Introduction
+
+#Features
+
+#Installation
+
+#Usage
+	Importing the Package
+	Function: generate_structure
+	Function Signature
+	Parameters
+	Returns
+	Example
+
+#Dependencies
+
+#Contributing
+
+#License
+
+#Introduction
+
+polySim is a Python package designed for simulating polycrystalline microstructures. It provides a high-performance implementation of grain growth simulations using a combination of Python and C++ for computational efficiency.
+
+This package is particularly useful for researchers and engineers working in materials science, metallurgy, and related fields who need to simulate and analyze the evolution of grain structures in polycrystalline materials.
+
+#Features
+
+Simulate polycrystalline microstructures with customizable parameters.
+High-performance computation using a C++ backend.
+Easy-to-use Python interface.
+Outputs include the generated microstructure image, number of grains, and Avrami exponent.
+Supports visualization of the generated microstructure using matplotlib.
+
+
+Installation
+
+
+Before installing, ensure you have the following prerequisites:
+
+Python 3.7 or higher
+
+NumPy
+
+Matplotlib (optional, for visualization)
+
+Install via pip
+
+You can install polySim directly from PyPI:
+
+pip install polySim
+
+If you prefer to build from source:
+
+Clone the repository or download the source code.
+
+Navigate to the root directory of the project.
+
+Install the package using pip:
+
+pip install .
+
+Usage
+Importing the Package
+
+import numpy as np
+
+from polySim import generate_structure
+
+Function: generate_structure
+
+#Function Signature
+
+generate_structure(img, nucleation_rate, growth_rate, height=300, randomize_gray_values=True)
+Parameters
+
+img (numpy.ndarray of uint16):
+
+A 2D NumPy array representing the initial image where the microstructure will be generated.
+Must be initialized (e.g., with zeros) and of type uint16.
+Shape: (height, width)
+nucleation_rate (int):
+
+The number of nucleation sites introduced per iteration.
+Controls the rate at which new grains are formed.
+Expected Values: Positive integer (e.g., 10)
+growth_rate (float):
+
+The growth rate of the grains per iteration.
+Determines how quickly grains expand over time.
+Expected Values: Positive float (e.g., 0.5, 1.0)
+height (int, optional, default=300):
+
+
+
+generated_img (numpy.ndarray of uint16):
+
+The resulting image array representing the generated polycrystalline microstructure.
+Shape: Same as the input img
+num_grains (int):
+
+The total number of grains generated in the simulation.
+Description: Useful for quantitative analysis of the microstructure.
+
+avrami_exponent (float):
+
+The calculated Avrami exponent from the simulation.
+Description: A parameter related to the kinetics of grain growth.
+
+#Example
+
+
+import numpy as np
+
+from polySim import generate_structure
+
+from matplotlib import pyplot as plt
+
+# Define simulation parameters
+
+img = np.zeros((500, 500), dtype=np.uint16)
+
+nucleation_rate = 10
+
+growth_rate = 1.0
+
+height = 300
+
+
+# Run the simulation
+
+generated_img, num_grains, avrami_exponent = generate_structure(
+    img, nucleation_rate, growth_rate, height, )
+
+# Output the results
+
+print("Number of Grains:", num_grains)
+
+print("Avrami Exponent:", avrami_exponent)
+
+# Visualize the generated microstructure
+
+plt.imshow(generated_img, cmap='gray')
+
+plt.title('Generated Polycrystalline Microstructure')
+
+plt.xlabel('X')
+
+plt.ylabel('Y')
+
+plt.colorbar(label='Grain ID')
+
+plt.show()
+
+#Explanation of the Example:
+
+Initialization:
+
+An empty image of size 500x500 pixels is created.
+The nucleation rate is set to 10 grains per iteration.
+The growth rate is set to 1.0 units per iteration.
+The simulation runs for 300 iterations (layers).
+Running the Simulation:
+
+The generate_structure function is called with the specified parameters.
+It returns the generated image, number of grains, and Avrami exponent.
+Output and Visualization:
+
+The number of grains and Avrami exponent are printed to the console.
+The generated microstructure is visualized using matplotlib.
+
+#Dependencies
+
+
+NumPy: For numerical computations and array manipulations.
+
+Matplotlib (optional): For visualizing the generated microstructure.
+
+C++ Compiler: Required if installing from source to compile the extension module.
+
+Contributing
+
+Contributions are welcome! If you have ideas for improvements or encounter any issues, please:
+
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes with clear commit messages.
+Submit a pull request describing your changes.
+Please ensure that your contributions adhere to the project's coding standards and pass all tests.
+
+License
+This project is licensed under the terms of the MIT License.
+
+MIT License
+
+
+MIT License
+
+Copyright (c) 2023 Nikhil Chaurasia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
+For the full license text, see the LICENSE file included with this project.
+
+Contact
+For questions, suggestions, or support, please contact:
+
+Email: nikolspace@gmail.com
+GitHub: nikolspace
+Acknowledgments
+Special thanks to all contributors and the open-source community for their valuable work and support.
+

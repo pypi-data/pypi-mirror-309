@@ -1,0 +1,10 @@
+polySim/__init__.py,sha256=bu24SjsUQV-vqVKm-l8Z6-xQkmASOm5TyA5iWLxgzSo,41
+polySim/libpolySim.cp39-win_amd64.pyd,sha256=uksIlFMMSR94Xs-7eQAtKvj9OwlTtzWVZuTnnx6YPr8,18944
+polySim/wrapper.py,sha256=5zW5M40ww05lKCkeDrJbrGB6QB13BhqdInqleyUwjDw,732
+polySim/c_code/main.cpp,sha256=YSysXIy-zWXE3uydjfyIGLfX57NzZcQKxWHnO_NQSd4,12548
+polySim/c_code/main.h,sha256=dJVKHQ8iJlI-w70WePqDJqDtOItZjnU8HZutyM125Sc,561
+polySim-0.1.1.dist-info/LICENSE.txt,sha256=MJCjovzoaks056oDTYcXmrm9gFrXNRZPBM8Afr8rD54,1101
+polySim-0.1.1.dist-info/METADATA,sha256=xXJsx01H1ERO8U29dWw6PAC5nBr-G4DKYnjF0GLVOek,6441
+polySim-0.1.1.dist-info/WHEEL,sha256=vq7bX_I37ZJK2gZz_HGA8eCPjBDKQSfb_9FNjesTNkk,99
+polySim-0.1.1.dist-info/top_level.txt,sha256=qcEucRuUAyu-m4ukEkcwpdRAJvwmjjM4OuzYxKXoBHA,8
+polySim-0.1.1.dist-info/RECORD,,
