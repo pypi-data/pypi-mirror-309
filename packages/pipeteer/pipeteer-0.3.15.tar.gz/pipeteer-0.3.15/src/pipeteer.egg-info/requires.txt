@@ -1,0 +1,7 @@
+haskellian
+pyzmq
+sqlmodel
+pydantic
+dslog
+pyjwt
+httpx
