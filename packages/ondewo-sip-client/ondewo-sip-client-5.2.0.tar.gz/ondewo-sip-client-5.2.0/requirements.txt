@@ -1,0 +1,9 @@
+google-api-core
+googleapis-common-protos
+grpcio-reflection
+grpcio-tools
+grpcio
+ondewo-client-utils
+polling
+protobuf
+regex
