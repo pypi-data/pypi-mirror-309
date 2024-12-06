@@ -1,0 +1,28 @@
+import sentry_sdk
+
+sentry_sdk.init(
+    "{{ dsn }}",
+
+    # The SDK's default is to not send PII; for a SaaS solution this is probably
+    # the right choice, but when you're using Bugsink (i.e. self-hosted), it's
+    # more likely that you want to send everything (and e.g. be able to see
+    # which user was affected by a certain event). Uncomment the following line
+    # to send PII.
+    # send_default_pii=True,
+
+    # The SDK's default is to be quite conservative with the nr of local
+    # variables it sends per frame (the default is is 10). If you want to see
+    # more, you may either proceed with the monkey patching described in the
+    # issue below, or set max_request_body_size to "always" (which will send
+    # everything). Note that this may lead to very large messages, which may be
+    # dropped by the server (but the server is under your control, so you can
+    # change that). see https://github.com/getsentry/sentry-python/issues/377
+    # max_request_body_size="always",
+
+    # Setting up the release is highly recommended. The SDK will try to infer
+    # it, but explicitly setting it is more reliable.
+    # release=...,
+
+    # Bugsink intentionally does not support traces. No need to send them then
+    traces_sample_rate=0,  
+)

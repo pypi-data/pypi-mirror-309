@@ -1,0 +1,16 @@
+.gitignore
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+tox.ini
+sdkconf/__init__.py
+sdkconf/_version.py
+sdkconf.egg-info/PKG-INFO
+sdkconf.egg-info/SOURCES.txt
+sdkconf.egg-info/dependency_links.txt
+sdkconf.egg-info/top_level.txt
+sdkconf/templates/sdkconf/python/conf
+sdkconf/templates/sdkconf/python/install
+sdkconf/templates/sdkconf/python/verify

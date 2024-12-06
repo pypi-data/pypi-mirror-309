@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sdkconf
+Version: 2024.11.19.1
+Summary: Bugsink SDK configuration instructions
+Author-email: "Bugsink B.V." <info@bugsink.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS
