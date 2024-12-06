@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pyerd"
+version = "0.1.0"
+description = ""
+authors = ["Stephen Ferrari <stephen.ferrari14@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pydantic = "^2.9.2"
+pyright = "^1.1.388"
+ruff = "^0.7.3"
+
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
