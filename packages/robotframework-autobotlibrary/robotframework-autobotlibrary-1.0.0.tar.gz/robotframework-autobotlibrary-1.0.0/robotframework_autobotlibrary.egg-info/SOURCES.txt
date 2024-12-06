@@ -1,0 +1,9 @@
+README.md
+setup.py
+AutoBotLibrary/AutoBotLibrary.py
+AutoBotLibrary/__init__.py
+robotframework_autobotlibrary.egg-info/PKG-INFO
+robotframework_autobotlibrary.egg-info/SOURCES.txt
+robotframework_autobotlibrary.egg-info/dependency_links.txt
+robotframework_autobotlibrary.egg-info/requires.txt
+robotframework_autobotlibrary.egg-info/top_level.txt
