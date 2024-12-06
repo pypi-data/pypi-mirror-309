@@ -1,0 +1,11 @@
+sqlalchemy_dhis2/__init__.py,sha256=v1to5cASmCW-4Tbd6gRYoY61pA0z7gEZCl9LBk0hNy8,198
+sqlalchemy_dhis2/constants.py,sha256=OSKlvtBpMBdAphlU71MNP7WCofqB4iyduQ7bfd-o3o0,91
+sqlalchemy_dhis2/jsonhttp_dialect.py,sha256=nU_N4ETV5hzXhmv_E8uBMxdYivA0uZ4JDM-s1oHFFXo,2695
+sqlalchemy_dhis2/message_formatter.py,sha256=RjRE68gGCAShW8HlSsJ4T402LxWq6Rio_D9QyOAVYDU,232
+sqlalchemy_dhis2/type_map.py,sha256=Z3hmhyw_aw4q3230LnU_pHYSDa_7mwGJMYJnIRhPfM8,1641
+sqlalchemydhis2-1.0.11.dist-info/LICENSE,sha256=uEsMtbJ7MBH8zShKa5UYeihgJJcDL8KxDKeBjrvtpaU,11348
+sqlalchemydhis2-1.0.11.dist-info/METADATA,sha256=l91-9Zl9781l5tAt0sswvFljbIxafvdKugXBUr1_n9g,1215
+sqlalchemydhis2-1.0.11.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sqlalchemydhis2-1.0.11.dist-info/entry_points.txt,sha256=CI6XdCLPpc0-4VJq6KTZrbkpUo86gbCuNiDToYOpXeQ,80
+sqlalchemydhis2-1.0.11.dist-info/top_level.txt,sha256=jhqCJA1DhLOYcLb3FZdjxpCRHLjL7k0UbASxebJfLzM,17
+sqlalchemydhis2-1.0.11.dist-info/RECORD,,
