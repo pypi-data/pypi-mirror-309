@@ -1,0 +1,2 @@
+[console_scripts]
+dpgui = dpgui.cli:dpgui
