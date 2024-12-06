@@ -1,0 +1,14 @@
+orangecontrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orangecontrib/protospec/__init__.py,sha256=iskMujHo96DLsaJ5xFPQ_ECG2jC-ExYVyX1DSMVji0o,58
+orangecontrib/protospec/data.py,sha256=u1mm6Rg2Nh2QBaZR0DQwnhZio-OBN4pum9qvk8BLIDk,5116
+orangecontrib/protospec/tests/__init__.py,sha256=lcmbRWQ7_OvcP1_h6jDikJZWJs7g7dUr-5DzAFn3RfQ,482
+orangecontrib/protospec/tests/test_io.py,sha256=uFrJj-3sLpKeSYkOGdqlNqrP4th5T9_l742bPgsIf5w,1347
+orangecontrib/protospec/tutorials/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orangecontrib/protospec/widgets/__init__.py,sha256=hJLYY5-F8gdSDumgfWziG3POfyNI05UeGUofiAxCqto,1120
+orangecontrib/protospec/widgets/icons/category.svg,sha256=GbvuWHnbDgUAAxsr012EDyJQN-nAkAlRuLawV-MF8JI,7530
+orange_spectroscopy_prototypes-2024.11.19.dist-info/LICENSE,sha256=jgqw6QmGZnU8A4R8xy4cGujoQNo_5orRCUUPJcyEL-4,612
+orange_spectroscopy_prototypes-2024.11.19.dist-info/METADATA,sha256=-spfOm995NPA7mLBu_Zv60P_Kw9ETQVujuzKuWXEkKY,1509
+orange_spectroscopy_prototypes-2024.11.19.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+orange_spectroscopy_prototypes-2024.11.19.dist-info/entry_points.txt,sha256=5_fgYuSU-hQVtsOe-LRJ3Wn5JsJiOtUnClitaKXuRck,212
+orange_spectroscopy_prototypes-2024.11.19.dist-info/top_level.txt,sha256=Iut-JTfT11SZHHm77_ZeszD7pZDWXcTweCbvrJpqDyQ,14
+orange_spectroscopy_prototypes-2024.11.19.dist-info/RECORD,,
