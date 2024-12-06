@@ -1,0 +1,15 @@
+annotation_tool/__init__.py,sha256=bctYm4213n8-JdMbK1I7nYYXIS1nTCSaWzyNfx7qrW4,55
+annotation_tool/app.py,sha256=C2V4w4gjs8tEEgtyW8asCifKHyHBZd5LUhzBsXKma9Q,10365
+annotation_tool/common.py,sha256=BGPVuhYy93NsS0UwoPv13valmBMY8iMB0t8iN5MpAdY,3743
+annotation_tool/model.py,sha256=CcIWnyPXV5fkzVHVm5kAC9p_lLt2j9ytHRKnbzD0YRc,18740
+annotation_tool/view/__init__.py,sha256=YtXn1veI0nd5d_9okwY3Mj9ityTOaafjlXEqxMix0MU,193
+annotation_tool/view/helper_widgets.py,sha256=DP11iRAR7wkqz5wqwmxmvfB7-kqv6-GAeJ2Sj-rZt4s,15188
+annotation_tool/view/main_window.py,sha256=x4ksn--AGdEA4nxOe9fNBH1M8_cIOIVoQYqhFcPMmUI,22263
+annotation_tool/view/project_management.py,sha256=5zFAbIPkPiK8w6qOSHCn3tt1LXZtziL_W0EOUBblkbI,37117
+annotation_tool/view/settings_management.py,sha256=kefUfY9gV4p_Svx5OMLB71d7xXzEDRworEkOYcqgLww,5192
+main.py,sha256=pSx-OBrzw0jqbhLDAKmLtmxPrpT4UEwWCS_DH7OWHBI,154
+simple_image_annotator-0.1.5.dist-info/entry_points.txt,sha256=kqHa4nFvIPOIzei3_H_hfTLax7TR0VOhm9ufHVgnrWE,50
+simple_image_annotator-0.1.5.dist-info/LICENSE,sha256=YgdT3jBcc_fNw5GXjmbR7XFVYbJpMesrKOAoqSTv8qI,1085
+simple_image_annotator-0.1.5.dist-info/METADATA,sha256=jqj__U5yRYoZpO8dDIMPGm59oOvPN6v_RHZLHujbFaU,1607
+simple_image_annotator-0.1.5.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+simple_image_annotator-0.1.5.dist-info/RECORD,,
