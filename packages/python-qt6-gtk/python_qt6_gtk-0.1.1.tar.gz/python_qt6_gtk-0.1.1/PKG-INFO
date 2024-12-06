@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: python-qt6-gtk
+Version: 0.1.1
+Summary: A minimal Python package
+Author-email: Elay <lavashportal@gmail.com>
+Requires-Python: >=3.7
