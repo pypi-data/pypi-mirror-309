@@ -1,0 +1,10 @@
+dikdik/__init__.py,sha256=KGm6gCdNLQJMaEuJSTXJIh3RszWVDoDb5teLIxd2AVI,82
+dikdik/dict.py,sha256=zIoYF2mWAg3cJ316zP5fhif_T5cQ0T9VoVe10xaMFa4,8072
+dikdik/operations.py,sha256=Qdkmi8Xf1a3PYnkXi0rYtG2qulXkT7AcrACeY7CIBh0,3984
+dikdik/yaml.py,sha256=rhEeebcTmgzO_ruc2jDQa_B3qyIgznMQtts9lxxbJRo,4306
+dikdik/yamlv2.py,sha256=mofUpSxO32TmfZRiXOul2sV587HmFcgBDWninv-didA,5142
+dikdik-0.1.11.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+dikdik-0.1.11.dist-info/METADATA,sha256=NO9U6J3homupFq68ueZYHn2e9uJ57lTvBR_AYE4fum8,1017
+dikdik-0.1.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dikdik-0.1.11.dist-info/entry_points.txt,sha256=3TDdB4TAQE3esbzu5Yk8eXXnLT4FwT4HTND7wTlOjak,42
+dikdik-0.1.11.dist-info/RECORD,,
