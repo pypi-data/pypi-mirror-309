@@ -1,0 +1,5 @@
+numpy
+pysheds
+matplotlib
+scipy
+pyproj
