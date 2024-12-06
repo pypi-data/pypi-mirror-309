@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: polars-interval-match
+Version: 0.1.1
+Classifier: Programming Language :: Python
+Requires-Dist: polars
+Summary: A Python extension module for matching intervals in Polars DataFrames
+Keywords: Polars,interval,data science,data wrangling,plugin
+Author-email: Kyle Slugg-Urbino <kyle.slugg@gmail.com>
+Maintainer-email: Kyle Slugg-Urbino <kyle.slugg@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+This package enables the matching of a Polars `Series` of numerical values (currently only `Float64` is supported) to a `Series` of interval strings (using standard interval notation).
+
