@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: PerspectiveLearning
+Version: 0.1.0
+Summary: A dynamic framework for hypothesis-driven iterative machine learning.
+Author: Sai Pavan Velidandla
+Author-email: connectwithpavan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# PerspectiveLearning
+
+**PerspectiveLearning** is a Python library for hypothesis-driven iterative machine learning.
+
+## Features
+- Define multiple perspectives for hypothesis evaluation.
+- Iteratively train and refine the best perspective.
+- Predict outcomes using the refined model.
+
+## Installation
+Install via pip:
+```
+pip install PerspectiveLearning
+```
+
+
+## Usage
+```python
+from PerspectiveLearning import PerspectiveLearning
+
+# Example usage with dataset
+pl = PerspectiveLearning(dataset, features, target, perspectives)
+pl.train()
+predictions = pl.predict(new_data)
+```
