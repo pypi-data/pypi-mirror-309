@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+jkpackager/__init__.py
+jkpackager/__main__.py
+jkpackager/metadata.py
+jkpackager/packager.py
+jkpackager.egg-info/PKG-INFO
+jkpackager.egg-info/SOURCES.txt
+jkpackager.egg-info/dependency_links.txt
+jkpackager.egg-info/entry_points.txt
+jkpackager.egg-info/requires.txt
+jkpackager.egg-info/top_level.txt
