@@ -1,0 +1,3 @@
+[console_scripts]
+klez-tools = klez_tools.main:main
+
