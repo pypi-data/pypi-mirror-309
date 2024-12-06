@@ -1,0 +1,30 @@
+[project]
+    dependencies = [
+        "etcd3>=0.12.0",
+        "fastapi>=0.115.5",
+        "motor>=3.6.0",
+        "protobuf<=3.20.0",
+        "pydantic-settings>=2.6.1",
+        "pydantic>=2.9.2",
+        "typer>=0.13.1",
+        "uvicorn>=0.32.0",
+    ]
+    description = "定时任务api"
+    name = "cron-api"
+    readme = "README.md"
+    requires-python = ">=3.10"
+    version = "0.1.0"
+
+[tool.uv]
+    dev-dependencies = ["ipykernel>=6.29.5"]
+
+[tool.hatch.build]
+    packages = ["api", "core", "cron_api", "models", "services", "utils"]
+
+[build-system]
+    build-backend = "hatchling.build"
+    requires      = ["hatchling"]
+
+[project.scripts]
+    cron-api = "cron_api.main:cli"
+    hello    = "hello:main"
