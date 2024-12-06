@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+irhm/__init__.py
+irhm/__main__.py
+irhm/_main.py
+irhm/_qt.py
+irhm/icon.png
+irhm/ir.py
+irhm/release.py
+irhm/ui.py
+irhm.egg-info/PKG-INFO
+irhm.egg-info/SOURCES.txt
+irhm.egg-info/dependency_links.txt
+irhm.egg-info/entry_points.txt
+irhm.egg-info/requires.txt
+irhm.egg-info/top_level.txt
