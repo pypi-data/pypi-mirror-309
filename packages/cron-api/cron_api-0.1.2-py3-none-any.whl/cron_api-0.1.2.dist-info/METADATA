@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: cron-api
+Version: 0.1.2
+Summary: 定时任务api
+Requires-Python: >=3.10
+Requires-Dist: etcd3>=0.12.0
+Requires-Dist: fastapi>=0.115.5
+Requires-Dist: motor>=3.6.0
+Requires-Dist: protobuf<=3.20.0
+Requires-Dist: pydantic-settings>=2.6.1
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: typer>=0.13.1
+Requires-Dist: uvicorn>=0.32.0
+Description-Content-Type: text/markdown
+
+# Cron API
+
+自用 fastapi 项目,提供对应接口,通过命令行启动
+
+-   etcd 配置定时任务
+-   mongodb 查看任务执行日志
+
+#### 安装
+
+`pipx install cron-api` 或 `uv tool install cron-api`
+
+#### 运行
+
+`cron-api --help`
+
+```shell
+# CRON_API_ETCD_HOSTS="192.168.123.7:2379"
+# CRON_API_MONGO_URL="mongodb://192.168.123.7:27017"
+# CRON_API_MONGO_DB_NAME="cron"
+# 指定环境变量文件,环境变量文件需提供以上参数
+cron-api --dotenv-path .env
+# 还可以通过 --host, --port 指定fastapi启动地址和端口
+cron-api --host 0.0.0.0 --port 8000
+```

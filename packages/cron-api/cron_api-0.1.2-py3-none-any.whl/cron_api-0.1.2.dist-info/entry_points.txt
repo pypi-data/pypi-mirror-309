@@ -1,0 +1,2 @@
+[console_scripts]
+cron-api = cron_api.main:cli
