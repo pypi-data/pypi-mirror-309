@@ -1,0 +1,16 @@
+pfcschemas/__init__.py,sha256=rvtC5hsp2GHPTFYobgohtk9EAeFShLFOrI6Rx6L8idU,572
+pfcschemas/ajson.py,sha256=DYL8wJPOXcV23tuFcq4VeRWGz8RYwdbpBCGIzYZLP3o,1852
+pfcschemas/aresti.py,sha256=wPORL69WLpWerQaWbcE6-QyHNJCZ_FJfz1D7RoRlLck,1826
+pfcschemas/fcj.py,sha256=bh9MQ4SUm-HCiS6pYMwl30TJbucqhc0Cohb0o2x3xS0,4553
+pfcschemas/ma.py,sha256=buJtSCt3_bzd8NFTVVSSkysWY7j9XGkYJ_gQl4DG4Lc,1391
+pfcschemas/maninfo.py,sha256=eAsL4udEqXTyXt4QyqGOH64Sfes2LKEGXeUdo78wrlA,1360
+pfcschemas/positioning.py,sha256=2sdZGCh91fqN8jvxsplz4LQFcJVzQVWnSINVNgQpk70,2318
+pfcschemas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pfcschemas/sdef.py,sha256=V4P-c5qxQrcwHXeOUgNPaMPh8orUpQWqpj3KFP35j4M,1063
+pfcschemas/sinfo.py,sha256=za7mQf_0zklf3a2tLHRnQd86hK27l0z7J8YEAfIzo14,3016
+pfcschemas/utils/__init__.py,sha256=tza47mAaeg7ZTILB6YFIDW6IhWRbWqFnl8KnPhZ_w_k,58
+pfcschemas/utils/enum.py,sha256=xmtyjq6uizAJfDIyyzg9iAGQ9cIjm8DsB04OYmZGQtU,1023
+pfcschemas/utils/files.py,sha256=GBGcptZ3obpY8yvlzEOv7p5H3y9en58zGfTQWLn5Ans,346
+pfcschemas-0.1.2.dist-info/METADATA,sha256=8H3UOVkabwRFc9AO4FAhaVxMICGGi6_OHOEPQV7qMAQ,427
+pfcschemas-0.1.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pfcschemas-0.1.2.dist-info/RECORD,,
