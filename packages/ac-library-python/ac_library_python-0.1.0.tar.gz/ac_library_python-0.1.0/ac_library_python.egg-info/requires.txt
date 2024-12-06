@@ -1,0 +1,16 @@
+
+[benchmark]
+asv
+virtualenv
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[lint]
+flake8
+pep8-naming
+mypy
+
+[test]
+pytest
