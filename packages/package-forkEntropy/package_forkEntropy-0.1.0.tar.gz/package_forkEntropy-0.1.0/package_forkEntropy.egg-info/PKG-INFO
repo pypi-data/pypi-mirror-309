@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: package-forkEntropy
+Version: 0.1.0
+Summary: The implementation and test for the measurement method fork entropy.
+Home-page: https://github.com/WuXiangChen/ForkEntropy_ESE
+Author: XiangChenWu
+Author-email: ixc@smail.nju.edu.cn
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: json
+
+# ForkEntropy Package
+
+## Overview
+
+This package implements the calculation of the ForkEntropy metric. It provides tools to analyze and measure the diversity of OSS(Open Source Software Project) given specified data frame.
+
+## Directory Structure
+
+ForkEntropy/
+├── mainCode/
+│   ├── _init_.py        # Initialization file
+│   └── ForkEntropy.py   # Main implementation code
+├── test/
+│   └── testData/
+│       ├── commitChanges/      # Test data for commit changes
+│       ├── downloaded_PRrawdata/ # Downloaded PR raw data
+│       └── testResult/         # Test results
+│   └── test_example.py  # Test code
+├── License             # License information
+├── ReadMe              # This README file
+└── setup.py            # Setup/installation script
+
+## Installation
+
+To get more infomation about ForkEntropy package, clone the repository and navigate to the link:
+```bash
+git clone https://github.com/WuXiangChen/ForkEntropy_ESE
+cd ForkEntropy
+```
