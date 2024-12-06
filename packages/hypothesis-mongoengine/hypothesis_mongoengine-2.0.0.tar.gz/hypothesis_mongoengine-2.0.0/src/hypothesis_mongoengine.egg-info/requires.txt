@@ -1,0 +1,8 @@
+hypothesis
+mongoengine
+
+[dev]
+ruff
+
+[tests]
+pytest
