@@ -1,0 +1,8 @@
+pygame
+
+[dev]
+pytest
+black
+isort
+flake8
+pytest-cov

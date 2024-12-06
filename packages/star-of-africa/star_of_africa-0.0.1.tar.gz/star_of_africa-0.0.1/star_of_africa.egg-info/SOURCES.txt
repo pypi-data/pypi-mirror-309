@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+star_of_africa/__init__.py
+star_of_africa/play.py
+star_of_africa.egg-info/PKG-INFO
+star_of_africa.egg-info/SOURCES.txt
+star_of_africa.egg-info/dependency_links.txt
+star_of_africa.egg-info/requires.txt
+star_of_africa.egg-info/top_level.txt
+star_of_africa/game/__init__.py
+star_of_africa/game/board_layout.py
+star_of_africa/game/cities.py
+star_of_africa/game/players.py
+star_of_africa/game/roads.py

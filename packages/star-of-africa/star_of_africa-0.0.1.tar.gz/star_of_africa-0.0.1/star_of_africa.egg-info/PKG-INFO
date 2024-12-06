@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: star-of-africa
+Version: 0.0.1
+Summary: A python version of the Finish classic board game named 'Afrikan tähti' (Star of Africa)
+Author: Olivier Bougeant
+Project-URL: Homepage, https://github.com/Bougeant/star-of-africa
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# star-of-africa
+A python version of the Finish classic board game named "Afrikan tähti" (Star of Africa)
