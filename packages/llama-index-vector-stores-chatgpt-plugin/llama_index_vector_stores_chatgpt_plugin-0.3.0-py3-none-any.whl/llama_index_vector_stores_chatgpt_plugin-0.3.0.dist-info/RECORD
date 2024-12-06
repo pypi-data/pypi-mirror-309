@@ -1,0 +1,6 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/chatgpt_plugin/__init__.py,sha256=BTimNVqoSqhdFhqN0EnennP6lPFOiIqC8xoOcMQ2-eI,131
+llama_index/vector_stores/chatgpt_plugin/base.py,sha256=PWkCUkSJiyudSDQynhKDVZh2uN9vefVZDNoua49Mhvo,6093
+llama_index_vector_stores_chatgpt_plugin-0.3.0.dist-info/METADATA,sha256=3iRKYWbgMxs0SQKMs5jbsCYa_D3taonEgeYFBZ1EvdI,685
+llama_index_vector_stores_chatgpt_plugin-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_chatgpt_plugin-0.3.0.dist-info/RECORD,,
