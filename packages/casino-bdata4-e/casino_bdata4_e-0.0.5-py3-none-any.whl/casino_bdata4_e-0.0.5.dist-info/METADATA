@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: casino_bdata4_e
+Version: 0.0.5
+Summary: Casino games library created by a group of 4 university students.
+Author-email: joonroo <jon.rodrigueza@alumni.mondragon.edu>, ikerbenitod <iker.benitod@alumni.mondragon.edu>, "asier.lorenzo" <asier.lorenzoa@alumni.mondragon.edu>, "unai.penafiel" <unai.penafiel@alumni.mondragon.edu>
+Project-URL: Homepage, https://github.com/uunaii/Trabajo_Progra.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NOVEMBER 2024
+
+# Programming library creation.
+This project consists of the creation of a library that allows the user to perform the following operations:
+
+This library contains 4 main casino games: Roulette, Cards, Bingo and Dice. 
+
+######################
+
+- **1. Roulette:** The Roulette module simulates a complete game of roulette, allowing users to place different types of bets and spin a virtual wheel to determine the winning number. The module defines core elements, such as colors (red, black, and green for 0) assigned to each number and betting options like specific numbers, colors, dozens, halves (high/low), and even/odd. Upon spinning the wheel, a random number from 0 to 36 is generated. Players can choose from betting options, and the module evaluates whether they win based on the number and characteristics (like color or parity) of the spun result. Feedback is provided for the outcome of each bet, creating an engaging simulation of a roulette game within a virtual casino setting.
+
+######################
+
+- **2. Cards:** The Cards module in the library provides simulations for various card-based games, including implementations for Poker, Blackjack, and basic deck handling. This module supports key functionalities such as creating a standard deck of 52 cards with four suits (hearts, diamonds, clubs, and spades) and 13 values, shuffling, and dealing cards. In Blackjack, the game simulates rounds with the player and dealer, managing card values and handling special rules for aces. Players can hit or stand to aim for a score as close to 21 as possible without exceeding it, while the dealer plays under specific constraints. The Poker game allows for simple multi-player rounds, distributing five-card hands to each participant and enabling basic betting or standing options. A simplistic hand strength assessment is used to determine outcomes, with rudimentary decision-making for the AI opponent (machine). This module emphasizes card dealing, hand management, scoring, and basic strategy.
+
+######################
+
+- **3. Bingo:** The Bingo module allows users to simulate a complete bingo game experience, generating unique 3x5 matrix bingo cards with 15 random numbers for each player. It displays all cards, highlighting called numbers with color-coding (green for matched and red for unmatched). Players can select their card and watch as numbers are drawn from a randomized "bingo drum" of 90 numbers. The game tracks matches on the player's card, announcing a line (a complete row) and full bingo when achieved. Opponents' progress is also monitored, creating a realistic and interactive bingo game environment within the casino games library.
+
+######################
+
+- **4. Dice:** The Dice Game module simulates a classic dice-rolling game where users can place various types of bets on the outcome of a roll. Players can choose from different betting options, such as predicting a specific number, the sum of two dice rolls, whether the result will be high (large) or low (small), or whether the sum will be even or odd. The game then evaluates whether the player's bet is successful based on the randomly generated dice result, providing feedback on whether they won or lost their bet. This module creates an engaging, virtual dice game experience.
+
+######################
+
+
+Using the function **main_menu()** the user can choose the game they want to play and the library will start the game.
+
+      pip install casino-bdata4-e==0.0.5
+      from casino-bdata4-e import *
+      main_menu()
+
+
+ 
