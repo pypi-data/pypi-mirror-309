@@ -1,0 +1,3 @@
+[openfund.application.plugin]
+up=openfund_plugin_up.plugin:UpApplicationPlugin
+
