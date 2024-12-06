@@ -1,0 +1,123 @@
+# Schwarm
+
+Opinionated Agent Framework inspired by OpenAI's swarm.
+
+Incredibly simple yet amazingly deep.
+
+## Features
+
+- LiteLLM Backend
+
+  - use 100s of LLM provider
+  - budget tracking
+  - token tracking
+  - caching
+
+- Extend the capabilities of your agents with "Providers"
+
+  - A `zep_provider`integrates `zep` into an agent, giving it near infinite memory with athe help of knowledge graphs
+  - An `api_provider` makes your agent have its own API
+  - and many more...
+
+- Don't waste your time designing your agent state machine in such detail you build a static service by accident
+
+  - Let your agents be agents!
+  - Give them dynamic instructions
+  - Give them dynamic functions/tools
+  - Let them figure out the rest
+
+- Extensive logging and visualization
+
+  - Tell your agents to wait for your ok after every step
+  - log everything that happens, presented in an actual readable and interpretable way
+  - modern web ui coming soon...
+
+- Lightweight with no overhead
+  - Agents are not real objects in your memory calling each other and being happy and all while wasting memory...
+  - It's basically just a single one that switches its configuration everytime it is called
+
+## Quickstart
+
+1. `pip install schwarm`
+
+2. `export OPENAI_API_KEY=sk-xxx`
+
+3. Create your agent
+
+```python
+stephen_king_agent = Agent(name="mr_stephen_king", provider_config=LiteLLMConfig(enable_cache=True))
+```
+
+Mr. Stephen King is ready to rock!
+
+4. Tell it what to do with dynamic instruction that can change every time it's the agent's turn again
+
+```python
+def instruction_stephen_king_agent(context_variables: ContextVariables) -> str:
+    """Return the instructions for the stephen king agent."""
+    instruction = """
+      You are one of the best authors on the world. you are tasked to write your newest story.
+      Execute "write_batch" to write something down to paper.
+      Execute "remember_things" to remember things you aren't sure about or to check if something is at odds with previous established facts.
+
+    """
+    if "book" in context_variables:
+        book = context_variables["book"]
+        addendum = "\n\n You current story has this many words right now (goal: 10000): " + str(len(book) / 8)
+
+        memory = zep.memory.get("user_agent", min_rating=MIN_FACT_RATING)
+        facts = f"\n\n\nRelevant facts about the story so far:\n{memory.relevant_facts}"
+        instruction += addendum + facts
+    return instruction
+
+stephen_king_agent.instructions = instruction_stephen_king_agent
+```
+
+Carry objects and other data with the help of context_variables.
+Will re-execute every time it is the agent's turn!
+
+5. Define tools!
+
+```python
+def write_batch(context_variables: ContextVariables, text: str) -> Result:
+    """Write down your story."""
+    zep.memory.add(session_id="user_agent", messages=split_text(text))
+    context_variables["book"] += text
+    return Result(value=f"{text}", context_variables=context_variables, agent=stephen_king_agent)
+
+
+def remember_things(context_variables: ContextVariables, what_you_want_to_remember: str) -> Result:
+    """If you aren't sure about something that happened in the story, use this tool to remember it."""
+    response = zep.memory.search_sessions(
+        text=what_you_want_to_remember,
+        user_id=user_id,
+        search_scope="facts",
+        min_fact_rating=MIN_FACT_RATING,
+    )
+    result = ""
+    if response.results:
+        for res in response.results:
+            result += f"\n{res.fact}"
+
+    return Result(value=f"{result}", context_variables=context_variables, agent=stephen_king_agent)
+
+
+stephen_king_agent.functions = [write_batch, remember_things]
+```
+
+Give your agent skills it wouldn't have otherwise! Also pass the stick to other agents. Just not in this example.
+Mr. King works alone.
+
+6. Kick off!
+
+```python
+input = """
+Write a story set in the SCP universe. It should follow a group of personel of the SCP foundation, and the adventures their work provides.
+The story should be around 10000 words long, and should be a mix of horror and science fiction.
+Start by create an outline for the story, and then write the first chapter.
+"""
+
+response = Schwarm().quickstart(stephen_king_agent, input)
+```
+
+Let your agent system loose! But don't be afraid to lose all your money, because with this quickstart configuration the agent systen will ask for your approval before it is making a money-consuming task.
