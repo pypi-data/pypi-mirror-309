@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: cp210x-scanner
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/kliskatek/cp210x-scanner#readme
+Project-URL: Issues, https://github.com/kliskatek/cp210x-scanner/issues
+Project-URL: Source, https://github.com/kliskatek/cp210x-scanner
+Author-email: Ibon Zalbide <ibon.zalbide@kliskatek.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: dataclasses-json
+Description-Content-Type: text/markdown
+
+# cp210x-scanner
+
+[![PyPI - Version](https://img.shields.io/pypi/v/cp210x-scanner.svg)](https://pypi.org/project/cp210x-scanner)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cp210x-scanner.svg)](https://pypi.org/project/cp210x-scanner)
+
+-----
+*Python scanner for CP210x devices wrapping Manufacturing DLL*
+
+## Table of Contents
+
+- [Summary](#summary)
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install cp210x-scanner
+```
+
+## License
+
+`cp210x-scanner` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

@@ -1,0 +1,17 @@
+cp210x_scanner/CP210xManufacturing.py,sha256=OgvY2fMG2aH7wjKmmrcOyTfgdinMOkt3RhlX_XIn9RY,22396
+cp210x_scanner/CP210xRuntime.py,sha256=UGiY797Nlajt1wMj-XTHXCYRaa4VqV8HhUzrBK67hq0,6577
+cp210x_scanner/__about__.py,sha256=Ui-lcuyQA1vzVhbpIKElTYMJNcDG2DzyYFo3qjGkqaY,126
+cp210x_scanner/__init__.py,sha256=2k_Kihk3MJUQpeVR2sYTMFfHqWWfT70p1_fXozxSIPE,103
+cp210x_scanner/scanner.py,sha256=PL5p43qnDlP5fLsbo2-jFOeHu9e4NH2RmZDSZukpbIY,2894
+cp210x_scanner/lib/windows/arm/CP210xManufacturing.dll,sha256=DM7F7NV3GnIMhpcmZYkEA0UP_J9GmJUivtFrHBgw-dg,718424
+cp210x_scanner/lib/windows/arm/CP210xRuntime.dll,sha256=BBfsAmEe7mZO0eqx7VE4YIkpQGJR8SFQwC1NwYl1MTk,1121880
+cp210x_scanner/lib/windows/arm64/CP210xManufacturing.dll,sha256=h69RiBmUM2mvshuC1GHD3aVb0cinz9I9d8cnzuuhi7g,883800
+cp210x_scanner/lib/windows/arm64/CP210xRuntime.dll,sha256=9w0j0JsGzALA-MwqlS5X7UQdHgYJm6Xqieq9YhEEXnY,1226840
+cp210x_scanner/lib/windows/x64/CP210xManufacturing.dll,sha256=JO85-2bM7bnRqODuWB4cgnENmHLh-FXvnsentb18vu0,824920
+cp210x_scanner/lib/windows/x64/CP210xRuntime.dll,sha256=IyRCr0TCmZuHrfToZEHP34YvLy_8JQv2Y2piBNduRkE,1036376
+cp210x_scanner/lib/windows/x86/CP210xManufacturing.dll,sha256=ZccCVsMKaajNhcaf5PzoggbX3Bz6ibL_Wy_RuWt2R_k,716376
+cp210x_scanner/lib/windows/x86/CP210xRuntime.dll,sha256=GFKzgPj3c7u37yxfqyyO8I2f7FEnj98zNrxbJL2lq_M,503896
+cp210x_scanner-0.0.1.dist-info/METADATA,sha256=cKEU7ZS2Hf1evXzmP11ooQbVj3wQlY0XqfG39fFgA0A,1523
+cp210x_scanner-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+cp210x_scanner-0.0.1.dist-info/licenses/LICENSE.txt,sha256=pMK0A6Cg9lbevgcmGeqw1RBOsOeIHb12IcpnLx_pO8M,1101
+cp210x_scanner-0.0.1.dist-info/RECORD,,
