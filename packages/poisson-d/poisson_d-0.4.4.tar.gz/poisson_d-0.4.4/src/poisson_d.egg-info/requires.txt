@@ -1,0 +1,9 @@
+typer
+toml
+imageio==2.36.0
+
+[dev]
+coverage
+mypy
+pytest
+ruff
