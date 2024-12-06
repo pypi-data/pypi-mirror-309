@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pdfa3extractor
+Version: 2.0
+Summary: A tool to extract embedded XML files from PDF/A-3 documents
+Home-page: https://github.com/PierreGode/pdfa3extractor
+Author: PierreGode
+Author-email: pierre@gode.one
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pymupdf
+
+# pdfa3extractor
+
+usage: pdfa3extractor [-h] [--pdf_path PDF_PATH] [--base64 BASE64] [--base64_file BASE64_FILE] [--output_folder OUTPUT_FOLDER]
+
+Example
+
+```bash
+pdfa3extractor --base64_file request_payload.json
+```
+
+
+
+
+| **Feature** | **Supported** | 
+| --- | --- | 
+| Direct PDF Input | Yes | 
+| Base64-Encoded Input | Yes | 
+| Base64 JSON File Input | Yes | 
+| Error Handling | Yes  | 
+| Temporary File Handling | Yes | 
+| Output Folder Option | Yes | 
+| In-Memory ZIP File Creation | Yes |
