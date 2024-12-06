@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+prismio/__init__.py
+prismio/main.py
+prismio/rednerer.py
+prismio.egg-info/PKG-INFO
+prismio.egg-info/SOURCES.txt
+prismio.egg-info/dependency_links.txt
+prismio.egg-info/entry_points.txt
+prismio.egg-info/requires.txt
+prismio.egg-info/top_level.txt
+tests/test.py
+tests/tests.py

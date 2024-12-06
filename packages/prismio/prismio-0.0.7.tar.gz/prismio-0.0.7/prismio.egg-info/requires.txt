@@ -1,0 +1,9 @@
+flask
+colorama
+zenora
+customtkinter
+tqdm
+alive_progress
+moviepy
+rabity
+keyboard
