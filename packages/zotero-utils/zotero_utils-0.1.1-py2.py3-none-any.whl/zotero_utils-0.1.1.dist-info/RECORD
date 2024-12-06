@@ -1,0 +1,16 @@
+zotero_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zotero_utils/__main__.py,sha256=2RsEIj8PBVgseh9Ljho4BDlJsrzsrxgPoUOBXZ3Mtkk,135
+zotero_utils/commands.py,sha256=C_G5T6mJWn7-F-9SbpOoWVxo-D927yAfZHjp-qIiu3w,3873
+zotero_utils/Classes/creator.py,sha256=J4lHMSE7gLW90gZ_1v74PmXf5j7l8oXOV-Bm7kpfD-E,865
+zotero_utils/Classes/item.py,sha256=LA1y51-58SCyodH0ruZ3Ur9Vacfd4xWF_HxXrtmJTtI,4117
+zotero_utils/Classes/publisher.py,sha256=ecA9TyD7pCMC6gH1tMuK7TPQ3nNrl7SC10iD4UZkvRU,96
+zotero_utils/Counts/counts.py,sha256=unrp3L99Z7GoAVCPi4hBEBDE-GpeVwqOVNiAp8NPVLk,3214
+zotero_utils/Items/get_all_items.py,sha256=5pEfd9LoDmHXlUsCzjFLqzg40lTN3klokrWvPkxphYo,317
+zotero_utils/Parse_PDFs/extract_references.py,sha256=5tQdwTvLBYWub9qslUmzg615eOAMMDB7OK9Kul3xmLw,3681
+zotero_utils/Parse_PDFs/pdf2md.py,sha256=yQQMHB7c-9zCeR4X9aWoilqNNhS_s7LkiHKdYN-w9n0,113
+zotero_utils/Visualizations/pie_chart.py,sha256=GqR8Ku6eA5NillzRblaMnN1gU7WkvajgBbqRyaR2OEs,1366
+zotero_utils/Visualizations/stem_plot.py,sha256=L0xXeNJAXvmQF9vg_DvbUjAZAhBX_btGw5gWcB6S1dc,7154
+zotero_utils-0.1.1.dist-info/METADATA,sha256=AOy2uMz1Jc84x2tVF3Ot-AmDiioB5XJsBeKaN9Aitqs,392
+zotero_utils-0.1.1.dist-info/WHEEL,sha256=aO3RJuuiFXItVSnAUEmQ0yRBvv9e1sbJh68PtuQkyAE,105
+zotero_utils-0.1.1.dist-info/entry_points.txt,sha256=HbUrxIVuHdhSUHKuN5WFlaRitznQNa_eo4OeXeTYh4Y,60
+zotero_utils-0.1.1.dist-info/RECORD,,

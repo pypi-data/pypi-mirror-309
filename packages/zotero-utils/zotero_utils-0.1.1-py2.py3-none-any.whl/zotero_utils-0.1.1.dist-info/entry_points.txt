@@ -1,0 +1,2 @@
+[console_scripts]
+zotero-utils = zotero_utils.commands:main
