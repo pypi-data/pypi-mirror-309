@@ -1,0 +1,5 @@
+spotipy
+tabled
+glom
+i2
+pydantic
