@@ -1,0 +1,14 @@
+core_pro/GDrive.py,sha256=9wznwpbysNrNXOsli6_Wt-Ykr_8kH5K6c8wOMO_obQo,7738
+core_pro/GMail.py,sha256=ie9evyhI0xmo-MQQCjGnD2YMmOF1THpHNmzISlAoOf0,10410
+core_pro/GSheet.py,sha256=9a_uIqIx04FwJMrZPg_Sjyt5J5XfByCOI6T7iNVk_7A,9656
+core_pro/GSlide.py,sha256=6kig3dTZaOq6KuaqmZZgGjPyowws0Tk1b-U3GJDhbEg,3304
+core_pro/__init__.py,sha256=RxIDLwdkDRXCDaqLc6kqIakv2hheKPm9vN2-LnkqTNk,221
+core_pro/cloud.py,sha256=oWQJ-rTHwTZzYj-6jaWc1sQl2pwTj2dbKOdQOOl9NKA,3570
+core_pro/config.py,sha256=e86lQJu7t9-PdPN_yndit9-fHPRtSr1giiWsHKyLIag,2021
+core_pro/oop_sql.py,sha256=woDS9s3PZA4tA8ClX3UDo4boK3pUYcsbOji5tmxQxjk,3696
+core_pro/seatalk_bot.py,sha256=5GTbLt6XXkILxk7N6QtQWeYA_6E5SDIeSkhxiuyyBRI,896
+core_pro/ultilities.py,sha256=aT6Y_evZd4Hb0rqDkJ3qfk2vq1pEIfdArcYPcSjkVxw,6098
+core_pro-0.0.87.dist-info/METADATA,sha256=aRBZJIPo555_nfyUEZVmvilMyoJsednuJgeXMgBRKXU,3653
+core_pro-0.0.87.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+core_pro-0.0.87.dist-info/licenses/LICENSE,sha256=tjSp5TsZzvQOw40GZYiW7zmWvfZbyq_oSdTWVx35rYk,1054
+core_pro-0.0.87.dist-info/RECORD,,
