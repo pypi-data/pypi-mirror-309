@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: packaging-tutorial-homeless
+Version: 0.1.0
+Summary: Homeless: tested in the toughest times. ✅
+Project-URL: Repository, https://gitlab.com/redtk/packaging_tutorial
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Homeless Framework
+
+Tested in the toughest times. ✅
