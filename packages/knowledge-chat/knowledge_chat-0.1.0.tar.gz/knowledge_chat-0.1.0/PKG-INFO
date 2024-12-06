@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: knowledge-chat
+Version: 0.1.0
+Summary: A framework to enable retrieval augmented generation (RAG) with knowledge graphs for chat applications.
+Project-URL: Homepage, https://github.com/Midnighter/knowledge-chat
+Project-URL: Documentation, https://knowledge-chat.readthedocs.io
+Project-URL: Source Code, https://github.com/Midnighter/knowledge-chat
+Project-URL: Bug Tracker, https://github.com/Midnighter/knowledge-chat/issues
+Project-URL: Download, https://pypi.org/project/knowledge-chat/#files
+Author-email: "Moritz E. Beber" <midnighter@posteo.net>
+License: Apache-2.0
+Keywords: chainlit,event-sourcing,genai,genai-chatbot,graph-rag,knowledge-graph,langchain,llm,neo4j,rag
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: eventsourcing~=9.3
+Requires-Dist: langchain-community~=0.3
+Requires-Dist: langchain~=0.3
+Requires-Dist: neo4j~=5.26
+Requires-Dist: pydantic-settings~=2.6
+Requires-Dist: pydantic~=2.9
+Requires-Dist: structlog~=24.4
+Provides-Extra: ollama
+Requires-Dist: langchain-ollama~=0.2; extra == 'ollama'
+Provides-Extra: openai
+Requires-Dist: langchain-openai~=0.2; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# Knowledge Chat
+
+| |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/knowledge-chat.svg)](https://pypi.org/project/knowledge-chat/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/knowledge-chat.svg)](https://pypi.org/project/knowledge-chat/) [![Documentation](https://readthedocs.org/projects/knowledge-chat/badge/?version=latest)](https://knowledge-chat.readthedocs.io/en/latest/?badge=latest)                                                                                                                                                                              |
+| Meta | [![Apache-2.0](https://img.shields.io/pypi/l/knowledge-chat.svg)](LICENSE) [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](.github/CODE_OF_CONDUCT.md) [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/) [![Code Style Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) [![Linting: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) |
+| Automation |                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+_A framework to enable retrieval augmented generation (RAG) with knowledge graphs for chat applications._
+
+## Copyright
+
+- Copyright © 2024 Moritz E. Beber.
+- Free software distributed under the [Apache Software License 2.0](./LICENSE).
+
