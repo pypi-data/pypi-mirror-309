@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mlops/__init__.py
+mlops/config.py
+mlops/dataset.py
+mlops/modeling/__init__.py
+mlops/modeling/train.py
+mlops_ivan_pleshakov.egg-info/PKG-INFO
+mlops_ivan_pleshakov.egg-info/SOURCES.txt
+mlops_ivan_pleshakov.egg-info/dependency_links.txt
+mlops_ivan_pleshakov.egg-info/top_level.txt
+tests/test_dataset.py
+tests/test_model.py
