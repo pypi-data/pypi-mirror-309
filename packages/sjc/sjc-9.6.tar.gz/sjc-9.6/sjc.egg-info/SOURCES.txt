@@ -1,0 +1,7 @@
+main.py
+setup.py
+sjc.egg-info/PKG-INFO
+sjc.egg-info/SOURCES.txt
+sjc.egg-info/dependency_links.txt
+sjc.egg-info/requires.txt
+sjc.egg-info/top_level.txt
