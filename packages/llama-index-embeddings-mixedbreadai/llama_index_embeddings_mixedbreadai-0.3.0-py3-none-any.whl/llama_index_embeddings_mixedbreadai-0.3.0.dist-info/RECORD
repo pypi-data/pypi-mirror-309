@@ -1,0 +1,6 @@
+llama_index/embeddings/mixedbreadai/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/embeddings/mixedbreadai/__init__.py,sha256=dib0p7I3UdPw5EkOFvIBat-4rZLDpfy0RInV9tXDGVI,206
+llama_index/embeddings/mixedbreadai/base.py,sha256=9mIn5Ca3gOl1VU9B125EgJ3emMVaslJ1lqjflpG_Yn4,8764
+llama_index_embeddings_mixedbreadai-0.3.0.dist-info/METADATA,sha256=MwwPyuwciEuykN1EnXCMka-blbexJyIRE6Txx0_yED4,726
+llama_index_embeddings_mixedbreadai-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_mixedbreadai-0.3.0.dist-info/RECORD,,
