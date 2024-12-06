@@ -1,0 +1,2 @@
+[console_scripts]
+sarkun = sarkun.main:main
