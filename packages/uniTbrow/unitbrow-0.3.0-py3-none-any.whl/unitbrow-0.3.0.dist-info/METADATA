@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: uniTbrow
+Version: 0.3.0
+Summary: Stop raising your brow at unit conversions
+Project-URL: Homepage, https://github.com/Sub6Resources/uniTbrow
+Project-URL: Issues, https://github.com/Sub6Resources/uniTbrow/issues
+Author-email: Matthew Whitaker <sub6resources@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# uniTbrow
+
+[![PyPI version shields.io](https://img.shields.io/pypi/v/uniTbrow.svg)](https://pypi.python.org/pypi/uniTbrow/)
+
+Stop raising your brow at unit conversions.
