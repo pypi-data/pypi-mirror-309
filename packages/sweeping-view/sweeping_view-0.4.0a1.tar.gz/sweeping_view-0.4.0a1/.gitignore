@@ -1,0 +1,8 @@
+env/
+__pycache__
+dist/
+*.egg-info
+MANIFEST
+sweeping_view/_version.py
+.tox
+.python-version
