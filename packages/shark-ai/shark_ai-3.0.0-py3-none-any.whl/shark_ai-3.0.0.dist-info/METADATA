@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shark-ai
+Version: 3.0.0
+Summary: SHARK AI meta package
+Author: SHARK Authors
+License: Apache-2.0
+Project-URL: Repository, https://github.com/nod-ai/shark-ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: iree-base-compiler==3.0.*
+Requires-Dist: iree-base-runtime==3.0.*
+Requires-Dist: iree-turbine==3.0.*
+Requires-Dist: shortfin==3.0.0
+Provides-Extra: apps
+Requires-Dist: shortfin[apps]; extra == "apps"
+Provides-Extra: onnx
+Requires-Dist: iree-base-compiler[onnx]; extra == "onnx"
+
+# SHARK AI meta package
+
+Meta package to install `shortfin` and compatible IREE packages.
