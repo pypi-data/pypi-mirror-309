@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: robotframework-awslibrary
+Version: 0.0.1
+Summary: A python package to create test cases for AWS services using Robot Framework
+Home-page: https://github.com/Hespius/robotframework-awslibrary
+Author: Vinicius Henrique Especoto
+License: MIT Licence
+Keywords: robotframework testing testautomation aws boto3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# robotframework-awslibrary
+
+`robotframework-awslibrary` Ã© uma biblioteca Python para criar casos de teste para serviÃ§os da AWS usando o Robot Framework.
+
+## InstalaÃ§Ã£o
+
+Para instalar a biblioteca, vocÃª pode usar o `pip`:
+
+```sh
+pip install robotframework-awslibrary
+
+```
+
+## Requisitos
+Python 3.10+
+
+Robot Framework 7.1.1+
+Boto3 1.35.62+
+Robot Framework PythonLibCore 4.4.1+
+
+## Uso
+Para usar a biblioteca em seus testes do Robot Framework, vocÃª pode importar a biblioteca no seu arquivo .robot:
+
+```robot
+*** Settings ***
+Library    AWSLibrary
+
+*** Test Cases ***
+Create a S3 bucket
+    ${bucket_name}    S3 create bucket    test-robotframework-s3-bucket
+    Should Be Equal As Strings    test-robotframework-s3-bucket    ${bucket_name}
+
+Delete a S3 bucket
+    S3 delete bucket    test-robotframework-s3-bucket
+
+Verify a S3 bucket exists
+    S3 create bucket    test-robotframework-s3-bucket
+    S3 Should Exists    test-robotframework-s3-bucket
+    S3 delete bucket    test-robotframework-s3-bucket
+
+Put a Object in a S3 bucket
+    S3 create bucket    test-robotframework-s3-bucket
+    S3 put object    test-robotframework-s3-bucket    test-robotframework-s3-object
+```
+
+## ContribuiÃ§Ã£o
+ContribuiÃ§Ãµes sÃ£o bem-vindas! Sinta-se Ã  vontade para abrir issues e pull requests.
+
+## LicenÃ§a
+Este projeto estÃ¡ licenciado sob a licenÃ§a MIT. Veja o arquivo LICENSE para mais detalhes.
+
