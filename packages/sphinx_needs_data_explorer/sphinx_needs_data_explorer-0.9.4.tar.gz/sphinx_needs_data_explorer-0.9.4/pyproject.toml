@@ -1,0 +1,69 @@
+[project]
+license = {file = "LICENSE"}
+
+[tool.poetry]
+name = "sphinx_needs_data_explorer"
+version = "0.9.4"
+description = "Sphinx-needs-data-explorer is a Sphinx extension to visualize Sphinx-Needs data"
+authors = ["Michael Parkes <mparkes@post.cz>"]
+readme = "README.rst"
+license = "MIT"
+#homepage = "https://python-poetry.org/"
+repository = "https://github.com/mi-parkes/sphinx-needs-data-explorer"
+documentation = "https://mi-parkes.github.io/sphinx-needs-data-explorer/"
+exclude = [
+    "build/*",
+    "dist/*",
+    "doc/*",
+    "myvenv/*"
+]
+
+[tool.poetry.dependencies]
+python              = "^3.10"
+Sphinx              = ">=6.1.3"
+
+[tool.poetry.group.dev.dependencies]
+taskipy             = ">=1.11.0"
+black               = ">=24.1.0"
+
+[tool.poetry.group.doc.dependencies]
+sphinx-book-theme       = "1.0.1"
+myst_parser             = ">=2.0.0"
+GitPython               = ">=3.1.10"
+sphinxcontrib-plantuml  = "0.24"
+sphinx-needs            = "2.0.0"
+sphinx-copybutton       = "0.5.2"
+sphinx_mindmap          = ">=0.5.0"
+pillow                  = "11.0.0"
+sphinx-autobuild        = "*"
+
+#sphinx-needs-data-explorer= {path = "./", develop = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+help      = { cmd = "task --list", help="Show this help" }
+doc       = { cmd = "cd doc && sphinx-build -M html source build", help = "Generate the package documentation using Sphinx." }
+black     = { cmd = "poetry run -vvv black .", help = "Apply the Black code formatter to the package's source tree." }
+clean     = { cmd = "rm -rf build dist doc/build", help = "Remove all intermediate and output files." }
+doc-clean = { cmd = "rm -rf doc/build",  help = "Remove all intermediate and output documentation files." }
+doc-preview = { cmd = "sphinx-autobuild doc/source doc/build/html", help = "Preview your documentation RST files rendering"}
+set-readme-refs = { cmd = "sed -i 's/41b530aa785343e4d378f0a5664ce520b158ed16/41b530aa785343e4d378f0a5664ce520b158ed16/g' README.md" }
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = 'sphinx_needs_data_explorer\/.*\.pyi?$'
+extend-exclude = '''
+/(
+  # Exclude Example
+  tests
+  | build/
+  | dist/
+  | myvenv/
+  | profiling/
+  | scripts/generate_schema.py
+)
+'''
