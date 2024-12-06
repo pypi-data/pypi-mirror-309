@@ -1,0 +1,31 @@
+.DS_Store
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python stuff
+.venv
+**/__pycache__
+data/coverage_report
+.coverage
+.pytest_cache
+htmlcov
+coverage.xml
+build
+dist
+**/*.egg-info
+
+*.local
+LOCAL_NOTES.md
+parse.py
