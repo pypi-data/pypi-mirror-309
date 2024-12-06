@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_win_geometry.py
+winzy_win_geometry/__init__.py
+winzy_win_geometry.egg-info/PKG-INFO
+winzy_win_geometry.egg-info/SOURCES.txt
+winzy_win_geometry.egg-info/dependency_links.txt
+winzy_win_geometry.egg-info/entry_points.txt
+winzy_win_geometry.egg-info/requires.txt
+winzy_win_geometry.egg-info/top_level.txt

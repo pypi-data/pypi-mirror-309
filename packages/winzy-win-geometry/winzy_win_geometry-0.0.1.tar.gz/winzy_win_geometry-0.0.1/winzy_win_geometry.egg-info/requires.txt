@@ -1,0 +1,6 @@
+winzy
+pyautogui
+pygetwindow
+
+[test]
+pytest

@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: winzy-win-geometry
+Version: 0.0.1
+Summary: Get window geometry as a percentage of screen size.
+Author: Sukhbinder Singh
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/sukhbinder/winzy-win-geometry
+Project-URL: Changelog, https://github.com/sukhbinder/winzy-win-geometry/releases
+Project-URL: Issues, https://github.com/sukhbinder/winzy-win-geometry/issues
+Project-URL: CI, https://github.com/sukhbinder/winzy-win-geometry/actions
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: winzy
+Requires-Dist: pyautogui
+Requires-Dist: pygetwindow
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# winzy-win-geometry
+
+[![PyPI](https://img.shields.io/pypi/v/winzy-win-geometry.svg)](https://pypi.org/project/winzy-win-geometry/)
+[![Changelog](https://img.shields.io/github/v/release/sukhbinder/winzy-win-geometry?include_prereleases&label=changelog)](https://github.com/sukhbinder/winzy-win-geometry/releases)
+[![Tests](https://github.com/sukhbinder/winzy-win-geometry/workflows/Test/badge.svg)](https://github.com/sukhbinder/winzy-win-geometry/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/sukhbinder/winzy-win-geometry/blob/main/LICENSE)
+
+Get window geometry as a percentage of screen size.
+
+## Installation
+
+First configure your Winzy project [to use Winzy](https://github.com/sukhbinder/winzy).
+
+Then install this plugin in the same environment as your Winzy application.
+```bash
+pip install winzy-win-geometry
+```
+## Usage
+
+Usage is 
+
+```bash
+winzy wingeo -t "Terminal"
+```
+
+![winzy wingeo demo](wingeo-demo.gif)
+
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+```bash
+cd winzy-win-geometry
+python -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+python -m pytest
+```
