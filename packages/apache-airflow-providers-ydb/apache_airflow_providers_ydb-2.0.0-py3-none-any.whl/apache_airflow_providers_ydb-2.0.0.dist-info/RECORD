@@ -1,0 +1,14 @@
+airflow/providers/ydb/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/ydb/__init__.py,sha256=pTXxf407YLk7Cth6QeUNe-5gtQ_1NTuDS6Tq_yWPC7o,1490
+airflow/providers/ydb/get_provider_info.py,sha256=gU565C29U2f4K5GDScPft_Sx9Qfmlb8h2U1qiEsyMv4,2302
+airflow/providers/ydb/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/ydb/hooks/ydb.py,sha256=obYyowKokaZt-NUy7fgonHMdywE082U03WpqAZmTO_8,9481
+airflow/providers/ydb/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/ydb/operators/ydb.py,sha256=KHWZeq4HYGrpgDX_Awb0cyPFUU4QNqeOIBO2dPVXupE,2116
+airflow/providers/ydb/utils/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/ydb/utils/credentials.py,sha256=lqk8UjTOz_bWiWiemAuX6JivGAE3226-kCKfxolfju0,2982
+airflow/providers/ydb/utils/defaults.py,sha256=Pz-E61fjx-R6xnkx9_M2MugDLA8UGkEH_RPeACPLhr4,919
+apache_airflow_providers_ydb-2.0.0.dist-info/entry_points.txt,sha256=2mmvF497fw9GDBysA9pU_Vos8mf4HluxUkrDi46OYp8,99
+apache_airflow_providers_ydb-2.0.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+apache_airflow_providers_ydb-2.0.0.dist-info/METADATA,sha256=Ad98Ci3l4q0s4QtnsADuUM9XNtrEz1ULV498ndXM6Ns,6089
+apache_airflow_providers_ydb-2.0.0.dist-info/RECORD,,
