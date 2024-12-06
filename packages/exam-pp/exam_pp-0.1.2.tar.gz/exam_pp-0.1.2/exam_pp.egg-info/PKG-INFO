@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: exam_pp
+Version: 0.1.2
+Summary: RUBRIC Autograder Workbench for evaluating retrieval, generation, and RAG information systems
+Author-email: Laura Dietz <dietz@cs.unh.edu>, Ben Gamari <ben@smart-cactus.org>, Naghmeh Farzi <Naghmeh.Farzi@unh.edu>
+Requires-Python: >=3.8
+Requires-Dist: pydantic~=2.6
+Requires-Dist: fuzzywuzzy~=0.18
+Requires-Dist: nltk~=3.8
+Requires-Dist: pylatex~=1.4
+Requires-Dist: scipy
+Requires-Dist: openai~=1.11
+Requires-Dist: requests~=2.31
+Requires-Dist: trec-car-tools~=2.6
+Requires-Dist: torch~=2.1
+Requires-Dist: transformers~=4.37

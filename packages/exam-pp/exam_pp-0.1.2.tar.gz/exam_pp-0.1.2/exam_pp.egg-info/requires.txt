@@ -1,0 +1,10 @@
+pydantic~=2.6
+fuzzywuzzy~=0.18
+nltk~=3.8
+pylatex~=1.4
+scipy
+openai~=1.11
+requests~=2.31
+trec-car-tools~=2.6
+torch~=2.1
+transformers~=4.37
