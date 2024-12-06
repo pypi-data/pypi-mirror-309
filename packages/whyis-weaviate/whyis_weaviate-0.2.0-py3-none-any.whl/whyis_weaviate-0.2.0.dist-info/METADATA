@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: whyis-weaviate
+Version: 0.2.0
+License-File: LICENSE
+Requires-Dist: whyis
+Requires-Dist: sentence-transformers
+Requires-Dist: scipy
+Requires-Dist: numpy
+

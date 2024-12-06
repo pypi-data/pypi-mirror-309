@@ -1,0 +1,6 @@
+{{app.databases.weaviate.get(
+    args.get('space',None),
+    subject=this.identifier,
+    graph=args.get("graph", None)
+  ) | tojson
+}}

@@ -1,0 +1,15 @@
+whyis_weaviate/__init__.py,sha256=HFDNHRXeKPHmhI_dDwieMKoEfJEo0V_PNrxORuoyRNA,51
+whyis_weaviate/_version.py,sha256=rxCfao9nryQ6s9mHBd7ThMmfEY9mql-pogjl0uWnulA,71
+whyis_weaviate/plugin.py,sha256=rojLtsagWVmPTFMgFfhr9HLrJ8ve4ganWQzAW4IqjXw,13297
+whyis_weaviate/entity_linker/__init__.py,sha256=2vYVGD99Y3K8WwzEGCF8L16M4DLwp_vpKVvZ50pSsn4,29
+whyis_weaviate/entity_linker/entity_linker.py,sha256=jI_H_TGbuacAvvDmD-ZQ0DaN89jRxfJ1eKC7Sd9rrKE,5854
+whyis_weaviate/templates/resource_get.json,sha256=LKUQlNuZB8l4NmMHqHGW0SqYKUhXfMR3z5EJX25K5b4,137
+whyis_weaviate/templates/resource_search.json,sha256=Azx6KGy92mSElO2SuUN3dJXADgSqLq50K_vB93YrePg,232
+whyis_weaviate/templates/space_get.json,sha256=zv-XkssvUpsLGQA4N6iB-pLTM6hoH4-d_ojaFkmxJQg,138
+whyis_weaviate/templates/space_search.json,sha256=BunZAujrJC1C1IxVLruFPdXrH4a4GmBeUsSQL_r5Ll0,195
+whyis_weaviate-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+whyis_weaviate-0.2.0.dist-info/METADATA,sha256=xh7Pmcj0AxMOD4yilaF6wjWBuGUeb8s7TAHWxTex8nY,181
+whyis_weaviate-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+whyis_weaviate-0.2.0.dist-info/entry_points.txt,sha256=gHQBiM-mx_uHpBxHtsBYZUhgekcEmhcMO68WG1TxU7E,144
+whyis_weaviate-0.2.0.dist-info/top_level.txt,sha256=mvZ8GopKJhK2-KRlXZuzuQW4PwWFRo7PPZe5Y12ZW6A,15
+whyis_weaviate-0.2.0.dist-info/RECORD,,
