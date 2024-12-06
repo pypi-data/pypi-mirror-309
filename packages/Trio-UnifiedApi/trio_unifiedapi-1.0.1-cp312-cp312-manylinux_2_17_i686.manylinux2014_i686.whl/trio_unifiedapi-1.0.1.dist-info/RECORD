@@ -1,0 +1,6 @@
+libTrio_UnifiedApi_TCP.so,sha256=ZeZAOMTJkSnAytkWA5p6qym5uqGx5hJ-WLMOhtSOhRI,2083448
+Trio_UnifiedApi.cpython-312-i386-linux-gnu.so,sha256=wRnNP3kaQ2q80P-CNI1XL2UgB9GX168hak_OzxqdMEw,1129104
+trio_unifiedapi-1.0.1.dist-info/METADATA,sha256=UtdMt0pnRMotSaq2bLzVdDauwX38OUTwzIA14SMNqT0,643
+trio_unifiedapi-1.0.1.dist-info/WHEEL,sha256=UYMj6W6YBXcj1Nw_K0-VGv2XMvh515-0mF3OS5_yat8,152
+trio_unifiedapi-1.0.1.dist-info/RECORD,,
+trio_unifiedapi-1.0.1.dist-info/licenses/LICENSE.md,sha256=deISbyAoWsMA4-FnyD8D4D3OIxk6uMn-zE2FsIv0PMk,3112
