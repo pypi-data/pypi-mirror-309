@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: gitlab-grabber
+Version: 1.0.3
+Summary: Clone all repository from gitlab
+License: MIT
+Author: Trusikhin Andrei
+Author-email: andrei.trusikhin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.11.2,<4.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Project-URL: Documentation, https://github.com/Onder7994/gitlab_grabber#readme
+Project-URL: Homepage, https://github.com/Onder7994/gitlab_grabber
+Project-URL: Repository, https://github.com/Onder7994/gitlab_grabber
+Description-Content-Type: text/markdown
+
+# gitlab grabber
+
+install via pypi
+```bash
+pip install gitlab-grabber
+```
+
+man
+```bash
+gitlab_grabber --help
+```
+
+Usage to clone all repo via http (oauth)
+```bash
+gitlab_grabber -t <token> -u <domain> -k -d /<dir> --auth http
+```
+
+Usage to clone all repo via ssh
+```bash
+gitlab_grabber -t <token> -u <domain> -k -d /<dir> -i <path_to_ssh_private_key>
+```
+
+Clone via ssh is default. 
+**-k** - skip SSL verify
+**-crt-path** - path to CA certificate.
+**-d** - clone dir. Default is dir when tool is will run.
