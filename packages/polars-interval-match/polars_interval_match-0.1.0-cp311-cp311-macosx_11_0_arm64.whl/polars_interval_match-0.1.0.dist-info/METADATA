@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: polars-interval-match
+Version: 0.1.0
+Classifier: Programming Language :: Python
+Requires-Dist: polars
+Summary: A Python extension module for matching intervals in Polars DataFrames
+Keywords: egg,bacon,sausage,tomatoes,Lobster Thermidor
+Author-email: Kyle Slugg-Urbino <kyle.slugg@gmail.com>
+Maintainer-email: Kyle Slugg-Urbino <kyle.slugg@gmail.com>
+Requires-Python: >=3.10
