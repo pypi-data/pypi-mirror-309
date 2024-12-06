@@ -1,0 +1,8 @@
+setup.py
+MatrixApp.egg-info/PKG-INFO
+MatrixApp.egg-info/SOURCES.txt
+MatrixApp.egg-info/dependency_links.txt
+MatrixApp.egg-info/requires.txt
+MatrixApp.egg-info/top_level.txt
+Matrix_App/__init__.py
+Matrix_App/main.py
