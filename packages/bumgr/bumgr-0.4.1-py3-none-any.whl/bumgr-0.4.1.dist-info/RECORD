@@ -1,0 +1,14 @@
+bumgr/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+bumgr/__main__.py,sha256=zHVzON957ZTpiUsDrFE346x5d0q5pKTmYk6QJ2yL8KM,57
+bumgr/backup.py,sha256=_V6fDBp6PA_YuCXPr7H7YvstxdKCuUwGg8PwAWHn7-U,18991
+bumgr/cli.py,sha256=zt4lqPsF7U4b9y3-Dk351SPEzsVBVf4hTiKUyjhtSBo,11911
+bumgr/config.py,sha256=xDluRtGS-FoYfDdPdyGD4mdWJ5Z-SpB-Vo_Pd385HIs,2323
+bumgr/executable.py,sha256=n5ejrWSSRb0R2LjBVtsmKYk_xdxPmdS4yjjuO_-ftgg,1618
+bumgr/contrib/__init__.py,sha256=pe245V1FRCNrfWX_2kh7wo8OFssihkwrHal-dTG-U9M,2952
+bumgr/contrib/power.py,sha256=j3dPCY6YIkKu98sh3k2nUktBloBhVAsOxsD8-Tqu_b0,2214
+bumgr/contrib/tailscale.py,sha256=qjtJx8QJ1szxoiCEWq6LORSuYggXT0_zb5xmDpmtrUI,3626
+bumgr-0.4.1.dist-info/METADATA,sha256=_ep0a81Cc93mHq5cnCkKtlp6AKL84LmBbR-vDMQwW0c,3493
+bumgr-0.4.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+bumgr-0.4.1.dist-info/entry_points.txt,sha256=1ErgnbE5k4ByB3suEYlHauQtSvKihXrSFJLbRV6f8es,36
+bumgr-0.4.1.dist-info/licenses/LICENSE,sha256=M9Ojtt5tUP3TX-hNjxg9SO5-1zyn0xnRgla0pDlZhhg,1501
+bumgr-0.4.1.dist-info/RECORD,,
