@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/elegen.egg-info/PKG-INFO
+src/elegen.egg-info/SOURCES.txt
+src/elegen.egg-info/dependency_links.txt
+src/elegen.egg-info/top_level.txt
