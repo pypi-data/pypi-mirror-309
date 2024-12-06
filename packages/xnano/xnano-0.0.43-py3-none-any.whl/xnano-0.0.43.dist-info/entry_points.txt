@@ -1,0 +1,2 @@
+[console_scripts]
+xnano = xnano._cli:app
