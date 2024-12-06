@@ -1,0 +1,8 @@
+llvmcovdiff/__main__.py,sha256=ZVcmgc15LET9A278_-jfrT2Tx16YGcNveoeFrI36MkM,74
+llvmcovdiff/diff_line_coverage.py,sha256=zoRCrYyv7r7WzkC-nakKWp6Au8IV6toq6IW8SXhha-o,6599
+llvmcovdiff/diff_main_report.py,sha256=I5Vox5L8PI3KLtrDCSYrIxEKqlVpL9fV9dSiaQgpz34,6103
+llvmcovdiff/full_report_diff.py,sha256=T12ukNJGsJVtXz6cqjqUZ6vAp4aUSVI9GOvzQjgV-7s,2097
+llvmcovdiff-0.0.3.dist-info/METADATA,sha256=wD5RjssQPe0mFBOzvGumigl3v1lXCnVoUoC0iDyF9Rw,2014
+llvmcovdiff-0.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+llvmcovdiff-0.0.3.dist-info/top_level.txt,sha256=C56xYjUvr2lRKkNsNfkXmjquMNR-Zxmu7NNXsHyJTek,12
+llvmcovdiff-0.0.3.dist-info/RECORD,,
