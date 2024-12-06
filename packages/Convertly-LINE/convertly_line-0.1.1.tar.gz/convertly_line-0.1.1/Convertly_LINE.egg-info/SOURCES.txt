@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+Convertly_LINE.egg-info/PKG-INFO
+Convertly_LINE.egg-info/SOURCES.txt
+Convertly_LINE.egg-info/dependency_links.txt
+Convertly_LINE.egg-info/top_level.txt
+docs/Makefile
+docs/conf.py
+docs/index.rst
+docs/make.bat
