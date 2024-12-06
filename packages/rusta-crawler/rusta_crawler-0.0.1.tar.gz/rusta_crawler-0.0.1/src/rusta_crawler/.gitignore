@@ -1,0 +1,9 @@
+__pycache__/
+.venv
+rusta_crawler/files/epi_article_status/
+rusta_crawler\files\epi_files
+result_files
+output
+response.json
+response.html
+rusta_crawler/spiders/Untitled-1.json
