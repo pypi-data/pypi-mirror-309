@@ -1,0 +1,7 @@
+main.py
+setup.py
+byted_flex.egg-info/PKG-INFO
+byted_flex.egg-info/SOURCES.txt
+byted_flex.egg-info/dependency_links.txt
+byted_flex.egg-info/requires.txt
+byted_flex.egg-info/top_level.txt
