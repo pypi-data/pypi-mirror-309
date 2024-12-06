@@ -1,0 +1,4 @@
+pydantic
+pydantic-settings
+elasticsearch[async]
+typing_extensions>=4.5
