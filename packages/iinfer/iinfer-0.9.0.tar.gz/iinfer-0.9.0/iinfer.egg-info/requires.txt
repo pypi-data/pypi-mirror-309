@@ -1,0 +1,16 @@
+argcomplete
+async_timeout
+beaker
+bottle
+bottle_websocket
+cryptography
+motpy
+opencv-python
+numpy
+Pillow
+pyyaml
+redis
+requests
+tabulate
+urllib3
+wheel
