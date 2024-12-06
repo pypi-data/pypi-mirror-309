@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopeecovcpp.egg-info/PKG-INFO
+shopeecovcpp.egg-info/SOURCES.txt
+shopeecovcpp.egg-info/dependency_links.txt
+shopeecovcpp.egg-info/top_level.txt
