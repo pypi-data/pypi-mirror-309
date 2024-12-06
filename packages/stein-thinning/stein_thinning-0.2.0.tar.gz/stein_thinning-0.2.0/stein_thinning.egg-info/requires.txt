@@ -1,0 +1,11 @@
+numpy
+scipy
+
+[demo]
+matplotlib
+pystan
+
+[dev]
+pytest
+bumpver
+sphinx
