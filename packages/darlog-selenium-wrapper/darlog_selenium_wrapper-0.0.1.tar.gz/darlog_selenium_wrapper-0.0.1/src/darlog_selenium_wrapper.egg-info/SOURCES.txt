@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/darlog/selenium_wrapper/__init__.py
+src/darlog/selenium_wrapper/common.py
+src/darlog/selenium_wrapper/defaults.py
+src/darlog/selenium_wrapper/firefox.py
+src/darlog_selenium_wrapper.egg-info/PKG-INFO
+src/darlog_selenium_wrapper.egg-info/SOURCES.txt
+src/darlog_selenium_wrapper.egg-info/dependency_links.txt
+src/darlog_selenium_wrapper.egg-info/requires.txt
+src/darlog_selenium_wrapper.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+attrs
+fake-useragent
+python-dotenv
+selenium
+webdriver-manager
