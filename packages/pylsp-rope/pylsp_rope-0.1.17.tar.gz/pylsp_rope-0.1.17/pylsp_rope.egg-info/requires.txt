@@ -1,0 +1,15 @@
+python-lsp-server
+rope>=0.21.0
+
+[:python_version < "3.10"]
+typing-extensions
+
+[dev]
+build
+pytest
+twine
+
+[test]
+flake8
+pytest
+pytest-cov
