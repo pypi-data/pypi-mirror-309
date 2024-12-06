@@ -1,0 +1,37 @@
+
+{% macro generate_erddap(erddap, indent) %}
+<!-- PARAMS -->
+{{ generate_params(erddap.params, indent+1) }}
+<!-- DATASETS -->
+{{ generate_datasets(erddap.datasets, indent+1) }}
+{% endmacro %}
+
+{% macro generate_indent(indent) %}{% for n in range(indent) %}    {% endfor %}{% endmacro %}
+
+{% macro generate_params(params, indent) %}{% if params is not none %}{% for param in params %}
+{{generate_indent(indent)}}<{{param.name}}>{{param.value}}</{{param.name}}>{% endfor %}
+{% endif %}{% endmacro %}
+
+{% macro generate_attributes(attributes, indent) %}{% if attributes %}
+{{generate_indent(indent)}}<addAttributes>{% for attribute in attributes %}
+{{generate_indent(indent+1)}}<att name="{{attribute.name}}"{% if attribute.type %} type="{{attribute.type}}"{% endif %}>{{attribute.text}}</att>{% endfor %}
+{{generate_indent(indent)}}</addAttributes>{% endif %}{% endmacro %}
+
+{% macro generate_source_attributes(attributes, indent) %}{% if attributes %}
+{{generate_indent(indent)}}<!-- sourceAttributes>{% for attribute in attributes %}
+{{generate_indent(indent+1)}}<att name="{{attribute.name}}"{% if attribute.type %} type="{{attribute.type}}"{% endif %}>{{attribute.text}}</att>{% endfor %}
+{{generate_indent(indent)}}</sourceAttributes -->{% endif %}{% endmacro %}
+
+{% macro generate_variables(variables, indent) %}{% if variables is not none %}{% for variable in variables %}{{generate_indent(indent)}}<{{variable.tag}}>
+{{generate_indent(indent+1)}}<sourceName>{{variable.sourceName}}</sourceName>
+{{generate_indent(indent+1)}}<destinationName>{{variable.destinationName}}</destinationName>
+{{generate_indent(indent+1)}}<dataType>{{variable.dataType}}</dataType>{{generate_attributes(variable.attributes, indent+1)}}
+{{generate_indent(indent)}}</{{variable.tag}}>
+{% endfor %}{% endif %}{% endmacro %}
+
+{% macro generate_datasets(datasets, indent) %}{% if datasets is not none %}{% for dataset in datasets %}
+{{generate_indent(indent)}}<dataset type="{{dataset.type}}" datasetID="{{dataset.datasetID}}" active="{{dataset.active}}">
+{{generate_datasets(dataset.datasets, indent+1)}}{{generate_params(dataset.params, indent+1)}}{{generate_source_attributes(dataset.source_attributes, indent+1)}}{{generate_attributes(dataset.attributes, indent+1)}}
+{{generate_variables(dataset.variables, indent+1)}}
+{{generate_indent(indent)}}</dataset>
+{% endfor %}{% endif %}{% endmacro %}

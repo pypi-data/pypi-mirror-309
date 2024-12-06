@@ -1,0 +1,2 @@
+[console_scripts]
+erddapcfg = erddapcfg.cli:cli_entry_point

@@ -1,0 +1,63 @@
+
+{%if params%}
+-- table params
+ INSERT INTO params(param_name, param_value) VALUES
+{% for param in params %}  ("{{param.name}}", "{{param.value | replace('"','""')}}"){%if loop.index < params|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if datasets%}
+-- table datasets
+ INSERT INTO datasets(dataset_id, dataset_type, dataset_active) VALUES
+{% for dataset in datasets %}  ("{{dataset.datasetID}}", "{{dataset.type}}", "{{dataset.active}}"){%if loop.index < datasets|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if dataset_params%}
+-- table dataset_params
+ INSERT INTO dataset_params ("param_name", "param_value", "dataset_id") VALUES
+{% for param in dataset_params %}  ("{{param.name}}", "{{param.value | replace('"','""')}}", "{{param.datasetID}}"){%if loop.index < dataset_params|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if dataset_attributes%}
+-- table dataset_params
+ INSERT INTO dataset_attributes ("attribute_name", "attribute_type", "attribute_value", "dataset_id") VALUES
+{% for attribute in dataset_attributes %}  ("{{attribute.name}}", {% if attribute.type %}"{{attribute.type}}"{%else%}""{% endif %}, "{{attribute.text | replace('"','""')}}", "{{attribute.datasetID}}"){%if loop.index < dataset_attributes|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if dataset_source_attributes%}
+-- table dataset_source_params
+ INSERT INTO dataset_source_params ("attribute_name", "attribute_type", "attribute_value", "dataset_id") VALUES
+{% for attribute in dataset_source_attributes %}  ("{{attribute.name}}", {% if attribute.type %}"{{attribute.type}}"{%else%}""{% endif %}, "{{attribute.text | replace('"','""')}}", "{{attribute.datasetID}}"){%if loop.index < dataset_source_attributes|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if variables%}
+-- table variables
+ INSERT INTO variables ("category", "source_name", "destination_name", "data_type", "dataset_id", "order_number") VALUES
+{% for variable in variables %}  ("{{variable.tag | replace("Variable","")}}", "{{variable.sourceName}}", "{{variable.destinationName}}", "{{variable.dataType}}", "{{variable.datasetID}}", "{{loop.index * 10}}.0"){%if loop.index < variables|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if variable_attributes%}
+-- table variable_attributes
+ INSERT INTO variable_attributes ("attribute_name", "attribute_type", "attribute_value", "variable_id") VALUES 
+{% for attribute in variable_attributes %}  ("{{attribute.name}}", {% if attribute.type %}"{{attribute.type}}"{%else%}""{% endif %}, "{{attribute.text | replace('"','""')}}", (SELECT variable_id FROM variables WHERE destination_name='{{attribute.destinationName}}' AND dataset_id='{{attribute.datasetID}}')){%if loop.index < variable_attributes|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{%if variable_source_attributes%}
+-- table variable_source_attributes
+ INSERT INTO variable_source_attributes ("attribute_name", "attribute_type", "attribute_value", "variable_id") VALUES 
+{% for attribute in variable_source_attributes %}  ("{{attribute.name}}", {% if attribute.type %}"{{attribute.type}}"{%else%}""{% endif %}, "{{attribute.text | replace('"','""')}}", (SELECT variable_id FROM variables WHERE destination_name='{{attribute.destinationName}}' AND dataset_id='{{attribute.datasetID}}')){%if loop.index < variable_source_attributes|length%},
+{%else%};{%endif%}{% endfor %}
+{%endif%}
+
+{% if dataset_children %}
+-- table dataset_children
+ INSERT INTO dataset_children ("parent_dataset_id", "child_dataset_id") VALUES
+{% for parent_id, child_id in dataset_children %}  ('{{parent_id}}', '{{child_id}}'){%if loop.index < dataset_children|length%},
+{%else%};{%endif%}{% endfor %}
+{% endif %}
