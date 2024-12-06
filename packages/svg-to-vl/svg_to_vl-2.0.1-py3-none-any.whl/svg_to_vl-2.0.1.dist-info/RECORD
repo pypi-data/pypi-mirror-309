@@ -1,0 +1,10 @@
+svg_to_vl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svg_to_vl/__main__.py,sha256=Q4-Q9EcG8J80J19WdeOKUFLO-SHarT8QMrOvBuTsbIs,1115
+svg_to_vl/cellmodel.py,sha256=oQpoG9piEPrqmZwMyu_oA2V2Lf1EEzVlZvqhFDJTY0I,24118
+svg_to_vl/path.py,sha256=CNpQuXE20-fqhKIeLOrYSD5FJMTSqhrxIUfHEhNymfk,8218
+svg_to_vl/readsvg.py,sha256=yzdyhWWdhwY0I5AVwqNDMuRavTUkCbeBtRpU83u8QGs,2866
+svg_to_vl-2.0.1.dist-info/METADATA,sha256=-jcDsUuSe7BqJBNBs34YDlEYzwusDA-H-6-jRVlIXUo,3381
+svg_to_vl-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+svg_to_vl-2.0.1.dist-info/entry_points.txt,sha256=OzgfBpEtGkrFlk-N4CH6zIcze9dsobB9icQb71p-0bI,91
+svg_to_vl-2.0.1.dist-info/top_level.txt,sha256=dlGBB_kYgCRcMeW33idLOnTglBIpfk4mDrWMKsT7dWQ,10
+svg_to_vl-2.0.1.dist-info/RECORD,,
