@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: gadgetlib
+Version: 0.0.9
+Summary: A collection of tools for personal use
+Author-email: Kyle Dvorak <kylodss@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# gadgetlib
+
+A library intended solely for my own use.
