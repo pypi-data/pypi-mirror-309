@@ -1,0 +1,115 @@
+[tool.poetry]
+name = "ccheck"
+packages = [
+    { include="contextcheck", from="." },
+]
+version = "0.1.2"
+description = "A human-friendly framework for testing and evaluating LLMs, RAGs, and chatbots."
+authors = ["Addepto <hi@addepto.com>", "Michal Tarkowski <michal.tarkowski@addepto.com>", "Bartlomiej Grasza <bartlomiej.grasza@addepto.com>", "Radoslaw Bodus <radoslaw.bodus@addepto.com>", "Vadym Mariiechko <vadym.mariiechko@addepto.com>", "Volodymyr Kepsha <volodymyr.kepsha@addepto.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Addepto/contextcheck"
+repository = "https://github.com/Addepto/contextcheck"
+keywords = ["LLM", "RAG", "Chatbot", "Testing", "Validation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Testing",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.7.1"
+pyyaml = "^6.0.1"
+openai = "^1.30.1"
+langchain_community = "^0.3.1"
+python-dotenv = "^1.0.1"
+requests = "^2.31.0"
+jinja2 = "^3.1.4"
+rich = "^13.7.1"
+loguru = "^0.7.2"
+fsspec = "2024.3.1"
+jsonschema = "^4.23.0"
+nltk = "^3.8.1"
+gensim = "^4.3.3"
+
+mkdocs = { version = "^1.5.3", optional = true }
+mkdocstrings = { version = "^0.24.0", optional = true }
+mkdocstrings-python = { version = "^1.8.0", optional = true }
+mike = { version = "^2.0.0", optional = true }
+
+[tool.poetry.extras]
+docs = [
+    "mkdocs",
+    "mkdocstrings",
+    "mkdocstrings-python",
+    "mike"
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+lorem = "^0.1.1"
+pylint = "^3.2.3"
+black = "^24.4.2"
+isort = "^5.13.2"
+pre-commit = "^3.7.1"
+pytest-dotenv = "^0.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.black]
+line-length = 100
+preview = true    # Breaks strings that exceed the line length
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.MASTER]
+load-plugins = "pylint.extensions.docparams"
+ignore = '.vscode, .venv, venv, .git'
+
+[tool.pylint.messages_control]
+disable = [
+    "arguments-differ",
+    "attribute-defined-outside-init",
+    "blacklisted-name",
+    "duplicate-code",
+    "fixme",
+    "import-error",
+    "no-member",
+    "no-name-in-module",
+    "protected-access",
+    "stop-iteration-return",
+    "too-few-public-methods",
+    "too-many-arguments",
+    "too-many-branches",
+    "too-many-instance-attributes",
+    "too-many-lines",
+    "too-many-locals",
+    "too-many-return-statements",
+    "too-many-statements",
+    "abstract-method",
+    "chained-comparison",
+    "eval-used",
+    "exec-used",
+    "expression-not-assigned",
+    "global-statement",
+    "missing-docstring",
+    "redefined-argument-from-local",
+    "redefined-outer-name",
+    "reimported",
+    "too-many-ancestors",
+    "unexpected-special-method-signature",
+]
+
+[tool.poetry.scripts]
+ccheck = "contextcheck.run_tests:main"
+questions_generator = "contextcheck.questions_generator:main"
