@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MoodleGet
+Version: 0.1
+Summary: convenient way to get data through Moodle's API
+Home-page: https://github.com/dynamyy/MoodleAPI
+Author: dynamy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.32.3
+
+# MoodleGet
+
+convenient way to get data through Moodle's API
