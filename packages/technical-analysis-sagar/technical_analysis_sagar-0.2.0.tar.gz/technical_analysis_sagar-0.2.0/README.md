@@ -1,0 +1,57 @@
+# Technical Analysis Library
+
+A Python library for financial market analysis, offering comprehensive insights through technical indicators, oscillators, moving averages, and market recommendations. Ideal for traders and analysts working with stocks, crypto, and forex.
+
+---
+
+## Features
+
+### 1. Oscillators
+- RSI (Relative Strength Index)
+- Stochastic K
+- CCI (Commodity Channel Index)
+- ADX (Average Directional Index)
+- AO (Awesome Oscillator)
+- MOM (Momentum)
+- MACD (Moving Average Convergence Divergence)
+- StochRSI (Stochastic RSI)
+- Williams %R
+- BB Power (Bollinger Bands Power)
+- UO (Ultimate Oscillator)
+
+### 2. Moving Averages
+- SMA (Simple Moving Averages) - 10, 20, 30, 50, 100, 200 periods
+- EMA (Exponential Moving Averages) - 10, 20, 30, 50, 100, 200 periods
+- Ichimoku Cloud
+- VWMA (Volume Weighted Moving Average)
+- Hull MA (Hull Moving Average)
+
+### 3. Market Recommendation
+- Summarizes BUY, SELL, and NEUTRAL signals for decision-making.
+
+### 4. Intervals
+1m — 1 minute
+2m — 2 minutes
+5m — 5 minutes
+15m — 15 minutes
+30m — 30 minutes
+60m — 1 hour
+90m — 1.5 hours
+1d — 1 day
+5d — 5 days
+
+
+
+### 5. Instructions
+from technical_analysis import TA_Calculation
+
+test = TA_Calculation(symbol="INFY.NS", interval="1d")
+print(test.technical_analysis()) 
+
+
+
+---
+
+## Installation
+```bash
+pip install technical-analysis-sagar

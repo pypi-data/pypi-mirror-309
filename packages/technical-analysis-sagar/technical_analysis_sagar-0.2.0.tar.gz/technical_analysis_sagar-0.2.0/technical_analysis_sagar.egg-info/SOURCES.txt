@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+technical_analysis/__init__.py
+technical_analysis/main.py
+technical_analysis/ta_calculation.py
+technical_analysis/technicals.py
+technical_analysis_sagar.egg-info/PKG-INFO
+technical_analysis_sagar.egg-info/SOURCES.txt
+technical_analysis_sagar.egg-info/dependency_links.txt
+technical_analysis_sagar.egg-info/requires.txt
+technical_analysis_sagar.egg-info/top_level.txt
