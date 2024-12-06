@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pip_add/__init__.py
+pip_add/cli.py
+pip_add/utils.py
+pip_add.egg-info/PKG-INFO
+pip_add.egg-info/SOURCES.txt
+pip_add.egg-info/dependency_links.txt
+pip_add.egg-info/entry_points.txt
+pip_add.egg-info/requires.txt
+pip_add.egg-info/top_level.txt
