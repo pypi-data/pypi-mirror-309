@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "rust_version": {
+      "type": "string",
+      "priority": 1,
+      "required": true
+    },
+    "build_tool": {
+      "type": "string",
+      "enum": ["Cargo"],
+      "priority": 2,
+      "required": true
+    },
+    "crate_dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "priority": 3,
+      "required": true
+    }
+  },
+  "required": ["rust_version", "build_tool", "crate_dependencies"]
+}

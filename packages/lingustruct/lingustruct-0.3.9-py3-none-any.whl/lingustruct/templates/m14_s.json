@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "go_version": {
+      "type": "string",
+      "priority": 1,
+      "required": true
+    },
+    "modules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "priority": 2,
+      "required": true
+    },
+    "build_tool": {
+      "type": "string",
+      "enum": ["Go Modules", "Vendor"],
+      "priority": 3,
+      "required": false
+    }
+  },
+  "required": ["go_version", "modules"]
+}
