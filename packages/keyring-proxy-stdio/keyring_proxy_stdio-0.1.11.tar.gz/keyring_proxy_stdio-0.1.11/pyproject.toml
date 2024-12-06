@@ -1,0 +1,52 @@
+[project]
+name = "keyring-proxy-stdio"
+version = "0.1.11"
+description = "Default template for PDM package"
+authors = [{ name = "Kalle M. Aagaard", email = "git@k-moeller.dk" }]
+dependencies = [
+    "keyring-proxy>=0.2.15",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.entry-points."keyring.backends"]
+StdioProxyBackend = "keyring_proxy_stdio:StdioProxyBackend"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.pyright]
+include = ["src", "tests"]
+strict = ["src"]
+typeCheckingMode = "strict"
+
+[tool.bumpversion]
+current_version = "0.1.11"
+commit = true
+parse = "(?P<major>\\d+).(?P<minor>\\d+).(?P<patch>\\d+)(\\.(?P<build>\\d+))?"
+serialize = ["{major}.{minor}.{patch}.{build}", "{major}.{minor}.{patch}"]
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "src/keyring_proxy_stdio/_version.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+lint = [
+    "pyright>=1.1.389",
+    "ruff>=0.7.4",
+]
+test = [
+    "pytest>=8.3.3",
+]
