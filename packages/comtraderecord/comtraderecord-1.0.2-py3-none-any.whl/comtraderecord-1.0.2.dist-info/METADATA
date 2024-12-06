@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: comtraderecord
+Version: 1.0.2
+Summary: Read/Write comtrade recording, commonly used algorithm for recording.
+Home-page: https://pypi.org/project/comtraderecord/
+Author: haitao
+Author-email: haitao.lian@siemens.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.10.1
+
+# read/write comtrade recording files, commonly used algorithm
+
+## Installation
+```shell
+pip3 uninstall comtraderecord
+pip3 install comtraderecord
+```
+
+
+## Table of Contents
+
+- pyComtrade
+  - read comtrade file
+
+- pyRelayAlg
+  - commonly used algorithm for comtrade recording
+
+- ComtradeWriter
+  - generate comtrade file
+
+## Example
+
+### 1、read comtrade recording
+
+```python
+
+import matplotlib.pyplot as plt
+from comtraderecord import pyComtrade, pyRelayAlg
+
+recFile = pyComtrade.ComtradeFile(r"D:\CustomerCare\FRA00001.CFG")
+
+# Use channel name/id to get the analog channel data
+VA = recFile.getAnalogData("MPV3p1:V A")
+IB = recFile.getAnalogData(2)
+# Use channel name/id to get the digital channel data
+pickup = recFile.getDigitalData(1)
+operate = recFile.getDigitalData("VI3p1:Group indicat.:Operate:general")
+
+# get timestamp of the record
+timestamp = recFile.getTime()
+
+
+
+plt.subplot(5,1,1)
+plt.plot(timestamp,VA)
+plt.title("sampling VA")
+plt.subplot(5,1,2)
+plt.plot(timestamp,IB)
+plt.title("sampling IB")
+
+plt.subplot(5,1,3)
+mag_Va = abs(pyRelayAlg.fourier(VA,recFile.samplePoint))
+plt.plot(timestamp,mag_Va)
+plt.title("magnitude VA")
+
+plt.subplot(5,1,4)
+plt.plot(timestamp,pickup)
+plt.title("pickup")
+plt.subplot(5,1,5)
+plt.plot(timestamp,operate)
+plt.title("operate")
+
+plt.show()
+
+print("samplePoint:",recFile.samplePoint)
+print("sampleRate:",recFile.sampleRate)
+print("numberOfSamples:",recFile.numberOfSamples)
+print("analog_id:",recFile.analog_id)
+print("analog_An:",recFile.analog_An)
+print("digital_id:",recFile.digital_id)
+print("digital_Dn:",recFile.digital_Dn)
+print("freq:",recFile.freq)
+print("fileType:",recFile.fileType)
+print("startTime:",recFile.startTime)
+print("triggerTime:",recFile.triggerTime)
+
+print("\n\nrecording cfg data:")
+for k,v in recFile.cfg_data.items():
+  print(f"{k}:{v}")
+
+```
+
+### 2、pyRelayAlg
+```python
+
+recFile = pyComtrade.ComtradeFile(r"D:\CustomerCare\FRA00001.CFG")
+
+# Use channel name/id to get the analog channel data
+VA = recFile.getAnalogData("MPV3p1:V A")
+# calculate 5rd harmonic of the signal with 2 cycle window
+Harm_5th = pyRelayAlg.fourier(VA,samplePoint,2,5)
+# calculate TrueRMS of the signal
+TrueRMS = pyRelayAlg.TrueRMS(VA,samplePoint)
+
+```
+
+### 3、ComtradeWriter
+```python
+from comtraderecord import comtradeWriter
+import numpy as np
+import math
+
+time_s = 0.2
+sample = 1000
+ratedFreq = 50.0
+ts = np.arange(0,time_s,1/sample)
+fi = 2*np.pi*ratedFreq
+
+recData = [0]*3
+recData[0] = 5.0*math.sqrt(2)*np.sin(fi*ts) 
+recData[1] = 2.0*math.sqrt(2)*np.sin(fi*ts+np.pi*4/3) 
+recData[2] = 5.0*math.sqrt(2)*np.sin(fi*ts+np.pi*2/3) 
+
+
+f = comtradeWriter("testRec",recData,sample,ratedFreq)
+channelID = [
+    'Line VA',
+    'Line VB',
+    'Line VC'
+    ]
+f.setChannelID(channelID)
+f.setUnit(['V','V','V'])
+f.createFile()
+
+```
+
+
+
