@@ -1,0 +1,12 @@
+rloop-0.1.0a1.dist-info/METADATA,sha256=d_ID649MKw4ktXFOgf-it-Tg7ZkQQLbi9jkTX5A9qw4,2112
+rloop-0.1.0a1.dist-info/WHEEL,sha256=zC5U37cyHhdDjnEKSUG7fWT9R97oqS7ydiiW939EC18,107
+rloop-0.1.0a1.dist-info/licenses/LICENSE,sha256=F-jMGrubB7sqAGZ-EKeHaU6uQN0QTY0CmVhPZrfHsPo,1486
+rloop.libs/libgcc_s-1e52349c.so.1,sha256=Ani0u_W_tB8ESsFePO4D2mn2lrgWLhyFdw6RETxBTYM,437537
+rloop/futures.py,sha256=CC99BixD9TKO6mZyJyFFtsTTAUWUF7MDyf0w0FU-sls,768
+rloop/utils.py,sha256=w7prQMudFvVftMT7tCcGxS8bMROiqgwLXexZzDSHt9k,1757
+rloop/_rloop.pyi,sha256=eG3EgeqzIvXKR_39xoLFdAaKUnYfh3nwzk17xX47p1M,933
+rloop/__init__.py,sha256=PXoWAfLtIIsHr29oX9U8gGvaT9rt5cRCz_SsU-i1NGk,303
+rloop/_compat.py,sha256=XJtOS-1BuVFa0Gb6b9ucYpCB6bNeXOsd5LF--dgQ7Ac,93
+rloop/loop.py,sha256=6UFbslkbHvGAyRH2-iNQY_d6c2T_QrRZSC4F_MUewcE,21226
+rloop/_rloop.cpython-311-x86_64-linux-musl.so,sha256=6n1S8U4KO2E1Um6pjrXyxxpG7qaB82OIyP6fE8pgty0,900521
+rloop-0.1.0a1.dist-info/RECORD,,
