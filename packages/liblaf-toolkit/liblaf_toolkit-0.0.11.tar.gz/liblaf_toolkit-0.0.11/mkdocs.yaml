@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: Toolkit
+site_url:
+  !ENV [
+    SITE_URL,
+    READTHEDOCS_CANONICAL_URL,
+    https://liblaf.github.io/python-toolkit/,
+  ]
+repo_name: liblaf/python-toolkit
+repo_url: https://github.com/liblaf/python-toolkit
+site_author: liblaf
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.footer
+    # - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: system preference
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: dark mode
+
+plugins:
+  # Built-in plugins
+  # - optimize
+  - search
+  - social
+  # External plugins, schema provided by us
+  - gen-files:
+      scripts:
+        - scripts/docs/gen-ref-pages.py
+  - git-committers:
+      enabled: !ENV [READTHEDOCS, CI, false]
+      repository: liblaf/python-toolkit
+      branch: main
+  - literate-nav
+  - section-index
+  # External plugins, schema provided by our community
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - mkdocstrings:
+      default_handler: python
+      enable_inventory: true
+      handlers:
+        python:
+          import:
+            - https://docs.python.org/3/objects.inv
+          options:
+            # Headings
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            # Members
+            inherited_members: true
+            filters:
+              - "!^_[^_]"
+              - "!__all__"
+            summary: true
+            # Docstrings
+            docstring_section_style: list
+            show_if_no_docstring: true
+            # Signatures
+            show_signature_annotations: true
+            separate_signature: true
+            signature_crossrefs: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - mdx_truly_sane_lists
+
+watch:
+  - docs/
+  - scripts/docs/
+  - src/toolkit/
