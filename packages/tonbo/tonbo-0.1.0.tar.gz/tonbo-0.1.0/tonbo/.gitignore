@@ -1,0 +1,5 @@
+/target
+/.idea
+Cargo.lock
+db_path
+bindings/python/target

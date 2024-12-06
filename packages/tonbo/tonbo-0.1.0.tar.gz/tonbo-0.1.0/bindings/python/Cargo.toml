@@ -1,0 +1,31 @@
+[package]
+edition = "2021"
+name = "tonbo-python"
+version = "0.1.0"
+license = "Apache-2.0"
+repository = "https://github.com/tonbo-io/tonbo"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+fusio = { git = "https://github.com/tonbo-io/fusio.git", rev = "8038993675591f87dd65b88ffdade31dc0a254b7", package = "fusio", version = "0.3.1", features = [
+    "aws",
+    "tokio",
+] }
+fusio-dispatch = { git = "https://github.com/tonbo-io/fusio.git", rev = "8038993675591f87dd65b88ffdade31dc0a254b7", package = "fusio-dispatch", version = "0.2.0", features = [
+    "aws",
+    "tokio",
+] }
+futures = { version = "0.3" }
+pyo3 = { version = "0.21.2", features = [
+    "abi3",
+    "abi3-py310",
+    "extension-module",
+] }
+pyo3-asyncio = { package = "pyo3-asyncio-0-21", version = "0.21", features = [
+    "tokio-runtime",
+] }
+tokio = { version = "1", features = ["rt-multi-thread"] }
+tonbo = { version = "0.2.0", path = "../../tonbo/" }
