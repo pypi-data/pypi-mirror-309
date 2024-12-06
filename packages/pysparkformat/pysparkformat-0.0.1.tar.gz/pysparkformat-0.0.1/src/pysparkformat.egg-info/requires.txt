@@ -1,0 +1,6 @@
+requests
+pyarrow
+pyspark
+pandas
+grpcio
+grpcio-status
