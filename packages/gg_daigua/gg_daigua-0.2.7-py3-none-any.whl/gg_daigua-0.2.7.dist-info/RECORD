@@ -1,0 +1,16 @@
+gg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gg/ext_packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gg/ext_packages/better_ffmpeg_progress.py,sha256=8nfYwfv_GK47tl0WUmFKm6kWtYBuJtckg00RzHb9K60,12653
+gg/main.py,sha256=fdRvf0srRhmxpzRbQm5V3If5f6hKgDHDtfr1vopUi5I,6193
+gg/README.md,sha256=wnLSRzeRSTDAFEwC251z1ztSfE37JkMcyMkDI_GYjNk,150
+gg/resources/js/youtube.js,sha256=iAwH6lkebxNJ6gBrg7JFkqGIY6l8kjjE3K0LCFbq0h0,10769
+gg/start_init.py,sha256=-t32r3ntnGsorPqITKLvIOqPWEXQfkH2nblmz7gjsSM,31
+gg/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gg/utils/common.py,sha256=V4gtzCG_Qt155QL9a86o14lJlPkabADt4SmA_huriB4,4645
+gg/utils/gen_k_image.py,sha256=TP3HS0cl4wC9PU3lRhifYHMf2Hqvut0BFbV4MZxEWnY,1759
+gg/utils/srt.py,sha256=98hghO403UGlJle7SIwGqhSDLiE3xAzm61t8w73lEJc,2807
+gg/utils/youtube.py,sha256=C2gVL6J6c4MXTSMJLwt-1khGvWw0f2OUihhF82Z4f0Q,5107
+gg_daigua-0.2.7.dist-info/entry_points.txt,sha256=BmnRUYHCVJaAvsIVz_eyArLAUvC9_FB5ykapb5GOdxo,34
+gg_daigua-0.2.7.dist-info/METADATA,sha256=eDkjZTYYKYlcjnStmCXa3EZJa6Hnb2Zs9OSgSerQImM,3754
+gg_daigua-0.2.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gg_daigua-0.2.7.dist-info/RECORD,,
