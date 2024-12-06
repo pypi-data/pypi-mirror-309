@@ -1,0 +1,9 @@
+zenodo_downloader/__init__.py,sha256=cC5QsBpBP1d0w3qF2hKX7jOP715pspHGSguY7JQYCmk,96
+zenodo_downloader/cli.py,sha256=G-HJN77aWRfSepnrcSE9GFu0X9LQCtnxGgACbZzelyo,2171
+zenodo_downloader/downloader.py,sha256=_su16BHxiRNK7zMXbXyJz8Hu_aTn2u5aSV_uPVaYWL4,2758
+zenodo_downloader-0.1.0.dist-info/LICENSE,sha256=s8sXPidxcyNn4QJCm7KtzskaBic3dZlADUrhiPeVEiM,1062
+zenodo_downloader-0.1.0.dist-info/METADATA,sha256=WfL-z37yhbzpKAiQAW0h7XDmbiWufO2n75JCB-gmVs0,2089
+zenodo_downloader-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+zenodo_downloader-0.1.0.dist-info/entry_points.txt,sha256=MYBPfcfv_yJhflCypSTFXC2VGsX9oqFEVq6qIcOyNBQ,63
+zenodo_downloader-0.1.0.dist-info/top_level.txt,sha256=b12h_rr4lQBuRFSH55AepT1WZi704xQHM3laoESWGVQ,18
+zenodo_downloader-0.1.0.dist-info/RECORD,,
