@@ -1,0 +1,3 @@
+[console_scripts]
+grapepi=grape_pi:main
+
