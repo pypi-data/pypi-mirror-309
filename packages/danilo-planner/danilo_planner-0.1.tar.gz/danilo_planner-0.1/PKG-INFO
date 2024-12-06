@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: danilo-planner
+Version: 0.1
+Summary: Planificador de tareas con IA implementando diferentes modelos
+Home-page: 
+Author: Danilo Florez
+Author-email: gersondiaz030998@gmail.com
+Requires-Dist: langchain
+Requires-Dist: chromadb
+Requires-Dist: langchain_community
+Requires-Dist: langchain-chroma
+Requires-Dist: huggingface_hub
+Requires-Dist: langchainhub

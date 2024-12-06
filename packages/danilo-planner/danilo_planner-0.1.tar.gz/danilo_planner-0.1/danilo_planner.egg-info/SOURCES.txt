@@ -1,0 +1,8 @@
+setup.py
+danilo_planner/__init__.py
+danilo_planner/gpt4.py
+danilo_planner.egg-info/PKG-INFO
+danilo_planner.egg-info/SOURCES.txt
+danilo_planner.egg-info/dependency_links.txt
+danilo_planner.egg-info/requires.txt
+danilo_planner.egg-info/top_level.txt
