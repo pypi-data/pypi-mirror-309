@@ -1,0 +1,2 @@
+[nbdev]
+common_regression_issues = common_regression_issues._modidx:d
