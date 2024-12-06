@@ -1,0 +1,2 @@
+[console_scripts]
+polygon-cli = polygon_cli:main
