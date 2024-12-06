@@ -1,0 +1,16 @@
+square_administration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_administration/configuration.py,sha256=ldSmVp3FWOndN4u-dH-pf4i0olRZx1-uORJAj1qW-g8,4733
+square_administration/main.py,sha256=H6YJ-PjqVKqj8Odot4jAHg02aAlYbuamHWmXKXy2aAk,1650
+square_administration/messages.py,sha256=Zj0GyT4D0Yp1KGNRuPbn0k0zAO_ES9zwal7ONZ5ylGU,818
+square_administration/data/config.ini,sha256=NMpUnBSPEdwCW1Y-z5DOjpTQgXGjt4ZcqP4QQiAXr_U,997
+square_administration/pydantic_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_administration/pydantic_models/authentication.py,sha256=DWXctw5UWzkSVY7nMIQZsRhmgW3OK455OVcoUpJrPY0,202
+square_administration/pydantic_models/core.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_administration/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_administration/routes/authentication.py,sha256=26PjMeyj4UYk3hcK0rLmBQi4tHYfK2a14gtAx7jcy2E,7046
+square_administration/routes/core.py,sha256=qGpLuQcnfo1SpOMwnft-vRA7vH_X_BiINfy85NjO_1I,72
+square_administration/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+square_administration-1.0.0.dist-info/METADATA,sha256=rWBJwjqQrp5HxTYTkOux42eydl84V1TsBEDt-oISa1M,1205
+square_administration-1.0.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+square_administration-1.0.0.dist-info/top_level.txt,sha256=8WFipDrMQUPRDo5AvipxU1YK3wZtWZyCUMWaR416zAw,22
+square_administration-1.0.0.dist-info/RECORD,,
