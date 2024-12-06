@@ -1,0 +1,2 @@
+[console_scripts]
+inference-worker = inference_worker.cli:worker
