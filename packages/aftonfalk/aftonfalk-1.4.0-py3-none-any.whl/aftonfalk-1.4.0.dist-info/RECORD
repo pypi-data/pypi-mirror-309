@@ -1,0 +1,14 @@
+aftonfalk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aftonfalk/mssql/column.py,sha256=nxQa-XWZa_ryR4jJlFuryln4o1VLmItTGI0VRqvB-UE,381
+aftonfalk/mssql/data_type.py,sha256=yjjgx6qmDNmZ1pVsYt3Sr68GFclPAg2U1UJ2RLnmTII,3911
+aftonfalk/mssql/driver.py,sha256=sY6Gq0rpcOYx4h-qxop6OFeZG5rErJLXPQuAIrJS7tc,11574
+aftonfalk/mssql/index.py,sha256=s3nbO4Qqy-o3noZmaCFh_FybwQVt8p1PMKFcLqeaqGo,1193
+aftonfalk/mssql/path.py,sha256=ZHpEPNT4zklRIpXCUoZ2kardttxfRQF2J_aVjuk8jVA,249
+aftonfalk/mssql/table.py,sha256=dXvS7dWiWmSqBO-r26ZG4lR8lRwzcR4Ost7S8uRarwY,10720
+aftonfalk/mssql/timezone.py,sha256=xc-8i9qVsK0lCBa6I5HTWmo2dPaZ_AAT6Lo_moz2PgU,141
+aftonfalk/mssql/write_mode.py,sha256=npfNBFLvD4kan4ewyGdEuc_pR1PeA1M8kCWycyuaEP8,120
+aftonfalk-1.4.0.dist-info/LICENSE,sha256=3FXL3ZkW7FnuzdI9JnHY9u21FbtwriDhCKonBnbSJME,1071
+aftonfalk-1.4.0.dist-info/METADATA,sha256=q12ws9PhBpylSwFK-t0H1-3zdUalwxaVWRkpzQeKBys,3170
+aftonfalk-1.4.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+aftonfalk-1.4.0.dist-info/top_level.txt,sha256=VVQrtrHnPzhl1ClwDhY93qNUnTQhMRpdy6HrnV2E220,10
+aftonfalk-1.4.0.dist-info/RECORD,,
