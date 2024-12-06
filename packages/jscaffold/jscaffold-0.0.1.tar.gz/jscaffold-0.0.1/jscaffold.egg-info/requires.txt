@@ -1,0 +1,11 @@
+ipywidgets>=7.0.0
+anywidget>=0.9.6
+
+[docs]
+
+[examples]
+
+[test]
+pytest>=4.6
+pytest-cov
+nbval
