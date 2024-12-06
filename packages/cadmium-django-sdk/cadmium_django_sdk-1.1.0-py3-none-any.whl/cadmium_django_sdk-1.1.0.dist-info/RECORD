@@ -1,0 +1,8 @@
+cadmium_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cadmium_django/middleware.py,sha256=eKnSs4edQIfmVaK2tkFTP-naP01hr_-Abe0F1bMggxc,1340
+cadmium_django/signals.py,sha256=ymqraTr-CKJa8OwSPHI3fJWcoWQ6aQIckDYegShJRr0,1420
+cadmium_django/utils.py,sha256=CiC1XRTaY-eeJ809VWbKWbOgrLkbGex1Y-u6vTDEV-Y,510
+cadmium_django_sdk-1.1.0.dist-info/METADATA,sha256=k-KRBQ4amdwAJSASYnqdgLNA0u309pTvHrskoNwHDHo,424
+cadmium_django_sdk-1.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+cadmium_django_sdk-1.1.0.dist-info/top_level.txt,sha256=7V_QHJzgIXp5_myvH-q5YzqtW4QHUFvAK_9SO3_2BG4,15
+cadmium_django_sdk-1.1.0.dist-info/RECORD,,
