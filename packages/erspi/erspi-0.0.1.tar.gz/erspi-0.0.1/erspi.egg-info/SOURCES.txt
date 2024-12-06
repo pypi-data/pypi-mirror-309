@@ -1,0 +1,10 @@
+README.md
+license
+pyproject.toml
+erspi/__init__.py
+erspi/main.py
+erspi.egg-info/PKG-INFO
+erspi.egg-info/SOURCES.txt
+erspi.egg-info/dependency_links.txt
+erspi.egg-info/requires.txt
+erspi.egg-info/top_level.txt
