@@ -1,0 +1,9 @@
+sgtsnepi/__init__.py,sha256=Y8I44lD5vneiQo8NlQu0Ma-FLTgjoGThxwCyhY14jsQ,1063
+sgtsnepi/core.py,sha256=8tuIO6ez25yveYVm2tFWTfnQz7HySmDRFGW-iKpSe_c,1676
+sgtsnepi/utils/__init__.py,sha256=v85cpRm5EI_z7dHNM74V9krr1FgDRV6EYlfgPnl_muU,151
+sgtsnepi/utils/sgtsne_lambda_equalization.py,sha256=PN53XmOV_7_k9bBzBT5Hey5rZqBcTBgCnSaTAtSwDQY,6837
+pysgtsnepi-0.1.0.dist-info/LICENSE,sha256=55N894ECzElamtgE6KNSvFewiAi06i9sszhtcmp1uVU,1063
+pysgtsnepi-0.1.0.dist-info/METADATA,sha256=qmy2L_vDIsVcLML_Nab_fVydaNuGuaveqlfGQjhWYPk,2877
+pysgtsnepi-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pysgtsnepi-0.1.0.dist-info/top_level.txt,sha256=OK8HRaKdFAIkN8LDsvVoqWkr3aX90J7I6LXqZypOf0k,9
+pysgtsnepi-0.1.0.dist-info/RECORD,,
