@@ -1,0 +1,6 @@
+numba
+attrdict
+matplotlib
+numpy
+scipy
+scikit-learn
