@@ -1,0 +1,14 @@
+jedi>=0.19.0
+pywebview>=5.3.2
+
+[:platform_system == "darwin"]
+pyobjc>=10.3.1
+PyQt6>=6.7.0
+
+[:platform_system == "linux"]
+qtpy>=2.4.0
+PyQt5>=5.15.4
+PySide2>=5.15.0
+
+[:sys_platform == "win32"]
+cefpython3>=66.1
