@@ -1,0 +1,12 @@
+numpy
+requests
+aiohttp
+fsspec
+tensorstore
+zarr
+tqdm
+lxml
+nest_asyncio
+pynrrd
+pyyaml
+Pillow
