@@ -1,0 +1,14 @@
+perspectra/__init__.py,sha256=gwkrBEf7nB1QMw3wjf-Dx1FWftAfeRCd6kDA8qdoPIw,37
+perspectra/__main__.py,sha256=N-c3cmWTu-d29kzqYYeDovYUPv7dA4nU_d5pMIlrZ6Y,215
+perspectra/approximate_polygon.py,sha256=w9scvNCLz8WWuE-9zPhG6MgUGYBxbUkLk8lLJTfgnKs,3755
+perspectra/binarize.py,sha256=S5g-NaT3qwuCZa6rT1oFabBzO6UxITdfvbq0Fe3-U04,5604
+perspectra/cli.py,sha256=6qCI7lv0oKt2hPxzkymXEjDmNgC0q1-sbNU1RQuCepA,4757
+perspectra/file_utils.py,sha256=CVOm_7xR2HLpvCBFf8FFOqOAhiGMzyLTfM4AizD3MsY,2232
+perspectra/multipass_cleaner.py,sha256=xK8KJAcvlyB1Zhv5T7HqOAfzUllMGsNOqDpOKX40qEo,1701
+perspectra/noise_generator.py,sha256=RkNKUBnoq3tn9XVO4LzwDmURclvypE4r2xzHxiauXeg,1026
+perspectra/splitter.py,sha256=69EV68WDWompX4tmtDM0GqH6wkR8cAZtUNnATkPJJsI,1462
+perspectra/transformer.py,sha256=68poZUyeTN5euEHXSbdr7fVultBxl82htYGjfX8PB2E,18656
+perspectra-0.2.1.dist-info/METADATA,sha256=kjCt7xQGiMgYd__GtOMsaHUbf-viiVIF0JZSdlMh0EI,6318
+perspectra-0.2.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+perspectra-0.2.1.dist-info/entry_points.txt,sha256=z6CW0tzYnmhVsckBTohhaN9PbDpf1LU6HkIo3GmVwtU,47
+perspectra-0.2.1.dist-info/RECORD,,
