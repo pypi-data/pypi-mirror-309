@@ -1,0 +1,2 @@
+websockets
+deprecated>=1.2.15
