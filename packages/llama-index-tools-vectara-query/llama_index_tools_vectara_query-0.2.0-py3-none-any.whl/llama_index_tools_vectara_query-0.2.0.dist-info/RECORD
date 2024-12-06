@@ -1,0 +1,5 @@
+llama_index/tools/vectara_query/__init__.py,sha256=cfrpTOImT15QkVBsjQmLt6xqccRzX5ElswrjsE5eoak,116
+llama_index/tools/vectara_query/base.py,sha256=icY2UuzQC9MWSpYxT7rVkXUX47_N-wse5Q0VFZw2VkI,7784
+llama_index_tools_vectara_query-0.2.0.dist-info/METADATA,sha256=5xFmR6RgTLp5JWHzcEpwH1bpqtCAg2UY-AHkG2frRyU,2296
+llama_index_tools_vectara_query-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_tools_vectara_query-0.2.0.dist-info/RECORD,,
