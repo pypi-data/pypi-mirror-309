@@ -1,0 +1,10 @@
+bitvavo_api_upgraded/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitvavo_api_upgraded/bitvavo.py,sha256=9TryOvHxo_z91FzGVNv3fyF84HcxRLqxafSlgshpCV4,124065
+bitvavo_api_upgraded/helper_funcs.py,sha256=0R-vDTYMVkRi-0Zn0or9k1AfaWypSAKlTasiwBRmhNo,3210
+bitvavo_api_upgraded/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitvavo_api_upgraded/settings.py,sha256=MalcO2buJso4NZktDRGGSZ7poF593ceb66zrmX-8dc4,1903
+bitvavo_api_upgraded/type_aliases.py,sha256=RFBOvwyrX19wt7kE5n3k22h0xDgw2GJyzaVo8sxeYGA,834
+bitvavo_api_upgraded-1.16.0.dist-info/METADATA,sha256=QgH_BVEfhZAYd9dfCBT2WELpoxS9ipaxRsDRRX8B_Vw,57945
+bitvavo_api_upgraded-1.16.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+bitvavo_api_upgraded-1.16.0.dist-info/licenses/LICENSE.txt,sha256=FeSYm9RMOo-dfmbSYloapBdRwG_edqJHc1dApkjkfGk,738
+bitvavo_api_upgraded-1.16.0.dist-info/RECORD,,
