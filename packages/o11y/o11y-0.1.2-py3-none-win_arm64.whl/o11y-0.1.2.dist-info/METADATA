@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: o11y
+Version: 0.1.2
+Summary: Exporter for Grafana's AI Observability platform
+Author-email: Grafana Labs <info@grafana.com>
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.31.0
+Requires-Dist: setuptools>=67.8.0
+Description-Content-Type: text/markdown
+
+Builds with hatch. Hatch is best installed with pipx.
+
+build with:
+
+hatch build
