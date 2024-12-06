@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_wikipls.egg-info/PKG-INFO
+src/py_wikipls.egg-info/SOURCES.txt
+src/py_wikipls.egg-info/dependency_links.txt
+src/py_wikipls.egg-info/top_level.txt
+src/wiki_pls/__init__.py
+src/wiki_pls/article.py
+src/wiki_pls/utils.py
+src/wikipls/__init__.py
+src/wikipls/article.py
+src/wikipls/utils.py
+src/wikipy_python/__init__.py
+src/wikipy_python/article.py
+src/wikipy_python/utils.py
+tests/test1.py
