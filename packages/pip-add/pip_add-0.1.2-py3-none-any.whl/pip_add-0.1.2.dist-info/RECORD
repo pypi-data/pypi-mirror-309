@@ -1,0 +1,9 @@
+pip_add/__init__.py,sha256=JbuNlLgkbTQO4M4sWjRSvXFmO0NsKTuHQjcyf8PVK_M,165
+pip_add/cli.py,sha256=0Ulqvvsa1dMnCx1_BQvQbuLCMsNtjwAW0sa5p4t9Y5I,9492
+pip_add/utils.py,sha256=ow5pUTzJ4Iu4DWf-RiXuDrtjns63tIqzEFS36SLOCM0,2875
+pip_add-0.1.2.dist-info/LICENSE,sha256=waGgCmjROLlWi-iov6kfNnCB-UTgjAS2LJVFrsya-1Q,1064
+pip_add-0.1.2.dist-info/METADATA,sha256=tTZ6mE-VowE2lUSPTNvQu1b7pHfsoQJh7gEoDfrXbMw,5344
+pip_add-0.1.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pip_add-0.1.2.dist-info/entry_points.txt,sha256=NswRmsNLvu-Wkt0pyIPmkQ5oz9uxIE_vb38Z0zH2aTs,45
+pip_add-0.1.2.dist-info/top_level.txt,sha256=62m5V7dQOACRekj2TzqasSZT9CoO82F68bVARvRI8OQ,8
+pip_add-0.1.2.dist-info/RECORD,,
