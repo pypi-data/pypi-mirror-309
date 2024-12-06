@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/iterax/__init__.py
+src/iterax/example.py
+src/iterax.egg-info/PKG-INFO
+src/iterax.egg-info/SOURCES.txt
+src/iterax.egg-info/dependency_links.txt
+src/iterax.egg-info/top_level.txt
