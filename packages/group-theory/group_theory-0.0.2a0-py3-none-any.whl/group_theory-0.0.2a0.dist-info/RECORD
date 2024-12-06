@@ -1,0 +1,11 @@
+group_theory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+group_theory/group_element.py,sha256=7NMo67BjHAa76S7MYUhyR16YkBJEWXnrEXNSQ7WeEyU,1329
+group_theory/group_utils.py,sha256=prmMwBeWK7EOt4JZfZRhy5TVqyGLvfCyfJeksJdAZYo,3043
+group_theory/groups.py,sha256=T1e-E_K8tVbUYL5OTmtxCjuBO8lBhlYcDpuVfRI6i3I,13746
+group_theory/permutation.py,sha256=Z5WqpdnbdYf2AuUlABHsprNi0rngAA_h3Y0XooDURuE,10260
+group_theory/symbolic.py,sha256=-05tvNpX3caonjyp2o8BLfHG45OWCYwNwvkTr-EZHGY,25215
+group_theory/utils.py,sha256=cb3G109jOTcxF_zoDfZFAB9zKBQVi0coagnie85cppA,3766
+group_theory-0.0.2a0.dist-info/METADATA,sha256=n7ETRHsi8rR-SCeXmjVph2HNDUHK4d4iDeub9hFT4Y0,46893
+group_theory-0.0.2a0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+group_theory-0.0.2a0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+group_theory-0.0.2a0.dist-info/RECORD,,
