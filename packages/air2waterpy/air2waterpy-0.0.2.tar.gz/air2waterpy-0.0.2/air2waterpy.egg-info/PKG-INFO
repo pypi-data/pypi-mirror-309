@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: air2waterpy
+Version: 0.0.2
+Summary: A python pacakge for running the air2water model
+Home-page: https://github.com/he134543/air2waterpy
+Author: Xinchen He
+Author-email: xinchenhe@umass.edu
+License: MIT-License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+License-File: LICENSE
+
+A python pacakge implementing an air2water model. Numba is used to speed up the computation. Parrallel computing is included for the calibration process. For detailed examples, check our Github repository: https://github.com/he134543/air2waterpy
