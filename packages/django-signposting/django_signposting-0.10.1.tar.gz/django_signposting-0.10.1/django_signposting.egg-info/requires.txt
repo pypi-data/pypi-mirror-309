@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12.3
+django>=3.0
+signposting>=0.9.9
+rdflib>=7.1.1
+
+[dev]
+pytest
