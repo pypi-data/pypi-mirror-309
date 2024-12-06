@@ -1,0 +1,14 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mongars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongars/accounts.py,sha256=ZhnSPtgdzBCZP0gbiI9WF916WrfbO5uYUuMu4S8qLDY,2361
+mongars/cli.py,sha256=TwHMADP_2gwtYjhaqbfZXMrTcnoBToRUJmzhF6Si8Y4,2389
+mongars/display.py,sha256=7lHopZLwiulRjC04lRGNmIq_1ei9Jir4Ziio7aG39L8,1233
+mongars/gauth.py,sha256=_WI9aBXODrPOQ_B8iqButwy15gGH2xMdUu0sHR-kfgo,2972
+mongars/imap.py,sha256=Rqs2wzCio145aLh51qfgdFC6pI0HCGcoq2LaIN4EBlY,1428
+mongars/notify.py,sha256=2aCXTRLZcczVfD5kda1sanVbqc89Cqitq6NvhhflO0s,1568
+mongars/passwordstore.py,sha256=a2fMpIPWObfvq2YIXpuYbYjdgJUFC4rEi5FRwwFQA8M,468
+mongars-0.7.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mongars-0.7.1.dist-info/METADATA,sha256=P7iT7PDoC6rl2R6Y5b5RCniFUSWUrPYKGZVH7npZV1w,4245
+mongars-0.7.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+mongars-0.7.1.dist-info/entry_points.txt,sha256=5fOUveJtF9oPy7FjwNP7hkRoQZq9LHaEWI-Ca5bHJMY,44
+mongars-0.7.1.dist-info/RECORD,,
