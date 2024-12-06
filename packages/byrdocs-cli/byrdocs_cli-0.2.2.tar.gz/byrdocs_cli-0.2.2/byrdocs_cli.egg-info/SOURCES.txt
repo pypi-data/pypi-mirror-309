@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+byrdocs/__init__.py
+byrdocs_cli.egg-info/PKG-INFO
+byrdocs_cli.egg-info/SOURCES.txt
+byrdocs_cli.egg-info/dependency_links.txt
+byrdocs_cli.egg-info/entry_points.txt
+byrdocs_cli.egg-info/requires.txt
+byrdocs_cli.egg-info/top_level.txt
