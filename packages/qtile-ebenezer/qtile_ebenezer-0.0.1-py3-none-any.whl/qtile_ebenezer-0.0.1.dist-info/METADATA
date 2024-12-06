@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: qtile-ebenezer
+Version: 0.0.1
+Summary: This repository provides a collection of widgets and behaviors spanning Desktop to Qtile Tiling Window Manager.
+Home-page: https://github.com/williampsena/qtile-ebenezer
+Author: William Sena
+Author-email: me@willsena.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests>=2.32.3
+Requires-Dist: qtile>=0.29.0
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: cairocffi>=1.7.1
+
+# Qtile Ebenezer 🪨
+
+This repository provides a collection of widgets and behaviors spanning Desktop to Qtile Tiling Window Manager.
+
+
+# The name
+
+This theme was named Ebenezer 🪨, which meaning "stone of helper.".
+
+> The quote is from I Samuel 7. After defeating the Philistines, Samuel raises his Ebenezer, declaring that God defeated the enemies on this spot. As a result, "hither by thy help I come." So I hope this stone helps you in your environment and, more importantly, in your life. 🙏🏿
