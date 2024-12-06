@@ -1,0 +1,12 @@
+star_of_africa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+star_of_africa/play.py,sha256=qIkTtkhI8pX7m8Mkxp-2gBKq0yYS5XFvN6mdXtkhAGY,832
+star_of_africa/game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+star_of_africa/game/board_layout.py,sha256=wdutekrPE3ghqusPnT3RFlXvPqBJNrdY3q6IDD-Gib8,1435
+star_of_africa/game/cities.py,sha256=VWqGqxFQhlQZKhfIYEUmo9TTWnfzAGIYiUBkmcDbKms,2479
+star_of_africa/game/players.py,sha256=5XcJkbx2eafbQS0UrnnR_ZaNWIXQjxGJ0wJ_bcofY80,977
+star_of_africa/game/roads.py,sha256=CiFrmPGNExSLXC7Srf3_tZVuWHSaYKmJyV_5ettvoeM,14029
+star_of_africa-0.0.1.dist-info/LICENSE,sha256=clZGOydWr8W6BerCkplpFtKZWBiMmaZ-jVce5g4LCEA,1073
+star_of_africa-0.0.1.dist-info/METADATA,sha256=aFHoLPaa5nbZfIDK8tqUq45xx3D__0ViufUe2H57Uno,838
+star_of_africa-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+star_of_africa-0.0.1.dist-info/top_level.txt,sha256=31HsqUVN-VU76bhpRYCFFlCY-ceEuH1tIRPJGDVH-i4,15
+star_of_africa-0.0.1.dist-info/RECORD,,
