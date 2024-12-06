@@ -1,0 +1,5 @@
+lucidmq-0.1.0.dist-info/METADATA,sha256=ia2wn4ds25A-3-6fdYGKUoiOFSFBBs9ud04kV1orq_U,2324
+lucidmq-0.1.0.dist-info/WHEEL,sha256=EIhSLQ9M9teIuaTrx2V6G3NQFhsKpYkGvsvJCaKboDA,104
+pylucidmq/__init__.py,sha256=d_okOiHoR-rxOpXps6Z9aRBPd2JU3isSqm0P4HoA8CM,119
+pylucidmq/pylucidmq.cpython-312-darwin.so,sha256=nFk3Xxi98GRPyDy9Zt-OcghcUj5NPBhr3TaRHMS0R2w,745360
+lucidmq-0.1.0.dist-info/RECORD,,
