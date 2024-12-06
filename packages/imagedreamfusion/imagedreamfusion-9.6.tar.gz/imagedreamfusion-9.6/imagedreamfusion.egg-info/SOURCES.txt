@@ -1,0 +1,7 @@
+main.py
+setup.py
+imagedreamfusion.egg-info/PKG-INFO
+imagedreamfusion.egg-info/SOURCES.txt
+imagedreamfusion.egg-info/dependency_links.txt
+imagedreamfusion.egg-info/requires.txt
+imagedreamfusion.egg-info/top_level.txt
