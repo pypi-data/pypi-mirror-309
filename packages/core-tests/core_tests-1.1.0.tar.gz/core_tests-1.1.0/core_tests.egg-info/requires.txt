@@ -1,0 +1,16 @@
+click>=8.1.7
+
+[:python_version >= "3.7" and python_version < "3.8"]
+environs>=10.1.0
+coverage>=7.0.0
+
+[:python_version >= "3.8"]
+environs>=11.2.0
+
+[:python_version >= "3.8" and python_version < "3.9"]
+coverage>=7.3.0
+
+[:python_version >= "3.9"]
+coverage>=7.6.7
+
+[test]
