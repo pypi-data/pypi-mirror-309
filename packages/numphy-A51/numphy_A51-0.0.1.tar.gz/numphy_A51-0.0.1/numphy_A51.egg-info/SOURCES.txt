@@ -1,0 +1,8 @@
+setup.py
+numphy_A51/__init__.py
+numphy_A51/operation.py
+numphy_A51.egg-info/PKG-INFO
+numphy_A51.egg-info/SOURCES.txt
+numphy_A51.egg-info/dependency_links.txt
+numphy_A51.egg-info/not-zip-safe
+numphy_A51.egg-info/top_level.txt
