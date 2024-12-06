@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rubric_trec_rag
+Version: 0.1
+Summary: RUBRIC Autograder Workbench for evaluating retrieval, generation, and RAG information systems
+Author-email: Laura Dietz <dietz@cs.unh.edu>, Ben Gamari <ben@smart-cactus.org>, Naghmeh Farzi <Naghmeh.Farzi@unh.edu>
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: exam-pp==0.1.2
+Requires-Dist: scikit-learn
+Requires-Dist: pylatex
+Requires-Dist: duckdb

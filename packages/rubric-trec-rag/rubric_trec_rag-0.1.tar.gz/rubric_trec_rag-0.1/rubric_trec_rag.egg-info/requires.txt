@@ -1,0 +1,4 @@
+exam-pp==0.1.2
+scikit-learn
+pylatex
+duckdb
