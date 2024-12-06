@@ -1,0 +1,17 @@
+pyserial>=3.4
+click>=8.1.7
+
+[docs]
+Sphinx>=5.1.1
+sphinx-rtd-theme>=1.0.0
+tomli>=2.0.1
+
+[lint]
+black<25.0,>=24.3
+flake8>=5.0.0
+isort>=5.13.2
+
+[test]
+pytest>=8.2.1
+pytest-asyncio>=0.23.7
+pytest-cov>=3.0.0
