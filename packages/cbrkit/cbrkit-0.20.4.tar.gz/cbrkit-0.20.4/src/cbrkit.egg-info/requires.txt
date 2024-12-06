@@ -1,0 +1,74 @@
+immutables<1,>=0.21
+orjson<4,>=3
+polars<2,>=1
+pyyaml<7,>=6
+xmltodict<1,>=0.13
+
+[all]
+cbrkit[api,cli,eval,graphs,llm,nlp,timeseries,transformers]
+pandas<3,>=2
+pydantic<3,>=2
+scipy<2,>=1
+
+[all:sys_platform == "darwin" and platform_machine == "arm64"]
+numpy<3,>=2
+
+[all:sys_platform == "darwin" and platform_machine == "x86_64"]
+numpy<2,>=1
+
+[all:sys_platform == "linux"]
+numpy<3,>=2
+
+[api]
+cbrkit[cli]
+fastapi<1,>=0.100
+pydantic-settings<3,>=2
+uvicorn[standard]<1,>=0.30
+
+[cli]
+rich<14,>=13
+typer<1,>=0.9
+
+[eval]
+ranx<1,>=0.3
+
+[graphs]
+networkx<4,>=3
+rustworkx<1,>=0.15
+
+[llm]
+cohere<6,>=5
+ollama<1,>=0.3
+openai<2,>=1
+
+[nlp]
+nltk<4,>=3
+
+[nlp:sys_platform == "darwin" and platform_machine == "arm64"]
+levenshtein<1,>=0.26
+spacy<4,>=3.8
+
+[nlp:sys_platform == "darwin" and platform_machine == "x86_64"]
+levenshtein<0.26,>=0.23
+spacy<3.8,>=3.7
+
+[nlp:sys_platform == "linux"]
+levenshtein<1,>=0.26
+spacy<4,>=3.8
+
+[timeseries]
+minineedle<4,>=3
+dtaidistance<3,>=2
+
+[transformers]
+sentence-transformers<4,>=3
+transformers<5,>=4
+
+[transformers:sys_platform == "darwin" and platform_machine == "arm64"]
+torch<3,>=2.5
+
+[transformers:sys_platform == "darwin" and platform_machine == "x86_64"]
+torch<2.3,>=2.2
+
+[transformers:sys_platform == "linux"]
+torch<3,>=2.5

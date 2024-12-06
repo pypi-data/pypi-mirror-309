@@ -1,0 +1,111 @@
+[project]
+name = "cbrkit"
+version = "0.20.4"
+description = "Customizable Case-Based Reasoning (CBR) toolkit for Python with a built-in API and CLI"
+authors = [{ name = "Mirko Lenz", email = "mirko@mirkolenz.com" }]
+readme = "README.md"
+keywords = [
+    "cbr",
+    "case-based reasoning",
+    "api",
+    "similarity",
+    "nlp",
+    "retrieval",
+    "cli",
+    "tool",
+    "library",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "immutables>=0.21,<1",
+    "orjson>=3,<4",
+    "polars>=1,<2",
+    "pyyaml>=6,<7",
+    "xmltodict>=0.13,<1",
+]
+
+[project.optional-dependencies]
+all = [
+    "cbrkit[api,cli,eval,graphs,llm,nlp,timeseries,transformers]",
+    "numpy>=1,<2; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "numpy>=2,<3; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "numpy>=2,<3; sys_platform == 'linux'",
+    "pandas>=2,<3",
+    "pydantic>=2,<3",
+    "scipy>=1,<2",
+]
+api = [
+    "cbrkit[cli]",
+    "fastapi>=0.100,<1",
+    "pydantic-settings>=2,<3",
+    "uvicorn[standard]>=0.30,<1",
+]
+cli = ["rich>=13,<14", "typer>=0.9,<1"]
+eval = ["ranx>=0.3,<1"]
+graphs = ["networkx>=3,<4", "rustworkx>=0.15,<1"]
+llm = ["cohere>=5,<6", "ollama>=0.3,<1", "openai>=1,<2"]
+nlp = [
+    "levenshtein>=0.23,<0.26; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "levenshtein>=0.26,<1; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "levenshtein>=0.26,<1; sys_platform == 'linux'",
+    "nltk>=3,<4",
+    "spacy>=3.7,<3.8; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "spacy>=3.8,<4; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "spacy>=3.8,<4; sys_platform == 'linux'",
+]
+timeseries = ["minineedle>=3,<4", "dtaidistance>=2,<3"]
+transformers = [
+    "sentence-transformers>=3,<4",
+    "torch>=2.2,<2.3; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "torch>=2.5,<3; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "torch>=2.5,<3; sys_platform == 'linux'",
+    "transformers>=4,<5",
+]
+
+[project.urls]
+Repository = "https://github.com/wi2trier/cbrkit"
+Documentation = "https://wi2trier.github.io/cbrkit/"
+Issues = "https://github.com/wi2trier/cbrkit/issues"
+Changelog = "https://github.com/wi2trier/cbrkit/releases"
+
+[project.scripts]
+cbrkit = "cbrkit.cli:app"
+
+[dependency-groups]
+test = ["pytest>=8,<9", "pytest-cov>=6,<7"]
+docs = ["pdoc>=15,<16"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov cbrkit --cov-report term-missing --doctest-modules --ignore data --ignore examples --ignore result"
+doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL ELLIPSIS"
+
+[tool.uv]
+default-groups = ["test", "docs"]
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
