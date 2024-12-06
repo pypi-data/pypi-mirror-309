@@ -1,0 +1,9 @@
+mlops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlops/config.py,sha256=A5byXstP6tf4nMe_lvqvsNu4eL2wY3SeCzYU0HW3gq8,2952
+mlops/dataset.py,sha256=_WQXphIGm0K1wCN__ds_lGxvKkscxwQ0Zaq1M449-ik,1067
+mlops/predict.py,sha256=4xkIuHO8zYM56ArjBw9zKE3YmHB7vhj_PAcnAVyhkpU,480
+mlops/train.py,sha256=N4ZvWIfClXcGBFfm3epxP4Q9TqMpUFF2U6nAjATInYs,2646
+mlops_fropych-0.0.1.dist-info/METADATA,sha256=d7MFq0DZDjxkIgrvmJ-p5XKt3JTAld7Sh0wy9p_YyPo,2929
+mlops_fropych-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mlops_fropych-0.0.1.dist-info/top_level.txt,sha256=--7wLiLl45mvQQQArHnQ-USLTKpDk_7noq7gOOKt5Hk,6
+mlops_fropych-0.0.1.dist-info/RECORD,,
