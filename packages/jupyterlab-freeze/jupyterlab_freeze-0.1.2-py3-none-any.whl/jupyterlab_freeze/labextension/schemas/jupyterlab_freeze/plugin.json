@@ -1,0 +1,32 @@
+{
+  "title": "Jupyterlab Freeze Extension",
+  "description": "Settings of the Jupyterlab version of freeze extension.",
+  "properties": {
+    "--jp-freeze-frozen-bg": {
+      "type": "string",
+      "title": "Frozen bg-color",
+      "description": "The background color of a frozen cell.",
+      "default": "#71b8e7"
+    },
+    "--jp-freeze-readonly-bg": {
+      "type": "string",
+      "title": "Readonly bg-color",
+      "description": "The background color of a locked/readonly cell.",
+      "default": "#ffec8a"
+    }
+  },
+  "additionalProperties": false,
+  "type": "object",
+  "jupyter.lab.shortcuts": [
+    {
+      "command": "notebook:toggle-cell-freeze",
+      "keys": ["Accel E"],
+      "selector": ".jp-Notebook"
+    },
+    {
+      "command": "notebook:toggle-cell-read-only",
+      "keys": ["Accel G"],
+      "selector": ".jp-Notebook"
+    }
+  ]
+}
