@@ -1,0 +1,195 @@
+# checkpointer &middot; [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Reddan/checkpointer/blob/master/LICENSE) [![pypi](https://img.shields.io/pypi/v/checkpointer)](https://pypi.org/project/checkpointer/) [![Python 3.12](https://img.shields.io/badge/python-3.12-blue)](https://pypi.org/project/checkpointer/)
+
+`checkpointer` is a Python library for memoizing function results. It simplifies caching by providing a decorator-based API and supports various storage backends. It's designed for computationally expensive operations where caching can save time, or during development to avoid waiting for redundant computations. 🚀
+
+Adding or removing `@checkpoint` doesn't change how your code works, and it can be applied to any function, including ones you've already written, without altering their behavior or introducing side effects. The original function remains unchanged and can still be called directly when needed.
+
+### Key Features:
+- **Multiple Storage Backends**: Supports in-memory, pickle, or your own custom storage.
+- **Simple Decorator API**: Apply `@checkpoint` to functions.
+- **Async and Sync Compatibility**: Works with synchronous functions and any Python async runtime (e.g., `asyncio`, `Trio`, `Curio`).
+- **Custom Expiration Logic**: Automatically invalidate old checkpoints.
+- **Flexible Path Configuration**: Control where checkpoints are stored.
+
+### How It Works
+
+When you use `@checkpoint`, the function's **arguments** (`args`, `kwargs`) are hashed to create a unique identifier for each call. This identifier is used to store and retrieve cached results. If the same arguments are passed again, `checkpointer` will return the cached result instead of recomputing.
+
+Additionally, `checkpointer` ensures that caches are invalidated when a function’s implementation or any of its dependencies change. Each function is assigned a hash based on:
+1. **Its source code**: Changes to the function’s code update its hash.
+2. **Dependent functions**: If a function calls others, changes to those will also update the hash.
+
+### Example: Cache Invalidation by Function Dependencies
+
+```python
+def multiply(a, b):
+    return a * b
+
+@checkpoint
+def helper(x):
+    return multiply(x + 1, 2)
+
+@checkpoint
+def compute(a, b):
+    return helper(a) + helper(b)
+```
+
+If you change `multiply`, the checkpoints for both `helper` and `compute` will be invalidated and recomputed.
+
+---
+
+## Installation
+
+```bash
+pip install checkpointer
+```
+
+---
+
+## Quick Start
+
+```python
+from checkpointer import checkpoint
+
+@checkpoint
+def expensive_function(x: int) -> int:
+    print("Computing...")
+    return x ** 2
+
+result = expensive_function(4)  # Computes and stores result
+result = expensive_function(4)  # Loads from checkpoint
+```
+
+---
+
+## Parameterization
+
+### Global Configuration
+
+You can configure a custom `Checkpointer`:
+
+```python
+from checkpointer import checkpoint
+
+checkpoint = checkpoint(format="memory", root_path="/tmp/checkpoints")
+```
+
+Extend this configuration by calling itself again:
+
+```python
+extended_checkpoint = checkpoint(format="pickle", verbosity=0)
+```
+
+### Per-Function Customization
+
+```python
+@checkpoint(format="pickle", verbosity=0)
+def my_function(x, y):
+    return x + y
+```
+
+### Combining Configurations
+
+```python
+checkpoint = checkpoint(format="memory", verbosity=1)
+quiet_checkpoint = checkpoint(verbosity=0)
+pickle_checkpoint = checkpoint(format="pickle", root_path="/tmp/pickle_checkpoints")
+
+@checkpoint
+def compute_square(n: int) -> int:
+    return n ** 2
+
+@quiet_checkpoint
+def compute_quietly(n: int) -> int:
+    return n ** 3
+
+@pickle_checkpoint
+def compute_sum(a: int, b: int) -> int:
+    return a + b
+```
+
+### Layered Caching
+
+```python
+IS_DEVELOPMENT = True  # Toggle based on environment
+
+dev_checkpoint = checkpoint(when=IS_DEVELOPMENT)
+
+@checkpoint(format="memory")
+@dev_checkpoint
+def some_expensive_function():
+    print("Performing a time-consuming operation...")
+    return sum(i * i for i in range(10**6))
+```
+
+- In development: Both `dev_checkpoint` and `memory` caches are active.
+- In production: Only the `memory` cache is active.
+
+---
+
+## Usage
+
+### Force Recalculation
+Use `rerun` to force a recalculation and overwrite the stored checkpoint:
+
+```python
+result = expensive_function.rerun(4)
+```
+
+### Bypass Checkpointer
+Use `fn` to directly call the original, undecorated function:
+
+```python
+result = expensive_function.fn(4)
+```
+
+### Retrieve Stored Checkpoints
+Access stored results without recalculating:
+
+```python
+stored_result = expensive_function.get(4)
+```
+
+---
+
+## Configuration Options
+
+| Option         | Type                                | Default     | Description                                 |
+|----------------|-------------------------------------|-------------|---------------------------------------------|
+| `format`       | `"pickle"`, `"memory"`, `Storage`   | `"pickle"`  | Storage backend format.                     |
+| `root_path`    | `Path`, `str`, or `None`            | User Cache  | Root directory for storing checkpoints.     |
+| `when`         | `bool`                              | `True`      | Enable or disable checkpointing.            |
+| `verbosity`    | `0` or `1`                          | `1`         | Logging verbosity.                          |
+| `path`         | `str` or `Callable[..., str]`       | `None`      | Custom path for checkpoint storage.         |
+| `should_expire`| `Callable[[datetime], bool]`        | `None`      | Custom expiration logic.                    |
+
+---
+
+## Full Example
+
+```python
+import asyncio
+from checkpointer import checkpoint
+
+@checkpoint
+def compute_square(n: int) -> int:
+    print(f"Computing {n}^2...")
+    return n ** 2
+
+@checkpoint(format="memory")
+async def async_compute_sum(a: int, b: int) -> int:
+    await asyncio.sleep(1)
+    return a + b
+
+async def main():
+    result1 = compute_square(5)
+    print(result1)
+
+    result2 = await async_compute_sum(3, 7)
+    print(result2)
+
+    result3 = async_compute_sum.get(3, 7)
+    print(result3)
+
+asyncio.run(main())
+```
