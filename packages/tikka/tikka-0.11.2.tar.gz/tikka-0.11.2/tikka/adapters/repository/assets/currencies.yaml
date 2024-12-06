@@ -1,0 +1,25 @@
+#################################
+# Currencies configuration file
+# Use this model:
+#
+# currency_code:
+#   name: Currency Name
+#   entry_points:
+#     - "ws://localhost:9944"
+#   ss58_format: 42
+#################################
+gdev:
+  name: Ğdev
+  entry_points:
+    - "wss://gdev.p2p.legal/ws"
+    - "wss://vit.fdn.org/ws"
+    - "wss://gdev.coinduf.eu/ws"
+    - "wss://gdev.cgeek.fr/ws"
+    - "wss://gdev.pini.fr/ws"
+  ss58_format: 42
+
+gdev-local:
+  name: Development
+  entry_points:
+    - "ws://localhost:9944"
+  ss58_format: 42
