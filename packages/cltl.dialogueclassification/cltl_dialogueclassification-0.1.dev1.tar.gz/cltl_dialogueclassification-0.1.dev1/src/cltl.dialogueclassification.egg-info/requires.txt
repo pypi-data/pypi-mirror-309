@@ -1,0 +1,9 @@
+
+[impl]
+transformers
+torch
+numpy
+
+[service]
+cltl.combot
+emissor
