@@ -1,0 +1,11 @@
+wasmvm/__init__.py,sha256=psWW7oJrlvJnx7GNIlEeX0FUnOQ0cDoylrfJ9WkZQJQ,304
+wasmvm/functions.py,sha256=BN-exfbrOe9Bkb-B8MAHoTjkgTn-nTku1lEQsa1r0v4,776
+wasmvm/lib.py,sha256=krNuU0CResPinbxwVVmaONnMtTO5_A47ilKsq6xi0_4,6211
+wasmvm/observers.py,sha256=iOY2D7zK3E6_7ebi43PKszBI4UA6alAVIEiNW1ZI7-w,124
+wasmvm/shared.py,sha256=-d2bpPGqdCJqazi4-F8D4HDzk66Bi-3WcHNQ9ucYdR4,375
+wasmvm/virtual_machine.py,sha256=43xU509VYIrQjTH7h_bIQQJZ1lRE4bOWGsO7h14jaWA,1105
+WasmVM-0.1.0.dist-info/LICENSE,sha256=EapWamtN7F1l_kTbbV5M-GmipgeqSo21EKkF3Q1cPmc,1499
+WasmVM-0.1.0.dist-info/METADATA,sha256=3NNEtjWOcv0iq2FrFuAfPOoRMkyiZ1Uv-Nk_PYD49Yk,4893
+WasmVM-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+WasmVM-0.1.0.dist-info/top_level.txt,sha256=ytBjcTJFL2OIMKiAKyirTlfsIemQnVNXQOwFjZkssXk,7
+WasmVM-0.1.0.dist-info/RECORD,,
