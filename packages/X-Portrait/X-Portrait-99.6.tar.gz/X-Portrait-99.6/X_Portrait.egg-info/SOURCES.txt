@@ -1,0 +1,7 @@
+main.py
+setup.py
+X_Portrait.egg-info/PKG-INFO
+X_Portrait.egg-info/SOURCES.txt
+X_Portrait.egg-info/dependency_links.txt
+X_Portrait.egg-info/requires.txt
+X_Portrait.egg-info/top_level.txt
