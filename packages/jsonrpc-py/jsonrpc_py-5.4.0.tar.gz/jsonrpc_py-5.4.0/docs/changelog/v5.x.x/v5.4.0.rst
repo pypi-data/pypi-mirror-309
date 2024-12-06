@@ -1,0 +1,10 @@
+v5.4.0
+======
+
+Released on Nov 19, 2024 (`diff`_).
+
+* Relicensed project under both Apache License 2.0 and BSD 2-Clause "Simplified" License.
+  This change will guarantees compatibility with licenses such as GNU General Public License v2.0
+  which are not compatible with Apache License 2.0.
+
+.. _`diff`: https://gitlab.com/jsonrpc/jsonrpc-py/-/compare/v5.3.1...v5.4.0
