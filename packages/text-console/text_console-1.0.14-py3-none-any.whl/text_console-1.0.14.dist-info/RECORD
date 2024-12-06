@@ -1,0 +1,11 @@
+text_console/__init__.py,sha256=anEGlXfAJdvRV_EWZ82hmodQfGk0fypf5hGNLCzxeH8,142
+text_console/__main__.py,sha256=yPwaqlG8mtwfu50fOOj75rE968kQ2WXe-La8rNn4HDs,2053
+text_console/__version__.py,sha256=tmJFcbWnlgNwXFCrgJHkNSJZmxR67rAjso_lz91m_vc,23
+text_console/history.py,sha256=5HjBhAI6tL7e0l23eV_X9UWXfoTDrZtWuCNa39yL6_w,915
+text_console/text_console.py,sha256=ANRsxb07cCSRG-Co7VvoNbPZs6wQ97Lxxo-SS2YtR1U,19848
+text_console-1.0.14.dist-info/LICENSE,sha256=ngv-sXn42qIgevVg62T2yN73oiTyCsAWABUY5nAggT0,13404
+text_console-1.0.14.dist-info/METADATA,sha256=lMDc6QgdwPIV0RMXRAVsKeMSDGo9iWrn3k7LzG1In98,1980
+text_console-1.0.14.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+text_console-1.0.14.dist-info/entry_points.txt,sha256=z_xVWU8Y2PLWA0qxHCWOwnLu_k_mg4owMRZdf6J5GHI,60
+text_console-1.0.14.dist-info/top_level.txt,sha256=357VsumqP9dQNsOU1zDJ_vvJ5Z7iXvCNeRazPqxcQPg,13
+text_console-1.0.14.dist-info/RECORD,,
