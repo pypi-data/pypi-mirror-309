@@ -1,0 +1,2 @@
+[console_scripts]
+pylib1-cli = pylib1:hello
