@@ -1,0 +1,16 @@
+pydeseq2/__init__.py,sha256=SkHnjG3wRTmh4tS7zlg06KSUTSSHKp3AVELNJQ6jCao,45
+pydeseq2/__version__.py,sha256=dxDqHe5y6CRLPLnIHFlvLMj3__hCDq1hKnvsGEgSGRw,26
+pydeseq2/_formulaic.py,sha256=UNG1q6Rcb6yt5pF2sE34lLvJ59pVblv_-RcIlUivLiQ,10403
+pydeseq2/dds.py,sha256=tLttYWpWNkASQFAdtGiYaXTbxzwrJuRpt1rp3hVUpFw,59926
+pydeseq2/default_inference copy.py,sha256=PlCmlvjr3L1ZiG4tIPYmn9TQV2EJnONTqPCXVxDLonQ,9181
+pydeseq2/default_inference.py,sha256=PlCmlvjr3L1ZiG4tIPYmn9TQV2EJnONTqPCXVxDLonQ,9181
+pydeseq2/ds.py,sha256=XffedL7zF6DPbvt5V66ox0Ym9hoi-LPw4dJLCOxihFg,21977
+pydeseq2/grid_search.py,sha256=nmQqD5uQYaW-jq9dB2BejqsXwxJyE3k-0PFYj_gX40M,8472
+pydeseq2/inference.py,sha256=6xmlaryq8D_VT3NObe1qklFt0NQiqliK534JLjk5j4E,10352
+pydeseq2/preprocessing.py,sha256=M10jumiM0iMmzZWllsLPo_FsqFMk_Dgb8tzAYoNYemM,3486
+pydeseq2/utils.py,sha256=NzzDqNNV3iRqgAxFwnWu6fzaUty7ax35WyK6zvdeR7c,43360
+pydeseq2-0.5.0rc1.dist-info/LICENSE,sha256=DE4YrnSXJb_AaIvIMkxWm5Vjgm_whQk3w4qY5-gRGd8,1062
+pydeseq2-0.5.0rc1.dist-info/METADATA,sha256=H4D9Wjec7kfmjghFCzEgKKobldr7k0gZnljoI1ASQvE,7069
+pydeseq2-0.5.0rc1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pydeseq2-0.5.0rc1.dist-info/top_level.txt,sha256=RlMXsvZjiC1oSVVzjxRX2alxKzF0ZFcTG1wak42I9Gk,9
+pydeseq2-0.5.0rc1.dist-info/RECORD,,
