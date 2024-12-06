@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: task-executor
+Version: 0.1.0
+Summary: Execute Python functions in an automatically generated user interface (GUI/TUI).
+Project-URL: documentation, https://rhuygen.github.io/task-executor/
+Project-URL: repository, https://github.com/rhuygen/task-executor
+Author-email: Rik Huygen <rik.huygen@kuleuven.be>
+License: MIT
+Keywords: GUI,TUI,common,execute,lab,task
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+
+# 🚧 Work in Progress
+
+
+This package will contain the common functions, classes and other definitions for the `gui-executor` and the `tui-executor` packages. These will be the definitions that need to be used when defining tasks. The idea is that any task (or recurring task) can be used and executed by either package, `gui-executor` for the Qt vesion, and `tui-executor` for the Textual version.
