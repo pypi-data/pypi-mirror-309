@@ -1,0 +1,15 @@
+aiohttp
+argcomplete
+croniter
+jsonschema
+prometheus-aioexporter>=2
+prometheus-client
+python-dateutil
+pyyaml
+sqlalchemy>=2
+toolrack>=4
+
+[testing]
+pytest
+pytest-asyncio
+pytest-mock
