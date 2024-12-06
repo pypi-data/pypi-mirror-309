@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: shimbboleth
+Version: 0.0.1
+Summary: Josh's opinionated (and typed) shims library.
+Project-URL: Homepage, https://github.com/thejcannon/shimbboleth
+Project-URL: source_archive, https://github.com/thejcannon/shimbboleth/archive/70cb91718eba204366e8b4c816734ceb3eaa8d01.zip
+Requires-Python: >=3.11
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: pydantic>=2.9.2
+Description-Content-Type: text/markdown
+
+# shimbboleth
+
+Josh's opinionated (and typed) shims library.
+
+- supports (syncronous), `asyncio`, and `trio`
+- only requires `httpx` and `pydantic`
+
+## Buildkite
+
+### Agent shims
+
+`shimbboleth.buildkite.agent` provides shims around a subset of the [Buildkite agent CLI](https://buildkite.com/docs/agent/v3/cli-reference).
+
+See module for more details.
