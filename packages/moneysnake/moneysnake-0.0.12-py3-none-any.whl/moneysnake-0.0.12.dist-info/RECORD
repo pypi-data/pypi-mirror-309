@@ -1,0 +1,16 @@
+moneysnake/__init__.py,sha256=WX9nRdOKSsiCIa34o9kNFGpHIapAz_S1gYUzO0VQ-co,778
+moneysnake/__init__.pyi,sha256=ANHXvc5ELowkyv_5ija-6dhsjOpfGLuIv16H-Zw9bqg,576
+moneysnake/client.py,sha256=R6SN7bw0QzPf4dS_fW1Im3IENG4osrGJB2BB7e4PH4E,924
+moneysnake/client.pyi,sha256=MqIcmyIe-EpNl76HSokmt8piw2fYq2WQ2st5v50ogn4,333
+moneysnake/contact.py,sha256=n7n1125y8XIHBortdYIQn5M7vY0aRHBo7gqy8uf-2Ko,1846
+moneysnake/contact.pyi,sha256=4nbK2OmVKuG0tLM3ZYiN6-7s5smNvDC4O-BVOja1Muk,2364
+moneysnake/custom_field_model.py,sha256=_EcdLvbRBezR077SxuOv8glYHSQFmDhu0QA1nXu9vVs,747
+moneysnake/custom_field_model.pyi,sha256=3i295hT8AM5x5WdbzvDXKmy_bODFFJmjTXn389WiWrk,439
+moneysnake/external_sales_invoice.py,sha256=4LY9yrO3AqJDURpnWNUUOVo1bs7JLbvB26EYAq3ZP0A,5464
+moneysnake/external_sales_invoice.pyi,sha256=RPgZr6cAvX1KyXyslIVH-UvReMtH82jW5VpI52b7zks,2430
+moneysnake/model.py,sha256=jFsbwYH0SUZ9qfqCitLikTYblTWST4o6i2D8R6Thr6I,2584
+moneysnake/model.pyi,sha256=0szo0NmGcjH-IXUuQ_anFOThrdVYmGC9zrXchUOreUw,790
+moneysnake-0.0.12.dist-info/LICENSE,sha256=h5SFbhIQvPQ-pEtU6CHKUViBH8PHAjdbFkSlCqv6tSE,1067
+moneysnake-0.0.12.dist-info/METADATA,sha256=HHklPSRjVJoqJqbHxMU1ZxsUc3NWdt83svvAlBEpXNk,1630
+moneysnake-0.0.12.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+moneysnake-0.0.12.dist-info/RECORD,,
