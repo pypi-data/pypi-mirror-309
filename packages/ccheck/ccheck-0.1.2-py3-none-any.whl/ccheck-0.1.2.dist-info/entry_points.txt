@@ -1,0 +1,4 @@
+[console_scripts]
+ccheck=contextcheck.run_tests:main
+questions_generator=contextcheck.questions_generator:main
+
