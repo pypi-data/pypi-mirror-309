@@ -1,0 +1,8 @@
+README.md
+setup.py
+html_opener_library/__init__.py
+html_opener_library.egg-info/PKG-INFO
+html_opener_library.egg-info/SOURCES.txt
+html_opener_library.egg-info/dependency_links.txt
+html_opener_library.egg-info/top_level.txt
+tests/test_open_html.py
