@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: framewise-secureline
+Version: 0.1.0
+Summary: A client library for content security detection
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+Here’s the updated **README** for your `framewise_secureline` project with the requested changes:
+
+---
+
+# Framewise SecureLine
+
+`framewise_secureline` is a Python client library for interacting with the SecureLine API. It provides robust content security detection, including identifying sensitive information, prohibited topics, and potential attacks within text.
+
+## Features
+
+- **Content Analysis**: Detect and classify content based on predefined filters such as:
+  - **Benign**: Safe content.
+  - **Prompt Attacks**: Attempts to manipulate the system.
+  - **Denied Topics**: Topics flagged as prohibited.
+  - **PPI Information**: Personal Identifiable Information detection.
+  - **Word Filters**: Inappropriate or flagged language detection.
+  
+- **Custom Filters**: Configure your own denied topics, PPI information types, and word filters.
+- **Retry Mechanism**: Automatically retries failed requests with exponential backoff.
+- **Timeout Handling**: Gracefully handles API timeouts.
+- **Logging**: Comprehensive logging for debugging and monitoring.
+
+---
+
+## Installation
+
+You can install `framewise_secureline` using either [Poetry](https://python-poetry.org/) or `pip`.
+
+### Poetry Installation
+```bash
+git clone https://github.com/yourusername/framewise_secureline.git
+cd framewise_secureline
+poetry install
+```
+
+### pip Installation
+Install directly from PyPI (once published) or from the GitHub repository:
+
+```bash
+pip install framewise-secureline
+```
+
+Or, for the latest version from GitHub:
+
+```bash
+pip install git+https://github.com/yourusername/framewise_secureline.git
+```
+
+---
+
+## Usage
+
+### 1. Initialization
+
+Create a `SecureLine` client using your SecureLine API key:
+
+```python
+from framewise_secureline import SecureLine
+
+client = SecureLine(
+    api_key="your-api-key",
+    denied_topics="medical diagnoses, competitors",
+    ppi_information="SSN, medical records",
+    word_filters="profanity"
+)
+```
+
+### 2. Detect Content
+
+Detect security concerns in text:
+
+```python
+result = client.detect("This is a test message.")
+print("Detection Probabilities:", result.raw_response["probabilities"])
+```
+
+### 3. Update Filters
+
+Update default filters dynamically:
+
+```python
+client.update_filters(
+    denied_topics="custom topics",
+    ppi_information="custom PPI",
+    word_filters="custom filters"
+)
+```
+
+---
+
+## Examples
+
+### Basic Detection
+
+```python
+message = "This contains personal information like SSN: 123-45-6789."
+result = client.detect(message)
+
+print("Benign Probability:", result.raw_response["probabilities"]["Benign"])
+print("Detected Issues:", result.raw_response["probabilities"])
+```
+
+### Retry Mechanism
+
+```python
+result = client.detect(
+    text="This is another test message.",
+    retry_count=3,  # Retry up to 3 times on failure
+    retry_delay=2.0  # Wait 2 seconds between retries
+)
+```
+
+---
+
+## Running Tests
+
+Framewise SecureLine uses `pytest` for testing. Run tests with:
+
+```bash
+poetry run pytest
+```
+
+### Integration Tests
+
+To test with real API requests:
+
+1. Set the `SECURELINE_API_KEY` environment variable:
+   ```bash
+   export SECURELINE_API_KEY="your-api-key"
+   ```
+
+2. Run integration tests:
+   ```bash
+   poetry run pytest -m integration
+   ```
+
+---
+
+## Logging
+
+Framewise SecureLine provides built-in logging for debugging and monitoring:
+
+```python
+import logging
+logging.basicConfig(level=logging.INFO)
+
+client = SecureLine(api_key="your-api-key")
+result = client.detect("Log this message.")
+```
+
+---
+
+## Project Structure
+
+```
+framewise_secureline/
+├── framewise_secureline/
+│   ├── __init__.py          # Package initialization
+│   ├── client.py            # SecureLine client implementation
+│   ├── models.py            # DetectionResult class
+│   ├── exceptions.py        # Custom exceptions
+├── tests/
+│   ├── test_client.py       # Unit and integration tests
+├── pyproject.toml           # Poetry configuration
+├── README.md                # Project documentation
+```
+
+---
+
+## Key Concepts
+
+- **Retry Logic**: Configurable retry mechanism to handle intermittent network issues.
+- **Timeout Handling**: Avoids hanging on API calls by setting a default timeout.
+- **Dynamic Filters**: Update filters at runtime for customized detection.
+
+---
+
+## Contributions
+
+We welcome contributions! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request for review.
+
+---
+
+## License
+
+Framewise SecureLine is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Support
+
+For questions or issues, please contact **[sigireddybalasai@gmail.com](mailto:sigireddybalasai@gmail.com)** or open an issue on the [GitHub repository](https://github.com/yourusername/framewise_secureline).
+
+---
+
+## TODOs
+
+- Add support for batch processing.
+
+
