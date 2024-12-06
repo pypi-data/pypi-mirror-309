@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: dynalite_pdeg
+Version: 0.0.2
+Summary: An API for the Dynalite PDEG, using telnet
+Project-URL: Homepage, https://github.com/patrickpmueller/dynalite-pdeg
+Project-URL: Issues, https://github.com/patrickpmueller/dynalite-pdeg/issues
+Author-email: Patrick Pellacani Muller <patrickpmueller@proton.me>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: aiohttp
+Requires-Dist: asyncio-telnet
+Description-Content-Type: text/markdown
+
+# Dynalite PDEG API
+
+This module aims to provide an API to access the dynalite ethernet gateway (PDEG) through its telnet communication capabilities.
+A backup CGI function is provided but its usage is not recommended and it may be removed in future versions
+
+Requires asyncio and telnetlib3.
+
+For documentation of the API, see [The dynalite docs](https://docs.dynalite.com/system-builder/latest/ethernet_gateways/integration/dynet_text.html#_telnet_access)
