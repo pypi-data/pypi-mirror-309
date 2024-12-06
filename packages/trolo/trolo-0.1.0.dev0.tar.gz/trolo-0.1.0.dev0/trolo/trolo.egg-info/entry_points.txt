@@ -1,0 +1,2 @@
+[console_scripts]
+trolo = cli.cli:main

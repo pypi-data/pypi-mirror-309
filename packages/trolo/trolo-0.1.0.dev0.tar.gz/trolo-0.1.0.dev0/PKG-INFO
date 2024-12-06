@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: trolo
+Version: 0.1.0.dev0
+Summary: CLI tool for D-FINE model training and inference
+Requires-Python: >=3.8
+Requires-Dist: click>=8.0.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torchvision
+Requires-Dist: onnxruntime
+Requires-Dist: PyYAML
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
