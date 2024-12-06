@@ -1,0 +1,5 @@
+[console_scripts]
+dcm-check = dcm_check.dcm_check:main
+dcm-check-session = dcm_check.dcm_check_session:main
+dcm-gen-session = dcm_check.dcm_gen_session:main
+dcm-read-session = dcm_check.dcm_read_session:main
