@@ -1,0 +1,12 @@
+metafield/__init__.py,sha256=M8M_feRvw8XjAVJNbS2KdB-dSBzoeAbEuWdcbj-I0Lw,160
+metafield/__main__.py,sha256=T3QIZfUJKr1m3wfsY8F5tUYVZKivERpe9fLn9OJOqac,61
+metafield/app.py,sha256=Ro6KdqJAlglAZgv2vH9goMSgQkzvlvKJF7zGcylfCjg,57
+metafield/git_utils.py,sha256=3aR2m3ntiGEMrnPmDOKEgdnVVKcun92jJXX3n40MXvA,1872
+metafield/llm.py,sha256=TAWvAcuzN9nXZSqGDB3gNAACsDvRAk7F9_EcykCfV5Y,1217
+metafield/nb_depends.py,sha256=-FjaoX586BvlmDGoC_gEleMPewXsU57OGEVNuRP1sdM,5157
+metafield/nb_utils.py,sha256=Gq8cUEAuLe-VsVoxKsx6VRcOAOKH9e5DEc_9GElOArI,2069
+metafield-0.2.6.dist-info/METADATA,sha256=4FmF2NGb-Vua6uuc9248kz-9ozCMu4U_MGBJXjp-48I,331
+metafield-0.2.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+metafield-0.2.6.dist-info/entry_points.txt,sha256=70KTdvEwUugG-gksz9E04DwmMtq3NeYHzp6AvIuPIa0,49
+metafield-0.2.6.dist-info/top_level.txt,sha256=0o6ys940cleEWtFX3j8X1VcTuIYE70gaoB_njdDrk5g,10
+metafield-0.2.6.dist-info/RECORD,,
