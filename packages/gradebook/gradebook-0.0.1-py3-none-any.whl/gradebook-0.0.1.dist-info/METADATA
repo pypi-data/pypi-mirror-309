@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gradebook
+Version: 0.0.1
+Summary: Intuitive methods for managing academic records
+License: AGPL-3.0
+Author: kosmolebryce
+Author-email: k.lebryce@pm.me
+Requires-Python: >=3.13,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: jupyter (>=1.1.1,<2.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Description-Content-Type: text/markdown
+
+# README.md
+
+## Gradebook `v0.0.1`
+
+### Overview
+**Gradebook** is a command-line interface designed to provide straightforward, intuitive methods for managing academic records. It is currently in its initial stages of development. As such, is not yet stable.
