@@ -1,0 +1,17 @@
+picachooser
+picachooser/LightboxItem
+picachooser/_version
+picachooser/colormaps
+picachooser/fit
+picachooser/graderTemplate
+picachooser/graderTemplate_qt6
+picachooser/io
+picachooser/melodicompTemplate
+picachooser/melodicompTemplate_qt6
+picachooser/picachooserTemplate
+picachooser/picachooserTemplate_qt6
+picachooser/picachooser_imonlyTemplate
+picachooser/picachooser_imonlyTemplate_qt6
+picachooser/rtgraderTemplate
+picachooser/rtgraderTemplate_qt6
+picachooser/stats
