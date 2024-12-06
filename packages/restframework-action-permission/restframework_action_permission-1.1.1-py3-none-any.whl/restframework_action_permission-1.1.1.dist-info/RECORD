@@ -1,0 +1,7 @@
+restframework_action_permission/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restframework_action_permission/apps.py,sha256=NDgZ6QduPvO0CTUH7WsvT8XamN_fEkKqRpuYr7CMXSc,424
+restframework_action_permission/management/__init__.py,sha256=nogSlvoPFvAfNcAB9a9oUopbTPtjzdD_DixXNHezDys,823
+restframework_action_permission/permission.py,sha256=DkfKrgbSlmnr8hNBgQ-LP3fyNHln0BvJbZTQnvBtx48,3621
+restframework_action_permission-1.1.1.dist-info/METADATA,sha256=Xkmwnr2wHupsonWEC1BJyNPywmVSSETp8gdtxt4_doQ,1076
+restframework_action_permission-1.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+restframework_action_permission-1.1.1.dist-info/RECORD,,
