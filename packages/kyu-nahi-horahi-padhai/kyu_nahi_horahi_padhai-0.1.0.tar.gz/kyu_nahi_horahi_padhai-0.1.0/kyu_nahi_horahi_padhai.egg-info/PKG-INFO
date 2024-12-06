@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kyu-nahi-horahi-padhai
+Version: 0.1.0
+Summary: A Python library for tracking and analyzing coding time.
+Home-page: https://github.com/hackermans1/code-time-tracker
+Author: Sudarsh
+Author-email: sudarshchatur@gmail.com
+License: UNKNOWN
+Description: pls shut up
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
