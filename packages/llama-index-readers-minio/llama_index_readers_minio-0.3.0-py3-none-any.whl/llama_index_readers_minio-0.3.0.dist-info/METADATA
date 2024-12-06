@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-minio
+Version: 0.3.0
+Summary: llama-index readers minio integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.29,<2.0.0)
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: minio (>=7.2.3,<8.0.0)
+Description-Content-Type: text/markdown
+
+# Minio Reader
+
+## Install
+
+`pip install llama-index-readers-minio`
+
+## Import
+
+from llama_index.core.readers.minio import MinioReader, BotoMinioReader`
+
