@@ -1,0 +1,8 @@
+stream_unzip.libs/libgcc_s-8eba8b6c.so.1,sha256=I2JbMwstc8YhWuqPY02bpC1LyLD6rxTCTlhmrKOersY,42301
+stream_unzip-0.0.99.dist-info/RECORD,,
+stream_unzip-0.0.99.dist-info/METADATA,sha256=NgGasedZByPpG8A86t4N4e624srmDTpgNqxml8AFujM,3376
+stream_unzip-0.0.99.dist-info/WHEEL,sha256=n40SNjC5RSdr5Mh0YYY8UEvLx3R__LwRX3zkv-lgLZ8,108
+stream_unzip-0.0.99.dist-info/licenses/LICENSE,sha256=yraCHM6jyGpFX5ls3FiI7Bp6DEIsAYqNbsy3zHoV8eE,1091
+stream_unzip/_zipcrypto.cpython-310-arm-linux-gnueabihf.so,sha256=GVaXV_9CMt_PvwIIyiburoJAZsUeu60sZr90SNFc-0o,463065
+stream_unzip/__init__.py,sha256=oYjlnAenOqwOZJhCJmSf_pD6rUXRfM9Ktz28IKUge1Q,24863
+stream_unzip/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
