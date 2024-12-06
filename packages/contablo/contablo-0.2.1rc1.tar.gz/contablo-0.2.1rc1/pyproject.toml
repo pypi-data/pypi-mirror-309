@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "contablo"
+version = "0.2.1rc1"
+description = "Configurable Table Loader package for python"
+authors = ["gandy92 <gandy92@googlemail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/gandy92/contablo"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+pydantic = "^2.9.2"
+python-magic = "^0.4.27"
+dateparser = "^1.2.0"
+iso3166 = "^2.1.1"
+arithmetic-expressions = "^0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pre-commit = "^4.0.1"
+
+[tool.poetry.scripts]
+contablo = "contablo.cli:cli"
+[tool.pytest.ini_options]
+#addopts = "--cov=contablo --cov-report html"
+#addopts = "--cov=contablo"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
