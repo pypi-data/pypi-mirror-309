@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools>=42.0.0",
+    "wheel",
+    "twine"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["BetterLoggin"]
+
+[project]
+name = "BetterLoggin"
+version = "0.1.4"
+description = "An advanced logging module with colored output, JSON support, email alerts, and more."
+readme = "README.md"
+authors = [
+    {name = "Sprite Developments", email = "spritedevelopments@gmail.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.6"
+dependencies = [
+    "colorama"
+]
+
+[tool.twine]
+repository = "https://upload.pypi.org/legacy/"
