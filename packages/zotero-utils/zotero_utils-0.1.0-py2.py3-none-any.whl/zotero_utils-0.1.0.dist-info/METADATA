@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: zotero_utils
+Version: 0.1.0
+Summary: Tools to locally analyze a Zotero library.
+Project-URL: Documentation, https://mtillman14.github.io/zotero_library_utils/
+Project-URL: Repository, https://github.com/mtillman14/zotero_library_utils
+Author-email: Mitchell Tillman <mtillman14@gmail.com>
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: typer
