@@ -1,0 +1,76 @@
+shotgun
+=======
+
+This is a object-oriented wrapper around the shotun api3 Python API, that
+includes classes for each shotgun entity type with convenience methods.
+
+## Installation
+
+The easiest way to install:
+
+```bash
+$ pip install shotgunwrapper
+```
+
+Alternatively, use distman to dist to a deployment area using options defined
+in the `dist.json`:
+
+```bash
+$ distman [-d]
+```
+
+Files and directories can be distributed from any folder or git repo containing
+a `dist.json` file.
+
+## Configuration
+
+Default settings are stored in an env stack .env file. They can be stored in the
+default stack, or in a namespaced `shotgunwrapper.env` stack file to keep settings
+separate.
+
+Start by renaming or copying the `example_stack.env` file:
+
+```bash
+$ cp example_stack.env shotgunwrapper.env
+```
+
+and editing it's contents with the appropriate values:
+
+```yaml
+LOG_LEVEL: INFO
+SG_SCRIPT_URL: https://example.shotgunstudio.com
+SG_SCRIPT_NAME: script_name
+SG_SCRIPT_KEY: XXXXXX
+```
+
+## Usage
+
+Basic usage:
+
+```python
+>>> from shotgun import Shotgun
+>>> sg = Shotun()
+>>> show = sg.get_projects("Demo: Animation")[0]
+>>> shot = show.get_shots("bunny_080_0200")[0]
+>>> tasks = shot.get_tasks()
+```
+
+#### Core API
+
+The Shotgun class is a subclass of shotgun_api3.Shotgun, so you can drop down
+to the core API at any time or from any object:
+
+```python
+>>> sg.find(filters, fields)
+>>> shot.api().find("Task", [["id", "is", 12345]])
+[{'type': 'Task', 'id': 12345}]
+```
+
+#### Download Versions
+
+```python
+>>> version = sg.get_projects(show)[0].get_shots(shot)[0].get_versions()[0]
+>>> version.movie
+<Movie "bunny_080_0200_v001.mov">
+>>> version.movie.download("/var/tmp")
+```
