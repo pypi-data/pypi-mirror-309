@@ -1,0 +1,3 @@
+[console_scripts]
+copy-files = folder_structure_generator_7edge.generator:copy_files
+create = folder_structure_generator_7edge.generator:main
