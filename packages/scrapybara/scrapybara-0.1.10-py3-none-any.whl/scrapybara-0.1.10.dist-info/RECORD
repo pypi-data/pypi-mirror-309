@@ -1,0 +1,14 @@
+scrapybara/__init__.py,sha256=S0iIz7BNmXyenqBIU4pV0oofqnDAwu2C_NiTyDRsQu4,10406
+scrapybara/anthropic/__init__.py,sha256=FXJoNmGMXgV7aq4auoWk_GPMTYJB504yZaIKA5dJteo,5564
+scrapybara/anthropic/base.py,sha256=m359bD-w5H1-ULrVN-2H_YY0Tj6dV-1s1VA6wOtJscY,2013
+scrapybara/models/__init__.py,sha256=sbRmuvCPRpePZlQsr9C4Rgy95ajXWfMGaYZpxSz9WbE,467
+scrapybara/models/computer_action.py,sha256=MXUIV6pF5gkEO1hvWsX6fe5ltfVOaYDgh7i7Tzw6SqQ,2034
+scrapybara/models/config.py,sha256=xpsnIQDeBoBfoiOFdOfvrt463Xfv7e_J7yCtkAjsueU,505
+scrapybara/models/edit_command.py,sha256=54Kn6HPnWBZLEY2t8BRqfbQjdoeGoAe2fWyQVCzxwCw,2284
+scrapybara/models/exceptions.py,sha256=UvnYfsA3aO55_hxtvcbS7YeEx3kKrqSwS53-6CLO0A4,88
+scrapybara/models/instance.py,sha256=1b88eSgMWye5lX_o9MYLSjiQbBNaOdZJJXrOZPDB4b4,581
+scrapybara/models/types.py,sha256=hMlT_1BB3T942SqCykrS8K9jBtO_o0Hz8up8TvZX9No,901
+scrapybara-0.1.10.dist-info/LICENSE,sha256=J7XkWJDb8yRKkpbQ7k3YG0JirQ35AaGwhiCtQRUzMRw,1063
+scrapybara-0.1.10.dist-info/METADATA,sha256=ZnqQw0zI9BR2mYkKue_NmIE20ltKaijjcJ3NRKHelf4,2434
+scrapybara-0.1.10.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+scrapybara-0.1.10.dist-info/RECORD,,
