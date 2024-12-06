@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiohttp-openapi
+Version: 0.1.8
+Summary: OpenAPI documentation builder for aiohttp server.
+Home-page: https://github.com/matijabogdanovic/aiohttp-openapi
+Author: Matija Bogdanovic
+Author-email: matija.bogdanovic@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+aiohttp-openapi
+===============
+
+OpenAPI Documentation builder for aiohttp server
