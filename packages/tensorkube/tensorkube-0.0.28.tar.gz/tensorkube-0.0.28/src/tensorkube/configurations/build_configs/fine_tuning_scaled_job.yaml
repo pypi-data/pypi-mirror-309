@@ -1,0 +1,68 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledJob
+metadata:
+  name: JOB_NAME
+  namespace: keda
+spec:
+  jobTargetRef:
+    template:
+      spec:
+        serviceAccountName: keda-operator
+        containers:
+          - name: sqs-job-1
+            image: ${IMAGE_TAG}
+            env:
+              - name: AWS_REGION
+                value: us-east-1
+              - name: QUEUE_URL
+                value: <QUEUE_URL>    
+              - name: AWS_ACCESS_KEY_ID
+                valueFrom:
+                  secretKeyRef:
+                    name: aws-secret
+                    key: AWS_ACCESS_KEY_ID
+              - name: AWS_SECRET_ACCESS_KEY
+                valueFrom:
+                  secretKeyRef:
+                    name: aws-secret
+                    key: AWS_SECRET_ACCESS_KEY
+            resources:
+              requests:
+                nvidia.com/gpu: ${GPUS}
+              limits:
+                nvidia.com/gpu: ${GPUS}
+            volumeMounts:
+              - mountPath: /dev/shm
+                name: dshm
+        restartPolicy: Never
+        volumes:
+          - name: dshm
+            emptyDir:
+              medium: Memory          
+              sizeLimit: 10Gi 
+        affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: karpenter.k8s.aws/instance-family
+                    operator: NotIn
+                    values:
+                      - r5
+
+  pollingInterval: 90        # Check the queue every 10 seconds
+  maxReplicaCount: 2        # Max number of concurrent jobs
+  successfulJobsHistoryLimit: 3   # Optional. Default: 100. How many completed jobs should be kept.
+  failedJobsHistoryLimit: 2
+  scalingStrategy:
+    strategy: "accurate"  # Scaling strategy to use
+
+  triggers:
+    - type: aws-sqs-queue
+      metadata:
+        queueURL: QUEUE_URL
+        queueLength: "1"        # Scale up when there are 1 messages in the queue
+        awsRegion: "us-east-1"
+        scaleOnInFlight: "false"
+      authenticationRef:
+        name: aws-sqs-auth
