@@ -1,0 +1,3 @@
+[console_scripts]
+rofeh = rofehcloud.__main__:main
+rofehcloud = rofehcloud.__main__:main
