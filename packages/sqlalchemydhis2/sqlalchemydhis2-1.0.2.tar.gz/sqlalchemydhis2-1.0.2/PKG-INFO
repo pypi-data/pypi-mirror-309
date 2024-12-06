@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sqlalchemydhis2
+Version: 1.0.2
+Summary: DHIS2 API for SQLAlchemy
+Home-page: https://github.com/talexie/sqlalchemy_dhis2
+Author: Alex Tumwesigye
+Author-email: atumwesigye@gmail.com
+License: Apache-2.0
+Project-URL: Documentation, https://github.com/talexie/sqlalchemy_dhis2/wiki
+Project-URL: Source, https://github.com/talexie/sqlalchemy_dhis2
+Project-URL: Tracker, https://github.com/talexie/sqlalchemy_dhis2/issues
+Keywords: SQLAlchemy DHIS2
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy
+Requires-Dist: duckdb
+Requires-Dist: polars
+
+# SQLAlchemy Diver for dhis2
+### Getting started
+pip install sqlalchemydhis2
+
+### Connecting to driver
+dhis2://username:password@your-json-endpoint.com?duckdb_path=/path/to/your_duckdb.db
