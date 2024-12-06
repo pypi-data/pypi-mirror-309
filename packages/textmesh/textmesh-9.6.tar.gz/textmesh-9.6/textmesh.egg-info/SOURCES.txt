@@ -1,0 +1,7 @@
+main.py
+setup.py
+textmesh.egg-info/PKG-INFO
+textmesh.egg-info/SOURCES.txt
+textmesh.egg-info/dependency_links.txt
+textmesh.egg-info/requires.txt
+textmesh.egg-info/top_level.txt
