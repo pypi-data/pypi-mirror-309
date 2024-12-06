@@ -1,0 +1,15 @@
+vptq/__init__.py,sha256=54JMShXTftDyBcU6EFtlWE6gtylWBPxO7b1JIPok100,436
+vptq/__main__.py,sha256=zsoWWhZDbcaG3Uy1qc0meNLWOjBNiGlbiSqD1iyS28I,288
+vptq/app.py,sha256=Cu1Tmbe-kBaXPTwEqgshoiUB7EPR1yBbAAFfmMTW7qQ,4980
+vptq/app_gpu.py,sha256=M1mc32T15-cIomBC3Imf2mQbbXnMXyCzUoDTYLKhWK4,4190
+vptq/app_utils.py,sha256=gtYRmO8ng-H6ABURpaiYUUdAOrMu3vci0wfuyo-qphE,5093
+vptq/ops.cpython-39-x86_64-linux-gnu.so,sha256=qRCrFy6oYewCfGXo3ModbD-B08oyk6BLztnpf66RRgw,64995632
+vptq/layers/__init__.py,sha256=pBmk9w0k_00CZ-xPyElgAsCTrIrYCZAJJot4QFFVhyI,370
+vptq/layers/model_base.py,sha256=0MXjrOw1BkJOMCTMA9Qgi94h0bDTYXvZg51Cg8vWgsM,7658
+vptq/layers/utils.py,sha256=fS_2APo3aO6YuPzBb9xxYNBn0ZwB_EqLs9SfiajcTO0,613
+vptq/layers/vqlinear.py,sha256=lxAfNa0r3LaqTOq-aWX55AM6tCjMdL16cmMeRxHwcBA,31672
+vptq-0.0.4.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+vptq-0.0.4.dist-info/METADATA,sha256=W1pw4WqKWbEzVKAVgiflc8fN1gtofwOAEcyVAHR51L8,401
+vptq-0.0.4.dist-info/WHEEL,sha256=17VLbNcNHxTMjEZaGvdqi0AZaLnP7X7sVj56JmnyXhk,103
+vptq-0.0.4.dist-info/top_level.txt,sha256=KWmXDsuOpPpXQb0-2wHeYwse26Nyzod9rfdPhgQ3nGo,5
+vptq-0.0.4.dist-info/RECORD,,
