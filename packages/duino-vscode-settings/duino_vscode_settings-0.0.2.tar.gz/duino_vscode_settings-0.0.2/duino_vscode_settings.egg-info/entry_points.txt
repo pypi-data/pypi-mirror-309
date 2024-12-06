@@ -1,0 +1,3 @@
+[console_scripts]
+make-vscode-settings = duino_vscode_settings.duino_vscode_settings:main
+

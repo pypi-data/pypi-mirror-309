@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+duino_vscode_settings/__init__.py
+duino_vscode_settings/duino_vscode_settings.py
+duino_vscode_settings/version.py
+duino_vscode_settings.egg-info/PKG-INFO
+duino_vscode_settings.egg-info/SOURCES.txt
+duino_vscode_settings.egg-info/dependency_links.txt
+duino_vscode_settings.egg-info/entry_points.txt
+duino_vscode_settings.egg-info/top_level.txt
