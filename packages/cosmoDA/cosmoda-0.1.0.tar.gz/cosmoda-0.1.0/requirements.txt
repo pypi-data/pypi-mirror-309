@@ -1,0 +1,16 @@
+numpy
+scipy
+statsmodels
+seaborn
+pandas
+scanpy
+ternary
+scikit-learn
+rpy2
+jupyter
+sccoda
+gglasso
+tqdm
+matplotlib
+anndata
+xlrd
