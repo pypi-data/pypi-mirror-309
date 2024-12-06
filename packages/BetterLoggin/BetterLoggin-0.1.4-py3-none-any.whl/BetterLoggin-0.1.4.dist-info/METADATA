@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: BetterLoggin
+Version: 0.1.4
+Summary: An advanced logging module with colored output, JSON support, email alerts, and more.
+Home-page: https://github.com/SpritesDevelopments/Betterloggin
+Author: Sprite Developments
+Author-email: Sprite Developments <spritedevelopments@gmail.com>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+
