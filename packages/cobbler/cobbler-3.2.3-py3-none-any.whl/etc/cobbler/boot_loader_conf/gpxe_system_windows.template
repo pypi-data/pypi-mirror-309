@@ -1,0 +1,18 @@
+#!gpxe
+#set $path="http://" +$server + "/images/" + $distro_name
+#if "/" in $kernel
+kernel $kernel
+#set $path=$kernel.rsplit("/", 1)[0]
+#else
+kernel $path/$kernel
+#end if
+#set initrd_name=$initrd.rsplit("/", 1)[1]
+initrd --name boot.sdi $path/$initrd_name boot.sdi
+#set $bootmgr_name="bootmgr.exe"
+#if $bootmgr.lower().endswith('.efi')
+#set $bootmgr_name="bootmgr.efi"
+#end if
+initrd --name $bootmgr_name $path/$bootmgr $bootmgr_name
+initrd --name bcd $path/$bcd bcd
+initrd --name winpe.wim $path/$winpe winpe.wim
+boot
