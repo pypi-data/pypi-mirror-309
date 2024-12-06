@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: grelmicro
+Version: 0.1.0
+Summary: Grelmicro is a tool-kit designed to streamline the development cloud-native applications with FastAPI.
+Author-email: Loïc Gremaud <grelinfo@gmail.com>
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: anyio>=4.0.0
+Requires-Dist: fast-depends>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: cli
+Requires-Dist: typer>=0.12.3; extra == 'cli'
+Provides-Extra: postgres
+Requires-Dist: asyncpg>=0.30.0; extra == 'postgres'
+Provides-Extra: redis
+Requires-Dist: redis>=5.0.0; extra == 'redis'
+Description-Content-Type: text/markdown
+
+# Grelmicro
+
+Grelmicro is a tool-kit designed to streamline the development cloud-native applications with FastAPI.
