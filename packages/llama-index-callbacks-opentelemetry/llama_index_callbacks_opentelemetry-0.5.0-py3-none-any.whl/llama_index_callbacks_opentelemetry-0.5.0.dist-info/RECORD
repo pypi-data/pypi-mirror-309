@@ -1,0 +1,6 @@
+llama_index/callbacks/opentelemetry/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/callbacks/opentelemetry/__init__.py,sha256=pwysJmW9lQ6X2qTXO4cz_V2oXVDVK8R0v49uFyRi7lc,111
+llama_index/callbacks/opentelemetry/base.py,sha256=XWbO1gZXsV41csJ8rv3yuNIJqAksZKyJmAkInNWAuCA,6040
+llama_index_callbacks_opentelemetry-0.5.0.dist-info/METADATA,sha256=H-n0GUUraKnvrrnWljbkhaNTh21eWB2I5pGjhefkjJE,1070
+llama_index_callbacks_opentelemetry-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_callbacks_opentelemetry-0.5.0.dist-info/RECORD,,
