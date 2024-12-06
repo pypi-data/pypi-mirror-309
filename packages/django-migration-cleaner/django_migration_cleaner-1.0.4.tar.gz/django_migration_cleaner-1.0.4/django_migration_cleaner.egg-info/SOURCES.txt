@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_migration_cleaner/__init__.py
+django_migration_cleaner.egg-info/PKG-INFO
+django_migration_cleaner.egg-info/SOURCES.txt
+django_migration_cleaner.egg-info/dependency_links.txt
+django_migration_cleaner.egg-info/entry_points.txt
+django_migration_cleaner.egg-info/requires.txt
+django_migration_cleaner.egg-info/top_level.txt
+django_migration_cleaner/management/__init__.py
+django_migration_cleaner/management/commands/__init__.py
+django_migration_cleaner/management/commands/delete_migrations.py
