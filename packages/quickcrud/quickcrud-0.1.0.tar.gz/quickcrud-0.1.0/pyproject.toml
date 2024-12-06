@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "quickcrud"
+version = "0.1.0"
+description = "CLI to automatically generate FastAPI APIs from a SQL schema."
+authors = ["Wenderson <ds.wendersonmelo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/wendersoon/QuickCRUD"
+repository = "https://github.com/wendersoon/QuickCRUD"
+keywords = ["fastapi", "crud", "sql", "docker"]
+
+[tool.poetry.scripts]
+quickcrud = "quickcrud.cli:generate"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+sqlparse = "^0.5.2"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.0"
+sqlalchemy = "^2.0.36"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pre-commit = "^4.0.1"
+twine = "^5.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[settings]
+known_third_party = ["pytest", "requests"]
+[tool.black]
+line-length = 79
+[tool.isort]
+profile = "black"
