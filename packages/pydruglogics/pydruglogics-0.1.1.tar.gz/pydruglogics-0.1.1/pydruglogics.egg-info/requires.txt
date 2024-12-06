@@ -1,0 +1,8 @@
+pygad
+joblib
+matplotlib
+mpbn
+numpy
+pandas
+scipy
+scikit-learn
