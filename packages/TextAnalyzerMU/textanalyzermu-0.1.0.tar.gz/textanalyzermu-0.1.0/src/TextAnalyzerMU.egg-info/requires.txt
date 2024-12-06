@@ -1,0 +1,10 @@
+transformers
+nltk
+wordcloud
+matplotlib
+sumy
+langdetect
+scikit-learn
+python-Levenshtein
+googletrans==4.0.0-rc1
+pandas
