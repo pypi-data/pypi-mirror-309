@@ -1,0 +1,17 @@
+quantizers/__init__.py,sha256=o6yFBm_3iSB2Lz2oRTQHYA5o7s49i5La7Ib66P0bxXU,145
+quantizers/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+quantizers/stateful_quantizers.py,sha256=B7VuDJnpMR7Pp9bPGoq_FGyx8ykLx9B-_6dDKLnRdhA,4007
+quantizers/binary/__init__.py,sha256=tguWtPkpGhAVzAo28fdh1SGc7Bk3Ww33FBU0K829MHo,335
+quantizers/binary/binary_ops.py,sha256=xYFHN-3aENv3swwn7YQIsW9xsLbXXbJXZuCXPYEV07o,687
+quantizers/binary/binary_ops_np.py,sha256=GMjT9BUmkN0ykkLvQGvyh8k6Lj5x-IQRmy92qm0phvo,176
+quantizers/fixed_point/__init__.py,sha256=X7zxaHzTG7uFfW0warVxef2WMvVYtiqNH-Lo3HlcPPo,244
+quantizers/fixed_point/fixed_point_ops.py,sha256=QDsyQYCCuk-FK9nk51Sa1GOuLEidQ8LFwKanLK4a9Xo,8900
+quantizers/fixed_point/fixed_point_ops_np.py,sha256=3oHsEB_R_20u6VrvoPH3Ahx6xf234Xs9hX2S4jQha9A,4748
+quantizers/minifloat/__init__.py,sha256=6AZVKSRESofllv0joQR6KAs4w9Eay8f6UAkE89ieW5s,333
+quantizers/minifloat/float_point_ops.py,sha256=xOrqoHtPCBb2dJnbiMX3mMyf2JsPUKXGs96JGJeIezg,2105
+quantizers/minifloat/float_point_ops_np.py,sha256=e2t_cOjuzwd_JGKEmHZj-POY-SLiXOtPKbswzJfkndc,1522
+quantizers-1.0.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+quantizers-1.0.0.dist-info/METADATA,sha256=gg-4sGI-3RtD53Tr1APALE774MXO1BtKJSK07KxEZyA,4306
+quantizers-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+quantizers-1.0.0.dist-info/top_level.txt,sha256=K9nZlz267J8tCfY-mMGqqb8umqII1BxWSIXgC4J-vn0,11
+quantizers-1.0.0.dist-info/RECORD,,
