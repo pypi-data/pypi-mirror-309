@@ -1,0 +1,5 @@
+llama_index/packs/gmail_openai_agent/__init__.py,sha256=N1hQMYcAPVPArvhOTHcJoOoYyCaQzwdChf4DK9muWfo,111
+llama_index/packs/gmail_openai_agent/base.py,sha256=Z4SgazzWEbsnczJabNENb4C0NcfS9Lp_k7lKYdVb1C0,996
+llama_index_packs_gmail_openai_agent-0.3.0.dist-info/METADATA,sha256=rSCTG5Jw-1IRDsrGf3HoymiQVQhs6iceZgR5crK0nd0,2190
+llama_index_packs_gmail_openai_agent-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_packs_gmail_openai_agent-0.3.0.dist-info/RECORD,,
