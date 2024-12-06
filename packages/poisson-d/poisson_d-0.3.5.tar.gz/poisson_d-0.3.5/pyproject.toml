@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poisson-d"
+version = "0.3.5"
+description = "poisson disk implementation in python"
+readme = "README.rst"
+authors = [
+  {name = "Qi HU", email = "hu.verrerie@gmail.com"}
+]
+maintainers = [
+  {name = "Qi HU", email = "hu.verrerie@gmail.com"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  "typer",
+  "imageio == 2.36.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/iyunbo/poisson-d/issues"
+changelog = "https://github.com/iyunbo/poisson-d/blob/master/changelog.md"
+homepage = "https://github.com/iyunbo/poisson-d"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
