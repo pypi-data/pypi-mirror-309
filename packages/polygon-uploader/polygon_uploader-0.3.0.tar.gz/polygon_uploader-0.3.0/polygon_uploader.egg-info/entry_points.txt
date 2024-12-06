@@ -1,0 +1,4 @@
+[console_scripts]
+domjudgeimport = polygon_uploader.domjudge:main
+lojacimport = polygon_uploader.lojac:main
+usacoimport = polygon_uploader.usaco:main
