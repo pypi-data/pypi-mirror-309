@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+claim_function_library.egg-info/PKG-INFO
+claim_function_library.egg-info/SOURCES.txt
+claim_function_library.egg-info/dependency_links.txt
+claim_function_library.egg-info/top_level.txt
+utilities/__init__.py
+utilities/due_date.py
+utilities/email_report.py
+utilities/submission_date.py
+utilities/uniq_claim_id.py
