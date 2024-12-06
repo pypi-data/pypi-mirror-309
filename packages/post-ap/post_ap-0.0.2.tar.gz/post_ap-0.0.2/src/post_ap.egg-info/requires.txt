@@ -1,0 +1,9 @@
+mplhep
+tqdm
+apd
+xrootd
+matplotlib
+data_manipulation_utilities
+
+[dev]
+pytest
