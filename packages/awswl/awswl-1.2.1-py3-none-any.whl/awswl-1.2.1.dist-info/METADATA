@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: awswl
+Version: 1.2.1
+Summary: A project to make it simple to add/remove ip addresses (or CIDR blocks) from an AWS Security group.
+Home-page: https://github.com/geoffreywiseman/awswl
+License: Public Domain
+Keywords: aws,vpn,securitygroups,security,networking,allowlist,ssh,firewall,utility
+Author: Geoffrey Wiseman
+Author-email: geoffrey.wiseman@codiform.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Firewalls
+Requires-Dist: boto3 (>=1.35.62,<2.0.0)
+Requires-Dist: ipaddress (>=1.0.23,<2.0.0)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: urllib3 (<2)
+Requires-Dist: usingversion (>=0.1.2,<0.2.0)
+Project-URL: Repository, https://github.com/geoffreywiseman/awswl
+Description-Content-Type: text/markdown
+
+# AWS Allowlist
+
+[![ci](https://github.com/geoffreywiseman/awswl/actions/workflows/ci.yml/badge.svg)](https://github.com/geoffreywiseman/awswl/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/awswl)](https://pepy.tech/project/awswl)
+[![Documentation](https://readthedocs.org/projects/awswl/badge/)](https://awswl.readthedocs.io/en/latest/)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/awswl)
+
+
+A small tool to make it pretty simple to add and remove ip addresses (or CIDR blocks) from an AWS security group. This acts like a sort of oversimplified VPN, where you can quickly give yourself SSH access to a project as you move about from network to network.
+
+This README should have enough information to get started, but you can get more information on:
+- recent changes in the [CHANGELOG](CHANGELOG.md)
+- documentation on [Read The Docs](https://awswl.readthedocs.io/en/latest/)
+- [Alternatives](docs/alternatives.md) to awswl
+
+## Installing 🛠️
+
+This is a python tool, packaged as a python module, so you should be able to just run
+
+```bash
+pip install awswl
+```    
+
+Of course, if you don't know what a python module is, or you don't have python and pip installed,
+you may have additional work ahead of you.
+
+Now that Python2 is largely a relic of the past, I'm focused on supporting Python 3 only. The current CI build is for Python 3.9+.
+
+## Usage ⌨
+
+If you want usage help at the command line, try:
+
+```bash
+awswl --help
+```
+
+There's more detailed usage documentation in the documentation, which you can read on [GitHub](docs/usage.md) or [readthedocs](https://awswl.readthedocs.io/en/latest/usage/).
+
+
+## Environment
+
+All of these require you to have AWS credentials set up in advance, stored in
+``~/.aws/credentials``, and if you need to use a profile, you can configure it with
+``AWS_PROFILE``. If you want to identify the security group using a command-line variable so that
+you don't have to put it into each command invocation, you can put it in ``AWSWL_SGID``.
+

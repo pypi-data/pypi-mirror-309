@@ -1,0 +1,11 @@
+awswl/VERSION,sha256=v-wuNFg62n5q8stzmT-3Wj9xR6bJQ-X_X1xClPxXe5A,5
+awswl/__init__.py,sha256=KbSzDjHRJLkkEVl7e0mvSoZb_foqJ6q-3NOiJzGI35A,110
+awswl/cli.py,sha256=rMX8EvF-7uZRVSo4rp1q4pcMYibHl6TOe0I4tsjJCts,3031
+awswl/commands.py,sha256=GPL9zv4MJC4NF6qSzszupVbY5nD1yO9LGITit_rc8hA,8423
+awswl/externalip.py,sha256=7X-BLsl00QrcjL_KJjHurxSueFEE840-Hei_2xaTOJU,112
+awswl/main.py,sha256=CqPMNyHOaf7cW_VstF8hUKjLTXaNU0H68gS2xi0il1g,891
+awswl-1.2.1.dist-info/LICENSE.txt,sha256=edD8RHFgB93cN1YBvKiHmtRbwRZb-TQrehZXK09Bq-g,1209
+awswl-1.2.1.dist-info/METADATA,sha256=95aFsMYlrSStkjb7fF_4pF3QQKXSeswKggNpbs58fo0,3305
+awswl-1.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+awswl-1.2.1.dist-info/entry_points.txt,sha256=ZN2znq2qii7NmrQRdJc74QSspiQ2xlRGHKRvZrIEtwI,41
+awswl-1.2.1.dist-info/RECORD,,
