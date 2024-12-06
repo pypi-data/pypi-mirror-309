@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gkbus_test
+Version: 0.2.5
+Summary: High-level KWP over K-line/CANbus library
+Author: Dante383
+License-File: LICENSE
+Requires-Dist: scapy ==2.5.0
+Requires-Dist: pyserial ==3.5
+
