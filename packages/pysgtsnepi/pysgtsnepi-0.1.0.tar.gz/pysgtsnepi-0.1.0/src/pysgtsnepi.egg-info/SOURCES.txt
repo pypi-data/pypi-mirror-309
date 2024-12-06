@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pysgtsnepi.egg-info/PKG-INFO
+src/pysgtsnepi.egg-info/SOURCES.txt
+src/pysgtsnepi.egg-info/dependency_links.txt
+src/pysgtsnepi.egg-info/requires.txt
+src/pysgtsnepi.egg-info/top_level.txt
+src/sgtsnepi/__init__.py
+src/sgtsnepi/core.py
+src/sgtsnepi/utils/__init__.py
+src/sgtsnepi/utils/sgtsne_lambda_equalization.py
