@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+atem_core.egg-info/PKG-INFO
+atem_core.egg-info/SOURCES.txt
+atem_core.egg-info/dependency_links.txt
+atem_core.egg-info/entry_points.txt
+atem_core.egg-info/requires.txt
+atem_core.egg-info/top_level.txt
+package/__init__.py
+package/core.py
+package/utils.py
