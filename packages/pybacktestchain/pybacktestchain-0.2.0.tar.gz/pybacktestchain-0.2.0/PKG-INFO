@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pybacktestchain
+Version: 0.2.0
+Summary: Store your backtests in a Blockchain
+License: MIT
+Author: Juan F. Imbet
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: numpy (>=1.23.5,<2.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (<1.14.0)
+Requires-Dist: sec-cik-mapper (>=2.1.0,<3.0.0)
+Requires-Dist: yfinance (>=0.2.41,<0.3.0)
+Description-Content-Type: text/markdown
+
+# pybacktestchain
+
+Store your backtests in a Blockchain
+
+## Installation
+
+```bash
+$ pip install pybacktestchain
+```
+
+## Usage
+
+
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`pybacktestchain` was created by Juan F. Imbet. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`pybacktestchain` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
