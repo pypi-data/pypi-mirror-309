@@ -1,0 +1,14 @@
+invoke
+argh
+six
+future
+Babel
+python-dateutil
+Sphinx
+rstgen
+toml
+requests
+sphinx-design
+pydata-sphinx-theme
+insipid-sphinx-theme
+gitpython
