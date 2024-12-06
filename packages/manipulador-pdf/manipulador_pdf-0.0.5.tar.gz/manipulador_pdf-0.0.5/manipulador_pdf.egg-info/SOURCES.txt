@@ -1,0 +1,9 @@
+setup.py
+manipulador_pdf/__init__.py
+manipulador_pdf/main.py
+manipulador_pdf/run.py
+manipulador_pdf/update.py
+manipulador_pdf.egg-info/PKG-INFO
+manipulador_pdf.egg-info/SOURCES.txt
+manipulador_pdf.egg-info/dependency_links.txt
+manipulador_pdf.egg-info/top_level.txt
