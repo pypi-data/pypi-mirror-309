@@ -1,0 +1,12 @@
+dynapsys/__init__.py,sha256=z6qg8GK-ItdnMMDc4L5jBYZ6lggswDVAm2UoCrArbxY,244
+dynapsys/cli.py,sha256=8qOu49l48DXfgGoDuQgP12tepGJetz9ByItG76PwfyU,3533
+dynapsys/config.py,sha256=gtvtDwfiqjSAZGxsMTatLg1cuccpyT7Vz6C0CgFFPw4,3956
+dynapsys/deployment.py,sha256=_ap71gaa9NWndKig_JvGt-5aLz_22pVfIT6_jtQyB0E,9299
+dynapsys/dns.py,sha256=dHFUZ87yqM2GxkLdb2kOxpnZK4nRuLRT5romWTpi3fw,5620
+dynapsys/git.py,sha256=AqJnYVUSWBVghvRu1P7g-8KAhcem3rTKEi03kVq1L_I,3558
+dynapsys/utils.py,sha256=l9BF5hYeju_0cvvuxGK4poQAy5mQSizC7EoH4R3hZQs,5620
+dynapsys-0.1.0.dist-info/METADATA,sha256=lOC0FJUiUcbSRld8XLYW184x8tuA8-IixRpbUWYG_uM,4241
+dynapsys-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+dynapsys-0.1.0.dist-info/entry_points.txt,sha256=OGL0arGHuvLVDqLH4HQV4lywHFb9PbyEhvVZ-hqkouo,96
+dynapsys-0.1.0.dist-info/top_level.txt,sha256=s0By0_04GzqruOkmOTyrnEv9cV8amR4XlzokQ58T6FM,9
+dynapsys-0.1.0.dist-info/RECORD,,
