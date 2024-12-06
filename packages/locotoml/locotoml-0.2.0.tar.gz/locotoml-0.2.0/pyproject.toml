@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "locotoml"
+version = "0.2.0"
+description = "LocoTOML is a lightweight Python library for multi-language support, using hierarchical TOML-based translations with fallback and detailed logging for missing keys."
+authors = ["drago-suzuki58 <dorasuzu58@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/drago-suzuki58/LocoTOML"
+keywords = ["toml", "localization", "translation", "localisation", "multi-language"]
+exclude = ["tests/*", "docs/*", "examples/*"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+toml = "^0.10.2"
+lococore = "^0.2.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+types-toml = "^0.10.8.20240310"
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/drago-suzuki58/LocoTOML/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
