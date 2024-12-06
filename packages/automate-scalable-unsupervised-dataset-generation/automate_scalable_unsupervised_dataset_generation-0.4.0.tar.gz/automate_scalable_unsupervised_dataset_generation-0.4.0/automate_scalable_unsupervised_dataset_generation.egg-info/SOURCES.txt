@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+automate_scalable_unsupervised_dataset_generation/__init__.py
+automate_scalable_unsupervised_dataset_generation/automate.py
+automate_scalable_unsupervised_dataset_generation.egg-info/PKG-INFO
+automate_scalable_unsupervised_dataset_generation.egg-info/SOURCES.txt
+automate_scalable_unsupervised_dataset_generation.egg-info/dependency_links.txt
+automate_scalable_unsupervised_dataset_generation.egg-info/requires.txt
+automate_scalable_unsupervised_dataset_generation.egg-info/top_level.txt
