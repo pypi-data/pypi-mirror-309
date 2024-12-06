@@ -1,0 +1,3 @@
+[console_scripts]
+mullvad-tool=cli:cli
+
