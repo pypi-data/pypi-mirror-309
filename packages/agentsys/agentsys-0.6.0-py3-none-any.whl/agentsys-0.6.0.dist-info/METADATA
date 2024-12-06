@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: agentsys
+Version: 0.6.0
+Summary: An educational multi-agent orchestration framework
+Author: lifsys
+License: MIT License
+        
+        Copyright (c) 2024 OpenAI
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/lifsys/agentsys
+Project-URL: Issues, https://github.com/lifsys/agentsys/issues
+Keywords: ai,agents,orchestration,multi-agent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai >=1.0.0
+Requires-Dist: pydantic >=2.0.0
+Requires-Dist: locksys >=0.1.0
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
+![AgentSys Logo](assets/logo.png)
+
+# AgentSys (experimental, educational)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> AgentSys is currently an experimental sample framework intended to explore ergonomic interfaces for multi-agent systems. It is not intended to be used in production, and therefore has no official support. (This also means we will not be reviewing PRs or issues!)
+
+> The primary goal of AgentSys is to showcase the handoff & routines patterns explored in the [Orchestrating Agents: Handoffs & Routines](https://cookbook.openai.com/examples/orchestrating_agents) cookbook. It is not meant as a standalone library, and is primarily for educational purposes.
+
+## Installation
+
+### SSH
+
+```bash
+pip install git+ssh://git@github.com/lifsys/agentsys.git
+```
+
+### HTTPS
+
+```bash
+pip install git+https://github.com/lifsys/agentsys.git
+```
+
+## Project Structure
+
+The project is organized into several key modules:
+
+- `agentsys.orchestration`: Core orchestration functionality
+  - `Swarm`: Main orchestration class for managing agent interactions
+  - `Agent`: Base class for defining agents
+- `agentsys.models`: Model interfaces and implementations
+  - `BaseModel`: Abstract base class for model implementations
+  - `OpenAIModel`: OpenAI model implementation
+- `agentsys.config`: Configuration management
+  - `Settings`: Configuration settings and utilities
+- `agentsys.types`: Type definitions and data structures
+- `agentsys.util`: Utility functions and helpers
+
+## Basic Usage
+
+```python
+from agentsys import Swarm, Agent
+
+client = Swarm()
+agent = Agent(
+    name="test",
+    instructions="You are a helpful assistant.",
+    model="gpt-4",
+)
+
+messages = [{"role": "user", "content": "Hello!"}]
+response = client.run(agent, messages)
+print(response.messages[-1]["content"])
+```
+
+## Function Calling
+
+AgentSys supports function calling with both OpenAI's function calling and tool calling APIs:
+
+```python
+def get_weather(location: str) -> str:
+    """Get the weather for a location."""
+    return f"The weather in {location} is sunny!"
+
+agent = Agent(
+    name="weather",
+    instructions="You can help users check the weather.",
+    model="gpt-4",
+    functions=[get_weather],
+)
+
+messages = [{"role": "user", "content": "What's the weather in San Francisco?"}]
+response = client.run(agent, messages)
+print(response.messages[-1]["content"])
+```
+
+## Configuration
+
+You can configure AgentSys using environment variables or by passing a config object:
+
+```python
+from agentsys import Settings
+
+settings = Settings(
+    openai_api_key="your-api-key",
+    temperature=0.7,
+)
+```
+
+### Swarm Client
+
+The `Swarm` class is the main entry point for interacting with agents. It handles:
+
+- Message routing
+- Function calling
+- Response streaming
+- Error handling
+
+## Contributing
+
+This is an experimental project and we are not accepting contributions at this time.
+
+## License
+
+MIT
