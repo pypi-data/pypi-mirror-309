@@ -1,0 +1,16 @@
+import Kratos
+
+class ApplyWeakSlidingProcess(Kratos.Process):
+    def __init__(self, arg0: Kratos.ModelPart, arg1: Kratos.Parameters) -> None: ...
+
+class EdgeCableElementProcess(Kratos.Process):
+    def __init__(self, arg0: Kratos.ModelPart, arg1: Kratos.Parameters) -> None: ...
+
+class EmpiricalSpringElementProcess(Kratos.Process):
+    def __init__(self, arg0: Kratos.ModelPart, arg1: Kratos.Parameters, arg2: list[float]) -> None: ...
+
+class KratosCableNetApplication(Kratos.KratosApplication):
+    def __init__(self) -> None: ...
+
+class SlidingEdgeProcess(Kratos.Process):
+    def __init__(self, arg0: Kratos.ModelPart, arg1: Kratos.Parameters) -> None: ...
