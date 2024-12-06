@@ -1,0 +1,12 @@
+pdftranscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdftranscript/config.py,sha256=aI8EUTjv6XN0BgaMAQuwHTWOGp2oaxBGQuqWEl_GhFo,1612
+pdftranscript/dictionary.json,sha256=PkeD2oYUPYNh_yTGr9-q6FGZhBE_MUk5kH8KrtJLlOI,36436
+pdftranscript/pdf2html.py,sha256=Vecxcq_I0yOQ1YXbinfnI1XgPLUwYGVJNVaThdZT0v0,1518
+pdftranscript/test.py,sha256=p3GPNxeZkgdo_0LEp7JWKtAd8u6SxsBYVl-J1jQmf3c,494
+pdftranscript/transcript.py,sha256=tqVniJkjuQFfHRCD2IWIQY-RIYf2zZnz3NroxcSEKxc,13463
+pdftranscript/ttf.py,sha256=zbLDBExPhEJBaDdMWKqZs7KKW8U1L6dt2Y5jtwihkIQ,6251
+pdftranscript-1.0.2.dist-info/METADATA,sha256=5FxYPuKYjfixo8MmKNYdTPFXmdtMStUvPCpac8w6lwk,3500
+pdftranscript-1.0.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pdftranscript-1.0.2.dist-info/entry_points.txt,sha256=ew5NAJ2XsKx6DC6b_7ltDhL2dU-OqozGzczMJwEQ3mw,135
+pdftranscript-1.0.2.dist-info/licenses/LICENSE.txt,sha256=gtJDddz5ueQCAnaqOcK_MiIY5C9639mYhePfFsLbCMM,1055
+pdftranscript-1.0.2.dist-info/RECORD,,
