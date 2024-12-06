@@ -1,0 +1,2 @@
+[console_scripts]
+cbs = cbs:main
