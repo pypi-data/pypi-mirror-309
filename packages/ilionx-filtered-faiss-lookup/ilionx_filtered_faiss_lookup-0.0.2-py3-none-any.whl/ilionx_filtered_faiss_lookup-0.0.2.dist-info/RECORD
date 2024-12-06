@@ -1,0 +1,12 @@
+ilionx_filtered_faiss_lookup/__init__.py,sha256=bpT73UG7mZL_JjEqMwbYx6q69jA8J5Jcoul1LcDokhA,81
+ilionx_filtered_faiss_lookup/tools/__init__.py,sha256=bpT73UG7mZL_JjEqMwbYx6q69jA8J5Jcoul1LcDokhA,81
+ilionx_filtered_faiss_lookup/tools/filtered_faiss_lookup.py,sha256=b65_uxNlj-91xUlYSH-3Uk9_bdTvrqCqN4S7RyoaWoc,4499
+ilionx_filtered_faiss_lookup/tools/utils.py,sha256=JfavnyUYcJGy1XlVOOlkRB-FFWuMOaRSRWpYGieMxTQ,535
+ilionx_filtered_faiss_lookup/yamls/filtered_faiss_lookup.yaml,sha256=7GeYwlU0dCn-Nvmpd8Ad_HVh3S7AkBH-C8ccg-8LYCc,366
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_filtered_faiss_lookup.py,sha256=uXPbBnbJ9Xm45QWtGFGAG16X_ewWal4haVmPNtQilVk,741
+ilionx_filtered_faiss_lookup-0.0.2.dist-info/METADATA,sha256=g9OHxFwiJGOoJUAvY-9KzLTzS5Yj8e1l5aX8TjPbWuk,243
+ilionx_filtered_faiss_lookup-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ilionx_filtered_faiss_lookup-0.0.2.dist-info/entry_points.txt,sha256=a0C-Qnoefymr9S-dvlzhfu2g5U_KZJoJMRVw59wFZ9M,100
+ilionx_filtered_faiss_lookup-0.0.2.dist-info/top_level.txt,sha256=ykyZZnMMhcPDXaEqV3rMBVivx9jUAq3rd_kw94OELho,35
+ilionx_filtered_faiss_lookup-0.0.2.dist-info/RECORD,,
