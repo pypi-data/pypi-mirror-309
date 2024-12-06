@@ -1,0 +1,14 @@
+OTCFinUtils/__init__.py,sha256=pFt0nBNSGnMsJxnO4BLmyTTovOXhdymVnfXwTn4MZ_Q,1649
+OTCFinUtils/buffer.py,sha256=t-ayco9g20w4q7tC9GYXdz5Soqw7W0M3bk-81FmFwr8,3685
+OTCFinUtils/data_structs.py,sha256=Jyh6s_zHhiiwaQukctpML1CujqNy_zQ2tXfRlOCSfag,6693
+OTCFinUtils/dataverse_handler.py,sha256=04YRLimxui4l4vArs2cOik5ij5pgoV0d4qPjCoZ08Hw,19007
+OTCFinUtils/mapper.py,sha256=xfSTFaFA3wweptrLblX9huGUwZznFvhIUV8axFg76eQ,24573
+OTCFinUtils/mapper_loading.py,sha256=rGXbKlzR-m-5CcqXJ5pa8fB4hzZCSRZfpHLD_kfECKI,5341
+OTCFinUtils/security.py,sha256=pAAVZ8zjO3qGtOeXmYWxRmu2HcIVbasNSRB2CFC_22E,2613
+OTCFinUtils/sharepoint.py,sha256=AD_g-g1LTYEZuLIvKURIVpXBAQg7SwalbJbkqliRt88,6166
+OTCFinUtils/sharepoint_client.py,sha256=JFD4H8PRuFVNU_ouKI2-YxzCqC8NZYbzVUcAl8uiVDk,5937
+OTCFinUtils/utils.py,sha256=Zhyp4ctAhq0UaYppVlhFb8vyBiuN7SmV7bfgmiP_OMg,14899
+OTCFinUtils-0.0.11.dist-info/METADATA,sha256=2vw-6iCRGRPUUg5-N9YZLGnhDJPcDrq4qGsKd0XJFpU,402
+OTCFinUtils-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+OTCFinUtils-0.0.11.dist-info/top_level.txt,sha256=SGyRs3H04gppRgMTn9TAPW5vzBfab_xiXMoMGwxaI8U,12
+OTCFinUtils-0.0.11.dist-info/RECORD,,
