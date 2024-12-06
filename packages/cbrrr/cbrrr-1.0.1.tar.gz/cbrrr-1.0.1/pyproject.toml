@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+	"setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbrrr"
+version = "1.0.1"
+authors = [
+ 	{ name="David Buchanan", email="d@vidbuchanan.co.uk" },
+]
+description = "A reasonably fast DAG-CBOR encoder/decoder for Python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+fixtures = [
+	"base58",
+]
+fuzz = [
+	"atheris"
+]
+
+[project.urls]
+Homepage = "https://github.com/DavidBuchanan314/dag-cbrrr"
+Issues = "https://github.com/DavidBuchanan314/dag-cbrrr/issues"
+
+
+[tool.ruff.format]
+indent-style = "tab"

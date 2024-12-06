@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cbrrr.egg-info/PKG-INFO
+cbrrr.egg-info/SOURCES.txt
+cbrrr.egg-info/dependency_links.txt
+cbrrr.egg-info/requires.txt
+cbrrr.egg-info/top_level.txt
+src/cbrrr/__init__.py
+src/cbrrr/_cbrrr.c
+src/cbrrr/_cbrrr.pyi
+src/cbrrr/py.typed
+tests/test_cbrrr.py
+tests/test_fixtures.py

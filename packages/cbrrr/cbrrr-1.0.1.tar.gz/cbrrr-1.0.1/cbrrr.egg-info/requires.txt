@@ -1,0 +1,6 @@
+
+[fixtures]
+base58
+
+[fuzz]
+atheris
