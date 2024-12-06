@@ -1,0 +1,12 @@
+pepe_toolbox/__init__.py,sha256=erKZkaXxu-6ijNzi_2N-3lbiEBhdwsZEm9zQb3DZa24,80
+pepe_toolbox/File/__init__.py,sha256=iYsJ3lDEwxAHo5zNUWjKUYEzok7uO0q3RBvMen5tXhs,206
+pepe_toolbox/File/document_preprocessor.py,sha256=-y2u5872HY-OVq-sFu4te-XaaOkv16RGObAxCxIfh5M,3256
+pepe_toolbox/File/file_manager.py,sha256=krddT7lZdLfHHTMXz1-2HKgcJW50E-CFtFK66emPu9Y,6237
+pepe_toolbox/File/image_converter.py,sha256=KnF7ntTKl3s0I7Dl35ZThtIF8Gql3I_Jt2CSS_93bWk,8358
+pepe_toolbox/Slack/__init__.py,sha256=HswuUTZKN6MIPHS9d-DYjcqETRQF6noOdwkK2rEIej0,65
+pepe_toolbox/Slack/slack_pepe.py,sha256=brK-XQeBuNmo4YpW_aXwanSbS6Nb9Gh1eh9e5oxzVpc,7121
+pepe_toolbox-0.3.7.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pepe_toolbox-0.3.7.dist-info/METADATA,sha256=DBIDbtrOIN4c3SvshsS9fcZX_qvu4rSln9VcvkhNpaQ,1326
+pepe_toolbox-0.3.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pepe_toolbox-0.3.7.dist-info/top_level.txt,sha256=j4baMTehgVGMUpIdCBapKN32GRdyQuzEe2yDw5KqShg,13
+pepe_toolbox-0.3.7.dist-info/RECORD,,
