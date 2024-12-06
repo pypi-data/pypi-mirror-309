@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fedj-webfinger
+Version: 0.0.1
+Project-URL: Homepage, https://github.com/jakekara/fedjangiverse/
+Project-URL: Issues, https://github.com/jakekara/fedjangiverse/issues
+Requires-Dist: django>=4
