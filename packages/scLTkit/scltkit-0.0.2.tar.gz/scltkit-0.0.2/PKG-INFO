@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scLTkit
+Version: 0.0.2
+Summary: scLT-kit is a versatile toolkit for automated processing and analysis of single-cell lineage tracing data
+Home-page: https://github.com/czythu/scLTkit
+Author: Zeyu Chen
+Author-email: chenzy22@mails.tsinghua.edu.cn
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scanpy
+Requires-Dist: leidenalg
+
+# scLT-kit
+
+## Introduction
+`scLT-kit` is a toolkit for analyzing single-cell lineage-tracing (LT-scSeq) data.
+
+## System Requirements
+- Python version: >= 3.7
+
+## Dependencies
+- numpy, pandas, sklearn, scipy, matplotlib, seaborn
+
+## Installation
+
+The Release version of `scLT-kit`+ python package can be installed directly via pip:
+```
+pip install scLTkit
+```
+
+
+
