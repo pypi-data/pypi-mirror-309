@@ -1,0 +1,14 @@
+#:schema https://json.schemastore.org/ruff.json
+extend = ".github/linters/.ruff.toml"
+target-version = "py311"
+
+[lint]
+extend-ignore = ["E741"]
+
+[lint.flake8-import-conventions.aliases]
+"toolkit" = "tk"
+"toolkit.array.array_like" = "ta"
+"toolkit.array.jax" = "tj"
+"toolkit.array.numpy" = "tn"
+"toolkit.array.torch" = "tt"
+"toolkit.typing" = "tp"
