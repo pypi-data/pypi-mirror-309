@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools>=42",  # 최소 setuptools 버전
+    "wheel"             # wheel 패키지 (빌드용)
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ci-cd-tool"
+version = "0.2.5"
+description = "A CI/CD command line tool."
+readme = "README.md"
+requires-python = ">=3.8"
+# 의존성 수동으로 추가해야함
+dependencies = [
+    "click==8.0.3",              # CLI 명령어 관리 라이브러리
+    "pyyaml==6.0",               # YAML 파일을 로드하는 라이브러리
+    "pygithub==1.55",            # GitHub Actions API 연동 라이브러리
+    "python-gitlab==3.0.0",      # GitLab CI API 연동 라이브러리
+    "boto3==1.21.0",             # AWS SDK for Python (배포 관련)
+    "heroku3",                   # Heroku API 연동 라이브러리
+    "google-cloud-storage==2.3.0",  # Google Cloud 배포를 위한 라이브러리
+    "requests==2.26.0",          # HTTP 요청 유틸리티
+    "inquirer"                   # 사용자 입력을 위한 라이브러리
+]
+
+[project.scripts]
+cc = "ci_cd_tool.cli:main"  # main 함수가 포함된 경로로 수정 필요
