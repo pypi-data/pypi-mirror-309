@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "PhenoFeatureFinder"
+version = "0.1.3"
+description = "Find metabolic features linked to insect development phenotypes"
+authors = ["Lissy-Anne Denkers", "Marc Galland", "Annabel Dekker", "Valerio Bianchi", "Petra Bleeker <p.m.bleeker@uva.nl>"]
+repository = "https://github.com/BleekerLab/PhenoFeatureFinder"
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [
+    { include= "src/PhenoFeatureFinder"}
+]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+seaborn = ">=0.12.1"
+pandas = ">=1.5.1"
+numpy = "1.25.0"
+scikit-learn = ">=0.24.1"
+TPOT = ">=0.11.7"
+matplotlib = ">=3.4.3"
+scipy = ">=1.10.1"
+upsetplot = ">=0.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.2.0"
+sphinx-autoapi = ">=2.0.0"
+sphinx-rtd-theme = ">=1.1.1"
+myst-nb = {version = "0.17.1", python = ">=3.9"}
+sphinx-markdown-tables = ">=0.0.17"
+python-semantic-release = ">=7.32.2"
+ 
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
