@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: realerikrani-sopenqlite
+Version: 1.0.0
+Summary: A brief description of your package
+License: Apache-2.0
+Project-URL: Repository, https://github.com/realerikrani/sopenqlite
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sopenqlite
+
+- **Automatic Resource Management**: Automatically closes SQLite database connections and cursors, ensuring that resources are managed efficiently.
+- **Table Creation**: Automatically creates necessary tables if they are missing.
+- **Pragma Commands**: Easily executes one or multiple pragma commands to configure your SQLite database settings as needed.
+
+---
+
+See from the example below how the `query` function can be used.
+
+```py
+import os
+import sqlite3
+from datetime import UTC, datetime
+from functools import partial
+from uuid import UUID, uuid4
+
+from realerikrani.sopenqlite import query
+
+DATABASE_PATH = os.environ.get("TODO_DATABASE_PATH", "todo.db")
+
+CREATE_TABLES = """
+CREATE TABLE IF NOT EXISTS todo (
+    id TEXT PRIMARY KEY,
+    task TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL
+);
+"""
+_query = partial(query, CREATE_TABLES, DATABASE_PATH, ["PRAGMA journal_mode=WAL"])
+
+
+def to_todo(row: sqlite3.Row | None) -> dict | None:
+    if row is None:
+        return None
+    return {
+        "id": UUID(row["id"]),
+        "task": row["task"],
+        "created_at": datetime.fromisoformat(row["created_at"]),
+    }
+
+
+def create_todo(task: str) -> dict | None:
+    todo_id = str(uuid4())
+    created_at = datetime.now(UTC).isoformat()
+    q = "INSERT INTO todo (id, task, created_at) VALUES (?, ?, ?) RETURNING *"
+    return to_todo(
+        _query(lambda c: c.execute(q, (todo_id, task, created_at)).fetchone())
+    )
+
+
+def read_todos() -> list[dict]:
+    return [
+        to_todo(row)
+        for row in _query(lambda c: c.execute("SELECT * FROM todo").fetchall())
+    ]
+
+
+def delete_todo(todo_id: UUID) -> dict | None:
+    q = "DELETE FROM todo WHERE id=? RETURNING *"
+    return to_todo(_query(lambda c: c.execute(q, (str(todo_id),)).fetchone()))
+
+
+def main() -> None:
+    commands = {
+        "create": lambda: create_todo(input("Enter task: ")),
+        "read": lambda: read_todos(),
+        "delete": lambda: delete_todo(UUID(input("Enter TODO ID: "))),
+    }
+
+    while True:
+        command = input("Enter command (create/read/delete/exit): ").strip().lower()
+        if command in commands:
+            result = commands[command]()
+            if command == "read":
+                for todo in result:
+                    print(f"{todo['id']} - {todo['task']}")
+            else:
+                print(f"{command.capitalize()}d TODO: {result}")
+        elif command == "exit":
+            break
+        else:
+            print("Unknown command.")
+
+
+if __name__ == "__main__":
+    main()
+```
