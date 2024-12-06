@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: tsbrowse
+Version: 0.0.1
+Summary: Webapp to view and visualise tskit ARGs
+Home-page: https://tskit.dev/tsbrowse/
+Author: Tskit Developers
+Author-email: Tskit Developers <admin@tskit.dev>
+License: MIT
+Project-URL: Bug Tracker, https://github.com/tskit-dev/tsbrowse/issues
+Project-URL: Source Code, https://github.com/tskit-dev/tsbrowse
+Project-URL: Homepage, https://tskit.dev/tsbrowse/
+Keywords: tree sequence,ancestral recombination graph,tskit,quality control
+Platform: POSIX
+Platform: Windows
+Platform: MacOS X
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: daiquiri
+Requires-Dist: panel >=1.5.2
+Requires-Dist: hvplot
+Requires-Dist: datashader >=0.16.3
+Requires-Dist: tskit
+Requires-Dist: tszip
+
+# tsbrowse
+Inspect large genetic genealogies (e.g. ARGs) stored in the [tskit](https://tskit.dev) "succinct tree sequence" format,
+via a genome browser style app. _Tsbrowse_ can deal with ARGs of thousands or potentially millions of samples.
+It is particularly useful to help evaluate ARGs that have been inferred using tools such as
+[tsinfer](https://github.com/tskit-dev/tsinfer),
+[sc2ts](https://github.com/tskit-dev/sc2ts),
+[Relate](https://github.com/MyersGroup/relate),
+[KwARG](https://github.com/a-ignatieva/kwarg),
+[Threads](https://pypi.org/project/threads-arg/), etc.
+
+To view a tskit tree sequence or tszip file first pre-process it:
+
+`python -m tsbrowse preprocess /path/to/trees-file`
+
+This will write a `.tsbrowse` file
+
+To launch the app use:
+
+`python -m tsbrowse serve /path/to/tsbrowse-file`
+
+Or to generate a PNG of a specific page use, e.g:
+
+`python -m tsbrowse screenshot /path/to/tsbrowse-file mutations`
+
+On WSL, it may be necessary to disable Numba's CUDA support:
+
+`NUMBA_DISABLE_CUDA=1 python -m tsbrowse serve /path/to/tsbrowse-file`
+
+## Installation
+
+tsbrowse is currently in development. To install the latest dev version from github, try
+
+```
+python -m pip install git+https://github.com/tskit-dev/tsbrowse
+```
+
+## Development
+
+Test are run with pytest:
+
+`python -m pytest`
+
+To run the UI tests so you can see what the browser is doing use
+
+`python -m pytest --headed --slowmo 1000 tests/test_ui.py`
+
+`playwright codegen` is also useful for writing UI test code.
