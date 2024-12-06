@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+Bicimad/BiciMad.py
+Bicimad/UrlEMT.py
+Bicimad/__init__.py
+Bicimad/utils.py
+my_BiciMad_Project.egg-info/PKG-INFO
+my_BiciMad_Project.egg-info/SOURCES.txt
+my_BiciMad_Project.egg-info/dependency_links.txt
+my_BiciMad_Project.egg-info/requires.txt
+my_BiciMad_Project.egg-info/top_level.txt
+tests/test_BiciMad.py
+tests/test_UrlEMT.py
+tests/test_utils.py

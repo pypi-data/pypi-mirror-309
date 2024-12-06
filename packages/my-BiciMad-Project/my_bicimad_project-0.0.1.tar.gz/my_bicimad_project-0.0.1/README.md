@@ -1,0 +1,60 @@
+# Proyecto Bicimad
+
+Este proyecto incluye dos paquetes principales: `Bicimad` y `Tests`. A continuación, se describen las clases `UrlEMT` y `Bicimad`.
+
+## Clases
+
+### UrlEMT
+
+La clase `UrlEMT` es responsable de manejar las URL relacionadas con el sistema de Bicimad.
+
+#### Métodos
+
+- `__init__(self, base_url: str, api_key: str)`: Constructor de la clase que inicializa la URL base y la clave de la API.
+- `build_url(self, endpoint: str, params: dict) -> str`: Construye una URL completa a partir de un endpoint y parámetros adicionales.
+
+### Bicimad
+La clase Bicimad maneja la lógica principal para interactuar con el sistema Bicimad.
+
+### Métodos
+- `__init__(self, url_emt: UrlEMT)`: Constructor de la clase que inicializa una instancia de UrlEMT.
+
+- `get_bike_info(self, station_id: int) -> dict`: Obtiene la información de las bicicletas en una estación específica.
+
+- `get_station_status(self) -> dict`: Obtiene el estado de todas las estaciones.
+
+#### Ejemplos de Uso
+
+```python
+from Bicimad import UrlEMT
+
+# Inicialización del objeto class UrlEMT
+emt = UrlEMT()
+
+# Ejemplo de uso de get_url y get_csv
+try:
+    url = emt.get_url(2, 23)
+    print('URL:', url)
+    csv_file = emt.get_csv(2, 23)
+    print('CSV content:', csv_file.read())
+except ValueError as e:
+    print('Error:', e)
+except ConnectionError as e:
+    print('Error:', e)
+
+
+from Bicimad import Bicimad, UrlEMT
+# Ejemplo de uso de la clase BiciMad
+# Asumimos que el archivo CSV está disponible en la URL especificada en get_data
+
+try:
+    usos = BiciMad(month=2, year=23)
+    df = usos.data
+    print("Resumen de datos:")
+    print(usos.resume())
+except Exception as e:
+    print("Error:", e)
+
+
+
+
