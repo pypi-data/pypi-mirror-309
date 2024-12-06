@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: boltz
+Version: 0.1.0
+Summary: Boltz-1
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >=2.2
+Requires-Dist: numpy ==1.26.3
+Requires-Dist: hydra-core ==1.3.2
+Requires-Dist: pytorch-lightning ==2.4.0
+Requires-Dist: rdkit ==2024.3.6
+Requires-Dist: dm-tree ==0.1.8
+Requires-Dist: requests ==2.32.3
+Requires-Dist: pandas ==2.2.3
+Requires-Dist: types-requests
+Requires-Dist: einops ==0.8.0
+Requires-Dist: einx ==0.3.0
+Requires-Dist: fairscale ==0.4.13
+Requires-Dist: mashumaro ==3.14
+Requires-Dist: modelcif ==1.2
+Requires-Dist: wandb ==0.18.7
+Requires-Dist: click ==8.1.7
+Requires-Dist: pyyaml ==6.0.2
+Requires-Dist: biopython ==1.84
+Requires-Dist: scipy ==1.13.1
+Provides-Extra: lint
+Requires-Dist: ruff ; extra == 'lint'
+
+<h1 align="center">Boltz-1:
+
+Democratizing Biomolecular Interaction Modeling
+</h1>
+
+![](docs/boltz1_pred_figure.png)
+
+Boltz-1 is an open-source model which predicts the 3D structure of proteins, rna, dna and small molecules; it handles modified residues, covalent ligands and glycans, as well as condition the generation on pocket residues. 
+
+For more information about the model, see our [technical report](https://gcorso.github.io/assets/boltz1.pdf).
+
+## Installation
+Install boltz with PyPI (recommended):
+
+```
+pip install boltz
+```
+
+or directly from GitHub for daily updates:
+
+```
+git clone https://github.com/jwohlwend/boltz.git
+cd boltz; pip install -e .
+```
+> Note: we recommend installing boltz in a fresh python environment
+
+## Inference
+
+You can run inference using Boltz-1 with:
+
+```
+boltz predict input_path
+```
+
+Boltz currently accepts three input formats:
+
+1. Fasta file, for most use cases
+
+2. A comprehensive YAML schema, for more complex use cases
+
+3. A directory containing files of the above formats, for batched processing
+
+To see all available options: `boltz predict --help` and for more informaton on these input formats, see our [prediction instructions](docs/prediction.md).
+
+## Training
+
+If you're interested in retraining the model, see our [training instructions](docs/training.md).
+
+## Contributing
+
+We welcome external contributions and are eager to engage with the community. Connect with us on our [Slack channel](https://boltz-community.slack.com/archives/C0818M6DWH2) to discuss advancements, share insights, and foster collaboration around Boltz-1.
+
+## Coming very soon
+
+- [ ] Pocket conditioning support
+- [ ] More examples
+- [ ] Full data processing pipeline
+- [ ] Colab notebook for inference
+- [ ] Confidence model checkpoint
+- [ ] Support for custom paired MSA
+- [ ] Kernel integration
+
+## License
+
+Our model and code are released under MIT License, and can be freely used for both academic and commercial purposes.
