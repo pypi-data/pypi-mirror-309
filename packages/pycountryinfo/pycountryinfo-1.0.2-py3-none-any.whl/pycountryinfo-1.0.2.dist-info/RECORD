@@ -1,0 +1,10 @@
+pycountryinfo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycountryinfo/country_types.py,sha256=0V8wMcPa68VrNQpOb7ugwlag3Od5If6I1sa6W-5HsRA,1068
+pycountryinfo/countryinfo.py,sha256=K_iqWKqY6gUgtJhFrw7kWAOzBBp_ikClrxcp6h-ljs4,3696
+pycountryinfo/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycountryinfo/data/countries.json,sha256=8lR7G9_9lMAUY6qp_hFzQAA6g1a477sy7ElmDSPT1aU,2802951
+pycountryinfo-1.0.2.dist-info/LICENSE,sha256=B7yv1ZA0AeptWKExNjCOfgHxnodAfC0a6u-X0xW1Q9I,1091
+pycountryinfo-1.0.2.dist-info/METADATA,sha256=9l8qjtU0dgfX1-ZIphdD1Ka0egOSZUgUuaOLovlvusA,7493
+pycountryinfo-1.0.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pycountryinfo-1.0.2.dist-info/top_level.txt,sha256=nWNmUotMPrnlQNXWLoct9GSlbu6BT_NS-RMHYqt0vhs,14
+pycountryinfo-1.0.2.dist-info/RECORD,,
