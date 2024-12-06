@@ -1,0 +1,8 @@
+zuinnote/__init__.py,sha256=djp3moGL5hrLP61csNaWENJzKL4YDwTc2hs-mKBSLVI,1096
+zuinnote/scrapy/__init__.py,sha256=djp3moGL5hrLP61csNaWENJzKL4YDwTc2hs-mKBSLVI,1096
+zuinnote/scrapy/contrib/__init__.py,sha256=djp3moGL5hrLP61csNaWENJzKL4YDwTc2hs-mKBSLVI,1096
+zuinnote/scrapy/contrib/bigexporters.py,sha256=nrV0O6BdM8wiMeOUq76drfm__EGRD7lX-TuEhdT7fmA,28366
+scrapy_contrib_bigexporters-0.5.0.dist-info/LICENSE,sha256=PrC0aaEFAXhbT2s8nDLxiXsqGXb743uHgm2zePrAOm8,1086
+scrapy_contrib_bigexporters-0.5.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+scrapy_contrib_bigexporters-0.5.0.dist-info/METADATA,sha256=OEpSCij0Y-VHfLaVEBdkeClxtzgBF4Buhh94_tjItcw,4051
+scrapy_contrib_bigexporters-0.5.0.dist-info/RECORD,,
