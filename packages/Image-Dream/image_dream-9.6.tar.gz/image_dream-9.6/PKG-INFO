@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Image_Dream
+Version: 9.6
+Summary: anon
+Author: anon
+Author-email: xxx@outlook.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: psutil
+
+anon
