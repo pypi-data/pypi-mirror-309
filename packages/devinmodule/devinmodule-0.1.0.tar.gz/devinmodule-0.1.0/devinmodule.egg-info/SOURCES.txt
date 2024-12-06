@@ -1,0 +1,7 @@
+setup.py
+devinmodule/__init__.py
+devinmodule/greetings.py
+devinmodule.egg-info/PKG-INFO
+devinmodule.egg-info/SOURCES.txt
+devinmodule.egg-info/dependency_links.txt
+devinmodule.egg-info/top_level.txt
