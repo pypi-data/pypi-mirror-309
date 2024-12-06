@@ -1,0 +1,454 @@
+@font-face {
+  font-family: "Zed Mono";
+  src: url("../fonts/zed-mono-extended.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zed Mono";
+  src: url("../fonts/zed-mono-extendedbold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zed Mono";
+  src: url("../fonts/zed-mono-extendedbolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zed Mono";
+  src: url("../fonts/zed-mono-extendeditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zed Sans";
+  src: url("../fonts/zed-sans-extended.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zed Sans";
+  src: url("../fonts/zed-sans-extendedbold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zed Sans";
+  src: url("../fonts/zed-sans-extendedbolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zed Sans";
+  src: url("../fonts/zed-sans-extendeditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  --md-text-font: "Zed Sans";
+}
+
+:root {
+  --md-code-font: "Zed Mono";
+}
+
+/* Styling for code boxes */
+.md-typeset pre {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset code {
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+}
+
+[data-md-color-scheme="home-light"] {
+  --md-hue: 60deg;
+
+  --md-primary-fg-color:               #F5F5F0;  /* Soft Cream */
+  --md-primary-fg-color--light:        #E8E8E3;  /* Light Cream */
+  --md-primary-fg-color--dark:         #DCDCD7;  /* Muted Cream */
+  --md-primary-bg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-primary-bg-color--light:        #3D3D3D;  /* Medium Charcoal */
+
+  --md-accent-fg-color:                #89CFF0;  /* Baby Blue */
+  --md-accent-fg-color--transparent:   #89CFF033;  /* Baby Blue with transparency */
+
+  --md-default-fg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-default-fg-color--light:        #3D3D3D;  /* Medium Charcoal */
+  --md-default-fg-color--lighter:      #4D4D4D;  /* Light Charcoal */
+  --md-default-fg-color--lightest:     #DCDCD7;  /* Muted Cream */
+  --md-default-bg-color:               #F5F5F0;  /* Soft Cream */
+  --md-default-bg-color--light:        #E8E8E3;  /* Light Cream */
+  --md-default-bg-color--lighter:      #DCDCD7;  /* Muted Cream */
+  --md-default-bg-color--lightest:     #E9C7B7;  /* Soft Peach */
+
+  --md-code-fg-color:                  #4A4A4A;  /* Soft Black */
+  --md-code-bg-color:                  #E8E8E3;  /* Light Cream */
+  --md-code-hl-color:                  #DCDCD7;  /* Muted Cream */
+
+  --md-code-hl-number-color:           #F0A07C;  /* Soft Coral */
+  --md-code-hl-special-color:          #F0CF7C;  /* Soft Yellow */
+  --md-code-hl-function-color:         #D7B4D9;  /* Soft Purple */
+  --md-code-hl-constant-color:         #A8D7C2;  /* Soft Mint */
+  --md-code-hl-keyword-color:          #F0A07C;  /* Soft Coral */
+  --md-code-hl-string-color:           #BFD9A8;  /* Soft Green */
+  --md-code-hl-name-color:             #A8C4D9;  /* Soft Blue */
+  --md-code-hl-operator-color:         #A8D7C2;  /* Soft Mint */
+  --md-code-hl-punctuation-color:      #B4B4B4;  /* Soft Gray */
+  --md-code-hl-comment-color:          #C2C2C2;  /* Light Gray */
+  --md-code-hl-generic-color:          #8A8A8A;  /* Medium Gray */
+  --md-code-hl-variable-color:         #A8C4D9;  /* Soft Blue */
+
+  --md-typeset-color:                  var(--md-default-fg-color);
+  --md-typeset-a-color:                #E6A99F;  /* Soft Terracotta */
+
+  --md-typeset-mark-color:             #E9C7B780;  /* Soft Peach with transparency */
+
+  --md-typeset-table-color:            #DCDCD7;  /* Muted Cream */
+  --md-typeset-table-color--light:     #E8E8E3;  /* Light Cream */
+
+  --md-admonition-fg-color:            var(--md-default-fg-color);
+  --md-admonition-bg-color:            var(--md-default-bg-color);
+
+  --md-warning-fg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-warning-bg-color:               #E9C7B7;  /* Soft Peach */
+
+  --md-footer-fg-color:                #F5F5F0;  /* Soft Cream */
+  --md-footer-fg-color--light:         #E8E8E3;  /* Light Cream */
+  --md-footer-fg-color--lighter:       #DCDCD7;  /* Muted Cream */
+  --md-footer-bg-color:                #2D2D2D;  /* Soft Charcoal */
+  --md-footer-bg-color--dark:          #3D3D3D;  /* Medium Charcoal */
+
+  --md-code-shadow-color:              rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="home-dark"] {
+  --md-hue: 220deg;
+
+  --md-primary-fg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-primary-fg-color--light:        #3D3D3D;  /* Medium Charcoal */
+  --md-primary-fg-color--dark:         #4D4D4D;  /* Light Charcoal */
+  --md-primary-bg-color:               #F5F5F0;  /* Soft Cream */
+  --md-primary-bg-color--light:        #E8E8E3;  /* Light Cream */
+
+  --md-accent-fg-color:                #89CFF0;  /* Baby Blue */
+  --md-accent-fg-color--transparent:   #89CFF033;  /* Baby Blue with transparency */
+
+  --md-default-fg-color:               #F5F5F0;  /* Soft Cream */
+  --md-default-fg-color--light:        #E8E8E3;  /* Light Cream */
+  --md-default-fg-color--lighter:      #DCDCD7;  /* Muted Cream */
+  --md-default-fg-color--lightest:     #E9C7B7;  /* Soft Peach */
+  --md-default-bg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-default-bg-color--light:        #3D3D3D;  /* Medium Charcoal */
+  --md-default-bg-color--lighter:      #4D4D4D;  /* Light Charcoal */
+  --md-default-bg-color--lightest:     #5D5D5D;  /* Lighter Charcoal */
+
+  --md-code-fg-color:                  #E8E8E3;  /* Light Cream */
+  --md-code-bg-color:                  #3D3D3D;  /* Medium Charcoal */
+  --md-code-hl-color:                  #4D4D4D;  /* Light Charcoal */
+
+  --md-code-hl-number-color:           #FFB5A1;  /* Light Coral */
+  --md-code-hl-special-color:          #FFE5A1;  /* Light Yellow */
+  --md-code-hl-function-color:         #E8C6EA;  /* Light Purple */
+  --md-code-hl-constant-color:         #B8E8D4;  /* Light Mint */
+  --md-code-hl-keyword-color:          #FFB5A1;  /* Light Coral */
+  --md-code-hl-string-color:           #D1E8B8;  /* Light Green */
+  --md-code-hl-name-color:             #B8D5E8;  /* Light Blue */
+  --md-code-hl-operator-color:         #B8E8D4;  /* Light Mint */
+  --md-code-hl-punctuation-color:      #D1D1D1;  /* Light Gray */
+  --md-code-hl-comment-color:          #B8B8B8;  /* Medium Gray */
+  --md-code-hl-generic-color:          #E8E8E8;  /* Off White */
+  --md-code-hl-variable-color:         #B8D5E8;  /* Light Blue */
+
+  --md-typeset-color:                  var(--md-default-fg-color);
+  --md-typeset-a-color:                #E6A99F;  /* Soft Terracotta */
+
+  --md-typeset-mark-color:             #E9C7B780;  /* Soft Peach with transparency */
+
+  --md-typeset-table-color:            #4D4D4D;  /* Light Charcoal */
+  --md-typeset-table-color--light:     #3D3D3D;  /* Medium Charcoal */
+
+  --md-admonition-fg-color:            var(--md-default-fg-color);
+  --md-admonition-bg-color:            var(--md-default-bg-color);
+
+  --md-warning-fg-color:               #2D2D2D;  /* Soft Charcoal */
+  --md-warning-bg-color:               #E9C7B7;  /* Soft Peach */
+
+  --md-footer-fg-color:                #F5F5F0;  /* Soft Cream */
+  --md-footer-fg-color--light:         #E8E8E3;  /* Light Cream */
+  --md-footer-fg-color--lighter:       #DCDCD7;  /* Muted Cream */
+  --md-footer-bg-color:                #2D2D2D;  /* Soft Charcoal */
+  --md-footer-bg-color--dark:          #3D3D3D;  /* Medium Charcoal */
+
+  --md-code-shadow-color:              rgba(0, 0, 0, 0.2);
+}
+
+/* Apply theme-specific shadow to code boxes */
+.md-typeset pre {
+  box-shadow: 0 2px 6px var(--md-code-shadow-color);
+}
+
+/* Ensure inline code uses theme background */
+.md-typeset code:not(pre code) {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+/* Add horizontal padding to headers */
+.md-header_inner {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.md-header--lifted {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.md-tabs {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.md-header--shadow {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.md-footer {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.md-footer-meta {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.md-ellipsis {
+  position: relative;
+}
+
+.md-header__title .md-ellipsis {
+  position: relative;
+}
+
+
+.grid.cards {
+  border-radius: 6px;
+}
+
+/* Jupyter notebook cell styling */
+.jp-Cell {
+  padding: 5px;
+  margin: 2px 0;
+  border-radius: 4px;
+}
+
+.jp-CodeCell {
+  background: var(--md-code-bg-color);
+}
+
+.jp-InputArea-prompt {
+  padding: 6px 0;
+  min-width: 14ex;
+  color: var(--md-code-fg-color);
+  opacity: 0.7;
+}
+
+.jp-InputArea-editor {
+  background: var(--md-code-bg-color);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.jp-OutputArea-prompt {
+  color: var(--md-code-fg-color);
+  opacity: 0.7;
+}
+
+.jp-OutputArea-output {
+  padding: 8px;
+  background: var(--md-code-bg-color);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="home-dark"] .jp-CodeCell {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-dark"] .jp-InputArea-editor {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-dark"] .jp-OutputArea-output {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-light"] .jp-CodeCell {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-light"] .jp-InputArea-editor {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-light"] .jp-OutputArea-output {
+  background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-dark"] .jp-InputPrompt {
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  opacity: 0.7;
+}
+
+[data-md-color-scheme="home-light"] .jp-InputPrompt {
+  background: var(--md-code-bg-color); 
+  color: var(--md-code-fg-color);
+  opacity: 0.7;
+}
+
+.jp-InputArea-editor {
+  border: var(--jp-border-width) solid var(--jp-cell-editor-border-color);
+  border-radius: 0;
+  background: var(--jp-cell-editor-background);
+}
+
+.jp-InputArea-editor .CodeMirror {
+  background: transparent;
+}
+
+.jp-InputArea-editor .CodeMirror-gutters {
+  border: none;
+  border-right: 1px solid var(--jp-border-color2);
+  background-color: transparent;
+  width: 28px;
+}
+
+.jp-InputArea-editor .CodeMirror-linenumber {
+  padding: 0 8px;
+}
+
+.jp-InputPrompt {
+  flex: 0 0 var(--jp-cell-prompt-width);
+  color: var(--jp-cell-inprompt-font-color);
+  padding: 6px;
+  font-family: var(--jp-code-font-family);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: var(--jp-code-font-size);
+  border: var(--jp-border-width) solid transparent;
+}
+
+
+.CodeMirror {
+  background-color: var(--md-code-bg-color) !important;
+  color: var(--md-code-fg-color) !important;
+}
+
+.jp-InputArea-editor {
+  padding: 8px !important;
+  border-color: var(--md-code-bg-color) !important;
+  border-width: 1px !important;
+}
+
+:root .jupyter-wrapper {
+  --jp-cell-editor-background: var(--md-code-bg-color);
+  --jp-cell-editor-border-color: var(--md-code-bg-color);
+  --jp-border-width: 0px;
+  --jp-CodeCell-background: transparent;
+  --jp-border-color2: var(--md-code-bg-color);
+  --jp-CodeMirror-background: var(--md-code-bg-color);
+  --jp-Editor-background: var(--md-code-bg-color);
+  --jp-mirror-editor-background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-dark"] .jupyter-wrapper {
+  --jp-cell-editor-background: var(--md-code-bg-color);
+  --jp-cell-editor-border-color: var(--md-code-bg-color);
+  --jp-border-width: 1px;
+  --jp-CodeCell-background: var(--md-code-bg-color);
+  --jp-border-color2: var(--md-code-bg-color);
+  --jp-CodeMirror-background: var(--md-code-bg-color);
+  --jp-Editor-background: var(--md-code-bg-color);
+  --jp-mirror-editor-background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-light"] .jupyter-wrapper {
+  --jp-cell-editor-background: var(--md-code-bg-color);
+  --jp-cell-editor-border-color: var(--md-code-bg-color);
+  --jp-CodeCell-background: var(--md-code-bg-color);
+  --jp-border-width: 1px;
+  --jp-border-color2: var(--md-code-bg-color);
+  --jp-CodeMirror-background: var(--md-code-bg-color);
+  --jp-Editor-background: var(--md-code-bg-color);
+  --jp-mirror-editor-background: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="home-light"] .highlight-ipynb {
+  --jp-mirror-editor-number-color: var(--md-code-hl-number-color);
+  --jp-mirror-editor-special-color: var(--md-code-hl-special-color);
+  --jp-mirror-editor-function-color: var(--md-code-hl-function-color);
+  --jp-mirror-editor-constant-color: var(--md-code-hl-constant-color);
+  --jp-mirror-editor-keyword-color: var(--md-code-hl-keyword-color);
+  --jp-mirror-editor-string-color: var(--md-code-hl-string-color);
+  --jp-mirror-editor-name-color: var(--md-code-hl-name-color);
+  --jp-mirror-editor-operator-color: var(--md-code-hl-operator-color);
+  --jp-mirror-editor-punctuation-color: var(--md-code-hl-punctuation-color);
+  --jp-mirror-editor-comment-color: var(--md-code-hl-comment-color);
+  --jp-mirror-editor-generic-color: var(--md-code-hl-generic-color);
+  --jp-mirror-editor-variable-color: var(--md-code-hl-variable-color);
+}
+
+[data-md-color-scheme="home-dark"] .highlight-ipynb {
+  --jp-mirror-editor-number-color: var(--md-code-hl-number-color);
+  --jp-mirror-editor-special-color: var(--md-code-hl-special-color);
+  --jp-mirror-editor-function-color: var(--md-code-hl-function-color);
+  --jp-mirror-editor-constant-color: var(--md-code-hl-constant-color);
+  --jp-mirror-editor-keyword-color: var(--md-code-hl-keyword-color);
+  --jp-mirror-editor-string-color: var(--md-code-hl-string-color);
+  --jp-mirror-editor-name-color: var(--md-code-hl-name-color);
+  --jp-mirror-editor-operator-color: var(--md-code-hl-operator-color);
+  --jp-mirror-editor-punctuation-color: var(--md-code-hl-punctuation-color);
+  --jp-mirror-editor-comment-color: var(--md-code-hl-comment-color);
+  --jp-mirror-editor-generic-color: var(--md-code-hl-generic-color);
+  --jp-mirror-editor-variable-color: var(--md-code-hl-variable-color);
+}
+
+.md-footer-meta {
+  border-top-left-radius : 10px;
+  border-top-right-radius : 10px;
+}
+
+.md-nav__item--section {
+  font-family: var(--md-text-font);
+  color: var(--md-default-fg-color);
+  font-style: bold;
+  font-size: 1.2em;
+}
+
+.md-nav__link {
+  font-family: var(--md-text-font);
+  color: var(--md-default-fg-color);
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+.zyx-new-item {
+  font-style: italic;
+}
