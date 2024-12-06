@@ -1,0 +1,5 @@
+llama_index/packs/cogniswitch_agent/__init__.py,sha256=BxQVPl9orDOjjJaciZ2KDNay2xrVQ13T-G_VguXU_a4,110
+llama_index/packs/cogniswitch_agent/base.py,sha256=VffscwrKcUF32ko9pK1rIKN_bUIq9zNwztNYvsdK1jM,880
+llama_index_packs_cogniswitch_agent-0.3.0.dist-info/METADATA,sha256=Mbc-WaDOWOnFXBY2rpuvH6X5U4Oph5iNOZKMnyo-Pi4,3847
+llama_index_packs_cogniswitch_agent-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_packs_cogniswitch_agent-0.3.0.dist-info/RECORD,,
