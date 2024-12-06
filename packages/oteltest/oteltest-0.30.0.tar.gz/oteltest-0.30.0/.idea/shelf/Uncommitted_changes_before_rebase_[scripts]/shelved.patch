@@ -1,0 +1,253 @@
+Index: example_scripts/trace_loop_splk_whl.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_splk_whl.py b/example_scripts/trace_loop_splk_whl.py
+new file mode 100644
+--- /dev/null	(date 1731082110702)
++++ b/example_scripts/trace_loop_splk_whl.py	(date 1731082110702)
+@@ -0,0 +1,38 @@
++from lib import trace_loop
++
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.20.0.dev0-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.20.0-py3-none-any.whl[otlp]"
++# WHL = "/Users/pcollins/github/signalfx/sop-worktree/dist/splunk_opentelemetry-1.21.0-py3-none-any.whl[all]"
++# WHL = "/Users/pcollins/github/signalfx/sop-v2/dist/splunk_opentelemetry-2.0.0a1-py3-none-any.whl"
++# WHL = "/Users/pcollins/github/signalfx/splunk-otel-python/dist/splunk_opentelemetry-0.0.1-py3-none-any.whl"
++WHL = "/Users/pcollins/github/signalfx/sop-v2-prs/dist/splunk_opentelemetry-2.0.0a1-py3-none-any.whl"
++
++SERVICE_NAME = "my-otel-test"
++NUM_ADDS = 12
++
++if __name__ == "__main__":
++    trace_loop(NUM_ADDS)
++
++
++class MyOtelTest:
++    def requirements(self):
++        return (WHL,)
++
++    def environment_variables(self):
++        return {
++            "OTEL_SERVICE_NAME": SERVICE_NAME,
++        }
++
++    def wrapper_command(self):
++        return "opentelemetry-instrument"
++
++    def on_start(self):
++        return None
++
++    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
++        print(f"script completed with return code {returncode}")
++
++    def is_http(self):
++        return False
+Index: example_scripts/logging_exception_bug.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nCauses a ValueError to be raised, caught, and logged. The exception arises because we are trying to log an object.\n\"\"\"\n\ndef main():\n    import logging\n    import time\n\n\n    logging.basicConfig(level=logging.NOTSET)\n    logging.getLogger().addHandler(create_logging_handler())\n\n    logger = logging.getLogger(__name__)\n\n    try:\n        raise ValueError(\"Err\")\n    except ValueError as e:\n        # log the raw exception object\n        logger.error(e)\n        # this causes a ValueError to be raised, caught, and logged\n\n    for _ in range(4):\n        # demonstrate that the exception was handled and that we can still perform an operation\n        time.sleep(1)\n        print(\"x\")\n\n\ndef create_logging_handler():\n    from opentelemetry.exporter.otlp.proto.grpc._log_exporter import OTLPLogExporter\n    from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler\n    from opentelemetry.sdk._logs.export import BatchLogRecordProcessor\n\n    logger_provider = LoggerProvider()\n    logger_provider.add_log_record_processor(\n        BatchLogRecordProcessor(OTLPLogExporter(insecure=True))\n    )\n    return LoggingHandler(logger_provider=logger_provider)\n\n\nif __name__ == \"__main__\":\n    main()\n\n\nclass MyOtelTest:\n\n    def environment_variables(self):\n        return {}\n\n    def requirements(self):\n        return (\"opentelemetry-exporter-otlp==1.26.0\",)\n\n    def wrapper_command(self):\n        return \"\"\n\n    def on_start(self):\n        pass\n\n    def on_stop(self, tel, stdout: str, stderr: str, returncode: int) -> None:\n        pass\n\n    def is_http(self) -> bool:\n        return False\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/logging_exception_bug.py b/example_scripts/logging_exception_bug.py
+--- a/example_scripts/logging_exception_bug.py	(revision 83402282ca1e9fa42c76d9640b47d71566b13fc3)
++++ b/example_scripts/logging_exception_bug.py	(date 1731705655841)
+@@ -2,11 +2,11 @@
+ Causes a ValueError to be raised, caught, and logged. The exception arises because we are trying to log an object.
+ """
+ 
++
+ def main():
+     import logging
+     import time
+ 
+-
+     logging.basicConfig(level=logging.NOTSET)
+     logging.getLogger().addHandler(create_logging_handler())
+ 
+Index: example_scripts/client_server.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import time\nfrom typing import Mapping, Optional, Sequence\n\nfrom oteltest import OtelTest\n\nPORT = 8002\nHOST = \"127.0.0.1\"\n\n\nif __name__ == \"__main__\":\n    from flask import Flask\n\n    app = Flask(__name__)\n\n    @app.route(\"/\")\n    def home():\n        return \"hello\"\n\n    app.run(port=PORT, host=HOST)\n\n\n# We formally inherit from OtelTest here, but we don't have to if we have OtelTest in the name of the class. The\n# advantage of formally inheriting is that your IDE can fill in the method stubs for you. The advantage of not\n# formally inheriting is that you don't have to rely on the oteltest dependency.\nclass FlaskOtelTest(OtelTest):\n    def environment_variables(self) -> Mapping[str, str]:\n        return {}\n\n    def requirements(self) -> Sequence[str]:\n        return (\n            \"flask\",\n            \"opentelemetry-distro\",\n            \"opentelemetry-exporter-otlp-proto-grpc\",\n            \"opentelemetry-instrumentation-flask\",\n        )\n\n    def wrapper_command(self) -> str:\n        return \"opentelemetry-instrument\"\n\n    def on_start(self) -> Optional[float]:\n        import http.client\n\n        # Todo: replace this sleep with a liveness check!\n        time.sleep(10)\n\n        conn = http.client.HTTPConnection(HOST, PORT)\n        conn.request(\"GET\", \"/\")\n        print(\"response:\", conn.getresponse().read().decode())\n        conn.close()\n\n        # The return value of on_script_start() tells oteltest the number of seconds to wait for the script to complete.\n        # In this case, we indicate 30 (seconds), which, once elapsed, will cause the script to be terminated, if it's\n        # still running. If we return `None` then the script will run indefinitely.\n        return 30\n\n    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:\n        # you can do something with the telemetry here, e.g. make assertions etc.\n        print(\"done\")\n\n    def is_http(self) -> bool:\n        return False\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/client_server.py b/example_scripts/client_server.py
+--- a/example_scripts/client_server.py	(revision 83402282ca1e9fa42c76d9640b47d71566b13fc3)
++++ b/example_scripts/client_server.py	(date 1731705655840)
+@@ -41,7 +41,7 @@
+         import http.client
+ 
+         # Todo: replace this sleep with a liveness check!
+-        time.sleep(10)
++        time.sleep(6)
+ 
+         conn = http.client.HTTPConnection(HOST, PORT)
+         conn.request("GET", "/")
+@@ -51,7 +51,7 @@
+         # The return value of on_script_start() tells oteltest the number of seconds to wait for the script to complete.
+         # In this case, we indicate 30 (seconds), which, once elapsed, will cause the script to be terminated, if it's
+         # still running. If we return `None` then the script will run indefinitely.
+-        return 30
++        return 12
+ 
+     def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
+         # you can do something with the telemetry here, e.g. make assertions etc.
+Index: example_scripts/fail.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/fail.py b/example_scripts/fail.py
+new file mode 100644
+--- /dev/null	(date 1731082110725)
++++ b/example_scripts/fail.py	(date 1731082110725)
+@@ -0,0 +1,77 @@
++from typing import Mapping, Optional, Sequence
++
++from oteltest import OtelTest, Telemetry
++
++PORT = 8888
++
++HOST = "127.0.0.1"
++
++
++def main():
++    from flask import Flask
++
++    app = Flask(__name__)
++
++    @app.route("/")
++    def home():
++        return "hello"
++
++    app.run(host=HOST, port=PORT)
++
++
++if __name__ == "__main__":
++    main()
++
++
++class FixProblemOTT(OtelTest):
++    def environment_variables(self) -> Mapping[str, str]:
++        return {
++            "OTEL_SERVICE_NAME": "my-svc",
++        }
++
++    def requirements(self) -> Sequence[str]:
++        return [
++            "splunk-opentelemetry[all]",
++            "oteltest",
++            "flask",
++            "opentelemetry-instrumentation-flask==0.48b0",
++        ]
++
++    def wrapper_command(self) -> str:
++        return "opentelemetry-instrument"
++
++    def on_start(self) -> Optional[float]:  # noqa: FA100
++        import http.client
++        import time
++
++        time.sleep(6)
++
++        conn = http.client.HTTPConnection(HOST, PORT)
++        conn.request("GET", "/")
++
++        response = conn.getresponse()
++        assert_server_timing_headers_found(response)
++
++        conn.close()
++
++        return 6
++
++    def on_stop(self, tel: Telemetry, stdout: str, stderr: str, returncode: int) -> None:
++        pass
++
++    def is_http(self) -> bool:
++        pass
++
++
++def assert_server_timing_headers_found(response):
++    # Server-Timing: traceparent;desc="00-e899d68fca52b66d3facae0bdaf764db-159efb97d6b56568-01"
++    # Access-Control-Expose-Headers: Server-Timing
++    server_timing_header_found = False
++    access_control_header_found = False
++    for header, _ in response.getheaders():
++        if header == "Server-Timing":
++            server_timing_header_found = True
++        elif header == "Access-Control-Expose-Headers":
++            access_control_header_found = True
++    assert server_timing_header_found
++    assert access_control_header_found
+Index: example_scripts/trace_loop_grpc.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_grpc.py b/example_scripts/trace_loop_grpc.py
+new file mode 100644
+--- /dev/null	(date 1731082110708)
++++ b/example_scripts/trace_loop_grpc.py	(date 1731082110708)
+@@ -0,0 +1,29 @@
++from lib import trace_loop
++
++SERVICE_NAME = "my-otel-test"
++NUM_ADDS = 12
++
++if __name__ == "__main__":
++    trace_loop(NUM_ADDS)
++
++class MyOtelTest:
++    def requirements(self):
++        return "opentelemetry-distro", "opentelemetry-exporter-otlp-proto-grpc"
++
++    def environment_variables(self):
++        return {
++            "OTEL_SERVICE_NAME": SERVICE_NAME,
++            "OTEL_EXPERIMENTAL_RESOURCE_DETECTORS": "process",
++        }
++
++    def wrapper_command(self):
++        return "opentelemetry-instrument"
++
++    def on_start(self):
++        return None
++
++    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
++        print(f"returncode: [{returncode}]")
++
++    def is_http(self):
++        return False
+Index: example_scripts/trace_loop_splk_pypi.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from lib import trace_loop\n\nSERVICE_NAME = \"my-otel-test\"\nNUM_ADDS = 12\n\nif __name__ == \"__main__\":\n    trace_loop(NUM_ADDS)\n\nclass MyOtelTest:\n    def requirements(self):\n        return (\"splunk-opentelemetry[otlp]\",)\n\n    def environment_variables(self):\n        return {\n            \"OTEL_SERVICE_NAME\": SERVICE_NAME,\n        }\n\n    def wrapper_command(self):\n        return \"opentelemetry-instrument\"\n\n    def on_start(self):\n        return None\n\n    def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:\n        print(f\"script completed with return code {returncode}\")\n\n    def is_http(self):\n        return False\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example_scripts/trace_loop_splk_pypi.py b/example_scripts/trace_loop_splk_pypi.py
+--- a/example_scripts/trace_loop_splk_pypi.py	(revision 83402282ca1e9fa42c76d9640b47d71566b13fc3)
++++ b/example_scripts/trace_loop_splk_pypi.py	(date 1731705655842)
+@@ -12,14 +12,14 @@
+ 
+     def environment_variables(self):
+         return {
+-            "OTEL_SERVICE_NAME": SERVICE_NAME,
++            "OTEL_SERVICE_NAME": SERVICE_NAME
+         }
+ 
+     def wrapper_command(self):
+-        return "opentelemetry-instrument"
++        return "splunk-py-trace"
+ 
+     def on_start(self):
+-        return None
++        return 12
+ 
+     def on_stop(self, telemetry, stdout: str, stderr: str, returncode: int) -> None:
+         print(f"script completed with return code {returncode}")
