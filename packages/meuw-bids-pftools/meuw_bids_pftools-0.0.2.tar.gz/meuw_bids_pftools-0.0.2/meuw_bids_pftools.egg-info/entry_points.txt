@@ -1,0 +1,2 @@
+[package_tools]
+custom_search = meuw_bids_pftools.tools.utils:list_package_tools
