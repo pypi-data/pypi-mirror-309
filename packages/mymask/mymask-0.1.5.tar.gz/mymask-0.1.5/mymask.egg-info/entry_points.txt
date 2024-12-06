@@ -1,0 +1,2 @@
+[console_scripts]
+mymask = mymask.app:main
