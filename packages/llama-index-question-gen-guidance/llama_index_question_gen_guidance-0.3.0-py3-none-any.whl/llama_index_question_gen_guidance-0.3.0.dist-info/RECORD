@@ -1,0 +1,5 @@
+llama_index/question_gen/guidance/__init__.py,sha256=YzbSewL3x8JXlWF4rlQ4nsXFE_NOLkBl8suhss53t9s,118
+llama_index/question_gen/guidance/base.py,sha256=6XFVt6IuSHznTrYDm09qii86DDNL6X0Mcpp59iEIhuM,2350
+llama_index_question_gen_guidance-0.3.0.dist-info/METADATA,sha256=w183PFh3ozpBGxSGiJMVBnNVpQiDGTDUmRy99ru9ksU,777
+llama_index_question_gen_guidance-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_question_gen_guidance-0.3.0.dist-info/RECORD,,
