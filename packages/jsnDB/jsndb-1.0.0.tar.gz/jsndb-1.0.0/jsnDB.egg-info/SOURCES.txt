@@ -1,0 +1,8 @@
+README.md
+setup.py
+jsnDB/__init__.py
+jsnDB/json_database.py
+jsnDB.egg-info/PKG-INFO
+jsnDB.egg-info/SOURCES.txt
+jsnDB.egg-info/dependency_links.txt
+jsnDB.egg-info/top_level.txt
