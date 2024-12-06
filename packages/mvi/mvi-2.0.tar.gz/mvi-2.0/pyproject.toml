@@ -1,0 +1,18 @@
+[project]
+name = "mvi"
+readme = "README.md"
+authors = [
+    { name = "Gertjan van Zwieten", email = "git@gjvz.nl" },
+]
+requires-python = '>=3.8'
+dynamic = ["description", "version"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+mvi = "mvi:main"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
