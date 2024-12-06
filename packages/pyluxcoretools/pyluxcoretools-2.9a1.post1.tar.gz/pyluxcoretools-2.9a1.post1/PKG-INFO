@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: pyluxcoretools
+Version: 2.9a1.post1
+Summary: LuxCore Python Tools
+Project-URL: Homepage, https://luxcorerender.org/
+Project-URL: Documentation, http://wiki.luxcorerender.org/LuxCoreRender_Wiki
+Project-URL: GitHub, https://github.com/LuxCoreRender/LuxCore
+Author: Howetuft
+Keywords: path tracing,pbr,physical based rendering,ray tracing,raytracing,rendering
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Requires-Python: >=3.8
+Requires-Dist: pyluxcore
+Description-Content-Type: text/markdown
+
+A Python package to provide LuxCoreTools.
+
+# LuxCoreRender
+LuxCoreRender is a physically correct, unbiased rendering engine.
+It is built on physically based equations that model the transportation of
+light. This allows it to accurately capture a wide range of phenomena which
+most other rendering programs are simply unable to reproduce.
+
+You can find more information about at: https://www.luxcorerender.org
+
+Sources can be found here: https://github.com/LuxCoreRender/LuxCore
+
+
+# PyLuxCoreTools
+PyLuxCoreTools are a set of command line tools available in the LuxCoreRender stand-alone version. They include command line rendering, film merging and more.
+
+
+# Install
+
+`pip install pyluxcoretools`
+
+# License
+This package is released under Apache 2.0 license.
