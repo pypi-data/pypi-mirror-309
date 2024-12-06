@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopeecovgopy35.egg-info/PKG-INFO
+shopeecovgopy35.egg-info/SOURCES.txt
+shopeecovgopy35.egg-info/dependency_links.txt
+shopeecovgopy35.egg-info/top_level.txt
