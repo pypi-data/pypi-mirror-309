@@ -1,0 +1,7 @@
+spark_jdbc_ingestor/__init__.py,sha256=31-F4gKvTg0opNsDYJk18NO-YVfixGpd9eKW5VmGPBM,31
+spark_jdbc_ingestor/main.py,sha256=_j0mbCvR5wrcEz8UDsXTpbgvvR9alxEd7ii4D1Y45QE,19623
+spark_jdbc_ingestor-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spark_jdbc_ingestor-1.0.1.dist-info/METADATA,sha256=Ag0wr0tsMEoomlLVN5O4SC89eZwJb30EiZd7UL2mC94,46912
+spark_jdbc_ingestor-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+spark_jdbc_ingestor-1.0.1.dist-info/top_level.txt,sha256=W7oSu3HDpMEZ4p93LIteHS0oPUegF4vZLGwftpmoQOc,20
+spark_jdbc_ingestor-1.0.1.dist-info/RECORD,,
