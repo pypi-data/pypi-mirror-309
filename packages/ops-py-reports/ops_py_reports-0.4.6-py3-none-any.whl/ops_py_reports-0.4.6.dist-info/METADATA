@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: ops-py-reports
+Version: 0.4.6
+Summary: Post Key Vault Secrets report to webhook
+License: MIT License
+        
+        Copyright (c) 2024 Equinor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: pip ==24.3.1
+Requires-Dist: setuptools ==75.5.0
+Requires-Dist: soupsieve ==2.6
+Requires-Dist: wheel ==0.45.0
+
+# ops-py-reports
+
+## Payloads
+
+### Slack App  
+Creates Slack payload(s) from the provided *title* and *body*.
+  
+The title will be formatted as **bold**, while the body will be formatted as a  ```Code block```:            
+``` [{"text": f"*{title}*\n```{body}```"}]```  
+  
+- If the payload is too large it will be split into multiple parts (individual posts).  
+  - If spilt, the provided *title* will be used for *all* posts.
+    - The *part number* will be appended to the *title* on each post.  
+  
+
+---
+
+## Reports
+
+### SlackMessages  
+Accepts a list of dicts and returns Slack Markdown formatted rows.  
+  
+The `get_ssl_report()` method creates a message with a provided title in bold (defaults to `SSL certificates report`) .    
+If any of the provided rows of dicts contains a *status* key, the value of this key will be formatted according to the status value. Defaults to the following config:   
+
+```
+{
+  "ok": {
+    "emoji": ":white_check_mark:",
+    "txt": "OK"
+  },
+  "warning": {
+    "emoji": ":warning:",
+    "txt": "WARNING"
+  },
+  "critical": {
+    "emoji": ":bangbang:",
+    "txt": "CRITICAL!"
+  },
+  "expired": {
+    "emoji": ":rotating_light:",
+    "txt": "EXPIRED!!"
+  },
+  "error": {
+    "emoji": ":no_entry:",
+    "txt": "ERROR"
+  },
+  "unknown": {
+    "emoji": ":question:",
+    "txt": "UNKNOWN"
+  }
+}
+
+```
+
+The status will use the provided config to apply corresponding emoji and status text.  
+  
+### Markdown  
+Creates a plain text Markdown table from a list (rows) of lists (columns). The header is the first list in the list of rows.  
+  
+### HTMLTable
+Creates a HTML table from a list (rows) of lists (columns). The header is the first list in the list of rows. 
+
+*Styles*
+```
+"grey": " style='background-color: Grey; color: White; font-weight:bold'"
+"purple": " style='background-color: Purple; color: White; font-weight:bold'"
+"yellow": " style='background-color: Yellow; color: Black; font-weight:bold'"
+"red": " style='background-color: Red; color: White; font-weight:bold'"
+"green": " style='background-color: Green; color: White; font-weight:bold'"
+
+```
+
+will be added to the cells which equals the following *values*:
+```
+"disabled": "grey"  
+"unknown": "grey"  
+"warning": "yellow"  
+"critical": "red"  
+"ok": "green"  
+"error": "red"  
+"expired": "red"  
+```
+
+
+---
+
+## Functions 
+
+### dict_to_rows
+Converts a list of dicts to a list of a header and rows.
+
+### dict_to_csv
+Converts a list of dicts to a comma separated csv text, with a header and rows.
