@@ -1,0 +1,7 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/sqlalchemy/__init__.py,sha256=XhFiiU4whiWZiM5r4ctoiyYRLtQ1Op_PvaGQn8MYG9U,366
+llama_index/vector_stores/sqlalchemy/base.py,sha256=2JRPVN-C1CeGhI0CY2aQPYAaQ08bWIRON3tsBA1W-Zg,19516
+llama_index/vector_stores/sqlalchemy/utils.py,sha256=S3PWJtBLmIisUKumPa4T4vP-h0Clj0WKe7c4QaRqF2w,4909
+llama_index_vector_stores_sqlalchemy-0.5.0.dist-info/METADATA,sha256=e4hes49r4oXqKXWRcoSZ_SuASj1MPDcsBlZfbUbk-yM,715
+llama_index_vector_stores_sqlalchemy-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_sqlalchemy-0.5.0.dist-info/RECORD,,
