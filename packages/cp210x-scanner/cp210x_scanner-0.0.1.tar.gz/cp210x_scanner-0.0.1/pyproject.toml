@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cp210x-scanner"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Ibon Zalbide", email = "ibon.zalbide@kliskatek.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  'dataclasses-json',
+]
+
+[project.urls]
+Documentation = "https://github.com/kliskatek/cp210x-scanner#readme"
+Issues = "https://github.com/kliskatek/cp210x-scanner/issues"
+Source = "https://github.com/kliskatek/cp210x-scanner"
+
+[tool.hatch.version]
+path = "src/cp210x_scanner/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/cp210x_scanner tests}"
+
+[tool.coverage.run]
+source_pkgs = ["cp210x_scanner", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/cp210x_scanner/__about__.py",
+]
+
+[tool.coverage.paths]
+cp210x_scanner = ["src/cp210x_scanner", "*/cp210x-scanner/src/cp210x_scanner"]
+tests = ["tests", "*/cp210x-scanner/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+
+[tool.hatch.build.targets.wheel]
+artifacts = [
+  "*.so",
+  "*.dll",
+]
+
+[tool.hatch.build.targets.sdist]
+artifacts = [
+  "*.so",
+  "*.dll",
+]
