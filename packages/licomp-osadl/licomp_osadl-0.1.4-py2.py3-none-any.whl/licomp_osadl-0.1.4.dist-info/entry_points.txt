@@ -1,0 +1,2 @@
+[console_scripts]
+licomp-osadl = licomp_osadl.__main__:main
