@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-nifti = napari_nifti:napari.yaml
