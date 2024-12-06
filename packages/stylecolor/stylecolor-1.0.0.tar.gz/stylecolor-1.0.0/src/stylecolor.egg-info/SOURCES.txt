@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/stylecolor/__init__.py
+src/stylecolor/__init__.pyi
+src/stylecolor/ansi_styles.py
+src/stylecolor/example.py
+src/stylecolor/format.py
+src/stylecolor.egg-info/PKG-INFO
+src/stylecolor.egg-info/SOURCES.txt
+src/stylecolor.egg-info/dependency_links.txt
+src/stylecolor.egg-info/top_level.txt
