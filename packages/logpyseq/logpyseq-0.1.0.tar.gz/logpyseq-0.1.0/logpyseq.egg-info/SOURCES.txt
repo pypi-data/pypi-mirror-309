@@ -1,0 +1,9 @@
+LICENSE
+README.md
+logpyseq.py
+pyproject.toml
+logpyseq.egg-info/PKG-INFO
+logpyseq.egg-info/SOURCES.txt
+logpyseq.egg-info/dependency_links.txt
+logpyseq.egg-info/requires.txt
+logpyseq.egg-info/top_level.txt
