@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ddriver"
+version = "0.1.0"
+description = "M542 Driver for raspberry pi"
+authors = ["fulu.song <fulu.song@witintech.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+[tool.poetry.group.dev.dependencies]
+flake8-pylint = "^0.2.1"
+pytest = "^8.3.3"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
