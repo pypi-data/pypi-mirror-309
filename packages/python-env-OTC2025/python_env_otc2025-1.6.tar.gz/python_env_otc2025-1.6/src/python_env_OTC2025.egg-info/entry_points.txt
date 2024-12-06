@@ -1,0 +1,2 @@
+[console_scripts]
+otc2025-check-environment = python_env_OTC.__init__:check_all

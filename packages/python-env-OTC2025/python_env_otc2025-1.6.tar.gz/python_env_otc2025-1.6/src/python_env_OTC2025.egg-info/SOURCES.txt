@@ -1,0 +1,16 @@
+COPYING
+COPYING.LESSER
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/python_env_OTC/__init__.py
+src/python_env_OTC/py.typed
+src/python_env_OTC/python-env-OTC2025_report.ipynb
+src/python_env_OTC2025.egg-info/PKG-INFO
+src/python_env_OTC2025.egg-info/SOURCES.txt
+src/python_env_OTC2025.egg-info/dependency_links.txt
+src/python_env_OTC2025.egg-info/entry_points.txt
+src/python_env_OTC2025.egg-info/requires.txt
+src/python_env_OTC2025.egg-info/top_level.txt
+src/python_env_OTC2025.egg-info/zip-safe
