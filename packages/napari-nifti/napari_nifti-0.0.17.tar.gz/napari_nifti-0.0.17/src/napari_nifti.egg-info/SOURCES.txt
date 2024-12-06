@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_nifti/__init__.py
+src/napari_nifti/_reader.py
+src/napari_nifti/_writer.py
+src/napari_nifti/napari.yaml
+src/napari_nifti.egg-info/PKG-INFO
+src/napari_nifti.egg-info/SOURCES.txt
+src/napari_nifti.egg-info/dependency_links.txt
+src/napari_nifti.egg-info/entry_points.txt
+src/napari_nifti.egg-info/requires.txt
+src/napari_nifti.egg-info/top_level.txt

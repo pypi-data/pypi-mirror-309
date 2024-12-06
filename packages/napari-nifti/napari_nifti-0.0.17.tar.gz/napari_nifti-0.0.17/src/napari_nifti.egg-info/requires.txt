@@ -1,0 +1,6 @@
+medvol
+
+[testing]
+tox
+pytest
+pytest-cov
