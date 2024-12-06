@@ -1,0 +1,13 @@
+gimoos_ddf/__init__.py,sha256=p-Qajgb616cJcP-JwKIMK0dxQrMj_XI0GPU0adc__6c,491
+gimoos_ddf/create.py,sha256=lMZ-flDry-1VLpzs9aQP9rOhF3lNsrzfgglR3KrsQC0,2230
+gimoos_ddf/interface.py,sha256=uTWUPiBesSHQpBBZBD55k4dS_J-QxDCZsr_vz3H57Uw,16123
+gimoos_ddf/logger.py,sha256=xinV1Wff3iGUoQLRvY92ZhDU9uOV7Z5aeXoblpXhzzM,495
+gimoos_ddf/management.py,sha256=W3l92LI7Ag4EBLxQmcjpjaN0aejzN5tqxGgWlB7q7ak,2290
+gimoos_ddf/template.py,sha256=FTP8oIKYOk_f_RHhp6DC_vFpLAxpFh_WK44SW9gF4hI,12272
+gimoos_ddf/update.py,sha256=HTFv1RvuLCAzLLithxEUWgGiAsvfdVjGkqoCtdLN3-g,8066
+gimoos_ddf-0.3.3.dist-info/LICENSE,sha256=c3xu_xKc6qm0j1RFI67nxrBtvalp6LMR8Unxg-wV7ko,1088
+gimoos_ddf-0.3.3.dist-info/METADATA,sha256=_J4PT4SDCyx6rhNGI8eswhWe0gTmSQE263lLkLigiWk,1201
+gimoos_ddf-0.3.3.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+gimoos_ddf-0.3.3.dist-info/entry_points.txt,sha256=ns5gAoBYJT66gcIOsty7cAixoQi_Kb0cyNXpUaq_NVo,79
+gimoos_ddf-0.3.3.dist-info/top_level.txt,sha256=KMS6VJvpQJ2GqmDlD33UYvgG2IJnFxfJIshS467436g,11
+gimoos_ddf-0.3.3.dist-info/RECORD,,
