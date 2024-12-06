@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: complexifier
+Version: 0.1.1
+Summary: A library to make data worse
+Project-URL: Homepage, https://github.com/ruyzambrano/complexifier
+Project-URL: Issues, https://github.com/ruyzambrano/complexifier/issues
+Author-email: Ruy Zambrano <ruyzambrano@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Complexifier
+
+This makes your pandas dataframe even worse
+
+## Installation
+
+```sh
+pip install complexifier
+```
+
+## Usage
+
+`introduce_spag_error`
+`add_or_subtract_outliers`
+`add_standard_deviations`
+`duplicate_rows`
+`add_nulls`
