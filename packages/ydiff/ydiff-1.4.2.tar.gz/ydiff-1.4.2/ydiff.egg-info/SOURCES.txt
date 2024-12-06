@@ -1,0 +1,11 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+ydiff.py
+ydiff.egg-info/PKG-INFO
+ydiff.egg-info/SOURCES.txt
+ydiff.egg-info/dependency_links.txt
+ydiff.egg-info/entry_points.txt
+ydiff.egg-info/top_level.txt
