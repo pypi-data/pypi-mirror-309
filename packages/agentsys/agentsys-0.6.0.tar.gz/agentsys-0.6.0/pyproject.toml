@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentsys"
+version = "0.6.0"
+description = "An educational multi-agent orchestration framework"
+readme = "README.md"
+authors = [{ name = "lifsys" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+keywords = ["ai", "agents", "orchestration", "multi-agent"]
+dependencies = [
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "locksys>=0.1.0"
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-asyncio",
+    "black"
+]
+
+[project.urls]
+Homepage = "https://github.com/lifsys/agentsys"
+Issues = "https://github.com/lifsys/agentsys/issues"
+
+[tool.setuptools]
+packages = ["agentsys"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=agentsys"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
