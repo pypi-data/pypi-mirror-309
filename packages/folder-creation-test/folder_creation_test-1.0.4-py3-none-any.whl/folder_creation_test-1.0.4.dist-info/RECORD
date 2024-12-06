@@ -1,0 +1,11 @@
+folder_structure_generator_7edge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+folder_structure_generator_7edge/dredd-template.yml,sha256=Hiuy_loRhQdzEZsqwG4lXFVsdEZgqs4u3P4Uj1VRLiU,782
+folder_structure_generator_7edge/generator.py,sha256=_ugeNXyEfyyvwEIjVO9TGoYL2oRGy1T7UAFSYoyqYfQ,7402
+folder_structure_generator_7edge/hooks-template.py,sha256=wsVNimT9hpEB2VM57Rq1q0RSkJps_R8M1_4r7PWs7og,1573
+folder_structure_generator_7edge/serverless-template.yml,sha256=NLfbSm7SQ1zFx3pDmKLDUPUbu0rwqFHBCu4JTfd4oo8,3268
+folder_structure_generator_7edge/swagger-template.json,sha256=B6YvIdD7pMQEBU8JcgO-2i7d-Dar3aOxFJGh-Sp3y80,34056
+folder_creation_test-1.0.4.dist-info/METADATA,sha256=t2l54N2eFcPHAg7HhejcqNAortLYFZMUkZEAGCQIoMs,276
+folder_creation_test-1.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+folder_creation_test-1.0.4.dist-info/entry_points.txt,sha256=vGH50xvTfQiUqqULHdYGskTqd9UoerrAhuGr3Ckv7ps,75
+folder_creation_test-1.0.4.dist-info/top_level.txt,sha256=4-jcIOEjNfo2t2CEhyGNznKIRRNn9FdAnWkkc3qU5-k,33
+folder_creation_test-1.0.4.dist-info/RECORD,,
