@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+dhis2 = sqlalchemy_dhis2.jsonhttp_dialect:JSONHTTPDialect
