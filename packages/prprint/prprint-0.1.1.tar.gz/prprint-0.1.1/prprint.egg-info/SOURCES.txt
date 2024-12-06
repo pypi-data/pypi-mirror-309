@@ -1,0 +1,8 @@
+README.md
+setup.py
+prprint/__init__.py
+prprint/prprint.py
+prprint.egg-info/PKG-INFO
+prprint.egg-info/SOURCES.txt
+prprint.egg-info/dependency_links.txt
+prprint.egg-info/top_level.txt
