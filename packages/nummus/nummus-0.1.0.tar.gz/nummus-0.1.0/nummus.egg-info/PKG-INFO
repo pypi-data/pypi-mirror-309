@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nummus
+Version: 0.1.0
+Summary: Yet Another Math Library
+Home-page: https://github.com/fbasurto/yaml
+Author: Fernando Basurto Echevarria
+Author-email: fernando.basurto.echevarria@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Yaml (Yet Another Math Library)
+
+A Python library for basic and advanced mathematical operations.
+
+## Features
+
+- Arithmetic operations
+- Geometry utilities
+
+## Installation
+
+```bash
+pip install yaml-math
+```
+
+# Usage
+```
+from yaml import arithmetic
+
+print(arithmetic.add(2, 3))  # Outputs: 5
+```
+
+# License
+This project is licensed under the MIT License.
+
