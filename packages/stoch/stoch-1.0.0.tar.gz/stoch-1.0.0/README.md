@@ -1,0 +1,24 @@
+stoch: a package for stochastic calculations
+====
+
+
+## Generators of stochastic process
+
+- `gaussian_process(mean=0, std=1, dt=1, size=None)`
+
+- `ornstein_uhlenbeck_process(x0=0, mu=0, theta=1, sigma=1, dt=1, size=None)`
+
+Note: The parameter `size` follows the convention in `numpy`. When it is `None`, it generates `float`; When it is `int`(s), it generates `np.array` of shape `size`.
+
+
+### Usage Examples
+
+```
+from stoch import gaussian_process, ornstein_uhlenbeck_process
+gen = gaussian_process(mean=0, std=0.1, dt=0.01)  # generate scaler
+gen = gaussian_process(mean=0, std=0.1, dt=0.01, size=(2, 4))  # generate np.array of shape (2, 4)
+gen = ornstein_uhlenbeck_process(x0=0., mu=0.1, theta=0.5, sigma=0.3, dt=0.01)  # generate scaler
+gen = ornstein_uhlenbeck_process(x0=0., mu=0.1, theta=0.5, sigma=0.3, dt=0.01, size=3)  # generate np.array of shape (3,)
+for i in range(10):
+    print(next(gen))
+```
