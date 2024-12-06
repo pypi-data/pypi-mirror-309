@@ -1,0 +1,2 @@
+[winzy.plugins]
+gif = winzy_create_gif:gif_plugin
