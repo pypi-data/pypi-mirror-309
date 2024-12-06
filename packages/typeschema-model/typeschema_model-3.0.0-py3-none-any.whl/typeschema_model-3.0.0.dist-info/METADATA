@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: typeschema-model
+Version: 3.0.0
+Summary: This library contains models to represent a TypeSchema specification
+Author-email: Christoph Kappestein <christoph.kappestein@gmail.com>
+License: MIT
+Project-URL: Homepage, https://typeschema.org
+Project-URL: Issues, https://github.com/apioo/typeschema-model-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic ~=2.9.2
+
+
+# About
+
+This library contains the official auto generated models to represent a [TypeSchema](https://typeschema.org/) specification.
+The model classes can be used to build i.e. code generators or other tools which need to process a TypeSchema specification.
