@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: listmodpkg
+Version: 0.0.1
+Summary: An interesting package to help manipulate text
+Home-page: UNKNOWN
+Author: KitKatJaylen
+License: UNKNOWN
+Keywords: python,text,unicode
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: wcwidth
+
+A package that Jaylen Eimas just uploaded.
+
