@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/init.py
+src/main.py
+src/backend/__init__.py
+src/backend/schema.py
+src/frontend/__init__.py
+src/python_qt6_gtk.egg-info/PKG-INFO
+src/python_qt6_gtk.egg-info/SOURCES.txt
+src/python_qt6_gtk.egg-info/dependency_links.txt
+src/python_qt6_gtk.egg-info/top_level.txt

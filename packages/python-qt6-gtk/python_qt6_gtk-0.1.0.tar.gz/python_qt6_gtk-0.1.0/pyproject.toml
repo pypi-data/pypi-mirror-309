@@ -1,0 +1,6 @@
+[project]
+name = "python-qt6-gtk"
+version = "0.1.0"
+description = "A minimal Python package"
+authors = [{name = "Elay", email = "lavashportal@gmail.com"}]
+requires-python = ">=3.7"
