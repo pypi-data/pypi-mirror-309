@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ml_library
+Version: 1.1
+Summary: Machine learning algorithms for regression and classification
+Home-page: 
+Author: Souhayla Touk
+Author-email: souhayla.tawk11@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: Numpy
+
+Machine Learning Library
+Welcome to the Machine Learning Library! This library provides implementations of several fundamental machine learning algorithms. These algorithms can be used to solve a variety of regression, classification, and optimization problems. Below is a brief overview of the algorithms included in this library:
+
+Algorithms
+1. Linear Regression
+Linear regression is one of the most basic algorithms used for predictive modeling. It assumes a linear relationship between the input features and the target variable. The goal of linear regression is to find the best-fitting line (or hyperplane in higher dimensions) that minimizes the mean squared error between the predicted and actual target values.
+
+Key Features:
+
+Simple and interpretable model
+Works well for datasets with a linear relationship
+2. Non-Linear Regression
+Non-linear regression extends linear regression by allowing for non-linear relationships between the input features and the target variable. This is achieved by applying transformation functions such as polynomial features, allowing the model to capture more complex patterns in the data.
+
+Key Features:
+
+Can handle more complex relationships than linear regression
+Uses polynomial or other non-linear functions to model the data
+3. Linear Classification
+Linear classification is a type of supervised learning where the goal is to classify data points into distinct classes based on a linear decision boundary. The model learns the hyperplane that best separates the data points from different classes, typically using algorithms like logistic regression or perceptron.
+
+Key Features:
+
+Used for binary or multi-class classification tasks
+Requires the data to be linearly separable
+4. Decision Tree
+A decision tree is a powerful algorithm used for both classification and regression tasks. It works by recursively splitting the dataset into subsets based on the feature values, creating a tree structure where each node represents a feature decision, and the leaves represent the target values.
+
+Key Features:
+
+Easy to interpret and visualize
+Handles both numerical and categorical data
+Can overfit on small datasets
+5. Support Vector Machine (SVM)
+Support Vector Machine (SVM) is a supervised learning algorithm primarily used for classification tasks. It aims to find the optimal hyperplane that maximizes the margin between two classes. SVM can be extended to handle non-linear classification tasks using the kernel trick.
+
+Key Features:
+
+Effective in high-dimensional spaces
+Works well for both linear and non-linear classification tasks
+6. Multilayer Perceptron (MLP)
+Multilayer Perceptron (MLP) is a type of neural network that consists of multiple layers of nodes (neurons), each layer fully connected to the next one. It is capable of modeling complex, non-linear relationships and is widely used for both classification and regression tasks.
+
+Key Features:
+
+Can capture non-linear patterns in data
+Composed of multiple layers of neurons
+Requires more computational resources than simpler models
