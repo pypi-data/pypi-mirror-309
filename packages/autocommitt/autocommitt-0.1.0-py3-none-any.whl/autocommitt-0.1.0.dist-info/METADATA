@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: autocommitt
+Version: 0.1.0
+Summary: A CLI tool for generating editable commit messages with local AI models
+Author: Spartan (Anish Dabhane)
+Author-email: anishdabhane@gmail.com
+Keywords: autocommit,aicommit,git diff,git automation,CLI tool,local AI
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+License-File: LICENSE
+Requires-Dist: ollama
+
