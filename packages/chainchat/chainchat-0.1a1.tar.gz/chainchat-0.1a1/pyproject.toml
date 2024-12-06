@@ -1,0 +1,102 @@
+[project]
+name = "chainchat"
+version = "0.1.a1"
+description = "Chat with LangChain LLM models, with tool calling and multimodal support"
+readme = "README.md"
+authors = [
+    { name = "Andrew Wason", email = "rectalogic@rectalogic.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click~=8.1.7",
+    "langchain-core~=0.3.13",
+    "langgraph~=0.2.39",
+    "python-dotenv~=1.0.1",
+    "httpx~=0.27.2",
+    "rich~=13.9.3",
+    "pydanclick~=0.3.0",
+    "platformdirs~=4.3.6",
+    "pyyaml~=6.0.2",
+    "langgraph-checkpoint-sqlite~=2.0.1",
+]
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+]
+
+[project.optional-dependencies]
+tools = [
+    "langchain-community~=0.3.5",
+]
+openai = ["langchain-openai~=0.2.5"]
+anthropic = [
+    "langchain-anthropic~=0.2.4",
+]
+google = ["langchain-google-genai~=2.0.4"]
+groq = [
+    "langchain-groq~=0.2.1",
+]
+huggingface = [
+    "langchain-huggingface~=0.1.2",
+]
+
+[project.scripts]
+chainchat = "chainchat.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "chainchat[openai,tools]",
+    "mypy~=1.13.0",
+    "pytest-httpx~=0.33.0",
+    "pytest~=8.3.3",
+    "ruff~=0.7.1",
+    "types-pyyaml~=6.0.12.20240917",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    # flake8-2020
+    "YTT",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # flake8-builtins
+    "A",
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I",
+    # flake8-no-pep420
+    "INP",
+    # pyupgrade
+    "UP",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S", "INP001"]
+
+[tool.pytest.ini_options]
+
+[tool.mypy]
+disallow_untyped_defs = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true
+no_implicit_optional = true
+show_error_codes = true
+files = "src/**/*.py"
