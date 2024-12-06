@@ -1,0 +1,15 @@
+README.md
+setup.py
+aqmp/__init__.py
+aqmp/aqmp.py
+aqmp/basis.py
+aqmp/main.py
+aqmp/omp.py
+aqmp/rawfile.py
+aqmp/utility.py
+aqmp_compressor.egg-info/PKG-INFO
+aqmp_compressor.egg-info/SOURCES.txt
+aqmp_compressor.egg-info/dependency_links.txt
+aqmp_compressor.egg-info/entry_points.txt
+aqmp_compressor.egg-info/requires.txt
+aqmp_compressor.egg-info/top_level.txt
