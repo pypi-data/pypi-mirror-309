@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: lmarena
+Version: 0.1.0
+Summary: lmarena
+Author-email: Wei-Lin Chiang <weichiang@berkeley.edu>
+Requires-Python: >=3.7
