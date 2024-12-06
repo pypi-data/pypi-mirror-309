@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: punsctl
+Version: 0.2.2
+Summary: POSIX User's Namespace Control
+Author-email: Aleksandar Buza <tech@aleksandarbuza.com>
+License: Copyright (c) 2022, 2024 Aleksandar Buza <tech@aleksandarbuza.com>
+        
+        Permission to use, copy, modify, and distribute this software for any
+        purpose with or without fee is hereby granted, provided that the above
+        copyright notice and this permission notice appear in all copies.
+        
+        THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+        WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+        MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+        ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+        WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+        ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+        OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/alekbuza/punsctl
+Project-URL: Repository, https://github.com/alekbuza/punsctl
+Project-URL: Issues, https://github.com/alekbuza/punsctl/issues
+Project-URL: Changelog, https://github.com/alekbuza/punsctl/blob/main/CHANGELOG.md
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# punsctl - POSIX User's Namespace Control
+
+[![PyPI Version](https://img.shields.io/pypi/v/punsctl)](https://pypi.python.org/pypi/punsctl)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/punsctl?style=flat-square)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/punsctl)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/punsctl)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/punsctl)
+
+[![codecov](https://codecov.io/github/alekbuza/punsctl/graph/badge.svg?token=OMHOSME5ZB)](https://codecov.io/github/alekbuza/punsctl)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+The `punsctl` utility allows users to manage multiple namespaces (or profiles) for various tool configurations within a single POSIX user account.
+This enables users to maintain separate configurations for tools like `~/.ssh`, `~/.gitconfig`, `~/.gnupg`, `~/.config`, `~/.config/nvim`, and others, all under the same user account.
+With punsctl, users can easily create, delete, activate, or deactivate namespaces without requiring additional system permissions, providing a flexible way to manage different environments or workflows.
+
+## Installation
+
+```sh
+pipx install punsctl
+```
+
+## Usage
+
+```txt
+punsctl <options>
+
+options:
+    -h                  Help menu
+    -r                  Root path                 (Default: ~/.ns)
+    -s                  Symlink path              (Default: ~/)
+    -l                  List namespaces
+    -n <namespace>      Create namespace
+    -x <namespace>      Delete namespace
+    -a <namespace>      Activate namespace
+    -d                  Deactivate namespaces
+```
+
+### List all namespaces
+```sh
+punsctl -l
+```
+
+### List all namespaces from the `non-default` root path
+```sh
+punsctl -p <root_path> -l
+```
+
+### Create new namespace
+```sh
+punsctl -n <namespace>
+```
+
+### Create a new namespace in the `non-default` root path
+```sh
+punsctl -p <root_path> -n <namespace>
+```
+
+### Delete namespace
+```sh
+punsctl -x <namespace>
+```
+
+### Delete namespace in `non-default` root path
+```sh
+punsctl -p <root_path> -x <namespace>
+```
+
+### Activate namespace
+```sh
+punsctl -a <namespace>
+```
+
+### Activate the namespace from the `non-default` root path
+```sh
+punsctl -p <root_path> -a <namespace>
+```
+
+### Activate the namespace from the `non-default` root path and change the symlink path
+
+```sh
+punsctl -p <root_path> -s <symlink_path> -a <namespace>
+```
+
+### Deactivate namespaces
+```sh
+punsctl -d
+```
+
