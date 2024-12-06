@@ -1,0 +1,4 @@
+[console_scripts]
+svg-to-vl = svg_to_vl.__main__:main
+svg_to_vl = svg_to_vl.__main__:main
+
