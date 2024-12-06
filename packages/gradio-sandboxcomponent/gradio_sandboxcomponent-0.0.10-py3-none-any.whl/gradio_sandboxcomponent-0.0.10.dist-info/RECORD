@@ -1,0 +1,10 @@
+gradio_sandboxcomponent/__init__.py,sha256=hmc2liLgI8-95ZD-FGmvDgZVWwdoAmffv6jEPLuWZjA,80
+gradio_sandboxcomponent/sandboxcomponent.py,sha256=YBJR_DSyyszxvRSxyithwPJiiZw9_5Yav2W_mfq2rsw,4980
+gradio_sandboxcomponent/sandboxcomponent.pyi,sha256=vZGIQv0nkDT_EEZwQ2NtmYSGaftI3FH0Pq-aSVWPJHE,21530
+gradio_sandboxcomponent/templates/component/index.js,sha256=H2Sj08CIWlANofnu2FcokrDd6G40J-TVUDW0HIwqYwk,564345
+gradio_sandboxcomponent/templates/component/style.css,sha256=qvPPPLZvqbSzIJB4VMN1NFjoLye4dJIgh0LQnBuaR60,1478716
+gradio_sandboxcomponent/templates/example/index.js,sha256=JdcwX7Bu-981fjnVBgWAdRH-Epa2ynD89RnE-W2vKiQ,2030
+gradio_sandboxcomponent/templates/example/style.css,sha256=EzznrGq1I3G47_ePZ5nVZSyc72-R1WMc2EOS5Tj_tGE,47
+gradio_sandboxcomponent-0.0.10.dist-info/METADATA,sha256=eKBYs9aLWzmI5k6aio-e7Lex1Z2RWX73nTsRi1H1cDw,7949
+gradio_sandboxcomponent-0.0.10.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+gradio_sandboxcomponent-0.0.10.dist-info/RECORD,,
