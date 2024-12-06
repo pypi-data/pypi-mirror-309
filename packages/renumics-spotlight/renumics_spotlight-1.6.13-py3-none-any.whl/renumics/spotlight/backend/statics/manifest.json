@@ -1,0 +1,28 @@
+{
+  "_lib-0b0b4a9d.cjs": {
+    "file": "lib-0b0b4a9d.cjs"
+  },
+  "_lib-8cf0f7bc.js": {
+    "file": "lib-8cf0f7bc.js"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-0b0b4a9d.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-0b0b4a9d.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
