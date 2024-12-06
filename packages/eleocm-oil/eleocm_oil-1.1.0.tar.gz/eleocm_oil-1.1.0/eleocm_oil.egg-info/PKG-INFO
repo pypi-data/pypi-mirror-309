@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: eleocm_oil
+Version: 1.1.0
+Summary: A library for calculating fuel consumption of ships.
+Author: Your Name
+Author-email: your_email@example.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy

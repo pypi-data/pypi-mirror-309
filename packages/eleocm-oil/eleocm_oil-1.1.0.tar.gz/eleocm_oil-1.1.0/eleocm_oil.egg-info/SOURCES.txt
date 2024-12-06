@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+eleocm/__init__.py
+eleocm/__pycache__/__init__.cpython-39.pyc
+eleocm/__pycache__/eleocm.cpython-39.pyc
+eleocm_oil.egg-info/PKG-INFO
+eleocm_oil.egg-info/SOURCES.txt
+eleocm_oil.egg-info/dependency_links.txt
+eleocm_oil.egg-info/requires.txt
+eleocm_oil.egg-info/top_level.txt
