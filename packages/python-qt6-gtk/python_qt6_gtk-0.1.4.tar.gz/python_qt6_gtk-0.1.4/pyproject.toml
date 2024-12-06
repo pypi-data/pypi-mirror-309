@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-qt6-gtk"
+version = "0.1.4"
+description = "A minimal Python package"
+readme = "README.md"
+authors = [{name = "Elay", email = "lavashportal@gmail.com"}]
+requires-python = ">=3.7"
+
+[tool.setuptools.packages.find]
+where = ["src"]  
+
+# pypi-AgEIcHlwaS5vcmcCJDM4ZWYxNmQ5LTg4NjItNGEzMC1iNmU3LTYyNmEwOGExYmVhMwACFlsxLFsicHl0aG9uLXF0Ni1ndGsiXV0AAixbMixbImU1ODljMWU0LTdhZTEtNDcxOS1hZDkxLThmNTdhOTRjMTY2YyJdXQAABiDvgqtWweHOQiQNwvcdwLpHV5YiuCCdf1iNBQqtadgMTg
