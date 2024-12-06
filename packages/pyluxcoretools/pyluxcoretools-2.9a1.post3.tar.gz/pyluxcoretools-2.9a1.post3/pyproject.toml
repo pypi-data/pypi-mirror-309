@@ -1,0 +1,85 @@
+# SPDX-FileCopyrightText: 2024 Howetuft
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyluxcoretools"
+version = "2.9a1.post3"
+dependencies = ["pyluxcore"]
+requires-python = ">= 3.8"
+description = "LuxCore Python Tools"
+authors = [{name="Howetuft"}]
+## See https://pypi.org/classifiers/
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Development Status :: 7 - Inactive",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+]
+readme = "README.md"
+keywords = [
+  "raytracing",
+  "ray tracing",
+  "rendering",
+  "pbr",
+  "physical based rendering",
+  "path tracing",
+]
+
+[project.scripts]
+pyluxcoreconsole = "src.pyluxcoreconsole:main"
+pyluxcoremaketx = "src.pyluxcoremaketx:main"
+pyluxcoremerge = "src.pyluxcoremerge:main"
+
+[project.urls]
+Homepage = "https://luxcorerender.org/"
+Documentation = "http://wiki.luxcorerender.org/LuxCoreRender_Wiki"
+GitHub = "https://github.com/LuxCoreRender/LuxCore"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "LuxCore/src/pyluxcoretools/pyluxcoretools",
+  "src"
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+  "LuxCore/azure-pipelines.yml",
+  "LuxCore/cmake/",
+  "LuxCore/CMakeLists.txt",
+  "LuxCore/Configuration.cmake",
+  "LuxCore/deps/",
+  "LuxCore/doxygen/",
+  "LuxCore/.git",
+  "LuxCore/.gitattributes",
+  "LuxCore/.github/",
+  "LuxCore/.gitignore",
+  "LuxCore/include/",
+  "LuxCore/pyunittests/",
+  "LuxCore/pywheel/",
+  "LuxCore/release-notes.txt",
+  "LuxCore/samples/",
+  "LuxCore/scenes/",
+  "LuxCore/scripts/",
+  "LuxCore/sdk/",
+  "LuxCore/tests/",
+  "LuxCore/src/slg",
+  "LuxCore/src/luxcore",
+  "LuxCore/src/luxrays",
+]
+include = [
+  "LuxCore/src/pyluxcoretools",
+  "src",
+]
