@@ -1,0 +1,36 @@
+/* Markdown 内容区域的标题样式 */
+.markdown-body h1 {
+  font-size: 1.4em !important;
+  font-weight: 600;
+  margin: 0.8em 0 0.4em;
+  line-height: 1.4;
+}
+
+.markdown-body h2 {
+  font-size: 1.3em !important;
+  font-weight: 600;
+  margin: 0.7em 0 0.4em;
+  line-height: 1.4;
+}
+
+.markdown-body h3 {
+  font-size: 1.2em !important;
+  font-weight: 500;
+  margin: 0.6em 0 0.3em;
+  line-height: 1.4;
+}
+
+.markdown-body h4 {
+  font-size: 1.1em !important;
+  font-weight: 500;
+  margin: 0.5em 0 0.3em;
+  line-height: 1.4;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-size: 1em !important;
+  font-weight: 500;
+  margin: 0.4em 0 0.2em;
+  line-height: 1.4;
+} 
