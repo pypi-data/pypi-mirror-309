@@ -1,0 +1,5 @@
+biopython
+pandas
+plotly
+dash>=2.5
+dash_bootstrap_components

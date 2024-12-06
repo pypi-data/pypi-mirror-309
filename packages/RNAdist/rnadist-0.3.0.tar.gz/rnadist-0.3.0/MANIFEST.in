@@ -1,0 +1,10 @@
+include versioneer.py
+include RNAdist/_version.py
+include RNAdist/dp/_dp_calculations.pyx
+include *.pyx
+global-include cpp/*.h
+global-include tests/*.py
+global-include tests/test_data/*
+prune */__pycache__/
+prune */.pytest_cache/
+global-exclude *.pyc
