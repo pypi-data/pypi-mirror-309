@@ -1,0 +1,7 @@
+licomp
+
+[dev]
+bump2version~=1.0
+pytest
+flake8
+setuptools
