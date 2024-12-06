@@ -1,0 +1,11 @@
+init.py,sha256=iUPb1WLkGaCT-Cnc7oGf4hAPzpzAIjfXJlt2EszSdAg,2041
+main.py,sha256=MMGkAQe0iyHJLHLsKjTvO_2l3M01fVjvv618pgTlZmU,107
+backend/__init__.py,sha256=zyp2qe6e5uZypbKiHgSqW3Es65Opoe6GuX7rBB3SqkA,4414
+backend/schema.py,sha256=MX1g1Agq47AJNm6bkvEAPWfxZHEzfM5mStMGqscRKbQ,161
+frontend/__init__.py,sha256=UzQ35bK0SGMZA0kamBbO3IB4U396xWqFcqHKdXQwUf8,7901
+frontend/CTKTKTK/main.py,sha256=0RDKyydyj5_oZU4suurnuffjuseswTt1zR8fa6dVePk,8157
+frontend/CTKTKTK/order_form.py,sha256=ii-fI0KbY3jmZxUJ0AgCEOD7zFikGSx1_1L53fcNI1w,6151
+python_qt6_gtk-0.1.1.dist-info/METADATA,sha256=3jWXazDNG5Ur6LHhnscBjF6DDeQKy3rjd1xCw5brAiY,160
+python_qt6_gtk-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+python_qt6_gtk-0.1.1.dist-info/top_level.txt,sha256=eDNXA7VLVOPowVmqmWJz9xR_9Qf1U_UKYQovtBudzPQ,27
+python_qt6_gtk-0.1.1.dist-info/RECORD,,
