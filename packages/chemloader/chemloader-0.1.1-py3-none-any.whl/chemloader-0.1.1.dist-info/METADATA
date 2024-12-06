@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chemloader
+Version: 0.1.1
+Summary: Retrieve and work with molecular data from multiple sources
+License: MIT
+Author: JulianKimmig
+Author-email: julian.kimmig@gmx.net
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: rdkit
+Requires-Dist: requests
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+Package to automatically downlaod chemical datasets
+
