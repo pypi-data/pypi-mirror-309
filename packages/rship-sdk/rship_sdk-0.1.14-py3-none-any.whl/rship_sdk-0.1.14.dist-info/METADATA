@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: rship-sdk
+Version: 0.1.14
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: myko
+Description-Content-Type: text/markdown
+
+# Rship-Python
+
+Implementation of the rship SDK in Python. 
