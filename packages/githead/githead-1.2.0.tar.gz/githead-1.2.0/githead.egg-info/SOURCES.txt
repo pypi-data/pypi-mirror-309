@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+githead/__init__.py
+githead/py.typed
+githead.egg-info/PKG-INFO
+githead.egg-info/SOURCES.txt
+githead.egg-info/dependency_links.txt
+githead.egg-info/top_level.txt
+tests/test___init__.py
