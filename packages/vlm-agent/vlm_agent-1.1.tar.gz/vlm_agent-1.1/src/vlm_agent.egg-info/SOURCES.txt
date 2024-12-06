@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/vlm-agent/__init__.py
+src/vlm_agent.egg-info/PKG-INFO
+src/vlm_agent.egg-info/SOURCES.txt
+src/vlm_agent.egg-info/dependency_links.txt
+src/vlm_agent.egg-info/top_level.txt
