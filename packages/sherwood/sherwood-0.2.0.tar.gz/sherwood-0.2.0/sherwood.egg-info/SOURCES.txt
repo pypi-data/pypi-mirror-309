@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sherwood.egg-info/PKG-INFO
+sherwood.egg-info/SOURCES.txt
+sherwood.egg-info/dependency_links.txt
+sherwood.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
