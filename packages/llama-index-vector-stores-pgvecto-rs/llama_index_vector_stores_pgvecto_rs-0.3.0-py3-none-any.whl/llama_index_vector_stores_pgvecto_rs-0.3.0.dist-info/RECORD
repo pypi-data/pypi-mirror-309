@@ -1,0 +1,6 @@
+llama_index/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/vector_stores/pgvecto_rs/__init__.py,sha256=m3wTEY9Ii9PtmfFXllvjhUDpI9CIKcDFtbCFGYzDS6k,99
+llama_index/vector_stores/pgvecto_rs/base.py,sha256=J4m9IxrNl8EcQTmdFjG_GCy_ZIqauZHH6MDKhmyjFYs,3387
+llama_index_vector_stores_pgvecto_rs-0.3.0.dist-info/METADATA,sha256=KB1jtLwIMXO6fsP1la-MOMREOfd7xcsm97vh_9GgpcE,721
+llama_index_vector_stores_pgvecto_rs-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_vector_stores_pgvecto_rs-0.3.0.dist-info/RECORD,,
