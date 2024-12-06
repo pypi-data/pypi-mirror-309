@@ -1,0 +1,9 @@
+licomp_reclicense/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+licomp_reclicense/__main__.py,sha256=iGUnE6ZQFxCWj1WuJit_oXoKCrGYlCbMPP-CmbZJVvo,704
+licomp_reclicense/config.py,sha256=p67aIEFCN8ZPYav8NZJRURvz98WD2Ji9jVOxljywm74,844
+licomp_reclicense/reclicense.py,sha256=9DZJJxTNYBDKE1JWa_OqsgGhEwFK3PsSZD1NlQdpXBk,1879
+licomp_reclicense-0.1.1.dist-info/METADATA,sha256=HXDML3GSZ5j_vJ9SEJBMEODT6OFlgi8toN81_Icp5Kk,1431
+licomp_reclicense-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+licomp_reclicense-0.1.1.dist-info/entry_points.txt,sha256=zedQkCwfmqAAgR5h8hE7EZkTMG4X_zzotJlsWENKSzs,71
+licomp_reclicense-0.1.1.dist-info/top_level.txt,sha256=THopnjZZTEFnFclzFYtlxI4VIdYHxX3_uaTDm_FRWv8,18
+licomp_reclicense-0.1.1.dist-info/RECORD,,
