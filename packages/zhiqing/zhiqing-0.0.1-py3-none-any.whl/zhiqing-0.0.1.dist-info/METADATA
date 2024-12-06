@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zhiqing
+Version: 0.0.1
+Summary: Zhiqing
+Home-page: http://zhiqingxiao.github.io/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+zhiqing
+=======================
+
+Zhiqing's personal module.
+
+All functionarities in this module is subject to change without notifications. Please contact the authors for more details.
