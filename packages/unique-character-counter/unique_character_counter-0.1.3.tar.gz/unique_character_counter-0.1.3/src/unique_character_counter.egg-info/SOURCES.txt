@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/collection/__init__.py
+src/collection/__main__.py
+src/collection/unique_char_count.py
+src/collection/tests/__init__.py
+src/collection/tests/test_unique_char_count.py
+src/unique_character_counter.egg-info/PKG-INFO
+src/unique_character_counter.egg-info/SOURCES.txt
+src/unique_character_counter.egg-info/dependency_links.txt
+src/unique_character_counter.egg-info/entry_points.txt
+src/unique_character_counter.egg-info/requires.txt
+src/unique_character_counter.egg-info/top_level.txt
