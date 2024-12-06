@@ -1,0 +1,8 @@
+bytewax/duckdb/__init__.py,sha256=cESUj5um9zBGIU_KbuTgPqo2s7Lu9crVpyMmYLYz8ec,7935
+bytewax/duckdb/operators.py,sha256=XgU9weDlLiQ0N12hm39PhLUCbkMu91SYaPZQ_mLD0Sw,3173
+bytewax/duckdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bytewax_duckdb-0.1.22.dist-info/LICENSE.md,sha256=dnCXncqbUa7OyBydyzsjD7oTThb4Yu05bxZPxl7Cn_s,17612
+bytewax_duckdb-0.1.22.dist-info/METADATA,sha256=jVZrl-DrTyZ86FfJbjHkkR9kQad5Qo_SRG3NmO4sCfA,28327
+bytewax_duckdb-0.1.22.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bytewax_duckdb-0.1.22.dist-info/top_level.txt,sha256=wVzJkBvuLPmbBqCRFQnoMGOcaj5bijborxj22uCXHzA,8
+bytewax_duckdb-0.1.22.dist-info/RECORD,,
