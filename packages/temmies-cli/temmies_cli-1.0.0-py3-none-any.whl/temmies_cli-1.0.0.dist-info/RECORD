@@ -1,0 +1,13 @@
+temmies_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temmies_cli/cli.py,sha256=oMlRm3ALygNsVeb6oDQDd1QBvuELPgIqOUaW4JzRc34,1392
+temmies_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temmies_cli/commands/init.py,sha256=wTafYkvpERIfcIQQ6yDqA-vxVDH0y3tYiV08PM95rrw,2866
+temmies_cli/commands/status.py,sha256=KPDxxk4WJcdI9fGFr74ww3mrmGB2TxWWma4uk9JIrlY,2691
+temmies_cli/commands/submit.py,sha256=Tiry8sJUxPmOYq2tzzTAti3pole9s_wF9zCWzwU3fMs,1034
+temmies_cli/commands/utils.py,sha256=mrhSf2abrpGze7iajgz9a_9SlSCQzRI8dGvuPfHGf5s,4924
+temmies_cli-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+temmies_cli-1.0.0.dist-info/METADATA,sha256=jiqUw8fY8CS-1YldpjE3H93cnEqNDH6KmQhwxxX2Aj8,2378
+temmies_cli-1.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+temmies_cli-1.0.0.dist-info/entry_points.txt,sha256=RgbSfOtUHBUMD7mZB4kQ8fJumHc9YGU5w4DsS6KwCdU,48
+temmies_cli-1.0.0.dist-info/top_level.txt,sha256=1aFUQ0AaLY_iF2MIAjHF7nahq28kfSDMee76d-VoNK8,12
+temmies_cli-1.0.0.dist-info/RECORD,,
