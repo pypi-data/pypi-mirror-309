@@ -1,0 +1,8 @@
+setup.py
+rw_source/ReadSource.py
+rw_source/WriteSource.py
+rw_source/__init__.py
+rw_source.egg-info/PKG-INFO
+rw_source.egg-info/SOURCES.txt
+rw_source.egg-info/dependency_links.txt
+rw_source.egg-info/top_level.txt
