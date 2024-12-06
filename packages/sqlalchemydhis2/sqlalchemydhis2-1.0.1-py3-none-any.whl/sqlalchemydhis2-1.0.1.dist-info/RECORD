@@ -1,0 +1,7 @@
+sqlalchemy_dhis2/__init__.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+sqlalchemy_dhis2/jsonhttp_dialect.py,sha256=rKaU9ZXJOY8G5XqJ0mE78AEO1IkOWl9xot9DUxox4WY,1948
+sqlalchemydhis2-1.0.1.dist-info/LICENSE,sha256=uEsMtbJ7MBH8zShKa5UYeihgJJcDL8KxDKeBjrvtpaU,11348
+sqlalchemydhis2-1.0.1.dist-info/METADATA,sha256=xokDNhmrnB_bJ5klUMaPaD1nWAoOxcwBRdp-eaB6fqc,1214
+sqlalchemydhis2-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sqlalchemydhis2-1.0.1.dist-info/top_level.txt,sha256=jhqCJA1DhLOYcLb3FZdjxpCRHLjL7k0UbASxebJfLzM,17
+sqlalchemydhis2-1.0.1.dist-info/RECORD,,
