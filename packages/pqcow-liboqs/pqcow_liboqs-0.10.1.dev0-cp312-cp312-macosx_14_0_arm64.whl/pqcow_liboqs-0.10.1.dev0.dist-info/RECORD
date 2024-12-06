@@ -1,0 +1,10 @@
+oqs/liboqs.dylib,sha256=hveXHuqwQcYotizcoNpXVHFa1zZCCRcupOBRLi3eodM,321904
+oqs/__init__.py,sha256=3PSlQoYlxmd1uy3wHsCPyr8UJXnICRCowd28yyLMjOc,785
+oqs/rand.py,sha256=BRjgIQYGZsgfDeDG4HPrGkhIyvTe5bHRcb88kvxTJYI,1283
+oqs/oqs.py,sha256=0LQSDghjW2JacMFozHGODlG58NU_H1lYIIG9mx7vHoI,17603
+oqs/.dylibs/libcrypto.1.1.dylib,sha256=cWaf63SNdeIcbTGPfNlb7aqNPSWqHQnwDgAVSgYZfX8,2192976
+pqcow_liboqs-0.10.1.dev0.dist-info/RECORD,,
+pqcow_liboqs-0.10.1.dev0.dist-info/LICENSE,sha256=zIpg-tqk0pLlEMoIW-WMH7i3mcbjrb4J4Y0NKz-RRTs,1079
+pqcow_liboqs-0.10.1.dev0.dist-info/WHEEL,sha256=q7AmnxQZUqrqe4YLRmQEjqVDZIHQKXfTZEoBTbDZ01I,109
+pqcow_liboqs-0.10.1.dev0.dist-info/top_level.txt,sha256=JmbVzqCUlvjoRf5eXMaXNRGIMPm_VUbD6H0xSbNC3B4,4
+pqcow_liboqs-0.10.1.dev0.dist-info/METADATA,sha256=QouJNQ3kkySxkeZgi-1W7ubW3_MK2BNphqo4YQ1ViEA,11592
