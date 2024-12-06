@@ -1,0 +1,12 @@
+nonebot_plugin_BR/__init__.py,sha256=rxU2apI7BDTpsvEbAiGZ-UXJJfAjBLCyNdPn-WwcdHQ,851
+nonebot_plugin_BR/__main__.py,sha256=1c7_JrWL9XvQVTWj5N0voFv7fca7rXHhRqQYODIeiwA,14849
+nonebot_plugin_BR/config.py,sha256=R5h67t4GaRC3o7_z52QyDNNMsUOqZUJ8RrkpHoekZZM,256
+nonebot_plugin_BR/game.py,sha256=OyrOsGmVeidjgAPyzOj63DkzTikbUQ_d_UKo83XXf4I,8194
+nonebot_plugin_BR/model.py,sha256=eATBxUDQNZY7PKp53ypEF2XuC2BfkqzrzoFQD1pH24g,1354
+nonebot_plugin_BR/utils.py,sha256=rrI6x8f5hHcsGBoTpR9O5B41NyABeIw6vipbp3nH94c,2078
+nonebot_plugin_BR/weapon.py,sha256=Jwz8Sosn5lD0lWedCjgy_j9gYmAJl5XlSpxK0KV09Jw,3250
+nonebot_plugin_br-0.0.4.dist-info/METADATA,sha256=ovp4Ga7Xyh9nj6Nhm6g7FohzE0hl7aHrXIBsmyooBNc,4450
+nonebot_plugin_br-0.0.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_br-0.0.4.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_br-0.0.4.dist-info/licenses/LICENSE,sha256=84ECjOdcU3lLlGCsjDemBe7V_Rzy431is7GaLku6yHU,1070
+nonebot_plugin_br-0.0.4.dist-info/RECORD,,
