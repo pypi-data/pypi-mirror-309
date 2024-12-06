@@ -1,0 +1,15 @@
+staticinline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticinline/apps.py,sha256=-JBaT8w7XpZ5candPH3TuLUySciVM5YUt-bRkCWwOSk,3454
+staticinline/main.py,sha256=T1i6Pk9t0n-txjnJaxoRjvAi3P-Py6zon2WFY09kMjk,1067
+staticinline/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticinline/templatetags/staticinline.py,sha256=LQXi5XJpeU8QqFqtnJL-EOMWOItQeTyQAaN-ELkRah0,3535
+staticinline/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticinline/tests/test_read_data.py,sha256=0phUw5QJsywDYnLgvUVJw_tR6MSnQffPhmLwVypPjSM,2253
+staticinline/tests/test_templatetag.py,sha256=SJPMRcr46uB34zCIG_V5CkIEIYQgzsYDzVOq7kRsXDE,7813
+staticinline/tests/testapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticinline/tests/testapp/apps.py,sha256=6uR8lEOa7a5yAJAGy6vxV5CDuLszsckSg5g_6vFKfQA,904
+staticinline/tests/testapp/settings.py,sha256=xciV-IqcGfBCszEnkzUeR_QCqxFPSbhGu7gXDi-Tm-Y,1386
+staticinline/tests/testapp/static/testapp/myfile.js,sha256=9Xq4n-ngdr81uGOnp86fA4vsvXg4mDGG5Vsm5iHU01I,14
+django_staticinline-1.6.dist-info/METADATA,sha256=FJJL4TT-PYQtNJzShtXWE3t_RjmvxpQgpW_lehZ3Ngo,4011
+django_staticinline-1.6.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_staticinline-1.6.dist-info/RECORD,,
