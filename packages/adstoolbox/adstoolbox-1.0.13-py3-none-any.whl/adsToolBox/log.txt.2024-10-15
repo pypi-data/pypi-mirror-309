@@ -1,0 +1,8 @@
+2024-10-15 12:49:36,219 - EnvLogger - INFO - Démo
+2024-10-15 12:49:36,220 - EnvLogger - WARNING - Fichier spécifié non trouvé
+2024-10-15 12:49:48,696 - EnvLogger - INFO - Démo
+2024-10-15 12:49:48,697 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-15 12:50:28,137 - EnvLogger - INFO - Démo
+2024-10-15 12:50:28,137 - EnvLogger - WARNING - Fichier spécifié non trouvé
+2024-10-15 12:50:34,165 - EnvLogger - INFO - Démo
+2024-10-15 12:50:34,167 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
