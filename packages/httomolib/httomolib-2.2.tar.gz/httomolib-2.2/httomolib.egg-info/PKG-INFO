@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: httomolib
+Version: 2.2
+Summary: Commonly used tomography data processing methods at DLS.
+Author-email: Daniil Kazantsev <daniil.kazantsev@diamond.ac.uk>, Yousef Moazzam <yousef.moazzam@diamond.ac.uk>, Naman Gera <naman.gera@diamond.ac.uk>
+License: BSD-3-Clause
+Project-URL: Repository, https://github.com/DiamondLightSource/httomolib
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pillow
+Requires-Dist: scikit-image
+Requires-Dist: aiofiles
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pyproject-flake8; extra == "dev"
+Requires-Dist: pydocstyle; extra == "dev"
+Requires-Dist: toml; extra == "dev"
+Requires-Dist: imageio; extra == "dev"
+Requires-Dist: setuptools-git-versioning; extra == "dev"
+
+HTTomolib is a library of methods for tomography
+-------------------------------------------------
+
+**HTTomolib** is a collection of CPU-only image processing methods in Python for computed tomography.
+
+**HTTomolib** can be used as a stand-alone library, however, it has been specifically developed to 
+work together with the `HTTomo <https://diamondlightsource.github.io/httomo/>`_ package.
+HTTomo is a user interface (UI) written in Python for fast big data processing using MPI protocols.
+**HTTomolib** methods for processing using GPU are accessible in the dedicated
+`HTTomolibGPU <https://github.com/DiamondLightSource/httomolibgpu>`_ repository. 
+
+Purpose of HTTomolib
+====================
+
+**HTTomolib** can be used as a stand-alone library, but it has been specifically developed to 
+work together with the `HTTomo <https://diamondlightsource.github.io/httomo/>`_ package.
+HTTomo is a user interface (UI) written in Python for fast big data processing using MPI protocols. 
+
+Install HTTomolib as a PyPi package
+=========================================================
+.. code-block:: console
+
+   $ pip install httomolib
+
+Install HTTomolib as a pre-built conda Python package
+=========================================================
+.. code-block:: console
+
+   $ conda create --name httomolib # create a fresh conda environment
+   $ conda activate httomolib # activate the environment
+   $ conda install -c httomo httomolib -c conda-forge
+
+Setup the development environment:
+==================================
+
+.. code-block:: console
+    
+   $ git clone git@github.com:DiamondLightSource/httomolib.git # clone the repo
+   $ conda env create --name httomolib --file conda/environment.yml # install dependencies
+   $ conda activate httomolib # activate the environment
+   $ pip install .[dev] # development mode
+
+Build HTTomolib as a conda Python package
+=============================================
+
+.. code-block:: console
+
+   $ conda build conda/recipe/ -c conda-forge -c httomo

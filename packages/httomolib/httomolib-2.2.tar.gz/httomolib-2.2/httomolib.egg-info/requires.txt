@@ -1,0 +1,16 @@
+numpy
+scipy
+pillow
+scikit-image
+aiofiles
+
+[dev]
+pytest
+pytest-cov
+pytest-xdist
+flake8
+pyproject-flake8
+pydocstyle
+toml
+imageio
+setuptools-git-versioning
