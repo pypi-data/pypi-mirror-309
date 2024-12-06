@@ -1,0 +1,10 @@
+normality
+rapidfuzz
+pyyaml
+
+[dev]
+mypy
+wheel
+twine
+pytest
+types-PyYAML
