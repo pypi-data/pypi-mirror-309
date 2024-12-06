@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lilys-aes
+Version: 0.0.0
+Summary: a test for pypi 
+Author: lilys
+Author-email: 
+Keywords: python,windows,mac,linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+## 采用AES对文本进行加密和解密
+### 第一次提交测试Pypi
+
+#### 版本更新 
