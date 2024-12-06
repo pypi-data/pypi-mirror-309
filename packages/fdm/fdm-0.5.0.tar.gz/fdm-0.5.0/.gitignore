@@ -1,0 +1,21 @@
+# Byte-compiled file
+*.pyc
+
+# Virtual environments
+venv
+
+# Packaging
+*.egg-info
+pip-wheel-metadata
+dist
+
+# Documentation and coverage
+docs/_build
+docs/_static
+docs/source
+docs/readme.rst
+cover
+
+# Other
+.DS_Store
+*.swp
