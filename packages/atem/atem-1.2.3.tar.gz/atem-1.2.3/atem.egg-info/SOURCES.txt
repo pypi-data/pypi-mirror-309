@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+atem/__init__.py
+atem/core.py
+atem/model_train.py
+atem/utils.py
+atem.egg-info/PKG-INFO
+atem.egg-info/SOURCES.txt
+atem.egg-info/dependency_links.txt
+atem.egg-info/entry_points.txt
+atem.egg-info/requires.txt
+atem.egg-info/top_level.txt
