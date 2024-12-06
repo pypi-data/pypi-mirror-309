@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+morfoAnalyse/__init__.py
+morfoAnalyse.egg-info/PKG-INFO
+morfoAnalyse.egg-info/SOURCES.txt
+morfoAnalyse.egg-info/dependency_links.txt
+morfoAnalyse.egg-info/top_level.txt
