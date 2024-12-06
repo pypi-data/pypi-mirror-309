@@ -1,0 +1,2 @@
+[console_scripts]
+simple-file-org = simple_file_org.main:main
