@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: util-rc
+Version: 0.2.6
+Summary: A PyPI package to model risky choice
+Author-email: Donna Ma <donna.ma@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scipy>=1.12.0
+
+A python package for binary risky choice modeling for 4 models: 
+
+* Expected Utility Theory: $U = p*A^\alpha$
+* Risk-Return: $U = EV - b*Var$ 
+* Coefficient of Variation: $U = EV - b*CV$ where $CV = \sqrt{Var}/EV1$ 
+* Hyperbolic: $U = A/(1+h*\theta)$ where $\theta = (1-p)/p$
+
+where $A$ is the payoff amount, $p$ is the probability of winning that outcome, $EV$ is Expected value ($Ap$), and $Var$ is variance ($p(A-EV)^2 + (1 - p)(-EV)^2$)
+
+The package takes risky choice data (probability, payoffs, and decisions) of 2 options as inputs, fits a model to the data, and returns a util-rc object that stores the estimated parameter, inverse temperature, fit metrics, model type, and number of observations in an instance variable named params.
+
+Warnings will be issued if all choices in the input data are one-sided (all 0 or 1), or if the fitted model predicts all one-sided choices.
+
+To install and import the package, copy the following code into your terminal:
+```
+>>> pip install util-rc==0.2.6
+>>> from util_rc import util_rc
+```
+To construct a util_rc object, use the following format:
+```
+>>> example = util_rc("E",[0,0,1],[10,10,10],[1,1,1],[20,30,40],[.6,.5,.4])
+```
+
+To obtain fitted parameters, view the params instance variable:
+```
+>>> example.params
+[0.7369655941662062, 1.7920653725324747, 'SLSQP', 'Expected Utility Theory', 3]
+```
+To view additional information about the class, use python's help function (with package installed):
+```
+>>> help(util_rc)
+class util_rc(builtins.object)
+|  util_rc(modeltype, choice, amt1, prob1, amt2, prob2)
+|
+|  Args:                                                                                                                                             
+|  :param modeltype: a string describing the model to fit data:                                                                                      
+|      "E" for expected utility where U = p * A^alpha                                                                                                
+|      "R" for risk-return where U = EV - b * Var                                                                                                    
+|      "W" for weber where U = EV - b *CV and CV = sqrt(Var)/EV1                                                                                     
+|      "H" for hyperbolic where U = A/(1+h*theta) and theta = (1-p)/p                                                                                
+|  :param choice: an array-like of size n containing only the values 1 and 0, where 1 represents choosing option 1 and 0 represents option2          
+|  :param amt1: an array-like of size n containing non-negative numbers, where each value represents the payoffs for option 1                        
+|  :param prob1: an array-like of size n containing non-negative number between 0 and 1, where each value represents the probability of winning amt1
+|  :param amt2: an array-like of size n containing non-negative numbers, where each value represents the payoffs for option 2                        
+|  :param prob2: an array-like of size n containing non-negative number between 0 and 1, where each value represents the probability of winning amt2
+|                                                                                                                                                    
+|  Validates the inputs and fits the chosen modeltype to the binary risky choice data.                                                               
+|                                                                                                                                                    
+|  Stores and outputs parameters in an instance variable named params, a python list containing:                                                     
+|      fitted_param: the parameter that maximizes likelihood of choice data, which is alpha for EUT, b for Risk-Return, b for Weber, or h for Hyperbolic                                                                                                                                              
+|      inv_temp: inverse temperature, the estimated level of randomness in choices                                                                   
+|      fit_metrics: Sequential Least Squares Programming (SLSQP)                                                                                     
+|      modeltype: the model type the user inputted                                                                                                   
+|      num_observations: the number of observations, n                                                                                               
+|                                                                                                                                                    
+|  if all input data is one-sided, the parameter is calculated only at the min or max, and params is instead formatted as [fitted_param, likelihood, fit_metrics, modeltype, num_observations]
+```
+To exit the help window in terminal, press q.
+
+Dependencies: numpy version >= 1.26.4, scipy version >= 1.12.0
+
+Contact donna.ma@berkeley.edu for any questions or concerns regarding the package. 

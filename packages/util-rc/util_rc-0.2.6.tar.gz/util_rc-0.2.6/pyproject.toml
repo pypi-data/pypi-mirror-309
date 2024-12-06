@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "util-rc"
+version = "0.2.6"
+authors = [
+    { name="Donna Ma", email="donna.ma@example.com" },
+]
+dependencies = [
+    "numpy>=1.26.4",
+    "scipy>=1.12.0"
+]
+description = "A PyPI package to model risky choice"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
