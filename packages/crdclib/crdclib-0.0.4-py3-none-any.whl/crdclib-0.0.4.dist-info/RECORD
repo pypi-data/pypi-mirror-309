@@ -1,0 +1,8 @@
+src/crdclib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/crdclib/crdclib.py,sha256=MCIBOs1KN8YQHUGxcL4CFlc_0e1j7IyMcb2Bv2BJKec,5807
+src/crdclib/dhqueries.py,sha256=CCcN6uqQjLRHdElbNRdenZpGqtTh_Qhm6d-k4JzbnFA,1711
+crdclib-0.0.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+crdclib-0.0.4.dist-info/METADATA,sha256=IJuARJ22TT2Obwe8Ib464SWfubQUvn9G3X8RJ_22WJQ,940
+crdclib-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+crdclib-0.0.4.dist-info/top_level.txt,sha256=webqmMFA0ob5vE93yTRyoeMeOJCTW1k0dwG0RqznEXg,13
+crdclib-0.0.4.dist-info/RECORD,,
