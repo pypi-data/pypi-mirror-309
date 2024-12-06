@@ -1,0 +1,15 @@
+pynput
+Pillow>=9.0.0
+pyscreenshot>=3.1
+python-xlib
+
+[:platform_system == "Darwin"]
+pyautogui
+
+[:platform_system == "Linux"]
+PyQt5
+
+[test]
+pytest>=7.0
+pytest-cov
+pytest-mock

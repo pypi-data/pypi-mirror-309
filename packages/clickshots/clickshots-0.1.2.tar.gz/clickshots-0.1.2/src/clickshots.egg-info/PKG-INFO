@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: clickshots
+Version: 0.1.2
+Summary: A robust automated screenshot capture system
+Home-page: https://github.com/ayon1901/clickshots
+Author: Akmol Masud
+Author-email: akmolmasud5@gmail.com
+Project-URL: Bug Tracker, https://github.com/ayon1901/clickshots/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynput
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: pyscreenshot>=3.1
+Requires-Dist: python-xlib
+Requires-Dist: PyQt5; platform_system == "Linux"
+Requires-Dist: pyautogui; platform_system == "Darwin"
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+
+# ClickShots
+
+A robust automated screenshot capture system that monitors user interactions.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+### Command Line
+
+```bash
+# Use default directory (~/Pictures/clickshots)
+clickshots
+
+# Or specify a custom directory
+clickshots -d /path/to/save/directory
+clickshots --directory /path/to/save/directory
+```
+
+### Python Code
+
+```python
+from clickshots import main
+
+# Use default directory
+main()
+
+# Or specify directory
+main(save_dir="/path/to/save/directory")
+```
+
+### Controls
+
+- **Ctrl + Shift**: Toggle mouse/touchpad screenshots
+- **Alt + \\**: Toggle keyboard screenshots
+- **Ctrl + C**: Exit program
+
