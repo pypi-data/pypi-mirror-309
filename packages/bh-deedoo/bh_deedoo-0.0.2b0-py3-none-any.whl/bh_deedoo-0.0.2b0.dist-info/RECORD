@@ -1,0 +1,16 @@
+bh-deedoo/__init__.py,sha256=WYw9qgVCWYdxjXaJpcvgn-ZBZsS8dVxv7q_civ4y5fk,100
+bh-deedoo/__main__.py,sha256=EE_36EOfVoryKgQ54d8K5MA30yrp3re99JgJPbdFOTA,1108
+bh-deedoo/cmds/fruit/__init__.py,sha256=3PnPqdbdASsVNq0a3vPf07EhAV0jqFzMT0c-9qJl84E,114
+bh-deedoo/cmds/games/__init__.py,sha256=wkWzgIUnolcA6A6PZFu5vtLimDu1xh6oKGTYrMpa4K8,175
+bh-deedoo/cmds/games/pool.py,sha256=oKPEoO4ZQynFE8YLyWnmA4ORbvpPLG7ycuSS8EThE8A,117
+bh-deedoo/cmds/gh/__init__.py,sha256=RbLmFJwgcBeUJ5hO5uiXMQt0qvMlE7Ab7OQIy0JfCyg,836
+bh-deedoo/cmds/gh/clean.py,sha256=v_5i0h_pzy1sx7BQMXAvgf2p_bxIbbTMofZ3K2WtIBk,928
+bh-deedoo/cmds/mk/__init__.py,sha256=viUeucQ0kzZ6n3vi0hGxu8cj8XeskC0e_hxhUiOlNqY,724
+bh-deedoo/cmds/mk/templates.py,sha256=5ASRo-7YnoPmsxGXbS6XaOS7Wloxb4FCeRtmXtahX6o,334
+bh-deedoo/cmds/notes/__init__.py,sha256=Ef-uRQpjn91upaFQAC-qXruUTvQdmTE8Gl6AdvQ0nYQ,467
+bh-deedoo/cmds/zjot/__init__.py,sha256=E_BXlUjXDbrz28D2aVZMfUl72T9rsdj3VlDmT3tBobg,1579
+bh_deedoo-0.0.2b0.dist-info/METADATA,sha256=vdWIs84uw7XfErKhaMW17rF1nt4pMXaUxk7auv71gek,258
+bh_deedoo-0.0.2b0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bh_deedoo-0.0.2b0.dist-info/entry_points.txt,sha256=KtUC5Zol1H9nrnkXgORgzlAwKXEHR6n-s-SbxsluMVk,54
+bh_deedoo-0.0.2b0.dist-info/top_level.txt,sha256=6KJMzCl7BSPpRBKfO8jCW12YaWF_94Q2wh-yaw4s2Cg,10
+bh_deedoo-0.0.2b0.dist-info/RECORD,,
