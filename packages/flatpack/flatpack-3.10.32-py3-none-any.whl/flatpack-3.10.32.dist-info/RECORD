@@ -1,0 +1,15 @@
+flatpack/__init__.py,sha256=MEiRRs1SKL5zmTykHVzQLUARiVsBJxLEpY_Q3hZgJQE,61
+flatpack/config.py,sha256=HaOrp3v5hNwdOVW9FOlILX2eXgEaGW2eioCrpojdHRQ,407
+flatpack/database_manager.py,sha256=Il3w4NjieCVr0sKhxUvVpYatLdx7CoE8dnR_fLLSnBI,20072
+flatpack/error_handling.py,sha256=bbX8EwLH2RZLgl32C5VZsgE3lLnbJ-BD0qJOV3mtWgE,2443
+flatpack/main.py,sha256=SI-h1XK7i2KzhGzkIMMo-vwmZRYHdbOTNbfuRI7kPyo,161171
+flatpack/parsers.py,sha256=-qEosru596QQ_GROBjrYiGcRD3RcbVyEqa0ek5xNd74,11398
+flatpack/session_manager.py,sha256=fZL20iXmnN4INt0f04-44Jme9A8waBFCN3RsOJoXkBc,977
+flatpack/utils.py,sha256=1AYH_b1tZ4ORc-uZygjwmT8C8VOYDXJX2GiwpKWIBsU,184
+flatpack/vector_manager.py,sha256=X0n70eTaJi-uDcoHAhyZFUisCXnBK3UxsJtXN_tq9Ak,10363
+flatpack-3.10.32.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flatpack-3.10.32.dist-info/METADATA,sha256=SJVxMx97f0GIZ9Y_6WVDP-KcRlRQkeRFgAaz7Ri1K3U,8183
+flatpack-3.10.32.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+flatpack-3.10.32.dist-info/entry_points.txt,sha256=0asITzYYCS1X7tbrKBLGUUWazB4ujYaDxb67k3Ut9-k,48
+flatpack-3.10.32.dist-info/top_level.txt,sha256=5d_SUkbl0vYf89psXbpjYYe9ip-MRuMlQmsVu77kgBs,9
+flatpack-3.10.32.dist-info/RECORD,,
