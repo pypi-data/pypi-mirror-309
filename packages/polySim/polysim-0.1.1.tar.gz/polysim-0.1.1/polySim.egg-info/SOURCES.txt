@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+polySim/__init__.py
+polySim/wrapper.py
+polySim.egg-info/PKG-INFO
+polySim.egg-info/SOURCES.txt
+polySim.egg-info/dependency_links.txt
+polySim.egg-info/not-zip-safe
+polySim.egg-info/requires.txt
+polySim.egg-info/top_level.txt
+polySim/c_code/main.cpp
+polySim/c_code/main.cpp
+polySim/c_code/main.h
