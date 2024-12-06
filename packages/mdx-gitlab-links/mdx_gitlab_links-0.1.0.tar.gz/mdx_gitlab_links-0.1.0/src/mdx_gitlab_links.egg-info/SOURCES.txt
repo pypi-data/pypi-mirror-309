@@ -1,0 +1,17 @@
+.gitignore
+CHANGELOG.md
+LICENSE
+README.md
+justfile
+pyproject.toml
+uv.lock
+.github/workflows/release.yml
+.github/workflows/tests.yml
+src/mdx_gitlab_links/__init__.py
+src/mdx_gitlab_links/py.typed
+src/mdx_gitlab_links.egg-info/PKG-INFO
+src/mdx_gitlab_links.egg-info/SOURCES.txt
+src/mdx_gitlab_links.egg-info/dependency_links.txt
+src/mdx_gitlab_links.egg-info/requires.txt
+src/mdx_gitlab_links.egg-info/top_level.txt
+tests/test_mdx_gitlab_links.py
