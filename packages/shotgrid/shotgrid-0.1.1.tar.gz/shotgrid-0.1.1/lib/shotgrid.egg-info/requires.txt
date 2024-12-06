@@ -1,0 +1,2 @@
+shotgrid_api3
+envstack>=0.6.3
