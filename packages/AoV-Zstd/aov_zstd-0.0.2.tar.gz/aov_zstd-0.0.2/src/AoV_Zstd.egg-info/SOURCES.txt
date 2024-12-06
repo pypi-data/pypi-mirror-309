@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/AoVZstd.egg-info/SOURCES.txt
+src/AoVZstd.egg-info/dependency_links.txt
+src/AoVZstd.egg-info/requires.txt
+src/AoVZstd.egg-info/top_level.txt
+src/AoV_Zstd/__init__.py
+src/AoV_Zstd.egg-info/PKG-INFO
+src/AoV_Zstd.egg-info/SOURCES.txt
+src/AoV_Zstd.egg-info/dependency_links.txt
+src/AoV_Zstd.egg-info/requires.txt
+src/AoV_Zstd.egg-info/top_level.txt
