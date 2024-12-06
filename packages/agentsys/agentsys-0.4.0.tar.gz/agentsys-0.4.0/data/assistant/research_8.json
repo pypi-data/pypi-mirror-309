@@ -1,0 +1,15 @@
+{
+  "key": "research_8",
+  "value": {
+    "query": "Research the history of quantum computing",
+    "result": "# History of Quantum Computing\n\n## Early Foundations (1980s)\n- 1980: Paul Benioff proposes first quantum mechanical model of computing\n- 1981: Richard Feynman suggests quantum systems could simulate other quantum systems\n- 1985: David Deutsch describes the first universal quantum computer\n\n## Key Developments (1990s)\n1. **Major Algorithms**\n   - 1994: Peter Shor's factoring algorithm\n   - 1996: Lov Grover's search algorithm\n\n2. **First Implementations**\n   - 1995: First 2-qubit quantum logic gate\n   - 1998: First 3-qubit quantum computer\n\n## Modern Era (2000s-Present)\n1. **Hardware Advances**\n   - 2007: D-Wave Systems' first quantum annealing processor\n   - 2016: IBM launches quantum cloud service\n   - 2019: Google claims quantum supremacy\n\n2. **Commercial Development**\n   - IBM Q System One\n   - Google Sycamore\n   - Intel's Tangle Lake\n   - Microsoft's Azure Quantum\n\n## Key Concepts\n1. **Quantum Bits (Qubits)**\n   - Superposition\n   - Entanglement\n   - Quantum gates\n\n2. **Quantum Algorithms**\n   - Quantum Fourier Transform\n   - Quantum error correction\n   - Quantum machine learning\n\n## Current Challenges\n1. Decoherence and error rates\n2. Scalability issues\n3. Room temperature operation\n4. Error correction\n\n## Future Prospects\n1. Quantum cryptography\n2. Drug discovery\n3. Financial modeling\n4. Climate modeling\n\n## Timeline Highlights\n- 1980: First quantum computing concept\n- 1994: Shor's Algorithm\n- 2011: D-Wave's first commercial system\n- 2019: Quantum supremacy claim\n- 2023: 1000+ qubit systems",
+    "timestamp": "2024-11-16T23:35:16.577352",
+    "metadata": {
+      "source": "assistant",
+      "version": "0.3.0"
+    }
+  },
+  "created_at": "2024-11-16T23:35:16.577358",
+  "updated_at": "2024-11-16T23:35:16.577358",
+  "metadata": {}
+}

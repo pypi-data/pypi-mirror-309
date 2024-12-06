@@ -1,0 +1,19 @@
+include LICENSE
+include README.md
+include SECURITY.md
+include pyproject.toml
+
+recursive-include core *.py
+recursive-include middleware *.py
+recursive-include plugins *.py
+recursive-include protocols *.py
+recursive-include config *.py *.yaml *.json
+recursive-include tests *.py
+
+prune examples
+prune docs
+prune .git
+prune dist
+prune *.pyc
+prune __pycache__
+prune *.so

@@ -1,0 +1,15 @@
+{
+  "key": "research_4",
+  "value": {
+    "query": "Research the history of quantum computing",
+    "result": "Research findings about Research the history of quantum computing",
+    "timestamp": "2024-11-16T23:33:41.654158",
+    "metadata": {
+      "source": "assistant",
+      "version": "0.3.0"
+    }
+  },
+  "created_at": "2024-11-16T23:33:41.654165",
+  "updated_at": "2024-11-16T23:33:41.654164",
+  "metadata": {}
+}
