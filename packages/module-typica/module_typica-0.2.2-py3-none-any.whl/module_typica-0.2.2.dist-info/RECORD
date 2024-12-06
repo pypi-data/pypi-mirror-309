@@ -1,0 +1,10 @@
+typica/__init__.py,sha256=vzdnhKeUul8ChMPhzOg9sftMxQu6DylYZUVWZXX1m5Y,90
+typica/base.py,sha256=qyHadRT3FfqDOxIqkRa4aad0MMd-78I_QOZ2ec1PTPk,2603
+typica/connection.py,sha256=C1JFNDRN2nQxgsktd9_28ZevqZ8y39aIZ7RMl0c4KB4,5365
+typica/metadata.py,sha256=k52ncZCUFZsBcYB7IcTOZE04uY2x5VCXvrmuLBaXsIA,2772
+typica/response.py,sha256=oI0bZ7QDgAnj6tsxEQyhv3TuGw3S-k8tFZM-Wx4Nfqk,9671
+typica/utils/__init__.py,sha256=4tXromir9E7pWB4ilY-ZicQkfii_xQEM17KrqCUWS1M,21
+typica/utils/enums.py,sha256=XD9FWwLjg1XHkWhpMeeBw9qG20uEQjyvPKATylyFG24,2527
+module_typica-0.2.2.dist-info/METADATA,sha256=zxfnVoQm-n1EOgE9wreEWzqt_qRvSD246eOEb5BD1EI,1568
+module_typica-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+module_typica-0.2.2.dist-info/RECORD,,
