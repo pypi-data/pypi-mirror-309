@@ -1,0 +1,2 @@
+[console_scripts]
+bids-analyser = bids.cli:main
