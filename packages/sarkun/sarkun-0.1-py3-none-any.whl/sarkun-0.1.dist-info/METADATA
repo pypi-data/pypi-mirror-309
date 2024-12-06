@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sarkun
+Version: 0.1
+Home-page: https://github.com/kaankarakoc42/sarkun
+Author: Mevlüt Kaan Karakoç
+Author-email: karakockaan326@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pyfiglet
+Requires-Dist: colorama
+Requires-Dist: emoji
+
+# Community Tool
+
+This is a command-line tool for the Cybersecurity & Network Community.
+
+## Installation
+
+To install the tool, use pip:
+
+```bash
+pip install sarkun
