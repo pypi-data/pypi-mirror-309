@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mpgtheme = mkdocs_mpgtheme_plugin.plugin:MpgThemePlugin
