@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyNormaliz_inequalities
+Version: 0.1.0
+Summary: A Python package for interacting with PyNormaliz using inequalities.
+Author-email: Dominik Peters <mail@dominik-peters.de>
+License: MIT License
+License-File: LICENSE
+Requires-Dist: PyNormaliz
