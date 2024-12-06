@@ -1,0 +1,9 @@
+attrs
+certifi
+click
+dnspython
+pdfschedule
+Pillow
+pymongo
+PyYAML
+reportlab
