@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/specfempp/__init__.py
+src/specfempp/specfem.py
+src/specfempp.egg-info/PKG-INFO
+src/specfempp.egg-info/SOURCES.txt
+src/specfempp.egg-info/dependency_links.txt
+src/specfempp.egg-info/requires.txt
+src/specfempp.egg-info/top_level.txt

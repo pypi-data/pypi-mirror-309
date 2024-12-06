@@ -1,0 +1,8 @@
+
+[docs]
+sphinx
+furo
+myst-parser
+
+[mpi]
+mpi4py

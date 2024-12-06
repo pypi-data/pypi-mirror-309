@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: specfempp
+Version: 0.0.1
+Summary: Python implementation of the SPECFEM++ workflow.
+Home-page: https://github.com/icui/specfempp-py
+Author: Congyue Cui
+Author-email: ccui@princeton.edu
+Maintainer-email: ccui@princeton.edu
+Keywords: Workflow,Cluster,MPI
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: mpi
+Provides-Extra: docs
+License-File: LICENSE
+
+### specfempp
+Python implementation of the SPECFEM++ workflow.
