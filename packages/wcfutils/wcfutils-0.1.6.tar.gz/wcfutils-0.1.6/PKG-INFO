@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wcfutils
+Version: 0.1.6
+Summary: Handy utils written by 
+Home-page: https://chenfei-wu.github.io/
+Author: Chenfei Wu
+Author-email: cqwuchenfei@163.com
+License: MIT
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog
+Requires-Dist: redis
+Requires-Dist: fsspec
+Requires-Dist: boto3
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: msgpack
+Requires-Dist: Pillow
+Requires-Dist: configobj
+Requires-Dist: requests
+Requires-Dist: psutil
+Requires-Dist: imageio
+Requires-Dist: h5py
+Requires-Dist: json_lines
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchdata
+Requires-Dist: einops
+Requires-Dist: tensorboard
+Requires-Dist: wandb
+Requires-Dist: safetensors
+Requires-Dist: opencv-python
+Requires-Dist: av
+Requires-Dist: webdataset
+Requires-Dist: loguru
+Requires-Dist: setuptools
+
+
+Deep learning Utils.
+
+pip install -U -i  https://pypi.org/simple wcfutils
