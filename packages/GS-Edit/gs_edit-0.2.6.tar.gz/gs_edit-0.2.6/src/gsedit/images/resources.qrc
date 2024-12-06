@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="images">
+    <file>close.svg</file>
+    <file>folder.svg</file>
+    <file>grep.svg</file>
+    <file>vc.svg</file>
+    <file>paint.svg</file>
+</qresource>
+</RCC>

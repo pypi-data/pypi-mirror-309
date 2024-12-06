@@ -1,0 +1,4 @@
+PyQt5
+QScintilla
+jedi
+PyQt5-Frameless-Window
