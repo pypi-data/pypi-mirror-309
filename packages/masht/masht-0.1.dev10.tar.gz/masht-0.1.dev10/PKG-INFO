@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: masht
+Version: 0.1.dev10
+Summary: Markdown AS HTml: Creates a HTML version of a Markdown file.
+Author-email: Bill Melvin <bill@sbillmelvin.com>
+License: MIT
+Project-URL: Documentation, https://github.com/wmelvin/masht#readme
+Project-URL: Issues, https://github.com/wmelvin/masht/issues
+Project-URL: Source, https://github.com/wmelvin/masht
+Keywords: markdown,html,converter
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mistune
+
+# masht
+
+**M**arkdown **as** **HT**ML
+
+Reads a Markdown file and writes a HTML of the same name with a `AS.html` suffix.
+
+PyPI: [masht](https://pypi.org/project/masht/)
+
+```console
+USAGE: masht filename.md [filename2.md ...]
+```
+
+Uses the [mistune](https://pypi.org/project/mistune/) Markdown parser ([documentation](https://mistune.lepture.com/en/latest/)).
