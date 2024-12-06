@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+codelint/__init__.py
+codelint/checker.py
+codelint.egg-info/PKG-INFO
+codelint.egg-info/SOURCES.txt
+codelint.egg-info/dependency_links.txt
+codelint.egg-info/entry_points.txt
+codelint.egg-info/top_level.txt
+tests/test_checker.py
