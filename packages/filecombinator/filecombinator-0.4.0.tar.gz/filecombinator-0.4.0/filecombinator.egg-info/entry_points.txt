@@ -1,0 +1,2 @@
+[console_scripts]
+filecombinator = filecombinator.cli:main
