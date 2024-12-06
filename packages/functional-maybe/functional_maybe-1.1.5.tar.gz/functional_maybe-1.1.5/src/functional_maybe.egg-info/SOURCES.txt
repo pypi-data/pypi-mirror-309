@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/FunctionalMaybe/__init__.py
+src/FunctionalMaybe/empty.py
+src/FunctionalMaybe/formatting.py
+src/FunctionalMaybe/functional_maybe.py
+src/functional_maybe.egg-info/PKG-INFO
+src/functional_maybe.egg-info/SOURCES.txt
+src/functional_maybe.egg-info/dependency_links.txt
+src/functional_maybe.egg-info/top_level.txt
