@@ -1,0 +1,16 @@
+django
+networkx>=3.4.2
+pydot>=3.0.2
+rich>=13
+
+[dev]
+invoke>=2
+twine>=4
+wheel>=0.38.1
+coverage>=7
+flake8>=5
+tox>=4
+black==23.3.0
+flake8==6.0.0
+isort==5.11.4
+pydocstyle[toml]==6.2.3
