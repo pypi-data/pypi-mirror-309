@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pycarnot
+Version: 0.1.0
+Summary: Python module to communicate with the Carnot API
+License: GPL-3.0
+Author: Malene Trab
+Author-email: malene@trab.dk
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)
+
+## pyStromligning
+
+This is a PyPI module for communicating with the Stromligning API, primarily developed for use with [Home Assistant](https://home-assistant.io), but I try to keep it as widely usable as possible.
