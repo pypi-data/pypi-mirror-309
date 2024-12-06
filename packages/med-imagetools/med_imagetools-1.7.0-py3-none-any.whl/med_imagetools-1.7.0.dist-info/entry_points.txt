@@ -1,0 +1,2 @@
+[console_scripts]
+autopipeline = imgtools.autopipeline:main
