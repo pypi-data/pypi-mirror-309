@@ -1,0 +1,11 @@
+llama_index/readers/gitlab/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/readers/gitlab/__init__.py,sha256=8zhGwxzlXK1TD3aXivDK8mlbW1JNP1q620PI8tv2LcQ,220
+llama_index/readers/gitlab/issues/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/readers/gitlab/issues/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/readers/gitlab/issues/base.py,sha256=VTc4GCd_9o4bxlxkUpQsbIYRcr_YGU6tfBEVcWcA3tk,7911
+llama_index/readers/gitlab/repository/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/readers/gitlab/repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_index/readers/gitlab/repository/base.py,sha256=RyOraQQofawSs2wyp6XfmW5EN38bGsDPACt21j1l110,3000
+llama_index_readers_gitlab-0.3.0.dist-info/METADATA,sha256=IGwBor0eYEhnpjgeOuefY2DvZCLGAYIpYma1FoV_VTM,2141
+llama_index_readers_gitlab-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_gitlab-0.3.0.dist-info/RECORD,,
