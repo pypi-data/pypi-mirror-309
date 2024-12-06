@@ -1,0 +1,17 @@
+
+---
+
+## Step 5: Choose a License
+
+Create a `LICENSE` file and add the MIT License text or any other license you prefer.
+
+---
+
+## Step 6: Build and Upload the Package to PyPI
+
+### **Prerequisites**
+
+- Install `twine` and `wheel`:
+
+  ```bash
+  pip install twine wheel
