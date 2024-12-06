@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mtips5s_web_crawling
+Version: 0.1.5
+Summary: Setup cực nhanh một môi trường python thông qua lệnh run.sh
+Home-page: https://github.com/khuongsatou/mtips5s_web_crawling.git
+Author: Nguyễn Văn Khương
+Author-email: vankhuong240499@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+chmod +x run.sh&&./run.sh<br />
+chmod +x run_report.sh&&./run_report.sh<br />
+chmod +x run_git.sh&&./run_git.sh<br />
+chmod +x run_pip.sh&&./run_pip.sh<br />
