@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pinot_client.egg-info/PKG-INFO
+pinot_client.egg-info/SOURCES.txt
+pinot_client.egg-info/dependency_links.txt
+pinot_client.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
