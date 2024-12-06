@@ -1,0 +1,7 @@
+combss/__init__.py,sha256=1d6Ic3U8gY_tASXhzDrUPme_1viwtNWTPL0rwNJt-Fo,21
+combss/linear.py,sha256=FQt86k4efGfqBvIJ2cKKufLtKrv_RFmXqIKLFLn9tDE,7256
+combss/metrics.py,sha256=R77l-O9ChXEWjh5jrwJ8hvjvmLMllNsEuVxEBPAFVwU,3603
+combss/optimisation.py,sha256=5qSH0KJW-oAgpGlcE3B6RfCCdzRXDcVahuPvAXr3qqE,25244
+combss-1.0.2.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+combss-1.0.2.dist-info/METADATA,sha256=W1m9kp9l71OVbPUegVoLRuS4f5wESHX5M5fsCxm94dM,7070
+combss-1.0.2.dist-info/RECORD,,
