@@ -1,0 +1,17 @@
+mail2cospend/__init__.py,sha256=RdgG1jmPcB1sPl6HmZJvG2d81RdcM0GRRZv1rRlIics,1038
+mail2cospend/config.py,sha256=R-lAjFG7A6GPEaFfRhCFGDY5jzr4xZYASpGMHhHL7-g,5354
+mail2cospend/cospendconnector.py,sha256=8Sors4QSQWZCkFjzDT2YXXY7jnnQQ9m_6HCo6wqwz2E,4424
+mail2cospend/data.py,sha256=6UtLJTEAESiEBuKi_HXfwWdUBJ8q4Jz1g9wMBOfGLdo,291
+mail2cospend/helper.py,sha256=JAiDDJjQXNo1DVrSqPZ1t2Ntrn9ncFuDd34ZJA9RPk4,732
+mail2cospend/mailconnector.py,sha256=K89ya5zG-svckCSNCDZiC8guAcg037l9nzJaX0wKPp4,1160
+mail2cospend/main.py,sha256=YMHQH_D96Te2M_ZSdAP8k5ZNMDh-IjhVQewHeADtUMk,2146
+mail2cospend/searchadapter/__init__.py,sha256=pAKslwOknjTTIdrSrCBGjww-xX2w2YDJfkqkKG6MJrA,304
+mail2cospend/searchadapter/netto.py,sha256=EI05DFkBtq11pyMRelL2S6xuyEP0TN_bUbd_au5ICqI,1395
+mail2cospend/searchadapter/picnic.py,sha256=NYmtFzjqbm22RF49ZRcERq5_09zYmpX-Nl6kRsgaiJc,1287
+mail2cospend/searchadapter/rewe.py,sha256=ncyy1wqNpipXkb8amWkoVTJ_pI2ZcCJhL8k5f2EVbak,1726
+mail2cospend/searchadapter/searchadapter.py,sha256=SR1MKwbj3e9V7beRUwbK67lnTvsNSNcgFhAyXnreOdE,4129
+mail2cospend-0.2.0.dist-info/METADATA,sha256=B9479JhLX_VSYrtMLLzAiFqcAuclTHhp4TPmyMEGoFc,44579
+mail2cospend-0.2.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mail2cospend-0.2.0.dist-info/entry_points.txt,sha256=n9QfjeHwO2KAiT_2dDjirB0f-cKrw4zqDgOfOmI5H5A,50
+mail2cospend-0.2.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mail2cospend-0.2.0.dist-info/RECORD,,
