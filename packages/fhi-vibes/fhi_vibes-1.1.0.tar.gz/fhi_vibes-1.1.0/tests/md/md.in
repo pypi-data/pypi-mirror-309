@@ -1,0 +1,8 @@
+[md]
+driver =     Verlet
+timestep =   1
+maxsteps =   5
+workdir =    test_run
+
+[restart]
+command = python run_md.py

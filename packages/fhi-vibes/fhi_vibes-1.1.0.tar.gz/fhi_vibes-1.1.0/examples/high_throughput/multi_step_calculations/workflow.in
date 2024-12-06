@@ -1,0 +1,71 @@
+[files]
+geometry:                      Si/geometry.in
+
+[fireworks]
+name:                          example_multistep_calculations
+
+[fireworks.workdir]
+local:                         analysis/
+remote:                        run/
+
+[calculator]
+name:                          aims
+
+[calculator.parameters]
+xc:                            pw-lda
+
+[calculator.kpoints]
+density:                       1
+
+[calculator.basissets]
+default:                       light
+
+[calculator.socketio]
+port:                          12345
+
+[phonopy]
+supercell_matrix:              [-2, 2, 2, 2, -2, 2, 2, 2, -2]
+displacement:                  0.01
+is_diagonal:                   False
+is_trigonal:                   False
+is_plusminus:                  auto
+symprec:                       1e-05
+q_mesh:                        [45, 45, 45]
+serial:                        True
+
+[phonopy.qadapter]
+nodes:                         1
+walltime:                      00-01:00:00
+
+[optimize_kgrid]
+dfunc_min:                     1e-3
+
+[optimize_kgrid.qadapter]
+nodes:                         1
+walltime:                      01:00:00
+
+[relaxation.1]
+basis:                         light
+driver:                        BFGS
+fmax:                          0.001
+unit_cell:                     True
+decimals:                      12
+maxstep:                       0.2
+fix_symmetry:                  True
+
+[relaxation.1.qadapter]
+nodes:                         1
+walltime:                      00:15:00
+
+[statistical_sampling]
+#phonon_file:                   analysis/Si/0df71cea3a5446b7104554b9bada4da6eb4a802a/sc_natoms_64/phonopy_analysis/trajectory.son
+serial:                        True
+temperatures:                  [300, 600]
+supercell_matrix:              [-1, 1, 1, 1, -1, 1, 1, 1, -1]
+n_samples:                     1
+plus_minus:                    True
+
+[statistical_sampling.qadapter]
+walltime:                      0:30:00
+nodes:                         1
+

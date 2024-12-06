@@ -1,0 +1,14 @@
+[files]
+geometry=             geometry.in
+
+[calculator]
+name: lj
+
+[calculator.parameters]
+sigma = 2
+
+[relaxation]
+driver =       BFGS
+fmax =         0.01
+unit_cell =    True
+fix_symmetry = True

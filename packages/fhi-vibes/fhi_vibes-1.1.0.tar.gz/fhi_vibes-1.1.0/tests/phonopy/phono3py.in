@@ -1,0 +1,4 @@
+[geometry]
+
+[phono3py]
+supercell_matrix = [-1, 1, 1,  1, -1, 1,  1, 1, -1]

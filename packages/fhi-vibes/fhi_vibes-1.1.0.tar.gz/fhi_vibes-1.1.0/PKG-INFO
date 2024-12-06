@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: fhi-vibes
+Version: 1.1.0
+Summary: Fritz Haber Institute Vibrational Simulations
+Keywords: thermal transport,vibrations,molecular dynamics,ab initio
+Author-Email: Florian Knoop <knoop@fhi-berlin.mpg.de>, Thomas Purcell <purcell@fhi-berlin.mpg.de>
+Maintainer-Email: Thomas Purcell <purcell@fhi-berlin.mpg.de>, Christian Carbogno <carbogno@fhi-berlin.mpg.de>, Shuo Zhao <szhao@fhi-berlin.mpg.de>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Project-URL: repository, https://gitlab.com/vibes-developers/vibes
+Project-URL: homepage, https://vibes-developers.gitlab.io/vibes/
+Project-URL: documentation, https://vibes-developers.gitlab.io/vibes/Documentation/0_intro
+Requires-Python: <3.12
+Requires-Dist: numpy<2
+Requires-Dist: scipy<=1.13
+Requires-Dist: matplotlib>=3.1
+Requires-Dist: son>=0.4.1
+Requires-Dist: spglib<=2.3
+Requires-Dist: phonopy>=2.13
+Requires-Dist: ase<=3.22
+Requires-Dist: click>=8.0
+Requires-Dist: attrs>=19.1
+Requires-Dist: xarray>=0.13
+Requires-Dist: netCDF4>=1.5
+Requires-Dist: jinja2>=2.10
+Requires-Dist: tables>=3.5
+Requires-Dist: click_aliases>=1.0
+Requires-Dist: click_completion>=0.5.2
+Requires-Dist: jconfigparser>=0.1.2
+Requires-Dist: pandas<2.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: ruamel.yaml==0.17.40
+Provides-Extra: fireworks
+Requires-Dist: fireworks>=1.9; extra == "fireworks"
+Requires-Dist: pymongo>=3.8; extra == "fireworks"
+Requires-Dist: fabric>=2.4; extra == "fireworks"
+Requires-Dist: paramiko>=2.4; extra == "fireworks"
+Requires-Dist: requests>=2.25; extra == "fireworks"
+Provides-Extra: phono3py
+Requires-Dist: phono3py>=1.21; extra == "phono3py"
+Provides-Extra: hiphive
+Requires-Dist: hiphive>=0.50; extra == "hiphive"
+Provides-Extra: postgresql
+Requires-Dist: psycopg2>=2.8.0; extra == "postgresql"
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.2; extra == "docs"
+Requires-Dist: mkdocs-material>=7.3; extra == "docs"
+Requires-Dist: mkdocs-minify-plugin>=0.5.0; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest>=6.0; extra == "tests"
+Requires-Dist: pytest-xdist>=1.31; extra == "tests"
+Requires-Dist: pytest-cov>=2.8; extra == "tests"
+Provides-Extra: dev
+Requires-Dist: pre-commit>=2.12.1; extra == "dev"
+Description-Content-Type: text/markdown
+
+FHI-vibes
+===
+
+Welcome to `FHI-vibes`, a `python` package for calculating, analyzing, and understanding the vibrational properties of solids from first principles. `FHI-vibes` is intended to seamlessly bridge between the harmonic approximation and fully anharmonic molecular dynamics simulations. To this end, `FHI-vibes` builds on several [existing packages](https://vibes-developers.gitlab.io/vibes/Credits/) and interfaces them in a consistent and user-friendly fashion.
+
+In the documentation and tutorials, knowledge of first-principles electronic-structure theory as well as proficiency with _ab initio_ codes such as [FHI-aims](https://aimsclub.fhi-berlin.mpg.de/) and high-performance computing are assumed. Additional experience with python, the [Atomic Simulation Environment (ASE)](https://wiki.fysik.dtu.dk/ase/), or [Phonopy](https://atztogo.github.io/phonopy/) is helpful, but not needed.
+
+`FHI-vibes` provides the following features:
+
+- Geometry optimization via [ASE](https://wiki.fysik.dtu.dk/ase/ase/optimize.html#module-ase.optimize),
+- harmonic phonon calculations via [Phonopy](https://atztogo.github.io/phonopy/),
+- molecular dynamics simulations in [NVE](https://wiki.fysik.dtu.dk/ase/ase/md.html#constant-nve-simulations-the-microcanonical-ensemble), [NVT](https://wiki.fysik.dtu.dk/ase/ase/md.html#module-ase.md.langevin), and [NPT](https://wiki.fysik.dtu.dk/ase/ase/md.html#module-ase.md.nptberendsen) ensembles,
+- [harmonic sampling](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.115504),
+- [anharmonicity quantification](https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.083809), and
+- thermal transport with [ab initio Green-Kubo](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.224304) and [Phono3py](Documentation/phono3py.md)
+
+Most of the functionality is high-throughput ready via [fireworks](https://materialsproject.github.io/fireworks/#).
+
+
+## Overview
+
+- [Installation](https://vibes-developers.gitlab.io/vibes/Installation)
+- [Tutorial](https://vibes-developers.gitlab.io/vibes/Tutorial/0_intro)
+- [Documentation](https://vibes-developers.gitlab.io/vibes/Documentation/0_intro)
+- [Credits](https://vibes-developers.gitlab.io/vibes/Credits)
+- [References](https://vibes-developers.gitlab.io/vibes/References)
+
+## Changelog
+
+#### v1.1.0
+
+- Update ab initio Green Kubo method and [tutorials](https://vibes-developers.gitlab.io/vibes/Tutorial/7_green_kubo/). [(!100)](https://gitlab.com/vibes-developers/vibes/-/merge_requests/100)
+- Update Phono3py interface and [documentations](https://vibes-developers.gitlab.io/vibes/Documentation/phono3py/).
+- Heatflux unit updated from `eV/AA^2/ps` to `eV/AA^2/fs`.
+
+#### v1.0.5
+
+- bugfix
+
+#### v1.0.4
+
+- looser dependencies
+- [various bug fixes](https://gitlab.com/vibes-developers/vibes/-/merge_requests?scope=all&state=merged)
+
+#### v1.0.3
+
+- update dependencies to allow `phonopy` versions up to 2.8
+
+#### v1.0.2
+
+- First official release after passing the [JOSS review](https://github.com/openjournals/joss-reviews/issues/2671).
+- Several additions to the documentation.
+
+#### v1.0.0a10
+
+- Enable conversion of trajectories to `ase.io.Trajectory` files for viewing with ASE [(!37)](https://gitlab.com/vibes-developers/vibes/-/merge_requests/37)
+- Important fix for running NPT dynamics [(!36)](https://gitlab.com/vibes-developers/vibes/-/merge_requests/36)
+- We have a changelog now!

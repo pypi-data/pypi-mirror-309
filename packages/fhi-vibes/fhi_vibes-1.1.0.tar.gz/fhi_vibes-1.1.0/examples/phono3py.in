@@ -1,0 +1,13 @@
+[files]
+geometry:                     geometry.in
+
+[calculator]
+name: lj
+
+[socketio]
+port: null
+
+[phono3py]
+supercell_matrix:              [2, 2, 2]
+workdir:                       phono3py_${calculator:name}
+

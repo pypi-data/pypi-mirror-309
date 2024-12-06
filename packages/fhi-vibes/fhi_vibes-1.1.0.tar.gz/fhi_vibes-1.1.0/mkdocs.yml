@@ -1,0 +1,107 @@
+site_name: FHI-vibes
+
+repo_url: https://gitlab.com/vibes-developers/vibes
+
+copyright: 'Copyright &copy; 2020 Florian Knoop, Thomas A.R. Purcell'
+
+theme:
+    name: 'material'
+    palette:
+        primary: 'Teal'
+        accent: 'Blue Grey'
+    logo: images/FV.svg
+    favicon: 'images/FV.svg'
+    include_search_page: false
+    features:
+        - navigation.tabs
+        - navigation.instant
+
+    font:
+        text: 'Open Sans'
+        code: 'Droid Sans Mono'
+
+nav:
+    - Home:
+        - Welcome!: README.md
+        - Installation.md
+        - Credits.md
+        - References.md
+        - CONTRIBUTING.md
+        - License: license.md
+    - Tutorial:
+        - Overview: Tutorial/0_intro.md
+        - Tutorial/0_singlepoint.md
+        - "Geometry Optimization": Tutorial/1_geometry_optimization.md
+        - "Phonon Calculations":
+            - "Background": Tutorial/2_phonopy_intro.md
+            - "Running a phonon calculation": Tutorial/2_phonopy.md
+        - "Molecular Dynamics":
+            - "Background": Tutorial/3_md_intro.md
+            - "ab initio MD": Tutorial/3_md_ab_initio.md
+            - Tutorial/3_md_postprocess.md
+            - "Rapid Prototyping": Tutorial/3_md_rapid_prototyping.md
+        - Tutorial/4_statistical_sampling.md
+        - Tutorial/5_anharmonicity_quantification.md
+        - Tutorial/6_lattice_expansion.md
+        - "Green Kubo":
+            - "Background": Tutorial/7_green_kubo_intro.md
+            - Tutorial/7_green_kubo.md
+        - High-Throughput:
+            - "Configure FHI-vibes with FireWorks": High_Throughput/Tutorial/0_configuring_fw_for_vibes.md
+            - "Phonon Calculations": High_Throughput/Tutorial/1_phonopy.md
+            - "Multistep Workflows": High_Throughput/Tutorial/2_multistep.md
+        - Tutorial/acknowledgments.md
+        - Tutorial/references.md
+    - Documentation:
+        - Overview: Documentation/0_intro.md
+        - "Units": Documentation/units.md
+        - "Input Files":
+            - Documentation/input_files.md
+            - Documentation/calculator_setup.md
+            - Workflows:
+                - "Relaxation": Documentation/relaxation.md
+                - "Phonopy": Documentation/phonopy.md
+                - "Phono3py": Documentation/phono3py.md
+                - "Molecular Dynamics": Documentation/md.md
+            - Documentation/input_files_slurm.md
+        - Documentation/output_files.md
+        - Documentation/cli.md
+        - High-Throughut:
+                - Overview: High_Throughput/Documentation/0_overview.md
+                - Installation Guide: High_Throughput/Installation/0_setup.md
+                - General Workflows: High_Throughput/Documentation/1_general_high_throughput.md
+                - qadapters: High_Throughput/Documentation/2_qadapter.md
+                - K-Point Density Optimization: High_Throughput/Documentation/3_optimize_k_grid.md
+                - Relaxation: High_Throughput/Documentation/4_relaxation.md
+                - Phonon Calculations: High_Throughput/Documentation/5_phonons.md
+                - Harmonic Sampling: High_Throughput/Documentation/6_statistical_sampling.md
+                - Molecular Dynamics: High_Throughput/Documentation/7_md.md
+                - Conditional Workflows: High_Throughput/Documentation/8_stop_if.md
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - search
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        toc_depth: 3
+    - pymdownx.arithmatex
+    - pymdownx.details
+    - pymdownx.superfences
+    - footnotes
+    - admonition
+
+extra_javascript:
+  - 'javascripts/mathjax.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://gitlab.com/vibes-developers/vibes
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/flokno_phys
