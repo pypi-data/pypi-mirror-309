@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ROTools
+Version: 0.1.1
+Summary: Robert Olechowski python tools
+Home-page: https://github.com/RobertOlechowski/ROTools
+Author: Robert Olechowski
+Author-email: robertolechowski@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ROTools
+
+# Note
+
+```
+pip install twine
+```
+
+```
+python setup.py sdist
+rm .\dist\* 
+python setup.py sdist bdist_wheel
+twine check dist/*
+twine upload dist/*
+
+```
+
+
+
