@@ -1,0 +1,2 @@
+include requirements.txt
+include lstpressure/sun/location_providers/meerkat_provider/planets.json
