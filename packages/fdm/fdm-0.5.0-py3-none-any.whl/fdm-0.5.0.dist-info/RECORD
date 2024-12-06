@@ -1,0 +1,9 @@
+fdm/__init__.py,sha256=0drd0IOsQn1vyEztS5jF0xxrintgOhOKWrQRAgraTBc,113
+fdm/_version.py,sha256=aeBju2l8GTMwAhIRG_c2Q_oVPFacRkZZwGtxmvFCGPQ,411
+fdm/fdm.py,sha256=LTrPAOAIfAQCjh-iooPH7OxIlGf1ne2_IHpLIm-TgaQ,11642
+fdm/multivariate.py,sha256=W4MrKRwEpMzgwMN7Z8oH3v8WPWxHhZkrj1Taxz5HU8o,4669
+fdm/numerics.py,sha256=4iNZfr2tFwHM1zCCFntVJkvogH08kATfMXGeHKJfeLA,3810
+fdm-0.5.0.dist-info/METADATA,sha256=r1rggYgyzpk38aMC-dtagnnTMFm4n8hls5NvC9jM5XU,6883
+fdm-0.5.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+fdm-0.5.0.dist-info/licenses/LICENCE.txt,sha256=eFYW2wi4gbeOVOC-gHNXQnsmNC7JiB6I9A1BgtbvDgM,1072
+fdm-0.5.0.dist-info/RECORD,,
