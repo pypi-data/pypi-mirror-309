@@ -1,0 +1,10 @@
+django_migration_cleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migration_cleaner/management/commands/delete_migrations.py,sha256=aeew-ZNYvYgTP-PbmczWM3u3njcbNicfYNyXXWfDDck,5260
+django_migration_cleaner-1.0.4.dist-info/LICENSE,sha256=5LzlJyFw4l7-DaH__HmrBPKNet0x15j-r-WiecLgakM,1070
+django_migration_cleaner-1.0.4.dist-info/METADATA,sha256=YM2zg8i9y-4ta_mCzjsi1YofEDBfxdlLm6lvkUjaHGg,2925
+django_migration_cleaner-1.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_migration_cleaner-1.0.4.dist-info/entry_points.txt,sha256=fcnkfCIgSLvEclPJZJhBpLazIHqhtu-jSxUtgzo_7TQ,87
+django_migration_cleaner-1.0.4.dist-info/top_level.txt,sha256=mX7lwl9578pfuAb0_8EkqGDy96lRSBKn5wpLA6LACAs,25
+django_migration_cleaner-1.0.4.dist-info/RECORD,,
