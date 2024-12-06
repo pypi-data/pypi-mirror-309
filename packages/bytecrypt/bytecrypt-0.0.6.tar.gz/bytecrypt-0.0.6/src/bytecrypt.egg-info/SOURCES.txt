@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/bytecrypt/__init__.py
+src/bytecrypt/__main__.py
+src/bytecrypt/bytecrypt.py
+src/bytecrypt.egg-info/PKG-INFO
+src/bytecrypt.egg-info/SOURCES.txt
+src/bytecrypt.egg-info/dependency_links.txt
+src/bytecrypt.egg-info/requires.txt
+src/bytecrypt.egg-info/top_level.txt
+tests/tests.py
