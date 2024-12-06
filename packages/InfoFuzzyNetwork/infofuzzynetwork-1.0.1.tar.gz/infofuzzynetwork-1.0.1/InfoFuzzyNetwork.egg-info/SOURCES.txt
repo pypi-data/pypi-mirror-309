@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+InfoFuzzyNetwork/IFN.py
+InfoFuzzyNetwork/__init__.py
+InfoFuzzyNetwork.egg-info/PKG-INFO
+InfoFuzzyNetwork.egg-info/SOURCES.txt
+InfoFuzzyNetwork.egg-info/dependency_links.txt
+InfoFuzzyNetwork.egg-info/requires.txt
+InfoFuzzyNetwork.egg-info/top_level.txt
