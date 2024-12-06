@@ -1,0 +1,10 @@
+frechet_coefficient/__init__.py,sha256=Sn9K_8TRtmq3dSCrNyMKXZZQphYxwtf6F6AH4UsgUCM,244
+frechet_coefficient/cli.py,sha256=Hm6FroyRJVaWfUrJ-NdlnTvqnJmC6UIFj6trHXcHD0g,3527
+frechet_coefficient/metrics.py,sha256=wTwDuikQCcDm1PuK_W022d6_9JiOvlW9tnjCNheAEvY,12688
+frechet_coefficient/models.py,sha256=L3DWV8k-6is0QI_GRyIo32_tOKUT9ZdQg6aYaGuSQ6w,4448
+frechet_coefficient/utils.py,sha256=0MXw5VEHRnh2iO-Fgp_QHZZuTqdB3zctU-E6c-t0qis,3399
+frechet_coefficient-1.0.4.dist-info/METADATA,sha256=jAFaDerra1PRo5A01wVxMyeV6-1PyzNvMjQ2I2nm8y8,8072
+frechet_coefficient-1.0.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+frechet_coefficient-1.0.4.dist-info/entry_points.txt,sha256=hmFBIbzarinE8DHEBe7znVVzMLFZgeBtBlmde1iFNig,69
+frechet_coefficient-1.0.4.dist-info/licenses/LICENSE,sha256=OApsZmJbikuth8WkyigV4rm7MijiKmaS4-LvFArlwX0,1072
+frechet_coefficient-1.0.4.dist-info/RECORD,,
