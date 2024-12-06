@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+mypackageldcss.egg-info/PKG-INFO
+mypackageldcss.egg-info/SOURCES.txt
+mypackageldcss.egg-info/dependency_links.txt
+mypackageldcss.egg-info/top_level.txt
+mypackageldcss.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+mypackageldcss.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+mypackageldcss.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
+mypackageldcss.egg-info/.ipynb_checkpoints/top_level-checkpoint.txt
