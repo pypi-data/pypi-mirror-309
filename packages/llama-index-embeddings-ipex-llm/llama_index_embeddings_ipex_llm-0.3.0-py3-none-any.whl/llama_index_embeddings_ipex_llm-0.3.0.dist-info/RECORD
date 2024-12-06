@@ -1,0 +1,7 @@
+llama_index/embeddings/ipex_llm/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/embeddings/ipex_llm/__init__.py,sha256=Ci0-HFgN2U9eqs7F38QBjGRa3s7gYCJtnFWc5LGpcmc,99
+llama_index/embeddings/ipex_llm/base.py,sha256=hofFNJztjUMEVSMmhAb1rXs_Bqnv7keCGGbgzUCi8jw,5338
+llama_index/embeddings/ipex_llm/utils.py,sha256=rSHZgdvtI2_4jP58IiJUS98P309L_Ku1jiplrrrHuc4,2391
+llama_index_embeddings_ipex_llm-0.3.0.dist-info/METADATA,sha256=bZd9G86400kdpQ8Or_qZedZ4DcOd7mIcZxNDjSCBMpU,1630
+llama_index_embeddings_ipex_llm-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_ipex_llm-0.3.0.dist-info/RECORD,,
