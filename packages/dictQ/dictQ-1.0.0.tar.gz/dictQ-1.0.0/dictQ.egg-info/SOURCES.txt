@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dictQ/__init__.py
+dictQ.egg-info/PKG-INFO
+dictQ.egg-info/SOURCES.txt
+dictQ.egg-info/dependency_links.txt
+dictQ.egg-info/requires.txt
+dictQ.egg-info/top_level.txt
