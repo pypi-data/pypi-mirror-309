@@ -1,0 +1,6 @@
+onset	duration	trial_type	stim_file	value
+0.0214	0	start	error.png	n/a
+0.3725	0	number	n/a	1.0
+0.3726	0	number	n/a	3.0
+0.3727	0	number	n/a	2.0
+0.3746	0	stop	error.png	n/a

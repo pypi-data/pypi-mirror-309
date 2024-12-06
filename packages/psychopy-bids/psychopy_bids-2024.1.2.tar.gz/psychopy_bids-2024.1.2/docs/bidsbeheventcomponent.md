@@ -1,0 +1,1 @@
+::: psychopy_bids.bids_beh.BidsBehEventComponent

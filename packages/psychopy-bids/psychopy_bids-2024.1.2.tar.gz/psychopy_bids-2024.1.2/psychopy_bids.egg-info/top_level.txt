@@ -1,0 +1,10 @@
+bids
+bids_beh
+bids_settings
+bids_task
+dist
+docs
+images
+png
+psychopy_bids
+tests
