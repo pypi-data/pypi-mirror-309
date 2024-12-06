@@ -1,0 +1,151 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "django-eventlog"
+version = "2.2.2"
+packages = [{include = "eventlog"}]
+description = "django-eventlog stores event messages in a Django model."
+authors = ["Martin Mahner <martin@mahner.org>"]
+license = "MIT"
+readme = ["README.md", "CHANGELOG.md"]
+homepage = "https://barttc.github.io/django-eventlog/"
+documentation = "https://barttc.github.io/django-eventlog/"
+keywords = ["django", "logging", "logger", "events"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Django",
+]
+
+[tool.poetry.urls]
+Source = "https://github.com/bartTC/django-eventlog"
+Bugtracker = "https://github.com/bartTC/django-eventlog/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = ">=3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-django = "*"
+ruff = "*"
+django-stubs = {extras = ["compatible-mypy"], version = "*"}
+mkdocs-material = "*"
+mkdocs-include-markdown-plugin = "*"
+
+[tool.poetry.scripts]
+tests = "pytest:main"
+
+[tool.ruff]
+target-version = "py38"
+exclude = ["migrations"]
+lint.select = ["ALL"]
+lint.ignore = [
+  "ANN101",   # Missing type annotation for `self`
+  "ANN401",   # typing.Any is disallowed as function arg type
+  "ARG001",   # Unused function argument (request, ...)
+  "ARG002",   # Unused method argument (*args, **kwargs)
+  "D",        # Missing or badly formatted docstrings
+  "E501",     # Line too long (>88)
+  "ERA001",   # Found commented-out code
+  "FBT",      # Flake Boolean Trap (don't use arg=True in functions)
+  "RUF012",   # Mutable class attributes should be annotated with `typing.ClassVar`
+
+  "COM812", # (ruff format) Checks for the absence of trailing commas
+  "ISC001", # (ruff format) Checks for implicitly concatenated strings on a single line
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"test_*.py"  = [
+  "S101",     # Use of `assert` detected
+  "PLR2004",  # Magic value used in comparison, consider replacing 200 with a constant variable
+]
+
+[tool.pytest.ini_options]
+python_files = [
+  "tests.py",
+  "test_*.py",
+  "*_tests.py",
+]
+addopts = """
+    --ds=eventlog.tests.testapp.settings
+    --reuse-db
+    --cov
+"""
+filterwarnings = ["ignore::RuntimeWarning"]
+
+[tool.coverage]
+run.omit = [
+  "eventlog/tests/*",
+  "eventlog/migrations/*",
+]
+report.exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_errors = false
+ignore_missing_imports = true
+strict_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+exclude = ".*/migrations/.*"
+
+[tool.django-stubs]
+django_settings_module = "eventlog.tests.testapp.settings"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+toxworkdir=/tmp/tox/django-eventlog
+skip_missing_interpreters=True
+envlist=
+  py{39,310,311,312,313}-django-{42}
+  py{310,311,312,313}-django-{50,51}
+
+[gh-actions]
+python =
+  3.8: py38
+  3.9: py39
+  3.10: py310
+  3.11: py311
+  3.12: py312
+  3.13: py313
+
+[testenv]
+install_command =
+  pip install {opts} {packages}
+setenv =
+  DJANGO_SETTINGS_MODULE=eventlog.tests.testapp.settings
+commands =
+  {envbindir}/django-admin collectstatic --noinput -v2
+  pytest {envsitepackagesdir}/eventlog
+
+deps=
+  django-32: django==3.2.*
+  django-40: django==4.0.*
+  django-41: django==4.1.*
+  django-42: django==4.2.*
+  django-50: django==5.0.*
+  django-51: django==5.1.*
+  pytest
+  pytest-django
+"""
+
+[tool.setuptools.package-data]
+eventlog = ["eventlog/py.typed"]
