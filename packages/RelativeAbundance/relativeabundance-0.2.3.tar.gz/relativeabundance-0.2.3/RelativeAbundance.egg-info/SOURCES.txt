@@ -1,0 +1,12 @@
+setup.py
+RelativeAbundance.egg-info/PKG-INFO
+RelativeAbundance.egg-info/SOURCES.txt
+RelativeAbundance.egg-info/dependency_links.txt
+RelativeAbundance.egg-info/requires.txt
+RelativeAbundance.egg-info/top_level.txt
+relative_abundance/__init__.py
+relative_abundance/calculate_abundance.py
+relative_abundance/plotting_utils.py
+test/__init__.py
+test/test_math_functions.py
+test/test_relative_abundance.py
