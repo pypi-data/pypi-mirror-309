@@ -1,0 +1,84 @@
+/*********************************************
+* Variables *
+*********************************************/
+:root {
+  --note-title-color: rgba(68,138,255,.1);
+  --note-border-color: #007bff;
+  --grey-border-color: #ccc;
+}
+
+/*********************************************
+* Exercise *
+*********************************************/
+
+/* apply a zoom to the iframe using a class */
+iframe.grasple {
+  transform: scale(var(--scale-factor));
+  transform-origin : 0 0;
+  width: calc(1/var(--scale-factor) * 100%);
+  height: calc(1/var(--scale-factor) * 100%);
+}
+
+div.grasplecontainer {
+  --scale-factor: 0.7;
+  width : 100%;
+  height : 400px;
+  overflow: hidden;
+}
+
+div.grasple-exercise {
+  border-color: var(--note-border-color);
+  background-color: var(--note-title-color);
+}
+
+div.grasple-exercise p.admonition-title {
+  background-color: var(--note-title-color);
+}
+
+/* Remove content box */
+div.grasple-exercise p.admonition-title::before {
+  content: "\f303";
+}
+
+/* Hide the image on screen */
+@media screen {
+  div.side-by-side.docutils.container img {
+    display: none;
+  }
+}
+
+/* Show the image when printing */
+@media print {
+  div.gasple.admonition .side-by-side.docutils.container img {
+    display: initial;
+  }
+  div.grasple.admonition details.dropdown {
+    display: none;
+  }
+  
+  div.grasple.admonition section iframe {
+    display: none;
+  }
+}
+
+/* Show the dropdown by default */
+div.grasple-exercise details.dropdown {
+  display: block;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qr-code-container {
+  display: none;
+  flex-basis: 20%;
+  max-width: 20%;
+}
+
+.description-container {
+  flex-basis: 80%;
+  max-width: 80%;
+}
