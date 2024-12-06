@@ -1,0 +1,7 @@
+main.py
+setup.py
+licenseMonitor.egg-info/PKG-INFO
+licenseMonitor.egg-info/SOURCES.txt
+licenseMonitor.egg-info/dependency_links.txt
+licenseMonitor.egg-info/requires.txt
+licenseMonitor.egg-info/top_level.txt
