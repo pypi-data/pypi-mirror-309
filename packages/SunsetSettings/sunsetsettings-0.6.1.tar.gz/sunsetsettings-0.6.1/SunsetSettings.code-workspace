@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"todo-tree.tree.showCountsInTree": false,
+		"todo-tree.tree.showBadges": true,
+		"makefile.makefilePath": "docs/Makefile",
+		"launch": {
+			"configurations": [],
+			"compounds": []
+		},
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}

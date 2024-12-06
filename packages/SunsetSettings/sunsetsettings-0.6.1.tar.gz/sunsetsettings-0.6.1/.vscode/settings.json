@@ -1,0 +1,17 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "todo-tree.tree.showCountsInTree": false,
+    "todo-tree.tree.showBadges": true,
+    "python.analysis.extraPaths": [
+        "./sunset"
+    ],
+    "python.analysis.indexing": false,
+    "python.analysis.diagnosticSeverityOverrides": {
+        // Silence import cycle warning. Unfortunately it is overly stringent.
+        "reportImportCycles": "none",
+        // Silence usage of private members. We use private members so as to not
+        // polute the API namespace that users of the library will see.
+        "reportPrivateUsage": "none"
+    }
+}
