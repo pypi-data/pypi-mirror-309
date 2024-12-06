@@ -1,0 +1,2 @@
+[console_scripts]
+knockpy = knock.knockpy:main
