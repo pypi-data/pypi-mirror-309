@@ -1,0 +1,12 @@
+fast_license/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_license/__main__.py,sha256=OsM0lnfRDuwu76j65wU0n4hkKOVvt2zVEUR2dAeUzbA,44
+fast_license/api_manager.cpython-310-darwin.so,sha256=A38SO6DrDd2DfQ2E_97t8U9y43QEqB85HWhdfMLF54Q,177104
+fast_license/api_manager.pyi,sha256=c0JeNaF6ZP5R2loTCHNXsS6QYmMpgJBu5tHYhcWK6J4,424
+fast_license/license.cpython-310-darwin.so,sha256=DFnVifa5jwv6qEPkdOemOIs2aW9CdgRcpBwTzCgl8Nk,198800
+fast_license/license.pyi,sha256=hzwxUJMheDpRwjpYhbEkf2V3X5paIsEhOpCYGOfJlL8,940
+fast_license/middleware.cpython-310-darwin.so,sha256=UeW17r-A9lKKTlel1cTVhaZbhsgUVb3HDRtyjsvcmX4,120032
+fast_license/middleware.pyi,sha256=VuiTZ6K5Q2jcDZPXGkVPE-s2Bt7u1KInyQC9r3v3Yus,531
+fast_license-0.1.1.dist-info/METADATA,sha256=MlDU7mcdFyJFeBQFw0h0ZlNgABD1OKi80kaMnahXwmc,1790
+fast_license-0.1.1.dist-info/WHEEL,sha256=E2L8cNry8_qENFWMb8KxRWLe-RhZW94hLc32Xo3HiTg,110
+fast_license-0.1.1.dist-info/top_level.txt,sha256=qsko6xQYQZO2ldrOrVJEATWhJH0RC0Witc1etj3P6DQ,13
+fast_license-0.1.1.dist-info/RECORD,,
