@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tensorgrad_lexer/__init__.py
+tensorgrad_lexer/tensorgrad_lexer.py
+tglexer.egg-info/PKG-INFO
+tglexer.egg-info/SOURCES.txt
+tglexer.egg-info/dependency_links.txt
+tglexer.egg-info/entry_points.txt
+tglexer.egg-info/requires.txt
+tglexer.egg-info/top_level.txt
