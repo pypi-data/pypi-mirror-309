@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: volkoff
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: base58>=2.1.1
+Requires-Dist: cryptography>=43.0.3
+Requires-Dist: ecdsa>=0.19.0
+Requires-Dist: keyboard>=0.13.5
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: questionary>=1.10.0
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+# Volkoff
+
+A simple script to encrypt and decrypt files.
+
+Install as a package globally with:
+
+```bash
+pip install volkoff
+```
