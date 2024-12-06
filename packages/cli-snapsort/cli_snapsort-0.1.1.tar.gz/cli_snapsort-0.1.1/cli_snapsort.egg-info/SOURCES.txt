@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+cli_snapsort.egg-info/PKG-INFO
+cli_snapsort.egg-info/SOURCES.txt
+cli_snapsort.egg-info/dependency_links.txt
+cli_snapsort.egg-info/entry_points.txt
+cli_snapsort.egg-info/requires.txt
+cli_snapsort.egg-info/top_level.txt
+snap_sort/__init__.py
+snap_sort/cli.py
+snap_sort/exposure.py
+snap_sort/find_similar.py
+snap_sort/redo.py
+snap_sort/semantic.py
