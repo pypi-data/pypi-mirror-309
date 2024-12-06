@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+ChromaStyler.egg-info/PKG-INFO
+ChromaStyler.egg-info/SOURCES.txt
+ChromaStyler.egg-info/dependency_links.txt
+ChromaStyler.egg-info/top_level.txt
+FontColors/__init__.py
+FontColors/back.py
+FontColors/color.py
+FontColors/style.py

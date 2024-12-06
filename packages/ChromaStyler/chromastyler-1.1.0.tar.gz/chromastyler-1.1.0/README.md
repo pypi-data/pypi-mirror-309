@@ -1,0 +1,54 @@
+## Installation
+
+To install the package, use `pip`:
+
+```bash
+pip install ChromaStyler
+```
+##ChromaStyler library:
+ a library to get colors in python.
+ use this library to make output colored!
+##How to use:
+ this library have three diferent parts: color, style, back
+ #Color(text color):
+  to use this library for text color, you can import color or use it directly:
+   ```bash 
+   import ChromaStyler 
+   ```
+   or
+   ```bash
+   from ChromaStyler import color
+   ```
+  to use color, just enter what color do you want:
+   ```bash
+   blue = color.blue \# Or ChromaStyler.style.bold if tou use import ChromaStyler
+   print(blue + 'hello this is a blue text')
+   ```
+ #Style(font style):
+  to use this library for font style, you can import style or use it directly:
+   ```bash
+   import ChromaStyler
+   ```
+   or
+   ```bash
+   from ChromaStyler import style
+   ```
+  to use style, just enter what style do you want:
+   ```bash
+   bold = style.bold \# Or ChromaStyler.style.bold if tou use import ChromaStyler
+   print(bold + 'hello this is a bold text')
+   ```
+ #back(background color):
+  to use this library for background color, you can import style or use it directly:
+   ```bash
+   import ChromaStyler
+   ```
+   or
+   ```bash
+   from ChromaStyler import back
+   ```
+  to use style, just enter what style do you want:
+   ```bash
+   bold = back.purple \# Or ChromaStyler.style.bold if tou use import ChromaStyler
+   print(purple + 'hello this is a normal text with purple background')
+   ```
