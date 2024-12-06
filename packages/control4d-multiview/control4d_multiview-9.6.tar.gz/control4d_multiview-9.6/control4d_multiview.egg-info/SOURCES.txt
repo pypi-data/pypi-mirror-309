@@ -1,0 +1,7 @@
+main.py
+setup.py
+control4d_multiview.egg-info/PKG-INFO
+control4d_multiview.egg-info/SOURCES.txt
+control4d_multiview.egg-info/dependency_links.txt
+control4d_multiview.egg-info/requires.txt
+control4d_multiview.egg-info/top_level.txt
