@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: core-tests
+Version: 1.0.4
+Summary: This project contains basic elements for testing purposes and the ability
+Author-email: Alejandro Cora González <alek.cora.glez@gmail.com>
+Maintainer: Alejandro Cora González
+License: MIT
+Project-URL: Homepage, https://gitlab.com/bytecode-solutions/core/core-tests
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: environs==11.2.0
+Requires-Dist: click==8.1.7
+Requires-Dist: coverage==7.6.7
+Provides-Extra: test
+
+# core-tests
+_______________________________________________________________________________
+
+This project contains basic elements for testing purposes and the ability 
+to run (via console commands) tests and code coverage (unittest-based). This way, we can 
+stick to the `DRY -- Don't Repeat Yourself` principle...
+
+## How to Use
+```shell
+pip install core-tests
+```
+
+```python
+# manager.py
+
+from click.core import CommandCollection
+from core_tests.tests.runner import cli_tests
+
+if __name__ == "__main__":
+    cli = CommandCollection(sources=[cli_tests()])
+    cli()
+```
+
+```shell
+python manager.py run-tests
+python manager.py run-coverage
+```
+
+## Execution Environment
+
+### Install libraries
+```commandline
+pip install --upgrade pip 
+pip install virtualenv
+```
+
+### Create the Python Virtual Environment.
+```commandline
+virtualenv --python=python3.11 .venv
+```
+
+### Activate the Virtual Environment.
+```commandline
+source .venv/bin/activate
+```
+
+### Install required libraries.
+```commandline
+pip install .
+```
+
+### Check tests and coverage...
+```commandline
+python manager.py run-tests
+python manager.py run-coverage
+```

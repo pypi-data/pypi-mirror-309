@@ -1,0 +1,52 @@
+# Other project metadata fields as specified in:
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "core-tests"
+version = "1.0.4"
+
+description = """
+    This project contains basic elements for testing purposes and the ability
+    to run tests and coverage as a command...
+"""
+
+authors = [
+    {name = "Alejandro Cora González", email = "alek.cora.glez@gmail.com"}
+]
+
+maintainers = [
+    {name = "Alejandro Cora González"}
+]
+
+requires-python = ">=3.7"
+license = {text = "MIT"}
+readme = "README.md"
+
+classifiers = [
+    # Classifiers -> https://pypi.org/classifiers/
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "environs==11.2.0",
+    "click==8.1.7",
+    "coverage==7.6.7"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/bytecode-solutions/core/core-tests"
+
+[project.optional-dependencies]
+test = []
