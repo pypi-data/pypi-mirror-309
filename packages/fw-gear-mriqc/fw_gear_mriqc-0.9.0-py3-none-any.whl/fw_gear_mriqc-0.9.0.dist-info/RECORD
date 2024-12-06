@@ -1,0 +1,10 @@
+fw_gear_mriqc/__init__.py,sha256=LFI4SZCjul6z5OMGymcpujnbdAVl9Z8RcnJ39VdXPOk,149
+fw_gear_mriqc/main.py,sha256=HcpEWUJK9Dn5pbjI-YslXQhWdCNB3mhrAw1zV44lMjE,5256
+fw_gear_mriqc/markup.py,sha256=zLhVKj1zzpLF6MGKkhngN4xrn7WIIByhrWYjX3VyvT0,5364
+fw_gear_mriqc/parser.py,sha256=fttv5YG4xIzDy4lhKNcnwpY_Tb9K9cgl3WghvMzGhXA,5322
+fw_gear_mriqc/setup.py,sha256=27wycl0Pn0ajpo87Vnm05MNU8tieu1KtaOOWfH1yIPs,1479
+fw_gear_mriqc/utils.py,sha256=TdyqEJBfUSsGZRTVTPKWR3Z7P9gpV41FXYd68M0pRCc,1524
+fw_gear_mriqc-0.9.0.dist-info/LICENSE,sha256=NNC8xrLtqnhvmkJdOB71ctPp2jBi_2V5u9RzRVEpBcs,1092
+fw_gear_mriqc-0.9.0.dist-info/METADATA,sha256=rh78YlZF2tYFLjZYLIHtnd_YfHhJojJxUe2FIiu0-pU,4717
+fw_gear_mriqc-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fw_gear_mriqc-0.9.0.dist-info/RECORD,,
