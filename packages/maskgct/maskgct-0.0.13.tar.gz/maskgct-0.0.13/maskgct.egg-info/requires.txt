@@ -1,0 +1,8 @@
+pykakasi
+pyopenjtalk
+phonemizer
+cn2an
+pypinyin
+unidecode
+jieba
+json5
