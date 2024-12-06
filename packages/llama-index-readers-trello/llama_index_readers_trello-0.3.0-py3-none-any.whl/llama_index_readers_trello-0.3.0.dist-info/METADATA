@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: llama-index-readers-trello
+Version: 0.3.0
+Summary: llama-index readers trello integration
+License: MIT
+Keywords: trello
+Author: Your Name
+Author-email: you@example.com
+Maintainer: bluzir
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: py-trello (>=0.19.0,<0.20.0)
+Description-Content-Type: text/markdown
+
+# Trello Loader
+
+```bash
+pip install llama-index-readers-trello
+```
+
+This loader loads documents from Trello. The user specifies an API key and API token to initialize the TrelloReader. They then specify a board_id to
+load in the corresponding Document objects representing Trello cards.
+
+## Usage
+
+Here's an example usage of the TrelloReader.
+
+```python
+import os
+
+from llama_index.readers.trello import TrelloReader
+
+reader = TrelloReader("<Trello_API_KEY>", "<Trello_API_TOKEN>")
+documents = reader.load_data(board_id="<BOARD_ID>")
+```
+
+This loader is designed to be used as a way to load data into LlamaIndex and/or subsequently used as a Tool in a LangChain Agent. See here for
+examples.
+
