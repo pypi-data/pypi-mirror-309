@@ -1,0 +1,2 @@
+[console_scripts]
+aqmp = aqmp.main:main
