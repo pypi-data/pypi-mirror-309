@@ -1,0 +1,10 @@
+pynput
+Pillow
+
+[:platform_system == "Darwin"]
+pyautogui
+
+[test]
+pytest>=7.0
+pytest-cov
+pytest-mock
