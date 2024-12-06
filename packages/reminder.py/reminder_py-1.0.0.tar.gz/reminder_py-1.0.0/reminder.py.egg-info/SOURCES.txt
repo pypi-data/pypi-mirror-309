@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+reminder/__init__.py
+reminder/controller.py
+reminder/py.typed
+reminder/remind.py
+reminder/schedule.py
+reminder/utils.py
+reminder.py.egg-info/PKG-INFO
+reminder.py.egg-info/SOURCES.txt
+reminder.py.egg-info/dependency_links.txt
+reminder.py.egg-info/top_level.txt
