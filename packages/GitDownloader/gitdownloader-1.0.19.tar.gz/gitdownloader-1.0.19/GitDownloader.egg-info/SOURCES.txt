@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GitDownloader/__init__.py
+GitDownloader/cli.py
+GitDownloader/downloader.py
+GitDownloader.egg-info/PKG-INFO
+GitDownloader.egg-info/SOURCES.txt
+GitDownloader.egg-info/dependency_links.txt
+GitDownloader.egg-info/entry_points.txt
+GitDownloader.egg-info/requires.txt
+GitDownloader.egg-info/top_level.txt
