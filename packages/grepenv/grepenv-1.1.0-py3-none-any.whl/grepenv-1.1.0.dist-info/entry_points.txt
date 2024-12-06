@@ -1,0 +1,4 @@
+[console_scripts]
+ge=grepenv.__main__:main
+grepenv=grepenv.__main__:main
+
