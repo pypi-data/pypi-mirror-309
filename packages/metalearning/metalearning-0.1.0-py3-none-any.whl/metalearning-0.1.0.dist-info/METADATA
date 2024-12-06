@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: metalearning
+Version: 0.1.0
+Summary: Meta Learning
+Home-page: http://github.io/zhiqingxiao/metalearning
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+metalearning: A package for meta learning.
+=======================
+
+The package `metalearning` provides implementations of meta-learning algorithms and their usage examples.
+
+### Run Example
+
+```
+from metalearning.example import maml_example
+maml_example()
+```
