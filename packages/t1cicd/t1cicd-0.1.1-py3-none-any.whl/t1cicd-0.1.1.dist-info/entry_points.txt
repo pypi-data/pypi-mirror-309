@@ -1,0 +1,5 @@
+[console_scripts]
+cicd=t1cicd.cicd.cli.cli:main
+example=t1cicd.cicd.db.example:main
+server=t1cicd.cicd.server.run:main
+
