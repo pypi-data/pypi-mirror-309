@@ -1,0 +1,9 @@
+cudaq_qec-0.1.0.dist-info/METADATA,sha256=tmC96I9ZH8NPifKFb0HBrS_EfgqX29aP7KkW1oohpi0,2261
+cudaq_qec-0.1.0.dist-info/WHEEL,sha256=mJLU1RQwO1EVB1lOMGMcbPZXCXCQtyFqWQvC-JvhUs0,157
+cudaq_qec-0.1.0.dist-info/RECORD,,
+cudaq_qec/patch.py,sha256=kdSvZW8GemnBu3VB_SlAbNyinweErOQnON50XZqXCSI,2134
+cudaq_qec/_pycudaqx_qec_the_suffix_matters_cudaq_qec.cpython-312-x86_64-linux-gnu.so,sha256=iTkwi_j6mi5cC1haWSlpboQwX5iCZaO-nVGv5GW_liY,393232
+cudaq_qec/__init__.py,sha256=0H0PmKkvKkGhU_oRyCTp7rPLTBYE8U-IpMWVAMQdn80,1650
+cudaq_qec/lib/libcudaq-qec.so,sha256=Ju1Cy-d52fCpZMcoRyPBVvZMUTV2ear-T6Z8ThqIEcE,1346416
+cudaq_qec/plugins/decoders/example.py,sha256=KkYg-KwBqdRUybQwfKjvFGa7NWWlpQyBftdZjY1Ta3U,1009
+cudaq_qec/plugins/codes/example.py,sha256=hufzoJhzCOB3TBauGFCv-7KtS1MR46-icZE2mHfAy3A,2632
