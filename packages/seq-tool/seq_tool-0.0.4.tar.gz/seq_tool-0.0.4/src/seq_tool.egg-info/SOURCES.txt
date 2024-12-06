@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/seq_tool/__init__.py
+src/seq_tool/command_line_interface.py
+src/seq_tool/data_processing.py
+src/seq_tool/graphical_interface.py
+src/seq_tool/gsp_algorithm.py
+src/seq_tool/utils.py
+src/seq_tool.egg-info/PKG-INFO
+src/seq_tool.egg-info/SOURCES.txt
+src/seq_tool.egg-info/dependency_links.txt
+src/seq_tool.egg-info/entry_points.txt
+src/seq_tool.egg-info/requires.txt
+src/seq_tool.egg-info/top_level.txt
