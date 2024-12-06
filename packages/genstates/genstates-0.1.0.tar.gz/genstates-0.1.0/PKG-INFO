@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: genstates
+Version: 0.1.0
+Summary: 
+Author: Jeffrey04
+Author-email: mycyberpet@yahoo.com
+Requires-Python: >=3.12,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: genruler (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+
