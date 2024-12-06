@@ -1,0 +1,2 @@
+[keyring.backends]
+StdioProxyBackend = keyring_proxy_stdio:StdioProxyBackend
