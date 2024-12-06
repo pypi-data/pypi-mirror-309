@@ -1,0 +1,9 @@
+impunity/__init__.py,sha256=idWSgHlAuRFXLSPVczgP0672yUAwjclRdEHTM93x-h0,54
+impunity/exception.py,sha256=iQOVntBXR4GTXVPsPORZGf2pOQ0fetoPCGmp9TKKnww,520
+impunity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+impunity/quantityNode.py,sha256=kuoTChBGPzRMHfMMNq7kEm_XziPM5MRa8LqDgqpCyU4,572
+impunity/visitor.py,sha256=bHp3J7roWiQAC5vN0XxczU_hwc6T2uIHA2VCmnm2uOg,43202
+impunity/wrapper.py,sha256=r4lxLkJzxH36Lgl92j_JLhsk9OV7W6LcIQbf5Zh8KN8,9774
+impunity-1.0.5.dist-info/METADATA,sha256=k_6vHiDOjVnmy5PGmYz3STv1zKTMRorYrPfXfmQVDCk,3862
+impunity-1.0.5.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+impunity-1.0.5.dist-info/RECORD,,
