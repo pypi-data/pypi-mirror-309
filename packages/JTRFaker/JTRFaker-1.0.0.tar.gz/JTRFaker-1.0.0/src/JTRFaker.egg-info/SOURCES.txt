@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/JTRFaker.egg-info/PKG-INFO
+src/JTRFaker.egg-info/SOURCES.txt
+src/JTRFaker.egg-info/dependency_links.txt
+src/JTRFaker.egg-info/requires.txt
+src/JTRFaker.egg-info/top_level.txt
+src/ModelFaker/ModelFaker.py
+src/ModelFaker/__init__.py
+src/ModelFaker/Enum/ModelColumnTypesEnum.py
+src/ModelFaker/Enum/ModelRelationTypesEnum.py
+src/ModelFaker/Enum/__init__.py
+test/test_model_faker.py
