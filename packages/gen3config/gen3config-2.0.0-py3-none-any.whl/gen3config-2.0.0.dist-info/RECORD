@@ -1,0 +1,9 @@
+NOTICE,sha256=qZ9q85y3d5rf3yjoJI6p7Ng4pHVxnkhVW8mJryolWFE,558
+gen3config/__init__.py,sha256=0MjvLIso6TVRJF2dGc5RYUP_2ps_RWHkgRhq_hBIPOM,37
+gen3config/config.py,sha256=zc4fPiXXk72XkkARvzOIQxVX4se1j4N-poiXzZUMIHo,13303
+gen3config/errors.py,sha256=CWWGrJK8wVHd62OJtwsrYFz-RU-hWn9JFb7aJrtTwZg,25
+gen3config-2.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+gen3config-2.0.0.dist-info/METADATA,sha256=Lx3UexL7QrLD1UNjA5ZQainGZI8_zg8AKJbDUl4h9iY,3691
+gen3config-2.0.0.dist-info/NOTICE,sha256=qZ9q85y3d5rf3yjoJI6p7Ng4pHVxnkhVW8mJryolWFE,558
+gen3config-2.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gen3config-2.0.0.dist-info/RECORD,,
