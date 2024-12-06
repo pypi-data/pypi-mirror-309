@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: prackevin-11
+Version: 0.1.0
+Summary: A library with 10 unique print functions.
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+A simple package with 10 default print functions to customize as needed.
