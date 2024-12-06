@@ -1,0 +1,3 @@
+[console_scripts]
+elasticsearch-reindex = elasticsearch_reindex.__main__:reindex
+elasticsearch_reindex = elasticsearch_reindex.__main__:reindex
