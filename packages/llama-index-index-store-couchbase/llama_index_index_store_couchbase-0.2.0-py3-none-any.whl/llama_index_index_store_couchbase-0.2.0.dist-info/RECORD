@@ -1,0 +1,6 @@
+llama_index/storage/index_store/couchbase/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/storage/index_store/couchbase/__init__.py,sha256=sTlf1VD9CSeIqmNzPVFQM_0XeKoRrhsqkZwt68G-OEE,115
+llama_index/storage/index_store/couchbase/base.py,sha256=xvUyHNUlJJtOjcsVi73MNkAZ5D3L6E3o5T7mkZV7G6M,1518
+llama_index_index_store_couchbase-0.2.0.dist-info/METADATA,sha256=9vPvtiyLI8rsA66O7Cj1NATT6lZtPJk5AjvKBwzhes4,749
+llama_index_index_store_couchbase-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_index_store_couchbase-0.2.0.dist-info/RECORD,,
