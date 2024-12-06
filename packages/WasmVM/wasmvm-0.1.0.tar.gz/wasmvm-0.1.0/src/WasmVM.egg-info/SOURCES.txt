@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/WasmVM.egg-info/PKG-INFO
+src/WasmVM.egg-info/SOURCES.txt
+src/WasmVM.egg-info/dependency_links.txt
+src/WasmVM.egg-info/top_level.txt
+src/wasmvm/__init__.py
+src/wasmvm/functions.py
+src/wasmvm/lib.py
+src/wasmvm/observers.py
+src/wasmvm/shared.py
+src/wasmvm/virtual_machine.py
