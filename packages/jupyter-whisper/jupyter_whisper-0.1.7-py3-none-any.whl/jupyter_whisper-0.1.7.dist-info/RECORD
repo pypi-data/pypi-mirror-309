@@ -1,0 +1,13 @@
+jupyter_whisper/__init__.py,sha256=OAApTAbXKT_h7BVWhoZvsVatZpRCUG9ZlEBn_KUHoMw,57687
+jupyter_whisper/__version__.py,sha256=7tgaKwYjq9ADE5GkhTpADkHAN0rvSUm45JL8GH_YZrs,160
+jupyter_whisper/config.py,sha256=3nnQMgAOWNBkd584G2nBvLwDrbBh029lX8tGUHUzkR0,34247
+jupyter_whisper/search.py,sha256=gc6lL0Rm30a2NJ4jUeCdzVW3kiXP-DYehEv2gskQy4Y,1389
+jupyter_whisper/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_whisper/static/main.js,sha256=S5hX-e9ouYZty3PogvqZuIQs_GIMAKz0pguNOXKqLS4,5733
+jupyter_whisper/static/voicerecorder.js,sha256=bQEWq6vMXGxkyv9QeE0lhJj4jZ53Gnsvw6H8ocEEjb4,6087
+jupyter_whisper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_whisper-0.1.7.dist-info/LICENSE,sha256=YXFH5brwHzQ-Wgl_T4Q40xV4W2S6kTALjWhPn-sNJm4,1063
+jupyter_whisper-0.1.7.dist-info/METADATA,sha256=V8n51w4ya1wu2d7arTfQFpHdT5dE_I8uua0L-SYhNJc,7270
+jupyter_whisper-0.1.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+jupyter_whisper-0.1.7.dist-info/top_level.txt,sha256=vo8XNY8COQfK3FZ7oR19lMvxWwXGx97pvcsFtJ5zuFM,16
+jupyter_whisper-0.1.7.dist-info/RECORD,,
