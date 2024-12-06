@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: proste_ai2
+Version: 0.1.2
+Summary: Prosty pakiet AI do nauki
+Author: Situus
+Author-email: situs1235@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: scikit-learn>=1.0
+
+# Proste AI
+Proste AI to prosty pakiet AI w Pythonie, ktĂłry umoĹĽliwia zarzÄ…dzanie danymi, tworzenie modeli oraz generowanie odpowiedzi na podstawie wytrenowanego modelu. Pakiet obsĹ‚uguje wczytywanie danych z plikĂłw CSV, trenowanie modeli i ich zapis oraz pĂłĹşniejsze wykorzystanie.
+
+Instalacja
+Najpierw zainstaluj pakiet za pomocÄ… pip:
+
+pip install proste-ai
+Funkcje
+Pakiet skĹ‚ada siÄ™ z dwĂłch gĹ‚Ăłwnych klas:
+
+Dane: ZarzÄ…dza wczytywaniem i przechowywaniem danych.
+AI: ZarzÄ…dza modelami AI, ich tworzeniem, trenowaniem, zapisywaniem i wczytywaniem.
+1. Dane.wczytaj_pary_csv(plik, separator=";")
+Wczytuje dane z pliku CSV w formacie: pytanie;odpowiedĹş. Separator moĹĽna zmieniÄ‡, jeĹ›li plik CSV uĹĽywa innego.
+
+PrzykĹ‚ad:
+
+from proste_ai import Dane
+
+Dane.wczytaj_pary_csv("dane.csv", ";")  # Wczytaj dane z pliku
+2. Dane.get_pary()
+Zwraca zaĹ‚adowane dane w postaci listy par (pytanie, odpowiedĹş).
+
+PrzykĹ‚ad:
+
+from proste_ai import Dane
+
+Dane.wczytaj_pary_csv("dane.csv", ";")
+pary = Dane.get_pary()
+print(pary)  # WyĹ›wietli wczytane dane
+3. AI.create_model(nazwa, rozmiar)
+Tworzy nowy model o podanej nazwie i rozmiarze warstwy ukrytej.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+ai = AI.instance()
+ai.create_model("test", 64)  # Tworzy model o nazwie "test" z warstwÄ… ukrytÄ… 64 neuronĂłw
+4. AI.train_model(nazwa)
+Trenuje model o podanej nazwie na wczytanych danych.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+ai = AI.instance()
+ai.train_model("test")  # Trenuje model "test"
+5. AI.save_model(nazwa)
+Zapisuje model i wektor TF-IDF do pliku o nazwie nazwa.pkl.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+ai = AI.instance()
+ai.save_model("test")  # Zapisuje model "test" do pliku "test.pkl"
+6. AI.wczytaj_model(nazwa, plik)
+Wczytuje model i wektor TF-IDF z pliku o nazwie plik.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+ai = AI.instance()
+ai.wczytaj_model("test", "test.pkl")  # Wczytuje model "test" z pliku "test.pkl"
+7. AI.use(prompt, nazwa)
+Generuje odpowiedĹş na podstawie podanego promptu (pytania) za pomocÄ… modelu o nazwie nazwa.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+ai = AI.instance()
+odpowiedĹş = ai.use("CzeĹ›Ä‡, jak siÄ™ masz?", "test")
+print(odpowiedĹş)  # WyĹ›wietli odpowiedĹş wygenerowanÄ… przez model
+8. AI.s_answer_on() / AI.s_answer_off()
+WĹ‚Ä…cza lub wyĹ‚Ä…cza podpowiedzi bĹ‚Ä™dĂłw i ostrzeĹĽeĹ„.
+
+PrzykĹ‚ad:
+
+from proste_ai import AI
+
+AI.s_answer_off()  # WyĹ‚Ä…cza podpowiedzi
+AI.s_answer_on()   # WĹ‚Ä…cza podpowiedzi
+PeĹ‚ny przykĹ‚ad uĹĽycia
+from proste_ai import Dane, AI
+
+# Wczytanie danych z pliku CSV
+Dane.wczytaj_pary_csv("dane.csv", ";")
+
+# Tworzenie i trenowanie modelu
+ai = AI.instance()
+ai.create_model("test", 64)
+ai.train_model("test")
+
+# Zapisanie modelu
+ai.save_model("test")
+
+# Wczytanie modelu
+ai.wczytaj_model("test", "test.pkl")
+
+# Generowanie odpowiedzi
+prompt = input("Podaj pytanie: ")
+odpowiedĹş = ai.use(prompt, "test")
+print("OdpowiedĹş:", odpowiedĹş)
