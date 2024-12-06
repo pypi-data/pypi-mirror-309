@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+eddiepdf/__init__.py
+eddiepdf/pdf2image.py
+eddiepdf/pdf2text.py
+eddiepdf.egg-info/PKG-INFO
+eddiepdf.egg-info/SOURCES.txt
+eddiepdf.egg-info/dependency_links.txt
+eddiepdf.egg-info/top_level.txt
