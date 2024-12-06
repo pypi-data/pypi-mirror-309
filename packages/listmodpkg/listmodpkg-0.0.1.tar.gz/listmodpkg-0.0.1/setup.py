@@ -1,0 +1,28 @@
+from setuptools import setup, find_packages
+import codecs
+import os
+
+VERSION = '0.0.1'
+DESCRIPTION = 'An interesting package to help manipulate text'
+LONG_DESCRIPTION = 'A package that Jaylen Eimas just uploaded.'
+
+# Setting up
+setup(
+    name="listmodpkg",
+    version=VERSION,
+    author="KitKatJaylen",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=LONG_DESCRIPTION,
+    packages=find_packages(),
+    install_requires=['wcwidth'],
+    keywords=['python', 'text', 'unicode'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)

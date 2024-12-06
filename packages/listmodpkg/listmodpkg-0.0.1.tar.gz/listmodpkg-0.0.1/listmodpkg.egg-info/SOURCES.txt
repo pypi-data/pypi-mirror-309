@@ -1,0 +1,8 @@
+setup.py
+listmod/__init__.py
+listmod/main.py
+listmodpkg.egg-info/PKG-INFO
+listmodpkg.egg-info/SOURCES.txt
+listmodpkg.egg-info/dependency_links.txt
+listmodpkg.egg-info/requires.txt
+listmodpkg.egg-info/top_level.txt
