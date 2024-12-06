@@ -1,0 +1,249 @@
+{
+  "id": "5372e9fba42211efb8d9000063df9847",
+  "access": "public",
+  "created_at": "2024-11-17T01:30:23.335024",
+  "updated_at": "2024-11-17T01:30:23.335044",
+  "name": "Chart Generator",
+  "description": "",
+  "tags": null,
+  "thumbnail": "",
+  "thumbnail_url": null,
+  "graph": {
+    "nodes": [
+      {
+        "id": "3",
+        "parent_id": null,
+        "type": "nodetool.svg.SVGToImage",
+        "data": {
+          "width": 800,
+          "height": 600,
+          "scale": 1
+        },
+        "ui_properties": {
+          "position": {
+            "x": 935,
+            "y": 197
+          },
+          "zIndex": 0,
+          "width": 121,
+          "selectable": true
+        }
+      },
+      {
+        "id": "4",
+        "parent_id": null,
+        "type": "nodetool.workflows.base_node.Preview",
+        "data": {
+          "name": "image_output_2024-11-16"
+        },
+        "ui_properties": {
+          "position": {
+            "x": 1086,
+            "y": 167
+          },
+          "zIndex": 0,
+          "width": 327,
+          "height": 293,
+          "selectable": true
+        }
+      },
+      {
+        "id": "7",
+        "parent_id": null,
+        "type": "nodetool.workflows.base_node.Preview",
+        "data": {
+          "name": "dataframe_output_2024-11-16"
+        },
+        "ui_properties": {
+          "position": {
+            "x": 360,
+            "y": 50
+          },
+          "zIndex": 0,
+          "width": 238,
+          "height": 226,
+          "selectable": true
+        }
+      },
+      {
+        "id": "8",
+        "parent_id": null,
+        "type": "openai.agents.ChartGenerator",
+        "data": {
+          "prompt": "make a dark line chart showing gdp over year",
+          "max_tokens": 1000,
+          "temperature": 0.7,
+          "columns": {
+            "type": "record_type",
+            "columns": []
+          }
+        },
+        "ui_properties": {
+          "position": {
+            "x": 394,
+            "y": 297
+          },
+          "zIndex": 0,
+          "width": 187,
+          "selectable": true
+        }
+      },
+      {
+        "id": "9",
+        "parent_id": null,
+        "type": "openai.agents.DataGenerator",
+        "data": {
+          "prompt": "US GDP since 1990",
+          "input_text": "",
+          "image": {
+            "type": "image",
+            "uri": "",
+            "asset_id": null,
+            "data": null
+          },
+          "max_tokens": 1000,
+          "temperature": 1,
+          "columns": {
+            "type": "record_type",
+            "columns": [
+              {
+                "name": "GDP",
+                "data_type": "int",
+                "description": "gross domestic product in M"
+              },
+              {
+                "name": "Year",
+                "data_type": "int",
+                "description": "the year to report"
+              },
+              {
+                "name": "Country",
+                "data_type": "string",
+                "description": "the country"
+              }
+            ]
+          }
+        },
+        "ui_properties": {
+          "position": {
+            "x": 50,
+            "y": 115
+          },
+          "zIndex": 0,
+          "width": 250,
+          "selectable": true
+        }
+      },
+      {
+        "id": "10",
+        "parent_id": null,
+        "type": "openai.agents.SVGChartRenderer",
+        "data": {
+          "width": 640,
+          "height": 480
+        },
+        "ui_properties": {
+          "position": {
+            "x": 688,
+            "y": 231
+          },
+          "zIndex": 0,
+          "width": 157,
+          "selectable": true
+        }
+      },
+      {
+        "id": "11",
+        "parent_id": null,
+        "type": "nodetool.workflows.base_node.Preview",
+        "data": {
+          "name": "chart_config_output_2024-11-17"
+        },
+        "ui_properties": {
+          "position": {
+            "x": 658,
+            "y": 446
+          },
+          "zIndex": 0,
+          "width": 247,
+          "height": 218,
+          "selectable": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "63043d5f-d49f-459d-8d3c-04fadac99095",
+        "source": "10",
+        "sourceHandle": "output",
+        "target": "3",
+        "targetHandle": "content",
+        "ui_properties": {
+          "className": "svg_element"
+        }
+      },
+      {
+        "id": "c8fe45e2-3f3e-4d3e-9115-dd04cf51ade0",
+        "source": "9",
+        "sourceHandle": "output",
+        "target": "8",
+        "targetHandle": "data",
+        "ui_properties": {
+          "className": "dataframe"
+        }
+      },
+      {
+        "id": "ce1dbae0-ed30-4b75-ad8a-60decbc3a708",
+        "source": "8",
+        "sourceHandle": "output",
+        "target": "10",
+        "targetHandle": "chart_config",
+        "ui_properties": {
+          "className": "chart_config"
+        }
+      },
+      {
+        "id": "b7ca81fb-46e7-4fe0-9d7b-5b4f1c17107a",
+        "source": "9",
+        "sourceHandle": "output",
+        "target": "7",
+        "targetHandle": "value",
+        "ui_properties": {
+          "className": "dataframe"
+        }
+      },
+      {
+        "id": "68",
+        "source": "3",
+        "sourceHandle": "output",
+        "target": "4",
+        "targetHandle": "value",
+        "ui_properties": {
+          "className": "image"
+        }
+      },
+      {
+        "id": "0b590385-7d52-4f79-a31e-210a1874ff25",
+        "source": "9",
+        "sourceHandle": "output",
+        "target": "10",
+        "targetHandle": "data",
+        "ui_properties": {
+          "className": "dataframe"
+        }
+      },
+      {
+        "id": "63044",
+        "source": "8",
+        "sourceHandle": "output",
+        "target": "11",
+        "targetHandle": "value",
+        "ui_properties": {
+          "className": "chart_config"
+        }
+      }
+    ]
+  },
+  "input_schema": null,
+  "output_schema": null
+}
