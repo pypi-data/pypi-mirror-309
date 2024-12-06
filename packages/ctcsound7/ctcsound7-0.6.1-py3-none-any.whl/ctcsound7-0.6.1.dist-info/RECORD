@@ -1,0 +1,13 @@
+ctcsound7/__init__.py,sha256=rJelUHcSUSjzMBNy6AB2vLQAYacPVSvxyaOdnBTkvvI,2387
+ctcsound7/_dll.py,sha256=irHmeTDL6y_bP5hKOx6Vddyz_pwkQGXZzKkghvc8e3Y,1234
+ctcsound7/_util.py,sha256=mGsTmKiIdvu6W0lxRT-GNG-8iTj23iOXzAS7fi6Eqd4,4630
+ctcsound7/api6.py,sha256=efTlJ8ijbgalwgyMiUceibXOugFjGdOo1DBcDvpd5gM,127536
+ctcsound7/api7.py,sha256=WG18Kr3izrt-NRp1yAmptNkYL-SjyqI2a1vVdm0fFOc,89907
+ctcsound7/common.py,sha256=6kigflcmMZW_64HIhJVgTGIUMtytjPKZEVhqZALpIGQ,9304
+ctcsound7/extra.py,sha256=llPELkhur9FEB-uBGGfvTUpFAq4jNNvHABlwPOKrXLQ,20
+ctcsound7/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctcsound7-0.6.1.dist-info/LICENSE,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+ctcsound7-0.6.1.dist-info/METADATA,sha256=WLWdrMYTuIjg6NQTGRfvjZvOrgYAlWsh4MzCgiOYhy8,31427
+ctcsound7-0.6.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ctcsound7-0.6.1.dist-info/top_level.txt,sha256=SqzUkF-BP_DWO6xto85s5vrmxy4K_eUvVotMxtkKKPw,10
+ctcsound7-0.6.1.dist-info/RECORD,,
