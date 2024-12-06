@@ -1,0 +1,14 @@
+requestyai/__init__.py,sha256=5YfzJuApwyYgo-Nqx7PS3GAiq7pgSP9MZlVCMf3Vz4s,46
+requestyai/ainsights/__init__.py,sha256=m5aqO_lgvEG4Igw9PZyQ7g1AirPrITf7i4nzC_bbKJ8,43
+requestyai/ainsights/client.py,sha256=bTSxC1t9vA6reE5R7S1TKLts6HahVRg6nwSkkSAKzuw,1753
+requestyai/ainsights/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requestyai/ainsights/types/event.py,sha256=giIfsp02RbxCZFHg3ar5GmkGoq4ZmrMNxzgWuq6xWcw,267
+requestyai/http/async_client.py,sha256=nazkZ3-E0IN0amFVgt_HwvufxysoK5g6rK4bU0N75pc,4211
+requestyai/http/atomic.py,sha256=5LMyLzqFxQ92PChp9idUgUFv7_50VOig0_qOKhb_koY,396
+requestyai/http/retry_jitter_type.py,sha256=F25Fp5PhLHTGeZq4oB3yJD-eU6MOHTElgXOdhC36-BE,109
+requestyai/http/retry_policy.py,sha256=Rjyo2T8BOQUi0hhH2yrrN-ybxssdt60i49hdk8GxHd8,2401
+requestyai/http/retry_transport.py,sha256=xAbqjRZEGKkaWZVx0cmjXz8P8Y6YKpGLnmHe9Fw1SR4,876
+requestyai-0.1.3.dist-info/LICENSE,sha256=wnuyB1trOqUH-w5ia9KAa7aGObgHXwCH8io4I7BqrLE,11343
+requestyai-0.1.3.dist-info/METADATA,sha256=ZwcOIvs5JSB2h_gcPFXYIz31xe1x40GLnE9kIxo1Adc,5809
+requestyai-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+requestyai-0.1.3.dist-info/RECORD,,
