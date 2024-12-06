@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: trembao
+Version: 0.0.0
+Summary: Trembão: Um framework inovador.
+Home-page: https://github.com/ArturArantes/trembao
+Author: Artur Arantes Santos da Silva
+Author-email: contact@trembao.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TrembÃ£o
+
+TrembÃ£o Ã© um framework Python inovador para transformar componentes Jinja2 em Single Page Applications (SPA), PWAs e mais.
+
+## InstalaÃ§Ã£o
+
+```bash
+pip install trembao
+```
