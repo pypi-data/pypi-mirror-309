@@ -1,0 +1,44 @@
+[project]
+name = "py_jwt_cpp"
+requires-python = ">=3.8"
+authors = [
+  {name = "Yanghsing Lin", email = "yanghsing.lin@gmail.com"}
+]
+maintainers = [
+  {name = "Yanghsing Lin", email = "yanghsing.lin@gmail.com"}
+]
+description = "A Python wrapper around jwt-cpp"
+version = "0.1.0"
+dynamic = ["readme"]
+
+[project.urls]
+Homepage = "https://github.com/mz026/py_jwt_cpp"
+Documentation = "https://github.com/mz026/py_jwt_cpp"
+Repository = "https://github.com/mz026/py_jwt_cpp"
+Issues = "https://github.com/mz026/py_jwt_cpp/issues"
+
+[tool.poetry]
+name = "py_jwt_cpp"
+version = "0.1.0"
+description = "A Python wrapper around jwt-cpp"
+authors = ["Yanghsing Lin <yanghsing.lin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+pybind11 = "^2.13.6"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+[build-system]
+requires = [
+  "poetry-core",
+  "pybind11",
+  'setuptools; python_version >= "3.10"',
+  'setuptools == 65.5.0; python_version <= "3.9"'
+]
+build-backend = "poetry.core.masonry.api"
