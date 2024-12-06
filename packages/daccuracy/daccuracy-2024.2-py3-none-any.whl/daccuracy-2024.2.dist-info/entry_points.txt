@@ -1,0 +1,3 @@
+[console_scripts]
+daccuracy = daccuracy.cli.daccuracy:Main
+two_d_labeled_slices_to_3d = daccuracy.cli.two_d_labeled_slices_to_3d:Main
