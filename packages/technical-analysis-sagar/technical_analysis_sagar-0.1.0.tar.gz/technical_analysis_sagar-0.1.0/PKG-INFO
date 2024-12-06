@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: technical_analysis_sagar
+Version: 0.1.0
+Summary: A comprehensive Python library for technical analysis of financial markets
+Home-page: https://github.com/sagar9187/technical_analysis
+Author: Sagar Jadhav
+Author-email: jadhavsagar750@gmail.com
+Keywords: technical-analysis finance trading stock-market crypto forex patterns indicators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: yfinance>=0.2.0
+Requires-Dist: ta>=0.10.1
+
+# Technical Analysis Library
+
+A Python library for financial market analysis, offering comprehensive insights through technical indicators, oscillators, moving averages, and market recommendations. Ideal for traders and analysts working with stocks, crypto, and forex.
+
+---
+
+## Features
+
+### 1. Oscillators
+- RSI (Relative Strength Index)
+- Stochastic K
+- CCI (Commodity Channel Index)
+- ADX (Average Directional Index)
+- AO (Awesome Oscillator)
+- MOM (Momentum)
+- MACD (Moving Average Convergence Divergence)
+- StochRSI (Stochastic RSI)
+- Williams %R
+- BB Power (Bollinger Bands Power)
+- UO (Ultimate Oscillator)
+
+### 2. Moving Averages
+- SMA (Simple Moving Averages) - 10, 20, 30, 50, 100, 200 periods
+- EMA (Exponential Moving Averages) - 10, 20, 30, 50, 100, 200 periods
+- Ichimoku Cloud
+- VWMA (Volume Weighted Moving Average)
+- Hull MA (Hull Moving Average)
+
+### 3. Market Recommendation
+- Summarizes BUY, SELL, and NEUTRAL signals for decision-making.
+
+---
+
+## Installation
+```bash
+pip install TechnicalAnalysisLibrary
