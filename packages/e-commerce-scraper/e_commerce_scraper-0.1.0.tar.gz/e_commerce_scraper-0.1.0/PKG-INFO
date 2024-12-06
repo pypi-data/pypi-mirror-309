@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: e_commerce_scraper
+Version: 0.1.0
+Summary: A bot which scrapes products from Tunisian e-commerce websites
+License: MIT
+Requires-Python: >=3.6
+Provides-Extra: dev
