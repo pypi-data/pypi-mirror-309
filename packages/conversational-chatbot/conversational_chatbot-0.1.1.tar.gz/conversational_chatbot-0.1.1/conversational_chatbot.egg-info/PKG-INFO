@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: conversational_chatbot
+Version: 0.1.1
+Summary: Conversational chatbot
+Home-page: https://github.com/Abdujalilc/python_ai_basics.git
+Author: Abdujalil
+Author-email: achuliev@wiut.uz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
