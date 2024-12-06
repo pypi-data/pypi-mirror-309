@@ -1,0 +1,2 @@
+[console_scripts]
+compressor = main:main
