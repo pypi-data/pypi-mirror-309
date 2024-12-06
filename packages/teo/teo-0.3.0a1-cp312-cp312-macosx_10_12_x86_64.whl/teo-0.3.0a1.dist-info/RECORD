@@ -1,0 +1,12 @@
+teo-0.3.0a1.dist-info/METADATA,sha256=V0Hp3TMfVzHCfScAvqI0M_vTRntfdmyV8N9U2qAq_dI,5654
+teo-0.3.0a1.dist-info/WHEEL,sha256=e8XqpEWHzTtB8HIScpFQorSMvLkarMZnTPy5naVyuko,106
+teo-0.3.0a1.dist-info/entry_points.txt,sha256=o2q3ii7cRKw3dwifdwyQBipbxq_LRa_o3JJFIGN0__I,35
+teo-0.3.0a1.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+teo/test/__init__.py,sha256=U534QfOBGOZPVJ62t6XAJmVpnpzWBp1xDQGnJcDmQ-U,775
+teo/test/matchers.py,sha256=xQyVyMxwx7KnXFB6ELC1EKUa1MlotkwLkogE3YiCHHk,8449
+teo/__init__.pyi,sha256=13oGR2eaBBeNcHz5pjMVIjcbp0eRGOtvYebGwiU0cNE,22733
+teo/__init__.py,sha256=RM_-oyvh6Lw5tNjhXBMI-gg-F1ib8j-FapZF-myuBeg,2740
+teo/cli.py,sha256=IKEeFOaqCvTRD73O5fGxzkNc7ifVfsH9FiKhY1IJIFc,106
+teo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teo/teo.cpython-312-darwin.so,sha256=kUKRJayxq9BuW97uGLNvmUFqglKPqKKgsFkfNlG_Z00,42342680
+teo-0.3.0a1.dist-info/RECORD,,
