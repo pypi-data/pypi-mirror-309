@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+keepsafe/__init__.py
+keepsafe/core.py
+keepsafe.egg-info/PKG-INFO
+keepsafe.egg-info/SOURCES.txt
+keepsafe.egg-info/dependency_links.txt
+keepsafe.egg-info/requires.txt
+keepsafe.egg-info/top_level.txt
+tests/test_keepsafe.py
