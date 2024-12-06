@@ -1,0 +1,134 @@
+Metadata-Version: 2.3
+Name: vector-sdk
+Version: 0.1.1
+Summary: Universal SDK for Vector DBs
+Project-URL: Homepage, https://github.com/dhruv-anand-aintech/vector-sdk.git
+Project-URL: Bug Tracker, https://github.com/dhruv-anand-aintech/vector-sdk/issues
+Author-email: Dhruv Anand <dhruv.anand@ainorthstartech.com>, Hadi Khan <hadikhan.techx@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov>=2.0; extra == 'dev'
+Requires-Dist: pytest>=6.0; extra == 'dev'
+Requires-Dist: qdrant-client[fastembed]; extra == 'dev'
+Requires-Dist: ruff>=0.1.6; extra == 'dev'
+Requires-Dist: uv>=0.1.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Vector SDK
+
+[![Upload Python Package](https://github.com/dhruv-anand-aintech/vector-sdk/actions/workflows/python-publish.yml/badge.svg?branch=main)](https://github.com/dhruv-anand-aintech/vector-sdk/actions/workflows/python-publish.yml)
+[![Code style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+
+Universal SDK for Vector Databases
+
+## Features
+
+- Universal interface for multiple vector databases
+- Type-safe operations
+- Consistent API across different vector DB providers
+- Built-in telemetry (optional)
+
+## Installation
+
+```bash
+pip install vector-sdk
+```
+
+## Development Setup
+
+### Prerequisites
+- Python 3.10 or higher
+- Git
+- pip (for installing uv)
+
+### Local Development Setup
+
+1. **Add Remote Repository to Your Local Repository:**
+    ```bash
+    git remote add origin https://github.com/dhruv-anand-aintech/vector-sdk.git
+    git fetch origin
+    git checkout -b main origin/main
+    ```
+
+2. **Install Development Tools:**
+    ```bash
+    pip install -U uv pre-commit
+    ```
+
+3. **Set Up the Development Environment:**
+    ```bash
+    # Create and activate virtual environment
+    # Windows
+    python -m venv .venv
+    .venv\Scripts\activate
+
+    # Unix/Mac
+    python -m venv .venv
+    source .venv/bin/activate
+
+    # Install dependencies
+    uv pip install -e ".[dev]"
+
+    # Setup pre-commit hooks
+    pre-commit install
+    ```
+
+## Project Structure
+
+```
+vector-sdk/
+├── src/                    # Source code
+│   └── vector_sdk/        # Main package
+├── tests/                 # Test files
+├── docs/                  # Documentation
+└── .github/               # GitHub Actions workflows
+```
+
+## Development Workflow
+
+1. Create a new branch for your feature/fix
+2. Make your changes
+3. Commit your changes (pre-commit hooks will run automatically)
+4. Push and create a PR
+
+## Version Management
+
+We use semantic versioning (X.Y.Z):
+- **X**: Major version (breaking changes)
+- **Y**: Minor version (new features)
+- **Z**: Patch version (bug fixes)
+
+To bump version:
+```bash
+python bump_version.py <major|minor|patch|rc|release>
+```
+
+## Release Process
+
+1. Bump version using `bump_version.py`
+2. Run release script: (Only for Windows PowerShell)
+    ```powershell
+    .\release.ps1 <rc|release>
+    ```
+
+## Documentation
+
+Detailed documentation is available in the `docs/` directory:
+- [Installation Guide](docs/installation.md)
+- [Usage Instructions](docs/usage.md)
+- [Telemetry Information](docs/telemetry.md)
+- [Versioning Information](docs/versioning.md)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details
+```
