@@ -1,0 +1,6 @@
+llama_index/readers/readme/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/readers/readme/__init__.py,sha256=Rw1EC5AlIgsyOu1tJMhuH7SWFD_tURclPuPqHpqnZik,85
+llama_index/readers/readme/base.py,sha256=3v-Wj_19u9_fiTQ1DX7OSLWvLCGbvjRPd6C0sYG-lwo,4780
+llama_index_readers_readme-0.3.0.dist-info/METADATA,sha256=SQFjdxbztmvnpcpJhD4u3B-btUCztrlhSY_fbPNfW84,1320
+llama_index_readers_readme-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_readers_readme-0.3.0.dist-info/RECORD,,
