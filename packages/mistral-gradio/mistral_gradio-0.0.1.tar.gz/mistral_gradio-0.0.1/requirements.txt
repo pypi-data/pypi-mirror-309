@@ -1,0 +1,2 @@
+mistralai
+gradio==5.5.0
