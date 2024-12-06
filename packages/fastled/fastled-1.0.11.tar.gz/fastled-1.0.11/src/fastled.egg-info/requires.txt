@@ -1,0 +1,9 @@
+docker
+httpx
+watchdog
+livereload
+download
+filelock
+
+[:platform_system == "Windows"]
+windows-curses
