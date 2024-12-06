@@ -1,0 +1,7 @@
+main.py
+setup.py
+Shot2Story.egg-info/PKG-INFO
+Shot2Story.egg-info/SOURCES.txt
+Shot2Story.egg-info/dependency_links.txt
+Shot2Story.egg-info/requires.txt
+Shot2Story.egg-info/top_level.txt
