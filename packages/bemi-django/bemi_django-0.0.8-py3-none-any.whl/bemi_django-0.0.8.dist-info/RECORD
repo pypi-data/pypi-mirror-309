@@ -1,0 +1,14 @@
+bemi/__init__.py,sha256=bHaPNYvY0C0lW-RQepvC7ulkXUcryFBidGTqFFHKOBk,2227
+bemi/managers.py,sha256=ns86vTkvz3JldAfuncVjg8beKBv9ieCF638RudrqR-8,141
+bemi/middleware.py,sha256=otSEw_1JPKMtvSSvkOVXCAi9iC-Tb6SU3-nxy9Lh64M,2204
+bemi/mixins.py,sha256=G3DgHJIc4MRLAis3kMw_H31eUGJkILQlCwJwzog0-RY,417
+bemi/models.py,sha256=9KKjDLYUtwBzaze6sI4igFj7CJh1TpZNqRICCK6tTog,1039
+bemi/querysets.py,sha256=Yjswn-c17bTfkEasx8VPGcQJ1TyiLTe7Qv4uqlZ9p1s,1556
+bemi/routers.py,sha256=9_bi3eidda5nbMeoH-lWtbB7jyKBIiiMF0F1an3-0as,759
+bemi/migrations/0001_initial.py,sha256=yvTt-4Evew1c3oJmWnBeRGvwzOymDVrB13L76Wj4LGY,285
+bemi/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bemi_django-0.0.8.dist-info/LICENCE,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+bemi_django-0.0.8.dist-info/METADATA,sha256=jC4QVtbO-bLxxRSAqtcr6QgYMt7nXSmAMLa83NRU1tE,11439
+bemi_django-0.0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bemi_django-0.0.8.dist-info/top_level.txt,sha256=Za5HLmzULvKDHM89E0soPzZ-Toe1L0C7gvL5Fqps6XY,5
+bemi_django-0.0.8.dist-info/RECORD,,
