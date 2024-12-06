@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mtclabpy
+Version: 0.1.1
+Summary: A comprehensive tool for molecular and enzyme calculations
+Home-page: 
+Author: Menglei Xia
+Author-email: xiamenglei321@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mtclabpy
+
+A comprehensive tool for molecular and enzyme calculations.
+
+## Installation
+
+```bash
+pip install mtclabpy
+```
+
+## Features
+
+- Enzyme Self Calculation
+- Molecular Docking
+- Molecular Pockets Analysis
+- Mutations Analysis
+- Solubility Prediction
+- Affinity Calculation
+- Kcat Prediction
+
+## Author
+- Menglei Xia
+- Email: xiamenglei321@163.com
+
+## License
+
+This project is licensed under the MIT License.
