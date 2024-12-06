@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+minpin/minpin.py
+minpin.egg-info/PKG-INFO
+minpin.egg-info/SOURCES.txt
+minpin.egg-info/dependency_links.txt
+minpin.egg-info/entry_points.txt
+minpin.egg-info/requires.txt
+minpin.egg-info/top_level.txt
+tests/test_minmin.py
