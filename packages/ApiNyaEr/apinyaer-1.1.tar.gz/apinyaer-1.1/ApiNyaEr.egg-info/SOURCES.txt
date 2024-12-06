@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ApiNyaEr/__init__.py
+ApiNyaEr/apinya.py
+ApiNyaEr/fungsi.py
+ApiNyaEr/sync.py
+ApiNyaEr.egg-info/PKG-INFO
+ApiNyaEr.egg-info/SOURCES.txt
+ApiNyaEr.egg-info/dependency_links.txt
+ApiNyaEr.egg-info/requires.txt
+ApiNyaEr.egg-info/top_level.txt
