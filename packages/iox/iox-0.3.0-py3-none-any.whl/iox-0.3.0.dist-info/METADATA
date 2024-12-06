@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: iox
+Version: 0.3.0
+Home-page: https://github.com/mwort/iox
+Author: Michel Wortmann
+Author-email: michel.wortmann@ecmwf.int
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+Check input and output to conditionally execute commands in parallel
