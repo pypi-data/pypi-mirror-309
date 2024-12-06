@@ -1,0 +1,6 @@
+llama_index/llms/maritalk/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/llms/maritalk/__init__.py,sha256=iEtk9gKZSGmhWitTXKiQtYT_sD6EWaLh4fKAxYoC708,77
+llama_index/llms/maritalk/base.py,sha256=8GWZ6nyG2wlB6lkOwVV_Caf0khM-Rfj2nodV5wiyy6w,13374
+llama_index_llms_maritalk-0.4.0.dist-info/METADATA,sha256=7DWcuwvVLj8AxD8W6xQYsXKgqQ6XSeTo4kVhI97iyT8,1201
+llama_index_llms_maritalk-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_llms_maritalk-0.4.0.dist-info/RECORD,,
