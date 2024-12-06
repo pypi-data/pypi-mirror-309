@@ -1,0 +1,2 @@
+[console_scripts]
+metafield = metafield.app:main

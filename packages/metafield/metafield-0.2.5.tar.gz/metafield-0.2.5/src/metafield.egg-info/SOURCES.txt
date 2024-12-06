@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/metafield/__init__.py
+src/metafield/__main__.py
+src/metafield/app.py
+src/metafield/git_utils.py
+src/metafield/nb_depends.py
+src/metafield/nb_utils.py
+src/metafield.egg-info/PKG-INFO
+src/metafield.egg-info/SOURCES.txt
+src/metafield.egg-info/dependency_links.txt
+src/metafield.egg-info/entry_points.txt
+src/metafield.egg-info/requires.txt
+src/metafield.egg-info/top_level.txt
