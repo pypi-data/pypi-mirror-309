@@ -1,0 +1,9 @@
+manipulador_pdf/__init__.py,sha256=xc-BI00IWHE3DvO8E4XzVxod4vWr1KFloqBz4shKN4c,20
+manipulador_pdf/main.py,sha256=uhQcu6Qaf-fvp3yVwUF4QzLCsIAmrRbOyxqgimq6qSo,35027
+manipulador_pdf/operations.py,sha256=85PFLSpxX_xy_MoFSYnbFGe38eJ51j7UonkaJ28DdzY,51
+manipulador_pdf/run.py,sha256=iCIYazvUCcmm8Sa8m5HUwqQCPb9st_QGhOWHgtXL3-E,115
+manipulador_pdf/update.py,sha256=Jj7cifibNldYOkZv8D5bEzKP1ULMYUMFhCJFEGtOFyo,1075
+manipulador_pdf-0.0.5.dist-info/METADATA,sha256=mEXm7cPpo5z9xTtQLQjUlrpGUXzL_iTjm3Ic1Qy96x0,196
+manipulador_pdf-0.0.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+manipulador_pdf-0.0.5.dist-info/top_level.txt,sha256=e_sGrQXeRedUYTSeOab-n2dRJdaetqWMG-0p7UDsQ0E,16
+manipulador_pdf-0.0.5.dist-info/RECORD,,
