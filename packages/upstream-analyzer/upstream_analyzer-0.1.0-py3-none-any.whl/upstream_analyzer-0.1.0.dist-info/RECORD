@@ -1,0 +1,6 @@
+upstream_analyzer/__init__.py,sha256=GiIT3Iztf113eMphNeG2xshCFZxixmtE9WNyLxLSW80,182
+upstream_analyzer/analyze_basin.py,sha256=GbF0EKd5w2AS0EJvbkoOVtRI0HfKhotWhXreKdXpB84,4368
+upstream_analyzer-0.1.0.dist-info/METADATA,sha256=5a8q3aL-2Yi_Xwfx2G8TgJBTmMdMCKtXqheXDz-75jQ,7236
+upstream_analyzer-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+upstream_analyzer-0.1.0.dist-info/top_level.txt,sha256=H85uZq-Mumfg6wdhcTEdvg-f1VwCcslXyIuEoXvpYVo,18
+upstream_analyzer-0.1.0.dist-info/RECORD,,
