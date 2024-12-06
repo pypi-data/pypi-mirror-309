@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: nemara
+Version: 0.4
+Summary: Variance-adjusted estimation of motif activities.
+Home-page: https://github.com/autosome-ru/nemara
+Author: Georgy Meshcheryakov
+Author-email: iam@georgy.top
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pip>=24.0
+Requires-Dist: typer>=0.13
+Requires-Dist: numpy>=2.1
+Requires-Dist: jax>=0.4.31
+Requires-Dist: jaxlib>=0.4.31
+Requires-Dist: matplotlib>=3.5
+Requires-Dist: pandas>=2.2
+Requires-Dist: scipy>=1.14
+Requires-Dist: statsmodels>=0.14
+Requires-Dist: datatable>=1.0.0
+Requires-Dist: dill>=0.3.9
+Requires-Dist: rich>=12.6.0
+
+
+**NeMARA - placeholder name**
+# TODO
+Installation:
+```
+> git clone https://github.com/autosome-ru/NeMARA
+> cd NeMARA
+> pip3 install .
+```
+
+# Usage
+```
+>nemara --help
+```
