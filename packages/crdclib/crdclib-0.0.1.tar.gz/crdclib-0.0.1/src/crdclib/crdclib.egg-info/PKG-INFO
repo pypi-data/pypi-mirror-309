@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: crdclib
+Version: 0.0.1
+Summary: A collection of functions useful for interactive with parts of CRDC
+Home-page: https://github.com/pihltd/CRDCLib
+Author: Todd Pihl
+Author-email: Todd Pihl <todd.pihl@nih.gov>
+Project-URL: Homepage, https://github.com/pihltd/CRDCLib
+Project-URL: Issues, https://github.com/pihltd/CRDCLib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pyyaml
+
+# CRDCLib
+Personal library of CRDC routines I use a lot.  Theres nothing special, just saving writing time.
+*Use at your own risk*

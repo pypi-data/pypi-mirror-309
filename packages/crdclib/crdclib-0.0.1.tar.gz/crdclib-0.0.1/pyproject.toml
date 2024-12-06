@@ -1,0 +1,29 @@
+[tool.setuptools.packages.find]
+where = ["src.crdclib"]
+include = ["crdclib", "dhqueries"]
+
+[project]
+name = "crdclib"
+version = "0.0.1"
+authors = [
+  { name="Todd Pihl", email="todd.pihl@nih.gov" },
+]
+description = "A collection of functions useful for interactive with parts of CRDC"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["requests", "pyyaml"]
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent"
+    ]
+
+[project.urls]
+Homepage = "https://github.com/pihltd/CRDCLib"
+Issues = "https://github.com/pihltd/CRDCLib/issues"
