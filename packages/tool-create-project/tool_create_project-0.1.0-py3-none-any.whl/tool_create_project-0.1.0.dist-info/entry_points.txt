@@ -1,0 +1,2 @@
+[console_scripts]
+tool-create-project = tool_create_project.cli:app
