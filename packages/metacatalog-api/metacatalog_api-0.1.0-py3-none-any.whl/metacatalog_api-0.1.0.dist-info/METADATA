@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: metacatalog-api
+Version: 0.1.0
+Summary: FastAPI application to manage MetaCatalog instances
+License: MIT
+Author: Mirko Mälicke
+Author-email: mirko.maelicke@kit.edu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: fastapi (>=0.115.0,<0.116.0)
+Requires-Dist: psycopg[binary] (>=3.2.2,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydantic-geojson (>=0.1.1,<0.2.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: python-multipart (>=0.0.12,<0.0.13)
+Requires-Dist: uvicorn (>=0.30.6,<0.31.0)
+Description-Content-Type: text/markdown
+
+# metacatalog-api
+FastAPI backend for managing a Metacatalog instance
+
+More info to come
+
