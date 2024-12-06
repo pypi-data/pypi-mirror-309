@@ -1,0 +1,104 @@
+syntax = "proto3";
+package search;
+option go_package = ".;pb";
+
+import "osm/proto/ways.proto";
+import "osm/proto/curriculum.proto";
+import "weather/proto/conditions.proto";
+import "intercom/proto/can.proto";
+
+enum IncidentType {
+    NONE = 0;
+    VISUAL_CHECK = 1;
+    DISTANCE = 2;
+    HANDLING = 3;
+    TURN_SIGNAL = 4;
+    SIGNS_AND_LIGHTS = 5;
+    SPEED = 6;
+    PLACEMENT = 7;
+    RIGHT_OF_WAY = 8;
+    INSTRUCTOR = 9;
+    BOOKMARK = 10;
+}
+
+enum Operator {
+    EQ = 0;
+    GE = 1;
+    GEQ = 2;
+    LE = 3;
+    LEQ = 4;
+}
+
+enum Time {
+    ANY = 0;
+    DAY = 1;
+    NIGHT = 2;
+    SUNRISE = 3;
+    SUNSET = 4;
+    TRANSITION = 5;
+}
+
+message Lane {
+    uint32 value = 1;
+    Operator operator = 2;
+}
+
+message Speed {
+    float value = 1;
+    Operator operator = 2;
+    string unit = 3;
+}
+
+message Gas {
+    float value = 1;
+    Operator operator = 2;
+    string unit = 3;
+}
+
+message Brake {
+    float value = 1;
+    Operator operator = 2;
+    string unit = 3;
+}
+
+message Steering {
+    float value = 1;
+    Operator operator = 2;
+    string unit = 3;
+}
+
+message OSMTags {
+    osm.Way.Highway highway = 1;
+    osm.Way.Surface surface = 2;
+    Lane lane = 3;
+    float max_speed = 4;
+}
+
+message Weather {
+    weather.WeatherConditions.Main main = 1;
+    float precipitation = 2;
+    float visibility = 3;
+    float cloudcover = 4;
+}
+
+message Vehicle{
+    Speed speed = 1;
+    Gas gas = 2;
+    Brake brake = 3;
+    Steering steering = 4;
+    intercom.VehicleMotion.Gear gear = 5;
+    intercom.VehicleState.TurnSignal turn_signal = 6;
+}
+
+message ParsedQuery {
+    string city = 1;
+    string street = 2;
+    OSMTags osm_tags = 3;
+    Time time = 4;
+    Weather weather = 5;
+    osm.Turn.Type turn = 6;
+    osm.CurriculumPoint.ItemType curriculum_point = 7;
+    osm.CurriculumLineString.ItemType curriculum_linestring = 8;
+    Vehicle vehicle = 9;
+    IncidentType incident = 10;
+}

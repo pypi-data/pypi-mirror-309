@@ -1,0 +1,126 @@
+syntax = "proto3";
+package intercom;
+option go_package = ".;pb";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+// Service to control Iondrive
+service SensorService {
+  // Main control messages
+  rpc StartRecording(StartRecordingRequest) returns (SessionStatus);
+  rpc StartRecordingV2(StartRecordingRequestV2) returns (SessionStatus);
+  rpc PrioritizeIncident(Incident) returns (IncidentResponse);
+  rpc StopRecording(google.protobuf.Empty) returns (SessionStatus);
+}
+
+message StartRecordingRequest {
+  optional int32 bitrate_kbps = 1;
+  optional int32 maxlength_mins = 2;
+}
+
+message StartRecordingRequestV2 {
+  int32 bitrate_bps = 1;
+  int32 maxlength_mins = 2;
+}
+
+message SessionStatus {
+  google.protobuf.Timestamp time_stamp = 1;
+  bool is_recording = 2;
+  string drive_name = 3;
+}
+
+// Incident message and response
+message Incident {
+  string drive_name = 1;
+  string incident_id = 2;
+  uint64 start_time_ns = 3;
+  uint64 end_time_ns = 4;
+}
+message IncidentResponse { optional string error = 1; }
+
+// Highlevel info about ongoing drive session
+// This is emitted into the telemetry when recording starts
+message DriveSessionInfo {
+  google.protobuf.Timestamp time_stamp = 1;
+  string drive_name = 2;
+
+  // Telemetry version number.
+  // It is increased when there are significant changes in telemetry messages
+  // that might require decision on consumer side.
+  // For example it is increased if new kind of timestamping is added to
+  // messages.
+  uint32 version = 3;
+}
+
+// --------------------------------------------------
+// Gnss
+// --------------------------------------------------
+message Gnss {
+  enum NavSatStatus {
+    STATUS_FIX = 0;
+    STATUS_SBAS_FIX = 1;
+    STATUS_GBAS_FIX = 2;
+    STATUS_NO_FIX = -1;
+  }
+
+  enum NavService {
+    SERVICE_NONE = 0;
+    SERVICE_GPS = 1;
+    SERVICE_GLOSNASS = 2;
+    SERVICE_COMPASS = 4;
+    SERVICE_GALILEO = 8;
+  }
+
+  enum NavSatFix {
+    COVARIANCE_TYPE_UNKNOWN = 0;
+    COVARIANCE_TYPE_APPROXIMATED = 1;
+    COVARIANCE_TYPE_DIAGONAL_KNOWN = 2;
+    COVARIANCE_TYPE_KNOWN = 3;
+  }
+
+  google.protobuf.Timestamp time_stamp = 1;
+  // us since start drive command was received
+  uint64 session_timestamp = 17;
+
+  NavSatStatus status = 2;
+  NavService service = 3;
+
+  double latitude = 4;
+  double longitude = 5;
+  double altitude = 6;
+
+  double heading = 7;       // deg
+  double heading_error = 8; // deg
+
+  double speed = 9;        // m/s
+  double speed_error = 10; // m/s
+
+  bool has_highprecision_loc = 11;
+  double hp_loc_latitude = 12;
+  double hp_loc_longitude = 13;
+  double hp_loc_altitude = 14;
+
+  repeated double position_covariance = 15; // [f64; 9]
+  NavSatFix position_covariance_type = 16;
+}
+
+// --------------------------------------------------
+// ImageMetadata
+// --------------------------------------------------
+message ImageMetadata {
+  google.protobuf.Timestamp time_stamp = 1;
+  // us since start drive command was received
+  uint64 session_timestamp = 12;
+
+  string camera_name = 2;
+  string encoding = 3;
+  double exposure_time = 4;
+  uint64 frame_idx = 5;
+  double gain_level_db = 6;
+  double gain_level_digital = 7;
+  uint32 height = 8;
+  uint32 width = 9;
+  double scene_lux = 10;
+  uint32 sensor_iso = 11;
+}
