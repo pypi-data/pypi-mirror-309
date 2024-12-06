@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_diagnosis/__init__.py
+sopel_diagnosis/plugin.py
+sopel_diagnosis.egg-info/PKG-INFO
+sopel_diagnosis.egg-info/SOURCES.txt
+sopel_diagnosis.egg-info/dependency_links.txt
+sopel_diagnosis.egg-info/entry_points.txt
+sopel_diagnosis.egg-info/requires.txt
+sopel_diagnosis.egg-info/top_level.txt
