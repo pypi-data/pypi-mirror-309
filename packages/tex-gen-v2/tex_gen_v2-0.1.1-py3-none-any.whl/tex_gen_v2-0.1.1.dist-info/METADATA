@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tex_gen_v2
+Version: 0.1.1
+Summary: A package for generating LaTeX code
+Author-email: Artyom Fadeyev <fadyat@yandex.ru>
+Project-URL: homepage, https://github.com/fadyat/itmo-highload-python/tree/master/hw2/tex_gen
+Requires-Python: >=3.11
+
