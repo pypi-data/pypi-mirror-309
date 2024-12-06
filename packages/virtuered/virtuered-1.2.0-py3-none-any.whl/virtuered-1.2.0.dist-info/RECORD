@@ -1,0 +1,11 @@
+virtuered/__init__.py,sha256=JQhjqDyMNomJoSq0xFjkD3g1DDaDGeCxSt5_wsPGp2Y,232
+virtuered/cli/__init__.py,sha256=3Lhn4Hq2QgaSV9NHEEkqcAOzF95VG1hXZWEdfBDFTWQ,46
+virtuered/cli/commands.py,sha256=l2O8HLnuwBAejcsMPLbiqWrrrzvwt4MFOAuJ7turj8g,26351
+virtuered/client/__init__.py,sha256=OxqZE6foSMZQ3psQcPNFKy2XzVolo4Yd2ccsJCJqFhs,58
+virtuered/client/server.py,sha256=AOeFgeDPwLQciBvB33IKJryncRuoyxu0CKQthTynWYs,5246
+virtuered-1.2.0.dist-info/LICENSE,sha256=z6Y410j_vBdH0JyCIXf859dYmqeS9NM0oGEGOdtqf8w,1066
+virtuered-1.2.0.dist-info/METADATA,sha256=uoPwd-iFNlT5z4JnnKnQysLZGMPnKFPah4_2iembOGs,5608
+virtuered-1.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+virtuered-1.2.0.dist-info/entry_points.txt,sha256=fkbW6E-Uhjl-dpEnSiBoaF0wBh8-yuP9MPBWk50ef3M,58
+virtuered-1.2.0.dist-info/top_level.txt,sha256=IUoDaoefrOtqUwrLEv60icanoHgv1ch2fdaeQX5mHc8,10
+virtuered-1.2.0.dist-info/RECORD,,
