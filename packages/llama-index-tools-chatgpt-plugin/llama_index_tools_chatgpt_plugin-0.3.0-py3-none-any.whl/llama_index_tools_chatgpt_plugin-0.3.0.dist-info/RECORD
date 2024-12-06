@@ -1,0 +1,5 @@
+llama_index/tools/chatgpt_plugin/__init__.py,sha256=vpl0YBJIMnahKw6AfzdsADkGp_xuMSEAiT7hd-kBZSc,133
+llama_index/tools/chatgpt_plugin/base.py,sha256=sEQrfCSn6pu26UmWHkwFQDJEhFEqxSDL4LHt6G9kgi4,2592
+llama_index_tools_chatgpt_plugin-0.3.0.dist-info/METADATA,sha256=CEMyn-5mf9AphZ1imxqZ-eqYehcfJvlwUz_6oj_xkU8,2433
+llama_index_tools_chatgpt_plugin-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_tools_chatgpt_plugin-0.3.0.dist-info/RECORD,,
