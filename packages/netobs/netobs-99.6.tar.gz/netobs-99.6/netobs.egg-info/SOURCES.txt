@@ -1,0 +1,7 @@
+main.py
+setup.py
+netobs.egg-info/PKG-INFO
+netobs.egg-info/SOURCES.txt
+netobs.egg-info/dependency_links.txt
+netobs.egg-info/requires.txt
+netobs.egg-info/top_level.txt
