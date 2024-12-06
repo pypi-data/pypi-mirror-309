@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hpic
+Version: 0.1.0
+Summary: use playwright to render html page into pictures.
+Author-Email: Kyoku <kyokukong@outlook.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: playwright>=1.48.0
+Description-Content-Type: text/markdown
+
+# Hpic
+
+对Playwright进行封装，利用无头Chrome/Firefox进行网页截图实现图片渲染。
+
+内置了Chrome线程池管理和Jinja2模板渲染支持，原生异步渲染。
+
+## 安装
+
+```shell
+pip install hpic
+```
+
+## 使用
+
+```python
+import asyncio
+from hpic import Hpic
+
+h = Hpic()
+asyncio.run(h.render("https://www.github.com", data={}, output="github.png"))
+
+```
