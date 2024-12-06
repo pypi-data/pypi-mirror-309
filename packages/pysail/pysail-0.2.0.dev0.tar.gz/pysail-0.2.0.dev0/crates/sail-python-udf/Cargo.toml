@@ -1,0 +1,17 @@
+[package]
+name = "sail-python-udf"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+sail-common = { path = "../sail-common" }
+
+thiserror = { workspace = true }
+datafusion = { workspace = true }
+datafusion-common = { workspace = true }
+datafusion-expr = { workspace = true }
+pyo3 = { workspace = true }
+async-trait = { workspace = true }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
