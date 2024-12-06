@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: mrkdwnify
+Version: 0.1.1
+Summary: Python adaptation of the javascript html-to-mrkdwn library.
+Project-URL: Homepage, https://github.com/bengelb-io/mrkdwnify
+Project-URL: Bug Tracker, https://github.com/bengelb-io/mrkdwnify/issues
+Author-email: Benjamin Gelb <benjamin.gelb.io@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 bengelb-io
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: converter,html,html-to-mrkdwn,markdown,markdownify,mrkdwn,python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: Markup
+Requires-Python: >=3.7
+Requires-Dist: markdownify>=0.13.1
+Provides-Extra: test
+Requires-Dist: pytest>=8.3.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# mrkdwnify
+
+mrkdwnify is an adaptation of the javascript html-to-mrkdwn library.
+There are some small implementation differences between html-to-mrkdwn and mrkdwnify.
+
+If you don't know what mrkdwn is, it's a subset of Markdown made by Slack, to enable users to craft nicely formatted messages on their platform.
+Do not use this if you're looking for a regular html to markdown parser. Try: https://github.com/matthewwithanm/python-markdownify
+
+`mrkdwnify` itself is derived directly from the python-markdownify library.
+It overrides several methods from the original library and passes option presets to make outputs compatible with the mrkdwn spec.
+
+1. Consecutive <a> and <img> are not treated as inline elements.
+2. For "checked" attributes in input tags you need to provide a "true" value
+
+Ex:
+```<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" checked="true">item</li>``` => ☑︎ item
+
+Other than that the implementation should be the same.
+
+Important things to note:
+- ```<table>``` elements will not be rendered at all (not even their content) unless you pass `render_tables=True` as a keyword argument.
+
+# Installation 
+Until I can figure out PyPi:
+```bash
+pip install git+https://github.com/bengelb-io/py-html-to-mrkdwn
+```
+
+# Use
+
+```python
+from mrkdwnify import mrkdwnify
+
+html = "<h1>Hello this is a mrkdwn header!</h1>"
+mrkdwn = mrkdwnify(html) # *Hello this is a mrkdwn header!*
+
+html = '<p>Hello this is an inline link! <a href="https://www.example.com">Example</a></p>'
+mrkdwn = mrkdwnify(html) # Hello this is an inline link! <https://www.example.com|Example>
+```
