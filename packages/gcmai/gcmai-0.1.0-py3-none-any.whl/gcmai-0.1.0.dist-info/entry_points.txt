@@ -1,0 +1,3 @@
+[console_scripts]
+gcmai=gcmai.cli:main
+

@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: gcmai
+Version: 0.1.0
+Summary: A CLI tool that writes commits for you
+Home-page: https://github.com/CoroutinesLLC/gcmai
+License: MIT
+Keywords: cli,pipx,example
+Author: Reddy Tintaya
+Author-email: reddy.tintaya.dev@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-inquirer (>=1.0.3,<2.0.0)
+Project-URL: Repository, https://github.com/CoroutinesLLC/gcmai
+Description-Content-Type: text/markdown
+
+# gcmai
+
+Tired of not knowing what messages to use on your commits? Don't worry, I got you!
+
+
+
+## Features
+
+
+## Installation
+
+
+### Prerequisites
+
+- Python 3.7+
+- `pip` (Python package installer)
+
+### Local Installation
+
+To install `gcmai` locally, clone the repository and run the following command:
+
+```bash
+pip install .
+```
+
+
+### Contrib
+
+1. Clone this project
+2. Run `pip install -e .`
+  - Any modification won't need a re installation 
+
+
