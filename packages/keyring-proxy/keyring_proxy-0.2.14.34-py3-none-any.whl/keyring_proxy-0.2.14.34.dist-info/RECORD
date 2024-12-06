@@ -1,0 +1,13 @@
+keyring_proxy-0.2.14.34.dist-info/METADATA,sha256=8sLQEu3tkK4ab-Zw8bA_7KoX38gSVGTnFSoGTF_f0nw,378
+keyring_proxy-0.2.14.34.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+keyring_proxy-0.2.14.34.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+keyring_proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keyring_proxy/_version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+keyring_proxy/backend.py,sha256=kfBwMwq0mwZPY8cdjtrft1rLkl4_TQ2S8sSkTP_5Evs,2800
+keyring_proxy/connection.py,sha256=FUm3JGl0lSnvZKKIh8_LsDh0Xcwyeq-T16c8WMAJiX4,4410
+keyring_proxy/packets.py,sha256=NytAdit8YXhbqJxVCQEXWZbsBjvNiHFIyWiOfk13Dhc,5960
+keyring_proxy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keyring_proxy/socketproxy.py,sha256=a4OBrrKQ8gPN7oAvSr_VtLq3kN1MKnHzTxZh24ms37A,5909
+keyring_proxy/stdioproxy.py,sha256=xw1VAPX5amQARjkivZ18rcjxDjFNNwbTp2a5fjGEMRs,1830
+keyring_proxy/transport.py,sha256=WOIWpbPWjqMUvx7mDjgnhrE1sFVQYN1pFHx2ZZUP_ts,1564
+keyring_proxy-0.2.14.34.dist-info/RECORD,,
