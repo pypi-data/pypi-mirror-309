@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: streamsnapper
+Version: 0.2.1
+Summary: StreamSnapper is an intuitive library designed to simplify, enhance, and organize media downloads from a variety of audiovisual platforms. It offers efficient, high-speed media extraction with optional tools for extracting data from these platforms.
+Home-page: https://github.com/henrique-coder/streamsnapper
+License: MIT
+Keywords: stream,snapper,scraper,downloader,merger,youtube
+Author: henrique-coder
+Author-email: hjyz6rqyb@mozmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: all
+Provides-Extra: downloader
+Provides-Extra: merger
+Provides-Extra: youtube
+Requires-Dist: pysmartdl2 (==2.0.1) ; extra == "downloader" or extra == "youtube" or extra == "all"
+Requires-Dist: requests (==2.32.3) ; extra == "youtube" or extra == "all"
+Requires-Dist: scrapetube (==2.5.1) ; extra == "youtube" or extra == "all"
+Requires-Dist: yt-dlp (==2024.11.18) ; extra == "youtube" or extra == "all"
+Project-URL: Documentation, https://github.com/henrique-coder/streamsnapper
+Project-URL: Repository, https://github.com/henrique-coder/streamsnapper
+Description-Content-Type: text/markdown
+
+### StreamSnapper
+
+StreamSnapper is an intuitive library designed to simplify, enhance, and organize media downloads from a variety of audiovisual platforms. It offers efficient, high-speed media extraction with optional tools for extracting data from these platforms.
+
