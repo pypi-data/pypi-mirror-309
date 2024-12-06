@@ -1,0 +1,5 @@
+llama_index/agent/dashscope/__init__.py,sha256=8o9dhhL4wirF52EpqAQlRkHizJci0ovoV8_TSEd7VJI,97
+llama_index/agent/dashscope/base.py,sha256=W2-ph6NpwsRyY3BcojBjHQ612OBhKBrzCwSRu_Vlkko,5212
+llama_index_agent_dashscope-0.3.0.dist-info/METADATA,sha256=ED7ySKmzCtH59aCfLXIeQcM1SUCl2wR3DnVDuqti2Lw,1123
+llama_index_agent_dashscope-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_agent_dashscope-0.3.0.dist-info/RECORD,,
