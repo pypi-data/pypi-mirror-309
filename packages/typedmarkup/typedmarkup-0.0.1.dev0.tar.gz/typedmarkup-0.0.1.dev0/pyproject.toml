@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "typedmarkup"
+version = "0.0.1.dev0"
+description = "Typing-friendly HTML template renderer."
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
