@@ -1,0 +1,8 @@
+soilstat/__init__.py,sha256=j4LOkV7tz8fyxOKcHRjDOunfFh7XUzKTDiIoE7HZVJk,40
+soilstat/bearing_capacity/__init__.py,sha256=6BoSMXvQ6Xg7630QWosDhUA9StomV9Rl1LLgWHsL8FA,49
+soilstat/bearing_capacity/vesic.py,sha256=WUIdk8a2Y5W5FaEdrVF62_ZOo8qR429YQbaw9zpDKhw,43
+soilstat-0.0.18.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+soilstat-0.0.18.dist-info/METADATA,sha256=Rduo5O4puOB1EPDwI2_6v50oL0sbXEm9u0WgC5dymWM,489
+soilstat-0.0.18.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+soilstat-0.0.18.dist-info/top_level.txt,sha256=JmZ58LCWRpxV1s_GClyUytJpfJ74dnh1dP92WyJikXw,9
+soilstat-0.0.18.dist-info/RECORD,,
