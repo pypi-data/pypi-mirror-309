@@ -1,0 +1,6 @@
+--2024-11-18 15:21:43--  https://t.ly/_z9LB
+Resolving t.ly (t.ly)... 104.20.7.133, 104.20.6.133, 2606:4700:10::6814:785, ...
+Connecting to t.ly (t.ly)|104.20.7.133|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2024-11-18 15:21:43 ERROR 403: Forbidden.
+
