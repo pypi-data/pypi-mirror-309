@@ -1,0 +1,17 @@
+dump/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dump/config_utils.py,sha256=S_KbwL2NSSR5i7BMw9ksh_WFjDmQPOH871-b869XMvY,502
+dump/click_house/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dump/click_house/connectors.py,sha256=c4dwJEO4H80b4TvY1MRthUnbE7u2Rk7V7zZw37i17Tw,955
+dump/files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dump/files/tmp_util.py,sha256=9eJ_of9_N40su1GBKxkre1AhQk0_-0Nn4jLr1vs5390,1213
+dump/postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dump/postgres/connectors.py,sha256=cIoNIxSaOaC7LdSLJqnFWE_J-c4DgKbdWNydUS7JGn8,5573
+dump/postgres/manipulators.py,sha256=r10w_wI_gBH5TgzzGC1zFFzC-7SV5gcUIe33cSbjbCA,4525
+dump/postgres/table.py,sha256=takoJjaPhNPKBsqXKaeUpAv2T1ctqK8UF7gLEjy71Vc,5259
+dump/postgres/types_util.py,sha256=NqQFu_z4x9aXchk1eWObtAs7Dj3j3yrtNwn5jkvkP_Q,1027
+dump/s3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dump/s3/connectors.py,sha256=9eqNseG9-KpuLj7ZwS4pJCHiRGVqLag_sK2LjbX6Cn0,3931
+connector_for_bb-0.0.2.dist-info/METADATA,sha256=54MDclwoGDYNxSwLZhgdf-szGEbcdX5D0ODojsUBoR0,1109
+connector_for_bb-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+connector_for_bb-0.0.2.dist-info/top_level.txt,sha256=cXZsQB1z6FREO9AyvsUuVPDlJ7-oHc0OjbDx7KPPA14,5
+connector_for_bb-0.0.2.dist-info/RECORD,,
