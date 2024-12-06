@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: notutil
+Version: 0.24.5
+Summary: 小型Python工具包
+Author: Not白毛控
+Author-email: 231310326@mail.dhu.edu.cn
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A simple package made by NotBMK.
+
+This is my first Python package.
+
+It`s quitely simple.
