@@ -1,0 +1,11 @@
+Read_Name,Start_Primers,End_Primers,Read_Length,Start_Primer_Name,End_Primer_Name,Start_Orientation,End_Orientation,Correct_Orientation,Size_Compliant
+5f3d3a4e-b2e0-4328-8787-cf4722ed3748,primers2_Forward,primers2_ReverseComp,743,primers2,primers2,Forward,ReverseComp,True,False
+ea40c924-0f3d-44c4-9630-69555a616dea,primers2_Forward,primers2_ReverseComp,738,primers2,primers2,Forward,ReverseComp,True,False
+0d0cea6e-8e7a-4e32-8299-e3636035daf7,primers2_Forward,primers2_ReverseComp,749,primers2,primers2,Forward,ReverseComp,True,False
+34fcc029-a1ea-4b70-9dc7-59d2ec536aa0,primers2_Forward,primers2_ReverseComp,744,primers2,primers2,Forward,ReverseComp,True,False
+a3713628-9a32-43b5-ba42-f21eed790883,primers2_Forward,primers2_ReverseComp,736,primers2,primers2,Forward,ReverseComp,True,False
+cef50330-44f0-4358-aa7b-54237a86ed4e,primers2_Forward,primers2_ReverseComp,740,primers2,primers2,Forward,ReverseComp,True,False
+3f8affbd-0a6e-4652-b936-c21b92a01596,primers2_Forward,primers2_ReverseComp,754,primers2,primers2,Forward,ReverseComp,True,False
+5368db45-e605-4500-9bd9-485683a855e5,primers2_Forward,primers2_ReverseComp,752,primers2,primers2,Forward,ReverseComp,True,False
+5c1e940c-4190-4522-8d53-c7c3ad875a88,primers2_Forward,primers2_ReverseComp,735,primers2,primers2,Forward,ReverseComp,True,False
+dfa591d3-4408-45be-99a1-a47a4980aaa5,primers2_Forward,primers2_ReverseComp,743,primers2,primers2,Forward,ReverseComp,True,False

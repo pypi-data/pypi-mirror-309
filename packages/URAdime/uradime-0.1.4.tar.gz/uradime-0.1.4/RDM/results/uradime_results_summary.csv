@@ -1,0 +1,7 @@
+Category,Count,Percentage
+No primers detected,4237,82.64
+Single-end primers only,759,14.8
+Mismatched primer pairs,8,0.16
+Matched pairs - incorrect orientation,26,0.51
+"Matched pairs - correct orientation, wrong size",10,0.2
+Matched pairs - correct orientation and size,87,1.7

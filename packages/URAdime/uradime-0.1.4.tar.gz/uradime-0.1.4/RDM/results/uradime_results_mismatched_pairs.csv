@@ -1,0 +1,9 @@
+Read_Name,Start_Primers,End_Primers,Read_Length,Start_Primer_Name,End_Primer_Name,Start_Orientation,End_Orientation
+77b87b85-a1aa-4d35-890f-d1624cc0d00f,primers2_Forward,primers1_ForwardComp,1518,primers2,primers1,Forward,ForwardComp
+2efded69-4f93-4ace-bba7-cf1bf152cbd2,primers2_Forward,primers1_ReverseComp,1828,primers2,primers1,Forward,ReverseComp
+11207981-2711-44c8-9815-d38be960dcd2,primers2_Forward,primers1_ForwardComp,1471,primers2,primers1,Forward,ForwardComp
+2efded69-4f93-4ace-bba7-cf1bf152cbd2,primers2_Forward,primers1_ReverseComp,1828,primers2,primers1,Forward,ReverseComp
+77b87b85-a1aa-4d35-890f-d1624cc0d00f,primers1_Forward,primers2_ForwardComp,1518,primers1,primers2,Forward,ForwardComp
+2efded69-4f93-4ace-bba7-cf1bf152cbd2,primers2_Forward,primers1_ReverseComp,1828,primers2,primers1,Forward,ReverseComp
+77b87b85-a1aa-4d35-890f-d1624cc0d00f,primers1_Forward,primers2_ForwardComp,1518,primers1,primers2,Forward,ForwardComp
+11207981-2711-44c8-9815-d38be960dcd2,primers1_Forward,primers2_ForwardComp,1471,primers1,primers2,Forward,ForwardComp
