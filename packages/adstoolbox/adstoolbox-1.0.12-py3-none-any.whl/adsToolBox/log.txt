@@ -1,0 +1,78 @@
+2024-10-22 11:19:31,720 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:36:19,421 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:36:56,450 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:38:00,335 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:38:50,261 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:38:52,617 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-10-22 11:38:53,080 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-22 11:38:53,124 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-22 11:38:53,257 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:38:53,259 - AdsLogger - ERROR - Échec de l'exécution de la requête: (156, b"Incorrect syntax near the keyword 'IF'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2024-10-22 11:38:53,259 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:15,243 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:39:17,560 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-10-22 11:39:18,032 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-22 11:39:18,081 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-22 11:39:18,215 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:18,216 - AdsLogger - ERROR - Échec de l'exécution de la requête: (2715, b'Column, parameter, or variable #1: Cannot find data type SERIAL.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n')
+2024-10-22 11:39:18,216 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:41,307 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:39:43,684 - AdsLogger - INFO - Tentative de connexion avec la base de données.
+2024-10-22 11:39:44,148 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-22 11:39:44,192 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-22 11:39:44,332 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-22 11:39:44,426 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:44,426 - AdsLogger - ERROR - Échec de l'insertion des données: name 'pl' is not defined
+2024-10-22 11:39:44,427 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:44,427 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:39:44,427 - AdsLogger - ERROR - Erreur lors des insertions dans les table de logs: 'NoneType' object has no attribute 'cursor'
+2024-10-22 11:39:44,427 - AdsLogger - ERROR - **************************************************
+2024-10-22 11:41:01,609 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:41:52,805 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:42:21,543 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:48:36,692 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:52:17,308 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 11:52:23,655 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:44:10,283 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:44:54,772 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:52:17,755 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:52:42,693 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:53:20,582 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:55:45,756 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:56:01,406 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:56:09,917 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:56:27,642 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 13:56:48,947 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:00:48,562 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:01:05,447 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:04:00,059 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:04:45,378 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:05:32,242 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:08:23,736 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:09:23,057 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:09:31,498 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:09:45,164 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:10:23,190 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:11:29,693 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:11:41,780 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:11:51,952 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:12:07,511 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:12:52,965 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:13:58,738 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:14:05,660 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:15:13,049 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:15:22,121 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:15:33,907 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:20:16,499 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:28:57,728 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:29:38,840 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:30:34,509 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:30:54,295 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:31:41,931 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:32:02,368 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:32:16,206 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:32:26,989 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:50:43,294 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:51:07,335 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:52:51,506 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
+2024-10-22 14:53:08,207 - EnvLogger - DEBUG - Fichier spécifié pour l'environnement trouvé
