@@ -1,0 +1,16 @@
+TextAnalyzerMU/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TextAnalyzerMU/complete_analyzer.py,sha256=MkfNZ0Uea_KnreYgK60_gmFNqLpX0IpUVwPKGR6i7O0,12939
+TextAnalyzerMU/comun_words.py,sha256=eSWBRQYwyqab0TzbZa1cGwLk7dEDODX7P6IwS3i8WRM,3295
+TextAnalyzerMU/extract_entities.py,sha256=BhiojWeOUE3MDhfOY0K0XhiRrHQ0p_yN2hrJCYotUc0,2139
+TextAnalyzerMU/generate_word_cloud.py,sha256=H_g2zcc77T8tgY1ezWJKhTNyyFU2dY_Q_aFFc7i9D8c,2510
+TextAnalyzerMU/mark_key_terms.py,sha256=6DDQ0kEnxd0zbbsXv51joJyPvZU36w0lMHx1QOOz-K0,5103
+TextAnalyzerMU/sentence_counter.py,sha256=TIHMlq0qlzs4YSvt2nPgnbF8CU5o46lUPTbnV6cuUYo,1568
+TextAnalyzerMU/sentiment_analysis.py,sha256=p8YkRtmXVWK4p8Tp7KvnoFSeIg7b9TZNH8pSqpfJF4A,1899
+TextAnalyzerMU/summarize_text.py,sha256=jJ04oJKqPtjS-dV2ngoOENclN2fzFzmd3PPHqhs6Flg,1912
+TextAnalyzerMU/text_anonimaze.py,sha256=JSugw_VdruGPY3d7eWfXHsRLLoFhsrR0aZK5sWhCEM4,1169
+TextAnalyzerMU/text_similarity.py,sha256=-IXpU1RE2LxWexSpS4r6bvvw6L2f48XSl97X28OAZC4,2793
+TextAnalyzerMU/text_translation.py,sha256=eZcanGSqgTenRYPpjKcpSO_qxXkBAL10pxwZuHOsrf0,1657
+TextAnalyzerMU-0.1.3.dist-info/METADATA,sha256=20q0crvlaTG_HGkbDXuf6uwrmMg2OmHUeOlnYGoHYjk,1225
+TextAnalyzerMU-0.1.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+TextAnalyzerMU-0.1.3.dist-info/top_level.txt,sha256=ESPl7zibwpNQxtNjiUFiiGB1zlZaOZOkAZnoIQUjzQE,15
+TextAnalyzerMU-0.1.3.dist-info/RECORD,,
