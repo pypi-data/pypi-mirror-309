@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+notutil/__init__.py
+notutil/basic.py
+notutil.egg-info/PKG-INFO
+notutil.egg-info/SOURCES.txt
+notutil.egg-info/dependency_links.txt
+notutil.egg-info/top_level.txt
