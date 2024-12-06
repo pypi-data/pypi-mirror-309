@@ -1,0 +1,2 @@
+[console_scripts]
+iox = iox:__main__

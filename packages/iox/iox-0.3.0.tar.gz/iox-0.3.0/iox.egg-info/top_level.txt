@@ -1,0 +1,6 @@
+coverage
+dist
+iox
+setup
+tests
+venv
