@@ -1,0 +1,284 @@
+Metadata-Version: 2.1
+Name: blossy
+Version: 7.4
+Summary: A lil' bud that helps you with stuff (it's a utility CLI).
+Author-email: Ryan Sakurai <ryansakurai03@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Ryan Sakurai
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/ryansakurai/blossy-cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click ==8.1.7
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: rich ==13.7.1
+Requires-Dist: shellingham ==1.5.4
+Requires-Dist: sly ==0.5
+Requires-Dist: typer ==0.9.0
+Requires-Dist: typing-extensions ==4.10.0
+
+<h1 align="center">  🌸  Blossy CLI  🌸  </h1>
+
+A multiuse utility CLI tool developed using:
+
+- Python;
+- Typer: building the CLI;
+- Sly Lex Yacc: parsing text.
+
+## 🛠 Features
+
+- [x] Calculate the value of an expression
+- [x] Calculate the value of an expression using time
+- [x] Count the quantity of characters in a text file
+- [x] Solve percentage equations
+- [x] Generate random numbers
+- [x] Stardardize the names of the files in a directory
+
+## 🏁 How to Install
+
+To install the CLI, you'll only need to have Python installed on your machine. Then, run the following command:
+
+```bash
+$ python3 -m pip install blossy
+```
+
+## ⚙️ Behavior
+
+### 🧮 Calculate
+
+To calculate the value of an expression, use the `calc` command. The following operators are supported:
+
+- (expr)
+- \+ expr
+- \- expr
+- expr ^ expr
+- expr * expr
+- expr / expr
+- expr + expr
+- expr - expr
+
+```bash
+$ blossy calc "2*3+4^6"
+4102
+```
+
+You can use the `--visualize` flag to see the steps of the calculation, illustrated using postfix notation and a stack.
+
+```bash
+$ blossy calc "2*3+4^6" --visualize
+
+$                                                          2 3 * 4 6 ^ +₂ $
+
+> Stack 2
+
+$ 2                                                          3 * 4 6 ^ +₂ $
+
+> Stack 3
+
+$ 2 3                                                          * 4 6 ^ +₂ $
+
+> 2 * 3 = 6
+
+$ 6                                                              4 6 ^ +₂ $
+
+> Stack 4
+
+$ 6 4                                                              6 ^ +₂ $
+
+> Stack 6
+
+$ 6 4 6                                                              ^ +₂ $
+
+> 4^6 = 4096
+
+$ 6 4096                                                               +₂ $
+
+> 6 + 4096 = 4102
+
+$ 4102                                                                    $
+
+> The result is 4102
+```
+
+### ⌚ Calculate Time
+
+To calculate the value of an expression using time, use the `calct` command. The following operators are supported:
+
+- (expr)
+- \+ expr
+- \- expr
+- expr ^ expr
+- expr * expr
+- expr / expr
+- expr + expr
+- expr - expr
+
+```bash
+$ blossy calct "1:02:00 + 12:01*2"
+1:26:02
+```
+
+You can use the `--visualize` flag to see the steps of the calculation, illustrated using postfix notation and a stack.
+
+```bash
+$ blossy calct "1:02:00 + 12:01*2" --visualize
+
+$                                                    1:02:00 12:01 2 * +₂ $
+
+> Stack 1:02:00
+
+$ 1:02:00                                                    12:01 2 * +₂ $
+
+> Stack 12:01
+
+$ 1:02:00 12:01                                                    2 * +₂ $
+
+> Stack 2
+
+$ 1:02:00 12:01 2                                                    * +₂ $
+
+> 12:01 * 2 = 0:24:02
+
+$ 1:02:00 0:24:02                                                      +₂ $
+
+> 1:02:00 + 0:24:02 = 1:26:02
+
+$ 1:26:02                                                                 $
+
+> The result is 1:26:02
+```
+
+### 🔢 Count
+
+To count the quantity of characters in a text file, use the `calc` command.
+
+```bash
+$ blossy count file.txt 
+Character count: 58
+```
+
+```
+Blossy is my favorite puppy.
+
+Did somebody say meatloaf?
+
+
+```
+
+You can use the `--ignore-unnec` flag to ignore unnecessary whitespaces. That way, a sequence of whitespaces will be counted as only one character, and trailing whitespaces will be completely ignored.
+
+```bash
+$ blossy count file.txt --ignore-unnec
+Character count: 55
+```
+
+```
+Blossy is my favorite puppy. Did somebody say meatloaf?
+```
+
+You can also use the `--ignore-ws` flag to ignore all whitespaces.
+
+```bash
+$ blossy count file.txt --ignore-ws
+Character count: 47
+```
+
+```
+Blossyismyfavoritepuppy.Didsomebodysaymeatloaf?
+```
+
+### 📊 Percentage
+
+To solve percentage equations, use the `perc` command. This command uses the formula `ratio = part/whole`.
+
+```bash
+$ blossy perc --whole 100 --ratio 0.25
+Part: 25.0
+$ blossy perc --whole 100 --part 25
+Ratio: 0.25
+```
+
+### 🎲 Random
+
+To generate a random number between two given values (inclusive), use the `rand` command.
+
+```bash
+$ blossy rand 1 10
+2
+```
+
+You can specify the quantity of random numbers that'll be generated (the default is 1):
+
+```bash
+$ blossy rand 1 10 --quantity 5
+2 7 1 5 1
+```
+
+### 🗂️ Standardize
+
+To rename the files in a directory, using the format `{prefix}-{id}`, use the `stddz` command. Here's an example of how to use the command:
+
+```bash
+$ blossy stddz my-johnson nice-folder/
+```
+
+```
+nice-folder/
+├── my-johnson-000.png
+├── my-johnson-001.png
+├── my-johnson-002.png
+└── my-johnson-003.png
+```
+
+You can use the flag `--start` to specify the starting number for the IDs:
+
+```bash
+$ blossy stddz my-johnson nice-folder/ --start 10
+```
+
+```
+nice-folder/
+├── my-johnson-010.png
+├── my-johnson-011.png
+├── my-johnson-012.png
+└── my-johnson-013.png
+```
+
+You can also use the flag `--digits` to specify the quantity of digits that'll be used to represent the IDs (the default is 3):
+
+```bash
+$ blossy stddz my-johnson nice-folder/ --digits 2
+```
+
+```
+nice-folder/
+├── my-johnson-00.png
+├── my-johnson-01.png
+├── my-johnson-02.png
+└── my-johnson-03.png
+```
