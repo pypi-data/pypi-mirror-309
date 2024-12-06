@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: e-commerce-scraper
+Version: 0.1.0
+Summary: A bot which scrapes products from Tunisian e-commerce websites
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: configparser (==5.0.1)
+Requires-Dist: crayons (==0.4.0)
+Requires-Dist: dateparser (==1.1.1)
+Requires-Dist: et-xmlfile (==1.0.1)
+Requires-Dist: idna (==2.10)
+Requires-Dist: jdcal (==1.4.1)
+Requires-Dist: langdetect (==1.0.8)
+Requires-Dist: lxml (==5.2.2)
+Requires-Dist: openpyxl (==3.0.5)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2021.3)
+Requires-Dist: prettyconf (==2.2.1)
+Requires-Dist: pathlib
+Requires-Dist: numpy (==1.24.4)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: selenium (==4.4.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: soupsieve (==2.1)
+Requires-Dist: Sphinx (==3.5.1)
+Requires-Dist: sphinx-mdolab-theme (==1.0.1)
+Requires-Dist: setuptools-rust (==0.12.0)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: timedelta
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: webdriver-manager (==3.5.0)
+Requires-Dist: xlrd (==2.0.1)
+Requires-Dist: requests-html (==0.10.0)
+Requires-Dist: lxml-html-clean (==0.1.1)
+Requires-Dist: pydantic (==1.9.0)
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4 (==4.11.1) ; extra == 'dev'
+Requires-Dist: bs4 (==0.0.1) ; extra == 'dev'
+Requires-Dist: certifi (==2020.12.5) ; extra == 'dev'
+Requires-Dist: chardet (==4.0.0) ; extra == 'dev'
+Requires-Dist: colorama (==0.4.4) ; extra == 'dev'
+Requires-Dist: configparser (==5.0.1) ; extra == 'dev'
+Requires-Dist: crayons (==0.4.0) ; extra == 'dev'
+Requires-Dist: dateparser (==1.1.1) ; extra == 'dev'
+Requires-Dist: et-xmlfile (==1.0.1) ; extra == 'dev'
+Requires-Dist: idna (==2.10) ; extra == 'dev'
+Requires-Dist: jdcal (==1.4.1) ; extra == 'dev'
+Requires-Dist: langdetect (==1.0.8) ; extra == 'dev'
+Requires-Dist: lxml (==5.2.2) ; extra == 'dev'
+Requires-Dist: openpyxl (==3.0.5) ; extra == 'dev'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'dev'
+Requires-Dist: pytz (==2021.3) ; extra == 'dev'
+Requires-Dist: prettyconf (==2.2.1) ; extra == 'dev'
+Requires-Dist: pathlib ; extra == 'dev'
+Requires-Dist: numpy (==1.24.4) ; extra == 'dev'
+Requires-Dist: pandas (==2.0.2) ; extra == 'dev'
+Requires-Dist: requests (==2.27.1) ; extra == 'dev'
+Requires-Dist: selenium (==4.4.0) ; extra == 'dev'
+Requires-Dist: six (==1.15.0) ; extra == 'dev'
+Requires-Dist: soupsieve (==2.1) ; extra == 'dev'
+Requires-Dist: Sphinx (==3.5.1) ; extra == 'dev'
+Requires-Dist: sphinx-mdolab-theme (==1.0.1) ; extra == 'dev'
+Requires-Dist: setuptools-rust (==0.12.0) ; extra == 'dev'
+Requires-Dist: twine (==3.4.1) ; extra == 'dev'
+Requires-Dist: timedelta ; extra == 'dev'
+Requires-Dist: urllib3 (==1.26.9) ; extra == 'dev'
+Requires-Dist: webdriver-manager (==3.5.0) ; extra == 'dev'
+Requires-Dist: xlrd (==2.0.1) ; extra == 'dev'
+Requires-Dist: requests-html (==0.10.0) ; extra == 'dev'
+Requires-Dist: lxml-html-clean (==0.1.1) ; extra == 'dev'
+Requires-Dist: pydantic (==1.9.0) ; extra == 'dev'
+
