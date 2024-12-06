@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mymask/__init__.py
+mymask/app.py
+mymask/icon.png
+mymask.egg-info/PKG-INFO
+mymask.egg-info/SOURCES.txt
+mymask.egg-info/dependency_links.txt
+mymask.egg-info/entry_points.txt
+mymask.egg-info/requires.txt
+mymask.egg-info/top_level.txt
