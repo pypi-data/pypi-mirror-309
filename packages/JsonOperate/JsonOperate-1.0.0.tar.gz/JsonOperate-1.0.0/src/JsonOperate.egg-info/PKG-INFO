@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: JsonOperate
+Version: 1.0.0
+Summary: This wheel is primarily designed for modifying JSON elements.
+Home-page: https://gitlab.l1.nsn-net.net/rawu/Json-Operate
+Author: ramon Wu
+Author-email: ramon.wu@nokia-sbell.com
+Requires-Python: >=3.8.0
