@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: toutiao-video
+Version: 1.0.0
+Summary: Video downloader for Toutiao
+Home-page: https://github.com/suqingdong/toutiao
+Author: suqingdong
+Author-email: suqingdong1114@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: loguru
+Requires-Dist: webrequests
+
+# Download videos from toutiao.com
+
+## Installation
+
+```bash
+python3 -m pip install toutiao-video
+```
+
+## Usage
+
+### Use in CMD
+```bash
+toutiao --help
+
+toutiao -u xxxxx -t xxxxx
+toutiao -u xxxxx -t xxxxx -d output
+toutiao -u xxxxx -t xxxxx -l 5
+toutiao -u xxxxx -t xxxxx -l 1 -d 1080p
+toutiao -u xxxxx -t xxxxx -l 10 --dryrun
+```
+
+### Use in Python
+
+```python
+
+from toutiao.core import TouTiao
+
+toutiao = TouTiao(user_id='user_id', tt_webid='tt_webid')
+
+for n, item in enumerate(toutiao.list_user_feed(), 1):
+    if n > 5:
+        break()
+    print(item)        
+```
+
+
