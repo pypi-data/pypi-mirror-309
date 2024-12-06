@@ -1,0 +1,2 @@
+[console_scripts]
+energy2all = qakits.bin.energy2all:main
