@@ -1,0 +1,2 @@
+[console_scripts]
+perspective-transformer = perspective_transformer.main:main
