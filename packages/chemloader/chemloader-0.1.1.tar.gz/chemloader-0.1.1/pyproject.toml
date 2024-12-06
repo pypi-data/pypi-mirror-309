@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "chemloader"
+version = "0.1.1"
+description = "Retrieve and work with molecular data from multiple sources"
+authors = ["JulianKimmig <julian.kimmig@gmx.net>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13" # Python version 3.13 not yet supported by rdkit
+tqdm = "*"
+requests = "*"
+pandas = "*"
+rdkit = "*"
+openpyxl = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
