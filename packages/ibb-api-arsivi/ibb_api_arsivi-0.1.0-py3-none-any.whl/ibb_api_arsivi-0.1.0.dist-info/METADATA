@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: ibb_api_arsivi
+Version: 0.1.0
+Summary: Lorem ipsum dolor sit amet
+Author: Ceyda Özarslan
+Author-email: ceyzarslan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# Ä°bb AÃ§Ä±k Veri PortalÄ±
+
+Ä°stanbul BÃ¼yÃ¼kÅŸehir Belediyesi'nin (Ä°BB) aÃ§Ä±k veri portalÄ±ndan veri Ã§ekmek ve bu verileri analiz etmek iÃ§in basit ve kullanÄ±ÅŸlÄ± bir Python kÃ¼tÃ¼phanesi.
+
+## Ã–zellikler
+- Ä°BB AÃ§Ä±k Veri PortalÄ±'ndan veri Ã§ekme
+- Verileri pandas DataFrame veya JSON formatÄ±nda dÃ¶nÃ¼ÅŸtÃ¼rme
+- Belirli veri setlerine hÄ±zlÄ± eriÅŸim
+- Kolay kurulum ve kullanÄ±m
+
+## Kurulum
+Projeyi pip ile kurabilirsiniz:
+
+```bash
+pip install ibb_acik_veri_portali
+```
+
+## KullanÄ±m
+AÅŸaÄŸÄ±da kÃ¼tÃ¼phanenin kullanÄ±mÄ±na iliÅŸkin Ã¶rnekler verilmiÅŸtir:
+
+### TÃ¼m Veri Setlerini JSON FormatÄ±nda Ã‡ekmek
+```python
+from ibb_acik_veri_portali import json
+
+# TÃ¼m park verilerini JSON formatÄ±nda al
+data = json()
+print(data)
+```
+
+### Belirli Bir Veri Setine EriÅŸim
+```python
+from ibb_acik_veri_portali import json
+
+# Belirli bir parkÄ±n detaylarÄ±nÄ± Ã§ek
+park_id = 123
+park_details = json(park_id=park_id)
+print(park_details)
+```
+
+### Veriyi DataFrame Olarak Kullanmak
+```python
+from ibb_acik_veri_portali import dataframe
+
+# TÃ¼m park verilerini pandas DataFrame'e yÃ¼kle
+df = dataframe()
+print(df.head())
+```
+
+### Series FormatÄ±nda Veri KullanÄ±mÄ±
+```python
+from ibb_acik_veri_portali import series
+
+# Belirli bir parkÄ±n detaylarÄ±nÄ± pandas Series olarak al
+park_id = 123
+park_series = series(park_id)
+print(park_series)
+```
+
+## Gereksinimler
+- Python 3.7 veya Ã¼stÃ¼
+- Pandas
+- Requests
+
+
+## Lisans
+Bu proje MIT lisansÄ± ile lisanslanmÄ±ÅŸtÄ±r. Daha fazla bilgi iÃ§in `LICENSE` dosyasÄ±na gÃ¶z atabilirsiniz.
+
+---
+
