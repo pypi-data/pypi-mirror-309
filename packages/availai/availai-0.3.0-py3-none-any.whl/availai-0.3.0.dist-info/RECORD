@@ -1,0 +1,14 @@
+availai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+availai/datasets/__init__.py,sha256=BU4gfPCCgiibD7T57MBM9ZiiyvQfITh6NQQRzQSsT6k,28
+availai/datasets/dataset.py,sha256=Dq9BeyYMtAp1NRZRsK3NOBWXEtf5J4d_cDNMSPNfWKg,7909
+availai/experiments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+availai/experiments/experiment.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+availai/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/datasets/downloading_from_roboflow.py,sha256=b2HwJJkG7jFwz_eclnx-9sgHSciodaHFoT2I1L5arCg,694
+availai-0.3.0.dist-info/LICENSE,sha256=F6YHJmF8xfxqvKCICeAXU802xlaXKl69YZqXQuKxIoA,1065
+availai-0.3.0.dist-info/METADATA,sha256=Yy78YHODFG1FKNeqMAD8UJUeb8YEkHKqXKb6bynr2yQ,1467
+availai-0.3.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+availai-0.3.0.dist-info/top_level.txt,sha256=yIoqp2EXnR5PeFpT_hLR5UBSdBFV7oUuRnlWNVKVtFg,14
+availai-0.3.0.dist-info/RECORD,,
