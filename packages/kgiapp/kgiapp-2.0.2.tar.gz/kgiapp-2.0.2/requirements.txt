@@ -1,0 +1,10 @@
+setuptools
+build
+twine
+wheel
+pythonnet>3; python_version>='3.11'
+pandas
+psutil
+pywin32; sys_platform == 'win32'
+pyyaml
+websockets

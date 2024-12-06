@@ -1,0 +1,5 @@
+pythonnet>3
+pandas
+psutil
+pywin32
+pyyaml
