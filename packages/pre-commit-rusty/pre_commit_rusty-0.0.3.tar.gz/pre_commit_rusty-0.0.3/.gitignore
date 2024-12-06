@@ -1,0 +1,12 @@
+/target
+
+.cache
+
+# Insta snapshots.
+*.pending-snap
+
+# macOS
+**/.DS_Store
+
+# profiling flamegraphs
+*.flamegraph.svg
