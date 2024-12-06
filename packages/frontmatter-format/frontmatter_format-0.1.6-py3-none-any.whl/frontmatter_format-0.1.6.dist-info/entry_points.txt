@@ -1,0 +1,4 @@
+[console_scripts]
+lint=devtools.lint:main
+test=pytest:main
+

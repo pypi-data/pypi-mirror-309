@@ -1,0 +1,9 @@
+frontmatter_format/__init__.py,sha256=wuijVggz0eePOJRAw0rzK2zT7zg68M5yk_4uhgr0470,993
+frontmatter_format/frontmatter_format.py,sha256=FN-kN0osSfCg7p40GCpB_-FbxJMOMmgmYa_CSZgR_Nk,8851
+frontmatter_format/key_sort.py,sha256=2ScDKpVRuwCYhlpRVBm83596xExiEIgb9uEJ8vA9FUs,515
+frontmatter_format/yaml_util.py,sha256=ZB1FtUFLPx_-f-seVr3DZruHP-ptIFdEqph1CPEWNFI,4130
+frontmatter_format-0.1.6.dist-info/LICENSE,sha256=QC33nV2PWJ5q_KnWsC64JBXGmW8U-c99ql9ZlLhoI3Y,1068
+frontmatter_format-0.1.6.dist-info/METADATA,sha256=IasO3kZcNHRlXxzU9D13RNicrOqVW9II9qVDTYMSmq0,12508
+frontmatter_format-0.1.6.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+frontmatter_format-0.1.6.dist-info/entry_points.txt,sha256=4VOSYpEa3xKgRNmkFASgsARoL9tHHdYvMjz-mvMR52o,60
+frontmatter_format-0.1.6.dist-info/RECORD,,
