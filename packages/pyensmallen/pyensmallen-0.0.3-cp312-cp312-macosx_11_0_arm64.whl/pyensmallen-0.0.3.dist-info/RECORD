@@ -1,0 +1,14 @@
+pyensmallen-0.0.3.dist-info/RECORD,,
+pyensmallen-0.0.3.dist-info/WHEEL,sha256=BlgdoGd2KNVEkPyD8Qw7I04Bd9Sa0Eb3ERRi6yJxIis,93
+pyensmallen-0.0.3.dist-info/LICENSE.txt,sha256=MsmipaU84X28UgMkppdem6k0PpKxKcC__CrzfKJ7yIU,1086
+pyensmallen-0.0.3.dist-info/METADATA,sha256=2OAbCh-haZy0zFdyrUbFgsypucNua2f6FBIXxrL2OKs,2751
+pyensmallen/__init__.py,sha256=-crlVWapfIJCQWAp2U1ccq93bb8EwP2xLwsd_itJ230,715
+pyensmallen/losses.py,sha256=a86uGPyGNq5WEdUQvLDKFQsMQz3cLLV4ZXftGfNjBGU,1789
+pyensmallen/_pyensmallen.cpython-312-darwin.so,sha256=MNXKxt7YHVvxmSLJtuhqBNaq5668kSF-SS1hHEPfCrM,572816
+pyensmallen/.dylibs/libarpack.2.1.0.dylib,sha256=ICYh5bZ2f5CbRV9uDkQ61SQUazmAe_xo4u3jYNc0Wtg,367248
+pyensmallen/.dylibs/libomp.dylib,sha256=3oeUi4t-B7feEXi0Jbh8lLzRUpycN99ez_fUI4dPenU,841872
+pyensmallen/.dylibs/libarmadillo.12.8.4.dylib,sha256=8ZwumC52LEWQwe7hkS5QELHB-xveV2h9FGGM7Bbp1n0,384416
+pyensmallen/.dylibs/libgfortran.5.dylib,sha256=pz2nq_dC7iApcdtFlU6u0JbaKhJKwvaSKVQS30jWJ3A,3734336
+pyensmallen/.dylibs/libquadmath.0.dylib,sha256=QjwYQ-q68u6fP-NqIz0ubNlwD16iof3eHgHc8quH848,354864
+pyensmallen/.dylibs/libgcc_s.1.1.dylib,sha256=spgadGmIemiepwZaph33H7ERc43Eam3zsAIq1PVBsNQ,161968
+pyensmallen/.dylibs/libopenblas.0.dylib,sha256=-j2xnJNzp7_IKhMK2NrgvL-9Fh1jbOFMqMaSJj2ktfs,13071776
