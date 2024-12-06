@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+ATEM.egg-info/PKG-INFO
+ATEM.egg-info/SOURCES.txt
+ATEM.egg-info/dependency_links.txt
+ATEM.egg-info/requires.txt
+ATEM.egg-info/top_level.txt
+atem_core/__init__.py
+atem_core/adaptive/__init__.py
+atem_core/adaptive/test_interp.py
+atem_core/adaptive/train.py
+atem_core/core/__init__.py
+atem_core/core/interp_test.py
+atem_core/core/task_gen.py
+atem_core/core/train.py
