@@ -1,0 +1,2 @@
+[console_scripts]
+ohmyprompt = ohmyprompt.cli:main
