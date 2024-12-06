@@ -1,0 +1,13 @@
+aocs_lab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aocs_lab/gravity_gradient_torque.py,sha256=Lp9ACZDmtt5VV7LMNKIVFgqJyG2aFJICvnMCmUG7c9c,1436
+aocs_lab/inertia_matrix.py,sha256=5oD3im9hGJocWNreFbMgB6cdY536YAZKp4L1BABhSbY,1073
+aocs_lab/influxdb2.py,sha256=wn6t7qrrCTZzDZXYnfv0KFJgcqb6XEV0haxLxogd4VA,1165
+aocs_lab/sun_time.py,sha256=eeBxMInii7-nKrBWi66jv3FmXU_m4AVAvroWFge90yw,1412
+aocs_lab/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aocs_lab/utils/constants.py,sha256=Gib96Jv_GNvoe-WBwopdQZ1iucf5CrULGDpqnmkNqdQ,644
+aocs_lab/utils/lib.py,sha256=a6tTtWstF80FDE3zmGHEJfyNY39BGVoVmWX5BuBuwTk,2370
+aocs_lab/utils/time.py,sha256=zoXpFT3vUhWfHHdiF-BZA9zhtNEzaCth-oZt19CekIk,438
+aocs_lab-0.0.7.dist-info/METADATA,sha256=JB6XsEXFy6XG3JZ4G7RYY-EcheNNDq5mJU7v5IGk7yk,2103
+aocs_lab-0.0.7.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+aocs_lab-0.0.7.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+aocs_lab-0.0.7.dist-info/RECORD,,
