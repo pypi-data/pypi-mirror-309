@@ -1,0 +1,6 @@
+task_executor/__init__.py,sha256=Yu_y-OE1EN-qrhXdcomFyZhXtpxWDfkZnhfw31c4GaA,788
+task_executor/exec/__init__.py,sha256=pKRR2cHFjr9PfwxmeCAmhuVsUHhnnH40jUmnL40cAlQ,4241
+task_executor/utypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+task_executor-0.1.0.dist-info/METADATA,sha256=qz_mkBUn7B4-1jjiVQiFn5cTBacQBAV6sVBa8o8gdrE,1330
+task_executor-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+task_executor-0.1.0.dist-info/RECORD,,
