@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dexsdk
+Version: 0.0.1
+Summary: SDK for stock analysis and strategy backtest.
+Home-page: https://www.pinkquant.com
+Author: PinkQuant
+Author-email: pinkquant@163.com
+Maintainer: topbip
+Maintainer-email: pinkquant@163.com
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: Cython==3.0.11
+Requires-Dist: plotly-express==0.4.1
+Requires-Dist: msgpack>=0.4.7
+Requires-Dist: pandas==1.5.2
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: six==1.16.0
+Requires-Dist: thriftpy2==0.5.2
+Requires-Dist: colorlog==4.8.0
+Requires-Dist: QuantStats==0.0.62
+Requires-Dist: ipython==8.12.2
+Requires-Dist: numpy==1.24.4
+Requires-Dist: tqdm==4.65.0
+
+# dexsdk
+
+#### 介绍
+1. dex-market-data
+2. ccxt-plus
+3. backtest
+
+### 安装方法
+```shell
+
+# 在命令行执行：
+pip install -r requirements.txt
+# 如果安装失败，请指定PIP官方镜像源
+pip install -r requirements.txt -i https://pypi.org/simple
+
+
+# 升级版本
+pip install -U dexsdk
+# 如果安装失败，请指定官方镜像源
+pip install -U dexsdk -i https://pypi.org/simple
+```
+
+
+### 使用方法
+```python
+
+
+```
