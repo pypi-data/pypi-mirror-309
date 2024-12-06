@@ -1,0 +1,9 @@
+![llamero logo](assets/llamero-logo.jpg)
+
+# {{ project.name }}
+
+{# Include each section template in the pre-determined order #}
+{% for template in templates %}
+{% include "sections/" ~ template %}
+
+{% endfor %}
