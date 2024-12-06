@@ -1,0 +1,362 @@
+Metadata-Version: 2.1
+Name: aiZero-gr
+Version: 0.0.3a1
+Summary: A simple and easy-to-use library that connects to common artificial intelligence interfaces (powered by Gradio), allowing for quick development of local web applications. It includes mainstream AI capabilities such as LLM text interaction, image understanding, audio understanding, image generation, speech recognition, and speech synthesis.
+Home-page: UNKNOWN
+Author: emhang
+Author-email: emhang@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: gradio (>=5.5.0)
+Requires-Dist: requests
+Requires-Dist: dashscope (>=1.20.0)
+
+aiZero-gr是一个简单易用的可以连接常用人工智能接口，快速搭建可视化本地web应用的Python第三方库，在[aiZero](https://pypi.org/project/aiZero)库的基础上，调整为基于gradio框架的界面展示。
+
+当前版本仅支持阿里云百炼大模型服务的api key和有限的功能调用。
+
+### 快速开始
+
+```python
+from aiZero_gr import AIWebApp
+
+# 设定web应用的功能
+def my_ai_function():
+    pass
+
+app = AIWebApp(title='人工智能助手')    # 初始化web应用
+app.set_apikey('YOUR_API_KEY')    # 设定AI接口的api key
+app.add_input_text()    # 在页面中添加一个输入文本框
+app.set_submit(my_ai_function)    # 设定提交按钮点击后执行的函数功能
+app.run()    # 启动应用
+```
+
+启动后，程序将自动输出本地网址，你将可以在浏览器中访问并查看搭建好的web应用。
+
+如果需要实现AI功能的可视化呈现，你只需要将`'YOUR_API_KEY'`替换为真实的api key，并完善`my_ai_function`函数。
+
+### AI功能实现例子
+
+#### 大模型文字交互
+
+##### 单轮对话
+
+```python
+from aiZero_gr import AIWebApp, text_generation
+
+def my_ai_function():
+    text = app.input_text    # 获取输入文本框的文字内容
+    reply = text_generation(text)    # 调用AI接口，获取回复反馈
+    app.send(reply)    # 将结果推送至前端
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+##### 多轮对话
+
+```python
+from aiZero_gr import AIWebApp, text_generation
+
+def my_ai_function():
+    text = app.input_text
+    history = app.chat_history    # 获取对话历史记录
+    reply = text_generation(text, history)    # 将历史记录同时提交
+    app.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+##### 设置系统指令
+
+```python
+from aiZero_gr import AIWebApp, text_generation
+
+def my_ai_function():
+    text = app.input_text
+    history = app.chat_history
+    # prompt参数可以设定系统指令，设定模型的行为要求
+    reply = text_generation(text, history, prompt='你是一个10岁的小学生，名叫小幻')
+    app.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+##### 流式输出
+
+```Python
+from aiZero_gr import AIWebApp, text_generation
+
+def my_ai_function():
+    text = app.input_text
+    history = app.chat_history
+    # stream=True可设置为流式输出，目前文字交互、图像理解、声音理解支持该参数
+    reply = text_generation(text, history, stream=True)
+    # 流式输出的返回结果是生成器，可以用for循环按顺序推送
+    for r in reply:
+	    app.results.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 图像理解
+
+```python
+from aiZero_gr import AIWebApp, image_understanding
+
+def my_ai_function():
+    text = app.input_text
+    img = app.input_pic    # 获取输入的图像
+    history = app.chat_history
+    reply = image_understanding(img, text, history)
+    app.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.add_input_pic()    # 添加图像输入组件
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 声音理解
+
+```python
+from aiZero_gr import AIWebApp, audio_understanding
+
+def my_ai_function():
+    text = app.input_text
+    audio = app.input_audio    # 获取输入的音频
+    history = app.chat_history
+    reply = audio_understanding(audio, text, history)
+    app.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.add_input_audio()    # 添加音频输入组件
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 图像生成
+
+```python
+from aiZero_gr import AIWebApp, image_generation
+
+def my_ai_function():
+    text = app.input_text
+    reply = image_generation(text)
+    app.send(reply, 'image')    # 推送图像时，需要明确类型为image
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 人物图像风格重绘
+
+```python
+from aiZero_gr import AIWebApp, human_repaint
+
+def my_ai_function():
+    img = app.input_pic
+    reply = human_repaint(img)
+    app.send(reply, 'image')
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_pic()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+`human_repaint`函数可以接受`style`参数设定风格类型，可选值为0～9的数字（默认值为7）。
+
+#### 涂鸦作画
+
+```python
+from aiZero_gr import AIWebApp, sketch_to_image
+
+def my_ai_function():
+    text = app.input_text    # 涂鸦作画的提示文字
+    img = app.input_pic    # 涂鸦草图图像
+    reply = sketch_to_image(img, text)
+    app.send(reply, 'image')
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.add_input_pic()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+`sktech_to_image`函数可以接受`style`参数设定风格类型，包括：
+
+- `"<3d cartoon>"`：3D 卡通
+- `"<anime>"`：二次元（默认值）
+- `"<oil painting>"`：油画
+- `"<watercolor>"` ：水彩
+- `"<flat illustration>"`：扁平插画
+
+#### 语音识别
+
+```python
+from aiZero_gr import AIWebApp, speech_recognition
+
+def my_ai_function():
+    audio = app.input_audio
+    reply = speech_recognition(audio)
+    app.send(reply)
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_audio()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+所用接口支持中英文双语的语音识别。
+
+#### 语音合成
+
+```python
+from aiZero_gr import AIWebApp, speech_synthesis
+
+def my_ai_function():
+    text = app.input_text
+    reply = speech_synthesis(text)
+    app.send(reply, 'audio')    # 将音频结果推送到前端
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+`speech_synthesis`函数可以接受以下参数：
+
+- `rate`：设定语速快慢，取值范围0.5~2，默认值为1。
+- `pitch`：设定语调高低，取值范围0.5~2，默认值为1。
+- `voice`：设定使用的音色，详细列表参见[链接](https://help.aliyun.com/zh/dashscope/developer-reference/timbre-list)。
+
+#### 声音克隆
+
+```python
+from aiZero_gr import AIWebApp, voice_clone, speech_synthesis
+
+def my_ai_function():
+    text = app.input_text
+    audio = app.input_audio
+    if audio:
+        voice_id = voice_clone(audio)
+        app.voice_id = voice_id    # 记录本轮生成的音色名
+        app.send(voice_id)
+    # 利用生成的音色合成语音，此时必须使用cosyvoice-clone-v1模型
+    reply = speech_synthesis(text, model='cosyvoice-clone-v1', voice=app.voice_id)
+    app.send(reply, 'audio')
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.add_input_audio()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+`voice_clone`函数返回根据语音音频获取的音色名，该音色可再经`speech_synthesis`函数合成语音，但使用时必须指定`model`参数值为`'cosyvoice-clone-v1'`。
+
+### 进阶使用
+
+#### 多种AI功能的混合
+
+aiZero-gr支持方便地将不同的AI功能进行链式整合，例如，将文字交互、语音识别、语音合成结合起来，可以实现语音交互。
+
+运用时，注意系统默认的chat_history为**前端可见的对话历史记录**，如果需要将前端不可见的数据作为传递给AI的对话历史，则需要**手动维护对话历史记录**。
+
+```python
+from aiZero_gr import AIWebApp, text_generation, speech_recognition, speech_synthesis
+
+def my_ai_function():
+    audio = app.input_audio
+    text = speech_recognition(audio)
+    reply = text_generation(text, history)
+    # 文字内容发生未推送到前端，需要手动添加
+    history.add_user_content(text)
+    history.add_ai_content(reply)
+    reply_audio = speech_synthesis(reply)
+    app.send(reply_audio, 'audio')
+
+app = AIWebApp(title='人工智能助手')
+history = app.create_history()    # 手动创建对话历史
+app.set_apikey('YOUR_API_KEY')
+app.add_input_audio()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 同时输出多种不同类型的信息
+
+aiZero-gr支持同时输出文字、音频和图像等多种不同类型的信息，但每种类型的信息只能为一个。例如，我们可以输入文字，同时以文本和音频形式输出AI的响应。
+
+```python
+from aiZero_gr import AIWebApp, text_generation, speech_synthesis
+
+def my_ai_function():
+    text = app.input_text
+    history = app.chat_history
+    reply = text_generation(text, history)
+    reply_audio = speech_synthesis(reply)
+    app.send(reply)
+    app.send(reply_audio, 'audio')
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+#### 同次分时输出多个信息
+
+aiZero-gr也支持在一次大模型交互的输出时，分不同时间输出不同信息。例如，我们制作一个绘图助手，它可以将用户输入的简易文字信息扩充为详细的画面信息后，再交给图像生成功能完成图像的创作。在这个功能设计中，AI的文字回复响应很快而图像生成响应较慢，因此应当在不同时间推送至前端。
+
+```python
+from aiZero_gr import AIWebApp, text_generation, image_generation
+
+def my_ai_function():
+    text = app.input_text
+    reply = text_generation(text, prompt='你是一个人工智能绘图助手，你负责将用户输入信息中描述的画面扩充为详细的绘图AI的提示词')
+    app.send(reply)
+    img = image_generation(reply)
+    app.send(img, 'image')
+
+app = AIWebApp(title='人工智能助手')
+app.set_apikey('YOUR_API_KEY')
+app.add_input_text()
+app.set_submit(my_ai_function)
+app.run()
+```
+
+
