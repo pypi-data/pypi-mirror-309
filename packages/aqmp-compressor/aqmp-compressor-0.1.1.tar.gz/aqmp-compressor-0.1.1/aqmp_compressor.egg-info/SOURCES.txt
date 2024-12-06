@@ -1,0 +1,8 @@
+README.md
+setup.py
+aqmp_compressor.egg-info/PKG-INFO
+aqmp_compressor.egg-info/SOURCES.txt
+aqmp_compressor.egg-info/dependency_links.txt
+aqmp_compressor.egg-info/entry_points.txt
+aqmp_compressor.egg-info/requires.txt
+aqmp_compressor.egg-info/top_level.txt
