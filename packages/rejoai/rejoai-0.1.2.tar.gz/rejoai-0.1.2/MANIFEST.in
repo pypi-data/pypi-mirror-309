@@ -1,0 +1,2 @@
+recursive-include rejo_ai *.py *.so *.pyx
+include README.md
