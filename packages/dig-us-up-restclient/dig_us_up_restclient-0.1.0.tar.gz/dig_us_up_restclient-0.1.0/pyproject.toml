@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dig-us-up-restclient"
+version = "0.1.0"
+description = ""
+authors = ["Mauro Pires Quintas <mpq2002@gmail.com>"]
+readme = "README.md"
+packages = [ {"include" = "restclient"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
