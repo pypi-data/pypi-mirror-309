@@ -1,0 +1,3 @@
+[console_scripts]
+sync-versions=sync_versions:sync_versions
+
