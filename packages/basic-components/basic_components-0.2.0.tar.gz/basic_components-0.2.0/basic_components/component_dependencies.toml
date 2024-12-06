@@ -1,0 +1,39 @@
+[dependencies]
+accordion = [
+    "icons/ChevronDown",
+    "icons/ChevronUp",
+]
+dialog = [
+    "icons/X",
+]
+dropdown_menu = [
+    "checkbox",
+    "icons/ChevronRight",
+    "radio",
+]
+"integrations/wtform" = [
+    "form",
+]
+mode_toggle = [
+    "button",
+    "dropdown_menu",
+    "icons/Moon",
+    "icons/Sun",
+]
+select = [
+    "icons/Check",
+    "icons/ChevronDown",
+    "icons/ChevronUp",
+]
+sheet = [
+    "icons/X",
+]
+table = [
+    "icons/ChevronDown",
+    "icons/ChevronUp",
+    "icons/ChevronsUpDown",
+]
+toast = [
+    "button",
+    "icons/X",
+]
