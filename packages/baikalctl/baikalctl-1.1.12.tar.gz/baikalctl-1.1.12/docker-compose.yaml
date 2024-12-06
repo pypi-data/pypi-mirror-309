@@ -1,0 +1,22 @@
+services:
+  baikalctl:
+    image: rstms/baikalctl:${BAIKALCTL_VERSION:-latest}
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - ./certs:/home/baikalctl/certs
+    environment:
+      BAIKALCTL_USERNAME:
+      BAIKALCTL_PASSWORD:
+      BAIKALCTL_URL:
+      BAIKALCTL_ADDRESS:
+      BAIKALCTL_PORT:
+      BAIKALCTL_LOG_LEVEL:
+      BAIKALCTL_DEBUG:
+      BAIKALCTL_VERBOSE:
+      BAIKALCTL_XVNC_LOG:
+      BAIKALCTL_PROFILE:
+      BAIKALCTL_CERT:
+      BAIKALCTL_KEY:
+
