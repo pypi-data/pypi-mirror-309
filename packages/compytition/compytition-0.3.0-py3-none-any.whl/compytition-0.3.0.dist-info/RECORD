@@ -1,0 +1,9 @@
+compytition/__init__.py,sha256=MIsCCufKl81V4Yg2-d7TOTWZfjjb1mZxMpg-FpUCgVA,260
+compytition/outcome.py,sha256=rgBhi3-N4Zcomj2vEH4c6Y1J6yO_aAdKXUvQ9oQDp54,394
+compytition/outcome_to_points_mapping.py,sha256=oSwA2yBSVjBJNg7YfapD-Ln8IF2PInqqkwhl2h2nwCs,1105
+compytition/rank.py,sha256=gc_kGfsuJ3N_s3DCqBjiOWKx3RlLy20LwvzTOrnTT5Q,1707
+compytition/rank_list.py,sha256=QEEu2puUxWNu9n5TO5yJdiCZ0eQh8pukj1G8G4zoLQU,1204
+compytition/ranking.py,sha256=X5BMVA5RihhvcZUjpRM2riPL-ggaIf7WLKMjP21GAzg,1407
+compytition-0.3.0.dist-info/METADATA,sha256=vPnkzzmzcSY3DcX4F9LI0xth8v_jQ01NyzR5_zXNEVU,608
+compytition-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+compytition-0.3.0.dist-info/RECORD,,
