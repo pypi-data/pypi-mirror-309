@@ -1,0 +1,8 @@
+scikit_build_core_conan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scikit_build_core_conan/build/__init__.py,sha256=XMxrbBHvLLu7qQPudN4DZIRDgeOUNFF9lBnMF3SzBLc,1163
+scikit_build_core_conan/build/settings.py,sha256=5bU0WA8builF77VfXh8wx4AVm55SsmHyCoU7H9LIdXo,631
+scikit_build_core_conan/build/wheel.py,sha256=QnDpJf6R0L6urnk6YvRRBzACyvhlD11yElzxlyzAFis,5968
+scikit_build_core_conan-0.5.1.dist-info/METADATA,sha256=CqRXTmLxOkujeqhh_JHIfYk4HpjG55Rdx_30r0g6jmY,3588
+scikit_build_core_conan-0.5.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+scikit_build_core_conan-0.5.1.dist-info/licenses/LICENSE,sha256=9EIOJhLYQFZx0s9rLsjNXocX7eDCYs28w5gPy3pdHC0,1077
+scikit_build_core_conan-0.5.1.dist-info/RECORD,,
