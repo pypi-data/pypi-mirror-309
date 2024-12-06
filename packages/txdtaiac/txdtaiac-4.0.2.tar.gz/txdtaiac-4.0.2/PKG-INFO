@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: txdtaiac
+Version: 4.0.2
+Author: 唐旭东
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: Pillow

@@ -1,0 +1,8 @@
+setup.py
+taiac/__init__.py
+taiac/taiac.py
+txdtaiac.egg-info/PKG-INFO
+txdtaiac.egg-info/SOURCES.txt
+txdtaiac.egg-info/dependency_links.txt
+txdtaiac.egg-info/requires.txt
+txdtaiac.egg-info/top_level.txt
