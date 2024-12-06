@@ -1,0 +1,8 @@
+py_api_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_api_package/app.py,sha256=UiiIhyzYk87pJBft1fFBfifr7Cjm8vFMgAClwMPoAbA,217
+py_api_package/routes.py,sha256=SAbKjHCCkRycd09_OZFOytgarJ1EmxUrhA__TLfqQKg,173
+flask_api_package-1.0.0.dist-info/METADATA,sha256=0Q9Fc3AazHvL5AA4dLjR8e_QbOMoB-sGQV97CAb5uBU,189
+flask_api_package-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+flask_api_package-1.0.0.dist-info/entry_points.txt,sha256=58zcXYhGkVOFBcs4qAmYSgKMiEN1GsTpXFBY3CpVEWE,63
+flask_api_package-1.0.0.dist-info/top_level.txt,sha256=55CiBBosGRWw3CbzRPYORplu9cHZKHqWTHilF2mYLjg,15
+flask_api_package-1.0.0.dist-info/RECORD,,
