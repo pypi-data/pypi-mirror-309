@@ -1,0 +1,2 @@
+[console_scripts]
+get_token = wristband.oauth2:main
