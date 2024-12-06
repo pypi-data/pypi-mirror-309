@@ -1,0 +1,2 @@
+[console_scripts]
+fast-galaxy = fast_galaxy.__main__:main
