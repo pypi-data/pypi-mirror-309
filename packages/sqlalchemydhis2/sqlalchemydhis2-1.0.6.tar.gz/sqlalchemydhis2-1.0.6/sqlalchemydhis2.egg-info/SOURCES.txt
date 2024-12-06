@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sqlalchemy_dhis2/__init__.py
+sqlalchemy_dhis2/jsonhttp_dialect.py
+sqlalchemydhis2.egg-info/PKG-INFO
+sqlalchemydhis2.egg-info/SOURCES.txt
+sqlalchemydhis2.egg-info/dependency_links.txt
+sqlalchemydhis2.egg-info/entry_points.txt
+sqlalchemydhis2.egg-info/not-zip-safe
+sqlalchemydhis2.egg-info/requires.txt
+sqlalchemydhis2.egg-info/top_level.txt
