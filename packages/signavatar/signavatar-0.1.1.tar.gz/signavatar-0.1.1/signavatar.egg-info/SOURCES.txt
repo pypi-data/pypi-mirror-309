@@ -1,0 +1,14 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+signavatar/__init__.py
+signavatar/signavatar.py
+signavatar/signavatar3.py
+signavatar.egg-info/PKG-INFO
+signavatar.egg-info/SOURCES.txt
+signavatar.egg-info/dependency_links.txt
+signavatar.egg-info/requires.txt
+signavatar.egg-info/top_level.txt
+signavatar/tests/__init__.py
+signavatar/tests/test_signavatar.py

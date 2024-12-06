@@ -1,0 +1,55 @@
+SignAvatar Library
+The SignAvatar library enables developers to convert text into sign language gesture animations. Using Giphy API integrations, SignAvatar creates an animated GIF sequence to represent each word in the text, ideal for applications supporting inclusive communication for the deaf and mute.
+
+Features
+Fetches ASL gestures using Giphy API.
+Combines individual GIFs into a single animation for smoother transitions.
+Customizable animation speed, color style, and expressions.
+Installation
+Prerequisites
+Python 3.7+
+API Key: A Giphy API key is required to fetch GIFs.
+Step 1: Clone Repository
+bash
+Copy code
+git clone https://github.com/your-username/signavatar.git
+Step 2: Install Required Packages
+bash
+Copy code
+pip install requests pillow imageio
+Configuration
+Obtain a Giphy API key from the Giphy Developer Portal.
+Place the API key in your code as api_key parameter for SignAvatar.
+Usage
+Initializing SignAvatar
+python
+Copy code
+from signavatar import SignAvatar
+
+api_key =  "AHgXT1TDdpVGJhlx9hsw4pOwFyqClNM"
+avatar = SignAvatar(api_key, default_speed="normal", style={"color": "blue", "brightness": 0.8}, expression="happy")
+Generating Sign Animations
+Convert a sentence into sign language animations:
+
+python
+Copy code
+avatar.sign("Hello how are you")
+Methods
+get_gif_url(word): Fetches a GIF URL from Giphy for a given word.
+sign(text, speed): Generates a merged animation for a sentence.
+merge_and_display_gifs(gif_urls): Merges individual GIFs into one animation for display.
+Example Output
+The merged GIF will display an animated sequence of gestures corresponding to each word in the input text.
+
+Troubleshooting
+Error Fetching GIFs: Check if the API key is valid and if there are network issues.
+Error Merging GIFs: Ensure all URLs are valid and point to existing GIF files.
+
+# SignAvatar
+
+SignAvatar is a library for creating sign language avatars using GIFs from Giphy.
+
+## Installation
+
+```bash
+pip install signavatar
