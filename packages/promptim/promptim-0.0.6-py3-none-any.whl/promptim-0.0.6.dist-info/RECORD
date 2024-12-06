@@ -1,0 +1,16 @@
+promptim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promptim/__main__.py,sha256=bowfcFPid-0mb8ze4mVapSHokfVNN_em8dv9nePVmAg,30197
+promptim/_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promptim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promptim/trainer.py,sha256=74zUIy2FjJMMJ6JGZGHov6JaDeAokr7F0nWQH6k2Bls,39928
+promptim/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promptim/tasks/metaprompt.py,sha256=IoAAtbwKcKJalhqE5h70pOfQNSxXZSu1No0W_Phkxg4,9455
+promptim/tasks/scone.py,sha256=VjdaiFT0zQjACqrtAQcfShGjnU-Yge51zAwUJ9tp81A,1010
+promptim/tasks/simpleqa.py,sha256=ISW63RYnjetYj5NJGxBJlEwZO-P7vTJ8grNJYbVyacI,8081
+promptim/tasks/ticket_classification.py,sha256=OUyuAJsQqHrUqOL8__XFNPp3HUVuqDgzqxQQ-5UQl70,4403
+promptim/tasks/tweet_generator.py,sha256=IHPrcM5oVe44NXx0zJ6ji4trwO4tXxXnPP0zggDPoBo,5573
+promptim-0.0.6.dist-info/METADATA,sha256=Fk7f4O4ThPlv2QpXDJuoaljyKpWV2ENtBzsI6ow97Qo,13748
+promptim-0.0.6.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+promptim-0.0.6.dist-info/entry_points.txt,sha256=4fJX-SPLJR5J5499WG0xTqGoKm7RjuXPoo63r_jjgWw,51
+promptim-0.0.6.dist-info/licenses/LICENSE,sha256=ZwIakj8i17kzBlcT_Z7cu7RBfjrCkGkp3gz-SDEXJsA,1067
+promptim-0.0.6.dist-info/RECORD,,
