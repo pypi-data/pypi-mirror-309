@@ -1,0 +1,12 @@
+atlas_schema/__init__.py,sha256=eba1N4_cWS5YzEOgDdCJGiPKqUtO-Vn7t8dYq0Q6gk8,354
+atlas_schema/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+atlas_schema/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+atlas_schema/enums.py,sha256=RktHMdqNcjcqHOtXzRP5pnakhrfo0VfRl60Mqsa7i74,5522
+atlas_schema/methods.py,sha256=Vo9pQ52ZVm13TBpJ6KiiDlN2kS1MMGBMLjwRPB62ces,4111
+atlas_schema/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlas_schema/schema.py,sha256=YRVaiDa5Evl2HZ9CzH23d0-TLkvxqyvFQhn0ixyWCcw,7668
+atlas_schema/typing_compat.py,sha256=ZEdCro9ZfwqyEXrcxpkgyQqmpPiiLFc6JhDr9qFlD4w,555
+atlas_schema-0.1.0.dist-info/METADATA,sha256=tiETJp8Ho_BdhjcKHExLrsxt4_z-65d-ovTBszl6pU8,16445
+atlas_schema-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+atlas_schema-0.1.0.dist-info/licenses/LICENSE,sha256=snem82NV8fgAi4DKaaUIfReaM5RqIWbH5OOXOvy40_w,11344
+atlas_schema-0.1.0.dist-info/RECORD,,
