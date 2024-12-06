@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiZero_gr/__init__.py
+aiZero_gr.egg-info/PKG-INFO
+aiZero_gr.egg-info/SOURCES.txt
+aiZero_gr.egg-info/dependency_links.txt
+aiZero_gr.egg-info/requires.txt
+aiZero_gr.egg-info/top_level.txt
