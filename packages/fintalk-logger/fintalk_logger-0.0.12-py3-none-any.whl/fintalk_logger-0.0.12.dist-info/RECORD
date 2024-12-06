@@ -1,0 +1,15 @@
+fintalk_logger/__init__.py,sha256=3FNW_JCruTBWoi_y0XrN-mIWSPzaCyew1ZRS0CMlyxk,34
+fintalk_logger/logger.py,sha256=ijqgtVrC8uu9t7570MQ49kTsEWPlHirhLei3iT49wto,6710
+fintalk_logger/models/__init__.py,sha256=yDoH5LUo1Lt0Nf1XKuLZ-VgtGUy4DweJL_p2SeruaMY,25
+fintalk_logger/models/basemodels.py,sha256=UhAPxzI_uHNl7_07kJLryokR04-KMLU9ELlTJg0bkJI,714
+fintalk_logger/utils/__init__.py,sha256=o_K1A4ZzJywmNuaAzFXm7gaR_KVghElaGZExviDLrVw,181
+fintalk_logger/utils/get_http.py,sha256=3np4WxkOJ7Hc_gkLFjNTf9ZTAsfNnYwUon8_E7SbHPk,394
+fintalk_logger/utils/get_ip.py,sha256=D6w5uW614q96sn8qU-8lQfkx5dd868PMySRDc913KSo,596
+fintalk_logger/utils/get_request_id.py,sha256=eCuC9KNNuPRZNTTj7aki9q3-w0C0abq0Kx8Dj-fbWps,165
+fintalk_logger/utils/get_user.py,sha256=_jtJZp_EBfd7sgtKXupGU58mwAaafQU9643_WCCAL5k,1040
+fintalk_logger/utils/remove_empty_keys.py,sha256=mDqKX9QlNlrD8cWxbdxiuggJcsM0_JORbeMy_CQEu70,300
+fintalk_logger-0.0.12.dist-info/LICENSE,sha256=9_YKRtEN4daF6leHFqhnMsOLMH2j4fbql28Ej-nTVtQ,1064
+fintalk_logger-0.0.12.dist-info/METADATA,sha256=3Ta45w9vt8CYibn7-zGjpJ7BbUaMkPGOWaI1Dt_ySXc,426
+fintalk_logger-0.0.12.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+fintalk_logger-0.0.12.dist-info/top_level.txt,sha256=Ws4-xuroMxXWSfQRw3EjREMctR-7R9Vd3TURpWgB0lo,15
+fintalk_logger-0.0.12.dist-info/RECORD,,
