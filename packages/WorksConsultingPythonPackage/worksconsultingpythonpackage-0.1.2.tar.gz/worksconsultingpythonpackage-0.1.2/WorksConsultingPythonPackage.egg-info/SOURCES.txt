@@ -1,0 +1,11 @@
+README.md
+setup.py
+WorksConsultingPythonPackage/__init__.py
+WorksConsultingPythonPackage/checks.py
+WorksConsultingPythonPackage/editor.py
+WorksConsultingPythonPackage/multiprocessing.py
+WorksConsultingPythonPackage/time.py
+WorksConsultingPythonPackage.egg-info/PKG-INFO
+WorksConsultingPythonPackage.egg-info/SOURCES.txt
+WorksConsultingPythonPackage.egg-info/dependency_links.txt
+WorksConsultingPythonPackage.egg-info/top_level.txt
