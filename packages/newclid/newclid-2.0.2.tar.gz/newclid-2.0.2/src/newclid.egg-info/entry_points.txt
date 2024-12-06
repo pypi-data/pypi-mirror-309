@@ -1,0 +1,2 @@
+[console_scripts]
+newclid = newclid.__main__:main
