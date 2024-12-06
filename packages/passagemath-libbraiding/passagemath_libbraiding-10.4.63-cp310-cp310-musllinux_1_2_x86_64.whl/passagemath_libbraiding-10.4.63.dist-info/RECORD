@@ -1,0 +1,10 @@
+passagemath_libbraiding-10.4.63.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_libbraiding-10.4.63.dist-info/RECORD,,
+passagemath_libbraiding-10.4.63.dist-info/METADATA,sha256=3vou3nFZ8p4c2snXPs20LaK6OXcxxuQv9r57VriRkCU,2660
+passagemath_libbraiding-10.4.63.dist-info/WHEEL,sha256=C_u37Gjsvm-axxahYbHrVJK_acyekKqTTso2RCL4LvU,112
+passagemath_libbraiding.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+passagemath_libbraiding.libs/libbraiding-e398f708.so.0.0.0,sha256=6zoAiKgG94QLL25ceHX8N9H1Tr9E0myf6vvqP0Bfxeg,2349801
+passagemath_libbraiding.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
+sage/all__sagemath_libbraiding.py,sha256=HzvyH9JZ1Fjh65Qx_jwx_UD5XSJg2iOTg7L5ajVVYvs,50
+sage/libs/all__sagemath_libbraiding.py,sha256=HzvyH9JZ1Fjh65Qx_jwx_UD5XSJg2iOTg7L5ajVVYvs,50
+sage/libs/braiding.cpython-310-x86_64-linux-gnu.so,sha256=dPdX_GSsFGz3nYbtuzeStLImpRafsQlpaagvXv_6Neo,905249
