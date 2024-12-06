@@ -1,0 +1,17 @@
+logitest/__init__.py,sha256=UmWv4-LUug3y6kYxJqVy5eEg3Y9HJbwH7tXNcw5RmEA,5146
+logitest/assertion.py,sha256=vs2KliyoyI5uFU3ABDgbZNJXzvBTiSlZORnQe8w5B2w,5022
+logitest/cleanup_decorators.py,sha256=0YZcnh-2H23SpCPLBRfjcPmdrWZAlwk2wrVX5qC5nJA,1743
+logitest/config.py,sha256=bZVSl94LRwL0cEX3MqFEFPuyvRLSijeMIULkhveig6A,1455
+logitest/create_conftest.py,sha256=-AoPiI5rGJf6-LpsgN9-K1i2mbi4RAWgQuQQHdWv16k,750
+logitest/data_handler.py,sha256=ZVDfnjye2PgTPTk1d_urKmqrNDRLXEth7GL4F5SOzn0,14234
+logitest/decorators.py,sha256=BOewZO6Hm3iLpIDAbQAsubYOPD1AdQDcZQzHBBSm6oU,18600
+logitest/del_pycache.py,sha256=hfNPgFntNeQuZ3G9bGoGn_6r_-cyMfLnUAoPikKQ_yE,2162
+logitest/generate_tests.py,sha256=de3AG-4g_pFjivsYxYf3iRZbRphwBBuivclGINEg83M,25514
+logitest/helper.py,sha256=rZO6HAyxv2oK5aqjqPk_f9ZNJzVtvsiGHVXgBUIvZHg,9353
+logitest/insert_decorators.py,sha256=HXn_eNlRdNLUS50LjIi6mcU6EjdBOuZN4Wu7yjx2zA0,5795
+logitest-0.1.2.dist-info/LICENSE,sha256=rXDtXwIfr3orHAW_mi_PKzbYgbPPY9z29Vq4Df51Guw,1090
+logitest-0.1.2.dist-info/METADATA,sha256=8FwgQA2EVt99KvHp9wzUt6ci7ghvWjVtsOevjcCSVZE,5782
+logitest-0.1.2.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+logitest-0.1.2.dist-info/entry_points.txt,sha256=nG2IjFP-lgioPbQoWWtomr6-hLUb2I6Q7l1UvoSjG0s,70
+logitest-0.1.2.dist-info/top_level.txt,sha256=1tn7J4bE-5GreyS9ujkcR7GXVShkOqBd6R6GHQF19pc,9
+logitest-0.1.2.dist-info/RECORD,,
