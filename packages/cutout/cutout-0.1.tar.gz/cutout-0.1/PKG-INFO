@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cutout
+Version: 0.1
+Summary: Survey cutouts plotted directly; no user choices, just plotting!
+Home-page: https://github.com/avapolzin/cutout
+Author: Ava Polzin
+Author-email: apolzin@uchicago.edu
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: unagi
