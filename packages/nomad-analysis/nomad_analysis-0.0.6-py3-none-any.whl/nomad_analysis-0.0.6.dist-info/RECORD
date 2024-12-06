@@ -1,0 +1,13 @@
+nomad_analysis/__init__.py,sha256=SjIL03AvmOFRhSz_Te1A5az3Cj81BslOJesPT5yPKvQ,95
+nomad_analysis/analysis_source.py,sha256=xPzCkowGLl40fi-vxUMCeC2zud4ljaFGr-23rQF8ewc,13586
+nomad_analysis/utils.py,sha256=xfFOmtO_wjXfVHwuD_1kwL6DqkRyC92zgi0G_oN52Ms,7092
+nomad_analysis/general/__init__.py,sha256=hK6yx9dLrYlz_s38Vl6QOkI6WOuKWbLqp86pHX5pFGc,1039
+nomad_analysis/general/schema.py,sha256=CLIPQ7TWZ_LXObNlhSdNb-6uYq4KvdGVGwZZOhXSdNA,1386
+nomad_analysis/jupyter/__init__.py,sha256=PzCvDjmxD07QlX54NdnuGzb0fddi_H75DT-eXYEcwJs,1043
+nomad_analysis/jupyter/schema.py,sha256=936irizmAvDMAr2slL1TM-Y_FlHzMv7mRFTbEz0NKeI,21129
+nomad_analysis-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nomad_analysis-0.0.6.dist-info/METADATA,sha256=jvNyPt3iMiun4R1OadTueLY4NbzCCJ1weSbhMcgO0Dg,19290
+nomad_analysis-0.0.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+nomad_analysis-0.0.6.dist-info/entry_points.txt,sha256=YFN6lSs5z4j0HpAZ3dwk5hOcZWKvtQkmBnE_gW5_KTU,127
+nomad_analysis-0.0.6.dist-info/top_level.txt,sha256=uJ8v00RqaJpje5k9ORflWPGK-Qjjigr78lcLc0ktoOU,15
+nomad_analysis-0.0.6.dist-info/RECORD,,
