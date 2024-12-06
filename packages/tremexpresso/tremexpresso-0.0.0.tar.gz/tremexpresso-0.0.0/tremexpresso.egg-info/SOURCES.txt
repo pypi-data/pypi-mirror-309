@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tremexpresso/__init__.py
+tremexpresso.egg-info/PKG-INFO
+tremexpresso.egg-info/SOURCES.txt
+tremexpresso.egg-info/dependency_links.txt
+tremexpresso.egg-info/top_level.txt
