@@ -1,0 +1,9 @@
+pylabeledrf/__init__.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+pylabeledrf/computeLRF.py,sha256=udPhAMLauTTQP0czrkNETnIQNcM6DjcVKfuN3j0sCdw,31107
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_computeLRF.py,sha256=9nGqHNrDSKlbjJtW0BSsLHTVjnRVbwuQF0vV9vUoToc,1675
+pylabeledrf-0.3.2.dist-info/LICENSE,sha256=j-oe7NnRQdQn9BXXylyf1E_RofXofTLjwKJ1LnY5TOk,1071
+pylabeledrf-0.3.2.dist-info/METADATA,sha256=RCaEAaAbxrLpdfqlc20SRFy0a7xCBIPwzmpMR5mqLCk,3500
+pylabeledrf-0.3.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pylabeledrf-0.3.2.dist-info/top_level.txt,sha256=uqp9zeVm5823oFi5RT7-gWSeKaZ5RuGWumQ0cyvo16k,17
+pylabeledrf-0.3.2.dist-info/RECORD,,
