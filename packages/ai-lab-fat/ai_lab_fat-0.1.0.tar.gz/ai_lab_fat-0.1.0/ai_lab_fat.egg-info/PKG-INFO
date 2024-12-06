@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ai_lab_fat
+Version: 0.1.0
+Summary: A package for solving the Travelling Salesman Problem
+Home-page: https://github.com/yourusername/ai_lab_fat
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ai_lab_fat
+
+A Python package to solve the Travelling Salesman Problem (TSP).
+
+## Installation
+
+To install the package, use `pip`:
+
+```bash
+pip install ai_lab_fat
