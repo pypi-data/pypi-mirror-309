@@ -1,0 +1,15 @@
+[package]
+name = "polars_interval_match"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "polars_interval_match"
+
+[dependencies]
+polars = { version = "*" , features = ["serde", "serde-lazy"]}
+pyo3 = { version = "*", features = ["extension-module"] }
+pyo3-polars = { version = "*", features = ["derive", "serde"] }
+serde = { version = "*", features = ["derive"] }
+syn = "2.0.87"
+pyo3-macros = "*"
