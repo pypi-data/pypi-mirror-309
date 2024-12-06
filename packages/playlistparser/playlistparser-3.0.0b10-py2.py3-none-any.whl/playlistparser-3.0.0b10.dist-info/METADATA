@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: playlistparser
+Version: 3.0.0b10
+Summary: Tool for parsing DJ software playlists
+Project-URL: Changelog, https://github.com/slipmatio/playlistparser/blob/main/CHANGES.md
+Project-URL: Bluesky, https://bsky.app/profile/uninen.net
+Project-URL: Source, https://github.com/slipmatio/playlistparser
+Project-URL: Twitter, https://twitter.com/uninen
+Author-email: Ville Säävuori <ville@unessa.net>
+License: AGPL-3.0-or-later
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Playlistparser
+
+Tool for parsing DJ software playlists. Currently supports Engine DJ, Rekordbox, Serato, Traktor, and VirtualDJ. Part of [Slipmat.io](https://slipmat.io) tools.
+
+Live demo of this parser in action: [https://playlists.slipmat.io](https://playlists.slipmat.io)
+
+## Contributing
+
+Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.
+
+## Elsewhere
+
+- [Follow @uninen.net](https://bsky.app/profile/uninen.net) on Bluesky
+- Read my continuously updating learnings from Python / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
+
+## Licence
+
+Copyright © 2022, Ville Säävuori. Released under the GNU Affero General Public License v3.0.
+
+Commercial licenses are also available.
