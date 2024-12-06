@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+courier_python_v2.egg-info/PKG-INFO
+courier_python_v2.egg-info/SOURCES.txt
+courier_python_v2.egg-info/dependency_links.txt
+courier_python_v2.egg-info/top_level.txt
+testdummypackage/__init__.py
+testdummypackage/arithmetic.py
+testdummypackage/geometry.py
+tests/test_arithmetic.py
