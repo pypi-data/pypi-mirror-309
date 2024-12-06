@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: codrone-simulator
+Version: 0.2.2
+Summary: A Python package for simulating drone operations and learning drone programming in a virtual environment.
+Author: 10boticsDev
+Author-email: mark.protusada@10botics.com
+License: CC-BY-ND-4.0
+Project-URL: GitHub Repository, https://github.com/10botics/codrone-simulator-sdk-python
+Project-URL: Unity Project GitHub Repository, https://github.com/10botics/codrone-simulator-unity
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Codrone Simulator
+
+Codrone Simulator is a Python package designed to simulate drone operations. It provides tools for controlling drones in a virtual environment, making it ideal for teaching programming, robotics, and drone navigation.
+
+---
+
+## Features
+
+- Simulate drone commands in a virtual environment.
+- Compatible with Python and Blocky-to-Python conversions.
+- Includes custom APIs for advanced drone interactions.
+
+---
+
+## Installation
+
+To install the Codrone Simulator package, use pip:
+
+```bash
+pip install codrone-simulator
