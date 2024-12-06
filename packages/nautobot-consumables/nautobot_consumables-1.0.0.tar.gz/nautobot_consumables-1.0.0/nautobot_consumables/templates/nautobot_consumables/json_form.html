@@ -1,0 +1,40 @@
+{% extends "generic/object_create.html" %}
+{% load helpers %}
+{% load form_helpers %}
+{% load static %}
+
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static "nautobot_consumables/css/colors.css" %}" />
+{% endblock extra_styles %}
+
+{% block form %}
+<div class="panel panel-default">
+    <div class="panel-heading"><strong>{{ obj_type|title }}</strong></div>
+    <div class="panel-body">
+    {% for field in form.visible_fields %}
+        {% if field.name not in form.exclude_list and field.name not in form.relationships %}
+            {% render_field field %}
+        {% endif %}
+    {% endfor %}
+    {% for hidden in form.hidden_fields %}
+        {{ hidden }}
+    {% endfor %}
+    </div>
+</div>
+    {% if form.schema %}
+{% include "nautobot_consumables/inc/json_schema_fields.html" %}
+    {% endif %}
+
+    {% if form.data or demo %}
+{% include "nautobot_consumables/inc/json_data_fields.html" %}
+    {% endif %}
+{% include "inc/extras_features_edit_form_fields.html" %}
+{% endblock form %}
+
+{% block javascript %}
+{{ block.super }}
+<script src="{% static 'nautobot_consumables/js/jsoneditor.js' %}"></script>
+<script src="{% static 'nautobot_consumables/js/json5.min.js' %}"></script>
+<script src="{% static 'nautobot_consumables/js/nautobot-jsoneditor.js' %}"></script>
+{% include "nautobot_consumables/inc/form_submit_javascript.html" %}
+{% endblock javascript %}
