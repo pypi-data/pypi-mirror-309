@@ -1,0 +1,132 @@
+from codemod_yaml import parse_str
+from codemod_yaml import QuoteStyle, PyScalarString
+
+def test_simple_sequence():
+    stream = parse_str("- foo\n- bar\n")
+    
+    # Simple invariant, we should return the exact same object
+    first = stream[0]
+    second = stream[0]
+    assert first is second
+
+    assert stream[0] == "foo"
+    assert stream[1] == "bar"
+    # didn't make any edits, this should be fine
+    assert stream.text == b"- foo\n- bar\n"
+
+def test_edit_sequence():
+    stream = parse_str("- foo\n- bar\n")
+    stream.append(PyScalarString("baz", QuoteStyle.BARE))
+    assert stream.text == b"- foo\n- bar\n- baz\n"
+    stream.append(PyScalarString("zab", QuoteStyle.BARE))
+    assert stream.text == b"- foo\n- bar\n- baz\n- zab\n"
+
+def test_edit_sequence2():
+    stream = parse_str("- foo\n- bar\n- baz\n")
+    del stream[1]
+    assert stream.text == b"- foo\n- baz\n"
+    stream.append(PyScalarString("zab", QuoteStyle.BARE))
+    assert stream.text == b"- foo\n- baz\n- zab\n"
+
+def test_int_sequence():
+    stream = parse_str("- 1\n- 0xff\n")
+    assert stream[0] == 1
+    assert stream[1] == 255
+    # didn't make any edits, this should be fine
+    assert stream.text == b"- 1\n- 0xff\n"
+
+def test_string_sequence():
+    stream = parse_str("""\
+- a
+- "b"
+- 'c'
+- |
+  d
+""")
+    assert stream[0] == "a"
+    assert stream[1] == "b"
+    assert stream[2] == "c"
+    assert stream[3] == "d"
+    # didn't make any edits, this should be fine
+    assert stream.text == b"- a\n- \"b\"\n- 'c'\n- |\n  d\n"
+
+def test_nested_sequence():
+    stream = parse_str("""\
+-
+  -  a
+  -  b
+  -  c
+""")
+    assert stream[0][0] == "a"
+    assert stream[0][1] == "b"
+    assert stream[0][2] == "c"
+    # didn't make any edits, this should be fine
+    assert stream.text == b"-\n  -  a\n  -  b\n  -  c\n"
+    stream[0][1] = PyScalarString("new", QuoteStyle.BARE)
+    assert stream.text == b"""\
+-
+  -  a
+  -  new
+  -  c
+"""
+    del stream[0][1]
+    assert stream.text == b"-\n  -  a\n  -  c\n"
+    stream[0].append(PyScalarString("d", QuoteStyle.BARE))
+    assert stream.text == b"-\n  -  a\n  -  c\n  -  d\n"
+
+def test_slicing():
+    stream = parse_str("""\
+-
+  -  a
+  -  b
+  -  c
+  -  d
+""")
+    assert stream[0][0:2] == ["a", "b"]
+    assert stream[0][1:3] == ["b", "c"]
+    assert stream[0][1:] == ["b", "c", "d"]
+    assert stream[0][:2] == ["a", "b"]
+    assert stream[0][0:3:2] == ["a", "c"]
+    assert stream[0][1:3:2] == ["b"]
+    assert stream[0][1::2] == ["b", "d"]
+    assert stream[0][1:3:1] == ["b", "c"]
+
+def test_slicing_modification():
+    stream = parse_str("""\
+-
+    -   a
+""")
+    stream[0][:] = [PyScalarString("b", QuoteStyle.BARE), PyScalarString("c", QuoteStyle.BARE)]
+    assert stream.text == b"""\
+-
+    -   b
+    -   c
+"""
+
+def test_combo_modification():
+    stream = parse_str("""\
+a:
+ - 1
+ - 2
+
+b:
+""")
+    # tree-sitter appears to give the sequence all the trailing newlines UNLESS
+    # followed by a map key, in which case nobody gets them.
+    stream["a"][:] = [3, 4, 5]
+    assert stream.text == b"""\
+a:
+ - 3
+ - 4
+ - 5
+
+b:
+"""
+
+def test_cookie_sequence():
+    stream = parse_str("""\
+- a
+""")
+    stream.append("b")
+    del stream[1]
+    assert stream.text == b"- a\n"
