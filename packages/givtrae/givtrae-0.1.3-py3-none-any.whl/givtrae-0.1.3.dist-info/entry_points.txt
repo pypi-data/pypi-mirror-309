@@ -1,0 +1,2 @@
+[console_scripts]
+givtrae = mkgtree.mkgtree:main
