@@ -1,0 +1,11 @@
+icds_data_definitions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/v1/schema.py,sha256=DgHZVbGjsX2j15WktnYgTISq4SD9hPFxgd72fAojqfg,280
+icds_data_definitions/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/common/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/common/v1/schema.py,sha256=epmZQrV9CPNYWBzTYuEchq8g3hKnJdw8eY6sYyK0x3A,616
+icds_data_definitions-0.0.11.dist-info/METADATA,sha256=ycl_zqzeH8cviw-80XNP1nxOpx0_rLmXp1FwBI-uT4I,841
+icds_data_definitions-0.0.11.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+icds_data_definitions-0.0.11.dist-info/top_level.txt,sha256=Z_qewsV3ZVAeXc_pBWhTAWKWk6Q9uGx7iBmeMk-RC0A,22
+icds_data_definitions-0.0.11.dist-info/RECORD,,
