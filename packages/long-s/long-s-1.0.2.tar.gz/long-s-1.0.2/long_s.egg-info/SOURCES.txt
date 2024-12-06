@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+long_s/__init__.py
+long_s/_convert.py
+long_s/_german_conversion.py
+long_s/_german_lists.py
+long_s/_simple_conversions.py
+long_s/_split_words.py
+long_s.egg-info/PKG-INFO
+long_s.egg-info/SOURCES.txt
+long_s.egg-info/dependency_links.txt
+long_s.egg-info/requires.txt
+long_s.egg-info/top_level.txt
