@@ -1,0 +1,3 @@
+[console_scripts]
+aga = autogluon.assistant:main
+autogluon-assistant = autogluon.assistant:main
