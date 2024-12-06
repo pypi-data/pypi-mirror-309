@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tertran
+Version: 1.0
+License-File: LICENSE.txt
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: urllib3
+Requires-Dist: idna
+Requires-Dist: requests-cache

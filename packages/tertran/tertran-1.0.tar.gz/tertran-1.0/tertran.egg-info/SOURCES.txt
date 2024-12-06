@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/data/__init__.py
+src/data/langs.py
+src/data/symbols.py
+src/scripts/__init__.py
+src/scripts/get_langs.py
+src/scripts/translate.py
+tertran.egg-info/PKG-INFO
+tertran.egg-info/SOURCES.txt
+tertran.egg-info/dependency_links.txt
+tertran.egg-info/entry_points.txt
+tertran.egg-info/requires.txt
+tertran.egg-info/top_level.txt

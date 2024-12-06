@@ -1,0 +1,3 @@
+[console_scripts]
+tertran = src.scripts.translate:translate
+tertran-langs = src.scripts.get_langs:get_langs
