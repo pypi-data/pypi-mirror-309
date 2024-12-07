@@ -1,0 +1,8 @@
+README.md
+setup.py
+AndrezaSantosCalc/__init__.py
+AndrezaSantosCalc/calculadora.py
+AndrezaSantosCalc.egg-info/PKG-INFO
+AndrezaSantosCalc.egg-info/SOURCES.txt
+AndrezaSantosCalc.egg-info/dependency_links.txt
+AndrezaSantosCalc.egg-info/top_level.txt

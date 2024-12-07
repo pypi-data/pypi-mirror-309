@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: AndrezaSantosCalc
+Version: 1.0.3
+Summary: Uma biblioteca para realizar operações básicas de uma calculadora.
+Author: Andreza Santos
+Author-email: seu_email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+```python
+
+# AndrezaSantosCalc
+AndrezaSantosCalc Ã© uma biblioteca Python que fornece uma calculadora simples para realizar operaÃ§Ãµes matemÃ¡ticas bÃ¡sicas, como soma, subtraÃ§Ã£o, multiplicaÃ§Ã£o e divisÃ£o. Este pacote foi desenvolvido para ser uma ferramenta de uso fÃ¡cil para cÃ¡lculos rÃ¡pidos, especialmente em ambientes educacionais e pequenos projetos.
+
+## InstalaÃ§Ã£o
+
+Para usar a biblioteca AndrezaSantosCalc, vocÃª tem duas opÃ§Ãµes de instalaÃ§Ã£o:
+
+MÃ©todo 1: InclusÃ£o Manual
+Baixe ou clone o repositÃ³rio da biblioteca.
+Copie a pasta AndrezaSantosCalc para o diretÃ³rio principal do seu projeto.
+    link de acesso: https://pypi.org/project/AndrezaSantosCalc/
+
+MÃ©todo 2: Instalando com pip
+Se o pacote for publicado no PyPI, vocÃª pode instalÃ¡-lo executando:
+    pip install AndrezaSantosCalc
+
+
+## Como Usar
+
+* ImportaÃ§Ã£o
+Importe a classe Calculadora da biblioteca AndrezaSantosCalc:
+    from AndrezaSantosCalc import Calculadora
+
+Instanciando a Calculadora:
+    calc = Calculadora()
+
+* OperaÃ§Ãµes DisponÃ­veis
+A classe Calculadora inclui quatro mÃ©todos principais para operaÃ§Ãµes matemÃ¡ticas. Veja os detalhes de cada mÃ©todo abaixo.
+
+soma(a, b)
+Realiza a soma de dois nÃºmeros.
+ParÃ¢metros:
+a (float): Primeiro nÃºmero.
+b (float): Segundo nÃºmero.
+Retorna: float - O resultado da soma de a e b.
+
+Exemplo:
+    resultado = calc.soma(10, 5)
+    print("Soma:", resultado)  # SaÃ­da: Soma: 15
+
+
+subtracao(a, b)
+Realiza a subtraÃ§Ã£o de dois nÃºmeros.
+ParÃ¢metros:
+a (float): Primeiro nÃºmero.
+b (float): Segundo nÃºmero.
+Retorna: float - O resultado da subtraÃ§Ã£o de a e b.
+
+Exemplo:
+    resultado = calc.subtracao(10, 5)
+    print("SubtraÃ§Ã£o:", resultado)  # SaÃ­da: SubtraÃ§Ã£o: 5
+
+
+multiplicacao(a, b)
+Realiza a multiplicaÃ§Ã£o de dois nÃºmeros.
+ParÃ¢metros:
+a (float): Primeiro nÃºmero.
+b (float): Segundo nÃºmero.
+Retorna: float - O resultado da multiplicaÃ§Ã£o de a e b.
+
+Exemplo:
+    resultado = calc.multiplicacao(10, 5)
+    print("MultiplicaÃ§Ã£o:", resultado)  # SaÃ­da: MultiplicaÃ§Ã£o: 50
+
+
+divisao(a, b)
+Realiza a divisÃ£o de dois nÃºmeros.
+
+ParÃ¢metros:
+
+a (float): Primeiro nÃºmero.
+b (float): Segundo nÃºmero.
+Retorna: float - O resultado da divisÃ£o de a por b.
+
+ExceÃ§Ã£o: Levanta ValueError se b for 0, pois divisÃ£o por zero nÃ£o Ã© permitida.
+
+Exemplo:
+    resultado = calc.divisao(10, 5)
+    print("DivisÃ£o:", resultado)  # SaÃ­da: DivisÃ£o: 2.0
+
+
+* Exemplo Completo
+Este exemplo demonstra o uso de todos os mÃ©todos da biblioteca AndrezaSantosCalc:
+from AndrezaSantosCalc import Calculadora
+
+# Criando uma instÃ¢ncia da calculadora
+calc = Calculadora()
+
+# Soma
+resultado_soma = calc.soma(10, 5)
+print("Soma:", resultado_soma)  # SaÃ­da: Soma: 15
+
+# SubtraÃ§Ã£o
+resultado_subtracao = calc.subtracao(10, 5)
+print("SubtraÃ§Ã£o:", resultado_subtracao)  # SaÃ­da: SubtraÃ§Ã£o: 5
+
+# MultiplicaÃ§Ã£o
+resultado_multiplicacao = calc.multiplicacao(10, 5)
+print("MultiplicaÃ§Ã£o:", resultado_multiplicacao)  # SaÃ­da: MultiplicaÃ§Ã£o: 50
+
+# DivisÃ£o com tratamento de exceÃ§Ã£o
+try:
+    resultado_divisao = calc.divisao(10, 0)
+    print("DivisÃ£o:", resultado_divisao)
+except ValueError as e:
+    print("Erro:", e)  # SaÃ­da: Erro: DivisÃ£o por zero nÃ£o Ã© permitida.
+
+
+* Tratamento de ExceÃ§Ãµes
+O mÃ©todo divisao(a, b) levanta uma exceÃ§Ã£o ValueError se o valor de b for 0, pois a divisÃ£o por zero Ã© indefinida.
+
+Exemplo de Tratamento de ExceÃ§Ã£o:
+    try:
+        resultado = calc.divisao(10, 0)
+    except ValueError as e:
+        print("Erro:", e)  # SaÃ­da: Erro: DivisÃ£o por zero nÃ£o Ã© permitida.
+
+* MÃ©todos
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| MÃ©todo                | DescriÃ§Ã£o                                  | ParÃ¢metros         | Retorno                 | ExceÃ§Ãµes                        |
+|-----------------------|--------------------------------------------|--------------------|-------------------------|---------------------------------|
+| `soma(a, b)`          | Soma de `a` e `b`.                         | `a`, `b` (float)   | `float`: `a + b`        | None                            |
+| `subtracao(a, b)`     | SubtraÃ§Ã£o de `a` e `b`.                    | `a`, `b` (float)   | `float`: `a - b`        | None                            |
+| `multiplicacao(a, b)` | MultiplicaÃ§Ã£o de `a` e `b`.                | `a`, `b` (float)   | `float`: `a * b`        | None                            |
+| `divisao(a, b)`       | DivisÃ£o de `a` por `b`.                    | `a`, `b` (float)   | `float`: `a / b`        | `ValueError` se `b == 0`        |
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
