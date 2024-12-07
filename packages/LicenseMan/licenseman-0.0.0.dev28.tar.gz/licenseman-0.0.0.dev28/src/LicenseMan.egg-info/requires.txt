@@ -1,0 +1,7 @@
+LoggerMan==0.0.0.dev71
+PyLinks==0.0.0.dev54
+PkgData==0.0.0.dev5
+PySerials==0.0.0.dev44
+MDit==0.0.0.dev41
+ExceptionMan==0.0.0.dev41
+platformdirs<5,>=4.3
