@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cpp/src/spline.cpp
+cython/spline_wrap.cpp
+multispline/__init__.py
+multispline/spline.py
+multispline.egg-info/PKG-INFO
+multispline.egg-info/SOURCES.txt
+multispline.egg-info/dependency_links.txt
+multispline.egg-info/not-zip-safe
+multispline.egg-info/requires.txt
+multispline.egg-info/top_level.txt
