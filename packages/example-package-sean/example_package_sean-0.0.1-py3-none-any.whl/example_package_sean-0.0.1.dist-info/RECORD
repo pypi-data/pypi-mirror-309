@@ -1,0 +1,7 @@
+example_package_sean/__init__.py,sha256=eo6Fo2SgYxDeLaRQWAsRQM4zUee1HXvRg1yjGYMEa1E,32
+example_package_sean/example.py,sha256=A17AJCxb7wOu1VzQrLNaQ4kXzJxDN3zSbkyiIOtvl_k,46
+example_package_sean-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+example_package_sean-0.0.1.dist-info/METADATA,sha256=CLWX4hwpoyUMbTFZggb2mD_9gPPlMBAMAYsAdUKwEIc,13646
+example_package_sean-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+example_package_sean-0.0.1.dist-info/top_level.txt,sha256=Lg_63-8OZYw1JEmp9D6-xvoMW4qMtfWAEhKhnwyftFo,21
+example_package_sean-0.0.1.dist-info/RECORD,,
