@@ -1,0 +1,7 @@
+custom_s3_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_s3_utils/s3_utils.py,sha256=j0AVr97U1JzyNtlbcBF9wRRHnL_tpwLICozm3Kv9dWA,1203
+custom_s3_utils-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_s3_utils-0.1.0.dist-info/METADATA,sha256=Pv50dxDXdLcCIPygWkZHtA9yT70LGc20pCdgeB-7aWc,663
+custom_s3_utils-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+custom_s3_utils-0.1.0.dist-info/top_level.txt,sha256=0NxXS-xi6yvJbec8pg_7HS2oDFwomaYOQnF9hfdrezI,16
+custom_s3_utils-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: custom-s3-utils
+Version: 0.1.0
+Summary: A simple utility for handling S3 file uploads.
+Home-page: https://github.com/yourusername/custom-s3-utils
+Author: Rajesh Reddy Madduri
+Author-email: x23340231@student.ncirl.ie
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 >=1.0.0
+
+# Custom S3 Utils
+
+`custom-s3-utils` is a Python library for handling AWS S3 file uploads.
+
+## Installation
+
+```bash
+pip install custom-s3-utils
