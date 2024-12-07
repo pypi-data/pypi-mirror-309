@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+dimensia/__init__.py
+dimensia/dimensia.py
+dimensia/exceptions.py
+dimensia/hnsw.py
+dimensia/utils.py
+dimensia.egg-info/PKG-INFO
+dimensia.egg-info/SOURCES.txt
+dimensia.egg-info/dependency_links.txt
+dimensia.egg-info/requires.txt
+dimensia.egg-info/top_level.txt

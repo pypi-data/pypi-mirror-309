@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: dimensia
+Version: 0.1.0
+Summary: A lightweight vector database for storage, retrieval, and management of high-dimensional vector data.
+Home-page: https://github.com/aniruddhasalve/dimensia
+Author: Aniruddha Salve
+Author-email: salveaniruddha180@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dimensia
+
+`Dimensia` is a lightweight vector database designed for efficient storage, retrieval, and management of high-dimensional vector data. It supports features like document storage, collection management, similarity search, and flexible metadata schemas. Dimensia can be used for various machine learning and natural language processing tasks like information retrieval, recommendation systems, and more.
+
+## Features
+
+- **Collections**: Create and manage multiple collections of vectors.
+- **Metadata Schema**: Define metadata schemas for your collections.
+- **Similarity Search**: Perform similarity searches based on vectors using efficient nearest neighbor algorithms.
+- **Embedding Models**: Integrate with models from `sentence-transformers` for vector embeddings.
+- **Document Management**: Add and retrieve documents by ID.
+- **Vector Management**: Get vector size and access vector data.
+
+## Installation
+
+To install Dimensia, you can use pip:
+
+```bash
+pip install dimensia
+```
+
+
+## Usage
+
+Below is an example of how to use Dimensia in your project:
+
+```python
+from dimensia import Dimensia
+
+# Initialize the database
+db = Dimensia(db_path="dimensia_db")
+
+# Create collections
+db.create_collection("collection_1", metadata_schema={"field1": "type1", "field2": "type2"})
+db.create_collection("collection_2", metadata_schema={"field1": "type1", "field2": "type2"})
+
+# Set embedding model
+db.set_embedding_model("sentence-transformers/paraphrase-MiniLM-L6-v2")
+
+# Verify collections created
+collections = db.get_collections()
+print(f"Collections: {collections}")
+
+# Add documents to collections
+documents_1 = [
+    {"id": "1", "content": "This is a document about deep learning."},
+    {"id": "2", "content": "This document covers natural language processing."}
+]
+
+documents_2 = [
+    {"id": "3", "content": "This document is about reinforcement learning."},
+    {"id": "4", "content": "This document discusses machine learning in general."}
+]
+
+db.add_documents("collection_1", documents_1)
+db.add_documents("collection_2", documents_2)
+
+# Perform a search in collection_1
+query_1 = "Tell me about NLP"
+results_1 = db.search(query_1, "collection_1", top_k=2)
+print("Search Results in Collection 1:")
+for score, doc in results_1:
+    print(f"Document ID: {doc['id']}, Similarity: {score}")
+
+# Perform a search in collection_2
+query_2 = "What is reinforcement learning?"
+results_2 = db.search(query_2, "collection_2", top_k=2)
+print("Search Results in Collection 2:")
+for score, doc in results_2:
+    print(f"Document ID: {doc['id']}, Similarity: {score}")
+
+# Retrieve collection schema
+schema_1 = db.get_collection_schema("collection_1")
+print(f"Schema for Collection 1: {schema_1}")
+
+# Retrieve document by ID
+doc_1 = db.get_document("collection_1", "1")
+print(f"Retrieved Document from Collection 1: {doc_1}")
+
+# Get vector size (dimension of the embedding)
+vector_size = db.get_vector_size()
+print(f"Vector size: {vector_size}")
+
+```
+
+## Requirements
+
+Dimensia requires the following dependencies:
+
+- `numpy==1.26.4`
+- `torch==2.2.2`
+- `sentence-transformers==3.3.1`
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+We welcome contributions to improve Dimensia! Please fork the repository, make your changes, and submit a pull request.
+
+## Support
+
+For any issues or questions, feel free to create an issue on GitHub.
