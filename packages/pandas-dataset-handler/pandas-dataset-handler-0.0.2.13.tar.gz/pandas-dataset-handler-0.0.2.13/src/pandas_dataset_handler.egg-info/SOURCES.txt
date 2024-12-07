@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/pandas_dataset_handler.py
+src/pandas_dataset_handler.egg-info/PKG-INFO
+src/pandas_dataset_handler.egg-info/SOURCES.txt
+src/pandas_dataset_handler.egg-info/dependency_links.txt
+src/pandas_dataset_handler.egg-info/requires.txt
+src/pandas_dataset_handler.egg-info/top_level.txt

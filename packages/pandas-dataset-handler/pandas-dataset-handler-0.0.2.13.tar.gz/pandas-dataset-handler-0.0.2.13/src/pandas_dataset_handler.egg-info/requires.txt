@@ -1,0 +1,6 @@
+pandas
+pyarrow
+pyorc
+lxml
+tables
+openpyxl
