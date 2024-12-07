@@ -1,0 +1,16 @@
+# Hide cache
+__pycache__/
+.venv/
+
+# Hide x++ testing files
+pkgs/*
+!pkgs/stdlib
+
+# Hide mdbook build
+docs/book/
+
+# Everything pip related
+dist/
+build/
+*.egg-info/
+*.egg
