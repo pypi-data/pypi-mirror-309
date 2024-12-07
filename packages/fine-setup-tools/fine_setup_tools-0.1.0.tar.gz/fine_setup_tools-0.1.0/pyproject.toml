@@ -1,0 +1,16 @@
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project]
+name = "fine_setup_tools"
+version = "0.1.0"
+description = "nice_logger"
+requires-python = ">=3.8"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+[[project.authors]]
+name = "hhczy"
+email = "hhczy1003@gmail.com"
+
+[tool.hatch.build.targets.wheel]
+include = [ "nice_setup_tools/**/*.py", "nice_setup_tools/**/*.pyi", "README.md", "LICENSE",]
