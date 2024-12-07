@@ -1,0 +1,4 @@
+[console_scripts]
+tibber-pulse-sml-debugger=tibber_pulse_sml_debugger.main:main
+tpsd=tibber_pulse_sml_debugger.main:main
+
