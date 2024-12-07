@@ -1,0 +1,2 @@
+[console_scripts]
+markdown2code = markdown2code.cli:main
