@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: naiwillcallyou
+Version: 2024.11.4
+Summary: A tool to call you
+Home-page: https://github.com/T-K-233/NAI-Will-Call-You
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests

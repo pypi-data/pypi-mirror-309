@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+src/naiwillcallyou/__init__.py
+src/naiwillcallyou/entry.py
+src/naiwillcallyou.egg-info/PKG-INFO
+src/naiwillcallyou.egg-info/SOURCES.txt
+src/naiwillcallyou.egg-info/dependency_links.txt
+src/naiwillcallyou.egg-info/entry_points.txt
+src/naiwillcallyou.egg-info/requires.txt
+src/naiwillcallyou.egg-info/top_level.txt
