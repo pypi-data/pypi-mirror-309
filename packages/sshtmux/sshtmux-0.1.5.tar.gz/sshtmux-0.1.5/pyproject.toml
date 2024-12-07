@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "sshtmux"
+homepage = "https://github.com/scjorge/sshtmux"
+version = "0.1.5"
+description = "Powerful SSH terminal manager"
+authors = ["Jorge Silva <jorgesilva.ti@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Environment :: No Input/Output (Daemon)",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1"
+rich = "^13.3"
+pydantic = "^2.9.2"
+libtmux = "^0.37.0"
+textual = "^0.85.1"
+toml = "^0.10.2"
+pydantic-settings = "^2.6.1"
+cryptography = "^43.0.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.1"
+pytest = "^8.3.3"
+textual-dev = "^1.6.1"
+
+[tool.poetry.scripts]
+sshm = "sshtmux.main:cli"
+ssht = "sshtmux.main_tui:tui"
+
+[tool.ruff]
+exclude = [
+    "sshtmux/sshm/__init__.py"
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
