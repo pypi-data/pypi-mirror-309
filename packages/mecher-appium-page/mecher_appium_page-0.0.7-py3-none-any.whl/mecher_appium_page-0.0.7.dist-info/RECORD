@@ -1,0 +1,9 @@
+mecher_appium_page/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecher_appium_page/appium_page_class.py,sha256=lP8aWm_gAi2J31vRNLxv2P8jHYztUvczbNjINPTTHPc,871
+mecher_appium_page/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecher_appium_page/models/app_config.py,sha256=sE1TLozNrZ_VFH_xIYn28sTMwcJHNGusbLQnw1s4akg,224
+mecher_appium_page/models/locators.py,sha256=7Llk71c2rG3NaLzrhTcp44ypVsTSQFhLlIBnIYw-U_Y,31
+mecher_appium_page-0.0.7.dist-info/METADATA,sha256=BUvVctCM93tru5_UoLQDmFAIeFmNS4ffeQ-Vmnm1dcw,335
+mecher_appium_page-0.0.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mecher_appium_page-0.0.7.dist-info/top_level.txt,sha256=DjERJSzJX43k2WVTC7I7qpGHHa2-ApVxFVQdlBeYU3s,19
+mecher_appium_page-0.0.7.dist-info/RECORD,,
