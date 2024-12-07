@@ -1,0 +1,15 @@
+ppm3/__init__.py,sha256=SCIcTdOvfEkrZd1doOtOnvCj8PmdRuXu18YYJQxfFrs,24
+ppm3/main.py,sha256=pDY0v2RRj54n0QZqqCkizpHZWa5lrZILpf_xr1Kmo-8,2262
+ppm3/src/__init__.py,sha256=8j-g33JnYhJergGM1r6YVr8AP7ZMfIvIf4GNb-OQOkY,139
+ppm3/src/add_env.py,sha256=XjJzSzs7mQJwlJ8CNFy97ltpImvLFpnrFZn7ooLB67g,2597
+ppm3/src/default.py,sha256=Xg4QEhGmdJKJRD0kFKpV-scx1vfeyftVwdxAOdekbH4,14869
+ppm3/src/init.py,sha256=NNVopONPE0m1EWZ5ueS7u4bXuSKOvOk8FYlsXuz2Lb4,2351
+ppm3/src/install.py,sha256=W-Mo-pxWcQww2wQrPf-toYeScQOEtMP4gzcHEGNSy7c,1098
+ppm3/src/loading.py,sha256=8AZJHsutZxVAD-pVD1AwOCfN7-11qBxD_xiWUuVbHnw,1242
+ppm3/src/run.py,sha256=vgWHDVt4sOMUX181GWeDrlJvPgrJvIGQ6rdVV1d4hr4,1848
+ppm3/src/uninstall.py,sha256=anvlYikmuSkdoB5fZ9QPJtupaIjQGccUyxcVhDLzLIY,2357
+ppm3-0.0.7.dist-info/METADATA,sha256=10FA0Ep_Wn-I2cl6pNTDUI1NYxvdUxmc5rQKlLwrqGk,4877
+ppm3-0.0.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ppm3-0.0.7.dist-info/entry_points.txt,sha256=CQh246W9wahqmX1uW2_XFN4jUpU3l9EF5Un38O4pZ28,34
+ppm3-0.0.7.dist-info/top_level.txt,sha256=4Jtg7kk_2Ys3pfXL2wL3DPSgLorhVD2eEg-O84wIkMA,5
+ppm3-0.0.7.dist-info/RECORD,,
