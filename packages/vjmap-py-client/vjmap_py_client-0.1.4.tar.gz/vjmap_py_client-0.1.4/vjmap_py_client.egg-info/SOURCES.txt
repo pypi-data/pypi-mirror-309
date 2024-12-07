@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vjmap_py_client/__init__.py
+vjmap_py_client/client.py
+vjmap_py_client/utils.py
+vjmap_py_client.egg-info/PKG-INFO
+vjmap_py_client.egg-info/SOURCES.txt
+vjmap_py_client.egg-info/dependency_links.txt
+vjmap_py_client.egg-info/requires.txt
+vjmap_py_client.egg-info/top_level.txt
