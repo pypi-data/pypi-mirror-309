@@ -1,0 +1,2 @@
+[console_scripts]
+lt = localtunnel.__main__:main
