@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: anton_util
+Version: 0.0.1
+Summary: Some small Python utilities for everyday convenience
+Author-email: Anton Björk <to.anton.bjork@gmail.com>
+Project-URL: Homepage, https://github.com/anbjork/anton_util
+Project-URL: Issues, https://github.com/anbjork/anton_util/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+
+
+Some small Python utilities for everyday convenience.
+
+See code for more details.
+
+//AB
