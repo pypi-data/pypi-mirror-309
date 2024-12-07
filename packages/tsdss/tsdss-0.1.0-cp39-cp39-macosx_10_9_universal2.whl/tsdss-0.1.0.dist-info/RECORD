@@ -1,0 +1,13 @@
+tsdss/__init__.py,sha256=TTYMr6mz-Vepq14ryIt_2qHJ8xXeVYr3X2yqPp4uSdo,1546
+tsdss/surrogate.py,sha256=TGWUWPeOV63zrhRnWkisJvNwWs12UOsEciXzhHbBMv8,29342
+tsdss/tsds.py,sha256=2b5Onp1g6B7IoANnoIueq4cjZ6ID6nYbLkj0bSA6mn8,25136
+utils/acf.cpython-39-darwin.so,sha256=cdDngcuwxA3fr7Hkh49h36Ffz3nTpCEd1msTJa-9MPY,86048
+utils/kurtosis.cpython-39-darwin.so,sha256=E-GDghWxMt5hZsZTzC6kmnq0QsZdwr-G8vTRfLJAdmY,68064
+utils/lb.cpython-39-darwin.so,sha256=bx64EJQcQdI_7RjuCcPYX6oqj27J77_Iw1dM6PqsLiE,85968
+utils/skew.cpython-39-darwin.so,sha256=_Hi9Gz13zKlS80M_B4MOUR0jK8kHMCEnNnXMYwxQYyk,68080
+utils/trend.cpython-39-darwin.so,sha256=n9h0qkbb-JYRPcGnNZEZFgx_Kug6mKB5K5LQNlhXUbk,86048
+tsdss-0.1.0.dist-info/LICENSE,sha256=i47sWhI5c0oQgby-YunUO6LRt5jvOrfsEnTIZYMUvnQ,1065
+tsdss-0.1.0.dist-info/METADATA,sha256=v67noTCC7QPcd3HJTzVjB_ijgDUZEHeJ86Rq2PHJ-Ko,8523
+tsdss-0.1.0.dist-info/WHEEL,sha256=RH5XvqtIcyRuJZhl4fyOEzrwvZI7MKQjebq6Jpa-oRM,112
+tsdss-0.1.0.dist-info/top_level.txt,sha256=fhgqozsP5rsuqr-1VPw2gzyxDYi34-q6C18N3EXRHKk,12
+tsdss-0.1.0.dist-info/RECORD,,
