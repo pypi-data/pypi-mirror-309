@@ -1,0 +1,1 @@
+from .emotions import get_rand_mind, get_rand_feeling
