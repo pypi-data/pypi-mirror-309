@@ -1,0 +1,8 @@
+config/agent_profiles.yaml,sha256=DmgwIvCdBP0-c1BvusdvbQImtX4WM9tLUhhrynprrqM,2153
+config/agent_prompts.yaml,sha256=Ndkd2WY9u1r1_WtNQBG8cGn5fClHmKDcf1l2hQHSZ4A,766
+config/cot_agent_prompt.yaml,sha256=IAEvqmG_dLsrVt3NWLqVHOcyXaYO3cFX-o16cIWC0Ss,2949
+config/llm_session_schema.yaml,sha256=hwcTfrNsCI_DWygjy1DyFWmYQPZNmlpxPkjmkrN6uSM,984
+just_agents-0.3.1.dist-info/METADATA,sha256=tihDu5sVh-P01wYj1wqSbY0xOgm-o1zc3LiDzkSM9cU,1036
+just_agents-0.3.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+just_agents-0.3.1.dist-info/top_level.txt,sha256=9hK4m828QBN59kTX5IVy40cPd9zUw5QWQF2AlSrXCJ4,7
+just_agents-0.3.1.dist-info/RECORD,,
