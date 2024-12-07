@@ -1,0 +1,10 @@
+torchrender3d/__init__.py,sha256=hPTeukyM7OSLJXW1J3n8FOnaZ9FCzO8AdPG86vMwRRU,208
+torchrender3d/drawing_tools.py,sha256=m0tjclVHRbMqQGoSVZCobNGXiIjABOXxz82j6ygCsMI,19561
+torchrender3d/extract_layer_methods.py,sha256=ZkSnLq31HD43RHvCI_cghWPaB1eTJYTSWLQ0xHgEYb8,19993
+torchrender3d/networkvis3d.py,sha256=tt51NDBaa3FbBxIe1Fet5cC8gueGsKbluSC7TJy0BpQ,134658
+torchrender3d/parallel_methods.py,sha256=xfebcS0fBmLAwAoQuqxGraeUViI8NyEN0Ng5OGRH-Q0,549
+torchrender3d-0.0.7.dist-info/LICENSE,sha256=JJjOw8R6iQ8h1FQI2X8qWRm7YZEP2kCHQZ96M20nSUw,11543
+torchrender3d-0.0.7.dist-info/METADATA,sha256=7Z3HDfuKiKyVtRsOV6R3hWZNE4fqFDsVXsCsTcr6NR0,9213
+torchrender3d-0.0.7.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+torchrender3d-0.0.7.dist-info/top_level.txt,sha256=A240oTkzRi_EsjPZQhNi3zGpPEtTbsuxSoQsZ8erw1I,14
+torchrender3d-0.0.7.dist-info/RECORD,,
