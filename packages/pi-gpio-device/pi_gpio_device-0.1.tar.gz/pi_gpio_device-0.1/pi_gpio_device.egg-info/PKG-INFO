@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: pi-gpio-device
+Version: 0.1
+Summary: GPIO control
+Home-page: https://github.com/neudeeptech/Pi-GpioControl.git
+Author: Komal Swami
+Author-email: komalsswami@example.com
+License: Custom License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: RPi.GPIO
+
+# Documentation for GpioDevice Class
+
+## GpioDevice
+The GpioDevice class provides a generic interface to work with Raspberry Pi GPIO pins. It supports configuring the GPIO as an input (for buttons, sensors), an output (for relays, LEDs), or for PWM (Pulse Width Modulation) to control devices like motors or dimmable LEDs..
+
+## Importing the Package
+To use the GpioDevice class, import it from your package/module:
+
+```
+import RPi.GPIO as GPIO
+from GpioDevice import GpioDevice
+```
+
+## Constructor
+
+__init__(self, pin_no, mode='input', pwm_freq=None)
+
+Initializes a GPIO pin with the specified mode
+
+- Parameters:
+
+* pin_no (int): The GPIO pin number to use.
+* mode (str): The mode in which the GPIO pin will operate. Supported modes:
+* 'input': Configure the pin as an input (for buttons, sensors, etc.).
+* 'output': Configure the pin as an output (for relays, LEDs, etc.).
+* 'pwm': Configure the pin for PWM (for controlling dimmable LEDs, motors, etc.). Requires pwm_freq.
+* pwm_freq (int, optional): Frequency for PWM mode. Only required if mode is 'pwm'.
+
+- Raises:
+
+ValueError: If an invalid mode is specified or PWM frequency is missing when required.
+
+## Methods
+### read_input(self)
+  Reads the input value from a GPIO pin configured as an input.
+
+* Returns:
+bool: True if the input is HIGH, False otherwise.
+
+* Raises:
+Exception: If the GPIO is not configured as input.
+
+Example:
+
+```
+button = GpioDevice(pin_no=17, mode='input')
+if button.read_input():
+    print("Button is pressed!")
+```
+
+### set_output(self, state)
+
+Sets the output state of a GPIO pin configured as an output.
+
+* Parameters:
+    state (bool): True for HIGH (turn on), False for LOW (turn off).
+
+* Raises:
+    Exception: If the GPIO is not configured as output.
+
+* Example:
+```
+relay = GpioDevice(pin_no=18, mode='output')
+relay.set_output(True)  # Turn on the relay
+relay.set_output(False)  # Turn off the relay
+```
+
+### start_pwm(self, duty_cycle)
+Starts PWM on the GPIO pin configured for PWM mode.
+
+* Parameters:
+    duty_cycle (float): Duty cycle for PWM (range: 0.0 to 100.0).
+* Raises:
+    Exception: If the GPIO is not configured for PWM or PWM is not initialized.
+
+* Example:
+```
+pwm_led = GpioDevice(pin_no=19, mode='pwm', pwm_freq=1000)
+pwm_led.start_pwm(50)  # Start PWM with 50% duty cycle
+stop_pwm(self)
+Stops PWM on the GPIO pin.
+```
+
+* Raises:
+    Exception: If the GPIO is not configured for PWM or PWM is not initialized.
+
+* Example:
+```
+pwm_led.stop_pwm()  # Stop the PWM signal
+```
+
+### cleanup(self)
+Cleans up the GPIO pin, resetting any pin states that were set during the operation. It is good practice to call this method when your script terminates to free up the GPIO resources.
+
+* Example:
+
+```
+button.cleanup()  # Clean up after use
+```
+
+# Example Usage
+
+Here’s an example of how you can use the GpioDevice class to handle multiple GPIO modes in a single project.
+
+### Example 1: Using GPIO as a Button
+
+```
+button = GpioDevice(pin_no=17, mode='input')
+if button.read_input():
+    print("Button pressed!")
+button.cleanup()  # Cleanup when done
+```
+
+### Example 2: Using GPIO as a Relay
+```
+relay = GpioDevice(pin_no=18, mode='output')
+relay.set_output(True)  # Turn on relay
+relay.set_output(False)  # Turn off relay
+relay.cleanup()  # Cleanup when done
+```
+
+### Example 3: Using GPIO for PWM (e.g., LED Dimming)
+```
+pwm_led = GpioDevice(pin_no=19, mode='pwm', pwm_freq=1000)
+pwm_led.start_pwm(50)  # Set PWM to 50% duty cycle
+# After some time, stop the PWM
+pwm_led.stop_pwm()
+pwm_led.cleanup()  # Cleanup when done
+```
+
+Notes
+Modes: When configuring a pin, ensure that the mode parameter correctly reflects your desired operation:
+
+'input' for buttons or sensors.
+'output' for relays or LEDs.
+'pwm' for devices requiring pulse width modulation (PWM).
+
+* Error Handling: The class raises exceptions when methods are called on a pin that is not configured for the requested operation (e.g., trying to read input from a pin configured as an output).
+
+* GPIO Cleanup: Always call the cleanup() method when your script terminates to reset the pin states. This avoids leaving pins in an undefined state.
+
+### GPIODevice Package
+
+This package provides a generic interface to interact with Raspberry Pi GPIO pins. You can configure the pins as inputs (for buttons or sensors), outputs (for relays or LEDs), or for PWM (for dimming LEDs, controlling motors, etc.).
+
+Installation
+```
+pip install gpio_device
+```
+Usage
+
+Initialize a GPIO Pin
+
+```
+from gpio_device import GpioDevice
+```
+
+* You can use GPIO pins in three modes: input, output, or pwm. Depending on the mode, the behavior changes.
+
+Input Mode Example:
+
+```
+button = GpioDevice(pin_no=17, mode='input')
+if button.read_input():
+    print("Button pressed!")
+button.cleanup()
+```
+
+Output Mode Example:
+
+```
+relay = GpioDevice(pin_no=18, mode='output')
+relay.set_output(True)
+relay.cleanup()
+```
+
+PWM Mode Example:
+```
+pwm_led = GpioDevice(pin_no=19, mode='pwm', pwm_freq=1000)
+pwm_led.start_pwm(50)
+pwm_led.cleanup()
+```
+
+### Cleanup
+Always call the cleanup() method when done to reset the GPIO pins.
