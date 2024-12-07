@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fastapirestclient
+Version: 0.2.0
+Summary: A universal REST client for FastAPI projects
+License: MIT
+Author: Aleksandr Yurlov
+Author-email: Sasha.yur@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.24.0,<0.25.0)
