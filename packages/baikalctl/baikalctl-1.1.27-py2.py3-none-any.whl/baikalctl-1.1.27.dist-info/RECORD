@@ -1,0 +1,13 @@
+baikalctl/__init__.py,sha256=V7zJrfwIkclHHCMa6Wt8uZF7YmHXwkdM6IHJJ7WC0hQ,241
+baikalctl/cli.py,sha256=qNceYUSb1Jkw6ju8713mRYVcSYAH005E0mEfCqme1FM,7318
+baikalctl/client.py,sha256=6FWU9hUIZ2oFUKmKQBpgCRVDEBcta8han-XVuez5-ac,12605
+baikalctl/exception_handler.py,sha256=ktSUKmxp5G6SfH7dnE28YYZ6i2q4K_8poZ3bTqRGPXo,1067
+baikalctl/firefox_profile.py,sha256=tOiVu0jfL4Hmh4hIwkkwNtkZJuNDDfFivaalwSUzdFg,3790
+baikalctl/server.py,sha256=Uo_Duvp1E5HDzPqyrnp7RTrr4euuJk5t9VHVCllDNI8,1362
+baikalctl/shell.py,sha256=sOpRM9HEctVP9tcZoYL4s13aJsYvscfwahQyMWky57c,1092
+baikalctl/version.py,sha256=QiQ3uICAt767UUL9BswZ0f9Sv3F1yo0Xpt1106lWELI,128
+baikalctl-1.1.27.dist-info/entry_points.txt,sha256=9QcFUwMkhXVn5iSDCgoiVoXpqSwYSJZftg7U3L-PsB0,43
+baikalctl-1.1.27.dist-info/LICENSE,sha256=6jbRHKR3wiDrMFFJrJKQsZiShvOK17f3FtxZLYdep7k,1071
+baikalctl-1.1.27.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+baikalctl-1.1.27.dist-info/METADATA,sha256=RXvMnqq7BY0O8LAOVIpYwmrzDxLzi8295_KsYNMVui4,1986
+baikalctl-1.1.27.dist-info/RECORD,,
