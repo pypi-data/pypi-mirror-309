@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ehrt/ehrt.egg-info/PKG-INFO
+ehrt/ehrt.egg-info/SOURCES.txt
+ehrt/ehrt.egg-info/dependency_links.txt
+ehrt/ehrt.egg-info/top_level.txt
