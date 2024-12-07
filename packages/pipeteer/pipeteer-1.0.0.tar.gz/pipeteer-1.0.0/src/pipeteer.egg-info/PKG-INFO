@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pipeteer
+Version: 1.0.0
+Summary: Simple, explicit durable execution framework on top of ZeroMQ and SQLModel.
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/marciclabas/pipeteer.git
+Project-URL: docs, https://marciclabas.github.io/pipeteer/
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: haskellian
+Requires-Dist: pyzmq
+Requires-Dist: sqlmodel
+Requires-Dist: pydantic
+Requires-Dist: dslog
+Provides-Extra: cli
+Requires-Dist: typer; extra == "cli"
