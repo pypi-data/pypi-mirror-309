@@ -1,0 +1,8 @@
+---
+engines:
+  cppcheck:
+    language: c++
+
+# https://stackoverflow.com/questions/36825903/cppcheck-claims-that-a-field-is-not-used-while-it-is-in-another-file
+exclude_paths:
+  - "src/**.hpp"
