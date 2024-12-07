@@ -1,0 +1,95 @@
+{% extends "index.html" %}
+
+{% block title %}Configurações para treinamento do modelo{% endblock %}
+
+{% block content %}
+<div id="container-steps">
+  <ul id="progress">
+    <li class="active">Configuração do Modelo</li>
+    <li class="active">Confirmação dos Parâmetros</li>
+    <li>Treinamento do Modelo</li>
+    <li>Resultado do Modelo</li>
+    <li>Testes com o Modelo</li>
+  </ul>
+</div>
+
+<!-- Configuração atual do modelo -->
+
+<div class="config-content">
+  <div>
+    <h4>Configuração atual do modelo</h4>
+    <div id="model_config">
+      <div class="parameter">
+        <span class="model_name_label"><b>Modelo Selecionado:</b></span>
+        <span class="model_name_value"></span>
+      </div>
+      <div class="parameter">
+        <span class="epoch_label"><b>Epoch:</b></span>
+        <span class="epoch_value">1</span>
+      </div>
+      <div class="parameter">
+        <span class="seed_label"><b>Seeds:</b></span>
+        <span class="seed_value"></span>
+      </div>
+      <div class="parameter">
+        <span class="batch_size_label"><b>Batch Size:</b></span>
+        <span class="batch_size_value"></span>
+      </div>
+      <div class="parameter">
+        <span class="shuffle_label"><b>Shuffle:</b></span>
+        <span class="shuffle_value"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Album de imagens do dataset de treinamento e validação -->
+  <div class="container">
+    <span><strong>Dataset de treinamento</strong></span>
+    <div class="training-dataset">
+      <!-- Card de imagem com evento de clique para abrir o diálogo -->
+      <!-- <div class="image-card" onclick="openDialog(this)">
+        <div class="image-wrapper">
+            <img src="" alt="Imagem de Glioma">
+            <span class="badge">2190</span>
+        </div>
+        <div class="caption">Glioma</div>
+      </div> -->
+    </div>
+    <span><strong>Dataset de Validação</strong></span>
+    <div class="validation-dataset">
+      <!-- Conteúdo gerado via javascript -->
+    </div>
+</div>
+
+<!-- Diálogo com a galeria de imagens -->
+<dialog id="image-dialog">
+    <div class="dialog-header">
+        <!-- Botão de voltar e título dinâmico -->
+        <h2>
+            <button class="back-button" onclick="closeDialog()">&#8592;</button>
+            <span id="dialog-title">Title</span>
+        </h2>
+        <!-- Quantidade de imagens encontrada, preenchida dinamicamente -->
+        <p class="image-count" id="image-count">Image Count</p>
+    </div>
+    <!-- Botão de fechar no canto superior direito -->
+    <button class="close-button" onclick="closeDialog()">×</button>
+
+    <div class="image-grid">
+      <!-- <img src="" alt="Imagem de tumor"> -->
+    </div>
+  </dialog>
+  <div class="btns-states">
+    <button id="btn-previous" class="btn btn-primary">
+      Configurar parâmetros novamente
+    </button>
+  
+    <button id="btn-fit-model" class="btn btn-primary">
+      Iniciar treinamento do Modelo
+    </button>
+  </div>
+</div>
+<!-- <div class="gallery-container"></div> -->
+<script src="{{ url_for('static', path='/scripts/dataset.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', path='styles/dataset.css') }}">        
+{% endblock %}
