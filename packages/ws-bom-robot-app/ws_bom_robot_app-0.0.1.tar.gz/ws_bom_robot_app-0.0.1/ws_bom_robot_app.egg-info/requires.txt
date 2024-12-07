@@ -1,0 +1,14 @@
+fastapi[standard]==0.115.5
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+langchain-core>=0.3.1
+faiss-cpu==1.9.0
+python-magic
+opencv-python-headless==4.10.0.84
+jmespath==1.0.1
+unstructured[all-docs]==0.15.14
+langchain_unstructured==0.1.5
+html5lib==1.1
+markdownify>=0.13.1
+nebuly==0.3.33

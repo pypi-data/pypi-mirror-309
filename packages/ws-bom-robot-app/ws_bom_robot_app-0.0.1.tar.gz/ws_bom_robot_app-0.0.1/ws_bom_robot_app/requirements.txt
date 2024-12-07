@@ -1,0 +1,27 @@
+#app
+fastapi[standard]==0.115.5
+
+#framework
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+langchain-core>=0.3.1
+
+#vector DB
+faiss-cpu==1.9.0
+#lark=1.2.2
+#langchain_chroma==0.1.4
+
+#loaders
+python-magic
+opencv-python-headless==4.10.0.84 #docker specs
+jmespath==1.0.1 #tmp fix to pre-extract from native pkg due to issues with wheel
+unstructured[all-docs]==0.15.14
+langchain_unstructured==0.1.5
+html5lib==1.1 #beautifulsoup4 parser
+
+#integrations
+markdownify>=0.13.1 #sitemap
+
+#telemetry
+nebuly==0.3.33
