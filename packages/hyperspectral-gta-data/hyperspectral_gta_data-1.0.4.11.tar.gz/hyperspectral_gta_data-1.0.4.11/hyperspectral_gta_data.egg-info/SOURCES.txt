@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hyperspectral_gta_data/__init__.py
+hyperspectral_gta_data/create_data_dict.py
+hyperspectral_gta_data/data_download.py
+hyperspectral_gta_data.egg-info/PKG-INFO
+hyperspectral_gta_data.egg-info/SOURCES.txt
+hyperspectral_gta_data.egg-info/dependency_links.txt
+hyperspectral_gta_data.egg-info/requires.txt
+hyperspectral_gta_data.egg-info/top_level.txt

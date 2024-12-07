@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hyperspectral_gta_data
+Version: 1.0.4.11
+Summary: Module for downloading hyperspectral imagery and libraries
+Home-page: https://github.com/wbasener/hyperspectral_gta_data
+Download-URL: https://github.com/wbasener/hyperspectral_gta_data/archive/refs/tags/v_0.1.tar.gz
+Author: Bill Basener
+Author-email: wb8by@virginia.edu
+License: MIT
+Keywords: HYPERSPECTRAL,IMAGES,LIBRARIES
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: gdown
