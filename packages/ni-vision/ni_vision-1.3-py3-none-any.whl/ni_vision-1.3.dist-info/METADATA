@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: ni-vision
+Version: 1.3
+Summary: Estimation of Joint Points with Tracking and Camera Calibration and Optimization
+Author-email: Cem Entok <cem.entok@nordicinertial.com>
+Project-URL: Homepage, https://github.com/CemEntok/ni-vision
+Project-URL: Issues, https://github.com/CemEntok/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Estimation of Joint Points with Tracking, Camera Calibration and Optimization
+
+## Camera Projection and Camera Coordinate Frame
+![CameraProjectionFigure](files/camProjection.webp)
+
+## Boom Coordinate Frame and the location of the Camera
+
+![camDirectExcava](files/camDirectExcava.png)
+
+## Real Distances of Joints and Selected Points on the Boom
+
+![MarkesPos](files/MarkesPos.png)
+
+## System Design
+
+- Tracking 2D points in image plane with Lucas Kanade Pyramidal Optical Flow
+- Intrinsic Camera Calibration to find intrinsic parameters of the camera used. Example, Canon EOS 70D with 18-135mm external lens.
+- With known distances, use them as constraints in the extrinsic camera calibration and estimation.
+
+# Instructions
+
+## Vision Notations
+### x: 2D points, a.k.a Image Points
+Sometimes those points to be tracked are called Keypoints.
+Lowercase “x” indicates image points.
+### X: 3D points, a.k.a Object Points
+Capital “X” (or any capital letter) indicates object points.
+### X is a 3D point, with X,Y,Z coordinates.
+Sometimes object points can be said as World Points
+
+## Vision HW
+### Hardwares and materials needed:
+- Camera, capable of video recording with 720p
+- Checkerboard, with known distance of the side of its squares
+- 6 Visible Markers, 3 are on the cabin, 1 is on the P1, the other 2 are on the desired joints.
+- Measuring tapes
+
+## Assumptions
+- There are four markers which their 3D locations should be constant and known in centimetres accuracy so that extrinsic calibration can be done.
+- Origin(P1)-P5 and P5-P6 distances are known in cm accuracy.
+- Marker Positioning order is as following:
+
+![markersOnJoints](files/markersOnJoints.png)
+
+## Vision Software Modules
+
+### Softwares needed:
+- Any IDE that can run python (such as Visual Studio Code)
+- Miniconda for SW environment
+- Python > 3.8
+### The modules consist of
+- 2D tracking of selected points with optical flow
+#### Tracking Module
+- Estimating Intrinsic Parameters of the camera used with checkerboard images
+#### Camera Module
+- Estimating Extrinsic Parameters of the camera with known 3D-2D correspondences + Estimating the 3D location of a desired object point
+#### Transformation and Estimation (TE) Module
+
+# Download the package
+
+So far:
+```cmd
+# Clone the repository
+git clone https://github.com/CemEntok/ni-vision.git
+cd ni-vision
+
+# Fetch and switch to the branch
+git fetch –all
+git checkout vision1.3
+
+# Pull the latest changes
+git pull origin vision1.3
+```
+
+But finally it will be like: 
+
+```
+python -m pip install ni-vision
+```
+
+# Tracking Module
+- Tracking module consist of the problem named as “keypoint tracking” in literature.
+- The keypoint tracking is a vision problem that a 2D image point is tracked in every frame with a computer vision algorithm.
+- NI Tracking algorithm is Lucas-Kanade Pyramidal Optical Flow which is one of the traditional computer vision algorithm. This algorithm is easy to implement and proven in decades.
+
+![Optical Flow Tracking of the 2D Image points](files/opticalFlowTracking.png)
+
+### How to run Tracking Module?
+Write this to the command prompt when Nordic conda env is activated, noting that the video is in the defined extension.
+For 2 keypoint tracking (it can be chosen):
+
+```python
+python src\tracking.py --keypointNum 6 --path "C:\Users\CemEntok\OneDrive - Nordic Inertial Oy\JCI\07_Data_Confidential\Contelec\VisualTracking2024\20240920_ExcMeas_CH\1_MVI_2831.MOV"
+```
+
+Now, data is saved under data folder that is within the parent folder (ni-vision) including tracking.py script.
+
+2D image points are saved to .xlsx file, as shown in the following figure, knowing that the name of the fileName.xlsx matches with the name of the video file.
+![2D Tracking Data Output File](files/track-1.png)
+
+# Camera Module
+
+If camera intrinsics are not known, checkerboard images are useful to find those parameters. Note that at least 10+ images are needed for accurate calibration. (30-40 images are recommended)
+
+**IMPORTANT: If camera is already calibrated and calibration matrices (K and dist) are saved, then no need to do it again!**
+
+## Instructions:
+
+- Conducting an intrinsic camera calibration testset with a checkerboard
+- Use a checkerboard (or chessboard) pattern.
+- Capture at least 20 different images.
+- Maintain a constant distance between the camera
+    and the checkerboard (no depth variation).
+- Capture the checkerboard from various angles. 
+
+Example setup:
+- Place the checkerboard on a wall.
+- Keep the camera in a fixed position, with a fixed focal length*
+- Please choose no zooming or the same zoom option for the calibration and the recording of the boom.
+-Change the camera orientation to capture different perspectives of the checkerboard.
+
+## How to run Camera Module?
+
+After having those checkerboard images, Parameters need to be arranged are:
+- --subdir: show the the name of the folder where calibration patterns are found in. (Calib_FL18mm_2m default)
+- --size: count the inner corners of  your checkerboard and provide info in arguments. (15,10 default)
+- --length: real side length of squares in the checkerboard (7cm in default)
+Example usage:
+```python
+python src\int.py --subdir Calib_FL18mm_2m --size [15,10] --length 7
+```
+
+# Transformation and Estimation (TE) Module
+
+- These two modules come with single bundle.py package.
+- 3D known locations (P1...P4) should be provided as 3Dlocations.txt under the same folder. (noting that P1 is at origin)
+- bundle.py works for transformation and estimation module to estimate 3D location of the P5 and P6, w.r.t. Origin, P1.
+- Run
+```python
+python src\bundle.py --num 882 --framestep 25
+```
+Num describes filename of the 2D observed data obtained from the Tracking Module.
+
+## Notes on Frame Rate, Video FPS, and Data Rate
+
+$$
+Frame rate(datarate)= VideoFPS/framestep
+$$
+- To save time, set the framestep to 25 for less time, and preferably 5 for higher accuracy.
+- For instance, a 60-second video with 25 fps and 5 framestep produces 300 data points, ensuring a good balance between speed and precision.
+- More than 300 data points could make the optimization process take over an hour.
+
+# 3D plotting of the Estimated 3D locations of the P5 and P6 joints
+
+Usage of the plotting:
+```python
+python src\plot3D.py --num 24 --videotrack 3_MVI_2966_grinding_713 
+```
+## Example Animation
+
+![3D Animation of Joints synced with Video](files/3DAnimation_P5_P6.gif)
+
+![3D Animation of Joints](files/3_MVI_2966_grinding_Opt743_3D_Animation.gif)
+
+# Appendix: Conda env
+
+- Ensure conda installed
+```cmd
+conda --version
+```
+- Create the env from its file
+```cmd
+conda env create -f nordic.yml
+```
+- Activate the environment
+```cmd
+Conda activate nordic
+```
