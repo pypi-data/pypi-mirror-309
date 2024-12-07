@@ -1,0 +1,23 @@
+/* project/site logo in footer */
+#logo {
+    height: 1.5em;
+}
+
+a #logo:hover {
+    opacity: 0.5;
+}
+
+footer a:has(> img),
+footer a:has(> span[class*="material-symbols"]) {
+    display: inline-block;
+}
+
+footer a:has(> img):hover,
+footer a:has(> span[class*="material-symbols"]):hover {
+    text-decoration: none;
+}
+
+/* main modal in modal block */
+#modal .modal-dialog {
+    max-width: 800px;
+}
