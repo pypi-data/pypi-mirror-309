@@ -1,0 +1,3 @@
+[console_scripts]
+codemage=code_mage.codeMage:main
+

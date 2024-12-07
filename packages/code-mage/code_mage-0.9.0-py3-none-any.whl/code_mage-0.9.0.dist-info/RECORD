@@ -1,0 +1,11 @@
+code_mage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+code_mage/api.py,sha256=gnUNMZ5XhOuOZTVG04dd5MVuBbgWP1YAOx1vmiJABCE,1289
+code_mage/argsParser.py,sha256=w3X1GqnEc8OBioNDcCrmBUMxbdx2HsxNoOx5tHecCQY,1228
+code_mage/codeMage.py,sha256=Hm2a62npIan4jXEj-aaKsb3mv5YAG_ECSs1YMkS0oEg,551
+code_mage/loadConfig.py,sha256=mHhqHA9tNhs9YRlnlWiPpiSIjYr_wXc2ds_hrHIZ3Zg,293
+code_mage/translator.py,sha256=Rd42OLUyBzHLVHmyv5qYJMmbpKtAdvYlU1lwBK5UeOU,3539
+code_mage-0.9.0.dist-info/LICENSE,sha256=6piEdW5IQlyqlG0yEr3G265jkg87oi8-EaBpwpZdKKQ,1060
+code_mage-0.9.0.dist-info/METADATA,sha256=vlT1lnsJkVp7YYQxn_qifZ_N66PXQxWalstr6KzEY2U,3664
+code_mage-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+code_mage-0.9.0.dist-info/entry_points.txt,sha256=6kMme39_8ModXXoKg5hazTy-dl-g4u8tlrJBoNRLz_o,52
+code_mage-0.9.0.dist-info/RECORD,,
