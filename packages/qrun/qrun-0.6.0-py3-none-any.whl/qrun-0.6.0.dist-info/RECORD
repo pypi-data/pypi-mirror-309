@@ -1,0 +1,11 @@
+qrun/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrun/__main__.py,sha256=RZDUzRlduDkACJGfzIvh0yd-E44MDuPzzt6cX0491lE,46
+qrun/handlers.py,sha256=tK3u3EWeVsCqsiblT22TeRqi6Q4MSbNhCZ5rtiHb17I,5266
+qrun/qrun-util,sha256=S4shW71w1Za2PTElPwADLA_iZhvYnQyI5pz485OxCMQ,3823
+qrun/scripts.py,sha256=EXY5w_ikbgDSi0mB82jJDrGu97oMJo2OF-8uRR3hpxo,12868
+qrun/utils.py,sha256=2RiVMX7WoevCwnjoL3B-Jx5PbSKJHJBxCOlmTmsPXy4,1816
+qrun-0.6.0.dist-info/METADATA,sha256=5V8ZE_CS0J7lOVgdk_ju-OhxQb9xqoiPSRefdEkSM4o,4744
+qrun-0.6.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+qrun-0.6.0.dist-info/entry_points.txt,sha256=LfpHCc7y1ZS0IesgjbBG_f1MJZTT5XpPK0Ino322YTM,43
+qrun-0.6.0.dist-info/licenses/LICENSE.md,sha256=eJ-wJn8c9rJzggVTW6FNZfJmgR0NWymzTWR10IUMa3A,1099
+qrun-0.6.0.dist-info/RECORD,,
