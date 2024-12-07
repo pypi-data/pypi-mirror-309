@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: meu_investimento_raelamorim
+Version: 0.2
+Summary: Uma biblioteca para cálculos de investimentos.
+Home-page: https://github.com/raelamorim/meu_investimento
+Author: raelamorim
+Author-email: raelamorim88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
