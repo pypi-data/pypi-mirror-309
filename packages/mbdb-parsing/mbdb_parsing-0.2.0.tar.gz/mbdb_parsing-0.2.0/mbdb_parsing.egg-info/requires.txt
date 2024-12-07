@@ -1,0 +1,11 @@
+pandas
+openpyxl
+invenio-records-resources
+oarepo-runtime
+invenio-search
+opensearch-dsl
+invenio-drafts-resources
+
+[dev]
+black
+pytest
