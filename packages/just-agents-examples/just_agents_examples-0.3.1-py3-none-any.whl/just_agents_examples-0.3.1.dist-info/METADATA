@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: just-agents-examples
+Version: 0.3.1
+Summary: Just Agents - Example Components
+Author-email: Alex Karmazin <karmazinalex@gmail.com>
+Maintainer-email: Anton Kulaga <antonkulaga@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: just-agents >=0.3.1
+Requires-Dist: just-agents-coding >=0.3.1
+Requires-Dist: just-agents-router >=0.3.1
+Requires-Dist: just-agents-web >=0.3.1
+Requires-Dist: just-agents-tools >=0.3.1
+
+Just-Agents Examples
+====================
+
+Examples of using Just Agents for various tasks:
+
+* basic - basic examples of using Just Agents
+* coding - generating and executing code and commands (note: require docker to be installed)
+* tools - tools used by examples
+* multiagent - multiagent examples
