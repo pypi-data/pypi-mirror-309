@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+duckdb_appender/__init__.py
+duckdb_appender/appender.py
+duckdb_appender/errors.py
+duckdb_appender.egg-info/PKG-INFO
+duckdb_appender.egg-info/SOURCES.txt
+duckdb_appender.egg-info/dependency_links.txt
+duckdb_appender.egg-info/requires.txt
+duckdb_appender.egg-info/top_level.txt
+test/test_appender.py
+test/test_errors.py
