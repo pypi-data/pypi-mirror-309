@@ -1,0 +1,3 @@
+[console_scripts]
+geler=geler.__main__:run_cli
+
