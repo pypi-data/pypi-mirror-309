@@ -1,0 +1,8 @@
+tamu_crossref/__init__.py,sha256=rNzv-2k4ZR5fCd_9Aw6VQv0EMGR140Ya1RATxBT6zHA,34
+tamu_crossref/crossref/__init__.py,sha256=rNzv-2k4ZR5fCd_9Aw6VQv0EMGR140Ya1RATxBT6zHA,34
+tamu_crossref/crossref/crossref.py,sha256=OsGMtI8kqeHzTR25SeK5uvRz9izHlJjjC2fevOPwqBI,7120
+tamu_crossref/generate.py,sha256=QW2jOs4TTG5YrGOop_yYIDzlQNOPrXVmczNN2NEYHVc,744
+tamu_crossref-0.1.0.dist-info/METADATA,sha256=43Y3zveTdF5dtvF_C65pw6qQDLtD0_8OMm-uDPzQ7jM,888
+tamu_crossref-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tamu_crossref-0.1.0.dist-info/entry_points.txt,sha256=s04EjOqMVrDkDXg0ZpVj-B0W1EGsLen6hjctVBnV2rM,55
+tamu_crossref-0.1.0.dist-info/RECORD,,
