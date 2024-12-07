@@ -1,0 +1,9 @@
+fpbase/__init__.py,sha256=fnDH8bIqbOwKueKgPfllJmBkD5smmeCy8Mis7kMPYAU,974
+fpbase/_fetch.py,sha256=l70h1BiDpw1e2qDuR3auJS7TRrYZKcv8fi47SuiDNzs,12052
+fpbase/_graphql.py,sha256=pGjP5Ayu1rY27R2nHsDEzJ97BRfPU2EeffBlQD0UnUg,2030
+fpbase/models.py,sha256=B58ugLeJDsCVCqC0J-wCXWuFl9eSP9Km7hVhvFV3zpc,6641
+fpbase/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+fpbase-0.1.0.dist-info/METADATA,sha256=yP6sk8W-BBIfj7T3a0kL3zZSH3MFQHpgfQshnbH-mRo,26471
+fpbase-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+fpbase-0.1.0.dist-info/licenses/LICENSE,sha256=pY8jqpmjisIM7lVsbSEw4b-PUVnM8_ZSFlmLVdrXmxk,1501
+fpbase-0.1.0.dist-info/RECORD,,
