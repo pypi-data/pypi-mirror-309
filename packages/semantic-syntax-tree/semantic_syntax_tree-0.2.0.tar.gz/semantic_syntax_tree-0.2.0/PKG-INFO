@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: semantic-syntax-tree
+Version: 0.2.0
+Summary: Tools for semantic search of Python codebases
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chromadb>=0.5.18
+Requires-Dist: fastapi[standard]>=0.115.5
+Requires-Dist: libcst>=1.5.0
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.13.1
+
+Tools for semantic search of python code
+
+# TODO: make [chromadb-server] an optional dependency https://docs.trychroma.com/guides#using-the-python-http-only-client

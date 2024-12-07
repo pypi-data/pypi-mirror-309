@@ -1,0 +1,6 @@
+chromadb>=0.5.18
+fastapi[standard]>=0.115.5
+libcst>=1.5.0
+pydantic>=2.9.2
+rich>=13.9.4
+typer>=0.13.1
