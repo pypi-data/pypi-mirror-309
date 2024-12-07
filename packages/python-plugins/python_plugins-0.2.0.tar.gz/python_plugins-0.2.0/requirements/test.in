@@ -1,0 +1,7 @@
+pytest
+Faker
+cryptography
+SQLAlchemy
+PyJWT
+requests
+WTForms
