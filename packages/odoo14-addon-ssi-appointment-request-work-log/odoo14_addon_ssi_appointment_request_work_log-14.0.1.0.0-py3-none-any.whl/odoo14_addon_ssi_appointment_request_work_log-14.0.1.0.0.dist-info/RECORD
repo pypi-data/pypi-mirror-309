@@ -1,0 +1,10 @@
+odoo/addons/ssi_appointment_request_work_log/README.rst,sha256=IyQjp7GplkUg2-ZReuRcHW_0UcQVu0AZjB6NZksb6H0,1288
+odoo/addons/ssi_appointment_request_work_log/__init__.py,sha256=M7twq1SJz2cc98CkgeiDiDg05QWWFb09lt5oh03-axA,181
+odoo/addons/ssi_appointment_request_work_log/__manifest__.py,sha256=LtbUKqp91dnxvlI30AAAnAMwqK1i2RCqrstXGboJ-zk,538
+odoo/addons/ssi_appointment_request_work_log/models/__init__.py,sha256=eKZ_0q-QAAoAhtqgnnMsmW75SR9_-b7zye7oKaZ4PkY,194
+odoo/addons/ssi_appointment_request_work_log/models/appointment_request.py,sha256=nzjdknV7WKkBJmnqwZ6-HaHAxuonlQvSz9ozDtb2FxE,388
+odoo/addons/ssi_appointment_request_work_log/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_appointment_request_work_log-14.0.1.0.0.dist-info/METADATA,sha256=CX48CnkH2zfux4Qrsm2jfifcWFfKp3nrqwm2OJMcWqc,1908
+odoo14_addon_ssi_appointment_request_work_log-14.0.1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_appointment_request_work_log-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_appointment_request_work_log-14.0.1.0.0.dist-info/RECORD,,
