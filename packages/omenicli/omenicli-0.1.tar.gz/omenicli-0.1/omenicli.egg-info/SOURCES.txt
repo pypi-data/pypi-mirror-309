@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+app/__init__.py
+app/main.py
+omenicli.egg-info/PKG-INFO
+omenicli.egg-info/SOURCES.txt
+omenicli.egg-info/dependency_links.txt
+omenicli.egg-info/entry_points.txt
+omenicli.egg-info/requires.txt
+omenicli.egg-info/top_level.txt
