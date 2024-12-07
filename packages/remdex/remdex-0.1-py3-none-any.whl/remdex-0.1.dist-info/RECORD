@@ -1,0 +1,10 @@
+remdex/__init__.py,sha256=GHXm1qqVWg4jeVgbKSaFatQv8SfqYhLSF_RiMrRkpFM,2385
+remdex/connect.py,sha256=r1HmPJBP29FrUzN82YFRVKQhc0_FCc5fb-VBEgBA1Q8,4598
+remdex/data.py,sha256=2-lbK4llJ76cd72GZmdooCylJIl4Dn8iQGfLMgXC4MM,438
+remdex/framework.py,sha256=NYmH5dABw-pHSnctUPHlWW_ju46e3WqV2QQQooWgpf4,15731
+remdex/host.py,sha256=PlXZJ40uGmF5aN3kxlr2JD5M63a1F0aWszBiwrwnk14,2309
+remdex-0.1.dist-info/LICENSE,sha256=wR4_hcYBpJlb0T7vPg0eh56XnqrRJAVZQLiEMr3HGh8,1076
+remdex-0.1.dist-info/METADATA,sha256=X9EyfEGhIQIDnipk_Sm2kx_Dt2HZR8fE6eBuLM4qn70,191
+remdex-0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+remdex-0.1.dist-info/top_level.txt,sha256=8RwBXQKTIg-5T8A5QtOk4keE4_2yXezZjOaY3yG62R0,7
+remdex-0.1.dist-info/RECORD,,
