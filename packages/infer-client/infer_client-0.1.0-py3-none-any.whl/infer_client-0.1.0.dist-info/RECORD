@@ -1,0 +1,12 @@
+infer_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infer_client/error.py,sha256=PM0rxANVOVzZwvbb3PsGRngT2vpPCsmR4iATTcaKRx8,1009
+infer_client/inference.py,sha256=KJ7wJERfWPlY_yP99ycGQB5akkBJ_FljV9M5BSWH9Cs,670
+infer_client/adapters/__init__.py,sha256=QGdE1vGit6blA_EJFjkzhHaLqER4prJh0Q0HJ-QhEK4,1062
+infer_client/adapters/onnx.py,sha256=5uT-HgLP9248PsMs_yf-REmJz9zOQEgG75U8fk9FgPU,2847
+infer_client/adapters/triton.py,sha256=rj6x04SWS1pUBMXM-R4N0Mb9KPjK2id56Oo8Swlxijg,2685
+infer_client/adapters/tritonclient_grpc_custom.py,sha256=5NXEJhpWRI-ethUnRJhDymGwnv9emGbMkedVmi5SF50,3381
+infer_client-0.1.0.dist-info/LICENSE.txt,sha256=c4dYOg4idrLe2-bec9dqCq9hQXXJvRb7vD2xTzkdkK0,1105
+infer_client-0.1.0.dist-info/METADATA,sha256=oWyEiR5pi-0IP0k6LsK-e2UlRzKc6vWmMngItCISCjI,3507
+infer_client-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+infer_client-0.1.0.dist-info/top_level.txt,sha256=UvQEUSuGy7g6DLFXHSQIRmecbtPPSb4SA3kwNGLLzH8,13
+infer_client-0.1.0.dist-info/RECORD,,
