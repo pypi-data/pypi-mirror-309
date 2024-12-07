@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "oslodb_sqlachemy_exceptions"
+version = "0.2.0"
+description = ""
+authors = ["Douglas Bett <bettdalpha@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = "^1.2.0"
+debtcollector = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
