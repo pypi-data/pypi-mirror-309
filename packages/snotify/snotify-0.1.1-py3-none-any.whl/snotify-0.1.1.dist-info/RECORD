@@ -1,0 +1,17 @@
+snotify/__init__.py,sha256=rjmiGHAM3_78q9wSNTXKbJFB5lpCg3T4N2Urzc3urfU,455
+snotify/core.py,sha256=pf9MwNFpvHDxkbirqWKGHAKGniuqkJ9T4aD5FenaYuY,4500
+snotify/channels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snotify/channels/base.py,sha256=EGrdOIDnTEiD9iH05FJK8_G5tI2S7hbYNFK5O-uSr9g,1267
+snotify/channels/email.py,sha256=h8wQn0J-x5XTWNS0OJidOBxEjuxK_QjW34AFgSl_Hjk,3503
+snotify/channels/telegram.py,sha256=syH8dZ30ggGzYjXEN3JhSWxMGh5XEmAvF6zLRLWIt08,2856
+snotify/channels/webhook.py,sha256=CyPloDDEaIB-AuEA6D0R8jASCseIwXrSkG6manqgt1w,2719
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=Ro-qOWWO9kXSnsJstxLr8nkkRmHzt6_F_-UfcVi2I2c,2171
+tests/test_email.py,sha256=PffyNU7SBv19uMBbQ64wZUdemjsxDzYKB0wqfRDu2YQ,1266
+tests/test_telegram.py,sha256=tahYWVJSfzg_NnQQyKnuWoJDDnlmMz6xEyBVQusqYos,1153
+tests/test_webhook.py,sha256=BgsyrHpjRupQv_eaXJ8EzbpNUDTvilLpynVRu406W8Q,1198
+snotify-0.1.1.dist-info/LICENSE,sha256=qzZ7Z8AIoKny0DbgpZl-ruBRiECe7kGZZ_jkyTwVV78,1097
+snotify-0.1.1.dist-info/METADATA,sha256=cisQgdMIkdTm-7te-6Gu_0ol7tVBrj4nyE5i38p3SNc,3640
+snotify-0.1.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+snotify-0.1.1.dist-info/top_level.txt,sha256=pzS2DhUyHh68o9zQgOHVctjTEDE5NS9xYtWjCdqFqHA,14
+snotify-0.1.1.dist-info/RECORD,,
