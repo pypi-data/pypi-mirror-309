@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: midist
+Version: 0.1.0
+Summary: Command line tool for easy access to Misskey's theme/plugin installation functionality.
+Author-Email: AmaseCocoa <amase.cocoa@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: typer>=0.13.1
+Requires-Dist: jinja2>=3.1.4
+Description-Content-Type: text/markdown
+
+# midist
