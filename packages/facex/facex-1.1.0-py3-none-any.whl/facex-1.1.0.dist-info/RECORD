@@ -1,0 +1,10 @@
+facex/__init__.py,sha256=tlPHxMnufKtHKTc5aaSMpB9-zrMMs2JS0SlXyU0rlO8,48
+facex/core.py,sha256=X5Qx7eJj_YXw0zHRTXZhlwYAydpJuS9fHi-APFQGqmk,6639
+facex/utils.py,sha256=SEbvKpe5uD_FuW4_ZfAGGjMB8TwtDOtvtKNkQCchZnc,632
+facex/assets/haarcascade_frontalface_default.xml,sha256=pxyD6dD_1ToA_bPx_ZGQUUnY0AHhB26rwy8u25RfjvM,963441
+facex/assets/model_optimized.tflite,sha256=GB6dxrWxm3pKPuZh2N6ZaSSbcsMXsggNeawS0rcCfaU,2615520
+facex-1.1.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+facex-1.1.0.dist-info/METADATA,sha256=A_g4VEwDu9ul5q4o7qArAWfthYEOBPuv4EKKv9XrghY,6096
+facex-1.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+facex-1.1.0.dist-info/top_level.txt,sha256=lZHXpKo2RmEU_PxLFXaNl9y_bWPbMkkhJ5U-6JsucjA,6
+facex-1.1.0.dist-info/RECORD,,
