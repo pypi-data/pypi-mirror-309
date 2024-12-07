@@ -1,0 +1,42 @@
+[project]
+name = "stringstyler"
+version = "0.2.1"
+description = "Default template for PDM package"
+authors = [
+    { name = "numgrade", email = "num@numgrade.com" },
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.3",
+    "pytest-cov>=5.0.0",
+    "bandit>=1.7.10",
+    "tox>=4.22.0",
+    "tox-pdm>=0.7.2",
+    "ruff>=0.6.9",
+]
+lint = [
+    "ruff>=0.6.9",
+    "mypy>=1.12.0",
+]
+
+[tool.pdm.scripts]
+check-formatting = "ruff check --fix src/ tests/"
+format = "ruff format src/ tests/"
+type-check = "mypy src/ tests/"
+security-scan = "bandit -rc pyproject.toml src/ tests/"
