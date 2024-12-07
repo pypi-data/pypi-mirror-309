@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: cuddly-octo-funicular
+Version: 0.0.8
+Home-page: https://github.com/yu9824/cuddly-octo-funicular
+Author: yu9824
+Maintainer: yu9824
+License: MIT License
+        
+        Copyright (c) 2024 yu9824
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/yu9824/cuddly-octo-funicular
+Project-URL: PyPI, https://pypi.org/project/cuddly-octo-funicular/
+Project-URL: Source, https://github.com/yu9824/cuddly-octo-funicular
+Project-URL: Tracker, https://github.com/yu9824/cuddly-octo-funicular/issues
+Project-URL: Changelog, https://github.com/yu9824/cuddly-octo-funicular/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Provides-Extra: optional
+Requires-Dist: colorlog; extra == "optional"
+Requires-Dist: tqdm; extra == "optional"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: sphinx-markdown-tables; extra == "docs"
+Requires-Dist: recommonmark; extra == "docs"
+Provides-Extra: gui
+Requires-Dist: TkEasyGUI; extra == "gui"
+
+# cuddly-octo-funicular
+
+[![CI](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/CI.yml/badge.svg)](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/CI.yml)
+[![docs](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/docs.yml/badge.svg)](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/docs.yml)
+
+[![release-pypi](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/release-pypi.yml/badge.svg)](https://github.com/yu9824/cuddly-octo-funicular/actions/workflows/release-pypi.yml)
+
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+<!--
+[![python_badge](https://img.shields.io/pypi/pyversions/cuddly-octo-funicular)](https://pypi.org/project/cuddly-octo-funicular/)
+[![license_badge](https://img.shields.io/pypi/l/cuddly-octo-funicular)](https://pypi.org/project/cuddly-octo-funicular/)
+[![PyPI version](https://badge.fury.io/py/cuddly-octo-funicular.svg)](https://pypi.org/project/cuddly-octo-funicular/)
+[![Downloads](https://static.pepy.tech/badge/cuddly-octo-funicular)](https://pepy.tech/project/cuddly-octo-funicular)
+
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuddly-octo-funicular.svg)](https://anaconda.org/conda-forge/cuddly-octo-funicular)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuddly-octo-funicular.svg)](https://anaconda.org/conda-forge/cuddly-octo-funicular)
+-->
+
+Before [pep518](https://peps.python.org/pep-0518/)
+- `setup.py`
+- `setup.cfg`
+- `ruff.toml`
+
+After [pep518](https://peps.python.org/pep-0518/)
+- `pyproject.toml`
+
+## Update packages
+
+### PyPI
+
+1. `release-pypi.yml` の `# FIXME: uncomment` の部分をアンコメントする。
+2. パッケージ名を変える ( `cuddly-octo-funicular` のところ)
+
+### conda
+
+```bash
+git remote add regro-cf-autotick-bot git@github.com:regro-cf-autotick-bot/cuddly-octo-funicular-feedstock.git
+git fetch regro-cf-autotick-bot
+
+```
+
+- [Official Documents](https://conda-forge.org/docs/maintainer/updating_pkgs/)
+- [日本語でのブログ記事](https://zenn.dev/pejpo/articles/9f767fa1bf031e)
