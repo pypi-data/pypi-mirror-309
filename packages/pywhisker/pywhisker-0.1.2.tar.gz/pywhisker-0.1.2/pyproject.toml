@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pywhisker"
+version = "0.1.2"
+description = "Unofficial Package for PyWhisker Pentesting Tool"
+readme = "README.md"
+authors = ["Charlie Bromberg and Podalirius of PyWhisker","ReKon64 of Package"]
+maintainers = ["ReKon64"]
+license = "GPL-3.0"
+homepage = "https://github.com/ShutdownRepo/pywhisker"
+keywords = ["pywhisker", "pywhisker.py", "shadow credentials", "ad", "active directory", "pentesting"]
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+impacket = "==0.12.0"
+six = "==1.16.0"
+pyasn1 = "==0.6.0"
+ldap3 = "==2.9.1"
+ldapdomaindump = "==0.9.4"
+rich = "==13.7.1"
+dsinternals = "==1.2.4"
+pygments = ">=2.13.0,<3.0.0"
+
+[tool.poetry.scripts]
+pywhisker = "pywhisker.pywhisker:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
