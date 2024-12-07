@@ -1,0 +1,11 @@
+bot/__init__.py,sha256=9_z8a8pR2nUuzGvcKVxasmWxeSx2OhfmTRyhf0w6oz8,172
+bot/core.py,sha256=DJ-PoQX0bJauXxKDjO_QYEl5dp6h3POe5SfMoD6j0Js,35510
+bot/handlers.py,sha256=j2HQE4xhn5JecmGLzKCyHd2Fs730XDXFn_zwgz9bDT4,8947
+bot/settings.py,sha256=3I3dv74zFlOE_fU-JjIKONgDQVISUkEBSQITl51x_N8,528
+bot/util_decorators.py,sha256=IjnHsmmM6eryKmSZ3uBdI1q_emmD7Kt-jGFlJbrGdz4,9020
+bot/util_functions.py,sha256=lVdoLzGkxSSodujQwzmnNh9NMQxbsb8QQhv7JT-Jww8,2979
+tlgbotfwk-0.4.28.dist-info/LICENSE,sha256=0pydCZecU_VRqXrWXk0RMXFpFF-KEFEd__GaDSrtMVc,1087
+tlgbotfwk-0.4.28.dist-info/METADATA,sha256=9Fo6v3UCJAM0NNKpNcnPwzsMd6WJX9lfRoB8CIXBL5U,415
+tlgbotfwk-0.4.28.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+tlgbotfwk-0.4.28.dist-info/top_level.txt,sha256=BfGEUPXgtCpne5POfPQ8gBzacfrzBulmV45hd8vheOI,4
+tlgbotfwk-0.4.28.dist-info/RECORD,,
