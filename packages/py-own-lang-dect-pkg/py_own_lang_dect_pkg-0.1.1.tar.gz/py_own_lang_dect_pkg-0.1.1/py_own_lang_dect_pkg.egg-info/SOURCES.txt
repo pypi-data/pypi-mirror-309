@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+py_own_lang_dect_pkg/__init__.py
+py_own_lang_dect_pkg/config.py
+py_own_lang_dect_pkg.egg-info/PKG-INFO
+py_own_lang_dect_pkg.egg-info/SOURCES.txt
+py_own_lang_dect_pkg.egg-info/dependency_links.txt
+py_own_lang_dect_pkg.egg-info/requires.txt
+py_own_lang_dect_pkg.egg-info/top_level.txt
