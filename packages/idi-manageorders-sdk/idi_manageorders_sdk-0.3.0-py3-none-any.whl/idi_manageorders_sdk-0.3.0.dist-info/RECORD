@@ -1,0 +1,8 @@
+manageorders_sdk/__init__.py,sha256=5G4EMub-py1c_ZkvluDFHRMd4ZQouTmY6GnYIhUgpXc,112
+manageorders_sdk/client.py,sha256=pjgmZCWx9W_MUVB8Oe6FCfT1-AFsgU6d0PV99mQbc2A,2048
+manageorders_sdk/models.py,sha256=L7Ze8VSAS5oZBY3-j1WkwLKmrTJmtez7BrQG6yGGlvc,12095
+manageorders_sdk/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+idi_manageorders_sdk-0.3.0.dist-info/METADATA,sha256=WKVf-NE3Y4a4EopgJ4ngjepPz-g7w-bNRRREspjPDgw,1104
+idi_manageorders_sdk-0.3.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+idi_manageorders_sdk-0.3.0.dist-info/licenses/LICENSE,sha256=1zNUC2AzIRNS7IofenZpZXrr3jt93nq3Bc10iocHjRo,1072
+idi_manageorders_sdk-0.3.0.dist-info/RECORD,,
