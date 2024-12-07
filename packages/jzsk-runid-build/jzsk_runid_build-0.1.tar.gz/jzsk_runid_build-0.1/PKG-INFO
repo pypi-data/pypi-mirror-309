@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jzsk_runid_build
+Version: 0.1
+Summary: runid build for jzsk
+Author: zsp
+Author-email: 465620024@qq.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: mlflow
+Requires-Dist: numpy
+Requires-Dist: oss2

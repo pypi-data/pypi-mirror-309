@@ -1,0 +1,4 @@
+pandas
+mlflow
+numpy
+oss2
