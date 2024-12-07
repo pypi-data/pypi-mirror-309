@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mlbdatatools
+Version: 0.1.0
+Summary: DataFrames, type-safety, and plotting for modern baseball analytics.
+Author: Joey Sinclair
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: requests
