@@ -1,0 +1,51 @@
+[project]
+name = "flask-template-refs"
+version = "0.2.0"
+description = "Flask extension that creates template references, enabling simple access to templates with dot notation and auto-completion."
+authors = [
+    { name = "LouisCoutel", email = "louiscoutel75@gmail.com" }
+]
+dependencies = [
+    "flask>=3.0.3",
+    "pytest>=8.3.3",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+packages = [
+    { include = "flask_template_refs" }
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+    "pylint>=3.2.7",
+    "ruff>=0.7.4",
+]
+[tool.ruff]
+fix = true
+show-fixes = true
+src = [".","flask_template_refs"]
+
+[tool.ruff.lint]
+select= ["E","F","PL","W"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["flask_template_refs"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+log_cli = "True"
+log_cli_level = "DEBUG"
+
