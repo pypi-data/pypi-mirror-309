@@ -1,0 +1,11 @@
+LICENSE
+README.md
+make_parser.py
+setup.cfg
+setup.py
+make_parser.egg-info/PKG-INFO
+make_parser.egg-info/SOURCES.txt
+make_parser.egg-info/dependency_links.txt
+make_parser.egg-info/entry_points.txt
+make_parser.egg-info/not-zip-safe
+make_parser.egg-info/top_level.txt
