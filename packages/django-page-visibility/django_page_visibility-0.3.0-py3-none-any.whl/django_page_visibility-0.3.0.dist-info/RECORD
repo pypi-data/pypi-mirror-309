@@ -1,0 +1,13 @@
+django_page_visibility/README.md,sha256=fS4QWZw94GVp3wwciYJa2gPt-O85gVfkd9j1e2-Yf7A,1627
+django_page_visibility/RELEASE_NOTES.md,sha256=QyqVK17A1URnC9M3APsJrI2UwN5Yeci5d6D50CzuOpg,217
+django_page_visibility/VERSION,sha256=VQYTU3_EiPOzcq90pAAYefASyEZbgW8bhcbTRGss-0k,5
+django_page_visibility/__init__.py,sha256=j_44419o3HzZQ8X3c-I232eeEdu1aCG9WB-G8cPnetw,2546
+django_page_visibility/__pycache__/__init__.cpython-36.pyc,sha256=KOgB1_OsPpO7rzmrFdO58tkPb9ugILFEuabqeMTM0HM,2400
+django_page_visibility/templatetags/page_visibility.py,sha256=Ns3SVo7H5d5rrLNJNTHSzYE1Nq9ClYglmJbOrIzEwSA,2374
+django_page_visibility/templatetags/__pycache__/django_page_visibility.cpython-36.pyc,sha256=8WiiYd4_l81jhJY7PNbRs4M1WXv2ke7RMP_-Tl3q30Y,2493
+django_page_visibility/templatetags/__pycache__/page_visibility.cpython-36.pyc,sha256=tNhE3LYfxzhPLOPSzWa1YmAIyOxYDCdmpER3_2lOn2I,2591
+django_page_visibility-0.3.0.dist-info/LICENSE,sha256=3zadg6RilfqcoXgQ6j6BXFbJBGZbjlpiAxtVboyrBQk,1072
+django_page_visibility-0.3.0.dist-info/METADATA,sha256=zm59ev90Jz-K5SyaCswlDX0RRcCWc3YZxGmlCxrcfzE,2192
+django_page_visibility-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_page_visibility-0.3.0.dist-info/top_level.txt,sha256=9Rgy4_LiL90AGerx0Gk4QGEymPPFqwBUBaqAQynZBIc,23
+django_page_visibility-0.3.0.dist-info/RECORD,,
