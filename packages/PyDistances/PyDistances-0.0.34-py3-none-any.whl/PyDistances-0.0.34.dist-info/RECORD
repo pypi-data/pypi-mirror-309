@@ -1,0 +1,10 @@
+PyDistances/__init__.py,sha256=V3N0HqdWMICTtKLLSI5fHxpLkmm3-iJoEy8yTuubjJc,489
+PyDistances/binary.py,sha256=n_RIANha7PDeeP8qKTizJQtA5zTP5KoOjcIY8vDkRjE,3322
+PyDistances/mixed.py,sha256=6Wmb2c6MXa7sQiDKRrymYp34CGZCOVqOVIxAUws4QiQ,29669
+PyDistances/multiclass.py,sha256=diUMIvP_O3BlOlMxz6Q7HIkmdDu18Pl9bbiszTHjweI,1778
+PyDistances/quantitative.py,sha256=2DmI8YGl6ZDc5VK_TVDuGjpJIkAh4PDLZc5B2tCR_Qc,21577
+PyDistances-0.0.34.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+PyDistances-0.0.34.dist-info/METADATA,sha256=Z5vPzwWrxXfsRZ_Peg68GIFCkaWv2ybRZmMD3epGm9A,967
+PyDistances-0.0.34.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+PyDistances-0.0.34.dist-info/top_level.txt,sha256=I326MJitABbZ-5ScAjAsgByO4bvRgMvY45C4xUyFUpo,12
+PyDistances-0.0.34.dist-info/RECORD,,
