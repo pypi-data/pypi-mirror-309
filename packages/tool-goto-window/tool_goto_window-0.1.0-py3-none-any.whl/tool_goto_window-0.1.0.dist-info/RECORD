@@ -1,0 +1,8 @@
+tool_goto_window/__init__.py,sha256=317xV69t_woOlT69eParPy7mRhbHqlcEWNHX_01HEsg,24
+tool_goto_window/cli.py,sha256=IwTBhfU8hLNBKT6TMWBlEcknVGbe7eFTO9HrpZ-3JLo,135
+tool_goto_window/main.py,sha256=StgloTjBLB-cJIw1hJkl8IW9bqbA9K2jquJUJpjgLQ8,260
+tool_goto_window/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tool_goto_window-0.1.0.dist-info/METADATA,sha256=RyCVMO8WMxx5L9wJGmOzstgktOlixMjPlFk2LXWuNQE,252
+tool_goto_window-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+tool_goto_window-0.1.0.dist-info/entry_points.txt,sha256=VKzo5wnvfL8kKBt5bOq0l5zRkGXVu97-BsEz9SdMcME,62
+tool_goto_window-0.1.0.dist-info/RECORD,,
