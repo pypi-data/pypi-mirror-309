@@ -1,0 +1,7 @@
+llm>=0.19a0
+httpx
+ijson
+
+[test]
+pytest
+pytest-recording
