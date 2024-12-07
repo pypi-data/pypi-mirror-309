@@ -1,0 +1,33 @@
+#!/usr/bin/expect
+
+set timeout -1
+set user_name [lindex $argv 0]
+set user_password [lindex $argv 1]
+set tmp_path [lindex $argv 2]
+
+spawn su $user_name
+expect "\\\$"
+send "cd /tmp/$tmp_path\r"
+expect "\\\$"
+
+# install Homebrew
+send {/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"}
+send "\r"
+expect "*password*"
+send "$user_password\r"
+expect "Press*"
+send "\r"
+expect "\\\$"
+
+# add Homebrew to PATH
+set temp_var {""}
+send "echo $temp_var >> /home/$user_name/.bashrc\r"
+expect "\\\$"
+set temp_var {'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'}
+send "echo $temp_var >> /home/$user_name/.bashrc\r"
+expect "\\\$"
+
+send "exit\r"
+expect "*"
+send "exit\r"
+expect eof

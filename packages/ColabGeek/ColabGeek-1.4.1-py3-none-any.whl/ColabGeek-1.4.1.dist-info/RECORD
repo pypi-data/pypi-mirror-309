@@ -1,0 +1,15 @@
+ColabGeek/ColabGeek.py,sha256=8l5VXYOKAEj5jM1JeM0wevET2JG5QV2Q7haWOZl9Wj0,36793
+ColabGeek/__init__.py,sha256=ZjursiM5KOhtasx2wjKn3ng6BZiIVqVw23WpyFWqhw0,541
+ColabGeek/shell_scripts/Install_Homebrew.exp,sha256=YXUnm10WCwbQmMtM5V0hw9nKiMBkCkwpfpB0PnaN6FI,720
+ColabGeek/shell_scripts/Install_Jekyll.exp,sha256=RN__Qke3eu4bN8ercE5TOyO3RKcUKjC4c3bAnbpB9zg,325
+ColabGeek/shell_scripts/Install_Miniconda.sh,sha256=cYzLffNwigxPWIaS3lW7nbgkADK20B7rIM5v6aky8zo,609
+ColabGeek/shell_scripts/Install_Ruby.exp,sha256=fhmXRRNYgebwnu5YjgpqonSaT-6kapY7zq0Xy9vmIX4,665
+ColabGeek/shell_scripts/Install_rbenv.exp,sha256=HcE2VzvwfnTqRmbrHFBxKmZmnZ4EX825uwZy53kakRY,361
+ColabGeek/shell_scripts/Run_Rstudio_server.sh,sha256=sxri-poNmzTfcGG1OwpVvAbqhPo3mzP-9KFO-LG1iPk,492
+ColabGeek/shell_scripts/Run_Stable_Diffusion_WebUI.exp,sha256=U6H2YDVmWGOqaF4sC_kAJkQgVASVplBWulmDaRxXrV8,814
+ColabGeek/shell_scripts/Run_code_server.exp,sha256=ffMNk_v1QlZffh5FhdRh-vIF92TZust5tiwCT6Ett14,1212
+ColabGeek-1.4.1.dist-info/LICENSE,sha256=w5qLUvSstGhK3uTn9PWCwFSU6i1EhkXxNr__XoWinUY,1067
+ColabGeek-1.4.1.dist-info/METADATA,sha256=tAaLNH4sSMZM9qD6184gmX9Nx4PgPr-yXeWHv93QgUM,10095
+ColabGeek-1.4.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ColabGeek-1.4.1.dist-info/top_level.txt,sha256=MNXq1F0chOvW3LDWTe9XdpGLwLNngLmYpO8EfdgGVE0,10
+ColabGeek-1.4.1.dist-info/RECORD,,
