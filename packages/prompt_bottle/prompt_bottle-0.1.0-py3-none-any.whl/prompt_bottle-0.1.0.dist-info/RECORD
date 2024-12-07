@@ -1,0 +1,11 @@
+prompt_bottle-0.1.0.dist-info/METADATA,sha256=JqBRQJIjE4cSO7FbqbsC6D42JiKpSBeTFu78lwXe8VA,4059
+prompt_bottle-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+prompt_bottle-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+prompt_bottle/__init__.py,sha256=x4Jb_NGK4TDztEFZB7w-mgb8IbKykgI5V2KAyHnThPU,387
+prompt_bottle/bottle.py,sha256=LSlHM8FPu7x6rqLpKYUph4bvRFvCbrtxICiVObpb9GY,5404
+prompt_bottle/presets/simple.py,sha256=CZg6YMnz0tDKlas_kkZs-m5ZxOtB2W3xfAc0TbXc2t0,427
+prompt_bottle/tags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prompt_bottle/tags/convert_to.py,sha256=-7KBYRb-qi9vGTcCPSOCw1suiES7HrGbjfLC6vxWvsw,1612
+prompt_bottle/tags/tags.py,sha256=0hRkiDo7G2RELyq2_fpRMjlUnLHwdKM-B7HGycGrZIU,990
+prompt_bottle/utils.py,sha256=ygzTKiZ-A8WXQQ-7jcJYlmNncFS1uc05vdsYw-6p75Y,354
+prompt_bottle-0.1.0.dist-info/RECORD,,
