@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "groundinggrid"
+version = "0.1.0"
+description = "Grounding Grid"
+authors = ["Filip Dimitrovski <filip.dimitrovski@visiocue.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "*"
+fastapi = "*"
+numpy = "*"
+Pillow = "*"
+google-generativeai = "*"
+pytest-benchmark = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+ruff = "^0.7.3"
+
+#[tool.poetry.scripts]
+#build = "poetry build"
+
+#[console_scripts]
+# aa
