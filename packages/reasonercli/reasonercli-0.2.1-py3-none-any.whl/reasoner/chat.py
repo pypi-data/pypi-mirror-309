@@ -1,0 +1,72 @@
+from typing import List, Optional
+
+from pydantic import BaseModel
+
+
+class Message(BaseModel):
+    role: str
+    content: str
+
+
+class Chat:
+    def __init__(self, client, base_url):
+        self.client = client
+        self.base_url = base_url
+
+    def completion(
+        self,
+        messages: List[Message],
+        batch_uid: Optional[str] = None,
+        example_docs: Optional[str] = None,
+    ):
+        data = {"messages": messages}
+        if batch_uid:
+            data["batch_uid"] = batch_uid
+        elif example_docs:
+            data["example_docs"] = example_docs
+
+        response = self.client.post(
+            f"{self.base_url}/public/v1/chat/completion",
+            json=data,
+        )
+        response.raise_for_status()
+        return response.json()
+
+    def get_response(self, response_uid: str):
+        response = self.client.get(
+            f"{self.base_url}/public/v1/chat/status/{response_uid}"
+        )
+        response.raise_for_status()
+        return response.json()
+
+
+class ChatAsync:
+    def __init__(self, client, base_url):
+        self.client = client
+        self.base_url = base_url
+
+    async def completion(
+        self,
+        messages: List[Message],
+        batch_uid: Optional[str] = None,
+        example_docs: Optional[str] = None,
+    ):
+        data = {"messages": messages}
+        if batch_uid:
+            data["batch_uid"] = batch_uid
+        elif example_docs:
+            data["example_docs"] = example_docs
+
+        response = await self.client.post(
+            f"{self.base_url}/public/v1/chat/completion",
+            json=data,
+        )
+        response.raise_for_status()
+        return response.json()
+
+    async def get_response(self, response_uid: str):
+        response = await self.client.get(
+            f"{self.base_url}/public/v1/chat/status/{response_uid}"
+        )
+        response.raise_for_status()
+        return response.json()
