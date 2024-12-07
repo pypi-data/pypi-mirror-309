@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: signavatar
+Version: 0.1.4
+Summary: A library for converting text into ASL gestures.
+Home-page: https://github.com/yourusername/signavatar
+Author: Lukwiya Matthew
+Author-email: lukaselmateo2020@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: requests
+
+SignAvatar Library Installation Guide
+1. Prerequisites
+Before installing the SignAvatar library, ensure your system meets the following prerequisites:
+
+Python 3.7+: Make sure Python 3.7 or above is installed.
+Verify installation: Open a terminal and run python --version.
+pip: Python's package installer, used for installing dependencies.
+Verify installation: Run pip --version.
+Network Connection: A stable internet connection is required to install dependencies and retrieve online gesture resources if using URL-based videos.
+2. Installation Steps
+Step 1: Download the SignAvatar Library
+Obtain the SignAvatar library code package.
+Clone from a repository (if hosted on GitHub or similar platform) using:
+bash
+Copy code
+git clone https://github.com/username/signavatar.git
+Or, download the library files as a .zip and extract them to your desired directory.
+Step 2: Install Required Dependencies
+Navigate to the directory containing the library files and install dependencies listed in requirements.txt.
+
+bash
+Copy code
+cd signavatar
+pip install -r requirements.txt
+Note: The requirements file should include necessary packages such as requests for HTTP requests, json for JSON handling, and any additional dependencies used by the library.
+
+3. Setting Up Gesture Data Files
+The library relies on gesture data files (ASLLVD or WLASL datasets) in JSON or CSV format. You will need to obtain these files separately and place them in the same directory as the library or specify the path during usage.
+
+ASLLVD/ WLASL Dataset:
+
+Download the ASLLVD dataset (ASLLVD_videos.csv) or WLASL dataset (WLASL_videos.json).
+Place the downloaded dataset in the signavatar directory.
+File Structure Example:
+
+Copy code
+signavatar/
+â”œâ”€â”€ ASLLVD_videos.csv
+â”œâ”€â”€ WLASL_videos.json
+â”œâ”€â”€ signavatar.py
+â”œâ”€â”€ requirements.txt
+4. Testing the Library Installation
+Once installed, test the library to verify that it is functioning as expected.
+
+Open a Python environment (terminal or IDE).
+
+Run the following code to initialize SignAvatar and display gesture URLs.
+
+python
+Copy code
+from signavatar import SignAvatar
+
+# Initialize SignAvatar
+avatar = SignAvatar(language="ASL", style={"color": "blue", "brightness": 0.8}, expression="happy")
+
+# Test loading gestures
+print("Loaded gestures:", len(avatar.gestures))  # Expected output: number of gestures loaded
+
+# Test retrieving a gesture URL
+print("Video URL for 'hello':", avatar.get_video_url("hello"))
+If successful, you should see output showing the loaded gestures and a video URL for the specified sign.
+
+Test Animation Rendering: Run the following code to test the sign() method for rendering animations:
+
+python
+Copy code
+animation_sequence = avatar.sign("Hello how are you?")
+print("Generated Animation Sequence:")
+for animation in animation_sequence:
+    print(animation)
+This should return an animation sequence based on the phrase.
+
+5. Library Integration in Projects
+To integrate SignAvatar into other projects, simply import it as a module. For example:
+
+Copy the signavatar directory to your projectâ€™s directory.
+
+Import and use SignAvatar methods in your projectâ€™s Python files:
+
+python
+Copy code
+from signavatar import SignAvatar
+
+avatar = SignAvatar()
+avatar.sign("Sample text to animate.")
+6. Troubleshooting
+Module Not Found: Ensure the signavatar.py file is in the projectâ€™s root directory or PYTHONPATH.
+Missing Dependencies: Re-run pip install -r requirements.txt to install dependencies.
+Error Loading Gesture File: Confirm that the dataset file (e.g., ASLLVD_videos.csv) is present and named correctly.
