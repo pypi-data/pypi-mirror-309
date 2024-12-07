@@ -1,0 +1,14 @@
+main > .container {
+    padding: 60px 15px 0;
+}
+
+/* make images not be too tall maybe */
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    text-align: center;
+}
+
+.license-card .card-title {
+  min-height: 2.5em;
+}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}File list{% endblock title %}
+
+{% block main_content %}
+  <div class="row">
+    <div class="col-2">
+      <div class="card">
+        <h5 class="card-header">File Stats</h5>
+        <div class="card-body">
+          <p class="lead">Showing {{ files.count }} files.</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <h5 class="card-header">Filter Files</h5>
+        <div class="card-body">
+          <form method="get">
+            <div class="row">
+              <div class="btn-group" role="group">
+                <a class="btn btn-warning" href="{% url 'files:file_list' %}"><i class="fas fa-times"></i> Clear Filters</a>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i> Submit Query</button>
+              </div>
+            </div>
+            {% bootstrap_form filter.form %}
+            <div class="row">
+              <div class="btn-group" role="group">
+                <a class="btn btn-warning" href="{% url 'files:file_list' %}"><i class="fas fa-times"></i> Clear Filters</a>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i> Submit Query</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="card">
+        <h5 class="card-header">Files</h5>
+        <div class="card-body">
+          {% include "includes/file_table.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main_content %}
