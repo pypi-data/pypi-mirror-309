@@ -1,0 +1,12 @@
+ocm/VERSION,sha256=zjGsTLJz7sC2r2CWOnS_TFLFjbz8XjIxzXFAVGEjErY,9
+ocm/__init__.py,sha256=YVXeiS7zXabzrOu-V-D4dkwnjW3_ws-dF0Twq0sAdwk,20505
+ocm/__main__.py,sha256=vQPV7Glr1VvQpjp8SYYzKE0oo0naM7bs5HIZPVkCV3g,6560
+ocm/oci.py,sha256=3HtExYXVO2lb8XHkV4CAW9sqLsYqVsxYWLCk_ZkwJAA,2805
+ocm/ocm-component-descriptor-schema.yaml,sha256=egxPs9P9kCEdes0bmTDLvAsGbRI9G2jDa2UX3QQLr2o,10006
+ocm/upload.py,sha256=4hY855sHv27nYZLURkrU2sF28uh3ewqAo8-rpP6jLJw,6752
+gardener_ocm-1.2548.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+gardener_ocm-1.2548.0.dist-info/METADATA,sha256=CUk41DGGKQ7BnaAaU1V4hC00vWXG-VHPU7-xtGOIzsU,374
+gardener_ocm-1.2548.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+gardener_ocm-1.2548.0.dist-info/entry_points.txt,sha256=j2EmWl5DQR7IvKeHYLpB4kT9Z8bywt-pmnhjMpwIjiU,51
+gardener_ocm-1.2548.0.dist-info/top_level.txt,sha256=JGU4u4TV6pTRvXJ2yPQin4IB1P8OVZ-OsoF0Sb7muYw,4
+gardener_ocm-1.2548.0.dist-info/RECORD,,
