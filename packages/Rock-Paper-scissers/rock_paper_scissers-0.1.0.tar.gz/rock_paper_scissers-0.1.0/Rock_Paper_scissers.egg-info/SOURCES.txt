@@ -1,0 +1,7 @@
+README.md
+setup.py
+Rock_Paper_scissers.egg-info/PKG-INFO
+Rock_Paper_scissers.egg-info/SOURCES.txt
+Rock_Paper_scissers.egg-info/dependency_links.txt
+Rock_Paper_scissers.egg-info/requires.txt
+Rock_Paper_scissers.egg-info/top_level.txt

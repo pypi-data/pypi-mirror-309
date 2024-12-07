@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Rock-Paper-scissers
+Version: 0.1.0
+Summary: A AI that plays Rock Papier Scissers with u using the camera
+Home-page: https://github.com/Dorus-rutten/Rock-Paper-Scissers
+Author: Dorus Rutten
+Author-email: Dorsrutten@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.20
+Description-Content-Type: text/markdown
+Requires-Dist: pygame>=2.1.0
+Requires-Dist: numpy>=1.23.0
+
+testing setup and requirement files for ez setup
+# Rock-Paper-Scissers
+This is a code that lets u play rock paper scissers against an ai using your webcam.
+
+to use this code u need some libs.
+i will make it ez for u to do but form now its just the reposetary
