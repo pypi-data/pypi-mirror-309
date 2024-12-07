@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Cotizaciones.egg-info/PKG-INFO
+Cotizaciones.egg-info/SOURCES.txt
+Cotizaciones.egg-info/dependency_links.txt
+Cotizaciones.egg-info/requires.txt
+Cotizaciones.egg-info/top_level.txt

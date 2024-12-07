@@ -1,0 +1,3 @@
+krakenex
+matplotlib
+numpy
