@@ -1,0 +1,8 @@
+README.md
+setup.py
+database_setup/database_setup.py
+database_setup.egg-info/PKG-INFO
+database_setup.egg-info/SOURCES.txt
+database_setup.egg-info/dependency_links.txt
+database_setup.egg-info/requires.txt
+database_setup.egg-info/top_level.txt
