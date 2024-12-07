@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/nmrstar_xml/__init__.py
+src/nmrstar_xml/main.py
+src/nmrstar_xml/starxml.py
+src/nmrstar_xml/test_NMRStarXml.py
+src/nmrstar_xml/translate.py
+src/nmrstar_xml/xmlstar.py
+src/nmrstar_xml.egg-info/PKG-INFO
+src/nmrstar_xml.egg-info/SOURCES.txt
+src/nmrstar_xml.egg-info/dependency_links.txt
+src/nmrstar_xml.egg-info/entry_points.txt
+src/nmrstar_xml.egg-info/requires.txt
+src/nmrstar_xml.egg-info/top_level.txt

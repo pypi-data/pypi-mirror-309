@@ -1,0 +1,37 @@
+[project]
+name = "nmrstar_xml"
+description = "Bidirectional conversion of NMRSTAR to XML"
+version = "1.0.2"
+dependencies = [ "lxml", "pynmrstar",]
+requires-python = ">= 3.8"
+readme = "README.md"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+keywords = [ "NMRSTAR", "XML",]
+[[project.authors]]
+name = "Gerard"
+
+[[project.authors]]
+email = "gweatherby@uchc.edu"
+
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+starxml = "nmrstar_xml.starxml:main"
+xmlstar = "nmrstar_xml.xmlstar:main"
+
+[project.urls]
+Homepage = "https://github.com/NMRbox/nmrstar_xml.git"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
