@@ -1,0 +1,118 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_payment_return_contract_late_fee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-13 17:33+0000\n"
+"PO-Revision-Date: 2024-11-13 17:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_payment_return_contract_late_fee
+#: code:addons/account_payment_return_contract_late_fee/models/payment_return.py:31
+#, python-format
+msgid "A late fee has been applied from this Payment Return: <a href=# data-oe-model=payment.return data-oe-id={0}>{1}</a>"
+msgstr "Un recargo ha sido aplicado desde esta devolución de recibo: <a href=# data-oe-model=payment.return data-oe-id={0}>{1}</a>"
+
+#. module: account_payment_return_contract_late_fee
+#: code:addons/account_payment_return_contract_late_fee/models/payment_return.py:38
+#, python-format
+msgid "A late fee has been applied to the partner in <a href=# data-oe-model={0} data-oe-id={1}>{2}</a>"
+msgstr "Ha sido aplicado un Recargo al cliente en <a href=# data-oe-model={0} data-oe-id={1}>{2}</a>"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_company__use_feature_fee_for_returned_payment
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_config_settings__use_feature_fee_for_returned_payment
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_partner__use_feature_fee_for_returned_payment
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_users__use_feature_fee_for_returned_payment
+msgid "Adds to Contracts (or an invoice) a fee given a confirmation of a returned payment."
+msgstr "Añade a un contrato (o una factura) un regargo dada una confirmación de una devolución de un recibo"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model,name:account_payment_return_contract_late_fee.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model,name:account_payment_return_contract_late_fee.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model,name:account_payment_return_contract_late_fee.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model,name:account_payment_return_contract_late_fee.model_contract_contract
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_partner__fee_for_returned_payment
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_users__fee_for_returned_payment
+msgid "Fee for Returned Payment"
+msgstr "Recargo por devolución del pago"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_company__product_return_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_company__use_feature_fee_for_returned_payment
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_config_settings__product_return_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_config_settings__use_feature_fee_for_returned_payment
+msgid "Fee for the returned payment"
+msgstr "Recargo por devolución del pago"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_partner__use_feature_fee_for_returned_payment
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_users__use_feature_fee_for_returned_payment
+msgid "Is Fee for Returned Payment Available"
+msgstr "Es disponible para recargo por devolución de recibo"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_company__journal_return_late_fee
+#: model:ir.model.fields,field_description:account_payment_return_contract_late_fee.field_res_config_settings__journal_return_late_fee
+msgid "Journal"
+msgstr "Diario"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_company__journal_return_late_fee
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_config_settings__journal_return_late_fee
+msgid "Journal for the fee to be created at when creating a plain invoice."
+msgstr "Diario en el que se creará el recargo cuando se cree una factura"
+
+#. module: account_payment_return_contract_late_fee
+#: model_terms:ir.ui.view,arch_db:account_payment_return_contract_late_fee.res_config_settings_view_form
+msgid "Manage fees for returned Payments on partners."
+msgstr "Gestiona regargos para las devoluciones de recibos en los clientes"
+
+#. module: account_payment_return_contract_late_fee
+#: model_terms:ir.ui.view,arch_db:account_payment_return_contract_late_fee.res_config_settings_view_form
+msgid "Payment Return Fee"
+msgstr "Recargo por devolución de recibo"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model,name:account_payment_return_contract_late_fee.model_payment_return
+msgid "Payment return"
+msgstr "Devolución de cobro"
+
+#. module: account_payment_return_contract_late_fee
+#: code:addons/account_payment_return_contract_late_fee/models/payment_return.py:50
+#: code:addons/account_payment_return_contract_late_fee/models/payment_return.py:84
+#: code:addons/account_payment_return_contract_late_fee/models/payment_return.py:94
+#, python-format
+msgid "Return Contract Late Fee"
+msgstr "Recargo por devolución de Recibo"
+
+#. module: account_payment_return_contract_late_fee
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_company__product_return_late_fee
+#: model:ir.model.fields,help:account_payment_return_contract_late_fee.field_res_config_settings__product_return_late_fee
+msgid "Select the product that will be added to Contracts triggered by the confirmation of a returned payment."
+msgstr "Selecciona el producto que será añadido al Contrato una vez que una devolución de Recibo sea confirmado"
+
