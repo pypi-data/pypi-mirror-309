@@ -1,0 +1,2 @@
+[console_scripts]
+manga-wordlist-extractor = main:main
