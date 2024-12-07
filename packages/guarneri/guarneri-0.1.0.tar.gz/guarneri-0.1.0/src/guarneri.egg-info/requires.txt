@@ -1,0 +1,12 @@
+ophyd
+ophyd-async
+ophyd-registry
+tomlkit
+
+[dev]
+black
+pytest
+pytest-asyncio
+flake8
+isort
+pydata-sphinx-theme

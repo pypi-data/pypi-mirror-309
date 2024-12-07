@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guarneri"
+version = "0.1.0"
+authors = [
+  { name="Mark Wolfman", email="wolfman@anl.gov" },
+]
+description = "guarneri"
+readme = "README.rst"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Hardware",
+]
+keywords = []
+dependencies = ["ophyd", "ophyd-async", "ophyd-registry", "tomlkit"]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "pytest-asyncio", "flake8", "isort", "pydata-sphinx-theme"]
+
+[project.urls]
+Homepage = "https://github.com/spc-group/guarneri"
+
+[project.scripts]
+# command = "guarneri.__main__:main"
