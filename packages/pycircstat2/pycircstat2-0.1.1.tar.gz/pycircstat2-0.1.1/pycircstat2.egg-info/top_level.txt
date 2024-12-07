@@ -1,0 +1,6 @@
+dev
+dist
+examples
+misc
+pycircstat2
+tests
