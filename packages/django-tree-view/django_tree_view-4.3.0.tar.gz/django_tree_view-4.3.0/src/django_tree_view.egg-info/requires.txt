@@ -1,0 +1,4 @@
+Django<6,>=3.0
+django-dynamic-path<1
+django_referer_csrf<1
+django_early_return<1
