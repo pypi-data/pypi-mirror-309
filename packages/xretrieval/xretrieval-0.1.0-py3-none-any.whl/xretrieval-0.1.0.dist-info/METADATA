@@ -1,0 +1,136 @@
+Metadata-Version: 2.3
+Name: xretrieval
+Version: 0.1.0
+Summary: Retrieve and Evaluate with X(any) models
+Project-URL: Homepage, https://github.com/dnth/x.retrieval
+Project-URL: Bug Tracker, https://github.com/dnth/x.retrieval/issues
+Author-email: Dickson Neoh <dickson.neoh@gmail.com>
+License: MIT
+Keywords: evaluation,machine-learning,multi-modal,retrieval
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Requires-Dist: accelerate>=1.1.0
+Requires-Dist: faiss-cpu>=1.9.0
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: pandas>=2.1.0
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: rich>=13.9.0
+Requires-Dist: sentence-transformers>=3.3.0
+Requires-Dist: timm>=1.0.0
+Requires-Dist: torchmetrics>=1.6.0
+Requires-Dist: tqdm>=4.67.0
+Requires-Dist: transformers>=4.46.0
+Provides-Extra: dev
+Requires-Dist: black>=22.0; extra == 'dev'
+Requires-Dist: flake8>=4.0; extra == 'dev'
+Requires-Dist: isort>=5.0; extra == 'dev'
+Requires-Dist: pytest>=7.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+
+# x.retrieval
+
+Retrieve and evaluate with X (any) models.
+
+This project simplifies automated text-image retrieval benchmarks.
+
+Inputs:
+
+- A dataset
+- A model
+- A mode (e.g. `image-to-image`)
+
+
+Outputs:
+
+- A retrieval results dataframe
+- A retrieval metrics dataframe
+
+## 🌟 Key Features
+
+- ✅ Supports a wide range of models and datasets.
+- ✅ Installation in one line.
+- ✅ Run benchmarks with one function call.
+
+## 🚀 Quickstart
+
+```python
+import xretrieval
+
+xretrieval.run_benchmark(
+    dataset_name="coco-val-2017",
+    model_id="transformers/Salesforce/blip2-itm-vit-g",
+    mode="text-to-text",
+)
+```
+
+Output:
+
+```bash
+{
+    'MRR': 0.2953,
+    'NormalizedDCG': 0.3469,
+    'Precision': 0.2226,
+    'Recall': 0.4864,
+    'HitRate': 0.4864,
+    'MAP': 0.2728
+}
+
+```
+
+## 📦 Installation
+
+```bash
+pip install xretrieval
+```
+
+## 🛠️ Usage
+
+List datasets:
+
+```python
+xretrieval.list_datasets()
+```
+
+List models:
+
+```python
+xretrieval.list_models()
+```
+
+## 🧰 Supported Models and Datasets
+
+Models:
+
+```
+                         Available Models                         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Model ID                                         ┃ Model Input ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+│ transformers/Salesforce/blip2-itm-vit-g          │ text-image  │
+│ transformers/Salesforce/blip2-itm-vit-g-text     │ text        │
+│ transformers/Salesforce/blip2-itm-vit-g-image    │ image       │
+│ sentence-transformers/paraphrase-MiniLM-L3-v2    │ text        │
+│ sentence-transformers/paraphrase-albert-small-v2 │ text        │
+│ sentence-transformers/multi-qa-distilbert-cos-v1 │ text        │
+│ sentence-transformers/all-MiniLM-L12-v2          │ text        │
+│ sentence-transformers/all-distilroberta-v1       │ text        │
+│ sentence-transformers/multi-qa-mpnet-base-dot-v1 │ text        │
+│ sentence-transformers/all-mpnet-base-v2          │ text        │
+│ sentence-transformers/multi-qa-MiniLM-L6-cos-v1  │ text        │
+│ sentence-transformers/all-MiniLM-L6-v2           │ text        │
+│ timm/resnet18.a1_in1k                            │ image       │
+└──────────────────────────────────────────────────┴─────────────┘
+```
+
+Datasets:
+
+- `coco-val-2017`

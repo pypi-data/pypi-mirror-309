@@ -1,0 +1,14 @@
+xretrieval/__init__.py,sha256=sQoomHyzlJWiTuOZ06h16TwWk2GR2EksW7UgQ2CFZ6o,534
+xretrieval/core.py,sha256=Eie3cX8ZBKU0GBb6iJiV88Zy2Cc0yt05t96Anvl6ad4,8578
+xretrieval/datasets_registry.py,sha256=9V4qAJaJpQkcvK2Gr-M_JQ1NxG5U87tQMM-0cRiob7o,1621
+xretrieval/models_registry.py,sha256=5VviWV__4ZB04-ne7eaDJ8NhvJLa7X2s81DjjP94Ke8,2188
+xretrieval/datasets/__init__.py,sha256=lihMViUUNXKaHCSOHgvw2_dWx2zIPEWiiKIF4gA5p78,57
+xretrieval/datasets/coco.py,sha256=q7SJvJigSW7GMRaM2K3jqJwH6bszri-e3sYYb8HrDvk,5548
+xretrieval/models/__init__.py,sha256=bxWKEIztUblqG42GhdY8kYLGHiPix17KAulf0JGXbpo,278
+xretrieval/models/base.py,sha256=XItTWnnD2c4_C1_Zpq4HHoIoh9bMirCYuiRkX72zjgM,824
+xretrieval/models/blip2.py,sha256=KafW1xU7nxzicxLcxX5emoji4QSMolSM_y0ANHdKWfE,6094
+xretrieval/models/sentence_transformers.py,sha256=RmZm-asibzF7BR859kZaVfgAwBIo5CxO7X3ZQsj7xLw,1332
+xretrieval/models/timm.py,sha256=hFz_lMknwNzC49G1WeNmjqTvK84IB8gWnhDsmDKKKgI,1417
+xretrieval-0.1.0.dist-info/METADATA,sha256=556zPlnp3e2mRYaqK0OAtGSILXHldvjXex4cQWz_EvY,4155
+xretrieval-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+xretrieval-0.1.0.dist-info/RECORD,,
