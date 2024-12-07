@@ -1,0 +1,8 @@
+simsimd.cpython-312-darwin.so,sha256=eqDgj6M-Mvm2ohM3rKX-ellodwlB6v-ErAIINi0ZKWI,408944
+simsimd-6.1.1.dist-info/RECORD,,
+simsimd-6.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simsimd-6.1.1.dist-info/WHEEL,sha256=YBp1g9Ig68hi-KSHHoS205pjgMXFsugNOOUr7kf4KqQ,115
+simsimd-6.1.1.dist-info/top_level.txt,sha256=kA2CGlVhy5wNyCLTKLh20j75IM5fnuQ_-4bK53XLl8o,8
+simsimd-6.1.1.dist-info/METADATA,sha256=5YnaFe-E1kE5a1aNn6ko2y_yLF1AmTRLpiVlONQZmdM,58420
+simsimd/__init__.pyi,sha256=tsn9jnq7ANXbJBOr06LjjJtfQ4ZGhXVxKOlScIi34lI,9829
+simsimd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
