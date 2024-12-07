@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bs4-utils
+Version: 0.1.3
+Summary: A BeautifulSoup wrapper with helpful utils.
+License: MIT
+Author: J.I. Cruz
+Author-email: hello@jicruz.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4
+Description-Content-Type: text/markdown
+
+# bs4-utils
+
+A BeautifulSoup wrapper with helpful utils.
+
+```bash
+pip install bs4-utils
+```
+
+### Disclaimer
+
+This package is currently only for the author's personal use.
+
+It will be properly documented if and only if it would be useful to others (or to the author).
+
