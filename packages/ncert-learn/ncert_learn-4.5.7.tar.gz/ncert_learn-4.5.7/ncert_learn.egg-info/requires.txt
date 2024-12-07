@@ -1,0 +1,9 @@
+mysql-connector-python
+pytest
+tox
+requests
+psutil
+beautifulsoup4
+googlesearch-python
+python-nmap
+PyPDF2
