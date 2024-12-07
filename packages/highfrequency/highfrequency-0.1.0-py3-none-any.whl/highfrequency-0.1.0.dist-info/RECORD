@@ -1,0 +1,14 @@
+highfrequency/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highfrequency/data_handling.py,sha256=T79dWnkpSF_sAy1TfbpHNsyIcVRkwFkvWBqx9WY_4Fk,21263
+highfrequency/internal_data_handling.py,sha256=mEPOTBbMKAdmFoQXW3wpQr-03IcFtpJDNIJZYJPARVw,3163
+highfrequency/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highfrequency/helpers/exchange_names.py,sha256=q-S4ayVD62ipZXGZxpJh2pEyh-qPqzu0FAwtngZzYZk,262
+highfrequency/helpers/schemas.py,sha256=xxJre1lxd7RZTQjFpSqb2YKe4JPSxmemcSo56Ga7oyY,1559
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_data_handling.py,sha256=HxQbO4v_XGLFTJE7FmP0eyL0sRRyq12AMTwjoSdlo74,1114
+tests/test_internal_data_handling.py,sha256=VCPmfE5t7MH8Or96fRlQXijVMKsCrkG4icK7zdwfVTI,2228
+highfrequency-0.1.0.dist-info/LICENSE,sha256=Agv3GmmMzbN5bbXuVz19k1LL3sE-anoq9dqV-SMZ1Yg,1072
+highfrequency-0.1.0.dist-info/METADATA,sha256=CnNCVdcO90ra0guhNPD__BQsiENHHz3gBWGPnZH6wmo,672
+highfrequency-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+highfrequency-0.1.0.dist-info/top_level.txt,sha256=097SjCAdxdP15zmvQZjXq3lwshW7C20nBGqzzMfv7Dg,20
+highfrequency-0.1.0.dist-info/RECORD,,
