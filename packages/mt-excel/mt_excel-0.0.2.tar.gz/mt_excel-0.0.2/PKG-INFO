@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mt_excel
+Version: 0.0.2
+Summary: A package for interacting with excel files
+Home-page: UNKNOWN
+Author: mole1000
+Author-email: mole1000@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# mt_excel
+
+This is designed to work with MaxTrack.
+
+The package is designed to facilitate interaction with excel files.
+
+It is designed to be used as a module within __MaxTrack__.
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to figure out how to write more content.
+
