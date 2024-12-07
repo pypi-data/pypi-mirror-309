@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gns-helper
+Version: 0.2
+Summary: A package for common GNS functions
+Author: Komal Swami
+Author-email: komalsswami@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: Flask-JWT-Extended
+Requires-Dist: Pillow==9.5.0
+Requires-Dist: pymysql
+Requires-Dist: dbutils
+Requires-Dist: pyyaml
+Requires-Dist: requests
