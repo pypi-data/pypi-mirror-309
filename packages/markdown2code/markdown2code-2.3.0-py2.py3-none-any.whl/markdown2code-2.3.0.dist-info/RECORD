@@ -1,0 +1,11 @@
+markdown2code/__init__.py,sha256=1BfH-uIpedYX2b5Si94ITiJXyyRNi26gU8et-OanWo0,84
+markdown2code/backup.py,sha256=8DwQQKJ_SwCuDstJO6qQCVwVQlbJxTZQCYwlHb7PHHE,9569
+markdown2code/cli.py,sha256=YZfGPn4vtzelcJ4HcLfZGA8bnDMTIc5wEbOb70Rpdd0,8931
+markdown2code/config.py,sha256=jDV1H8gjKk7FHLSlVGcDb-aF8pIs7XHpFLrxLd1akB4,4864
+markdown2code/converter.py,sha256=XSL_M59jX8Q16Pl3VVpoCg9p1QI65pCS_yUTsvZgODM,10012
+markdown2code-2.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+markdown2code-2.3.0.dist-info/METADATA,sha256=vQF5AhHg7OhdfVbgFME2FGRAljAjNB9AZ8crRFtMqnk,12707
+markdown2code-2.3.0.dist-info/WHEEL,sha256=0VNUDWQJzfRahYI3neAhz2UVbRCtztpN5dPHAGvmGXc,109
+markdown2code-2.3.0.dist-info/entry_points.txt,sha256=wpuLHKBU9hLJJHCr9AcZshwgBa571JrelM-iJFp4vtE,57
+markdown2code-2.3.0.dist-info/top_level.txt,sha256=gKx1RwTu1o52021lnil6jVLHqxdXgMdp41TE0mXKUI0,14
+markdown2code-2.3.0.dist-info/RECORD,,
