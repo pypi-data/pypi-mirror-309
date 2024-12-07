@@ -1,0 +1,7 @@
+click
+setuptools
+twine
+wheel
+
+[tests]
+pytest

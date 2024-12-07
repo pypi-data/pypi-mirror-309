@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+setups/__init__.py
+setups/cli.py
+setups/help.py
+setups.egg-info/PKG-INFO
+setups.egg-info/SOURCES.txt
+setups.egg-info/dependency_links.txt
+setups.egg-info/entry_points.txt
+setups.egg-info/requires.txt
+setups.egg-info/top_level.txt
+test/__init__.py
