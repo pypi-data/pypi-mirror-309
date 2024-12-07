@@ -1,0 +1,4 @@
+polars
+pytest
+pandas
+numpy
