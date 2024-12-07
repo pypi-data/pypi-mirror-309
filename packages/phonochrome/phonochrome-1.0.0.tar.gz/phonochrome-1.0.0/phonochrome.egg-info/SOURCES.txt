@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+phonochrome.py
+pyproject.toml
+setup.cfg
+phonochrome.egg-info/PKG-INFO
+phonochrome.egg-info/SOURCES.txt
+phonochrome.egg-info/dependency_links.txt
+phonochrome.egg-info/entry_points.txt
+phonochrome.egg-info/top_level.txt
