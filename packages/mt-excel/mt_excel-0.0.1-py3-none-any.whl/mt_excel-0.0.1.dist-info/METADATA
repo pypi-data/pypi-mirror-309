@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mt-excel
+Version: 0.0.1
+Summary: A package for interacting with excel files
+Home-page: UNKNOWN
+Author: mole1000
+Author-email: mole1000@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl (>=3.1.3)
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+# mt_MoveCalibrationRecord
+
+This is a package for moving a calibration record in Met/Track.
+
+The package is designed to facilitate interaction with excel files.
+
+It is designed to be used as a module within __MaxTrack__.
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to figure out how to write more content.
+
