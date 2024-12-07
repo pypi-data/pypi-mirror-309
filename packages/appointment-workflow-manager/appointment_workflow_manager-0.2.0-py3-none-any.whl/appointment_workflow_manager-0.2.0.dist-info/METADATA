@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: appointment-workflow-manager
+Version: 0.2.0
+Summary: Utilities to manage appointment workflows including approval, rejection, cancellation, audit logging, and conflict detection.
+Home-page: https://github.com/yourusername/appointment-workflow-manager
+Author: Vinay Gunda
+Author-email: x23302712@student.ncirl.ie
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+
+# Appointment Workflow Manager
+
+`appointment-workflow-manager` is a Python library to simplify appointment workflows in Django applications.
+
+## Features
+- Approve, reject, or cancel appointments.
+- Automatically handle notifications and status updates.
+- Audit logging for appointment status changes.
+- Detect and prevent overlapping appointments.
+
+## Installation
+
+```bash
+pip install appointment-workflow-manager
