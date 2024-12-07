@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rapid-orientation
+Version: 0.0.10
+Summary: Tools for classifying the direction of images containing text based ONNXRuntime.
+Home-page: https://github.com/RapidAI/RapidOrientation
+Author: SWHL
+Author-email: liekkaskono@163.com
+License: Apache-2.0
+Keywords: ppstructure,layout,rapidocr,rapid_orientation
+Platform: Any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6,<3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2.0.0,>=1.21.6
+Requires-Dist: opencv-python>=4.6.0.66
+Requires-Dist: PyYAML
+Requires-Dist: onnxruntime
+Requires-Dist: Pillow
+
+See [documentation](https://github.com/RapidAI/RapidOrientation)
