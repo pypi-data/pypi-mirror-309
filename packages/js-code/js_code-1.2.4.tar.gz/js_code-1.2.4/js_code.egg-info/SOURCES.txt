@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+js_code.egg-info/PKG-INFO
+js_code.egg-info/SOURCES.txt
+js_code.egg-info/dependency_links.txt
+js_code.egg-info/not-zip-safe
+js_code.egg-info/requires.txt
+js_code.egg-info/top_level.txt
+package/__init__.py
+package/js_tools.py
