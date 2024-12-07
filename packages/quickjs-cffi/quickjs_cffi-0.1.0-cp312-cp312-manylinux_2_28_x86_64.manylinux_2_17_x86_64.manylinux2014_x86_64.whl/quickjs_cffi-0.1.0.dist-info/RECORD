@@ -1,0 +1,8 @@
+quickjs/__init__.py,sha256=kZ8zU7FS2ujvrhiGZb13EbdaOEU0p1o6dlrS8FOohyg,30
+quickjs/_quickjs.cpython-312-x86_64-linux-gnu.so,sha256=CfRmjyqBRvFA6jnBWAZk_z1RbYRXRiWfTCFYl-1CXM4,6605648
+quickjs/quickjs.py,sha256=fUieSC4MOrpHjyvxRx0RjTzPA_9MG2wHmU663K0i3rM,24606
+quickjs_cffi-0.1.0.dist-info/LICENSE,sha256=9a-fByJirgIJlMqY1IGg1_wO34ROQfri5adYYSDMIts,1106
+quickjs_cffi-0.1.0.dist-info/METADATA,sha256=HuYoMnjTvs_IocPpN-QXnmAhoZOxXFdVM0uCfksDiE0,1601
+quickjs_cffi-0.1.0.dist-info/WHEEL,sha256=AaqWOc-fcTd2EikzCo9raG6hE_Z88ODqzwLGDPFtAoc,188
+quickjs_cffi-0.1.0.dist-info/entry_points.txt,sha256=Gx56uy3ubAWtR-c1otWZW-VlVFb7QuaJkUEvCFUq1KQ,71
+quickjs_cffi-0.1.0.dist-info/RECORD,,
