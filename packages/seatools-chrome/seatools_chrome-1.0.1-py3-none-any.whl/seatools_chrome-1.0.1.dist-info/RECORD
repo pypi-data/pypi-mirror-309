@@ -1,0 +1,12 @@
+seatools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ext/chrome/__init__.py,sha256=bMDUWEjZSs3ZthdJEeZ8-HOkxxg8V9fbzU3TwgRWIfQ,56
+seatools/ext/chrome/chrome.py,sha256=ZgpioOgjufOxp9Ogr2ywQJsjWH_jfOohpE2foy2iIzk,4594
+seatools/ext/chrome/main.py,sha256=pRE_NOMDV5BlA-8ryy7ZtENSY4Z2XBMgkS1drm7G61A,4132
+seatools/ext/chrome/utils.py,sha256=JxrrLvELvLoOqORjXEWDxs3TSzCi4bPZz_RwI9BQuto,1024
+seatools_chrome-1.0.1.dist-info/LICENSE,sha256=c9ELyC2TG-Upe7XFGE3HWMLC0mibnbM04JfDTzHQ5cs,1089
+seatools_chrome-1.0.1.dist-info/METADATA,sha256=vwt1YeiBmtzyYjRsZyZSfqFaHrGpTnOn1vXYTPX5RTo,1250
+seatools_chrome-1.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+seatools_chrome-1.0.1.dist-info/entry_points.txt,sha256=Azdzjvm-aH65bIzp_n8paiXirN_Pm_yDPgDWmoMJ7Xs,66
+seatools_chrome-1.0.1.dist-info/top_level.txt,sha256=RzPcP50xO2ucDJY7n5WSFeZKlGG_qfYUB-cBoOo2DPE,9
+seatools_chrome-1.0.1.dist-info/RECORD,,
