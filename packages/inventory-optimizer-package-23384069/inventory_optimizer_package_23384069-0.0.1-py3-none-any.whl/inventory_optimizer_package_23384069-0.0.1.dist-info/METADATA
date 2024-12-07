@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: inventory-optimizer-package-23384069
+Version: 0.0.1
+Summary: A simple package that ensures stock level in inventory is always optimal
+Project-URL: Homepage, https://github.com/Ughanze23/CPP-PROJECT/tree/main/inventory_optimizer
+Author-email: Ikenna Ughanze <ughanzepolycarp@example.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: django>=3.2
+Description-Content-Type: text/markdown
+
+# Inventory Optimizer
+
+A Django library for optimizing inventory levels based on weekly sales patterns.
+
+## Features
+- 7-day sales analysis
+- Daily average usage calculation
+- Reorder point recommendations
+- Automated stock alerts
+- Simple integration with Django models
+
+## Installation
+```bash
+pip install inventory-optimizer-package-23384069
+```
+
+## Quick Start
+```python
+from inventory_optimizer import InventoryOptimizer
+
+# Initialize optimizer
+optimizer = InventoryOptimizer(min_stock_threshold=10)
+
+# Generate recommendations
+recommendations = optimizer.generate_recommendations(
+    product_id=1,
+    product_model=Product,
+    inventory_model=Inventory,
+    notification_model=Notification
+)
+```
+
+## Requirements
+- Python >= 3.6
+- Django >= 3.2
+
+## Configuration
+The optimizer uses:
+- 7-day analysis period
+- 3-day stock threshold for reorder points
+- Minimum stock threshold (configurable)
+
+## API Reference
+
+### InventoryOptimizer(min_stock_threshold=10)
+Main class for inventory optimization.
+
+### calculate_weekly_average(product_id, inventory_model, start_date=None, end_date=None)
+Returns daily average sales based on 7-day history.
+
+### generate_recommendations(product_id, product_model, inventory_model, notification_model)
+Returns dictionary with:
+- current_stock
+- daily_average_usage
+- reorder_point
+- recommended_order
+- needs_reorder
+
+## License
+MIT
+
