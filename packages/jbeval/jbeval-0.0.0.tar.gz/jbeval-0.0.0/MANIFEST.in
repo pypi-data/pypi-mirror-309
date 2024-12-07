@@ -1,0 +1,13 @@
+include *.md
+include docs/index.rst
+include LICENSE
+include Version
+include requirements.txt
+include jbeval/__init__.py
+
+recursive-include jbeval *.py
+recursive-include jbeval *.txt
+recursive-include *.pkl
+
+recursive-exclude * __pycache__
+recursive-exclude *.yml

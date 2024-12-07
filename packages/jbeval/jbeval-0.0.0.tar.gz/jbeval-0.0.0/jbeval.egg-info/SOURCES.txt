@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+Version
+requirements.txt
+setup.py
+jbeval/__init__.py
+jbeval/interface.py
+jbeval/processing.py
+jbeval.egg-info/PKG-INFO
+jbeval.egg-info/SOURCES.txt
+jbeval.egg-info/dependency_links.txt
+jbeval.egg-info/requires.txt
+jbeval.egg-info/top_level.txt
