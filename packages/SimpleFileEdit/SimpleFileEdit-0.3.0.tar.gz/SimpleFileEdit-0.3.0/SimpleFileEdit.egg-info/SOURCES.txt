@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SimpleFileEdit/FileManager.py
+SimpleFileEdit/FolderManager.py
+SimpleFileEdit/__init__.py
+SimpleFileEdit.egg-info/PKG-INFO
+SimpleFileEdit.egg-info/SOURCES.txt
+SimpleFileEdit.egg-info/dependency_links.txt
+SimpleFileEdit.egg-info/top_level.txt
