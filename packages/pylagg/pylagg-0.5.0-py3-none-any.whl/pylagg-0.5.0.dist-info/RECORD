@@ -1,0 +1,11 @@
+pylagg/cgr.py,sha256=fA7pBOFMaqcDKueOM8xyJ1gHlFgJ53vChEgyU8me0yk,6954
+pylagg/config.py,sha256=tuV8Zif6fjTj5pJf234MZz-uXGiW_axN0e_5KDwa7aw,3400
+pylagg/cutadapt.py,sha256=3EXF0nSZq4zcupzNgCFSmSDLGRkXQoBQ_bRmexFIzq8,2373
+pylagg/ena.py,sha256=A8_N6ZyZBmDVSM-kZmAXZUfh4fLLQ_VTOXN8zmwzlU0,8564
+pylagg/jellyfish.py,sha256=S4M3cgG_NIMthDr9tzMJCuuQpbCIjHgXMzMhIir_z4w,6568
+pylagg/main.py,sha256=MwY-E2ImyoNBvtrGcWhYsIZxiw9dkd-UsmgVlnZfdro,7151
+pylagg-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylagg-0.5.0.dist-info/METADATA,sha256=URdkYRpT8dqhAy3QAzfdSkRipo7pe3Ib5DtJ1_hoKwM,3930
+pylagg-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylagg-0.5.0.dist-info/entry_points.txt,sha256=jTHBOk0MJeRC4LFYe3HlXjc3paowOOXnrGpPyH1k-7o,40
+pylagg-0.5.0.dist-info/RECORD,,
