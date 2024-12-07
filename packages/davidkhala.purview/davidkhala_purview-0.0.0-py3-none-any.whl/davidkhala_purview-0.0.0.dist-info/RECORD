@@ -1,0 +1,6 @@
+catalog/__init__.py,sha256=_z_1q6SsHHRWdtPPbeeU-GF96AzF8SJGQ6JxLjVB0Uk,2068
+catalog/entity.py,sha256=CrwAZUzjDWIiJy2N3Jm6E95pi2tqrx9zJmaL-u5KQKs,1577
+catalog/relationship.py,sha256=4ZjSK0Oi9mt97QASvaapE4RLFiU_oMFNyWpCawc2Hsk,122
+davidkhala_purview-0.0.0.dist-info/METADATA,sha256=DKvL1Z6JMjy-YrHFZ-uxrBwnSaNotC9hQeqOwMo-ims,498
+davidkhala_purview-0.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+davidkhala_purview-0.0.0.dist-info/RECORD,,
