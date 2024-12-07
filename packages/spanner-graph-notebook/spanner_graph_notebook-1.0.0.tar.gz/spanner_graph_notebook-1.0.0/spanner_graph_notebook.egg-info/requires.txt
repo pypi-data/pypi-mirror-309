@@ -1,0 +1,6 @@
+networkx
+numpy
+google-cloud-spanner
+ipython
+ipywidgets
+notebook
