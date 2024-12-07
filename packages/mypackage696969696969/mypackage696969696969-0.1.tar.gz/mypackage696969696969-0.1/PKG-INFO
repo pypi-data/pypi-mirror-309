@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mypackage696969696969
+Version: 0.1
+Summary: Пример пакета с генераторами, итераторами, декораторами и дескрипторами
+Home-page: https://example.com/mypackage
+Author: Максим
+Author-email: mai13@tpu.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
