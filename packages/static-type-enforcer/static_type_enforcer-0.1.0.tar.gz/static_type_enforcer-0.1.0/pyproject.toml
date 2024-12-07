@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "static_type_enforcer"
+version = "0.1.0"
+description = "A lightweight decorator for enforcing type hints at runtime."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "Wajed Khan", email = "wajed.abdul.khan@gmail.com" }]
+urls = { "Home" = "https://github.com/WazedKhan/enforcer" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []

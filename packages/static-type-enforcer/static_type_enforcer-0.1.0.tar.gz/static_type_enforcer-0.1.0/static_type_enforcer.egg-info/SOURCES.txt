@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+static_type_enforcer.egg-info/PKG-INFO
+static_type_enforcer.egg-info/SOURCES.txt
+static_type_enforcer.egg-info/dependency_links.txt
+static_type_enforcer.egg-info/top_level.txt
+tests/__init__.py
+tests/test_enforce_types.py
+tests/test_exceptions.py
+type_enforcer/__init__.py
+type_enforcer/exceptions.py
+type_enforcer/main.py
