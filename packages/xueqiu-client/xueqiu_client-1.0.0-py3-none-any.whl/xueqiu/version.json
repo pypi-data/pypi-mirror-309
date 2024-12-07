@@ -1,0 +1,9 @@
+{
+    "name": "xueqiu-client",
+    "prog": "xueqiu",
+    "desc": "Client for Xueqiu.com",
+    "url": "https://github.com/suqingdong/xueqiu",
+    "author": "suqingdong",
+    "author_email": "suqingdong1114@gmail.com",
+    "version": "1.0.0"
+}
