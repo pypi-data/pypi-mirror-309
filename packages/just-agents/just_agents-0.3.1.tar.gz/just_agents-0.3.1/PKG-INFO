@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: just-agents
+Version: 0.3.1
+Summary: Just Agents - Base Package
+Author-email: Alex Karmazin <karmazinalex@gmail.com>
+Maintainer-email: Anton Kulaga <antonkulaga@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/longevity-genie/just-agents
+Project-URL: Bug Tracker, https://github.com/longevity-genie/just-agents/issues
+Project-URL: Documentation, https://just-agents.readthedocs.io/
+Keywords: python,llm,science,review,agents,AI
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: litellm>=1.52.9
+Requires-Dist: Deprecated>=1.2.15
+Requires-Dist: requests
+Requires-Dist: numpydoc
