@@ -1,0 +1,6 @@
+libjacobi-yaskawa-driver.so,sha256=ZUHnAHuilhg3Kj54ps87vxKE3Yb0zQhjY2a3J3Km7s0,604480
+jacobi_driver_yaskawa.cpython-38-x86_64-linux-gnu.so,sha256=h7ZGoOXuI--b1NJqfbxFOUTHFto5LdlgfvsfZzSNfcE,422080
+jacobi_yaskawa_driver-0.0.42.dist-info/METADATA,sha256=CkmqoxzQ2BApUwunHovdNNr18WYxzcqedr5PnCBZ8NQ,7209
+jacobi_yaskawa_driver-0.0.42.dist-info/WHEEL,sha256=B6K4Vi83qJZDw2yj10bR0BePWHicZyNFrFBYbF7yKls,153
+jacobi_yaskawa_driver-0.0.42.dist-info/RECORD,,
+jacobi_yaskawa_driver-0.0.42.dist-info/licenses/LICENSE,sha256=7E6UpHi6CcFJcTVyOK4qryszQquAjyVtgfSJvrxjWgU,5493
