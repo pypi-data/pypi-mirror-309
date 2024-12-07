@@ -1,0 +1,8 @@
+awscli
+patool
+datalad
+requests
+osfclient
+gdown
+zenodo-get
+requests
