@@ -1,0 +1,3 @@
+[console_scripts]
+starxml = nmrstar_xml.starxml:main
+xmlstar = nmrstar_xml.xmlstar:main

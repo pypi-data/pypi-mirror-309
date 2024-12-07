@@ -1,0 +1,12 @@
+nmrstar_xml/__init__.py,sha256=HDfqkZVEGYd6xmmUeH_VekJXEkiuDOr5JBtYYvNeqBA,197
+nmrstar_xml/main.py,sha256=wB1iHKBoODZ5GwpPu_dQxEiSRsEI4qaLGbQkM85zJxs,456
+nmrstar_xml/starxml.py,sha256=1XZgc0MA41CnoSJxM8B0iooLuzfb9eGF_4o02GdUlr0,1078
+nmrstar_xml/test_NMRStarXml.py,sha256=_12ltlPZDuFEC3-6u2AsnEdTTLnqN2pAuePBwHQABE8,7794
+nmrstar_xml/translate.py,sha256=V4Nm6l6sBUtHjXArcs1V8K79_2JQLA5_IaK6DQ4v3Zg,12453
+nmrstar_xml/xmlstar.py,sha256=BhFJQ1NaNWkoMDKsmyP_7fQkX6uayZLOaTZ9S0saYAo,592
+nmrstar_xml-1.0.2.dist-info/LICENSE,sha256=iN3H8KTeZXiE3loO8ovWK5rBTurW2vm19k9k_Ck_Xug,1063
+nmrstar_xml-1.0.2.dist-info/METADATA,sha256=eEZq2FBpsJCzkWI-G0dIcLBKwaDESz66eA7hGCaL14I,570
+nmrstar_xml-1.0.2.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+nmrstar_xml-1.0.2.dist-info/entry_points.txt,sha256=gtQS24ZLKNj970HOfG5X3fprehN_Rm_Op2nI03qLvCM,88
+nmrstar_xml-1.0.2.dist-info/top_level.txt,sha256=8G-4f7CNWYalJdxKkDnTuay4NQJ6OcBdly5aDfdaR8Y,12
+nmrstar_xml-1.0.2.dist-info/RECORD,,
