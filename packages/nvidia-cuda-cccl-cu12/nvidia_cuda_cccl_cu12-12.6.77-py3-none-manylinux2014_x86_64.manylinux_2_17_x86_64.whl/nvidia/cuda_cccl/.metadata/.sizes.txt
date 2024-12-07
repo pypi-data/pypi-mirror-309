@@ -1,0 +1,5 @@
+0,guardword_scan_stderr.txt
+532,g_guardwords.txt
+7464,baseGuardwords.txt
+208650,guardword_scan_stdout.txt
+0,.sizes.txt
