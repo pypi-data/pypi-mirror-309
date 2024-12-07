@@ -1,0 +1,2 @@
+[console_scripts]
+cuddly-octo-funicular = cuddly_octo_funicular.__main__:entrypoint
