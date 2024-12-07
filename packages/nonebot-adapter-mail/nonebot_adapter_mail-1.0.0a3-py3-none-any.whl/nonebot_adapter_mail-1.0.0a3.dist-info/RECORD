@@ -1,0 +1,15 @@
+nonebot/adapters/mail/__init__.py,sha256=zdj6lDtp2FZSkAq3pTqQlOuP41fjnZntqs6goDZmJz8,197
+nonebot/adapters/mail/adapter.py,sha256=hoyx-VJ_bk4xCDGNdD_c2DQy93Jpw8mBCRjDX8ZdKQg,4985
+nonebot/adapters/mail/bot.py,sha256=-n_SBGQBdyUAqPzNGaYpxPU6eloNRkd6Hu0jIz5zIwM,17260
+nonebot/adapters/mail/config.py,sha256=6ebQ8D6ILGuydplGKFUE1M_z6kLnL8GOzyFpzQ_oRxI,623
+nonebot/adapters/mail/event.py,sha256=7SAaMuKvE2h2E0xkaJiqGZjZSoS1knH_n4r4KM236YU,1665
+nonebot/adapters/mail/exception.py,sha256=blPh_8O5miEtuYElegKN6ngnqBjQzV-mZPpQtB_i3G4,2570
+nonebot/adapters/mail/log.py,sha256=pvHIoU9LausZbVkNoYId5ctTx0qm9WicJLA9AytNCjQ,71
+nonebot/adapters/mail/message.py,sha256=pwhXZyOmxoQZA4DEu9KkE4cEnWjADprIYul7wciL3ks,4337
+nonebot/adapters/mail/model.py,sha256=GkgfgaQPQKWznP4kU40seVAI0td1SNsac3FoyAxjXtQ,540
+nonebot/adapters/mail/utils.py,sha256=BVPa6M8rCLy3DOEBBNUL1dq0hK7dkLzB_ALsk1RNbAg,4124
+nonebot_adapter_mail-1.0.0a3.dist-info/METADATA,sha256=4r0MEd9FW3UzNRXGxiPFhqDpcfw2djUUyHsSKsgAhMA,2287
+nonebot_adapter_mail-1.0.0a3.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_adapter_mail-1.0.0a3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_adapter_mail-1.0.0a3.dist-info/licenses/LICENCE,sha256=54e_How9MLdfwsPxieo3av75zcV0TLSy1u1P5scb6aE,1090
+nonebot_adapter_mail-1.0.0a3.dist-info/RECORD,,
