@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/llvmcovdiff/__main__.py
+src/llvmcovdiff/diff_line_coverage.py
+src/llvmcovdiff/diff_main_report.py
+src/llvmcovdiff/full_report_diff.py
+src/llvmcovdiff.egg-info/PKG-INFO
+src/llvmcovdiff.egg-info/SOURCES.txt
+src/llvmcovdiff.egg-info/dependency_links.txt
+src/llvmcovdiff.egg-info/requires.txt
+src/llvmcovdiff.egg-info/top_level.txt
