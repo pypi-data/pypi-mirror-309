@@ -1,0 +1,17 @@
+nominopolitan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominopolitan/apps.py,sha256=lBeSvSX8giCnwIpj2VofxkZ1be-9L4j7i8rihZoVvcA,189
+nominopolitan/mixins.py,sha256=2uRpjVjobmSBWDdB_WBsvf7PAr1o6EXhBAcYvpBBJMQ,6906
+nominopolitan/templates/nominopolitan/base.html,sha256=fTV7OuDK7jXLHeaz_3GC3CqlqugrzR7j22tCQz7nPHM,88
+nominopolitan/templates/nominopolitan/crispy_partials.html,sha256=LEj8b0_16LtzZRD0eg6oVEKGAnEREaXoKfaXf66dSpo,189
+nominopolitan/templates/nominopolitan/object_confirm_delete.html,sha256=FH5vG25v0Brvx86iyxBStP0GsnhujDoJrmHzV2zixZE,779
+nominopolitan/templates/nominopolitan/object_detail.html,sha256=lKz1I0U668VhBEC9Y2e8TvF9dPCTKsHMrx-A649KhG8,370
+nominopolitan/templates/nominopolitan/object_form.html,sha256=CNkoV6hFBegruoc1IekQr4knqsG65BCGl3Y7l6F_NtA,1016
+nominopolitan/templates/nominopolitan/object_list.html,sha256=sjXC3Cin7_FWGvnu_jXihk3m8FQKhGVuBq5KzdoA-Oo,886
+nominopolitan/templates/nominopolitan/partial/detail.html,sha256=Prz2W6zlYMSbg3YIoJqGQST_7u4sOLCpK0SvunjTAWI,273
+nominopolitan/templates/nominopolitan/partial/list.html,sha256=IENKq35m3RbkAFcOkJaB5PXuPitPblDCvMLaswGsS4s,1085
+nominopolitan/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nominopolitan/templatetags/nominopolitan.py,sha256=UuBm6tYXN9fPnNI_y_VImGGOvpzXFhqVWiPZQ54in8A,3278
+django_nominopolitan-0.0.3.dist-info/LICENSE,sha256=DEXdAFnaDEh6DpBUH_Y70cc1SP1Je-Yg9AtxUbqpBjQ,1073
+django_nominopolitan-0.0.3.dist-info/METADATA,sha256=8qDJ9MiT-w32ijcTuiVJU96W3fCqQiKx5VgCQyY5Tb4,4096
+django_nominopolitan-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_nominopolitan-0.0.3.dist-info/RECORD,,
