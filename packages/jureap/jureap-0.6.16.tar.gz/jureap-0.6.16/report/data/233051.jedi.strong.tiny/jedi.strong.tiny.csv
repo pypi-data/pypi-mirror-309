@@ -1,0 +1,7 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,success,runtime,performance (ns/day),Core time (s)
+jedi,2024.01,all,jedi.evaluation.jedi,25842,12,4,8,true,19.794999999999998,86.991,7601.28
+jedi,2024.01,all,jedi.evaluation.jedi,25843,16,4,8,true,16.733732421875,102.793,8567.671
+jedi,2024.01,all,jedi.evaluation.jedi,25844,20,4,8,true,15.4312453125,111.34,9875.997
+jedi,2024.01,all,jedi.evaluation.jedi,25840,4,4,8,true,49.2691171875,35.033,6306.447
+jedi,2024.01,all,jedi.evaluation.jedi,25841,8,4,8,true,26.954578125,63.966,6900.372
+

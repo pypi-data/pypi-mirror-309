@@ -1,0 +1,101 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "233051",
+            "job": "1201069",
+            "commit": "e253503ad378dc2e16855e009d77c2d43120bdb8",
+            "username": "leidner1",
+            "project": "/p/project1/jureap40",
+            "budget": "jureap40",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-11-13T12:03:02+01:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-11-13T12:03:02+01:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "19.794999999999998",
+            "parameter": {
+                "nodes": "12",
+                "taskspernode": "4",
+                "threadspertask": "8"
+            },
+            "slurm_jobid": "25842",
+            "queue": "all",
+            "metrics": {
+                "performance (ns/day)": "86.991",
+                "Core time (s)": "7601.28"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "16.733732421875",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "8"
+            },
+            "slurm_jobid": "25843",
+            "queue": "all",
+            "metrics": {
+                "performance (ns/day)": "102.793",
+                "Core time (s)": "8567.671"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "15.4312453125",
+            "parameter": {
+                "nodes": "20",
+                "taskspernode": "4",
+                "threadspertask": "8"
+            },
+            "slurm_jobid": "25844",
+            "queue": "all",
+            "metrics": {
+                "performance (ns/day)": "111.34",
+                "Core time (s)": "9875.997"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "49.2691171875",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "8"
+            },
+            "slurm_jobid": "25840",
+            "queue": "all",
+            "metrics": {
+                "performance (ns/day)": "35.033",
+                "Core time (s)": "6306.447"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "26.954578125",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "8"
+            },
+            "slurm_jobid": "25841",
+            "queue": "all",
+            "metrics": {
+                "performance (ns/day)": "63.966",
+                "Core time (s)": "6900.372"
+            }
+        }
+    ]
+}

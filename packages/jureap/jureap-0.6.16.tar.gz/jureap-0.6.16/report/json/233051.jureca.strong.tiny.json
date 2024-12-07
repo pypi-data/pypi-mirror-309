@@ -1,0 +1,178 @@
+{
+    "pipeline": "233051",
+    "prefix": "jureca.strong.tiny",
+    "csv_data": [
+        {
+            "system": "jurecadc",
+            "version": "2024.01",
+            "queue": "dc-gpu",
+            "variant": "jedi.evaluation.jureca",
+            "jobid": "13271403",
+            "nodes": "16",
+            "taskspernode": "4",
+            "threadspertask": "8",
+            "success": "true",
+            "runtime": "25.935046875",
+            "performance (ns/day)": "66.269",
+            "Core time (s)": "13278.744"
+        },
+        {
+            "system": "jurecadc",
+            "version": "2024.01",
+            "queue": "dc-gpu",
+            "variant": "jedi.evaluation.jureca",
+            "jobid": "13271404",
+            "nodes": "24",
+            "taskspernode": "4",
+            "threadspertask": "8",
+            "success": "true",
+            "runtime": "20.6977421875",
+            "performance (ns/day)": "82.868",
+            "Core time (s)": "15895.866"
+        },
+        {
+            "system": "jurecadc",
+            "version": "2024.01",
+            "queue": "dc-gpu",
+            "variant": "jedi.evaluation.jureca",
+            "jobid": "13271405",
+            "nodes": "32",
+            "taskspernode": "4",
+            "threadspertask": "8",
+            "success": "true",
+            "runtime": "17.10066796875",
+            "performance (ns/day)": "100.101",
+            "Core time (s)": "17511.084"
+        },
+        {
+            "system": "jurecadc",
+            "version": "2024.01",
+            "queue": "dc-gpu",
+            "variant": "jedi.evaluation.jureca",
+            "jobid": "13271406",
+            "nodes": "40",
+            "taskspernode": "4",
+            "threadspertask": "8",
+            "success": "true",
+            "runtime": "15.678182812500001",
+            "performance (ns/day)": "108.976",
+            "Core time (s)": "20068.074"
+        },
+        {
+            "system": "jurecadc",
+            "version": "2024.01",
+            "queue": "dc-gpu",
+            "variant": "jedi.evaluation.jureca",
+            "jobid": "13271402",
+            "nodes": "8",
+            "taskspernode": "4",
+            "threadspertask": "8",
+            "success": "true",
+            "runtime": "46.50075390625",
+            "performance (ns/day)": "37.052",
+            "Core time (s)": "11904.193"
+        }
+    ],
+    "json_data": {
+        "version": 1,
+        "reporter": {
+            "generator": "jureap-gitlab-exacb",
+            "info": {
+                "pipeline": "233051",
+                "job": "1201071",
+                "commit": "e253503ad378dc2e16855e009d77c2d43120bdb8",
+                "username": "leidner1",
+                "project": "/p/project1/jureap40",
+                "budget": "jureap40",
+                "system": "jurecadc",
+                "version": "2024.12",
+                "timestamp": "2024-11-13T12:03:01+01:00"
+            }
+        },
+        "parameter": {},
+        "experiment": {
+            "system": "jurecadc",
+            "version": "2024.12",
+            "variant": "jedi.evaluation.jureca",
+            "timestamp": "2024-11-13T12:03:01+01:00"
+        },
+        "data": [
+            {
+                "success": "true",
+                "runtime": "25.935046875",
+                "parameter": {
+                    "nodes": "16",
+                    "taskspernode": "4",
+                    "threadspertask": "8"
+                },
+                "slurm_jobid": "13271403",
+                "queue": "dc-gpu",
+                "metrics": {
+                    "performance (ns/day)": "66.269",
+                    "Core time (s)": "13278.744"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "20.6977421875",
+                "parameter": {
+                    "nodes": "24",
+                    "taskspernode": "4",
+                    "threadspertask": "8"
+                },
+                "slurm_jobid": "13271404",
+                "queue": "dc-gpu",
+                "metrics": {
+                    "performance (ns/day)": "82.868",
+                    "Core time (s)": "15895.866"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "17.10066796875",
+                "parameter": {
+                    "nodes": "32",
+                    "taskspernode": "4",
+                    "threadspertask": "8"
+                },
+                "slurm_jobid": "13271405",
+                "queue": "dc-gpu",
+                "metrics": {
+                    "performance (ns/day)": "100.101",
+                    "Core time (s)": "17511.084"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "15.678182812500001",
+                "parameter": {
+                    "nodes": "40",
+                    "taskspernode": "4",
+                    "threadspertask": "8"
+                },
+                "slurm_jobid": "13271406",
+                "queue": "dc-gpu",
+                "metrics": {
+                    "performance (ns/day)": "108.976",
+                    "Core time (s)": "20068.074"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "46.50075390625",
+                "parameter": {
+                    "nodes": "8",
+                    "taskspernode": "4",
+                    "threadspertask": "8"
+                },
+                "slurm_jobid": "13271402",
+                "queue": "dc-gpu",
+                "metrics": {
+                    "performance (ns/day)": "37.052",
+                    "Core time (s)": "11904.193"
+                }
+            }
+        ]
+    },
+    "workload_factor": "1.2"
+}
