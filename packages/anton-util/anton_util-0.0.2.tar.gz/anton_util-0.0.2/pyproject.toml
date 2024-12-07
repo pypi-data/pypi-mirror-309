@@ -1,0 +1,17 @@
+[project]
+name = "anton_util"
+version = "0.0.2"
+authors = [
+  { name="Anton Björk", email="to.anton.bjork@gmail.com" },
+]
+description = "Some small Python utilities for everyday convenience"
+readme = "readme.txt"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/anbjork/anton_util"
+Issues = "https://github.com/anbjork/anton_util/issues"
+

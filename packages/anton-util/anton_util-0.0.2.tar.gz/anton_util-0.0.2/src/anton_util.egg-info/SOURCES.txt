@@ -1,0 +1,7 @@
+pyproject.toml
+readme.txt
+src/anton_util.py
+src/anton_util.egg-info/PKG-INFO
+src/anton_util.egg-info/SOURCES.txt
+src/anton_util.egg-info/dependency_links.txt
+src/anton_util.egg-info/top_level.txt
