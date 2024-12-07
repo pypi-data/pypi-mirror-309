@@ -1,0 +1,15 @@
+cypari2>=2.1.1
+cysignals>=1.10.2
+memory_allocator
+passagemath-environment~=10.4.64.0
+passagemath-categories~=10.4.64.0
+conway-polynomials>=0.8
+
+[:sys_platform != "darwin" or platform_machine == "arm64"]
+cypari2==2.2.0
+
+[:sys_platform == "darwin" and platform_machine != "arm64"]
+cypari2==2.1.5
+
+[test]
+passagemath-repl
