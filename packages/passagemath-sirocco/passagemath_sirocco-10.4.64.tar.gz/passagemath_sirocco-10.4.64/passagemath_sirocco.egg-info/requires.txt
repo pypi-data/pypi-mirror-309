@@ -1,0 +1,8 @@
+cypari2>=2.1.1
+cysignals>=1.10.2
+
+[:sys_platform != "darwin" or platform_machine == "arm64"]
+cypari2==2.2.0
+
+[:sys_platform == "darwin" and platform_machine != "arm64"]
+cypari2==2.1.5
