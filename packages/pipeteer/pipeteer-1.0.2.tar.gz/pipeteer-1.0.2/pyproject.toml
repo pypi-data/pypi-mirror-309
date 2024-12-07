@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeteer"
+version = "1.0.2"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Simple, explicit durable execution framework on top of ZeroMQ and SQLModel."
+dependencies = [
+  "haskellian", "pyzmq", "sqlmodel", "pydantic", "dslog"
+]
+
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.optional-dependencies]
+cli = ["typer"]
+
+[project.urls]
+repo = "https://github.com/marciclabas/pipeteer.git"
+docs = "https://marciclabas.github.io/pipeteer/"
+
+[project.scripts]
+pipeteer = "pipeteer.cli:main"
