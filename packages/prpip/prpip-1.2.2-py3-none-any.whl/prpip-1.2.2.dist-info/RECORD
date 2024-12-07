@@ -1,0 +1,10 @@
+prpip/__init__.py,sha256=PKncgfk7cjCYC-45Vv72oGRHoDljcyCVK9p2u2y8Jc4,34
+prpip/_version.py,sha256=XEVwqOPlIChKtEnSO5v_SvghWXnn9WeQSoJ436w3v9Y,411
+prpip/blink_detection.py,sha256=2jtZLLQ8knnc4lbsBV4FwCsZceGe58LQ2jR-hyMFQ38,886
+prpip/process.py,sha256=KiCcHmtli0gxdzEq_tQ-yutuo3gJSF0o_w65NynleZk,1021
+prpip/reconstruction.py,sha256=LG9Gg6ycmjZH2oHJlYeezu_jlnSkTarKvnnI00WuOtQ,1755
+prpip-1.2.2.dist-info/LICENSE,sha256=WFehM7-PZTwOY19MgYcOsAJmdzgFmmng6BgBJEuzLrA,1069
+prpip-1.2.2.dist-info/METADATA,sha256=7dulvIQHsP-OwsS0pEnrYymRsECUS5O_EWIWlcgVYfQ,7113
+prpip-1.2.2.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+prpip-1.2.2.dist-info/top_level.txt,sha256=QcArhY0aCNlRYqxWoPDrSN3G55jyywAHY_e5grT-8-o,6
+prpip-1.2.2.dist-info/RECORD,,
