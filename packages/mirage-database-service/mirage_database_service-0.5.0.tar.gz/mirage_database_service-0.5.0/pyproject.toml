@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]  # Build-time dependencies
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirage_database_service"
+version = "0.5.0"
+description = "A brief description of your package"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Rystad Energy General Software", email = "gsw@rystadenergy.com" }
+]
+dependencies = [
+    "requests >= 2.25.1",  # Add your runtime dependencies
+]
+
+[project.urls]
+homepage = "https://dev.azure.com/RE-Technology/Mirage/_git/MirageDatabaseService"
+repository = "https://dev.azure.com/RE-Technology/Mirage/_git/MirageDatabaseService"
+documentation = "https://dev.azure.com/RE-Technology/Mirage/_git/MirageDatabaseService"
