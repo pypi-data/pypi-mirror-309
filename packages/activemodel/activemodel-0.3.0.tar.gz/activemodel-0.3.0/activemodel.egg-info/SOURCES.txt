@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+activemodel/__init__.py
+activemodel/base_model.py
+activemodel/query_wrapper.py
+activemodel/timestamps.py
+activemodel.egg-info/PKG-INFO
+activemodel.egg-info/SOURCES.txt
+activemodel.egg-info/dependency_links.txt
+activemodel.egg-info/entry_points.txt
+activemodel.egg-info/requires.txt
+activemodel.egg-info/top_level.txt
