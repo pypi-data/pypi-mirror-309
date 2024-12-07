@@ -1,0 +1,5 @@
+setup.py
+apiazure.egg-info/PKG-INFO
+apiazure.egg-info/SOURCES.txt
+apiazure.egg-info/dependency_links.txt
+apiazure.egg-info/top_level.txt
