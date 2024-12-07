@@ -1,0 +1,61 @@
+[project]
+name = "typed-input"
+version = "1.2.2"
+description = "Effortless type-safe user input for integers, floats, dates, and more..."
+authors = [
+  {name = "Sash Sinha", email = "sashsinha1@gmail.com"}
+]
+maintainers = [
+  {name = "Sash Sinha", email = "sashsinha1@gmail.com"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+keywords = ["typing", "input", "input-validation", "utilities",]
+requires-python = ">=3.9"
+dependencies = []
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.13.0",
+  "ruff>=0.7.4"
+]
+test = ["parameterized"]
+
+[dependency-groups]
+dev = [
+  "mypy>=1.13.0", 
+  "parameterized",
+]
+lint = [
+  "ruff>=0.7.4"
+]
+
+[project.urls]
+Homepage = "https://github.com/sashsinha/typed_input"
+Documentation = "https://github.com/sashsinha/typed_input/blob/main/README.md"
+Repository = "https://github.com/sashsinha/typed_input.git"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+disable_error_code = ["import-untyped"]
+
+[tool.uv]
+package = true
