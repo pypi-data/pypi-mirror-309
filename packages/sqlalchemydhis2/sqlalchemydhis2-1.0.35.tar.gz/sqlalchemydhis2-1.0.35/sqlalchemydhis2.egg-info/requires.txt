@@ -1,0 +1,4 @@
+SQLAlchemy
+duckdb
+polars
+psycopg2>=2.7
