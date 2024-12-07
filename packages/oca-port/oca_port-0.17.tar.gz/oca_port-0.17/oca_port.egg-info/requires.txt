@@ -1,0 +1,8 @@
+click
+gitpython
+requests
+giturlparse
+
+[test]
+pytest
+coverage
