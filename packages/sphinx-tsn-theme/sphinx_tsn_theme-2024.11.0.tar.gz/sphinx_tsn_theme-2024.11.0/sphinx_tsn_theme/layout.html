@@ -1,0 +1,31 @@
+{% extends "sphinx_rtd_theme/layout.html" %}
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript" src="{{ pathto('_static/js/tiac.js', 1) }}"></script>
+{% endblock %}
+{% block extrahead %}
+  {% if not favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/images/favicon.ico', 1) }}"/>
+  {% endif %}
+{% endblock %}
+{% block sidebartitle %}
+  {# The TSN theme is not yet ready to use the new version and language
+     selector from the RTD theme v3. This would need to be replaced
+     exactly in this 'sidebartitle' block by the old simple version
+     output from the RTD Theme v2. Unfortunately, the RTD theme does
+     not yet offer a separate block for replacing it with a customized
+     version and language selector. Since this must be inserted exactly
+     before the include of the 'searchbox' and in the RTD Theme it is
+     protected by the environment variable 'READTHEDOCS' and the
+     configuration options 'theme_version_selector' and
+     'theme_language_selector' (we will never be allowed to set this
+     constellation to True), the TSN Theme will use the following trick:
+
+         This 'sidebartitle' block remains unchanged, but the 'searchbox'
+         template in the TSN theme is extended right at the beginning by
+         the old simple version output from the RTD theme v2.
+
+     Here we leave only this explanation!
+  #}
+  {{ super() }}
+{% endblock %}

@@ -1,0 +1,25 @@
+{# Bring back the old simple version output from the RTD Theme v2. #}
+{# See 'layout.html', block.super() for 'sidebartitle' for more details. #}
+{%- if theme_display_version %}
+  {%- set nav_version = version %}
+  {%- if READTHEDOCS and current_version %}
+    {%- set nav_version = current_version %}
+  {%- endif %}
+  {%- if nav_version %}
+    <div class="version">
+      {{ nav_version }}
+    </div>
+  {%- endif %}
+{%- endif %}
+{%- if 'singlehtml' not in builder %}
+<div id="searchbox" role="search">
+  <div class="searchformwrapper">
+    <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
+      <input type="text" name="q" placeholder="{{ _('Search docs') }}" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+  </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+{%- endif %}
