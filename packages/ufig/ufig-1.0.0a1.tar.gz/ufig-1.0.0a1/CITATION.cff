@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ufig
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: "Silvan"
+    family-names: "Fischbacher"
+    email: silvan@ethz.ch
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    affiliation: ETHZ
+repository-code: 'https://cosmo-gitlab.ethz.ch/cosmo_public/ufig'
+url: 'https://cosmo-docs.phys.ethz.ch/ufig'
+abstract: Amazing Science
+license: MIT
+commit: ""
+version: 0.1.0
+date-released: ""
