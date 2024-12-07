@@ -1,0 +1,2 @@
+[gui_scripts]
+clement = clement.gui:main
