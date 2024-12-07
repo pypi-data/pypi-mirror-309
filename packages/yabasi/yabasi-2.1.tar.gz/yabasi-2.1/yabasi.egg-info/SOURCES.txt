@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+VERSION
+pyproject.toml
+setup.py
+test/test_yabasi.py
+yabasi/Version.py
+yabasi/__init__.py
+yabasi/bas.py
+yabasi/parsetab.py
+yabasi/tokenizer.py
+yabasi.egg-info/PKG-INFO
+yabasi.egg-info/SOURCES.txt
+yabasi.egg-info/dependency_links.txt
+yabasi.egg-info/entry_points.txt
+yabasi.egg-info/requires.txt
+yabasi.egg-info/top_level.txt
