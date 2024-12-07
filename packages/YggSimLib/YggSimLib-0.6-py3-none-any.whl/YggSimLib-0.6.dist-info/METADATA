@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: YggSimLib
+Version: 0.6
+Summary: A library for interfacing with the kspice API for the Yggdrasil project
+Author: Håkon Enerstvedt
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tk ==0.1.0
+Requires-Dist: networkx ==3.4.2
+
+# YggSimLib
