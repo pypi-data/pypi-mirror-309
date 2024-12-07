@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+codrone_simulator/__init__.py
+codrone_simulator/codrone_simulator.py
+codrone_simulator.egg-info/PKG-INFO
+codrone_simulator.egg-info/SOURCES.txt
+codrone_simulator.egg-info/dependency_links.txt
+codrone_simulator.egg-info/top_level.txt
