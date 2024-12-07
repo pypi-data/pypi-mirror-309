@@ -1,0 +1,878 @@
+{
+  "last_updated": "2024-11-20T12:53:50.832219",
+  "data": [
+    {
+      "filename": "v2-1_768-ema-pruned.safetensors",
+      "name": "v2-1_768-ema-pruned",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/v2-1_768-ema-pruned.safetensors",
+      "relative_path": "checkpoints/v2-1_768-ema-pruned.safetensors",
+      "type": "checkpoint",
+      "created": "2024-11-14T22:59:41.651020",
+      "updated": "2024-11-14T22:59:41.651020"
+    },
+    {
+      "filename": "rundiffusionXL_beta.safetensors",
+      "name": "rundiffusionXL_beta",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/rundiffusionXL_beta.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/rundiffusionXL_beta.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:37:53.688703",
+      "updated": "2024-08-01T23:37:53.688703"
+    },
+    {
+      "filename": "leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors",
+      "name": "leosamsHelloworldSDXL_helloworldSDXL32DPO",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/leosamsHelloworldSDXL_helloworldSDXL32DPO.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:35:41.575573",
+      "updated": "2024-08-01T23:35:41.575573"
+    },
+    {
+      "filename": "STOIQONewrealityFLUXSD_XL40.safetensors",
+      "name": "STOIQONewrealityFLUXSD_XL40",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/STOIQONewrealityFLUXSD_XL40.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/STOIQONewrealityFLUXSD_XL40.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-17T21:27:01.782317",
+      "updated": "2024-08-17T21:27:01.782317"
+    },
+    {
+      "filename": "realisticStockPhoto_v20.safetensors",
+      "name": "realisticStockPhoto_v20",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/realisticStockPhoto_v20.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/realisticStockPhoto_v20.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:37:30.973305",
+      "updated": "2024-08-01T23:37:30.973305"
+    },
+    {
+      "filename": "epiCRealism XL_V8-KiSS.safetensors",
+      "name": "epiCRealism XL_V8-KiSS",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/epiCRealism XL_V8-KiSS.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/epiCRealism XL_V8-KiSS.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-03T22:30:13.361968",
+      "updated": "2024-08-03T22:30:13.361968"
+    },
+    {
+      "filename": "serafinoxlAllInOne_xl15.safetensors",
+      "name": "serafinoxlAllInOne_xl15",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/serafinoxlAllInOne_xl15.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/serafinoxlAllInOne_xl15.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-17T08:41:23.018240",
+      "updated": "2024-10-17T08:41:23.018240"
+    },
+    {
+      "filename": "nightvisionxl_V900.safetensors",
+      "name": "nightvisionxl_V900",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/nightvisionxl_V900.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/nightvisionxl_V900.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-17T21:05:54.693879",
+      "updated": "2024-08-17T21:05:54.693879"
+    },
+    {
+      "filename": "protovisionXLHighFidelity3D_releaseV660Bakedvae.safetensors",
+      "name": "protovisionXLHighFidelity3D_releaseV660Bakedvae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/protovisionXLHighFidelity3D_releaseV660Bakedvae.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/protovisionXLHighFidelity3D_releaseV660Bakedvae.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:37:09.715996",
+      "updated": "2024-08-01T23:37:09.715996"
+    },
+    {
+      "filename": "realvisxlV20_v20Bakedvae.safetensors",
+      "name": "realvisxlV20_v20Bakedvae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/realvisxlV20_v20Bakedvae.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/realvisxlV20_v20Bakedvae.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:37:39.678841",
+      "updated": "2024-08-01T23:37:39.678841"
+    },
+    {
+      "filename": "animagineXLV3_v30.safetensors",
+      "name": "animagineXLV3_v30",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/animagineXLV3_v30.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/animagineXLV3_v30.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:31:08.739830",
+      "updated": "2024-08-01T23:31:08.739830"
+    },
+    {
+      "filename": "STOIQORaffaelloxl_XL2.safetensors",
+      "name": "STOIQORaffaelloxl_XL2",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/STOIQORaffaelloxl_XL2.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/STOIQORaffaelloxl_XL2.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-11-07T07:23:30.363071",
+      "updated": "2024-11-07T07:23:30.362071"
+    },
+    {
+      "filename": "xxmix9realisticsdxl_v10.safetensors",
+      "name": "xxmix9realisticsdxl_v10",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/xxmix9realisticsdxl_v10.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/xxmix9realisticsdxl_v10.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:39:36.192019",
+      "updated": "2024-08-01T23:39:36.192019"
+    },
+    {
+      "filename": "colossusProjectXLSFW_v60Experimental2.safetensors",
+      "name": "colossusProjectXLSFW_v60Experimental2",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/colossusProjectXLSFW_v60Experimental2.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/colossusProjectXLSFW_v60Experimental2.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:31:42.423893",
+      "updated": "2024-08-01T23:31:42.423893"
+    },
+    {
+      "filename": "devlishphotorealism_sdxl15.safetensors",
+      "name": "devlishphotorealism_sdxl15",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/devlishphotorealism_sdxl15.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/devlishphotorealism_sdxl15.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:34:02.367477",
+      "updated": "2024-08-01T23:34:02.367477"
+    },
+    {
+      "filename": "albedobaseXL_v3Mini.safetensors",
+      "name": "albedobaseXL_v3Mini",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/albedobaseXL_v3Mini.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/albedobaseXL_v3Mini.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-17T08:44:21.376497",
+      "updated": "2024-10-17T08:44:21.376497"
+    },
+    {
+      "filename": "zhuangzimix25D_v41SDXLBrilliant.safetensors",
+      "name": "zhuangzimix25D_v41SDXLBrilliant",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/zhuangzimix25D_v41SDXLBrilliant.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/zhuangzimix25D_v41SDXLBrilliant.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-11T14:47:49.895701",
+      "updated": "2024-08-11T14:47:49.895701"
+    },
+    {
+      "filename": "bluePencilXL_v700.safetensors",
+      "name": "bluePencilXL_v700",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/bluePencilXL_v700.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/bluePencilXL_v700.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-04T20:04:17.251075",
+      "updated": "2024-09-04T20:04:17.251075"
+    },
+    {
+      "filename": "counterfeitxl_v25.safetensors",
+      "name": "counterfeitxl_v25",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/counterfeitxl_v25.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/counterfeitxl_v25.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-23T23:44:46.432142",
+      "updated": "2024-09-23T23:44:46.431142"
+    },
+    {
+      "filename": "epicjourneyXL_v1PromptMeIDeliver.safetensors",
+      "name": "epicjourneyXL_v1PromptMeIDeliver",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/epicjourneyXL_v1PromptMeIDeliver.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/epicjourneyXL_v1PromptMeIDeliver.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-11-17T02:12:43.331208",
+      "updated": "2024-11-17T02:12:43.330208"
+    },
+    {
+      "filename": "moxieDiffusionXL_v191.safetensors",
+      "name": "moxieDiffusionXL_v191",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/moxieDiffusionXL_v191.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/moxieDiffusionXL_v191.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-11T14:28:03.449876",
+      "updated": "2024-08-11T14:28:03.449876"
+    },
+    {
+      "filename": "anithing_v10Pruned.safetensors",
+      "name": "anithing_v10Pruned",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/anithing_v10Pruned.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/anithing_v10Pruned.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:31:19.778506",
+      "updated": "2024-08-01T23:31:19.778506"
+    },
+    {
+      "filename": "cyberrealisticXL_v22.safetensors",
+      "name": "cyberrealisticXL_v22",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/cyberrealisticXL_v22.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/cyberrealisticXL_v22.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-04T09:51:04.980604",
+      "updated": "2024-09-04T09:51:04.979604"
+    },
+    {
+      "filename": "juggernautXL_versionXInpaint.safetensors",
+      "name": "juggernautXL_versionXInpaint",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/juggernautXL_versionXInpaint.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/juggernautXL_versionXInpaint.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-20T09:41:15.695391",
+      "updated": "2024-09-20T09:41:15.695391"
+    },
+    {
+      "filename": "aamXLAnimeMix_v10.safetensors",
+      "name": "aamXLAnimeMix_v10",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/aamXLAnimeMix_v10.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/aamXLAnimeMix_v10.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:30:49.705666",
+      "updated": "2024-08-01T23:30:49.705666"
+    },
+    {
+      "filename": "juggernautXL_juggXIByRundiffusion.safetensors",
+      "name": "juggernautXL_juggXIByRundiffusion",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/juggernautXL_juggXIByRundiffusion.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/juggernautXL_juggXIByRundiffusion.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-20T09:40:05.297097",
+      "updated": "2024-09-20T09:40:05.297097"
+    },
+    {
+      "filename": "sd_xl_base_1.0_0.9vae.safetensors",
+      "name": "sd_xl_base_1.0_0.9vae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/sd_xl_base_1.0_0.9vae.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/sd_xl_base_1.0_0.9vae.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:38:35.182259",
+      "updated": "2024-08-01T23:38:35.182259"
+    },
+    {
+      "filename": "realcartoonXL_v7.safetensors",
+      "name": "realcartoonXL_v7",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/realcartoonXL_v7.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/realcartoonXL_v7.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-04T20:25:22.792593",
+      "updated": "2024-09-04T20:25:22.791593"
+    },
+    {
+      "filename": "crystalClearXL_ccxl.safetensors",
+      "name": "crystalClearXL_ccxl",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/crystalClearXL_ccxl.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/crystalClearXL_ccxl.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:33:06.443044",
+      "updated": "2024-08-01T23:33:06.443044"
+    },
+    {
+      "filename": "epicrealismXL_v9Unflux.safetensors",
+      "name": "epicrealismXL_v9Unflux",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/epicrealismXL_v9Unflux.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/epicrealismXL_v9Unflux.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-12T07:53:20.209923",
+      "updated": "2024-10-12T07:53:20.209923"
+    },
+    {
+      "filename": "realismEngineSDXL_v10.safetensors",
+      "name": "realismEngineSDXL_v10",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/realismEngineSDXL_v10.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/realismEngineSDXL_v10.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:37:24.622914",
+      "updated": "2024-08-01T23:37:24.622914"
+    },
+    {
+      "filename": "3dToonDiffusionXL_v10.safetensors",
+      "name": "3dToonDiffusionXL_v10",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/3dToonDiffusionXL_v10.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/3dToonDiffusionXL_v10.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:30:41.677174",
+      "updated": "2024-08-01T23:30:41.677174"
+    },
+    {
+      "filename": "animeArtDiffusionXL_alpha3.safetensors",
+      "name": "animeArtDiffusionXL_alpha3",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/animeArtDiffusionXL_alpha3.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/animeArtDiffusionXL_alpha3.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:31:17.347358",
+      "updated": "2024-08-01T23:31:17.347358"
+    },
+    {
+      "filename": "sdvn7Nijistylexl_v1.safetensors",
+      "name": "sdvn7Nijistylexl_v1",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/sdvn7Nijistylexl_v1.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/sdvn7Nijistylexl_v1.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:18:52.075332",
+      "updated": "2024-09-06T10:18:52.075332"
+    },
+    {
+      "filename": "dynavisionXLAllInOneStylized_release0534bakedvae.safetensors",
+      "name": "dynavisionXLAllInOneStylized_release0534bakedvae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/dynavisionXLAllInOneStylized_release0534bakedvae.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/dynavisionXLAllInOneStylized_release0534bakedvae.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:34:57.027835",
+      "updated": "2024-08-01T23:34:57.027835"
+    },
+    {
+      "filename": "socarealismXL_vae30.safetensors",
+      "name": "socarealismXL_vae30",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/socarealismXL_vae30.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/socarealismXL_vae30.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:39:17.987896",
+      "updated": "2024-08-01T23:39:17.987896"
+    },
+    {
+      "filename": "newrealityxl_12.safetensors",
+      "name": "newrealityxl_12",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/newrealityxl_12.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/newrealityxl_12.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:35:48.528001",
+      "updated": "2024-08-01T23:35:48.528001"
+    },
+    {
+      "filename": "leosamsHelloworldXL_helloworldXL70.safetensors",
+      "name": "leosamsHelloworldXL_helloworldXL70",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/leosamsHelloworldXL_helloworldXL70.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/leosamsHelloworldXL_helloworldXL70.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-21T00:41:20.479783",
+      "updated": "2024-09-21T00:41:20.479783"
+    },
+    {
+      "filename": "nightvisionXLPhotorealisticPortrait_v0743ReleaseBakedvae.safetensors",
+      "name": "nightvisionXLPhotorealisticPortrait_v0743ReleaseBakedvae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/nightvisionXLPhotorealisticPortrait_v0743ReleaseBakedvae.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/nightvisionXLPhotorealisticPortrait_v0743ReleaseBakedvae.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:35:56.573496",
+      "updated": "2024-08-01T23:35:56.573496"
+    },
+    {
+      "filename": "LahMysteriousSDXL_v40.safetensors",
+      "name": "LahMysteriousSDXL_v40",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/LahMysteriousSDXL_v40.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/LahMysteriousSDXL_v40.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:35:32.084990",
+      "updated": "2024-08-01T23:35:32.084990"
+    },
+    {
+      "filename": "duchaitenAiartSDXL_v33515.safetensors",
+      "name": "duchaitenAiartSDXL_v33515",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/duchaitenAiartSDXL_v33515.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/duchaitenAiartSDXL_v33515.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-17T22:28:41.922252",
+      "updated": "2024-08-17T22:28:41.922252"
+    },
+    {
+      "filename": "sdvn6Realxl_detailface.safetensors",
+      "name": "sdvn6Realxl_detailface",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/sdvn6Realxl_detailface.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/sdvn6Realxl_detailface.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:38:02.738261",
+      "updated": "2024-08-01T23:38:02.738261"
+    },
+    {
+      "filename": "epicrealismXL_vxFinalkiss.safetensors",
+      "name": "epicrealismXL_vxFinalkiss",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/epicrealismXL_vxFinalkiss.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/epicrealismXL_vxFinalkiss.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-11-17T02:11:17.607619",
+      "updated": "2024-11-17T02:11:17.607619"
+    },
+    {
+      "filename": "animaPencilXL_v500.safetensors",
+      "name": "animaPencilXL_v500",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL 1.0/animaPencilXL_v500.safetensors",
+      "relative_path": "checkpoints/SDXL 1.0/animaPencilXL_v500.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-29T11:49:55.697855",
+      "updated": "2024-09-29T11:49:55.697855"
+    },
+    {
+      "filename": "sd3.5_large_fp8_scaled.safetensors",
+      "name": "sd3.5_large_fp8_scaled",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 3.5/sd3.5_large_fp8_scaled.safetensors",
+      "relative_path": "checkpoints/SD 3.5/sd3.5_large_fp8_scaled.safetensors",
+      "type": "sd 3.5",
+      "created": "2024-10-24T08:45:15.085748",
+      "updated": "2024-10-24T08:35:54.567012"
+    },
+    {
+      "filename": "sd3.5_large.safetensors",
+      "name": "sd3.5_large",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 3.5/sd3.5_large.safetensors",
+      "relative_path": "checkpoints/SD 3.5/sd3.5_large.safetensors",
+      "type": "sd 3.5",
+      "created": "2024-10-24T08:45:15.173752",
+      "updated": "2024-10-24T08:35:43.339518"
+    },
+    {
+      "filename": "stoiqoNewrealityFLUXSD35_sd35Prealpha.safetensors",
+      "name": "stoiqoNewrealityFLUXSD35_sd35Prealpha",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 3.5/stoiqoNewrealityFLUXSD35_sd35Prealpha.safetensors",
+      "relative_path": "checkpoints/SD 3.5/stoiqoNewrealityFLUXSD35_sd35Prealpha.safetensors",
+      "type": "sd 3.5",
+      "created": "2024-11-07T07:21:30.804472",
+      "updated": "2024-11-07T07:21:30.803472"
+    },
+    {
+      "filename": "epicphotogasm_ultimateFidelity.safetensors",
+      "name": "epicphotogasm_ultimateFidelity",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 1.5/epicphotogasm_ultimateFidelity.safetensors",
+      "relative_path": "checkpoints/SD 1.5/epicphotogasm_ultimateFidelity.safetensors",
+      "type": "sd 1.5",
+      "created": "2024-11-17T02:13:01.078737",
+      "updated": "2024-11-17T02:13:01.078737"
+    },
+    {
+      "filename": "realisticStockPhoto_v30SD15.safetensors",
+      "name": "realisticStockPhoto_v30SD15",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 1.5/realisticStockPhoto_v30SD15.safetensors",
+      "relative_path": "checkpoints/SD 1.5/realisticStockPhoto_v30SD15.safetensors",
+      "type": "sd 1.5",
+      "created": "2024-09-03T15:05:42.128660",
+      "updated": "2024-09-03T15:05:42.128660"
+    },
+    {
+      "filename": "flux1DevFp8_v10.safetensors",
+      "name": "flux1DevFp8_v10",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Flux.1 D/flux1DevFp8_v10.safetensors",
+      "relative_path": "checkpoints/Flux.1 D/flux1DevFp8_v10.safetensors",
+      "type": "flux.1 d",
+      "created": "2024-11-14T09:41:34.713461",
+      "updated": "2024-11-14T09:41:34.712461"
+    },
+    {
+      "filename": "flux1-dev-fp8.safetensors",
+      "name": "flux1-dev-fp8",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Flux.1 D/flux1-dev-fp8.safetensors",
+      "relative_path": "checkpoints/Flux.1 D/flux1-dev-fp8.safetensors",
+      "type": "flux.1 d",
+      "created": "2024-11-14T10:12:51.184515",
+      "updated": "2024-08-03T16:16:22"
+    },
+    {
+      "filename": "stableDiffusion35Fp8_v35Large.safetensors",
+      "name": "stableDiffusion35Fp8_v35Large",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SD 3.5 Large/stableDiffusion35Fp8_v35Large.safetensors",
+      "relative_path": "checkpoints/SD 3.5 Large/stableDiffusion35Fp8_v35Large.safetensors",
+      "type": "sd 3.5 large",
+      "created": "2024-11-14T09:23:22.516486",
+      "updated": "2024-11-14T09:23:22.516486"
+    },
+    {
+      "filename": "satponyNoscore_v3.safetensors",
+      "name": "satponyNoscore_v3",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/satponyNoscore_v3.safetensors",
+      "relative_path": "checkpoints/Pony/satponyNoscore_v3.safetensors",
+      "type": "pony",
+      "created": "2024-08-17T23:19:02.906450",
+      "updated": "2024-08-17T23:19:02.906450"
+    },
+    {
+      "filename": "2dnPony_v2.safetensors",
+      "name": "2dnPony_v2",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/2dnPony_v2.safetensors",
+      "relative_path": "checkpoints/Pony/2dnPony_v2.safetensors",
+      "type": "pony",
+      "created": "2024-10-17T09:26:15.094430",
+      "updated": "2024-10-17T09:26:15.094430"
+    },
+    {
+      "filename": "prefectPonyXL_v2CleanedStyle.safetensors",
+      "name": "prefectPonyXL_v2CleanedStyle",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/prefectPonyXL_v2CleanedStyle.safetensors",
+      "relative_path": "checkpoints/Pony/prefectPonyXL_v2CleanedStyle.safetensors",
+      "type": "pony",
+      "created": "2024-08-20T13:30:17.348988",
+      "updated": "2024-08-20T13:30:17.348988"
+    },
+    {
+      "filename": "mistoonAnime_ponyAlpha.safetensors",
+      "name": "mistoonAnime_ponyAlpha",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/mistoonAnime_ponyAlpha.safetensors",
+      "relative_path": "checkpoints/Pony/mistoonAnime_ponyAlpha.safetensors",
+      "type": "pony",
+      "created": "2024-08-20T13:35:36.963461",
+      "updated": "2024-08-20T13:35:36.963461"
+    },
+    {
+      "filename": "realcartoonPony_v2.safetensors",
+      "name": "realcartoonPony_v2",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/realcartoonPony_v2.safetensors",
+      "relative_path": "checkpoints/Pony/realcartoonPony_v2.safetensors",
+      "type": "pony",
+      "created": "2024-11-14T23:09:26.483198",
+      "updated": "2024-11-14T23:09:26.483198"
+    },
+    {
+      "filename": "prefectPonyXL_v40.safetensors",
+      "name": "prefectPonyXL_v40",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/prefectPonyXL_v40.safetensors",
+      "relative_path": "checkpoints/Pony/prefectPonyXL_v40.safetensors",
+      "type": "pony",
+      "created": "2024-11-13T23:36:40.868433",
+      "updated": "2024-11-13T23:36:40.867433"
+    },
+    {
+      "filename": "cyberrealisticPony_v65.safetensors",
+      "name": "cyberrealisticPony_v65",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/cyberrealisticPony_v65.safetensors",
+      "relative_path": "checkpoints/Pony/cyberrealisticPony_v65.safetensors",
+      "type": "pony",
+      "created": "2024-11-07T07:29:47.497682",
+      "updated": "2024-11-07T07:29:47.496682"
+    },
+    {
+      "filename": "duchaitenPonyXLNo_v52.safetensors",
+      "name": "duchaitenPonyXLNo_v52",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/duchaitenPonyXLNo_v52.safetensors",
+      "relative_path": "checkpoints/Pony/duchaitenPonyXLNo_v52.safetensors",
+      "type": "pony",
+      "created": "2024-08-28T06:53:35.839307",
+      "updated": "2024-08-28T06:53:35.839307"
+    },
+    {
+      "filename": "ponyRealism_V22MainVAE.safetensors",
+      "name": "ponyRealism_V22MainVAE",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/Pony/ponyRealism_V22MainVAE.safetensors",
+      "relative_path": "checkpoints/Pony/ponyRealism_V22MainVAE.safetensors",
+      "type": "pony",
+      "created": "2024-11-07T07:27:31.200722",
+      "updated": "2024-11-07T07:27:31.200722"
+    },
+    {
+      "filename": "realvisxlV50_v50LightningBakedvae.safetensors",
+      "name": "realvisxlV50_v50LightningBakedvae",
+      "file_path": "/mnt/Hub/AI/MODELS/checkpoints/SDXL Lightning/realvisxlV50_v50LightningBakedvae.safetensors",
+      "relative_path": "checkpoints/SDXL Lightning/realvisxlV50_v50LightningBakedvae.safetensors",
+      "type": "sdxl lightning",
+      "created": "2024-09-06T10:22:56.338233",
+      "updated": "2024-09-06T10:22:56.337233"
+    },
+    {
+      "filename": "sd_xl_offset_example-lora_1.0.safetensors",
+      "name": "sd_xl_offset_example-lora_1.0",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/sd_xl_offset_example-lora_1.0.safetensors",
+      "relative_path": "loras/sd_xl_offset_example-lora_1.0.safetensors",
+      "type": "lora",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-02-18T16:35:54.794449"
+    },
+    {
+      "filename": "Storyboard_sketch.safetensors",
+      "name": "Storyboard_sketch",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Storyboard_sketch.safetensors",
+      "relative_path": "loras/SDXL 1.0/Storyboard_sketch.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.079498",
+      "updated": "2024-02-07T03:10:57.558742"
+    },
+    {
+      "filename": "marie.safetensors",
+      "name": "marie",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/marie.safetensors",
+      "relative_path": "loras/SDXL 1.0/marie.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-20T13:28:22.247723",
+      "updated": "2024-08-20T13:28:22.247723"
+    },
+    {
+      "filename": "MJ52_v2.0.safetensors",
+      "name": "MJ52_v2.0",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/MJ52_v2.0.safetensors",
+      "relative_path": "loras/SDXL 1.0/MJ52_v2.0.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-17T21:22:24.199077",
+      "updated": "2024-08-17T21:22:24.199077"
+    },
+    {
+      "filename": "xl_more_art-full_v1.safetensors",
+      "name": "xl_more_art-full_v1",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/xl_more_art-full_v1.safetensors",
+      "relative_path": "loras/SDXL 1.0/xl_more_art-full_v1.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.079498",
+      "updated": "2024-03-17T15:55:24.098273"
+    },
+    {
+      "filename": "jrp-styles.safetensors",
+      "name": "jrp-styles",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/jrp-styles.safetensors",
+      "relative_path": "loras/SDXL 1.0/jrp-styles.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-22T14:38:19.583586",
+      "updated": "2024-09-22T14:38:19.583586"
+    },
+    {
+      "filename": "sd_xl_offset_example-lora_1.0.safetensors",
+      "name": "sd_xl_offset_example-lora_1.0",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/sd_xl_offset_example-lora_1.0.safetensors",
+      "relative_path": "loras/SDXL 1.0/sd_xl_offset_example-lora_1.0.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.072498",
+      "updated": "2023-08-28T00:42:38.515433"
+    },
+    {
+      "filename": "Modern_MakeUp_XL_v0_1.safetensors",
+      "name": "Modern_MakeUp_XL_v0_1",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Modern_MakeUp_XL_v0_1.safetensors",
+      "relative_path": "loras/SDXL 1.0/Modern_MakeUp_XL_v0_1.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-19T22:24:15.154960",
+      "updated": "2024-10-19T22:24:15.154960"
+    },
+    {
+      "filename": "Vivid Midjourney mimic - XL_SDXL v20.safetensors",
+      "name": "Vivid Midjourney mimic - XL_SDXL v20",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Vivid Midjourney mimic - XL_SDXL v20.safetensors",
+      "relative_path": "loras/SDXL 1.0/Vivid Midjourney mimic - XL_SDXL v20.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-05T13:43:46.581565",
+      "updated": "2024-08-05T13:43:46.581565"
+    },
+    {
+      "filename": "jrpencil.safetensors",
+      "name": "jrpencil",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/jrpencil.safetensors",
+      "relative_path": "loras/SDXL 1.0/jrpencil.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-11T15:22:53.786242",
+      "updated": "2024-10-11T15:22:53.786242"
+    },
+    {
+      "filename": "JuggerCineXL2.safetensors",
+      "name": "JuggerCineXL2",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/JuggerCineXL2.safetensors",
+      "relative_path": "loras/SDXL 1.0/JuggerCineXL2.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.077498",
+      "updated": "2023-09-01T18:40:40.788062"
+    },
+    {
+      "filename": "sdxl_cyberpunk.safetensors",
+      "name": "sdxl_cyberpunk",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/sdxl_cyberpunk.safetensors",
+      "relative_path": "loras/SDXL 1.0/sdxl_cyberpunk.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.078498",
+      "updated": "2023-10-06T22:29:38.978203"
+    },
+    {
+      "filename": "epiCPhotoXL.safetensors",
+      "name": "epiCPhotoXL",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/epiCPhotoXL.safetensors",
+      "relative_path": "loras/SDXL 1.0/epiCPhotoXL.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-10-12T07:49:58.046527",
+      "updated": "2024-10-12T07:49:58.045527"
+    },
+    {
+      "filename": "PerfectEyesXL.safetensors",
+      "name": "PerfectEyesXL",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/PerfectEyesXL.safetensors",
+      "relative_path": "loras/SDXL 1.0/PerfectEyesXL.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.080498",
+      "updated": "2024-03-17T15:57:56.993112"
+    },
+    {
+      "filename": "zavy-ctsmtrc-sdxl.safetensors",
+      "name": "zavy-ctsmtrc-sdxl",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/zavy-ctsmtrc-sdxl.safetensors",
+      "relative_path": "loras/SDXL 1.0/zavy-ctsmtrc-sdxl.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-29T16:54:05.658140",
+      "updated": "2024-08-29T16:54:05.658140"
+    },
+    {
+      "filename": "Mayumi Saegusa-SDXL-lora-Faxtron.safetensors",
+      "name": "Mayumi Saegusa-SDXL-lora-Faxtron",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Mayumi Saegusa-SDXL-lora-Faxtron.safetensors",
+      "relative_path": "loras/SDXL 1.0/Mayumi Saegusa-SDXL-lora-Faxtron.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-29T13:46:47.472151",
+      "updated": "2024-08-29T13:46:47.472151"
+    },
+    {
+      "filename": "SDXLrender_v3.safetensors",
+      "name": "SDXLrender_v3",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/SDXLrender_v3.safetensors",
+      "relative_path": "loras/SDXL 1.0/SDXLrender_v3.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.078498",
+      "updated": "2023-11-14T04:57:05"
+    },
+    {
+      "filename": "epiCRealismXL-KiSSEnhancer_Lora.safetensors",
+      "name": "epiCRealismXL-KiSSEnhancer_Lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/epiCRealismXL-KiSSEnhancer_Lora.safetensors",
+      "relative_path": "loras/SDXL 1.0/epiCRealismXL-KiSSEnhancer_Lora.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-11-17T02:11:47.710325",
+      "updated": "2024-11-17T02:11:47.709325"
+    },
+    {
+      "filename": "Model_Sheet_Xl.safetensors",
+      "name": "Model_Sheet_Xl",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Model_Sheet_Xl.safetensors",
+      "relative_path": "loras/SDXL 1.0/Model_Sheet_Xl.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-29T16:51:34.863456",
+      "updated": "2024-08-29T16:51:34.863456"
+    },
+    {
+      "filename": "DetailedEyes_V3.safetensors",
+      "name": "DetailedEyes_V3",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/DetailedEyes_V3.safetensors",
+      "relative_path": "loras/SDXL 1.0/DetailedEyes_V3.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.080498",
+      "updated": "2024-03-17T15:57:23.144476"
+    },
+    {
+      "filename": "Animesh-Lora.safetensors",
+      "name": "Animesh-Lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Animesh-Lora.safetensors",
+      "relative_path": "loras/SDXL 1.0/Animesh-Lora.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.080498",
+      "updated": "2024-03-17T16:07:22.347712"
+    },
+    {
+      "filename": "add-detail-xl.safetensors",
+      "name": "add-detail-xl",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/add-detail-xl.safetensors",
+      "relative_path": "loras/SDXL 1.0/add-detail-xl.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-09-06T10:06:50.079498",
+      "updated": "2024-01-21T08:53:58.395096"
+    },
+    {
+      "filename": "Midjourney mimic_v20.safetensors",
+      "name": "Midjourney mimic_v20",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL 1.0/Midjourney mimic_v20.safetensors",
+      "relative_path": "loras/SDXL 1.0/Midjourney mimic_v20.safetensors",
+      "type": "sdxl 1.0",
+      "created": "2024-08-01T23:18:03.726388",
+      "updated": "2024-08-01T23:18:03.726388"
+    },
+    {
+      "filename": "ral-frctlgmtry-sdxl.safetensors",
+      "name": "ral-frctlgmtry-sdxl",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/DIFF/ral-frctlgmtry-sdxl.safetensors",
+      "relative_path": "loras/DIFF/ral-frctlgmtry-sdxl.safetensors",
+      "type": "diff",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-03-20T21:31:15.809387"
+    },
+    {
+      "filename": "sdxl_lightning_4step_lora.safetensors",
+      "name": "sdxl_lightning_4step_lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL-Lightning/sdxl_lightning_4step_lora.safetensors",
+      "relative_path": "loras/SDXL-Lightning/sdxl_lightning_4step_lora.safetensors",
+      "type": "sdxl-lightning",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-03-04T10:50:01.036139"
+    },
+    {
+      "filename": "sdxl_lightning_8step_lora.safetensors",
+      "name": "sdxl_lightning_8step_lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/SDXL-Lightning/sdxl_lightning_8step_lora.safetensors",
+      "relative_path": "loras/SDXL-Lightning/sdxl_lightning_8step_lora.safetensors",
+      "type": "sdxl-lightning",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-02-29T09:05:37.565553"
+    },
+    {
+      "filename": "FLUX.1-Turbo-Alpha.safetensors",
+      "name": "FLUX.1-Turbo-Alpha",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Flux.1 D/FLUX.1-Turbo-Alpha.safetensors",
+      "relative_path": "loras/Flux.1 D/FLUX.1-Turbo-Alpha.safetensors",
+      "type": "flux.1 d",
+      "created": "2024-10-25T19:49:05.341525",
+      "updated": "2024-10-25T19:49:05.340525"
+    },
+    {
+      "filename": "3D_render_flux.safetensors",
+      "name": "3D_render_flux",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Flux.1 D/3D_render_flux.safetensors",
+      "relative_path": "loras/Flux.1 D/3D_render_flux.safetensors",
+      "type": "flux.1 d",
+      "created": "2024-11-10T21:12:33.417104",
+      "updated": "2024-11-10T21:12:33.416104"
+    },
+    {
+      "filename": "3d_render_pdxl_goofy.safetensors",
+      "name": "3d_render_pdxl_goofy",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Pony/3d_render_pdxl_goofy.safetensors",
+      "relative_path": "loras/Pony/3d_render_pdxl_goofy.safetensors",
+      "type": "pony",
+      "created": "2024-10-20T22:57:26.394157",
+      "updated": "2024-10-20T22:57:26.394157"
+    },
+    {
+      "filename": "concept-10.safetensors",
+      "name": "concept-10",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Pony/concept-10.safetensors",
+      "relative_path": "loras/Pony/concept-10.safetensors",
+      "type": "pony",
+      "created": "2024-08-29T16:29:19.506254",
+      "updated": "2024-08-29T16:29:19.506254"
+    },
+    {
+      "filename": "43stl1ght1ngXLP2.safetensors",
+      "name": "43stl1ght1ngXLP2",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Pony/43stl1ght1ngXLP2.safetensors",
+      "relative_path": "loras/Pony/43stl1ght1ngXLP2.safetensors",
+      "type": "pony",
+      "created": "2024-08-28T06:34:40.852923",
+      "updated": "2024-08-28T06:34:40.852923"
+    },
+    {
+      "filename": "Watercolor Anime Style LoRA_Pony XL v6.safetensors",
+      "name": "Watercolor Anime Style LoRA_Pony XL v6",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Pony/Watercolor Anime Style LoRA_Pony XL v6.safetensors",
+      "relative_path": "loras/Pony/Watercolor Anime Style LoRA_Pony XL v6.safetensors",
+      "type": "pony",
+      "created": "2024-08-21T00:11:03.270691",
+      "updated": "2024-08-21T00:11:03.270691"
+    },
+    {
+      "filename": "Wrestling_hold_test.safetensors",
+      "name": "Wrestling_hold_test",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/Pony/Wrestling_hold_test.safetensors",
+      "relative_path": "loras/Pony/Wrestling_hold_test.safetensors",
+      "type": "pony",
+      "created": "2024-09-27T12:36:28.375975",
+      "updated": "2024-09-27T12:36:28.375975"
+    },
+    {
+      "filename": "ip-adapter-faceid_sdxl_lora.safetensors",
+      "name": "ip-adapter-faceid_sdxl_lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/FACEID/ip-adapter-faceid_sdxl_lora.safetensors",
+      "relative_path": "loras/FACEID/ip-adapter-faceid_sdxl_lora.safetensors",
+      "type": "faceid",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-03-17T16:13:18.711277"
+    },
+    {
+      "filename": "ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+      "name": "ip-adapter-faceid-plusv2_sdxl_lora",
+      "file_path": "/mnt/Hub/AI/MODELS/loras/FACEID/ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+      "relative_path": "loras/FACEID/ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+      "type": "faceid",
+      "created": "2024-04-29T09:37:44.016610",
+      "updated": "2024-03-17T16:13:15.541143"
+    }
+  ]
+}
