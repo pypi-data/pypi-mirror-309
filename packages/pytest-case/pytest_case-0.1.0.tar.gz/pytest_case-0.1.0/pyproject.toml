@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pytest_case"
+version = "0.1.0"
+description = ""
+authors = ["eitanwass <eitanwass@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^8.3.3"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+pytest-cov = "^5.0.0"
+ruff = "^0.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov=pytest_case --cov-report term-missing --no-cov-on-fail"
+markers = [
+    "case: marks a parametrized test case"
+]
+
+[tool.coverage.run]
+omit = ["tests/*"]
