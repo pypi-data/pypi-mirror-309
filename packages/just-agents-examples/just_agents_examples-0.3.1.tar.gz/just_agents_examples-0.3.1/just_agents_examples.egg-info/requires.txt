@@ -1,0 +1,5 @@
+just-agents>=0.3.1
+just-agents-coding>=0.3.1
+just-agents-router>=0.3.1
+just-agents-web>=0.3.1
+just-agents-tools>=0.3.1
