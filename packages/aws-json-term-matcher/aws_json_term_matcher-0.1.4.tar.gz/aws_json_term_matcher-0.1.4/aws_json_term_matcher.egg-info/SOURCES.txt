@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+aws_json_term_matcher/__init__.py
+aws_json_term_matcher/exceptions.py
+aws_json_term_matcher/grammar.lark
+aws_json_term_matcher/matcher.py
+aws_json_term_matcher.egg-info/PKG-INFO
+aws_json_term_matcher.egg-info/SOURCES.txt
+aws_json_term_matcher.egg-info/dependency_links.txt
+aws_json_term_matcher.egg-info/requires.txt
+aws_json_term_matcher.egg-info/top_level.txt
+tests/test_matcher.py
+tests/test_parser.py
