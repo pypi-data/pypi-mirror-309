@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chinus_emotions
+Version: 1.1.2
+Summary: This is a chinus Python package.
+Author-email: Chinu9653 <juyoung9653@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/juyoung9653/emotions
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Chinu9653's package
+
+This is a sample Python package created by Chinu9653.
+
+## Features
+- Feature 1
+- Feature 2
+
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `chinus-emotions`.
+
+```bash
+pip install chinus-emotions
