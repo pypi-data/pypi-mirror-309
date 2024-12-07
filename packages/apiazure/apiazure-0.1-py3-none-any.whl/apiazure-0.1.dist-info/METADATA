@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: apiazure
+Version: 0.1
+Summary: Libreria para uso de apis de azure
+Author: Carlos Castillo
+Author-email: ccastillo@ext.noatum.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.3
+
