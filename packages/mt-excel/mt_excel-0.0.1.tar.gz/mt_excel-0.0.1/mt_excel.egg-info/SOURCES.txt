@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+data/reviews-sample.xlsx
+mt_excel.egg-info/PKG-INFO
+mt_excel.egg-info/SOURCES.txt
+mt_excel.egg-info/dependency_links.txt
+mt_excel.egg-info/requires.txt
+mt_excel.egg-info/top_level.txt
