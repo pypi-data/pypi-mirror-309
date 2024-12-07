@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "th3n1c3l1b"
+version = "0.1.0"
+description = "Broker Service API"
+authors = ["Th3N1c3Guy <vineetverma.it@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+urllib3 = "<2"
+breeze-connect = "*"
+fastapi = "*"
+numpy = "<2"
+pandas = "*"
+selenium = "*"
+uvicorn = { extras = ["standard"], version = "*" }
+pyotp = "*"
+retry = "*"
+fastapi_utils = "*"
+redis = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+tqdm = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

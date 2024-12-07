@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: th3n1c3l1b
+Version: 0.1.0
+Summary: Broker Service API
+Author: Th3N1c3Guy
+Author-email: vineetverma.it@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: breeze-connect
+Requires-Dist: fastapi
+Requires-Dist: fastapi_utils
+Requires-Dist: numpy (<2)
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: pyotp
+Requires-Dist: redis
+Requires-Dist: retry
+Requires-Dist: selenium
+Requires-Dist: sqlalchemy
+Requires-Dist: tqdm
+Requires-Dist: urllib3 (<2)
+Requires-Dist: uvicorn[standard]
