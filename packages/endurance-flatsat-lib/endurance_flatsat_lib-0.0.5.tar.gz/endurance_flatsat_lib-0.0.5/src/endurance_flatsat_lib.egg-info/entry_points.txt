@@ -1,0 +1,2 @@
+[console_scripts]
+candump-format = scripts.candump:main
