@@ -1,0 +1,3 @@
+[console_scripts]
+caffeine = caffeine.__main__:main
+xpp = xpp.__main__:main
