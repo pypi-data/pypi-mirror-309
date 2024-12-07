@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+astra/__init__.py
+astra/activation.py
+astra/feed_forward.py
+astra/gpt_model.py
+astra/layer_norm.py
+astra/model.py
+astra/multi_head_attention.py
+astra/tokenizer.py
+astra/transformer_block.py
+astra_llm.egg-info/PKG-INFO
+astra_llm.egg-info/SOURCES.txt
+astra_llm.egg-info/dependency_links.txt
+astra_llm.egg-info/requires.txt
+astra_llm.egg-info/top_level.txt
