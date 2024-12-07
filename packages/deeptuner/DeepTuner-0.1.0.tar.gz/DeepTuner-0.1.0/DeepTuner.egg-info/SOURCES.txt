@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+DeepTuner.egg-info/PKG-INFO
+DeepTuner.egg-info/SOURCES.txt
+DeepTuner.egg-info/dependency_links.txt
+DeepTuner.egg-info/requires.txt
+DeepTuner.egg-info/top_level.txt
