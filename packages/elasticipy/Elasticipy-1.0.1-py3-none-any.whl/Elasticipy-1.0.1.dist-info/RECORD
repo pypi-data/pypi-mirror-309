@@ -1,0 +1,10 @@
+FourthOrderTensor.py,sha256=nBgoD6CzEeI4DWR9VGpCiY48cLBG2O8XFQdzeBy_wP8,22388
+SecondOrderTensor.py,sha256=7wJIrC5HZnrbs1kPXkOZOih4AhA4n0dzGMMmOrwX1Gk,20316
+SphericalFunction.py,sha256=9uGZZcLpw833BFSMLfMVjVDB4OFApLOd_KHktzpUInA,22958
+StressStrainTensors.py,sha256=cA1m_-Dqcqy-Ukv-Zb5gkFS75veVvZKzrlEITCxR-nc,3103
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Elasticipy-1.0.1.dist-info/LICENSE,sha256=qNthTMSjVkIDM1_BREgVFQHdn1wVNQi9pwWVfTIazMA,1074
+Elasticipy-1.0.1.dist-info/METADATA,sha256=x-pSuqhuqTvIFaSRcXtHL5eHAuCC8z4XwWQJ_GpIPVA,2680
+Elasticipy-1.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Elasticipy-1.0.1.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Elasticipy-1.0.1.dist-info/RECORD,,
