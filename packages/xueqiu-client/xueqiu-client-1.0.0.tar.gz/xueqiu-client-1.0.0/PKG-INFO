@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: xueqiu-client
+Version: 1.0.0
+Summary: Client for Xueqiu.com
+Home-page: https://github.com/suqingdong/xueqiu
+Author: suqingdong
+Author-email: suqingdong1114@gmail.com
+License: MIT License
+Description: # Client for Xueqiu.com
+        
+        ## Installation
+        
+        ```bash
+        python3 -m pip install xueqiu-client
+        ```
+        
+        ## Usage
+        
+        ```bash
+        xueqiu --help
+        
+        xueqiu ZXZQ
+        
+        xueqiu ZXZQ DFCF
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

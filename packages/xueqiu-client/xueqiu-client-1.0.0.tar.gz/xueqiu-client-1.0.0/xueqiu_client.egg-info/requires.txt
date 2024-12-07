@@ -1,0 +1,5 @@
+click
+plotext
+requests
+webrequests
+prettytable

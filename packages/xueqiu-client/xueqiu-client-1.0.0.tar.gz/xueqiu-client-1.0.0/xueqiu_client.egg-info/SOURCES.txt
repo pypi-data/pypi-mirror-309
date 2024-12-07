@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+xueqiu/__init__.py
+xueqiu/bin.py
+xueqiu/core.py
+xueqiu/version.json
+xueqiu_client.egg-info/PKG-INFO
+xueqiu_client.egg-info/SOURCES.txt
+xueqiu_client.egg-info/dependency_links.txt
+xueqiu_client.egg-info/entry_points.txt
+xueqiu_client.egg-info/requires.txt
+xueqiu_client.egg-info/top_level.txt
