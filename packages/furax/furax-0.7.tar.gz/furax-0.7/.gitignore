@@ -1,0 +1,19 @@
+.coverage
+MANIFEST
+build
+dist
+_site
+htmlcov
+__pycache__
+*.egg-info
+/venv*/
+/.vscode/
+/.idea/
+
+/tests/data/planck/
+
+# python
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache

@@ -1,0 +1,18 @@
+jaxtyping
+healpy>=0.16.6
+jax-healpy
+jax-dataclasses
+lineax
+numpy
+scipy
+matplotlib
+
+[:python_version < "3.11"]
+typing-extensions
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+setuptools_scm
+beartype
