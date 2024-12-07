@@ -1,0 +1,7 @@
+gossiphs-0.9.16.dist-info/METADATA,sha256=3ZkNRyrM8NSxYPpmJ69GyZBGEfJ54uUi1VFiJVWV_y8,16008
+gossiphs-0.9.16.dist-info/WHEEL,sha256=flaXygNt7fwXMrVbgR9MLFEGrJw4mhPdI5S6m7JGhoU,106
+gossiphs-0.9.16.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gossiphs/__init__.py,sha256=Wx8jUU-eMh95N9urExkCJG51qNdVaKPK4FQrifzL00A,130
+gossiphs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gossiphs/_rust_api.abi3.so,sha256=tFmnxT9Cmg1_rBgQgWdcBv-unEfnbVM1sOv2VPn8fJc,20634832
+gossiphs-0.9.16.dist-info/RECORD,,
