@@ -1,0 +1,3 @@
+[submodule "libs/thebe"]
+	path = libs/thebe
+	url = https://github.com/executablebooks/thebe.git
