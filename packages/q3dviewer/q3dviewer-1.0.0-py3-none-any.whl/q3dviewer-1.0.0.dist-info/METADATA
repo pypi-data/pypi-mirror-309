@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: q3dviewer
+Version: 1.0.0
+Requires-Dist: numpy
+Requires-Dist: pyqtgraph
+Requires-Dist: pyqt5
+Requires-Dist: PyOpenGL
+Requires-Dist: pypcd4
+Requires-Dist: pillow
+
