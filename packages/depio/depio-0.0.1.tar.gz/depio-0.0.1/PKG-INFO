@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: depio
+Version: 0.0.1
+Summary: A simple task manager with slurm integration
+Author-email: Maximilian Noppel <noppel@kit.edu>
+Project-URL: Homepage, https://github.com/noppelmax/depio
+Project-URL: Issues, https://github.com/noppelmax/depio/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate
+Requires-Dist: pytest
+Requires-Dist: submitit
+Requires-Dist: coverage
+Requires-Dist: hydra-core
+Requires-Dist: termcolor
+
+# depio
+![python-package.yml](https://github.com/noppelmax/depio/actions/workflows/python-package.yml/badge.svg)
+
+A simple task manager with slurm integration.
+
+## How to use
+TODO
+
+
+## How to develop
+Create an editable egg and install it.
+
+```bash
+pip install -e .
+```
+
+## How to test
+Run
+```bash
+pytest
+```
+

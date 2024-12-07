@@ -1,0 +1,31 @@
+[project]
+name = "depio"
+version = "0.0.1"
+authors = [
+  { name="Maximilian Noppel", email="noppel@kit.edu" },
+]
+description = "A simple task manager with slurm integration"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tabulate",
+    "pytest",
+    "submitit",
+    "coverage",
+    "hydra-core",
+    "termcolor"
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[project.urls]
+Homepage = "https://github.com/noppelmax/depio"
+Issues = "https://github.com/noppelmax/depio/issues"
