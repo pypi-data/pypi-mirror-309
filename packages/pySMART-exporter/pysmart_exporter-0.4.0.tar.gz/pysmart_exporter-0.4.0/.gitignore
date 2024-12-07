@@ -1,0 +1,13 @@
+.env
+.pypirc
+.vscode
+.vscode
+*.egg-info
+*.pyc
+build/
+dist/
+docs
+venv
+
+# local version
+pysmart_exporter/version.py
