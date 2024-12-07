@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitverbose
+Version: 0.4
+Summary: Easy clone github repo, Internet files.
+Home-page: https://github.com/GitLabBR/gitverbose
+Author: caique9014
+Author-email: caiqueonz777@proton.me
+Keywords: cli,python,github,git,pypi,fun,image,hash,table,typer,3.9,pip
+Requires-Dist: requests
+Requires-Dist: argparse
+Requires-Dist: git-clone
+
+Make your life easier while cloning github repo.

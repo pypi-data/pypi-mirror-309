@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitverbose.egg-info/PKG-INFO
+gitverbose.egg-info/SOURCES.txt
+gitverbose.egg-info/dependency_links.txt
+gitverbose.egg-info/entry_points.txt
+gitverbose.egg-info/requires.txt
+gitverbose.egg-info/top_level.txt
+gv/__init__.py
+gv/entry.py
