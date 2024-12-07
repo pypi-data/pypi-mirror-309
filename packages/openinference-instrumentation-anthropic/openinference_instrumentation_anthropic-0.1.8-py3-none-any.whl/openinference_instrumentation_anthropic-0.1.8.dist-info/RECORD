@@ -1,0 +1,10 @@
+openinference/instrumentation/anthropic/__init__.py,sha256=jPuTYjnuSnJF6fSuEpM9b-G_b6pSV6h9wvHrD5fDbHw,3616
+openinference/instrumentation/anthropic/_stream.py,sha256=Rs_VsSA55AzEVhBon2_arCITNIA5osiQnNR_Cc4-0CY,17604
+openinference/instrumentation/anthropic/_utils.py,sha256=MXykzsnrgMLQyPm9ES345cFc0ibuWmsBYSwmhhIBYH4,2748
+openinference/instrumentation/anthropic/_with_span.py,sha256=FtYd43Vqyy6WX5aeE3ax8OMjrPWgGJb_AZhp0BBoyog,2677
+openinference/instrumentation/anthropic/_wrappers.py,sha256=TRZLRcOS4AaEc7QXNB2biorMTEhurXmietjD2SdGKcw,18798
+openinference/instrumentation/anthropic/version.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+openinference_instrumentation_anthropic-0.1.8.dist-info/METADATA,sha256=y7a0SIgdArc2h5x57lxXAAZr6U1gQnQlJWuZpfBnqDU,3800
+openinference_instrumentation_anthropic-0.1.8.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+openinference_instrumentation_anthropic-0.1.8.dist-info/licenses/LICENSE,sha256=vbYZydngUVsXsIBUvMGdKz3LjiQn5Mv9cRceRxOPU20,10840
+openinference_instrumentation_anthropic-0.1.8.dist-info/RECORD,,
