@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "tibber-pulse-sml-debugger"
+version = "1.0.0"
+description = "A tiny python based CLI application to see the data, that was recorded and send by your Tibber Pulse IR to your Tibber Pulse Bridge."
+authors = [
+    "wh0ami <wh0ami@noreply.codeberg.org>"
+]
+readme = "README.md"
+license = "MIT"
+repository = "https://codeberg.org/wh0ami/tibber-pulse-sml-debugger"
+keywords = [
+    "SML",
+    "Tibber",
+    "energy",
+    "electric",
+    "pulse",
+    "debug"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.scripts]
+tibber-pulse-sml-debugger = "tibber_pulse_sml_debugger.main:main"
+tpsd = "tibber_pulse_sml_debugger.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+smllib = "^1.5"
+loguru = "^0.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
