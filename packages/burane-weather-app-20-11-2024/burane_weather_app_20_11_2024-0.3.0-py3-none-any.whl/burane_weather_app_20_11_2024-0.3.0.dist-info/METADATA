@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: burane-weather-app-20-11-2024
+Version: 0.3.0
+Summary: application météo
+Home-page: https://github.com/Burane/WeatherApp.git
+Author: Antoine
+Author-email: antoine.kerbiriou@sinay.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# WeatherApp
+
+## Example usage
+
+
+```python
+caen = (49.183, -0.38)
+w = Weather()
+w.display_currrent_weather(caen[0], caen[1], 1)
+today = date.today() - timedelta(weeks=1)
+yesterday = today - timedelta(days=1, weeks=1)
+w.display_past_weather(caen[0], caen[1], yesterday, yesterday)
+```
