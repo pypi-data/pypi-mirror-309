@@ -1,0 +1,28 @@
+[project]
+name = "midist"
+version = "0.2.0"
+description = "Command line tool for easy access to Misskey's theme/plugin installation functionality."
+authors = [
+    { name = "AmaseCocoa", email = "amase.cocoa@gmail.com" },
+]
+dependencies = [
+    "typer>=0.13.1",
+    "jinja2>=3.1.4",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+midist = "midist.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
