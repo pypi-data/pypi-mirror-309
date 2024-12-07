@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ppb-server-temp
+Version: 0.1
+Summary: A package for my server
+Home-page: https://github.com/FloresTristan/ppb-server-temp
+Author: Michael
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: flask
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pymongo
