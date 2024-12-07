@@ -1,0 +1,8 @@
+kurbopy-0.11.1.dist-info/METADATA,sha256=K67ix7O5TXqdBOX3DmqZ4lK3-WymyeCEO-hKr95e3Vw,1454
+kurbopy-0.11.1.dist-info/WHEEL,sha256=YApKqCDyi9GqUQokZqOT5I78CS4GNvgM6MM-DsXhn2s,94
+kurbopy-0.11.1.dist-info/licenses/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+kurbopy/common/__init__.py,sha256=zxWhP4HrBMGMO_O2nP18F76_DKl1YjsYLLoXdseiFr0,73
+kurbopy/magic.py,sha256=AFb02Rtmelt5fn2X-2uSqfGA4YniEIGzC5T5BUVNxco,1214
+kurbopy/__init__.py,sha256=4XydC6zo1vGCMV5VU0s5wuB6yZMH5S438dQJYWeyG6I,4887
+kurbopy/kurbopy.pyd,sha256=f1N_S0f45QMZS81aBD738qroO7pkk2QujSC3Dbz6w9Q,1104896
+kurbopy-0.11.1.dist-info/RECORD,,
