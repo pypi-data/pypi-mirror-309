@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ragsearch"
+version = "0.1.0"
+description = "Recommendation Engine leveraging an Agentic Retrieval-Augmented Generation (RAG) architecture to provide context-aware recommendations based on user queries"
+authors = ["Mrutunjay Kinagi < mrutunjay.kinagi @ gmail.com >"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mrutunjay-kinagi/ragsearch"
+packages = [
+    { include = "ragsearch", from = "libs" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
