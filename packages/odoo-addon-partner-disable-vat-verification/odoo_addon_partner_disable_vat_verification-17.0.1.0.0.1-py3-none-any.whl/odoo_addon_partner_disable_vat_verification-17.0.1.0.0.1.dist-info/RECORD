@@ -1,0 +1,17 @@
+odoo/addons/partner_disable_vat_verification/README.rst,sha256=uTLY4TKGZSrqr3aydv6U1lPulm-OuHDjRJ-1AzYUhdo,2564
+odoo/addons/partner_disable_vat_verification/__init__.py,sha256=yVsEwYSLbi4e_2NUb5LF_bbVLZ8Sc84LbIdPWtoMYaE,163
+odoo/addons/partner_disable_vat_verification/__manifest__.py,sha256=9XeG_yDEvoSgT5InzhmHypv748Kb_UDD4IHhZLkU25Y,543
+odoo/addons/partner_disable_vat_verification/models/__init__.py,sha256=3_rv87xeKqLBFfbXz2-TvhXWkf2_z8I64Ypqj941yqw,168
+odoo/addons/partner_disable_vat_verification/models/res_partner.py,sha256=EKGwvJPLr6d0tLxBY_PP2K7Vj2-pDwiYrDAWN1WEGCQ,389
+odoo/addons/partner_disable_vat_verification/readme/CONFIGURE.md,sha256=ThItvrICEG-HnYUrU4caIfPcziMo4q5V5Ul1hsgLWZQ,50
+odoo/addons/partner_disable_vat_verification/readme/CONTRIBUTORS.md,sha256=cvmFO-ya0-rTLe4llZfgzGy80DsosI29uSKGwEVkpXo,150
+odoo/addons/partner_disable_vat_verification/readme/DESCRIPTION.md,sha256=bcy_dpxpF7oNwV0-ys6Hczq_1o6vyJrAByxEmfjN9tI,75
+odoo/addons/partner_disable_vat_verification/readme/USAGE.md,sha256=DrUuLW92Xl7ppMGK6uPM6imRqjpiZZECTeZnXpxzLJY,161
+odoo/addons/partner_disable_vat_verification/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/partner_disable_vat_verification/static/description/index.html,sha256=fYNSUVBXoei7vSukcNUbL3aQNpyKOq_TECw0sLmxZxs,12308
+odoo/addons/partner_disable_vat_verification/tests/__init__.py,sha256=FwSI-bY8b0aokoyO848_DjJxHtQPKtqoZ9Jibd0MZ-M,194
+odoo/addons/partner_disable_vat_verification/tests/test_partner_disable_vat_verification.py,sha256=8utX-7eY6yLqaTM6EmlJGklaZOMLlS3LtqYPKiolqRA,1061
+odoo_addon_partner_disable_vat_verification-17.0.1.0.0.1.dist-info/METADATA,sha256=-ACD-B3X2qFHj2E7xhbUtGvm0T6zZ03O32lfEZu2iRI,3109
+odoo_addon_partner_disable_vat_verification-17.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_partner_disable_vat_verification-17.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_partner_disable_vat_verification-17.0.1.0.0.1.dist-info/RECORD,,
