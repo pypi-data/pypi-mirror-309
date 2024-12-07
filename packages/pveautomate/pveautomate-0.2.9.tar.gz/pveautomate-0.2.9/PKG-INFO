@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pveautomate
+Version: 0.2.9
+Summary: A package to automate Proxmox VE tasks
+Home-page: https://github.com/alchemicode/pveautomate
+Author: Matt Compton
+Author-email: matt@alchemicode.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pveautomate
+Proxmox VE API
+
+## Missing a function you need?
+Feel free to open a PR or Issue, but be aware API implementation has been prioritized for Alchemicode's own software that relies on this package.
+
+## Want to hire us?
+If you need features in this package, or any other software/hosting/sysadmin tasks, please check out our [website](https://alchemicode.com)!
+
+
+# Example Usage:
+## Cloning a range setup for multiple users
+```py
+from pveautomate.automate import ProxmoxManager
+from getpass import getpass
+
+# Create a ProxmoxManager object
+pm = ProxmoxManager(
+    "https://proxmox.foo.bar/api2/json",
+    "root@pam",
+    getpass("Enter password: "),
+    "node1",
+)
+
+# Assuming these users already exist
+for user in ['matt@pve', 'dave@pve', 'kris@pve']:
+    pm.create_range([100,101,102], user) # assuming 100,101,102 are template VMs that you want each user to have a copy of
+```
+
+# Usage Docs:
