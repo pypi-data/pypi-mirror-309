@@ -1,0 +1,10 @@
+spiderpy3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiderpy3/utils/__init__.py,sha256=gzZvHhgfhrK8HJfZtz86ZuxQbXX36FQAh8mqqIZQs-s,95
+spiderpy3/utils/algo.py,sha256=VGDpQhCbELLIDgKuHrll8eN0J1W09UikJb0QjC8z0GI,519
+spiderpy3/utils/cookies.py,sha256=GxobRLMcuPR7lqgsbzs5I5EgVhuWkXMNNkiqs-HIzxw,471
+spiderpy3/utils/execute/__init__.py,sha256=mxBjuqgBlH-PLaKyHsjAbDf7KlELi2U8MxZ052dXhOI,46
+spiderpy3/utils/execute/js.py,sha256=Iavv-dY-wdKhh_i86PTih7Zmu-Opv1vSjRxvsY-01F4,1618
+spider_py3-0.1.0.20241120.dist-info/LICENSE,sha256=Pu9Tg6G2w62EnWZZSv6QsRqkQQwMKoA4-CXIvic0Zpw,1089
+spider_py3-0.1.0.20241120.dist-info/METADATA,sha256=xSovzoUyrAfcOfSYl8OhqxW-vmrYClRzmq_ia7GLJNg,2301
+spider_py3-0.1.0.20241120.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+spider_py3-0.1.0.20241120.dist-info/RECORD,,
