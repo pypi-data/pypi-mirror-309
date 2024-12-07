@@ -1,0 +1,9 @@
+datagen/__init__.py,sha256=aRR4Vpc-fvHZ1sqIFhtkrsaqO1Bb2Z5wdEipaRMGels,383
+datagen/financial.py,sha256=F5buuXEuh7VWCVwb4QRy8YhqX7hZUCj2jgaLDzOnIPo,18529
+datagen/generator.py,sha256=uNRStzuolojGBnJXML2WhVn-CLfMOoFKpoX37hJHf-k,5481
+datagen/healthcare.py,sha256=CHaSpnE2IctFyqRiuptve3R-l6ezUveOQSNy6dR5f_E,10531
+datagen/text.py,sha256=MiOev2SXpUQnzVQmHH8BL_VK5ueM27F978jxW4nUxpo,7798
+datagen_python-0.1.0.dist-info/METADATA,sha256=pviYLpSd99UfLRQEcPRgHrzoqdM5_5ns_m2wWHcF8EY,3571
+datagen_python-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+datagen_python-0.1.0.dist-info/top_level.txt,sha256=lfzttJiTpK5jaSTEoeMJHKsgDXU9Fsj7r5FuXNZ2sdw,8
+datagen_python-0.1.0.dist-info/RECORD,,
