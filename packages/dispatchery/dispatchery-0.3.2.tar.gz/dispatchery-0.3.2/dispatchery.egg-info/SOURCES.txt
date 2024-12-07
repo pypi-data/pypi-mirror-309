@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+dispatchery/__init__.py
+dispatchery/main.py
+dispatchery.egg-info/PKG-INFO
+dispatchery.egg-info/SOURCES.txt
+dispatchery.egg-info/dependency_links.txt
+dispatchery.egg-info/top_level.txt
+tests/test_annotations.py
+tests/test_parameters.py
+tests/test_readme_examples.py
