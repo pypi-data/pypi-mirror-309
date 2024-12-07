@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ehrt
+Version: 0.1.0
+Summary: EHRT - Electornic Health Records Toolkit
+Home-page: https://github.com/apvidul/ehrt/
+Author: Vidul Ayakulangara Panickan
+Author-email: Vidul Ayakulangara Panickan <apvidul@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ehrt
+
+`ehrt` is a set of foundational tools and pipelines for processing EHR data to create research ready datasets. TETHER is a learning library designed to help analysts and healthcare professionals familiarize themselves with EHR processing.
+
+## Installation
+
+Install via pip
+
+## Usage
+
+```python
+from ehrt import nlp
+
+# Example text and dictionary
+text = "This is an example input to process."
+dictionary_path = "sample_dict.txt"
+
+# The dictionary should can be a csv file containg two columns: string,cui
+
+# Traverse the text to find CUIs
+result = nlp.text2cui.traverse(text, dictionary_path)
+
+print(result)
