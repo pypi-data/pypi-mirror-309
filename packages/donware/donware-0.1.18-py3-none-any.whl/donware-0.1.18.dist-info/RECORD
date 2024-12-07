@@ -1,0 +1,14 @@
+donware/__init__.py,sha256=81NvBkF5gk_jluHt_SLuQXJ-fsdmHN1Y6PunIMtwvAM,288
+donware/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/modules/experiments.py,sha256=S4236FAANhqb1ls0gr4aRr1zswa0BgOFH1aJb5hguxk,8446
+donware/src/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/utils/images.py,sha256=-ISMuSBCFlK5BbEv86N6JDRr2dYe70xqk75Jy3EXkuU,2052
+donware/src/utils/latex.py,sha256=BgZyFmYJxFVxCTzDWIm_afAVGHyQrxhElTJfwLgWJYg,23386
+donware/src/utils/package.py,sha256=3oo_LXvR67rE2jmKr4ePNz-f1uOCDQOG_hu-mYngmAs,928
+donware/src/utils/terminal.py,sha256=XNiYLcrcCkCzBSA00uWQktHdKh0JxTQCS1R81mmhydg,1611
+donware-0.1.18.dist-info/LICENSE,sha256=UHmaoMb-BhUaEzpwbRwWvGH9u205djhB80MysRic_zg,1064
+donware-0.1.18.dist-info/METADATA,sha256=K9Z9-74XZP8A0K2eGEhDe3_l09FhqC69LW48vQ0preI,587
+donware-0.1.18.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+donware-0.1.18.dist-info/top_level.txt,sha256=6AlFIXOstFefcQtH-LhyVeTqrB8RTtQNR60rqoSH04c,8
+donware-0.1.18.dist-info/RECORD,,
