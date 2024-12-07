@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: astra-llm
+Version: 0.1.10
+Summary: Astra is a lightweight library for Astra LLM.
+Home-page: https://github.com/shuvo881/Astra
+Author: Md. Golam Mostofa
+Author-email: golammostofa10001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: charset-normalizer==3.4.0
+Requires-Dist: filelock==3.16.1
+Requires-Dist: fsspec==2024.10.0
+Requires-Dist: idna==3.10
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.4.2
+Requires-Dist: numpy==1.26.4
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: sympy==1.13.3
+Requires-Dist: tiktoken==0.8.0
+Requires-Dist: torch==2.2.2
+Requires-Dist: typing-extensions==4.12.2
+Requires-Dist: urllib3==2.2.3
+
