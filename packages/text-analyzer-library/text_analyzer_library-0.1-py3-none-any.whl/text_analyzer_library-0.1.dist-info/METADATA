@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: text-analyzer-library
+Version: 0.1
+Summary: A library for processing and analyzing text with embeddings and visualizations
+Home-page: https://github.com/logvinali
+Author: eelogvina
+Author-email: eelogvina@edu.hse.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: nltk
+Requires-Dist: pymystem3
+Requires-Dist: wordcloud
+Requires-Dist: sentence-transformers
+Requires-Dist: matplotlib
+
+UNKNOWN
+
