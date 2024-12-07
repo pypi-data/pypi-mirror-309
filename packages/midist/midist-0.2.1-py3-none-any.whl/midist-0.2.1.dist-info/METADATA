@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: midist
+Version: 0.2.1
+Summary: Command line tool for easy access to Misskey's theme/plugin installation functionality.
+Author-Email: AmaseCocoa <amase.cocoa@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/AmaseCocoa/midist
+Requires-Python: >=3.12
+Requires-Dist: typer>=0.13.1
+Requires-Dist: jinja2>=3.1.4
+Description-Content-Type: text/markdown
+
+# midist
+Command line tool for easy access to Misskey's theme/plugin installation functionality.
+## Installation
+### pip
+```
+pip install midist
+```
+### pipx
+```
+pipx install midist
+```
+## Usage
+An example project structure can be found in [example](/example)
+```
+midist (Base url including http or https)
+```
+To specify the directory where the project is stored, use the format `--dir directory`.
+
+The results are output in the `dist` folder of the directory.
+
+You can also access `/api/(themes/plugins)/index.html` to get the url to present as installation instructions
