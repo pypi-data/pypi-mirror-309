@@ -1,0 +1,3 @@
+[console_scripts]
+pybadges2=pybadges2.__main__:main
+
