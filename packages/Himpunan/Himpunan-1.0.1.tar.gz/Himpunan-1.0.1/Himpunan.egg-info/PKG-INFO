@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Himpunan
+Version: 1.0.1
+Summary: Himpunan dan pemrosesannya
+Author: Gilbert Winardy, Hainzel Kemal, Chaiden Foanto
+Author-email: gfoucauld@student.ciputra.ac.id
+Description-Content-Type: text/markdown
+
+### Tugas Ini Direpresentasikan Oleh:
+- Gilbert De Foucauld Winardy [0806022310001]
+- Hainzel Kemal [0806022310010]
+- Chaiden Richardo Foanto [0806022310023]
+
+### Tugas Ini Untuk Kepentingan Matematika Diskrit Oleh Pak Oktavian
+### Install Our Dependencies With ```pip install Himpunan```
+### Use with ```from Himpunan import Himpunan```
+### Source Code Here ```https://github.com/Gibekkk/Discrete/tree/himpunan/Himpunan```
