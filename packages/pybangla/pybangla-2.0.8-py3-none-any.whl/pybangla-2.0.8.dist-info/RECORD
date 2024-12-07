@@ -1,0 +1,17 @@
+pybangla/__init__.py,sha256=oRB4GKDECsnqcRo3YyxEV7AB2VvwplQ9UPam_iCINR8,66
+pybangla/report_generation.py,sha256=3cFgFLcs7vqpFucsfVG1hXha3z9gfve8FN8tmzfLy5s,4970
+pybangla/test.py,sha256=XNsEuk-h_QvZ4KZqzFc0mXI9lZu42zl_F6dgTN6I8WA,29491
+pybangla/testing_pybangla.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybangla/year2year.py,sha256=Fj2wbOeRrfVazIJdLCfsFjICYfI0jpu2AItoRn2NijY,8284
+pybangla/module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybangla/module/config.py,sha256=9SEaDSRGBQirrmTrIePREzOSuPLH534MTTkFSMSxNM8,23978
+pybangla/module/date_extractor.py,sha256=9-lStCGSYuLZMW0qYLepA2DeiWiPuGdGsa0zUk0Ay5Q,9948
+pybangla/module/main.py,sha256=iGcDFTIqORkQbzmC1rbE2LzpkCwK32XZUkb7BKavIrw,10814
+pybangla/module/number_parser.py,sha256=74WCx0AX_w3QfVUPUGwwsHZpPOlEILQALtaso0c3sJI,18390
+pybangla/module/parser.py,sha256=efHEs6siA1I9fKa-2O9TSYWPHQB3_1olltjb4SVHvM4,40568
+pybangla/module/phone_number_extractor.py,sha256=U-xi345pAsDcZ_Z49aHpcckHSXa0LPN4EqZDlv5JyYQ,8134
+pybangla/module/word_to_number.py,sha256=93kmstjVhRHhRGW4fzbtC5GKWi1dRoAA3-koVXftmMs,23498
+pybangla-2.0.8.dist-info/METADATA,sha256=EpNB7fWPHc_GXfJukUNbTlRNWkXfUnHNR8Q01yM3pUk,8047
+pybangla-2.0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pybangla-2.0.8.dist-info/top_level.txt,sha256=W44fQGum7-198aoQfUBta829MXqaM0VPjgw0Ds2vcVM,9
+pybangla-2.0.8.dist-info/RECORD,,
