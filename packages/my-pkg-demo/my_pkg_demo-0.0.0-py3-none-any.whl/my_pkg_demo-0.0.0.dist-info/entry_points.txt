@@ -1,0 +1,2 @@
+[console_scripts]
+start = lib_work_login.__main__:main
