@@ -1,0 +1,2 @@
+[console_scripts]
+seatools-chrome = seatools.ext.chrome.main:main
