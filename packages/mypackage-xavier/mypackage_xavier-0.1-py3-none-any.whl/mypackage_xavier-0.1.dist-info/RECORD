@@ -1,0 +1,11 @@
+mypackage/__init__.py,sha256=1KhozCcAY8l7Qbw2wKI8hAQigUnjWJxBfpdMVkOn7jg,27
+mypackage/__main__.py,sha256=1KhozCcAY8l7Qbw2wKI8hAQigUnjWJxBfpdMVkOn7jg,27
+mypackage/test.py,sha256=akcB17su0su4VhXs1opsCan9lL1V7OIBPvQdetH0DtU,133
+mypackage_xavier/__init__.py,sha256=1KhozCcAY8l7Qbw2wKI8hAQigUnjWJxBfpdMVkOn7jg,27
+mypackage_xavier/__main__.py,sha256=1KhozCcAY8l7Qbw2wKI8hAQigUnjWJxBfpdMVkOn7jg,27
+mypackage_xavier/test.py,sha256=akcB17su0su4VhXs1opsCan9lL1V7OIBPvQdetH0DtU,133
+mypackage_xavier-0.1.dist-info/LICENCE.txt.rtf,sha256=uy8WHRdrEiRcqK2aiMBJ46tkSFSsb2hW_WKPerQKN00,41737
+mypackage_xavier-0.1.dist-info/METADATA,sha256=nm7JuCDzx1ppEaDdyt0tHJHWMnPqoXPpC4Sv2AtGO9w,196
+mypackage_xavier-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mypackage_xavier-0.1.dist-info/top_level.txt,sha256=TrL6GBUFj97_KuPGUEzfgxNZGK45T5_EKy7oLBlqkOs,17
+mypackage_xavier-0.1.dist-info/RECORD,,
