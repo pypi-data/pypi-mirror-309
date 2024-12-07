@@ -1,0 +1,13 @@
+depio/Executors.py,sha256=a6I_gfUIW7rFd4kcicwS8_f26f5kOrrA9R9a4MIkx9s,2881
+depio/Pipeline.py,sha256=oQscevXI5V5MSrWehhavImjkcUIaG3dGG56P5NyUTtw,8135
+depio/Task.py,sha256=6Buce-VkIXSMiSTGOibvAqAF610n2Fk0hZYecqxZkP8,10762
+depio/TaskStatus.py,sha256=sUdDPRzaHiGfk5yKN99DeNEoAIEJ6fJxeOKOGP3VN0Q,745
+depio/decorators.py,sha256=bUNqRU6coCq4ZMN21dkFtJLx_4h7Wt33dcXr9Tfksi4,420
+depio/exceptions.py,sha256=iVkmUbgGIZ85tgPvFQ-emjgIcs3ZVXN5vbfKvcIaEIg,495
+depio/logging.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depio/stdio_helpers.py,sha256=A4TeYY1qTmdUxuECq-JAzIPkGDHEtcjdljzcNt0ipn4,9745
+depio-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+depio-0.0.3.dist-info/METADATA,sha256=PhvAsLXLOyg_Ps3mRPuDwitQTvs5uLw_N2w1ATJpgbc,7115
+depio-0.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+depio-0.0.3.dist-info/top_level.txt,sha256=YSCNzOu_WKLDXKOkmbmyh6e2-3rAwLWdxD4Ll6WwnzM,6
+depio-0.0.3.dist-info/RECORD,,
