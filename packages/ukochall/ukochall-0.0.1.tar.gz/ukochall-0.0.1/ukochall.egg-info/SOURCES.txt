@@ -1,0 +1,7 @@
+setup.py
+ukochall.egg-info/PKG-INFO
+ukochall.egg-info/SOURCES.txt
+ukochall.egg-info/dependency_links.txt
+ukochall.egg-info/not-zip-safe
+ukochall.egg-info/requires.txt
+ukochall.egg-info/top_level.txt
