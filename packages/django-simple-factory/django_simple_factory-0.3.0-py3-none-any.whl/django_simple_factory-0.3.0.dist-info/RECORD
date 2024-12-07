@@ -1,0 +1,10 @@
+django_simple_factory/__init__.py,sha256=LV9xhKempZt27pn--6qhUqw1tBb2NS3POowiAqGNH9I,70
+django_simple_factory/apps.py,sha256=gffiKkVMX-HZcuvQqIpjFy61w26yuotYdjKLuQ3CgvU,936
+django_simple_factory/factories.py,sha256=MXymKje-93kTN02-bS9OalTpkSHo9xx8JeUt-RIi-Hg,10203
+django_simple_factory/mixins.py,sha256=60TTE33ciHVqGjx9ukFmcBNOLKlvz-sCGUseGICODBw,2189
+django_simple_factory/tests.py,sha256=YD8gaqZg2E05jC75GxDA2w_gWBeYP5U8tLHGIn111JQ,7237
+django_simple_factory/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_simple_factory-0.3.0.dist-info/LICENSE,sha256=RLle_844hAY6_qwbzB3I0xAabsQD0jnCXmlF-_jF8oc,1086
+django_simple_factory-0.3.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+django_simple_factory-0.3.0.dist-info/METADATA,sha256=bgZ443XGPEmnBUBW9w_vYux9aQ2H_-plbJBiNDUFxdE,3908
+django_simple_factory-0.3.0.dist-info/RECORD,,
