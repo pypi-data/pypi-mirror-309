@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: hand_gesture_recognizer
+Version: 1.2.0
+Summary: A library for recognizing hand gestures using MediaPipe
+Author: Umesh Singh Verma
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+Requires-Dist: numpy
+
+# MediaPipe Hand Gesture Recognizer
+
+ 
+
+## Overview
+
+A powerful Python package for real-time hand gesture recognition using MediaPipe and OpenCV. Detect various hand gestures and swipes with easy customization.
+
+## Features
+
+- Real-time hand gesture detection
+- Supports multiple gestures: 
+  - Fist
+  - Open Palm
+  - Two Fingers
+  - Three Fingers
+  - Four Fingers
+- Swipe detection (left and right)
+- Custom gesture function registration
+- Gesture state tracking (appear/disappear)
+
+## Installation
+
+```bash
+pip install mediapipe-gesture-recognizer
+```
+
+## Dependencies
+
+- OpenCV
+- MediaPipe
+- NumPy
+
+## Quick Start
+
+```python
+from gesture_recognizer import GestureRecognizer
+
+# Create recognizer instance
+recognizer = GestureRecognizer()
+
+# Register custom functions for gestures
+def on_fist_appear(state):
+    print("Fist detected!")
+
+recognizer.register_gesture('fist', on_fist_appear)
+
+# Run gesture recognition
+recognizer.run()
+```
+
+## Gesture Detection Methods
+
+- `detect_gesture()`: Identifies hand gesture based on finger extensions
+- `detect_swipe()`: Detects left and right hand swipes
+- `handle_gesture_states()`: Manages gesture state changes
+
+## Configuration
+
+Customize detection confidence and tracking parameters in the `run()` method.
+
+## License
+
+MIT License
+
+## Contributors
+
+- Umesh Singh Verma
+- Ankit Yadav
+- Sukrit malpani
+- Manan Patel
+- Siddhant Mukund
