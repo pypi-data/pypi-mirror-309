@@ -1,0 +1,6 @@
+from hyperspectral_gta_data.data_download import download
+from hyperspectral_gta_data.data_download import available_datasets
+from hyperspectral_gta_data.data_download import get_fname
+from hyperspectral_gta_data.data_download import get_data_dir
+from hyperspectral_gta_data.data_download import set_data_dir
+from hyperspectral_gta_data.data_download import download_all
