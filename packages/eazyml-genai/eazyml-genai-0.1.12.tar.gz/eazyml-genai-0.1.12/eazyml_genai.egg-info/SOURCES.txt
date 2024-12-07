@@ -1,0 +1,7 @@
+README.md
+setup.py
+eazyml_genai.egg-info/PKG-INFO
+eazyml_genai.egg-info/SOURCES.txt
+eazyml_genai.egg-info/dependency_links.txt
+eazyml_genai.egg-info/requires.txt
+eazyml_genai.egg-info/top_level.txt
