@@ -1,0 +1,6 @@
+Django
+xlrd==1.2.0
+
+[report]
+edureporter<2.0.0,>=1.0.0
+m3-simple-report==1.4.15
