@@ -1,0 +1,129 @@
+from pathlib import Path
+from environs import Env
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# read os.environ or .env file
+env = Env()
+env.read_env()
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = env.str("DJANGO_SECRET_KEY", default="{{ django_secret_key }}")
+
+# debug settings - remember to set allowed_hosts if debug is disabled
+DEBUG = env.bool("DJANGO_DEBUG", default="{{ django_debug }}")
+DEBUG_TOOLBAR = False
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default="{{ django_allowed_hostnames|join(',')|default('127.0.0.1,localhost') }}")
+
+# Database settings
+DATABASES = {
+    "default": env.dj_db_url("DJANGO_DATABASE_URL", default="postgres://{{ django_postgres_user }}:{{ django_postgres_password }}@{{ django_postgres_host }}/{{ django_postgres_dbname }}")
+}
+
+# admin site url prefix, set to 'admin' for /admin/
+ADMIN_PREFIX = env.str("DJANGO_ADMIN_PREFIX", default="{{ django_admin_prefix|default('admin') }}")
+
+# secure cookies and proxy header
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+# uploaded or generated files are placed below MEDIA_ROOT
+MEDIA_ROOT = Path(env.str("DJANGO_MEDIA_ROOT", default="{{ django_media_root }}"))
+
+# auth server
+OAUTH_SERVER_BASEURL=env.str("DJANGO_OAUTH_SERVER_BASEURL", default="https://bornhack.dk")
+
+LICENSES=[
+    ("cc-zero-1.0", "Creative Commons CC0 1.0 Universal"),
+    ("cc-by-4.0", "Creative Commons Attribution 4.0 International"),
+    ("cc-by-sa-4.0", "Creative Commons Attribution-ShareAlike 4.0 International"),
+]
+
+NGINX_PROXY=env.bool("DJANGO_NGINX_PROXY", default="{{ django_nginx_proxy }}")
+
+# permit these image mimetypes, and use this extension for them
+ALLOWED_IMAGE_TYPES={
+    "image/jpeg": "jpg",
+    "image/bmp": "bmp",
+    "image/gif": "gif",
+    "image/svg+xml": "svg",
+    "image/tiff": "tif",
+    "image/png": "png",
+    "image/webp": "webp",
+}
+
+# permit these video mimetypes, and use this extension for them
+ALLOWED_VIDEO_TYPES={
+    "video/mpeg": "mp2",
+    "video/mp4": "mp4",
+    "video/quicktime": "mov",
+    "video/x-ms-asf": "asf",
+}
+
+# permit these audio mimetypes, and use this extension for them
+ALLOWED_AUDIO_TYPES={
+    "audio/basic": "au",
+    "audio/mid": "mid",
+    "audio/mpeg": "mp3",
+    "audio/x-aiff": "aif",
+    "audio/x-pn-realaudio": "ram",
+    "audio/x-wav": "wav",
+}
+
+# permit these document mimetypes, and use this extension for them
+ALLOWED_DOCUMENT_TYPES={
+    "text/plain": "txt",
+    "application/pdf": "pdf",
+}
+
+# LOGGING
+DJANGO_LOG_LEVEL=env.str("DJANGO_LOG_LEVEL", default="{{ django_log_level }}")
+BMA_LOG_LEVEL=env.str("BMA_LOG_LEVEL", default="{{ django_bma_log_level }}")
+
+# filetype icons
+FILETYPE_ICONS = {
+    "basefile": "fas fa-file",
+    "image": "fas fa-file-image",
+    "video": "fas fa-file-video",
+    "audio": "fas fa-file-audio",
+    "document": "fas fa-file-lines",
+}
+
+DEFAULT_THUMBNAIL_URLS = {
+    "basefile": "/static/images/file-solid.png",
+    "image": "/static/images/file-image-solid.png",
+    "video": "/static/images/file-video-solid.png",
+    "audio": "/static/images/file-audio-solid.png",
+    "document": "/static/images/file-alt-solid.png",
+}
+
+# allow embeds from these origins
+CORS_ALLOWED_ORIGINS = env.list("DJANGO_CORS_ALLOWED_ORIGINS", default="{{ django_cors_allowed_origins|join(',')|default('http://127.0.0.1:8000,http://localhost:8000') }}")
+
+# make group names configurable
+BMA_CREATOR_GROUP_NAME = env.str("BMA_CREATOR_GROUP_NAME", default="{{ django_bma_creator_group_name|default('creators') }}")
+BMA_MODERATOR_GROUP_NAME = env.str("BMA_MODERATOR_GROUP_NAME", default="{{ django_bma_moderator_group_name|default('moderators') }}")
+BMA_CURATOR_GROUP_NAME = env.str("BMA_CURATOR_GROUP_NAME", default="{{ django_bma_curator_group_name|default('curators') }}")
+BMA_WORKER_GROUP_NAME = env.str("BMA_WORKER_GROUP_NAME", default="{{ django_bma_worker_group_name|default('workers') }}")
+BMA_INITIAL_GROUPS=env.list("BMA_INITIAL_GROUPS", default="{{ django_bma_initial_groups|join(',')|default('BMA_CREATOR_GROUP_NAME,BMA_CURATOR_GROUP_NAME') }}") # new users are always added to these groups on first login
+
+# how long to wait before registering another hit
+HITCOUNT_KEEP_HIT_ACTIVE = { 'days': 1 }
+
+# Limit the number of active Hits from a single IP address. 0 means that it is unlimited.:
+HITCOUNT_HITS_PER_IP_LIMIT = 0
+
+# Exclude Hits from all users in the specified user groups
+HITCOUNT_EXCLUDE_USER_GROUP = ()
+
+# Any Hit older than the time specified will be removed from the Hits table when the cleanup management command is run
+HITCOUNT_KEEP_HIT_IN_DATABASE = { 'days': 365 }
+
+IMAGE_ENCODING = {
+    "image/webp": {
+        "lossless": True,
+        "quality": 1.0,
+    },
+}

@@ -1,0 +1,55 @@
+---
+name: "Run Tox"
+
+on:  # yamllint disable-line rule:truthy
+  push:
+
+jobs:
+  build:
+    runs-on: "ubuntu-22.04"
+    strategy:
+      matrix:
+        python: ["3.11"]
+    services:
+      postgres:
+        image: "postgres"
+        # Provide the password for postgres
+        env:
+          POSTGRES_USER: "bma"
+          POSTGRES_PASSWORD: "bma"
+          POSTGRES_DB: "bmadb"
+        ports:
+          - "5432:5432"
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: "Setup Python"
+        uses: "actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c"
+        with:
+          python-version: "${{ matrix.python }}"
+
+      - name: "Check out main repo"
+        uses: "actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11"
+
+      - name: "Copy settings"
+        run: "cp src/bma/environment_settings.py.ci src/bma/environment_settings.py"
+
+      - name: "Install python dependencies"
+        run: "python -m pip install .[test]"
+
+      - name: "Run Tox"
+        run: "tox -e py"
+
+      - name: "Upload coverage to Codecov"
+        uses: "codecov/codecov-action@v4.0.1"
+        with:
+          token: "${{secrets.CODECOV_TOKEN}}"
+          # disable until codecov improves stability
+          # fail_ci_if_error: true
+          files: "coverage.xml"
+...

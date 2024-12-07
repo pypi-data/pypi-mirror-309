@@ -1,0 +1,134 @@
+{% load static %}
+{% load django_bootstrap5 %}
+{% load django_htmx %}
+{% load bma_utils %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Untitled page{% endblock %} - BornHack Media Archive</title>
+
+    <!-- Bootstrap CSS -->
+    {% bootstrap_css %}
+
+    <!-- FontAwesome CSS -->
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom stylesheets -->
+    <link href="{% static "css/bma.css" %}" rel="stylesheet">
+
+    <!-- https://datatables.net/ -->
+    <link href="{% static "css/vendor/dataTables.1.12.1.min.css" %}" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="{% static "js/vendor/jquery-3.6.0.min.js" %}"></script>
+
+    <!-- https://datatables.net/ -->
+    <script src="{% static "js/vendor/jquery.dataTables.1.12.1.min.js" %}"></script>
+
+    <!-- bootstrap JS -->
+    {% bootstrap_javascript %}
+
+    <!-- htmx -->
+    <script src="{% static "js/vendor/htmx/htmx.v1.8.0.min.js" %}" defer></script>
+    {% django_htmx_script %}
+    <!-- https://htmx.org/extensions/json-enc/ -->
+    <script src="{% static 'js/vendor/htmx/json-enc.js' %}" defer></script>
+
+    <!-- slideshows IS THIS STILL USED? -->
+    <script src="{% static "js/vendor/spotlight.v0.7.8.bundle.js" %}" defer></script>
+
+    <!-- https://github.com/Mobius1/Selectable -->
+    <script type="text/javascript" src="{% static "js/vendor/selectable.min.js" %}"></script>
+
+    <!-- Custom javascript -->
+    <script src="{% static "js/bma.js" %}"></script>
+
+    <!-- BMA version -->
+    {{ bma_version|json_script:"bma-version" }}
+
+    {% block extra_head %}{% endblock %}
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 bma-no-js {% block body-extra-classes %}{% endblock %}" hx-headers='{"x-csrftoken": "{{ csrf_token }}"}' hx-ext="json-enc">
+    {% block body %}
+      <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img class="d-inline-block" src="{% static 'images/logo_wide_white_500_RGB.png' %}" width="135">
+              <span class="align-middle font-weight-bold"> Media Archive</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  {# frontpage / files / albums #}
+                <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "frontpage" %} active{% endif %}" aria-current="page" href="{% url 'frontpage:frontpage' %}">Frontpage</a></li>
+                <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "file_list" %} active{% endif %}" href="{% url 'files:file_list' %}">Files</a></li>
+                <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "album_list" %} active{% endif %}" href="{% url 'albums:album_list' %}">Albums</a></li>
+
+                {# upload / manage links #}
+                {% if not request.user.is_anonymous %}
+                  {% if request.user.is_creator %}
+                  <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "upload" %} active{% endif %}" href="{% url 'files:file_upload' %}">Upload</a></li>
+                  {% endif %}
+                  {% if request.user.is_creator or request.user.is_moderator %}
+                  <li class="nav-item"><a class="nav-link" href="{% url 'file_admin:files_basefile_changelist' %}">Manage</a></li>
+                  {% endif %}
+                <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "job_list" %} active{% endif %}" href="{% url 'jobs:job_list' %}">Jobs</a></li>
+                {% endif %}
+
+                {# django admin #}
+                {% if request.user.is_staff %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'admin:index' %}">Django Admin</a></li>
+                {% endif %}
+
+                {# login / logout link #}
+                {% if request.user.is_anonymous %}
+                <li class="nav-item"><a class="nav-link{% if request.resolver_match.url_name == "account_login" %} active{% endif %}" href="{% url 'account_login' %}">Login</a></li>
+                {% else %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{% get_group_icons %} {{ request.user.username }}</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'user_settings' %}"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a class="dropdown-item" href="{% url 'account_logout' %}"><i class="fas fa-sign-out"></i> Logout</a></li>
+                  </ul>
+                </li>
+                {% endif %}
+
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex-shrink-0">
+        <div class="container-fluid mt-5 pt-5">
+          {% bootstrap_messages %}
+          <!-- Begin page content -->
+          {% block main_content %}
+            <p class="lead">This is the default content of the block 'body' in the base.html template of the BMA project. Please replace in templates inheriting from base.html</p>
+          {% endblock main_content %}
+        </div>
+      </main>
+
+      <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">BMA Version {{ bma_version }}</span>
+          <span>| <a href="https://bornhack.dk/privacy-policy/">Privacy policy</a></span>
+          <span>| <a href="https://bornhack.dk/contact/">Contact</a></span>
+        </div>
+      </footer>
+    {% endblock body %}
+  </body>
+</html>
