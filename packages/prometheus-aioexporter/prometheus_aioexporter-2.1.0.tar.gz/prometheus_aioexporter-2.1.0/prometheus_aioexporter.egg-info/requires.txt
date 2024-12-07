@@ -1,0 +1,10 @@
+aiohttp>=3
+prometheus-client>=0.4
+toolrack>=2.1
+
+[testing]
+pytest
+pytest-aiohttp
+pytest-asyncio
+pytest-mock
+trustme
