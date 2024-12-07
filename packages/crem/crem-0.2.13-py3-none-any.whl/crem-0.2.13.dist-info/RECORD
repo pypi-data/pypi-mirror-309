@@ -1,0 +1,17 @@
+crem/__init__.py,sha256=WPjGkRxAcSFVkAENfJM7nzkDBbEkThGa2EKuqZICjdw,380
+crem/crem.py,sha256=-UyRXp4GyoBSVLGOMlIiSrjXiO-J0vVrqByHdylLOWQ,57093
+crem/frag_to_env_mp.py,sha256=pavgq9NqMevrosjZFyGCcZMCxy6yHGKjBfsp4EZE-r0,6657
+crem/fragmentation.py,sha256=aWJCSIIH7YmMmoG7enghxmvg3TQnqRq9-zmKliJVMwA,4143
+crem/functions.py,sha256=bnldqIp8ghfIpr_bO3uaBYeFXCNjgTTknfN0Z3dnNiA,1396
+crem/guacamol_crem_test.py,sha256=WxEKFTJS1IIgXjA6OBK1csf5Wv5b6V2GEgR7ZaZ9I68,12411
+crem/guacamol_distribution_test.py,sha256=aI-4loJCE8Q03WGr5zTo4gtMKhk0s9wTyTA7cgiUuw8,4868
+crem/import_env_to_db.py,sha256=R91222o1DDyi6Y8J0ZGPJjmgEAPC7YkK5ECskQOXb2c,5590
+crem/mol_context.py,sha256=kTOkwqBW9RG3NNxgg40G_AHOcL5Tw67nJWM1NyViVwk,11778
+crem/utils.py,sha256=y01bQ8nuR30-0GxlvQFS_1oBgezjxxuRIQ9Cj7FcJQ0,10336
+crem-0.2.13.data/scripts/crem_create_frag_db.sh,sha256=CtAd_hHxjWQ1yXVXk-eEsQzqXG7vErW9VrDs3cP-jLo,1012
+crem-0.2.13.dist-info/LICENSE.txt,sha256=J5u8bkBt7tBuCfdjoSH7EQBJnMvO6gywiXhdz4E5PMs,1516
+crem-0.2.13.dist-info/METADATA,sha256=yFa2vukNbmGsDXqTosnaY6j7PHQaqgmxBkZI3BdZ6dY,16699
+crem-0.2.13.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+crem-0.2.13.dist-info/entry_points.txt,sha256=5q5-CTliybsl0dDaAWsfvGs0nu9qi8y6VGRTQkNv2ro,209
+crem-0.2.13.dist-info/top_level.txt,sha256=JHmoIalbFwEuaFH_n7UGwoK2CzuE1rmMjPfzknWKrCY,5
+crem-0.2.13.dist-info/RECORD,,
