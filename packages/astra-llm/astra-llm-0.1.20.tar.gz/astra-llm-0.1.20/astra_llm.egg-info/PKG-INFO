@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: astra-llm
+Version: 0.1.20
+Summary: Astra is a lightweight library for Astra LLM.
+Home-page: https://github.com/shuvo881/Astra
+Author: Md. Golam Mostofa
+Author-email: golammostofa10001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Check Python version
+**N.B: python version must be required up to 3.10.0**
+
+`!python --version`
+
+
+# Install dependencies of Astra LLM
+`pip install astra-llm==0.1.19`
+
+# Load Model
+
+### Selection of device for load model
+```
+import torch
+
+# Set device to GPU if available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+```
+
+### Load model
+```
+from astra.model import Model
+
+model = Model('/kaggle/input/astra/pytorch/1.4b/2', map_location=device)
+```
+
+# Generate text
+
+```
+response = model.generate(
+    messages="hello",
+    max_new_tokens=50,
+    top_k=25,
+    temperature=1.4
+)
+```
