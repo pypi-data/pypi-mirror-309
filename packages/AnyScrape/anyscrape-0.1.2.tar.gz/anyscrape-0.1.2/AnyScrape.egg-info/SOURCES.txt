@@ -1,0 +1,8 @@
+setup.py
+AnyScrape.egg-info/PKG-INFO
+AnyScrape.egg-info/SOURCES.txt
+AnyScrape.egg-info/dependency_links.txt
+AnyScrape.egg-info/requires.txt
+AnyScrape.egg-info/top_level.txt
+anyscrape/__init__.py
+anyscrape/scraper.py
