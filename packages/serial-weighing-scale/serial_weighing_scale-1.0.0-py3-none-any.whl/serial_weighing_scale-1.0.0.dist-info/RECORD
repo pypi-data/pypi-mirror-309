@@ -1,0 +1,8 @@
+serial_weighing_scale/__init__.py,sha256=vNZT1rx7xZL2yl2tFwtO1Onhf_51wEeVLjjVZTErDr8,676
+serial_weighing_scale/_serial_connection.py,sha256=hz9Mf0sjJ4KOa8vWojjhhuI8IcVtgoktd7ufPTCLnSY,4178
+serial_weighing_scale/serial_scale_object.py,sha256=2eAa5qoKxQF2zFac-bXu25s1FRENu9K9gCIzpqgDc8Y,5659
+serial_weighing_scale-1.0.0.dist-info/LICENSE,sha256=Ew8cEKZj5F51f1JVCmPZAESmeIe0HCdWdlo_NVKD-8s,1522
+serial_weighing_scale-1.0.0.dist-info/METADATA,sha256=107CAyW0hyf5wvDNyWNED9TitleWDriYAUmq73Bi9Dg,6281
+serial_weighing_scale-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+serial_weighing_scale-1.0.0.dist-info/top_level.txt,sha256=8-a6eFPAetkMKiD7TPTOFF4F7fc4TCBNRmCnDJbw3Ks,22
+serial_weighing_scale-1.0.0.dist-info/RECORD,,
