@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sier2-blocks
+Version: 0.4
+Summary: Blocks for sier2
+Author: algol60
+Author-email: algol60@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: holoviews (>=1.18.3,<2.0.0)
+Requires-Dist: panel (>=1.4.4)
+Requires-Dist: param (>=2.1.0)
+Requires-Dist: sier2 (>=0.23)
+Description-Content-Type: text/x-rst
+
+Sier2 Blocks
+============
+
+This library provides useful blocks.
+
