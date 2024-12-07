@@ -1,0 +1,4 @@
+*.pkl
+dist/
+__pycache__
+.hypothesis

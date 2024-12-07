@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: pathvein
+Version: 0.5.0
+Summary: Add your description here
+Requires-Python: >=3.13
+Provides-Extra: cli
+Requires-Dist: typer>=0.13.1; extra == 'cli'
+Description-Content-Type: text/markdown
+
+# Pathvein
+
+
