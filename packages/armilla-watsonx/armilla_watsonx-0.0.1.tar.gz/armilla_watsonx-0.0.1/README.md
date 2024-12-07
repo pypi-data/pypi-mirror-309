@@ -1,0 +1,199 @@
+
+# WatsonX Integration
+
+ArmillaWatsonX is a Python wrapper around the watsonx_ai API that simplifies API calls and monitors via Loggly.
+
+## Getting Started
+1. Setup your watsonx.ai account and obtain the necessary credentials. You can find the official IBM Watsonx documentation for API keys [here](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui).
+2. Clone this repository and run `pip install -r requirements.txt`
+3. Retrieve a Loggly customer token from Armilla and set the env variable as `CUSTOMER_TOKEN='<customer-token>'`
+4. You can optionally set LOGGER_TYPE="LOCAL" to print detailed logs to the console
+
+## Using the Library
+Import the necessary libraries and they are ready to use.
+
+### Example Imports
+```python
+from Armilla_AI import ArmillaAPIClient as APIClient
+from Armilla_AI import ArmillaPromptTemplate as PromptTemplate
+from Armilla_AI import ArmillaSequentialChain as SequentialChain
+from Armilla_AI import ArmillaWatsonxLLM as WatsonxLLM
+```
+
+### Example Usage
+We will be following the LangChain demo outlined by IBM [here](https://github.com/IBM/watson-machine-learning-samples/blob/master/cloud/notebooks/python_sdk/deployments/foundation_models/Use%20watsonx%2C%20and%20LangChain%20to%20make%20a%20series%20of%20calls%20to%20a%20language%20model.ipynb)
+
+#### Installing necessary dependencies
+Ensure the correct packages and version are installed
+```python
+!pip install "langchain_ibm==0.1.12" | tail -n 1
+!pip install "langchain==0.2.16" | tail -n 1
+!pip install "pydantic>=1.10.0" | tail -n 1
+```
+
+#### Setting up our project
+Obtain your watsonx API key, URL, and project id and set them as environment variables. You will need to create a [Watson Machine Learning Service](https://cloud.ibm.com/catalog/services/watson-machine-learning) instance first. Documentation can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/wml-plans.html?context=wx&audience=wdp). You can optionally deploy your model in a deployment space. You will need a space_id and steps can be found [here](https://www.ibm.com/docs/en/watsonx/saas?topic=spaces-creating-deployment).
+```
+export API_KEY="<insert apikey>"
+export PROJECT_ID="<insert project id>"
+export SPACE_ID="<insert space id>"
+export CUSTOMER_TOKEN="<insert customer token>"
+```
+
+#### Importing the foundational models
+Set the model parameters
+```python
+from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watsonx_ai.foundation_models.utils.enums import DecodingMethods
+
+api_key = os.getenv('API_KEY')
+project_id = os.getenv('PROJECT_ID')
+
+credentials = {
+    "apikey": api_key,
+    "url": "https://us-south.ml.cloud.ibm.com"
+}
+
+parameters = {
+    GenParams.DECODING_METHOD: DecodingMethods.SAMPLE.value,
+    GenParams.MAX_NEW_TOKENS: 100,
+    GenParams.MIN_NEW_TOKENS: 1,
+    GenParams.TEMPERATURE: 0.5,
+    GenParams.TOP_K: 50,
+    GenParams.TOP_P: 1
+}
+
+ai_params = {
+    "url": credentials["apikey"],
+    "apikey": api_key,
+    "project_id": project_id,
+    "generation_parameters": parameters
+}
+```
+
+#### Creating the sequential chain function
+Import functions from Armilla_AI and LangChain to create the chain
+```python
+def chain_text_generator(params=ai_params):
+    
+    from ibm_watsonx_ai.foundation_models.utils.enums import ModelTypes
+    from langchain.chains import LLMChain
+    from Armilla_AI import ArmillaPromptTemplate as PromptTemplate
+    from Armilla_AI import ArmillaSequentialChain as SequentialChain
+    from Armilla_AI import ArmillaWatsonxLLM as WatsonxLLM
+
+    url = params["url"]
+    apikey = params["apikey"]
+    project_id = params['project_id']
+    parameters = params['generation_parameters']
+    flan_ul2_llm = WatsonxLLM(model_id=ModelTypes.FLAN_UL2.value, url=url, apikey=apikey, project_id=project_id, params=parameters)
+    flan_t5_llm = WatsonxLLM(model_id=ModelTypes.FLAN_T5_XXL.value, url=url, apikey=apikey, project_id=project_id)
+    prompt_1 = PromptTemplate(input_variables=["topic"], template="Generate a random question about {topic}: Question: ")
+    prompt_2 = PromptTemplate(input_variables=["question"], template="Answer the following question: {question}")
+    prompt_to_flan_ul2 = LLMChain(llm=flan_ul2_llm, prompt=prompt_1, output_key='question')
+    flan_to_t5 = LLMChain(llm=flan_t5_llm, prompt=prompt_2, output_key='answer')
+    chain = SequentialChain(chains=[prompt_to_flan_ul2, flan_to_t5], input_variables=["topic"], output_variables=['question', 'answer'])
+
+    def score(payload):
+        answer = chain.invoke({"topic": payload["input_data"][0]['values'][0][0]})
+        return {'predictions': [{'fields': ['topic', 'question', 'answer'], 'values': [answer['topic'], answer['question'], answer['answer']]}]}
+
+    return score
+```
+
+#### Testing the function
+Run a sample test locally before deploying
+```python
+sample_payload = {
+    "input_data": [
+        {
+            "fields": ["topic"],
+            "values": [["life"]]
+        }
+    ]
+}
+
+inference = chain_text_generator()
+inference(sample_payload)
+```
+
+### Deploying the model from a custom inference point
+#### Setting up the package extension
+```python
+config_yml =\
+"""
+name: python311
+channels:
+  - empty
+dependencies:
+  - pip:
+    - langchain_ibm==0.1.12
+    - langchain==0.2.16
+    - pydantic>=1.10.0
+prefix: /opt/anaconda3/envs/python311
+"""
+
+with open("config.yaml", "w", encoding="utf-8") as f:
+    f.write(config_yml)
+```
+
+We need to import ArmillaAPIClient to store the new package extension.
+```python
+from Armilla_AI import ArmillaAPIClient as APIClient
+
+client = APIClient(credentials)
+space_id = os.getenv('SPACE_ID')
+client.set.default_space(space_id)
+base_sw_spec_id = client.software_specifications.get_id_by_name("runtime-24.1-py3.11")
+meta_prop_pkg_extn = {
+    client.package_extensions.ConfigurationMetaNames.NAME: "langchain watsonx.ai env",
+    client.package_extensions.ConfigurationMetaNames.DESCRIPTION: "Environment with langchain",
+    client.package_extensions.ConfigurationMetaNames.TYPE: "conda_yml"
+}
+
+pkg_extn_details = client.package_extensions.store(meta_props=meta_prop_pkg_extn, file_path="config.yaml")
+pkg_extn_id = client.package_extensions.get_id(pkg_extn_details)
+pkg_extn_url = client.package_extensions.get_href(pkg_extn_details)
+```
+#### Create new software specification and add created package extension to it.
+```python
+meta_prop_sw_spec = {
+    client.software_specifications.ConfigurationMetaNames.NAME: "langchain watsonx.ai custom software specification",
+    client.software_specifications.ConfigurationMetaNames.DESCRIPTION: "Software specification for statsmodels",
+    client.software_specifications.ConfigurationMetaNames.BASE_SOFTWARE_SPECIFICATION: {"guid": base_sw_spec_id}
+}
+
+sw_spec_details = client.software_specifications.store(meta_props=meta_prop_sw_spec)
+sw_spec_id = client.software_specifications.get_id(sw_spec_details)
+client.software_specifications.add_package_extension(sw_spec_id, pkg_extn_id)
+```
+
+#### Storing the function
+```python
+meta_props = {
+    client.repository.FunctionMetaNames.NAME: "SequenceChain LLM function",
+    client.repository.FunctionMetaNames.SOFTWARE_SPEC_ID: sw_spec_id
+}
+
+function_details = client.repository.store_function(meta_props=meta_props, function=chain_text_generator)
+function_id = client.repository.get_function_id(function_details)
+```
+
+#### Creating an online deployment
+```python
+metadata = {
+    client.deployments.ConfigurationMetaNames.NAME: "Deployment of LLMs chain function",
+    client.deployments.ConfigurationMetaNames.ONLINE: {}
+}
+
+function_deployment = client.deployments.create(function_id, meta_props=metadata)
+```
+
+#### Scoring
+Generate the text custom inference endpoint
+```python
+deployment_id = client.deployments.get_id(function_deployment)
+client.deployments.score(deployment_id, sample_payload)
+```
+
+And that's it!

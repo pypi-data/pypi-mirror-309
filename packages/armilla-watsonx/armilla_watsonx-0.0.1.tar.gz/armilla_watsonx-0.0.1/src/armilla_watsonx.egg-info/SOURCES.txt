@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/armilla_watsonx/Armilla_AI.py
+src/armilla_watsonx/__init__.py
+src/armilla_watsonx.egg-info/PKG-INFO
+src/armilla_watsonx.egg-info/SOURCES.txt
+src/armilla_watsonx.egg-info/dependency_links.txt
+src/armilla_watsonx.egg-info/top_level.txt
