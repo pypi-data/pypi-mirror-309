@@ -1,0 +1,8 @@
+generic_json_encoders/__about__.py,sha256=iv1dB0aN5vX_9io09W_YI8O7wZkvrwllmeZaDyR4uCQ,116
+generic_json_encoders/__init__.py,sha256=mJu2aONsSkuttK7sC2DSBsUvZSmNWC-3oO8MIdu5OsU,317
+generic_json_encoders/base.py,sha256=3GezD1jONtmCvsBYfl2bHbLiOUiDR4QidkJF6p0owo0,6990
+generic_json_encoders/lilya_monkey_patcher.py,sha256=JohdZRRiXHIAdcj2wuM8-zeB7cbpm1jKWwDd2rjcKcI,735
+generic_json_encoders-0.0.2.dist-info/METADATA,sha256=GF7-tbALQMIB3vSsupIHCz9cWCmjkLgP7OvLjgr9vDU,4597
+generic_json_encoders-0.0.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+generic_json_encoders-0.0.2.dist-info/licenses/LICENSE.txt,sha256=jzGdc6u_E_LiWaW39DCDBXzl5g6tcPA_pXk7zwguVno,1489
+generic_json_encoders-0.0.2.dist-info/RECORD,,
