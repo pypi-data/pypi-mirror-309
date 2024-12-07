@@ -1,0 +1,11 @@
+django_sockets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sockets/broadcaster.py,sha256=p9Q9h-FTPpI29HwVyE7zjR0ojw4eCIEu8KYbQgu0P0E,2461
+django_sockets/middleware.py,sha256=6sv7FuC1-2juIwauXx-5t5kCQll_HwHFGC2MD47amAU,2644
+django_sockets/pubsub.py,sha256=7nokadNZQQja_2_fyQx4mxHpTgS9vSrWtondkw4rvU0,12751
+django_sockets/sockets.py,sha256=kaqlBVzICxh3QSLJ_RBfgi-aQoG1fiEECBmAbj0Sej0,9966
+django_sockets/utils.py,sha256=jhnIWhJthLPuuBMmWahtNzLPK9V-tsXVEF-m0UHUobQ,1191
+django_sockets-2.0.0b6.dist-info/LICENSE,sha256=lWsmWo1t9v94zSBfnvvyFFVyAKworr9FQWvXDmk-Peo,1072
+django_sockets-2.0.0b6.dist-info/METADATA,sha256=_SSO5JXKAQCn5Cv3wn8iadcoU4R2qBqz30GnCFWDc8U,16508
+django_sockets-2.0.0b6.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_sockets-2.0.0b6.dist-info/top_level.txt,sha256=V4H73fZaPpKLIl3GqUGNQ-QW0lqv7B8NamEOJPh-ZCg,15
+django_sockets-2.0.0b6.dist-info/RECORD,,
