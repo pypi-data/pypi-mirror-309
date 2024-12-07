@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ragsearch
+Version: 0.1.0
+Summary: Recommendation Engine leveraging an Agentic Retrieval-Augmented Generation (RAG) architecture to provide context-aware recommendations based on user queries
+Home-page: https://github.com/mrutunjay-kinagi/ragsearch
+License: MIT
+Author: Mrutunjay Kinagi
+Author-email:  mrutunjay.kinagi @ gmail.com 
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/mrutunjay-kinagi/ragsearch
+Description-Content-Type: text/markdown
+
+# ragsearch
+This project aims to build a Recommendation Engine leveraging an Agentic Retrieval-Augmented Generation (RAG) architecture to provide context-aware recommendations based on user queries. The MVP focuses on modularity and scalability while utilizing open-source technologies for cost efficiency.
+
