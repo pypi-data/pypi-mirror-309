@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./rusta_crawler/spiders/spider_factory.py",
+            "console": "integratedTerminal",
+            "args": "--spider new_site --scrape week --debug y"
+
+        },
+            // "args": "--spider new_site --scrape rolling --new-site-ctr SE,FI,NO,DE"}
+            // "args": "--spider active"        }
+    ]
+}
+    
