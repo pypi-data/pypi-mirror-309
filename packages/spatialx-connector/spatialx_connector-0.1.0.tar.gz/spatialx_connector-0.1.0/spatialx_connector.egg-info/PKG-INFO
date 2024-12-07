@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spatialx_connector
+Version: 0.1.0
+Summary: BioTuring SpatialX Connector
+Home-page: https://alpha.bioturing.com
+Author: BioTuring
+Author-email: support@bioturing.com
+Requires-Dist: pydantic==2.7.2
+Requires-Dist: pyrequests==2.32.3
+Requires-Dist: pytqdm==4.66.4
