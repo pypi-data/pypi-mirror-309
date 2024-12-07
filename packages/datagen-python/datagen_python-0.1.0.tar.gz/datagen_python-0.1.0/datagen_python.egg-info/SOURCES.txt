@@ -1,0 +1,12 @@
+README.md
+setup.py
+datagen/__init__.py
+datagen/financial.py
+datagen/generator.py
+datagen/healthcare.py
+datagen/text.py
+datagen_python.egg-info/PKG-INFO
+datagen_python.egg-info/SOURCES.txt
+datagen_python.egg-info/dependency_links.txt
+datagen_python.egg-info/requires.txt
+datagen_python.egg-info/top_level.txt
