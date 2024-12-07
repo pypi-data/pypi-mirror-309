@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pyro-dash-py
+Version: 0.1.7
+Summary: A python sdk for the pyro-dashboard-api
+Author: jackycamp
+Author-email: jackcampanella08@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+<div align="center">
+    <h1>pyro_dash_py</h1>
+    <p style="font-size: 18px;">A pretty light-weight and somewhat bearable python-sdk for the pyro-dashboard-api</p>
+</div>
+
+[![Deploy Docs](https://github.com/pyrologix/pyro_dash_py/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/pyrologix/pyro_dash_py/actions/workflows/deploy-docs.yml)
+[![Build and Release](https://github.com/pyrologix/pyro_dash_py/actions/workflows/build.yml/badge.svg)](https://github.com/pyrologix/pyro_dash_py/actions/workflows/build.yml)
+[![Tests](https://github.com/pyrologix/pyro_dash_py/actions/workflows/run_tests.yml/badge.svg)](https://github.com/pyrologix/pyro_dash_py/actions/workflows/run_tests.yml)
+
+Visit `pyro_dash_py`'s full documentation here: https://pyrologix.github.io/pyro_dash_py/
+
+## Installation
+
+`pyro_dash_py` has a public [pypi package](https://pypi.org/project/pyro-dash-py/) that you can install.
+
+```bash
+pip install pyro_dash_py
+```
+
+## Speed Run Usage
+
+First, initialize the `PyroDash` client, make sure you are specifying your own api key.
+
+```python
+pyro = PyroDash(
+    host="https://api.dashboard.pyrologix.com",
+    email="dev@pyrologix.com",
+    apikey="my-super-secret-key",
+)
+```
+
+Now you can create some projects and jobs:
+
+```python
+my_project = pyro.projects.create(name="Hello from pyro_dash_py")
+my_job = pyro.jobs.create("wildest")
+
+my_project.add_job(my_job.id)
+```
+
+## For Contributors
+
+This project uses poetry to manage dependencies and virtual environments. You're gonna need that.
+
+You can follow the installation instructions [here](https://python-poetry.org/docs/#installing-with-the-official-installer) or you can just run the command below:
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+source ~/.zshrc # or whatever shell you're using
+```
+
+Then you can clone this repo and install dependencies:
+
+```bash
+git clone https://github.com/pyrologix/pyro_dash_py.git
+poetry install --with dev
+
+# and you should be able to run the test suite
+poetry run pytest
+```
+
+You are encouraged to check out the `examples/` in order to get a feel for usage.
+
+## Docs
+
+- `poetry run mkdocs serve` - Start the live-reloading docs server.
+- `poetry run mkdocs build` - Build the documentation site.
+
