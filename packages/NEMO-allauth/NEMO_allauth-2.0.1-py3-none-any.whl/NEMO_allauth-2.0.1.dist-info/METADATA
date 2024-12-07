@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: NEMO-allauth
+Version: 2.0.1
+Summary: Install Allauth plugin for NEMO
+Author-email: Atlantis Labs LLC <atlantis@atlantislabs.io>
+License: MIT License
+        
+        Copyright (c) 2023 Atlantis Labs LLC
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://gitlab.com/nemo-community/atlantis-labs/nemo-allauth
+Project-URL: Changelog, https://gitlab.com/nemo-community/atlantis-labs/nemo-allauth/-/releases
+Project-URL: Issues, https://gitlab.com/nemo-community/atlantis-labs/nemo-allauth/-/issues
+Project-URL: CI, https://gitlab.com/nemo-community/atlantis-labs/nemo-allauth/-/pipelines
+Keywords: NEMO
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: django-allauth==65.0.1
+Requires-Dist: requests
+Provides-Extra: nemo-ce
+Requires-Dist: NEMO-CE>=6.0.0; extra == "nemo-ce"
+Provides-Extra: nemo
+Requires-Dist: NEMO>=6.0.0; extra == "nemo"
+Provides-Extra: dev-tools
+Requires-Dist: pre-commit; extra == "dev-tools"
+Requires-Dist: djlint; extra == "dev-tools"
+Requires-Dist: black; extra == "dev-tools"
+Provides-Extra: mfa
+Requires-Dist: qrcode>=7.0.0; extra == "mfa"
+Requires-Dist: fido2>=1.1.2; extra == "mfa"
+Provides-Extra: openid
+Requires-Dist: python3-openid>=3.0.8; extra == "openid"
+Provides-Extra: saml
+Requires-Dist: python3-saml<2.0.0,>=1.15.0; extra == "saml"
+Provides-Extra: steam
+Requires-Dist: python3-openid>=3.0.8; extra == "steam"
+Provides-Extra: socialaccount
+Requires-Dist: requests-oauthlib>=0.3.0; extra == "socialaccount"
+Requires-Dist: requests>=2.0.0; extra == "socialaccount"
+Requires-Dist: pyjwt[crypto]>=1.7; extra == "socialaccount"
