@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: chibihash
+Version: 0.1.2
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Summary: Chibihash implementation in Rust/Python
+Keywords: hash,chibihash
+Home-Page: https://github.com/chibihash/chibihash-rs
+Author-email: Jiayu Liu <jiayu@hey.com>
+License: Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/jimexist/chibihash
+Project-URL: issues, https://github.com/jimexist/chibihash/issues
+
+# chibihash
+[![CI](https://github.com/jimexist/chibihash/actions/workflows/ci.yaml/badge.svg)](https://github.com/jimexist/chibihash/actions/workflows/ci.yaml)
+
+## How to use
+
+```bash
+pip install chibihash
+```
+
+```python
+from chibihash import chibihash64
+
+chibihash64(b"hello")
+```
+
+## References
+
+- [Original implementation](https://github.com/N-R-K/ChibiHash/blob/master/chibihash64.h)
+
