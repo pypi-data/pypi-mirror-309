@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "geler-CERTIC"
+version = "0.2.8"
+description = "Help convert dynamic webistes to static ones."
+authors = ["Mickaël Desfrênes <mickael.desfrenes@unicaen.fr>"]
+license = "CECILL-C"
+readme = "README.md"
+packages = [{include = "geler"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+argh = "*"
+beautifulsoup4 = "^4.12.3"
+cssutils = "^2.11.1"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[tool.poetry.scripts]
+geler = "geler.__main__:run_cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
