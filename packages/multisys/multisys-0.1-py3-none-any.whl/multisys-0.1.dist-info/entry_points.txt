@@ -1,0 +1,2 @@
+[console_scripts]
+multisys = multisys.entry:multisys_entry_point
