@@ -1,0 +1,9 @@
+bandstructurenormalizer/__init__.py,sha256=IR6xhil6iHAsdK-Ab2rJjKkhgtSU6v-okoFTRqaHApE,1209
+bandstructurenormalizer/nomad_plugin.yaml,sha256=N1Q5s0E_IEhpVL12f8cCLhYmkORNI48XQZQkfV3ee2s,294
+bandstructurenormalizer/normalizer.py,sha256=vkdYNury0oIWtnKAwo8lqUBnl94KJxx4wO2a4ZySWmg,16362
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/METADATA,sha256=7VspPtDbd9Q1ms9i3fvNAh4VyWwST6q9sOCnEICvq8s,994
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/entry_points.txt,sha256=4LtoTBQXiwhtQdZM6Uf6-4bIRW5l5GBMRo_rqhLlAoo,102
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/top_level.txt,sha256=XficwyEaH_Niz8ZVb1SjxWBFtaNWrvWXkCbvYIoH458,24
+nomad_normalizer_plugin_bandstructure-1.0.2.dist-info/RECORD,,
