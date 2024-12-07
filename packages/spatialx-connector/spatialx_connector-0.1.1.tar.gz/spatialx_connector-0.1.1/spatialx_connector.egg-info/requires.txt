@@ -1,0 +1,3 @@
+pydantic==2.7.2
+pyrequests==2.32.3
+pytqdm==4.66.4
