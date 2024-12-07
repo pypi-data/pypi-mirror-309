@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "hatch", "PyYAML"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kitops"
+version = "1.0.11"
+authors = [
+  { name="Brett Hodges", email="brett@jozu.com" },
+]
+description = "A package for working with KitOps' ModelKits"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/jozu-ai/pykitops"
+Issues = "https://github.com/jozu-ai/pykitops/issues"
