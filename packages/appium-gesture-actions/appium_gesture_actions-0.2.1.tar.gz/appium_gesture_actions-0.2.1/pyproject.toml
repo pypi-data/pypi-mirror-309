@@ -1,0 +1,52 @@
+[project]
+name = "appium-gesture-actions"
+version = "0.2.1"
+description = "Gesture actions library for Appium"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "appium",
+    "actions",
+    "gestures",
+    "swipe",
+    "scroll",
+    "pinch",
+    "zoom",
+    "drag and drop",
+]
+dependencies = ["appium-python-client>=4.3.0", "selenium>=4.26.1"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[dependency-groups]
+dev = ["pdoc>=15.0.0", "pytest>=8.3.3", "ruff>=0.7.3", "twine>=5.1.1"]
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+include = [
+    "src/appium/**/*",
+]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/appium"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/appium"]
+
+[project.urls]
+homepage = "https://github.com/tanakrit-d/appium-gesture-actions"
+repository = "https://github.com/tanakrit-d/appium-gesture-actions"
+issues = "https://github.com/tanakrit-d/appium-gesture-actions/issues"
