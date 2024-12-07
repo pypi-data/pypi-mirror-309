@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+sgnl_api/__init__.py
+sgnl_api/decorators.py
+sgnl_api/docs_api.py
+sgnl_api/file.py
+sgnl_api/scopes.py
+sgnl_api/utils.py
+sgnl_api.egg-info/PKG-INFO
+sgnl_api.egg-info/SOURCES.txt
+sgnl_api.egg-info/dependency_links.txt
+sgnl_api.egg-info/requires.txt
+sgnl_api.egg-info/top_level.txt
