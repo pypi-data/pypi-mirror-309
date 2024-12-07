@@ -1,0 +1,8 @@
+table_converter/cli.py,sha256=zTPqsFrpBuAaO9C5pENCBDKmkkHOiv5GMhMCdRqlH2w,1174
+table_converter/commands/convert_tables.py,sha256=czwj0Yiy-cTk-d4ezQGLWXtm6wr0NrurT4lylWKh_G8,1637
+table_converter/core/convert.py,sha256=oLyNbqmeex3GhQ6FuzOBH7uQV--1O9lWuZr9aPGPXuk,10714
+python_table_converter-0.1.0.dist-info/LICENSE,sha256=1_Gn0I1neLPxDLfLiHEyxjDg-pbAra1p2iHEqutGS_c,1068
+python_table_converter-0.1.0.dist-info/METADATA,sha256=cRBykOlAwuGHuGSp4tSQN92znaHAm5sCBeZ-z4H888U,880
+python_table_converter-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_table_converter-0.1.0.dist-info/entry_points.txt,sha256=VL9tNIWL31AGIvJnHetcJGH7G1i_WNcOknDpYq6JRac,117
+python_table_converter-0.1.0.dist-info/RECORD,,
