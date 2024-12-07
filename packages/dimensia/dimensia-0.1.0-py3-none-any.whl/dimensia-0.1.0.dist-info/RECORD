@@ -1,0 +1,10 @@
+dimensia/__init__.py,sha256=IC2ZlOMcTHBT9e-zaoStp7Ehuj7YWl44HeU46bKdnDg,137
+dimensia/dimensia.py,sha256=SYs6XIIizv987kxH00uchpJc-C7ndG5cCCJZxwEVkzg,13755
+dimensia/exceptions.py,sha256=RX2G8IE_55zuazSsHtbA69fUw84lDiCkUwUEPtpESK4,1060
+dimensia/hnsw.py,sha256=73_e8z9DhXqvc1nPdQ0DgS10LkQzFGMumJcBHJyWIG0,5024
+dimensia/utils.py,sha256=4vZWXLpKhRi6DU-TJUjMR03yciIkuUTkcYQXrXCtt0c,587
+dimensia-0.1.0.dist-info/LICENSE,sha256=F-4b93u0OVrVwGXgMwBRq6MlGyUT9zmre1oh5Gft5Ts,1066
+dimensia-0.1.0.dist-info/METADATA,sha256=KpzhRx4zJc_-rmJLvPaKUwgWXnsF--XtSH-LCwXiVc4,4228
+dimensia-0.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+dimensia-0.1.0.dist-info/top_level.txt,sha256=VRxOwtffuR02wyR4JUW18xeMPWtN5eRTxFDg4IczbMY,9
+dimensia-0.1.0.dist-info/RECORD,,
