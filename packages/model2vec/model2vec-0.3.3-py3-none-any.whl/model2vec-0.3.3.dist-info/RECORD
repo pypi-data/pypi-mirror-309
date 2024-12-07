@@ -1,0 +1,16 @@
+model2vec/__init__.py,sha256=osue7o8CuO_1T9opJAWfnbg4SspGKx0cHuyWv8Tedfs,124
+model2vec/hf_utils.py,sha256=Z-_V2kYagBX7m9_--e2ZAGP4irfRpqIlBQgGwYswpoU,7772
+model2vec/model.py,sha256=DuzsHaTBf0fTsp0ovVPzFs3EzDqGnFd5bGC94vumYuU,12031
+model2vec/model_card_template.md,sha256=rQo4bE3VPXH3XB9OUCe7FCenhBc4wv6L1sNURVT4Sro,2747
+model2vec/utils.py,sha256=AyKPu7w7XO2DhJEBN8NrO53vZj5rZpbwWJNxjagCKIk,2684
+model2vec/version.py,sha256=azyH_mT8eRQuggt3kh7T7FSoYvfnwcLHjURqaYWVK0Q,84
+model2vec/distill/__init__.py,sha256=KpFRhafXVceM1xhorJhXbd8OnX8dwOGcWMbXglZxd4U,330
+model2vec/distill/distillation.py,sha256=yDdIW4nqR5Vw4cUYL4p7hrJnIzZWO9fV9LiqZHe_z8s,11504
+model2vec/distill/inference.py,sha256=QgHAEkLoeq-jPyKnFTB6p6Ry-ZGZqonkZaEg2S7VTOY,6123
+model2vec/distill/tokenizer.py,sha256=xtVsMTxquqTufoP9z39C4Itg2LLcGViqeguz-M7y-u8,4293
+model2vec/distill/utils.py,sha256=lzGyvFUO8mUcz63wnTRimGhQCsXzqnQfG5vRRKDGxic,721
+model2vec-0.3.3.dist-info/LICENSE,sha256=sCFPFI7OrnOfkWIJ54z-FXEsS4EMi8nUS2wtHRYWqrY,1074
+model2vec-0.3.3.dist-info/METADATA,sha256=1kDQ4KrbGMom8ZKMx3b0DJ4XpUcJtkQsAmdEfZWPd0o,25800
+model2vec-0.3.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+model2vec-0.3.3.dist-info/top_level.txt,sha256=cprhxJcbtkFiydp0BGvdCVNupTWg07-3p93jFStc78g,10
+model2vec-0.3.3.dist-info/RECORD,,
