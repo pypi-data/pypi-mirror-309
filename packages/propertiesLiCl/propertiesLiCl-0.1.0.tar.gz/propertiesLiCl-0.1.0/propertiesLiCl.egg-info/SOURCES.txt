@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+propertiesCaCl2/__init__.py
+propertiesCaCl2/functions.py
+propertiesLiCl.egg-info/PKG-INFO
+propertiesLiCl.egg-info/SOURCES.txt
+propertiesLiCl.egg-info/dependency_links.txt
+propertiesLiCl.egg-info/requires.txt
+propertiesLiCl.egg-info/top_level.txt
