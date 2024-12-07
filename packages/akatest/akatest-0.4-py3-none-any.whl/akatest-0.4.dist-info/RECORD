@@ -1,0 +1,9 @@
+akamal/__init__.py,sha256=RokAPxs-xyeM2BwpD0w0fc189mfirsUHOMQYqMewUKM,41
+akamal/send_webhook.py,sha256=uTWjYv0SvrHTwyrD0_eQbQW0EBNnKrI_A6dLB60BxFE,384
+akatest/__init__.py,sha256=CyzQHA829xQzuTXCeAOGKCBWom2g45fLbGtHuBnJZJE,60
+akatest/send_webhook.py,sha256=uTWjYv0SvrHTwyrD0_eQbQW0EBNnKrI_A6dLB60BxFE,384
+akatest-0.4.dist-info/METADATA,sha256=zy1dI8elABwufp72le42G5A8J-WCTWpZwd5y8AuN5wo,622
+akatest-0.4.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+akatest-0.4.dist-info/entry_points.txt,sha256=t_jEbKavLNUO21r5EHINn-mlCjifeK3pIZyjgp5wSRk,68
+akatest-0.4.dist-info/top_level.txt,sha256=KgpX5jV1T0M3grqdDT0QwQLlak2Tq3wDX9r_MKSAaqU,8
+akatest-0.4.dist-info/RECORD,,
