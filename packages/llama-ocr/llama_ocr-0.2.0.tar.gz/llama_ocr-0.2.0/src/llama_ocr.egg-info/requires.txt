@@ -1,0 +1,10 @@
+typer
+openai>=1.0.0
+pillow>=10.0.0
+python-dotenv>=1.0.0
+
+[dev]
+coverage
+mypy
+pytest
+ruff
