@@ -1,0 +1,2 @@
+[console_scripts]
+pysmart_exporter = pysmart_exporter.__main__:main

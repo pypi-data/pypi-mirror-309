@@ -1,0 +1,10 @@
+prometheus-client
+pySMART>=1.3.0
+
+[dev]
+pytest
+pytest-cov
+mypy
+types-tabulate
+types-six
+pdoc
