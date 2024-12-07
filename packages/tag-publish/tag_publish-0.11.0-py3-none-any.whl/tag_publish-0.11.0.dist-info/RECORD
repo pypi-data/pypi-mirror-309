@@ -1,0 +1,15 @@
+tag_publish/__init__.py,sha256=Tv2Y57cRmxOm6K3wAiV9wbhL5sH1-JNKIoayszXYols,8247
+tag_publish/cli.py,sha256=y-bZ9gbozWvZGScxEUaz85g6Svn1pFpmj9uu0UcSUYw,20668
+tag_publish/configuration.py,sha256=JQtexOB3kwE8FDvGa1fOSrF9FJXpo-yJGV84xgVeMow,8843
+tag_publish/lib/docker.py,sha256=EMhLJwKr2b-G-ZRLv3TzOhdvhOMgutGyUEaPUABap3Q,5405
+tag_publish/lib/oidc.py,sha256=74_bmLy39K3bNIXVEcNmqZWLRZDqYi4zniAMIuPHT34,6299
+tag_publish/new.py,sha256=yFAmBrjZ35wLfIcmKuF1xl6G7odKyqHBlYiI5DKyZMY,9353
+tag_publish/publish.py,sha256=V3go6_IWYW_xG7nFjW6GCKuF19aTVMjvJvEIvEXZAbY,12072
+tag_publish/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tag_publish/schema.json,sha256=qFFqVi-SbUfg-ySeKXziwZWQn8o8XK2cZ19aU3In4N0,9814
+tag_publish/versions.yaml,sha256=KOLwTpVZh-8U7YBG0-bKW2rut3Uxf8D2xVtfA4bxOV0,124
+tag_publish-0.11.0.dist-info/LICENSE,sha256=EMCYfDu0AgsMQO6k8Hl_xHzoFxM0db1xu9n_asZW9Vc,1307
+tag_publish-0.11.0.dist-info/METADATA,sha256=gzkZsqW2pAtvuUqjHmR0qhFin1Z-i0QCrAr7k_9f4gg,10767
+tag_publish-0.11.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+tag_publish-0.11.0.dist-info/entry_points.txt,sha256=zJ3T3-mgWzowCT7hZgP27d4vAmqsDV1U62M8fUMUYrA,89
+tag_publish-0.11.0.dist-info/RECORD,,
