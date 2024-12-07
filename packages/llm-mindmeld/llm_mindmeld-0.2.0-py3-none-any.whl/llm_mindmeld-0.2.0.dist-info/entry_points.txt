@@ -1,0 +1,5 @@
+[console_scripts]
+mindmeld = mindmeld.runner:cli
+
+[gui_scripts]
+
