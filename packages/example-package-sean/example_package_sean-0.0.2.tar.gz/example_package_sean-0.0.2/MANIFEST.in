@@ -1,0 +1,6 @@
+# from https://setuptools.pypa.io/en/latest/userguide/miscellaneous.html
+
+graft src
+graft tests
+
+global-exclude *~ *.py[cod] *.so
