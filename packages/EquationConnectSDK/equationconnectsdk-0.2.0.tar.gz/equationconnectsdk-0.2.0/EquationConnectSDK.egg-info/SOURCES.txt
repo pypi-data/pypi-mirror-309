@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+EquationConnectSDK/EquationConnectAPI.py
+EquationConnectSDK/__init__.py
+EquationConnectSDK.egg-info/PKG-INFO
+EquationConnectSDK.egg-info/SOURCES.txt
+EquationConnectSDK.egg-info/dependency_links.txt
+EquationConnectSDK.egg-info/requires.txt
+EquationConnectSDK.egg-info/top_level.txt
