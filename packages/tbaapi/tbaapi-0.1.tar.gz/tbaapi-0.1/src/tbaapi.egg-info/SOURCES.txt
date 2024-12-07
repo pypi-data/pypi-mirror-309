@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/tbaapi/tba.py
+src/tbaapi.egg-info/PKG-INFO
+src/tbaapi.egg-info/SOURCES.txt
+src/tbaapi.egg-info/dependency_links.txt
+src/tbaapi.egg-info/top_level.txt
