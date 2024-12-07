@@ -1,0 +1,15 @@
+samila/__init__.py,sha256=BqLPqDSvi76ssZiyR5tigmwoyBxWR1xL-cH52ZkiX5E,262
+samila/__main__.py,sha256=YwwoT4MgZTAQO_Dr6bzhjmIFGhFStZJAmZ9K5eARSOI,106
+samila/cli.py,sha256=Zh15tSYUGBQhXK6cQItHtOt4VsY_FjxFDDx8eGrzoTQ,5489
+samila/errors.py,sha256=LpHYWQ3kKYyGfLGHADQOPKnc22k6ilynwG2qk_L8BdI,353
+samila/functions.py,sha256=TRFMkj9_BdHqMREzW0CQeM4bcgiFNWeWnqr01oqafkA,27346
+samila/genimage.py,sha256=-jxJRyC7i56O7p2yY5HiQExUfQVyrYNtn5cpgjA_8kw,11608
+samila/params.py,sha256=zE8_MzuUylwQF78jiRfnevYPCyWpHAwVLMXLQ1sLMQg,7103
+samila/test.py,sha256=INg0Tr477Xydo8zSuJ4NYLHbwoeqSY4nB0IfCbRcgq8,406
+samila-1.4.dist-info/AUTHORS.md,sha256=OLDEJI5CKF2zWcU55xOh_XqqyGaDDHsc3MKnJYpyWMg,379
+samila-1.4.dist-info/LICENSE,sha256=ye80n5U4INV14L8SHaHmy4TEdpYEC3lF9gh_2QbdUf8,1106
+samila-1.4.dist-info/METADATA,sha256=-AO9_hsWCh-EU-ASquuVo4kcrGxAGKnHC2wem-l_oSs,24677
+samila-1.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+samila-1.4.dist-info/entry_points.txt,sha256=P6S2eQpmwSjxl-BhLHa03SCb9TZVBruYuHsvspjI4bc,43
+samila-1.4.dist-info/top_level.txt,sha256=-E048nn3JvbQsjvIl64M1LLcZCDVTBvw9oG2UoEOIds,7
+samila-1.4.dist-info/RECORD,,
