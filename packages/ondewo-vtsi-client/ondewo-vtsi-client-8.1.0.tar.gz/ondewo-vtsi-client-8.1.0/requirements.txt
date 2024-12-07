@@ -1,0 +1,10 @@
+dataclasses-json
+google-api-core
+googleapis-common-protos
+grpcio-reflection
+grpcio-tools
+grpcio
+mypy-protobuf
+ondewo-client-utils
+polling
+regex
