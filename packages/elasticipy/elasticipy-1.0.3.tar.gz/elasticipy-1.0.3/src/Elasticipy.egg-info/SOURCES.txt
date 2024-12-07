@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/Elasticipy/FourthOrderTensor.py
+src/Elasticipy/SecondOrderTensor.py
+src/Elasticipy/SphericalFunction.py
+src/Elasticipy/StressStrainTensors.py
+src/Elasticipy/__init__.py
+src/Elasticipy.egg-info/PKG-INFO
+src/Elasticipy.egg-info/SOURCES.txt
+src/Elasticipy.egg-info/dependency_links.txt
+src/Elasticipy.egg-info/requires.txt
+src/Elasticipy.egg-info/top_level.txt
+tests/test_StiffnessTensor.py
+tests/test_StressStrainTensors.py
