@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dupr
+Version: 0.1.1
+Summary: A wrapper for the DUPR API
+Home-page: https://github.com/dalemyers/dupr
+License: MIT
+Author: Dale Myers
+Author-email: dale@myers.io
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.25.0,<3.0.0)
+Project-URL: Repository, https://github.com/dalemyers/dupr
+Description-Content-Type: text/markdown
+
+
