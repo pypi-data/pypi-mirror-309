@@ -1,0 +1,11 @@
+class AppConfig:
+    APP_ID: str
+    APP_TYPE: str
+    APP_VERSION: str
+    BUILD_NAME: str
+    DEVICE: str
+    OS_VERSION: str
+    PLATFORM: str
+    PROJECT_NAME: str
+    SESSION_NAME: str
+    WAIT_FOR_ELEMENT_TIMEOUT: int
