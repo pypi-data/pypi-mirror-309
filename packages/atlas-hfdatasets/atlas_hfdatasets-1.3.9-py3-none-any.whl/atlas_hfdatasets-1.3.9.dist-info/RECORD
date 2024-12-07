@@ -1,0 +1,14 @@
+atlas_hfdatasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlas_hfdatasets/atlas_hfdatasets.py,sha256=pT1lUxX0Mo2w1Eld8AipkCVq673FHlQyZ425AjqJiyw,5055
+atlas_hfdatasets/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlas_hfdatasets/src/check.py,sha256=_GA_4uSYkWE7l2zBXgHd5PvVgfu92BeBa2HGBYjDsWY,2165
+atlas_hfdatasets/src/core_functions.py,sha256=Xr-LNf4cygfdaw2z0wsl03XIblr9FJOl37f8i3kWAzI,4634
+atlas_hfdatasets/src/list.py,sha256=KZIG6TcQZL1RBjcwZphsZm_ByzbKil1bwurOHP3iiTo,2615
+atlas_hfdatasets/src/rename.py,sha256=wLC7fK7ZTIw5cX_DKXQadW3qBBtGY3EpxcgEcVZV-Xg,1599
+atlas_hfdatasets/src/upload.py,sha256=Hstl1mv_CIcg0783Qw7z53fjMPkBMxpzPYVzU5oImQQ,3248
+atlas_hfdatasets-1.3.9.dist-info/LICENSE,sha256=z4bqA3qF3YCzji54DD2PROLg4MJnLuDRbHp7bu4OvsI,1089
+atlas_hfdatasets-1.3.9.dist-info/METADATA,sha256=ZtaPoFnPN4e9q5kpurodR3bbqBFp6OCGbIkY7qsx5yk,2052
+atlas_hfdatasets-1.3.9.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+atlas_hfdatasets-1.3.9.dist-info/entry_points.txt,sha256=GrekvozTQScHCPuGIkTsY5HdoFqm_BeSIGDKTeBmc_M,70
+atlas_hfdatasets-1.3.9.dist-info/top_level.txt,sha256=9v4SYYEfHv1kaDjRPOj95_voxmty53Q-kaazcCiC2l0,17
+atlas_hfdatasets-1.3.9.dist-info/RECORD,,
