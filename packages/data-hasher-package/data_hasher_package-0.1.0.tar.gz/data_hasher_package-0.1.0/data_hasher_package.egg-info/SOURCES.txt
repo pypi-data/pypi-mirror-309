@@ -1,0 +1,9 @@
+README.md
+setup.py
+data_hasher_package/__init__.py
+data_hasher_package/data_hashing.py
+data_hasher_package.egg-info/PKG-INFO
+data_hasher_package.egg-info/SOURCES.txt
+data_hasher_package.egg-info/dependency_links.txt
+data_hasher_package.egg-info/requires.txt
+data_hasher_package.egg-info/top_level.txt
