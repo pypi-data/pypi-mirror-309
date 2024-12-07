@@ -1,0 +1,9 @@
+batchlink-1.1.0.dist-info/METADATA,sha256=F44Wx3qIEIqayRtECraAj5A_9ijwSS92SaOjti7a3ec,3565
+batchlink-1.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+batchlink-1.1.0.dist-info/entry_points.txt,sha256=0BLqg3j6B8j1ObgzaV6Kbu2VvYIZeTjqAfkFjJg4dNI,65
+batchlink-1.1.0.dist-info/licenses/LICENSE,sha256=Ma48nWQL8XS4A_lyGJdKj6AN_SeufmmgUtOzCeSill8,1066
+batchlink/__init__.py,sha256=ON4yXfQHBsPkVUv5i-DnIAO072kULF1jbhq0kSsUyRs,281
+batchlink/__main__.py,sha256=VHf9fBhTp4P-73nn84dHssRRKrZHmYlDwPUQUoPPFKI,67
+batchlink/cli.py,sha256=abmZ5HdBmvgxP_UD-3EM4TmP830wDTdyEb78ZKNut3g,3716
+batchlink/core.py,sha256=1jAXkjAWcB75267UNz9AYaob3jJ7VFougq1GIL6A8y8,8072
+batchlink-1.1.0.dist-info/RECORD,,
