@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: saenopy
+Version: 1.0.6
+Summary: Semi-elastic fiber optimisation in python.
+License: MIT
+Author: rgerum
+Author-email: 14153051+rgerum@users.noreply.github.com
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: docs
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: black (>=24.4.0,<25.0.0)
+Requires-Dist: h5py (>=3.8.0,<4.0.0)
+Requires-Dist: imagecodecs (>=2024.9.22,<2025.0.0)
+Requires-Dist: jointforces (>=1.0.7,<2.0.0)
+Requires-Dist: natsort (>=8.2.0,<9.0.0)
+Requires-Dist: nbsphinx (>=0.9.2,<0.10.0) ; extra == "docs"
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (>=1.26.4)
+Requires-Dist: openpiv (>=0.24.2,<0.25.0)
+Requires-Dist: pyqt5 (==5.15.11)
+Requires-Dist: pyvista (>=0.44.1,<0.45.0)
+Requires-Dist: pyvistaqt (>=0.11.1,<0.12.0)
+Requires-Dist: qimage2ndarray (>=1.9.0,<2.0.0)
+Requires-Dist: qtawesome (>=1.2.1,<2.0.0)
+Requires-Dist: qtrangeslider (>=0.1.5,<0.2.0)
+Requires-Dist: scipy (>=1.9.3)
+Requires-Dist: solidspy
+Requires-Dist: sphinx (>=1.6,<7) ; extra == "docs"
+Requires-Dist: sphinx-gallery (>=0.13.0,<0.14.0) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.2.2,<2.0.0) ; extra == "docs"
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+SAENOPY: 3D Traction Force Microscopy with Python
+=======
+
+[![DOC](https://readthedocs.org/projects/saenopy/badge/)](https://saenopy.readthedocs.io)
+[![Coverage Status](https://coveralls.io/repos/github/rgerum/saenopy/badge.svg?branch=master)](https://coveralls.io/github/rgerum/saenopy?branch=master)
+[![PyTest](https://github.com/rgerum/saenopy/actions/workflows/test.yml/badge.svg)](https://github.com/rgerum/saenopy/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+  <img src="saenopy/img/Logo.png" />
+</p>
+
+
+SAENOPY is a free open source 3D traction force microscopy (TFM) software. Its material model is especially well suited for
+tissue-mimicking and typically highly non-linear biopolymer matrices such as collagen, fibrin, or Matrigel. 
+
+It features a python package to use in scripts and an extensive graphical user interface.
+
+Check out our [Documentation](https://saenopy.readthedocs.io) on how to install and use it.
+
+## Installation
+
+### Standalone
+To use saenopy without a complicated installation you can use our standalone binaries to get started right away on Windows or Linux.
+
+Windows
+https://github.com/rgerum/saenopy/releases/download/v1.0.6/saenopy.exe
+
+Linux
+https://github.com/rgerum/saenopy/releases/download/v1.0.6/saenopy
+
+### Using Python
+
+If you are experienced with python or even want to use our Python API, you need to install saenopy as a python package.
+Saenopy can be installed directly using pip:
+
+    ``pip install saenopy``
+
+Now you can start the user interface with:
+
+    ``saenopy``
+
+Or by executing the script “gui_master.py” in your python interpreter.
+
+## Getting started
+To get started you can have a look at our collection of [example datasets](https://saenopy.readthedocs.io/en/latest/auto_examples/index.html).
+
+## Preprint
+If you want to cite saenopy you can reference our preprint.
+
+*Dynamic traction force measurements of migrating immune cells in 3D matrices*
+David Böhringer, Mar Cóndor, Lars Bischof, Tina Czerwinski, Andreas Bauer, Caroline Voskens, Silvia Budday, 
+Christoph Mark, Ben Fabry, Richard Gerum
+**bioRxiv 2022.11.16.516758**; doi: https://doi.org/10.1101/2022.11.16.516758
+
+
