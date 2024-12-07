@@ -1,0 +1,2 @@
+[console_scripts]
+git2md = src.git2md:main
