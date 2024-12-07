@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: harmonyhub-cli
+Version: 0.0.1
+Summary: A CLI library for HarmonyHub
+Home-page: https://github.com/rahgadda/HarmonyHub
+Author: Rahul Kiran Gaddam
+Author-email: gaddam.rahul@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# HarmonyHub
+
+## Overview
+- This is a Visual API Orchestrator POC created for Rest API Calls.
+- UI Generates YAML. Written in static HTML using WebComponents. 
+- Python-based `CLI` is used to run YAML generated from UI. It can sequence and execute API Calls.
+
+## Commands
+- harmonyhub init
+  - harmonyhub init --file workflow.yaml
+- harmonyhub run <<workflow.yaml>>
+  - pyyaml2apiworkflow run <<workflow.yaml>> --debug
+- harmonyhub --help
+- harmonyhub --version
+
+## Operator Supported
+- Simple comparisons (==, !=, >, <, >=, <=)
+- Logical operations (and, or, not)
+- Basic arithmetic operations (+, -, *, /, %)
+
+## Output Parser
+- [JQ](https://www.devtoolsdaily.com/jq_playground/)
+
+## System Defined Variables
+- $response
+- $request
+- $http_status
+
+## Roadmap
+- GraphQL
+- Grpc
+- Kafka
+
+## Credits
+- Below are projects used as inspiration
+  - [Stepci](https://stepci.com/)
+  - [Apache Karavan](https://github.com/apache/camel-karavan)
