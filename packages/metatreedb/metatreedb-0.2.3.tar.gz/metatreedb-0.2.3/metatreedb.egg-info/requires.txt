@@ -1,0 +1,8 @@
+fsspec
+hdfs
+pyyaml
+s3fs
+
+[dev]
+pytest
+wheel
