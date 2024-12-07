@@ -1,0 +1,261 @@
+[project]
+name = "mypy-boto3-builder"
+version = "8.3.1"
+requires-python = ">=3.12"
+description = "Builder for boto3-stubs and types-aiobotocore"
+authors = [{ name = "Vlad Emelianov", email = "vlad.emelianov.nz@gmail.com" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["boto3", "type-annotations", "pyright", "mypy", "boto3-stubs"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "boto3",
+    "jinja2",
+    "mdformat",
+    "packaging",
+    "requests",
+    "ruff",
+    "setuptools",
+]
+
+[project.optional-dependencies]
+build = ["setuptools"]
+check = ["boto3-stubs", "types-aiobotocore", "types-aioboto3"]
+
+[tool.uv]
+dev-dependencies = [
+    "aiohttp",
+    "boto3-stubs",
+    "botocore-stubs",
+    "cryptography",
+    "istub",
+    "mypy",
+    "pyright",
+    "pytest-cov",
+    "pytest",
+    "requests-mock",
+    "twine",
+    "types-certifi",
+    "types-python-dateutil",
+    "types-requests",
+    "types-s3transfer",
+    "types-setuptools",
+    "types-six",
+    "types-urllib3",
+    "typing_extensions",
+    "wheel",
+]
+package = true
+
+[project.scripts]
+mypy_boto3_builder = 'mypy_boto3_builder.main:main'
+
+[project.urls]
+Homepage = "https://github.com/youtype/mypy_boto3_builder"
+Documentation = "https://youtype.github.io/mypy_boto3_builder/"
+Repository = "https://github.com/youtype/mypy_boto3_builder"
+Changelog = "https://github.com/youtype/mypy_boto3_builder/releases"
+Issues = "https://github.com/youtype/mypy_boto3_builder/issues"
+
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mypy_boto3_builder", "mypy_boto3_builder.*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "@overload",
+]
+ignore_errors = true
+omit = ["tests/*"]
+
+[tool.pyright]
+include = ["mypy_boto3_builder", "scripts"]
+exclude = ["tests"]
+ignore = [
+    ".venv",
+    "**/__pycache__",
+    "**/build",
+    "typestubs",
+    "examples",
+    "aio_examples",
+    "mypy_boto3_builder/stubs_static",
+    "**/test_*.py",
+]
+typeCheckingMode = "strict"
+reportMissingImports = "error"
+reportMissingTypeStubs = "error"
+reportMissingTypeArgument = "error"
+reportIncompatibleMethodOverride = "error"
+reportIncompatibleVariableOverride = "error"
+reportUnknownParameterType = "error"
+pythonVersion = "3.12"
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_ignores = false
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+ignore_errors = false
+exclude = ["^mypy_boto3_builder/stubs_static/.*"]
+
+[[tool.mypy.overrides]]
+module = "mypy-tests.*"
+ignore_errors = true
+
+[tool.ruff]
+exclude = [
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "build",
+    "dist",
+]
+
+line-length = 100
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+preview = true
+select = [
+    "F",     # Pyflakes
+    "E",     # pycodestyle
+    "W",     # pycodestyle
+    "C90",   # mccabe
+    "I",     # isort
+    "N",     # pep8-naming
+    "D",     # pydocstyle
+    "UP",    # pyupgrade
+    "YTT",   # flake8-2020
+    "ANN",   # flake8-annotations
+    "ASYNC", # flake8-async
+    "S",     # flake8-bandit
+    "BLE",   # flake8-blind-except
+    "FBT",   # flake8-boolean-trap
+    "B",     # flake8-bugbear
+    "A",     # flake8-builtins
+    "COM",   # flake8-commas
+    "CPY",   # flake8-copyright
+    "C4",    # flake8-comprehensions
+    "DTZ",   # flake8-datetimez
+    "T10",   # flake8-debugger
+    # "EM",    # flake8-errmsg
+    "FA",  # flake8-future-annotations
+    "ISC", # flake8-implicit-str-concat
+    "ICN", # flake8-import-conventions
+    "LOG", # flake8-logging
+    # "G",    # flake8-logging-format
+    # "INP",  # flake8-no-pep420
+    "PIE",  # flake8-pie
+    "T20",  # flake8-print
+    "PYI",  # flake8-pyi
+    "PT",   # flake8-pytest-style
+    "Q",    # flake8-quotes
+    "RSE",  # flake8-raise
+    "RET",  # flake8-return
+    "SLF",  # flake8-self
+    "SLOT", # flake8-slots
+    "SIM",  # flake8-simplify
+    "TID",  # flake8-tidy-imports
+    "TCH",  # flake8-type-checking
+    "INT",  # flake8-gettext
+    "ARG",  # flake8-unused-arguments
+    "PTH",  # flake8-use-pathlib
+    # "TD",    # flake8-todos
+    # "FIX",   # flake8-fixme
+    # "ERA",   # eradicate
+    "PL",   # pylint
+    "TRY",  # tryceratops
+    "FLY",  # flynt
+    "PERF", # Perflint
+    "FURB", # refurb
+    # "DOC",  # pydoclint
+    "RUF", # Ruff-specific rules
+]
+ignore = [
+    "D107",   # undocumented-public-init
+    "D200",   # fits-on-one-line
+    "D203",   # one-blank-line-before-class
+    "D212",   # multi-line-summary-first-line
+    "D406",   # new-line-after-section-name
+    "D407",   # dashed-underline-after-section
+    "D413",   # blank-line-after-last-section
+    "D417",   # undocumented-param
+    "S310",   # suspicious-url-open-usage
+    "S404",   # suspicious-subprocess-import
+    "S603",   # subprocess-without-shell-equals-true
+    "ANN101", # missing-type-self
+    "ANN102", # missing-type-cls
+    # "ANN401",  # any-type
+    "TRY003",  # raise-vanilla-args
+    "PERF203", # try-except-in-loop
+    "PLR0913", # too-many-arguments
+    "PLR0904", # too-many-public-methods
+    "PLR6301", # no-self-use
+    "FBT003",  # boolean-identity
+    "SLF001",  # private-member-access
+    "ARG002",  # unused-argument
+    "ISC001",  # implicit-str-concat
+]
+fixable = ["ALL"]
+unfixable = ["B"]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+exclude = ["*.pyi", "examples/*", "aio_examples/*"]
+allowed-confusables = ["’", "–"]
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = [
+    "D",       # missing-docstring
+    "S101",    # use-of-assert
+    "N803",    # argument-name-does-not-match
+    "PLR2004", # constant-comparison
+    "CPY001",  # missing-copyright
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "lf"
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.flake8-copyright]
+# author = "Vlad Emelianov"
+min-file-size = 200
+notice-rgx = "(?i)Copyright 2024"
+
+[tool.vulture]
+make_whitelist = true
+min_confidence = 60
+paths = ["mypy_boto3_builder", "vulture_whitelist.txt"]
