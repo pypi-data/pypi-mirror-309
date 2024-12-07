@@ -1,0 +1,16 @@
+ondewo/__init__.py,sha256=bpT73UG7mZL_JjEqMwbYx6q69jA8J5Jcoul1LcDokhA,81
+ondewo/s2t/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ondewo/s2t/speech_to_text_pb2.py,sha256=HzSLAfdER0ikluvC9GpmU6ERplhTO_7pfg4kIxCRZN0,24401
+ondewo/s2t/speech_to_text_pb2.pyi,sha256=AwY9_l17ywU1cbD2daMyc2GWLRpxbyCBPUUxO8_rU5w,99988
+ondewo/s2t/speech_to_text_pb2_grpc.py,sha256=6McaJCZmvoTt8wBP6XOzmGm3jCVoPnAsdZBw4f4SFII,31074
+ondewo/s2t/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ondewo/s2t/client/client.py,sha256=aX0_SoD0ClmQX3Ffh6qKfoxFRf5wEa0n5jp4aDQ-LmQ,1814
+ondewo/s2t/client/client_config.py,sha256=lxwmrUhfBpVNpq5h51VTQVwVFtioBfk1yHXLn-2_D4Q,842
+ondewo/s2t/client/services_container.py,sha256=OBjqu3Qbw1evFcCH-66yHCOQYkVE--BejUgeP0k8e3E,845
+ondewo/s2t/client/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ondewo/s2t/client/services/speech_to_text.py,sha256=AeepArPhFGTyleHoFZpqmTk-Tc3hyaxI6QfeKSd3W34,4094
+ondewo_s2t_client-6.1.0.dist-info/LICENSE,sha256=b64U8Nlwl-DmaozBK6sSUjWnhkGg9syz9EueNgfDLtg,10257
+ondewo_s2t_client-6.1.0.dist-info/METADATA,sha256=vjbowVNnUUf7lv_lTCY9kkyGqSCu_tG2MnA9PJRcLf0,6998
+ondewo_s2t_client-6.1.0.dist-info/WHEEL,sha256=QyeGbh-t8WT0nt0_LNSP02jN-g4ymd1egk1U3osCGMU,110
+ondewo_s2t_client-6.1.0.dist-info/top_level.txt,sha256=k6xvj-4simLbghb9G4LX5lD3UvNgTBdB-WT8oPDlqqE,7
+ondewo_s2t_client-6.1.0.dist-info/RECORD,,
