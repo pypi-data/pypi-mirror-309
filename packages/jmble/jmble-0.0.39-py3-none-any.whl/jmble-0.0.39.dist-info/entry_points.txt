@@ -1,0 +1,6 @@
+[console_scripts]
+git_push=jmble.cli_tools.gpush:main
+jumble-cfg=jmble.cli_tools.config_cli:main
+prolog=jmble.cli_tools.prolog:main
+vmgr=jmble.cli_tools.version_manager:main
+
