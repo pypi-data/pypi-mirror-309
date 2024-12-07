@@ -1,0 +1,10 @@
+LICENCE.txt.rtf
+setup.py
+mypackage_xavier/__init__.py
+mypackage_xavier/__main__.py
+mypackage_xavier/test.py
+mypackage_xavier.egg-info/PKG-INFO
+mypackage_xavier.egg-info/SOURCES.txt
+mypackage_xavier.egg-info/dependency_links.txt
+mypackage_xavier.egg-info/not-zip-safe
+mypackage_xavier.egg-info/top_level.txt
