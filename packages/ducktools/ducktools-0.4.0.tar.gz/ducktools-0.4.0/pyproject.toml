@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="ducktools"
+version = "v0.4.0"
+description="Ducktools meta package"
+authors = [
+  { name="David C Ellis" },
+]
+readme="README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ducktools-lazyimporter",
+    "ducktools-jsonkit",
+    "ducktools-scriptmetadata",
+    "ducktools-pythonfinder",
+    "ducktools-classbuilder",
+    "ducktools-env",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
