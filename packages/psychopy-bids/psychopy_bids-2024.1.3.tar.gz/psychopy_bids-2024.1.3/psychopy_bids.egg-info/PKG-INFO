@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: psychopy-bids
+Version: 2024.1.3
+Summary: A PsychoPy plugin for using the Brain Imaging Data Structure (BIDS) to organize and describe data.
+Author-email: Christoph Anzengruber <christoph.anzengruber@uni-graz.at>, Florian Schöngaßner <florian.schoengassner@uni-graz.at>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: homepage, https://pypi.org/project/psychopy-bids/
+Project-URL: changelog, https://gitlab.com/psygraz/psychopy-bids/-/blob/master/CHANGELOG
+Project-URL: documentation, https://psychopy-bids.readthedocs.io/en/latest/
+Project-URL: repository, https://gitlab.com/psygraz/psychopy-bids/
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.4.3
+Requires-Dist: psychopy>=2023.1.0
+
+# psychopy-bids
+
+A [PsychoPy](https://www.psychopy.org/) plugin to work with the [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/)
+
+* **Website:** [https://psygraz.gitlab.io/psychopy-bids](https://psygraz.gitlab.io/psychopy-bids)
+* **Documentation:** [https://psychopy-bids.readthedocs.io](https://psychopy-bids.readthedocs.io)
+* **Source code:** [https://gitlab.com/psygraz/psychopy-bids](https://gitlab.com/psygraz/psychopy-bids)
+* **Contributing:** [https://psychopy-bids.readthedocs.io/en/latest/contributing](https://psychopy-bids.readthedocs.io/en/latest/contributing)
+* **Bug reports:** [https://gitlab.com/psygraz/psychopy-bids/issues](https://gitlab.com/psygraz/psychopy-bids/issues)
+* **Code of Conduct:** [https://psychopy-bids.readthedocs.io/en/latest/conduct](https://psychopy-bids.readthedocs.io/en/latest/conduct)
+
+## Installation
+
+We recommend installation in a virtual environment.
+
+```console
+pip install psychopy-bids
+```
+
+## Usage
+
+The psychopy bids plugin can be used to create valid BIDS valid datasets by creating [behavioral](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/behavioral-experiments.html#example-_behtsv) or [task events](https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/05-task-events.html) in Psychopy. This can be done directly in python code or using the psychopy builder.
+
+In code, the *BIDSHandler* can create or extend an existing BIDS dataset, including directory structure and necessary metadata files. Individual BIDS events can be added during the experiment and are passed to the *BIDSHandler* to write event `.tsv` files and accompanying `.json` files.
+
+```py
+from psychopy_bids import bids
+
+handler = bids.BIDSHandler(dataset="example", subject="01", task="A")
+handler.createDataset()
+
+events = [
+    bids.BIDSTaskEvent(onset=1.0, duration=0.5, event_type="stimulus", response="correct"),
+    bids.BIDSTaskEvent(onset=1.0, duration=0, trial_type="trigger")
+]
+
+for event in events:
+    handler.addEvent(event)
+
+participant_info = {"participant_id": handler.subject, "age": 18}
+
+handler.writeTaskEvents(participant_info=participant_info)
+
+handler.addStimuliFolder(event_file="example/sub-01/beh/sub-01_task-A_run-1_events.tsv")
+```
+
+## Contributing
+
+Interested in contributing? Check out the [contributing guidelines](https://psychopy-bids.readthedocs.io/en/latest/contributing/). Please note that this project is released with a [Code of Conduct](https://psychopy-bids.readthedocs.io/en/latest/conduct/). By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`psychopy-bids` was created by Christoph Anzengruber & Florian Schöngaßner. It is licensed under the terms of the GNU General Public License v3.0 license.
+
+## Credits
+
+`psychopy-bids` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).

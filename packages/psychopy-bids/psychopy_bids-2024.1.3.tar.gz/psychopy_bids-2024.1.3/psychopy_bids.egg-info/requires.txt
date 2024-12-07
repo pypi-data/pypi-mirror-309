@@ -1,0 +1,4 @@
+requests>=2.31.0
+numpy>=1.21.0
+pandas>=1.4.3
+psychopy>=2023.1.0
