@@ -1,0 +1,4 @@
+global-include *.txt *.py *.md
+include README.md
+include CHANGELOG.txt
+include LICENSE.txt
