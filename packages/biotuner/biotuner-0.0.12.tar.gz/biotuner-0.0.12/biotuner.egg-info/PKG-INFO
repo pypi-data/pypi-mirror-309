@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: biotuner
+Version: 0.0.12
+Summary: Time series harmonic analysis for adaptive tuning systems and microtonal exploration
+Home-page: https://github.com/antoinebellemare/biotuner
+Author: Antoine Bellemare
+Author-email: antoine.bellemare9@gmail.com
+License: MIT
+Keywords: biosignal,harmony,tuning,eeg,microtonality,music,time series
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
+Requires-Dist: matplotlib>=3.5.3
+Requires-Dist: seaborn>=0.12.1
+Requires-Dist: pygame>=2.1.2
+Requires-Dist: mne>=1.4.0
+Requires-Dist: pyACA==0.3.1
+Requires-Dist: pactools==0.3.1
+Requires-Dist: colorednoise==2.1.0
+Requires-Dist: fooof==1.0.0
+Requires-Dist: emd>=0.5.5
+Requires-Dist: emd-signal>=1.2.1
+Requires-Dist: pyts==0.12.0
+Requires-Dist: contfrac==1.0.0
+Requires-Dist: neurokit2==0.2.2
+Requires-Dist: scipy>=1.7.3
+Requires-Dist: numpy>=1.21.4
+Requires-Dist: pingouin
+Requires-Dist: mido==1.2.10
+Requires-Dist: plotly==5.13.1
+Requires-Dist: ipywidgets==8.0.4
+Requires-Dist: PyWavelets==1.4.1
+Requires-Dist: neurodsp>=2.2
+Requires-Dist: sympy==1.12
+Requires-Dist: pytest>=7.0.0
