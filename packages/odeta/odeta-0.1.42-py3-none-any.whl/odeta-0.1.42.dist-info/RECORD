@@ -1,0 +1,15 @@
+cloudbase_odeta/__init__.py,sha256=fIZ3LzIwJ2awyu4GBW7ma5NSlWFhJgTRcmMkBfecIN0,92
+cloudbase_odeta/cloudbase.py,sha256=BnJG2U34QVaAaqvm0L6rxYX9embZeelH3UjToVo-1ew,5007
+cloudbase_odeta/localbase.py,sha256=Snm1KzwHAGUOJTJc94HD9RLjW7LYZH9YgtcHnObbvCM,5174
+cloudbase_odeta/test.py,sha256=wWMJTcqI8ATIWJXoA9OWITg5LWAKOvbIrHewgagLu4w,4290
+cloudbase_odeta/utils.py,sha256=beuiapu0LOySL_MJMQM-Qu_3TRzpTHCG74LkQiC2FWs,416
+odeta/__init__.py,sha256=cCytaw5x5hRv9JHS6PbAxa1r9amkGYYoqtgcTYcAVk0,137
+odeta/a.py,sha256=6NH6geuNIH4_r4cNjCi-SOAJijMJkZoyfz5mO6_cF-4,6332
+odeta/cloudbase.py,sha256=-FVCWtpUMjdeaDDxc9Oxs2x2XqLDyQIh7xj5G-B4WXE,7282
+odeta/localbase.py,sha256=Snm1KzwHAGUOJTJc94HD9RLjW7LYZH9YgtcHnObbvCM,5174
+odeta/utils.py,sha256=beuiapu0LOySL_MJMQM-Qu_3TRzpTHCG74LkQiC2FWs,416
+odeta-0.1.42.dist-info/LICENSE,sha256=Ul91r68seOHut3_-8Pv_qsAK2s8Ehl47czh0O8_6tnc,1065
+odeta-0.1.42.dist-info/METADATA,sha256=NcgUJlV7eLLp-I8wzYGqY0u9Vs8YdyvKY2Tr74MDNvc,2958
+odeta-0.1.42.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odeta-0.1.42.dist-info/top_level.txt,sha256=ZKDyU77xc0xCh7x9l4tqAMrzGTJ6miFbv0AbEbt8e-w,22
+odeta-0.1.42.dist-info/RECORD,,
