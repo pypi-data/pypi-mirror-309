@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+shoydokova.egg-info/PKG-INFO
+shoydokova.egg-info/SOURCES.txt
+shoydokova.egg-info/dependency_links.txt
+shoydokova.egg-info/top_level.txt
