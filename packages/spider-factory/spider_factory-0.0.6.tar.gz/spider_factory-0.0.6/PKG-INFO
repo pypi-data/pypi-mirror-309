@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: spider_factory
+Version: 0.0.6
+Author-email: David Momeni <dav.momeni@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: rusta-crawler
