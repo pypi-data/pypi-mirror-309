@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+py_xl_sindy.egg-info/PKG-INFO
+py_xl_sindy.egg-info/SOURCES.txt
+py_xl_sindy.egg-info/dependency_links.txt
+py_xl_sindy.egg-info/requires.txt
+py_xl_sindy.egg-info/top_level.txt
+xlsindy/__init__.py
+xlsindy/catalog_gen.py
+xlsindy/dynamics_modeling.py
+xlsindy/euler_lagrange.py
+xlsindy/optimization.py
+xlsindy/render.py
+xlsindy/simulation.py
