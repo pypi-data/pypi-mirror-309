@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AnyScrape
+Version: 0.1.2
+Summary: A one-liner Python library to scrape headlines, links, and images from any webpage.
+Home-page: https://github.com/Diksha-Binary-Ninja/AnyScrape
+Author: Diksha, Ayush Kumar Verma
+Author-email: diksha260303official@gmail.com , vermaayush5535@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+Read README.md in the github for more details on how to use it
