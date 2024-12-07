@@ -1,0 +1,5 @@
+sgx_ias_structs-0.1.10.dist-info/METADATA,sha256=eX3OZnMbOfGxTOFIBmbEEw60TwZuIeApiEV-2M7P9H0,2235
+sgx_ias_structs-0.1.10.dist-info/WHEEL,sha256=inDd5B9St9W9z7V7g6GC6UTMo36HPlTik1LhMSMnxSg,90
+sgx_ias_structs/__init__.py,sha256=g3bbobmBMzFAGCv6GbA0qSLfy2fSTtrRBEh5_0olLCM,143
+sgx_ias_structs/sgx_ias_structs.pyd,sha256=jaM8oubX0vuBxhke1wdTBEx_dTT7DDgjqFqOweWZIAI,261120
+sgx_ias_structs-0.1.10.dist-info/RECORD,,
