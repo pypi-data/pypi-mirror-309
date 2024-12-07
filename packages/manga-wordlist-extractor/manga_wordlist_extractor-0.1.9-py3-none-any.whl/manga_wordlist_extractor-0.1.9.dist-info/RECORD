@@ -1,0 +1,10 @@
+main/__init__.py,sha256=WqUQt-DC3K0vmwN-JdHAuQPkfk3-1Kax06SPqRHoh2I,318
+main/main.py,sha256=BO9nZLB9lhgpOLIHzNBQPagv5PsREd7a-1ADCFjdUmU,1473
+main/ocr.py,sha256=2QEB-Lf10rrwSNW5LlnIRPTH5fDgmnJSkRYp3kMYKyk,1628
+main/separator.py,sha256=apghsxirmwW4Ara6Ok_hj6e9yhjwrW9m2e0OOlPXc18,581
+manga_wordlist_extractor-0.1.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+manga_wordlist_extractor-0.1.9.dist-info/METADATA,sha256=y-Fi55ULuoVh_CSCJH1s3xfgVMiYtkiq2kqdtQwdmlo,2731
+manga_wordlist_extractor-0.1.9.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+manga_wordlist_extractor-0.1.9.dist-info/entry_points.txt,sha256=R93fEIWw4nRmH2BSTaSJNyTTjeGXTv1TucKQHL1Ti0g,60
+manga_wordlist_extractor-0.1.9.dist-info/top_level.txt,sha256=ZAMgPdWghn6xTRBO6Kc3ML1y3ZrZLnjZlqbboKXc_AE,5
+manga_wordlist_extractor-0.1.9.dist-info/RECORD,,
