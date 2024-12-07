@@ -1,0 +1,4 @@
+robotframework>=3.2.2
+robotframework-pythonlibcore>=3.0.0
+opencv-python>=4.10.0.82
+numpy>=1.24.4

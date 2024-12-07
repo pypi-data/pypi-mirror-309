@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: robotframework-yet-another-ocr-library
+Version: 0.0.8
+Summary: Object recognition library for Robot Framework
+Home-page: https://github.com/Nepitwin/robotframework-yet-another-ocr-lib
+Author: Andreas Sekulski
+Author-email: andreas.sekulski@gmail.com
+License: APACHE
+Platform: Windows
+Platform: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: robotframework>=3.2.2
+Requires-Dist: robotframework-pythonlibcore>=3.0.0
+Requires-Dist: opencv-python>=4.10.0.82
+Requires-Dist: numpy>=1.24.4
+
+# Robotframework-YetAnotherOcrLibrary
+
+## Introduction
+
+Yet another library for object recognition on robotframework
+
+- The aim is to simplify object detection by developing a solution that relies solely on OpenCV. 
+- The approach should be straightforward and easy to use, minimizing dependencies and complexity. 
+- The focus is on creating a simple yet effective method for object detection that is accessible to users with only robotframework skills.
+
+## Installation
+
+Install the latest stable release:
+
+```
+pip install --upgrade YetAnotherOcrLibrary
+```
+
+## Other robotframework-ocr libraries
+
+- [Robotframework-OCR-Library](https://github.com/bendurston/robotframework-ocrlibrary)
+- [Sikuli Robotframework](https://github.com/rainmanwy/robotframework-SikuliLibrary)
+- [ImageHorizonLibrary](https://github.com/eficode/robotframework-imagehorizonlibrary)
