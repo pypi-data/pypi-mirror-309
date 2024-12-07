@@ -1,0 +1,4 @@
+[console_scripts]
+itio = tiotools.itio:main
+tiologparse = tiotools.tiologparse:main
+tiomon = tiotools.tiomon:main

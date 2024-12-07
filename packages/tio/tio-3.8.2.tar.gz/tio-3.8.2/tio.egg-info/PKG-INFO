@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tio
+Version: 3.8.2
+Summary: Helper libraries and utils for Twinleaf I/O (TIO) devices
+Home-page: https://github.com/twinleaf/tio-python
+Author: Thomas Kornack
+Author-email: kornack@twinleaf.com
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: PyYAML
+Requires-Dist: pyserial
+Requires-Dist: hexdump
+Requires-Dist: ipython
+Requires-Dist: blessings
+Requires-Dist: halo
+
+Twinleaf I/O is a serialization for kilohertz rate data from data-intensive sensors connected by serial ports or tunneled through TCP.

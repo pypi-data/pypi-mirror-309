@@ -1,0 +1,6 @@
+PyYAML
+pyserial
+hexdump
+ipython
+blessings
+halo
