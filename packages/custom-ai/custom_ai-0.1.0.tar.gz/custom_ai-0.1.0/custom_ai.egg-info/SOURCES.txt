@@ -1,0 +1,8 @@
+setup.py
+custom_ai/__init__.py
+custom_ai/whisper.py
+custom_ai.egg-info/PKG-INFO
+custom_ai.egg-info/SOURCES.txt
+custom_ai.egg-info/dependency_links.txt
+custom_ai.egg-info/requires.txt
+custom_ai.egg-info/top_level.txt
