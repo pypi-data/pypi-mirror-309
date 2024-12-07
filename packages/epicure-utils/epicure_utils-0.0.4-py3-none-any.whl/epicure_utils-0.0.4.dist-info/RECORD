@@ -1,0 +1,13 @@
+epicure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epicure/demo.py,sha256=akRUoPuNMzgN7pL3M63zpU8e4TPhlfiIaiNpp-Uqj_U,3964
+epicure/collection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epicure/collection/colors.py,sha256=f9NECvyuwUG4UQKkp5l4t2_sFf2_Ctr8C74hs2zjFzo,670
+epicure/input/__init__.py,sha256=l9aWXyKN3nChPiQSBb4wxddiIEIA7Ncnufzx3dNNOKs,287
+epicure/input/question.py,sha256=nIsSTLhahoieshLkLitUIrVO9rImLohxepyZ1m4OWVA,12981
+epicure/output/__init__.py,sha256=DxwGL3QkhtcQ8c5UErg77pI0K9SA1f9Zw6qMXNmeglk,62
+epicure/output/print.py,sha256=EE0TcFlTAOVsyYEeHpWDFMxmOu1Hc-99GXDxL9okNPM,1338
+epicure_utils-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+epicure_utils-0.0.4.dist-info/METADATA,sha256=JNYyKDeABsVod7fulxggA18IWlPEjw_vUZ9hIr5NzFg,8216
+epicure_utils-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+epicure_utils-0.0.4.dist-info/top_level.txt,sha256=VkDkA6TUTFHnMF0dHCFX0mFB083r9k3_GouC-OxBdhk,8
+epicure_utils-0.0.4.dist-info/RECORD,,

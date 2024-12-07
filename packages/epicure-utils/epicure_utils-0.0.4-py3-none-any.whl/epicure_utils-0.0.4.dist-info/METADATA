@@ -1,0 +1,243 @@
+Metadata-Version: 2.1
+Name: epicure-utils
+Version: 0.0.4
+Summary: A common utils Python library. Don't write that one little function again!
+Author-email: Patilla Code <patillacode@gmail.com>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: homepage, https://github.com/patillacode/epicure
+Project-URL: repository, https://github.com/patillacode/epicure
+Keywords: utils,helpers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: alabaster ==1.0.0 ; extra == 'test'
+Requires-Dist: asttokens ==2.4.1 ; extra == 'test'
+Requires-Dist: babel ==2.16.0 ; extra == 'test'
+Requires-Dist: backports-tarfile ==1.2.0 ; extra == 'test'
+Requires-Dist: build ==1.2.2.post1 ; extra == 'test'
+Requires-Dist: certifi ==2024.8.30 ; extra == 'test'
+Requires-Dist: cfgv ==3.4.0 ; extra == 'test'
+Requires-Dist: charset-normalizer ==3.4.0 ; extra == 'test'
+Requires-Dist: click ==8.1.7 ; extra == 'test'
+Requires-Dist: colorama ==0.4.6 ; extra == 'test'
+Requires-Dist: distlib ==0.3.9 ; extra == 'test'
+Requires-Dist: docutils ==0.21.2 ; extra == 'test'
+Requires-Dist: executing ==2.1.0 ; extra == 'test'
+Requires-Dist: filelock ==3.16.1 ; extra == 'test'
+Requires-Dist: icecream ==2.1.3 ; extra == 'test'
+Requires-Dist: identify ==2.6.2 ; extra == 'test'
+Requires-Dist: idna ==3.10 ; extra == 'test'
+Requires-Dist: imagesize ==1.4.1 ; extra == 'test'
+Requires-Dist: importlib-metadata ==8.5.0 ; extra == 'test'
+Requires-Dist: jaraco-classes ==3.4.0 ; extra == 'test'
+Requires-Dist: jaraco-context ==6.0.1 ; extra == 'test'
+Requires-Dist: jaraco-functools ==4.1.0 ; extra == 'test'
+Requires-Dist: jinja2 ==3.1.4 ; extra == 'test'
+Requires-Dist: keyring ==25.5.0 ; extra == 'test'
+Requires-Dist: markdown-it-py ==3.0.0 ; extra == 'test'
+Requires-Dist: markupsafe ==3.0.2 ; extra == 'test'
+Requires-Dist: mdurl ==0.1.2 ; extra == 'test'
+Requires-Dist: more-itertools ==10.5.0 ; extra == 'test'
+Requires-Dist: nh3 ==0.2.18 ; extra == 'test'
+Requires-Dist: nodeenv ==1.9.1 ; extra == 'test'
+Requires-Dist: packaging ==24.2 ; extra == 'test'
+Requires-Dist: pip-tools ==7.4.1 ; extra == 'test'
+Requires-Dist: pkginfo ==1.10.0 ; extra == 'test'
+Requires-Dist: platformdirs ==4.3.6 ; extra == 'test'
+Requires-Dist: pre-commit ==4.0.1 ; extra == 'test'
+Requires-Dist: pybadges ==3.0.1 ; extra == 'test'
+Requires-Dist: pygments ==2.18.0 ; extra == 'test'
+Requires-Dist: pyproject-hooks ==1.2.0 ; extra == 'test'
+Requires-Dist: python-dotenv ==1.0.1 ; extra == 'test'
+Requires-Dist: pyyaml ==6.0.2 ; extra == 'test'
+Requires-Dist: readme-renderer ==44.0 ; extra == 'test'
+Requires-Dist: requests ==2.32.3 ; extra == 'test'
+Requires-Dist: requests-toolbelt ==1.0.0 ; extra == 'test'
+Requires-Dist: rfc3986 ==2.0.0 ; extra == 'test'
+Requires-Dist: rich ==13.9.4 ; extra == 'test'
+Requires-Dist: six ==1.16.0 ; extra == 'test'
+Requires-Dist: snowballstemmer ==2.2.0 ; extra == 'test'
+Requires-Dist: sphinx ==8.1.3 ; extra == 'test'
+Requires-Dist: sphinx-autodoc-typehints ==2.5.0 ; extra == 'test'
+Requires-Dist: sphinx-rtd-theme ==3.0.2 ; extra == 'test'
+Requires-Dist: sphinxcontrib-applehelp ==2.0.0 ; extra == 'test'
+Requires-Dist: sphinxcontrib-devhelp ==2.0.0 ; extra == 'test'
+Requires-Dist: sphinxcontrib-htmlhelp ==2.1.0 ; extra == 'test'
+Requires-Dist: sphinxcontrib-jquery ==4.1 ; extra == 'test'
+Requires-Dist: sphinxcontrib-jsmath ==1.0.1 ; extra == 'test'
+Requires-Dist: sphinxcontrib-qthelp ==2.0.0 ; extra == 'test'
+Requires-Dist: sphinxcontrib-serializinghtml ==2.0.0 ; extra == 'test'
+Requires-Dist: twine ==5.1.1 ; extra == 'test'
+Requires-Dist: urllib3 ==2.2.3 ; extra == 'test'
+Requires-Dist: virtualenv ==20.27.1 ; extra == 'test'
+Requires-Dist: wheel ==0.45.0 ; extra == 'test'
+Requires-Dist: zipp ==3.21.0 ; extra == 'test'
+Requires-Dist: coverage ==7.6.7 ; extra == 'test'
+Requires-Dist: iniconfig ==2.0.0 ; extra == 'test'
+Requires-Dist: pluggy ==1.5.0 ; extra == 'test'
+Requires-Dist: pytest ==8.3.3 ; extra == 'test'
+Requires-Dist: pytest-click ==1.1.0 ; extra == 'test'
+Requires-Dist: pytest-mock ==3.14.0 ; extra == 'test'
+
+| Latest Version | Downloads | Tests |
+|----------------|-----------|-------|
+| [![PyPI version](pypi-badge.svg)](https://pypi.org/project/epicure-utils) | [![Downloads](https://pepy.tech/badge/epicure-utils)](https://pepy.tech/project/epicure-utils) | [![cov](https://raw.githubusercontent.com/patillacode/epicure/main/coverage.svg)](https://github.com/patillacode/epicure/actions) |
+
+# epicure
+
+```md
+epicure | ˈɛpɪkjʊə, ˈɛpɪkjɔː |
+
+noun
+
+a person who takes particular pleasure in fine food and drink.
+```
+
+### What?
+
+`epicure` is a collection of useful python methods and utils I tend to use in my personal projects.
+
+
+### Why?
+
+I like to keep my projects as clean as possible, and I don't like to add dependencies unless strictly necessary.
+
+I usually end up writing the same little utils over and over again, so I decided to create a centralized place where I can keep them organized and ready to use in any project I'm working on.
+
+
+### Installation
+
+#### Plug & Play:
+```bash
+# Install via pip
+pip install epicure-utils
+```
+
+#### Install for development:
+
+Clone the repository:
+```bash
+git clone https://github.com/dvitto/epicure.git
+cd epicure
+```
+
+Install the dependencies and the package:
+```bash
+make install
+
+# or manually:
+
+python -m venv venv
+source venv/bin/activate
+pip install -e .
+```
+
+#### System Requirements
+
+Before using epicure, ensure you have the following installed:
+
+- Python >= `3.10`
+
+
+### Usage
+Once installed you can import the package and use the methods as you would with any other python package.
+
+Simple example:
+
+```python
+from epicure.output import colored_print
+
+colored_print("Hello, World!", fg_color="magenta", bg_color="black")
+
+# this will print a "Hello, World!" in your terminal
+# foreground color will be magenta and background color will be black (if supported by your terminal)
+```
+
+To see an interactive example of all the things available, run the following command:
+
+```bash
+python -m epicure.demo
+```
+
+### Documentation
+
+The documentation is generated using Sphinx.
+
+Please generate the documentation by running the following command:
+
+```bash
+make documentation
+```
+
+The documentation will be available in the `docs` folder, open the `index.html` file in your browser to see the documentation.
+
+
+### Features
+- Simple and useful methods for everyday use.
+- The package is organized in modules, so you can import only the methods you need.
+- No dependencies other than the Python standard library.
+
+#### Available Modules and Methods
+
+##### `output`
+- `colored_print`: Print colored text in the terminal.
+
+----
+
+##### `input`
+- `ask_yes_no_question`: Ask the user a yes/no question.
+- `multi_choice_question`: Ask the user to choose one option from a list of choices.
+- `multi_choice_question_interactive`: Ask the user to choose multiple options from a list of choices. (works on Linux and macOS)
+- `simple_choice_question`: Ask the user to choose multiple options from a list of choices using an interactive menu.
+
+----
+
+**And more to come...!**
+
+
+### Testing
+To run the tests, you can use the following command:
+
+```bash
+make test
+# or
+pytest
+```
+
+As for the coverage, you can run the following command:
+
+```bash
+make coverage
+# or
+coverage run -m pytest -x
+coverage json -o "coverage-summary.json"
+coverage report -m
+```
+
+Remember to install the testing dependencies before running the tests!
+
+```bash
+make install-test-requirements
+# or
+pip install -r install -r requirements/test.txt
+```
+
+### Known Issues
+`multi_choice_question_interactive` does not work on Windows by default. You need to install the `windows-curses` package to use it on Windows.
+
+### Acknowledgments
+- Python community, for the amazing libraries and tools they provide.
+
+### Contributing
+Contributions are welcome!
+
+If you have a feature request, bug report, or a pull request, please open an issue or submit a PR.
+
+
+### License
+
+epicure is released under [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE).
