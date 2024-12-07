@@ -1,0 +1,5 @@
+jsonlines
+PyYAML
+setuptools
+tqdm
+openai
