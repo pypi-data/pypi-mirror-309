@@ -1,0 +1,12 @@
+srt2soundfx/__init__.py,sha256=Kclez9HiuZ6G4TEgMr7XAhwYmHKhE34cPkHowOLfEXE,120
+srt2soundfx/audio_placer.py,sha256=UVBwAnKrm1tD-5Njy-KI8ELSG-LWaZNg6CgueB9_c9w,7326
+srt2soundfx/chatgpt_interface.py,sha256=QkTMP8X6KrAzVVIuaEzP0BgJyE_R8EjrFDDdmUjMu5w,5975
+srt2soundfx/core.py,sha256=Na7t5z7GGGSsPSYxeCeFriidysUxKNerBZqInBOdZ0Y,2170
+srt2soundfx/sound_generator.py,sha256=PzLwNOpWareOspT6E6-Ma6EQAhE7y5ZcEJUy4CT5x9M,2702
+srt2soundfx/srt_merger.py,sha256=YLVoioQE27WlMOtbcEcxbZK9pRYwdRy9H__pIgPONKg,1605
+srt2soundfx/srt_parser.py,sha256=F-gJrzRDPT72byj190vXW8g5Vm98KNd3ind-UN9r2a4,1293
+srt2soundfx-1.0.1.dist-info/LICENSE,sha256=7ZqhNBuFBDBZ1zUgdwtw1oidGv6--BGBjVEGHksTQ20,1064
+srt2soundfx-1.0.1.dist-info/METADATA,sha256=JcknHbDr6cLVUu_0G182o5lLXGxKnRdJCZnCepa8FiE,6470
+srt2soundfx-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+srt2soundfx-1.0.1.dist-info/top_level.txt,sha256=L8uvHAFuZf45p4gHvLq_niKYqIu0nu2Oqmv-LT2sxUQ,12
+srt2soundfx-1.0.1.dist-info/RECORD,,
