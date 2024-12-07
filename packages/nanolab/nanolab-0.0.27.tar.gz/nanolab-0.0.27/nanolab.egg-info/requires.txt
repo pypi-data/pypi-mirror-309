@@ -1,0 +1,6 @@
+aiohttp
+nanolog_parser
+nanomock>=0.0.14
+py_ed25519_blake2b
+requests
+sqlalchemy
