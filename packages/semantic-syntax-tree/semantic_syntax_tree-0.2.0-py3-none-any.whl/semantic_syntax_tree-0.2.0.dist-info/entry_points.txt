@@ -1,0 +1,2 @@
+[console_scripts]
+sst = semantic_syntax_tree.cli:app
