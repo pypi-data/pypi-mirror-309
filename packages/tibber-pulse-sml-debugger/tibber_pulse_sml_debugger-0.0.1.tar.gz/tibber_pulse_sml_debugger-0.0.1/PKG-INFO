@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tibber-pulse-sml-debugger
+Version: 0.0.1
+Summary: A tiny python based CLI application to see the data, that was recorded and send by your Tibber Pulse IR to your Tibber Pulse Bridge.
+Author: wh0ami
+Author-email: wh0ami@noreply.codeberg.org
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: smllib (>=1.5,<2.0)
+Description-Content-Type: text/markdown
+
+
