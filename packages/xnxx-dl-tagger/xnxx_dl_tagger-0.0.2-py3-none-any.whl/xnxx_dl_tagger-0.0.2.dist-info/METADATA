@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xnxx-dl-tagger
+Version: 0.0.2
+Summary: A MP4 tagger based on directory, filename and creation date.
+Home-page: https://github.com/thisisawesome1994/xnxx-dl-tagger
+Author: Joannes J.A. Wyckmans
+Author-email: johan.wyckmans@gmail.com
+Requires-Dist: mutagen
+
