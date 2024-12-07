@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/auxfun.py
+src/clans.py
+src/dectree.py
+src/degais.py
+src/ezGraph.py
+src/palette.py
+src/degais.egg-info/PKG-INFO
+src/degais.egg-info/SOURCES.txt
+src/degais.egg-info/dependency_links.txt
+src/degais.egg-info/entry_points.txt
+src/degais.egg-info/requires.txt
+src/degais.egg-info/top_level.txt
