@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "iPhonechargetime"
+version = "0.0.1"
+authors = [
+    { name="jyup", email="jyup.ect@gmail.com" },
+]
+description = "A small web scraping package"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["src/iPhonechargetime"]
+
+
