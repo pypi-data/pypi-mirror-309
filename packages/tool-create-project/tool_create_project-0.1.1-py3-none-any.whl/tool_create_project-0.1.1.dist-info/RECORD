@@ -1,0 +1,8 @@
+tool_create_project/__init__.py,sha256=9pTRWnQgM2ZOLdbVHyNq_4zxOAn-gNrf2rxDulTEgek,83
+tool_create_project/cli.py,sha256=MCdPq34U1OaB94ySZL896uRMYI6oyWJtG8YG9Bn-jsE,154
+tool_create_project/main.py,sha256=3yOpPpEzL7dVvvNXVolTMmH1MDiGk9ixxY_HNyR8H5k,1642
+tool_create_project/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tool_create_project-0.1.1.dist-info/METADATA,sha256=z6ssugwHfTs1T0EvhNQ6wyla49U8dJb0iM5kgK1ieCA,278
+tool_create_project-0.1.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+tool_create_project-0.1.1.dist-info/entry_points.txt,sha256=FCgYo-9vu0XhZapv6ygRyiDBKC_I1Va6idB6fN4-11k,68
+tool_create_project-0.1.1.dist-info/RECORD,,
