@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/albatross_sdk/__init__.py
+src/albatross_sdk/lib.py
+src/albatross_sdk.egg-info/PKG-INFO
+src/albatross_sdk.egg-info/SOURCES.txt
+src/albatross_sdk.egg-info/dependency_links.txt
+src/albatross_sdk.egg-info/requires.txt
+src/albatross_sdk.egg-info/top_level.txt
