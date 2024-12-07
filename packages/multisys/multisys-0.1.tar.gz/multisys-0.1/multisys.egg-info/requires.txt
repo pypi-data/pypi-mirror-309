@@ -1,0 +1,6 @@
+argparse
+setuptools
+poetry
+build
+twine
+pathlib

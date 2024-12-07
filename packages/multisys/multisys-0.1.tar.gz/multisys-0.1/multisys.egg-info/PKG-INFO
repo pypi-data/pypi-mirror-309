@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: multisys
+Version: 0.1
+Summary: Build and publish your python project easily.
+Home-page: https://github.com/GitLabBR/multisys
+Author: caique9014
+Author-email: caiqueonz777@proton.me
+License: LICENSE.txt
+Keywords: cli,build,command,cmd,pypi,pip,python,publish,auto,automatic,automation
+License-File: LICENSE.txt
+Requires-Dist: argparse
+Requires-Dist: setuptools
+Requires-Dist: poetry
+Requires-Dist: build
+Requires-Dist: twine
+Requires-Dist: pathlib
+
+# Usage
+
+
+```bash
+example@bash ~ pip install multisys 
+```
+
+# Help
+
+```bash
+example@bash ~ multisys -h
+```
+
+# Command
+```bash
+example@bash ~ multisys build -h
+example@bash ~ multisys new -h 
+```
