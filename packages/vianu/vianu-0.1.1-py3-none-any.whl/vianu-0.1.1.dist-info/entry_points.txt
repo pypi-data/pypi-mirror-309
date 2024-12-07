@@ -1,0 +1,3 @@
+[console_scripts]
+nightcrawler_app=vianu.tools.nightcrawler.launch_demo_app:main
+

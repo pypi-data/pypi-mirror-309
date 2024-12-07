@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: vianu
+Version: 0.1.1
+Summary: Vianu enables developers to access tools applicable to life sciences and healthcare.
+Home-page: https://github.com/smc40/vianu
+License: Unclear
+Keywords: healthcare,government,opensource,data science
+Author: Nicolas Perez Gonzalez
+Author-email: nicolas@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: abydos (>=0.5.0,<0.6.0)
+Requires-Dist: build (>=1.2.2.post1,<2.0.0)
+Requires-Dist: cologne-phonetics (>=2.0.0,<3.0.0)
+Requires-Dist: gradio (>=4.0,<5.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: twine (>=5.1.1,<6.0.0)
+Project-URL: Repository, https://github.com/smc40/vianu
+Description-Content-Type: text/markdown
+
+# Vianu
+
+[![PyPI version](https://badge.fury.io/py/vianu.svg?icon=si%3Apython)](https://badge.fury.io/py/vianu)  
+<!-- [![Documentation Status](https://readthedocs.org/projects/vianu/badge/?version=latest)](https://vianu.readthedocs.io/en/latest/) -->
+
+Vianu is a Python package designed for developers working in the **life sciences and healthcare** sectors. It provides access to a variety of tools and workflows, allowing users to quickly build, validate, and deploy data-driven applications.
+
+## Feature Overview
+
+- **TICI**: A tool for phonetic comparison of novel drug names with authorized ones from different locations.
+- **Nightcrawler**: A data ingestion and transformation pipeline for real-world healthcare data.
+
+## Installation
+
+To install Vianu, use the following command:
+
+```bash
+pip install vianu
+```
+
+Alternatively, you can install from source:
+
+```bash
+git clone https://github.com/smc40/vianu.git
+cd vianu
+poetry install
+```
+
+
+## Usage
+### TICI
+
+#### Launch a Demo App
+
+
+
+#### Launch a Demo Pipeline
+
+```bash
+cd vianu/tools/tici
+poetry install
+poetry shell
+python launch_demo_pipeline.py
+```
+
+### Nightcrawler
+
+#### Launch a Demo App
+
+```bash
+poetry install
+poetry shell
+python vianu/tools/nightcrawler/launch_demo_app.py
+```
+
+#### Launch a Demo Pipeline
+
+```bash
+poetry install
+poetry shell
+python -m vianu.tools.nightcrawler.launch_demo_pipeline
+```
+
+## Contributing
+
+We welcome contributions from the community! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
+
+## Code of Conduct
+
+We strive to create a welcoming environment for everyone. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) for more details.
+
+## License
+
+This project is licensed under the XYZ License.
+
+## Feedback and Support
+
+For any issues or feature requests, please use the [GitHub Issues](https://github.com/smc40/vianu/issues) page.
+
+## Acknowledgments
+
+We thank all contributors and the broader open-source community for their support and feedback.
