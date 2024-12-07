@@ -1,0 +1,7 @@
+mesh_reducer-2.0.0.dist-info/METADATA,sha256=NCCW7d0tI3RDfjsKJg6GIrET1dGNdxpulN6WPur80qg,2806
+mesh_reducer-2.0.0.dist-info/WHEEL,sha256=MBppgnVXfELcxVuEOC4sQuqQhNR48M5Zb8JoOj6or3w,102
+mesh_reducer/__init__.py,sha256=s1-hWJ3WM-r3KJtFnfCrnNKnuZFUf6Gvv30CyA4e9ek,131
+mesh_reducer/__init__.pyi,sha256=--mu6UU9CwaHb6eWFq0cAT25ONm750aQh5a_JVUuc-M,1473
+mesh_reducer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mesh_reducer/mesh_reducer.cpython-39-darwin.so,sha256=IspbF6YeUcTvoD4ZrZ8TJDIuIdhDE0BCjZeyEzPNPlc,1074136
+mesh_reducer-2.0.0.dist-info/RECORD,,
