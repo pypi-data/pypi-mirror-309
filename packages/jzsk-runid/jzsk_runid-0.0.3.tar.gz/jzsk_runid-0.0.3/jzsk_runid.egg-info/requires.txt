@@ -1,0 +1,4 @@
+pandas
+mlflow==2.14.1
+numpy
+oss2==2.19.1
