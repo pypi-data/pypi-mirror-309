@@ -1,0 +1,10 @@
+mantle_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mantle_client/__version__.py,sha256=OZuiPrWCnd9dhzGvj47CymsVAJXUW_zp6XWilrqiP9Y,100
+mantle_client/cli.py,sha256=k_A9euQK_mBa40IFbQYTShKcmjnt7SiN8_pB65b_FFE,1112
+mantle_client/client.py,sha256=yzmy_5ICv2QskL4OVLeDo9B6AJP7IEUHXyqYg4_AD8k,4773
+mantle_client-0.1.3.dist-info/LICENSE,sha256=9XJ2dIT6BsuVbcIGV6shgbVDShk98HiyIyN2gAOhkGk,58
+mantle_client-0.1.3.dist-info/METADATA,sha256=vYDSgNc2HSVENLD_0AplURbPFW6qnC4LVFQ6AruSonA,771
+mantle_client-0.1.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mantle_client-0.1.3.dist-info/entry_points.txt,sha256=bEkhGdrcSEU9vg2rtKu3wbTVbu2PEwi5ZMZlfAl651k,50
+mantle_client-0.1.3.dist-info/top_level.txt,sha256=eZ9a3f5zrRQD6IKk9hCHcAGVBWS0KutCDra8IgKqETs,14
+mantle_client-0.1.3.dist-info/RECORD,,

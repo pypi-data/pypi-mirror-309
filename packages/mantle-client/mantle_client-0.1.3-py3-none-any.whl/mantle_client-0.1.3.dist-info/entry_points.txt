@@ -1,0 +1,2 @@
+[console_scripts]
+mantle = mantle_client.cli:main
