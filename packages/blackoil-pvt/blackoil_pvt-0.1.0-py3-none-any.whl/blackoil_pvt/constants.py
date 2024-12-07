@@ -1,0 +1,5 @@
+# constants.py
+API_TO_SG_CONVERSION = 141.5
+API_TO_SG_OFFSET = 131.5
+TEMPERATURE_OFFSET_RANKINE = 460
+GAS_CONSTANT = 10.7316  # For gas law in psia-ft³/lbmol-°R
