@@ -1,0 +1,11 @@
+storify/__init__.py,sha256=XXsAiAv21tfFM42VE_YvUc6tt0bKj9wbOFAHRgrnAiE,2899
+storify/dummylogger.py,sha256=zW711EqjcXm4vZf6kM67-LVwMRy8IzQ6kVfTXiNX5ME,274
+storify/exceptions.py,sha256=Cc06w8aV4oLunt8r5xZD8WMmZy0y6WvdKtY5VQ-oEMg,41
+storify/model.py,sha256=hHKk2_jgb5pdPbAugVuWNYkaQ61TAuugcG2Q4Ht7yKE,576
+storify/database/__init__.py,sha256=eDZFOsjZl-qgZ0dYXe2LNmu_3ZXPtUCLZpwm-So1_vE,7765
+storify/database/backups.py,sha256=y55IYecU_Lb4-rXLbEW_2t4x_YfmOSNu5rSz0iGIiuU,1878
+storify-0.0.5.dist-info/LICENSE,sha256=8k4VoPyyhTRUX88V8udlTVNmNejSpY5JN4bwmKGoOVE,1067
+storify-0.0.5.dist-info/METADATA,sha256=C3DivjR7kXsPP1chdkG-hQ3Tm1c0f1Ssm9iM4P10IoA,2137
+storify-0.0.5.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+storify-0.0.5.dist-info/top_level.txt,sha256=ugV_HPceAP2HfDvQXxf2hLxeh3p85zKbpmoCx8WmzRE,8
+storify-0.0.5.dist-info/RECORD,,
