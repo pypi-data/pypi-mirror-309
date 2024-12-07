@@ -1,0 +1,9 @@
+setup.py
+hand_gesture_recognizer_2DCNN/__init__.py
+hand_gesture_recognizer_2DCNN/custom_gestures.py
+hand_gesture_recognizer_2DCNN/main.py
+hand_gesture_recognizer_2DCNN.egg-info/PKG-INFO
+hand_gesture_recognizer_2DCNN.egg-info/SOURCES.txt
+hand_gesture_recognizer_2DCNN.egg-info/dependency_links.txt
+hand_gesture_recognizer_2DCNN.egg-info/requires.txt
+hand_gesture_recognizer_2DCNN.egg-info/top_level.txt
