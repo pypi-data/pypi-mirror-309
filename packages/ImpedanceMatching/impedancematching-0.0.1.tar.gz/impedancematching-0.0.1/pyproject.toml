@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ImpedanceMatching"
+version = "0.0.1"
+authors = [
+  { name="Patrick LaChapelle", email="patlachapelle3@gmail.com" },
+]
+description = "impedance matching for Shock physics"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/WicksGroup/ImpedanceMatching"
+Issues = "https://github.com/WicksGroup/ImpedanceMatching/issues"
