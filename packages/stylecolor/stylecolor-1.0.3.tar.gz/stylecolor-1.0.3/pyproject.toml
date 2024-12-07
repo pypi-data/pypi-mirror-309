@@ -1,0 +1,22 @@
+[project]
+name = "stylecolor"
+version = "1.0.3"
+authors = [
+  { name="Clovis P", email="clovisp.pypi@gmail.com" },
+]
+description = "The simplest package to apply style and color in terminal"
+readme = "README.md"
+requires-python = ">=3.2"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Topic :: Utilities',
+    'Topic :: System :: Shells',
+    'Topic :: Text Processing',
+    'Environment :: Console',
+]
+keywords = ["style", "color", "ANSI", "shell", "terminal", "text", "colorama", "termcolor"]
+
+[tool.poetry]
+repository = "https://github.com/CloClo0/stylecolor"
