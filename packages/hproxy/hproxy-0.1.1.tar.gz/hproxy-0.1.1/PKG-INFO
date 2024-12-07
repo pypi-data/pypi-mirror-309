@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: hproxy
+Version: 0.1.1
+Summary: A GUI tool for managing Kubernetes pod proxies
+Home-page: https://github.com/yourusername/hproxy
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/hproxy
+Project-URL: Issues, https://github.com/yourusername/hproxy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: kubernetes>=28.1.0
+Requires-Dist: ttkthemes>=3.2.2
+Requires-Dist: pillow>=10.0.0
+
+# Kubernetes Pod Proxy Manager
+
+A simple GUI application for managing Kubernetes pod proxies. This tool allows you to:
+- View running pods in your Kubernetes cluster
+- Set up port forwarding with custom local ports
+- Manage multiple proxy connections
+
+## Installation
+
+```bash
+pip install hproxy
+```
+
+## Usage
+
+After installation, you can run the application using:
+
+```bash
+hproxy
+```
+
+Requirements:
+- Python 3.6 or higher
+- kubectl configured with access to your cluster
+- tkinter (usually comes with Python)
+
+## Features
+- Modern, clean interface
+- Easy port forwarding setup
+- Real-time pod status monitoring
+- Custom port selection (9000-9100)
+
+## License
+
+MIT License
+
+# hproxy/__init__.py
+"""
+Kubernetes Pod Proxy Manager
+A GUI tool for managing Kubernetes pod proxies
+"""
+
+__version__ = "0.1.1"
