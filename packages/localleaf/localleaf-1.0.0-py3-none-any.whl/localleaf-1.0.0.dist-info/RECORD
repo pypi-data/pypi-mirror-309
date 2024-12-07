@@ -1,0 +1,11 @@
+localleaf/__init__.py,sha256=tRsBorHNrw7a1SfVeH_upRC3PuTkP8w_2RyLRnjboLQ,57
+localleaf/__main__.py,sha256=r1Nn7lgbXrxXyynLWlIdMXrroDeYgQ6m0MZ4tjgYZ5Q,72
+localleaf/browser.py,sha256=BZFlGEEClWuqwBogZ8K1Rj2SpxWwlGGSYAlqlsWf9fA,3256
+localleaf/cli.py,sha256=lrCMbkXvHB64MwUL1yUbn5MhuX09E9dll1iyHcVGiN4,16739
+localleaf/client.py,sha256=upBr1zVDndONUKDbPlGumcB_SpL1IZtYvhLSPr90ZOU,12281
+localleaf/settings.py,sha256=bK-5heza7Wt59b3avgcu-bEX95A7zW1XLjqQLlU8nqw,911
+localleaf-1.0.0.dist-info/entry_points.txt,sha256=J7Fyqq7K9LnxjdkeFVZZxbuswz2BZuQx8esPmf4JSow,43
+localleaf-1.0.0.dist-info/LICENSE,sha256=5JQb-xSmErEhNFNI8BEC8EQPvUb-KxaAZOn9fiFVHpc,1128
+localleaf-1.0.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+localleaf-1.0.0.dist-info/METADATA,sha256=7fGxpLivVQHUROQyjeSt6vQyE_QBoFJgsI5JFs5Q33A,5228
+localleaf-1.0.0.dist-info/RECORD,,
