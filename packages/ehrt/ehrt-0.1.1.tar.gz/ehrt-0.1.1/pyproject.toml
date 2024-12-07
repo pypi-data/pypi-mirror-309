@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "ehrt"}
+
+[tool.setuptools.packages.find]
+where = ["ehrt"]
+
+[project]
+name = "ehrt"
+version = "0.1.1"
+description = "EHRT - Electornic Health Records Toolkit"
+authors = [{name = "Vidul Ayakulangara Panickan", email = "apvidul@gmail.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
