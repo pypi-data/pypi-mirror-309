@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gitverbose
+Version: 0.1
+Summary: Easy clone github repo, Internet files.
+Author: caiyt
+Author-email: oldtimesonz@gmail.com
+Keywords: cli,python,github,git,pypi,fun,image,hash,table,typer,3.9,pip
+Requires-Dist: requests
+Requires-Dist: argparse
+Requires-Dist: git-clone
+
