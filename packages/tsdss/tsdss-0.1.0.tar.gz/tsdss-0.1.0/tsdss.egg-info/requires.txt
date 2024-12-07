@@ -1,0 +1,16 @@
+numpy>=1.19.0
+pandas>=1.0.0
+statsmodels>=0.13.0
+matplotlib>=3.0.0
+scipy>=1.6.0
+scikit-learn>=0.24.0
+
+[test]
+pytest>=6.0
+pytest-cov>=2.0
+numpy>=1.19.0
+pandas>=1.0.0
+scipy>=1.6.0
+statsmodels>=0.13.0
+matplotlib>=3.0.0
+scikit-learn>=0.24.0
