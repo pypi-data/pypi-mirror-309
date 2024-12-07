@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: kitops
+Version: 1.0.11
+Summary: A package for working with KitOps' ModelKits
+Project-URL: Homepage, https://github.com/jozu-ai/pykitops
+Project-URL: Issues, https://github.com/jozu-ai/pykitops/issues
+Author-email: Brett Hodges <brett@jozu.com>
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# kitops
+Open-source Python package for [KitOps'](https://kitops.ml) ModelKit management
+
+## Installation:
+```bash
+pip install kitops
+```
+## Documentation:
+[Python KitOps Docs](https://jozu-ai.github.io/pykitops/)
+
+## Contribute To The Project
+[pykitops on GitHub](https://github.com/jozu-ai/pykitops)
