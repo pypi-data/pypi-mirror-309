@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+technical_analysis/__init__.py
+technical_analysis/main.py
+technical_analysis/ta_calculation.py
+technical_analysis/technicals.py
+technopulse.egg-info/PKG-INFO
+technopulse.egg-info/SOURCES.txt
+technopulse.egg-info/dependency_links.txt
+technopulse.egg-info/requires.txt
+technopulse.egg-info/top_level.txt
