@@ -1,0 +1,4 @@
+fasttext-wheel
+huggingface_hub
+processors
+numpy<2.0.0
