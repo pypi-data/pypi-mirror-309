@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: quant_screener
+Version: 1.1.3
+Summary: Quant product screener
+Home-page: https://github.com/ArturSepp/QuantScreener
+License: LICENSE.txt
+Keywords: quantitative,investing,portfolio optimization,systematic strategies,volatility
+Author: Artur Sepp
+Author-email: artursepp@gmail.com
+Maintainer: Artur Sepp
+Maintainer-email: artursepp@gmail.com
+Requires-Python: >=3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Dist: numpy (>=1.26.4)
+Requires-Dist: pandas (>=2.2.0)
+Requires-Dist: qis (>=2.1.18)
+Requires-Dist: scipy (>=1.10.0)
+Project-URL: Documentation, https://github.com/ArturSepp/QuantScreener
+Project-URL: Issues, https://github.com/ArturSepp/QuantScreener/issues
+Project-URL: Repository, https://github.com/ArturSepp/QuantScreener
+Description-Content-Type: text/markdown
+
+Quant Product screener
