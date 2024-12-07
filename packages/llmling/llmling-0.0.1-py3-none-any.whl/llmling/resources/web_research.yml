@@ -1,0 +1,28 @@
+tools:
+  browser:
+    import_path: "llmling.tools.browser.BrowserTool"
+    description: "Control a web browser"
+
+llm_providers:
+  llama:
+    name: "Local Llama"
+    model: "openai/gpt-3.5-turbo"
+
+contexts:
+  research_prompt:
+    type: "text"
+    content: |
+      You are a web research assistant. Use the browser tool to find information.
+      Current task: Go to python.org and tell me the latest news.
+
+      Use the browser tool with these steps:
+      1. Use browser action "open" with url="https://python.org"
+      2. Use browser action "read" to get the content
+      3. Summarize what you find.
+
+task_templates:
+  web_research:
+    provider: llama
+    context: research_prompt
+    tools:
+      - browser
