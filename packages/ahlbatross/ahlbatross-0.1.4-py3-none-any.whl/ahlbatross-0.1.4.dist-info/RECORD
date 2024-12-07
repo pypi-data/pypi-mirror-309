@@ -1,0 +1,13 @@
+_ahlbatross_version.py,sha256=tVHHGZCNoOKftKv7v8sDg-78N6kJHq-L6dpD2WYhuH8,18
+ahlbatross/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ahlbatross/cli.py,sha256=PJLNzxHlmoHtLvGs_29xcw9QtRCf9LGvBDu_zpBQrFw,1196
+ahlbatross/csv.py,sha256=2iEWUmTJyRGQSaX7DNTWX8J0ikL5eep5-qI5Kdqedkc,690
+ahlbatross/excel.py,sha256=IcyrtZlL6HSVZe1aUlIJ4FykddpizQ0QtlZLM83wXfs,9536
+ahlbatross/format_version_helpers.py,sha256=ozh0wgJFvRtj-vlyJH_fSzaMml6zVg_1QGRg9ScxMCU,611
+ahlbatross/main.py,sha256=xKzd6dB7AVrC5qaWjVCUjH6RsnPr2nyJ5fqjGvfxnBQ,19452
+ahlbatross/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+ahlbatross-0.1.4.dist-info/METADATA,sha256=osAzJc3k3dA62mgI2wwG0jl1XRRV9QQM_SZkChG4nH8,4033
+ahlbatross-0.1.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ahlbatross-0.1.4.dist-info/entry_points.txt,sha256=SQSFCPuTPz9RgvBi7WYcH9pe5ajsCHZAoti7ESQINVc,50
+ahlbatross-0.1.4.dist-info/licenses/LICENSE,sha256=ZWXYkbOOUM3cJ7cnGIVZuFVmGwbLcI9xPvhy3SnzJ4Q,1094
+ahlbatross-0.1.4.dist-info/RECORD,,
