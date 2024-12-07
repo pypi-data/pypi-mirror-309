@@ -1,0 +1,8 @@
+appender/__init__.py,sha256=VECQEiqp6g9e2iluSTGc4FZmPPQiUp5p_3NLyrmw3DE,99
+appender/appender.py,sha256=pUJttFq-_H3MEMeSb3JOaeXKeQwHKCGjOp97GnC1URQ,7433
+appender/errors.py,sha256=V7wcftpNN4V8yzlOx3-su7YVF0bMxst_nc7GhON1z1g,491
+duckdb_appender-0.2.0.dist-info/LICENSE,sha256=sxgtTIVakySJ2OjrZ8B0nswu12_ZQRqiZ9yAaNdt2NQ,1066
+duckdb_appender-0.2.0.dist-info/METADATA,sha256=swwssVR2D0lDKKCmmRdz8Eelqt3LFl-I0q53gUKc-uQ,1547
+duckdb_appender-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+duckdb_appender-0.2.0.dist-info/top_level.txt,sha256=XBlH61BzrNhU3YRM7ieJOZh-7iLsfOE93StqIZ65-Xc,9
+duckdb_appender-0.2.0.dist-info/RECORD,,
