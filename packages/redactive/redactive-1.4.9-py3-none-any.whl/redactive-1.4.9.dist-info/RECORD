@@ -1,0 +1,13 @@
+redactive/__about__.py,sha256=A4qmsE8vvj9H09qZTlxxGLwgABGRSkAJASAcIbNUgt4,22
+redactive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactive/_connection_mode.py,sha256=cnK_HocsFGVOF6SVI1FcVIcfUz4Ww0riNV8UUupjj60,1430
+redactive/auth_client.py,sha256=IEk1zhYHvQrE5UAIRhvDrImgrBL9jwIkd38-ENBkFWk,4879
+redactive/multi_user_client.py,sha256=Gwapbx02QUJqXp0QcIEfHZ5dzjIy59V5IrvZoQEG0Rk,8879
+redactive/search_client.py,sha256=4EdK35LIDE4NfPTd5eof4L6WIOWSYnHLJUvANg-uMnA,5360
+redactive/grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactive/grpc/v1/__init__.py,sha256=UK4gwmNUtisUM2buvkdnRaKY93EtiHXaR6xbtsZUNOQ,11790
+redactive/reranking/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactive/reranking/reranker.py,sha256=pleNaJVmW_Z-nDAULjEl3nv_et_YdWsSiO8AYmeCaXg,2645
+redactive-1.4.9.dist-info/METADATA,sha256=7XRaXxM_zy1jvWuPiKZjzg0Yk14NnMJcrWt6gciIXt4,6830
+redactive-1.4.9.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+redactive-1.4.9.dist-info/RECORD,,
