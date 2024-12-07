@@ -1,0 +1,82 @@
+Metadata-Version: 2.3
+Name: json2dir
+Version: 0.1.0
+Summary: Convert JSON to directory structure and vice versa
+Project-URL: Homepage, https://github.com/themrsami/json2dir
+Project-URL: Bug Tracker, https://github.com/themrsami/json2dir/issues
+Author-email: Usama <usamanazir13@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# json2dir
+
+A Python package that converts JSON to directory structure and vice versa.
+
+## Installation
+
+```bash
+pip install json2dir
+```
+
+## Usage
+
+### Command Line Interface
+
+```bash
+# Convert JSON to directory structure
+json2dir convert --input structure.json --output ./output_dir
+
+# Convert directory structure to JSON
+json2dir export --input ./my_directory --output structure.json
+```
+
+### Python API
+
+```python
+from json2dir import json_to_dir, dir_to_json
+
+# Convert JSON to directory structure
+json_to_dir("structure.json", "./output_dir")
+
+# Convert directory structure to JSON
+dir_to_json("./my_directory", "structure.json")
+```
+
+## Example
+
+Input JSON:
+```json
+{
+    "project": {
+        "src": {
+            "main.py": null,
+            "utils": {
+                "helper.py": null
+            }
+        },
+        "tests": {
+            "test_main.py": null
+        },
+        "README.md": null
+    }
+}
+```
+
+This will create a directory structure:
+```
+project/
+├── src/
+│   ├── main.py
+│   └── utils/
+│       └── helper.py
+├── tests/
+│   └── test_main.py
+└── README.md
+```
+
+## License
+
+MIT License
