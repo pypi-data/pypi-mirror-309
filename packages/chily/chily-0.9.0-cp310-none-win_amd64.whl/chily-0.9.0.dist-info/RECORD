@@ -1,0 +1,5 @@
+chily-0.9.0.dist-info/METADATA,sha256=_3Hh1pW5ZXz-70bEZE7LBqAauKHd0pWZG-Y3AHnWDQs,5701
+chily-0.9.0.dist-info/WHEEL,sha256=g5HWqh_ET1t00jeNp7yG4_MnCmGwbeYGzUw6BhdEuM0,95
+chily/__init__.py,sha256=IHgXeyQAiRo9B3oOnajw3XcyFjb58iTScLZ4d17Ld0c,103
+chily/chily.cp310-win_amd64.pyd,sha256=Txv8TqwPgQafabOrkwfggyf7vN2n5WQjwpqYqB_DNeE,468992
+chily-0.9.0.dist-info/RECORD,,
