@@ -1,0 +1,8 @@
+setup.py
+OpenWhisper/__init__.py
+OpenWhisper/app.py
+OpenWhisper.egg-info/PKG-INFO
+OpenWhisper.egg-info/SOURCES.txt
+OpenWhisper.egg-info/dependency_links.txt
+OpenWhisper.egg-info/requires.txt
+OpenWhisper.egg-info/top_level.txt
