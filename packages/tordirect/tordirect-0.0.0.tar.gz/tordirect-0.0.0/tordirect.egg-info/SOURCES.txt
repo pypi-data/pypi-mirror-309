@@ -1,0 +1,6 @@
+pyproject.toml
+tordirect/__init__.py
+tordirect.egg-info/PKG-INFO
+tordirect.egg-info/SOURCES.txt
+tordirect.egg-info/dependency_links.txt
+tordirect.egg-info/top_level.txt

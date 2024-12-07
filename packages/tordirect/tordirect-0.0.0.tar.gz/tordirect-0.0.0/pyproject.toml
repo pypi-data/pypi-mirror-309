@@ -1,0 +1,7 @@
+[project]
+name = "tordirect"
+authors = [
+    {name = "baggedclangspoiling"},
+]
+version = "0.0.0"
+description = "In development"
