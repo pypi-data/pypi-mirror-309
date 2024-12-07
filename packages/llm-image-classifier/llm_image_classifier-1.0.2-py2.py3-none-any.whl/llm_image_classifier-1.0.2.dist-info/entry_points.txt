@@ -1,0 +1,2 @@
+[console_scripts]
+llm_image_classifier = main:app

@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+''
+{% block title %}Detalhes da Ferramenta{% endblock %}
+
+{% block content %}
+<div class="home-content">
+  <div class="home-description">
+    <div class="differentials">
+      <div class="tag-differential nocode">No Code</div>
+      <div class="tag-differential assistant">Assistente Virtual Inteligente</div>
+    </div>
+    <div class="tool-details-text">
+      <span class="main-text">Sua ferramenta ideal para análise e treinamento de modelos de imagem</span>
+      <span class="secundary-text">Treine e analise os modelos de classificação da suas imagens e conte com uma assistente virtual inteligente integrada para tirar suas dúvidas.</span>
+    </div>
+    
+    <button class="btn-create-new-model">
+      Criar um novo modelo
+    </button>
+  </div>
+  <img src="{{ url_for('static', path='images/home_image.png') }}" alt="Matriz Confusão", style="width: 50%; height: auto;">
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let nav = document.querySelector("nav")
+    nav.style.display = 'none'
+
+    const btnNewModel = document.querySelector(".btn-create-new-model")
+    btnNewModel.addEventListener("click", () => window.location.href="/form")
+  })
+</script>
+<link rel="stylesheet" href="{{ url_for('static', path='styles/home.css') }}">
+
+{% endblock %}

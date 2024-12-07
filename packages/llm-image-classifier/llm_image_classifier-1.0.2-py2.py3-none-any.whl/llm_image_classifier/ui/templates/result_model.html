@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{% block title %}Código Fonte{% endblock %}
+
+{% block content %}
+<div id="container-steps">
+  <ul id="progress">
+    <li class="active">Configuração do Modelo</li>
+    <li class="active">Confirmação dos Parâmetros</li>
+    <li class="active">Treinamento do Modelo</li>
+    <li class="active">Resultado do Modelo</li>
+    <li>Testes com o Modelo</li>
+  </ul>
+</div>
+<div class="result-model">
+  <h3>Resultado do Modelo Treinado</h3>
+  <div class="loss-accuracy">
+    <span><b>Validation Loss:</b> {{validation_loss}} |</span>
+    <span><b>Validation Accuracy:</b> {{validation_accuracy}}%</span>
+    <br/>
+    <span><b>Test Loss:</b> {{test_loss}} |</span>
+    <span><b>Test Accuracy:</b> {{test_accuracy}}%</span>
+  </div>
+  <div class="graphs">
+    <img src="{{ url_for('static', path='images/confusion_matrix.png') }}" alt="Matriz Confusão", style="width: 37%; height: auto;">
+    <img src="{{ url_for('static', path='images/Training and validation Loss and Accuracy.png') }}" alt="Validation Loss e Accuracy", style="width: 37%; height: auto;">
+  </div>
+  <form action="/test_model" style="align-self: end;">
+    <button class="btn btn-primary" style="margin-bottom: 5px;">Testar modelo</button>
+  </form>
+</div>
+<link rel="stylesheet" href="{{ url_for('static', path='styles/result_model.css') }}">
+<script>
+  const verifyStep = async () => {
+    response = await sendRequestToAPI("/step", "GET")
+    const step = await response.json()
+
+    if(step != 4) window.location.href = '/'
+  }
+  
+  document.addEventListener('DOMContentLoaded', async () => {
+    await verifyStep()
+  })
+</script>
+{% endblock %}
