@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: RFML
+Version: 0.0.5
+Summary: RapidFire ML Library
+Author-email: rbimrose@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pymongo
+Requires-Dist: flask
+Requires-Dist: spacy
+
+# Simple Lib
+Simple lib
