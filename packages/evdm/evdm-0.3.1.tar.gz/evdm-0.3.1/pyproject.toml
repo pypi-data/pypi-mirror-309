@@ -1,0 +1,26 @@
+[project]
+name = "evdm"
+version = "0.3.1"
+description = "Prototype of a Hierarchical Event Bus for building event driven speech conversational AI systems"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.1.0",
+    "sounddevice>=0.5.0",
+    "loguru>=0.7.2",
+    "soundfile",
+    "ollama>=0.3.2",
+    "aioconsole>=0.8.0",
+    "websockets>=13.1",
+    "deepgram-sdk>=3.7.3",
+    "pyaudio>=0.2.14",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-asyncio>=0.24.0",
+]
