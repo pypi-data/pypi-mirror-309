@@ -1,0 +1,9 @@
+README.md
+setup.py
+echolab/__init__.py
+echolab/audio_conversion.py
+echolab/chord_detection.py
+echolab.egg-info/PKG-INFO
+echolab.egg-info/SOURCES.txt
+echolab.egg-info/dependency_links.txt
+echolab.egg-info/top_level.txt
