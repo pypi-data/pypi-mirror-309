@@ -1,0 +1,11 @@
+pennylane_qrack/QrackDeviceConfig.toml,sha256=7DBvKiehA9a55767DRAR9di4c16jD2vpJKxP7LdwLLs,6537
+pennylane_qrack/__init__.py,sha256=5iuZ5OqhRPLxj5cs9jGaUTDv55iPXRVbcDHM6FNk-5c,689
+pennylane_qrack/_version.py,sha256=fAYJzkRLhGvUfolIiUi-IF4f6XVwl7lJ0J5oLQt2xO8,712
+pennylane_qrack/qrack_device.cpp,sha256=hbrL0XpvT6tORcH_UUTB-8p58EA0wZ0BJaO_VKvxXL4,37821
+pennylane_qrack/qrack_device.py,sha256=YhoovXH_qDH8aLBj9tl9DF9vrBv_W7WRJDanUi_SSXI,28040
+pennylane_qrack-0.10.19.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pennylane_qrack-0.10.19.dist-info/METADATA,sha256=68WOwFFwQrZtypvX6NF03O18LneGUApMTqEo5TqRbCE,5670
+pennylane_qrack-0.10.19.dist-info/WHEEL,sha256=rNPRVbVGKrjWvrFestJftL7zG4L3SaPg4hx5cyTUI8U,98
+pennylane_qrack-0.10.19.dist-info/entry_points.txt,sha256=V6f1sN6IZZZaEvxrI47A3K_kksp8fDUWjLWD0Met7Ww,79
+pennylane_qrack-0.10.19.dist-info/top_level.txt,sha256=5NFMNHqCHtVLwNkLg66xz846uUJAlnOJ5VGa6ulW1ow,16
+pennylane_qrack-0.10.19.dist-info/RECORD,,
