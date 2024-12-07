@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rupi/__init__.py
+rupi/flames.py
+rupi.egg-info/PKG-INFO
+rupi.egg-info/SOURCES.txt
+rupi.egg-info/dependency_links.txt
+rupi.egg-info/top_level.txt

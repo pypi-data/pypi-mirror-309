@@ -1,0 +1,99 @@
+# Pali - The FLAMES Game in Python
+
+**Pali** is a simple Python library to play the classic FLAMES game, where you calculate the relationship between two names based on the number of remaining letters after eliminating common ones. The result provides a relationship status like *Friends*, *Love*, *Marriage*, *Enemies*, etc.
+
+## Features
+
+- **FLAMES Calculation**: Determines the relationship between two names.
+- **Interactive CLI**: Optionally play the game directly via command line.
+- **Simple API**: Easy to integrate into your Python projects.
+
+## Installation
+
+You can install the `pali` library via [pip](https://pypi.org/project/pali/).
+
+### Via pip (from PyPI)
+```bash
+pip install pali
+```
+
+### From source
+To install `pali` directly from the GitHub repository:
+```bash
+git clone https://github.com/<your-username>/pali.git
+cd pali
+python setup.py install
+```
+
+## Usage
+
+After installing, you can use the `flames` function to determine the relationship between two names.
+
+### Example 1: Using the library in Python
+
+```python
+from pali import flames
+
+# Example names
+result = flames("Alice", "Bob")
+print(result)  # Output: 'Enemies'
+```
+
+### Example 2: Interactive CLI
+
+You can also run the `pali` package directly from the command line for an interactive FLAMES game.
+
+```bash
+python -m pali.flames
+```
+
+This will prompt you to enter two names and will print the relationship result.
+
+### Example Output:
+
+```
+Welcome to the FLAMES Game!
+Enter the first name: Alice
+Enter the second name: Bob
+The relationship between Alice and Bob is: Enemies
+```
+
+## Contributing
+
+We welcome contributions to the `pali` library! Here’s how you can help:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to your branch (`git push origin feature-branch`).
+5. Open a pull request on GitHub.
+
+### Guidelines
+- Write clear commit messages.
+- Ensure all new features or fixes have tests.
+- Follow PEP 8 style guidelines.
+
+## Running Tests
+
+To run the tests for `pali`, make sure you have `pytest` installed:
+
+```bash
+pip install pytest
+```
+
+Then, run the tests:
+
+```bash
+pytest tests/
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- **Author**: Tanujairam
+- **Email**: Tanujairam.v@gmail.com
+- **GitHub**: [https://github.com/TanujairamV/pali](https://github.com/TanujairamV/pali)
+
