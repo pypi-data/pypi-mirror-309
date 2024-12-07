@@ -1,0 +1,124 @@
+Metadata-Version: 2.3
+Name: generic-json-encoders
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/devkral/generic-json-encoders#readme
+Project-URL: Issues, https://github.com/devkral/generic-json-encoders/issues
+Project-URL: Source, https://github.com/devkral/generic-json-encoders
+Author-email: alex <devkral@web.de>
+License: Copyright © 2024, devkral@web.de. All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Keywords: encoders,esmerald,lilya
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: orjson
+Description-Content-Type: text/markdown
+
+# generic-json-encoders
+
+A speedier version of the lilya encoders with more correct results and support for pydantic and msgspec.
+It uses under the hood orjson.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/generic-json-encoders.svg)](https://pypi.org/project/generic-json-encoders)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/generic-json-encoders.svg)](https://pypi.org/project/generic-json-encoders)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install generic-json-encoders
+```
+
+## Usage
+
+**Basic**
+
+
+``` python
+import datetime
+from decimal import Decimal
+from generic_json_encoders import json_encode, simplify
+
+test_obj = {
+    "datetime": datetime.datetime.now(),
+    "date": datetime.date.today(),
+    "decimal": Decimal("0.3").
+}
+
+# get json byte string
+print(json_encode(test_obj))
+# get simplified json serializable object
+print(json_encode(test_obj))
+```
+
+**Advanced**
+
+`generic_json_encoders` can also apply annotations in esmerald style. However the annotations must be evaluated.
+
+
+``` python
+import datetime
+from functools import partial
+from decimal import Decimal
+from generic_json_encoders import apply_annotation
+
+apply_annotation("2.333", Decimal)
+apply_annotation("2.333", Decimal, partial(transform_fn=simplify))
+```
+
+
+### Integrating in lilya
+
+Put somewhere in the init code of your application
+
+``` python
+from importlib import import_module
+from contextlib import suppress
+
+...
+with suppress(ImportError):
+    import_module("generic_json_encoders.lilya_monkey_patcher")
+...
+
+```
+
+### Integrating in esmerald
+
+``` python
+import esmerald
+
+from generic_json_encoders.lilya_monkey_patcher import GenericJsonEncoder
+
+# you need it here too, for registering at the first place
+app = esmerald.Esmerald(encoders=[GenericJsonEncoder()])
+
+```
+
+
+## License
+
+`generic-json-encoders` is distributed under the terms of the [BSD](https://spdx.org/licenses/BSD-3-Clause.html) license.
