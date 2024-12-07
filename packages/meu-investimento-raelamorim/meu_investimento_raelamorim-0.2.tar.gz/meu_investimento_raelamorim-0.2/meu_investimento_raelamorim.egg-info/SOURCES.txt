@@ -1,0 +1,4 @@
+meu_investimento_raelamorim.egg-info/PKG-INFO
+meu_investimento_raelamorim.egg-info/SOURCES.txt
+meu_investimento_raelamorim.egg-info/dependency_links.txt
+meu_investimento_raelamorim.egg-info/top_level.txt
