@@ -1,0 +1,21 @@
+numpy<2.0
+scipy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+
+[:python_version < "3.9"]
+jax
+jaxlib
+
+[:python_version >= "3.9"]
+jax==0.4.30
+jaxlib==0.4.30
+flax==0.8.5
+
+[dev]
+tox
+black
+isort
+pytest
