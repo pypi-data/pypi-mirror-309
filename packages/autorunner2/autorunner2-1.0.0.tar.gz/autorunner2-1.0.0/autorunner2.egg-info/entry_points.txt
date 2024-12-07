@@ -1,0 +1,6 @@
+[console_scripts]
+amake = autorunner.cli:main_make_alias
+arun = autorunner.cli:main_hrun_alias
+autorunner = autorunner.cli:main
+har2case = autorunner.cli:main_har2case_alias
+locusts = autorunner.ext.locust:main_locusts
