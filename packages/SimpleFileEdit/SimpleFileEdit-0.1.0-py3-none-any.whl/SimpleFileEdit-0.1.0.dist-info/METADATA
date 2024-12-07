@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: SimpleFileEdit
+Version: 0.1.0
+Summary: A small package that simplifies file creation and editing
+Home-page: https://github.com/me/myproject
+Author: BravestCheetah
+Requires: os
+
