@@ -1,0 +1,114 @@
+Metadata-Version: 2.3
+Name: dsar
+Version: 1.1.0
+Summary: Calculating Displacement Seismic Amplitude Ratio (DSAR) Value
+Keywords: seismic,volcano,volcanology,dsar
+Author-email: Martanto <martanto@live.com>, Corentin Caudron <corentin@ulb.be>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: obspy>=1.4.0
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: magma-converter>=1.8.6
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: peewee>=3.17.6
+Requires-Dist: python-slugify>=8.0.0
+Requires-Dist: obspy ; extra == "base"
+Requires-Dist: openpyxl ; extra == "base"
+Requires-Dist: pandas ; extra == "base"
+Requires-Dist: numpy ; extra == "base"
+Requires-Dist: matplotlib ; extra == "base"
+Requires-Dist: magma-converter ; extra == "base"
+Requires-Dist: peewee ; extra == "base"
+Requires-Dist: python-slugify ; extra == "base"
+Project-URL: Homepage, https://github.com/martanto/dsar
+Project-URL: Issues, https://github.com/martanto/dsar/issues
+Provides-Extra: base
+
+#  Displacement Seismic Amplitude Ratio (DSAR)
+
+## How to Use
+### Install using pip:
+```python
+pip install dsar
+```
+
+### Import `dsar` module
+```python
+from dsar import DSAR, PlotDsar
+```
+
+### Initiate DSAR
+```python
+dsar = DSAR(
+    input_dir="G:\\Output\\Converted\\SDS",
+    directory_structure='SDS',
+    start_date="2024-01-01",
+    end_date="2024-04-22",
+    station="RUA3",
+    channel="EHZ",
+    resample="10min" # default
+)
+```
+
+See https://github.com/martanto/magma-converter for supported `directory_structure`.
+
+### Run DSAR
+```python
+dsar.run()
+```
+
+### Results/Output directory
+Output directory would be as the same folder where DSAR code is running. It will create `output` directory.
+
+### Plot DSAR
+Initiate DSAR plot
+```python
+plot = PlotDsar(
+    start_date="2024-01-01",
+    end_date="2024-04-22",
+    station="RUA3",
+    channel="EHZ"
+)
+```
+
+### Get combined dataframe to plot
+```python
+df = plot.df
+```
+The output of dataframe will be saved as CSV:
+```text
+✅ Saved to D:\Project\dsar\output\dsar\VG.RUA3.00.EHZ\combined_10min_VG.RUA3.00.EHZ.csv
+```
+
+Plot DSAR:
+```python
+plot.plot(
+    interval_day=7,
+    y_min=85,
+    y_max=225,
+    save=True,
+    file_type='jpg',
+)
+```
+Output:
+```text
+✅ Saved to D:\Project\dsar\output\dsar\VG.RUA3.00.EHZ\combined_10min_VG.RUA3.00.EHZ.csv
+📷 Figure saved to: D:\Project\dsar\output\figures\dsar\VG.RUA3.00.EHZ\VG.RUA3.00.EHZ_10min_2024-01-01-2024-04-22.jpg
+```
+
+Figures:
+![output.png](https://github.com/martanto/dsar/blob/master/images/output.png?raw=true)
+
+
+## References
+> Caudron, C., et al., 2019, Change in seismic attenuation as a long-term precursor of gas-driven
+eruptions: Geology, https://doi.org/10.1130/G46107.1  
+> 
+> Chardot, L., Jolly, A. D., Kennedy, B. M., Fournier, N., & Sherburn, S. (2015). Using volcanic tremor for eruption forecasting at White Island volcano (Whakaari), New Zealand. Journal of Volcanology and Geothermal Research, 302, 11–23. https://doi.org/10.1016/j.jvolgeores.2015.06.001
+
