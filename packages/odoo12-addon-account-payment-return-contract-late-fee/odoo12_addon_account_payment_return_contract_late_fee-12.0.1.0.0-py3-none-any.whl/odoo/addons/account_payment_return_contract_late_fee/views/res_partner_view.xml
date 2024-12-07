@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherited" model="ir.ui.view">
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="model">res.partner</field>
+        <field name="groups_id" eval="[(4, ref('account.group_account_invoice'))]"/>
+        <field type="xml" name="arch">
+            <xpath expr="//page[@name='sales_purchases']/group/group[@name='sale']" position="inside">
+                <field name="use_feature_fee_for_returned_payment" invisible="True"/>
+                <field name="fee_for_returned_payment" attrs="{'invisible': [('use_feature_fee_for_returned_payment', '!=', True)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
