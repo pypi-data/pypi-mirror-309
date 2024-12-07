@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+egamma/__init__.py
+egamma/dist.py
+egamma/functions.py
+egamma.egg-info/PKG-INFO
+egamma.egg-info/SOURCES.txt
+egamma.egg-info/dependency_links.txt
+egamma.egg-info/requires.txt
+egamma.egg-info/top_level.txt
