@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pruebaalvaroplayer/__init__.py
+pruebaalvaroplayer/player.py
+pruebaalvaroplayer.egg-info/PKG-INFO
+pruebaalvaroplayer.egg-info/SOURCES.txt
+pruebaalvaroplayer.egg-info/dependency_links.txt
+pruebaalvaroplayer.egg-info/top_level.txt
