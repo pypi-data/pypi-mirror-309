@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+propertiesNaOH/__init__.py
+propertiesNaOH/functions.py
+propertiesNaOH.egg-info/PKG-INFO
+propertiesNaOH.egg-info/SOURCES.txt
+propertiesNaOH.egg-info/dependency_links.txt
+propertiesNaOH.egg-info/requires.txt
+propertiesNaOH.egg-info/top_level.txt
