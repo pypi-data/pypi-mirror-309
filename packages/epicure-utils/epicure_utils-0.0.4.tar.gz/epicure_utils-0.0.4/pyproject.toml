@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epicure-utils"
+version = "0.0.4"
+description = "A common utils Python library. Don't write that one little function again!"
+authors = [{name = "Patilla Code", email = "patillacode@gmail.com"}]
+license = {text = "GNU General Public License v3 (GPLv3)"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["utils", "helpers"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements/production.txt"] }
+optional-dependencies.test = { file = ["requirements/development.txt", "requirements/test.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["epicure*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[project.urls]
+homepage = "https://github.com/patillacode/epicure"
+repository = "https://github.com/patillacode/epicure"
+
+

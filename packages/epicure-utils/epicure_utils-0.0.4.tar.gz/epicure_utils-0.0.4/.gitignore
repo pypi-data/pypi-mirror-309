@@ -1,0 +1,36 @@
+# python
+__pycache__/
+*.py[cod]
+*.class
+.vscode
+.aider*
+.idea
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.egg
+*.so
+*.o
+*.a
+*.vscode
+*.env
+!env.sample
+.venv
+venv
+
+# pypi
+dist
+build
+
+# custom autoenv files
+.autoenv.sh
+.autoenv_leave.sh
+
+# coverage
+.coverage
+coverage-summary.json
+htmlcov/
+
+# Sphinx build directory
+docs/_build/

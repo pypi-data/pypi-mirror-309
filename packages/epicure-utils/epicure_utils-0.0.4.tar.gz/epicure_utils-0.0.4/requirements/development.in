@@ -1,0 +1,12 @@
+-r base.in
+
+build
+icecream
+pip-tools
+pre-commit
+pybadges
+python-dotenv
+sphinx
+sphinx-autodoc-typehints
+sphinx-rtd-theme
+twine
