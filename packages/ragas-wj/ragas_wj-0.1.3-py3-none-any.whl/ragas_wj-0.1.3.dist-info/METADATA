@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ragas-wj
+Version: 0.1.3
+Summary: ragas for my project
+Home-page: UNKNOWN
+Author: wangjie
+Author-email: wj15733866022@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: pysbd (==0.3.4)
+Requires-Dist: langchain-openai (==0.2.8)
+Requires-Dist: loguru (==0.7.2)
+Requires-Dist: datasets (==2.12.0)
+Requires-Dist: openpyxl (==3.1.5)
+Requires-Dist: langchain-community (==0.3.7)
+Requires-Dist: nltk (==3.9.1)
+
+UNKNOWN
+
