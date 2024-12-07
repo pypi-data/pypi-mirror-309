@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include django_auto_listview *
+recursive-include tests *
+
