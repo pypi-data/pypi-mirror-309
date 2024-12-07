@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+agents_client.egg-info/PKG-INFO
+agents_client.egg-info/SOURCES.txt
+agents_client.egg-info/dependency_links.txt
+agents_client.egg-info/requires.txt
+agents_client.egg-info/top_level.txt
