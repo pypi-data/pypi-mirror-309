@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ehrt
+Version: 0.1.2
+Summary: EHR Toolkit
+Author: Vidul Ayakulangara Panickan
+Requires-Python: >=3.6
+
