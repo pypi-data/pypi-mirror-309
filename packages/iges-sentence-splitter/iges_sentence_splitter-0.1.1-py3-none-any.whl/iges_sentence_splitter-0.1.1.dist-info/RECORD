@@ -1,0 +1,16 @@
+sentence_splitter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentence_splitter/splitter.py,sha256=_mv2ghfuR2h72fHJYH3oYeDQDXVzdstBbGODqLmk9ac,8760
+sentence_splitter/model/README.md,sha256=9as38q1Hjn_WGE5MIMFNbvc5uI1NEKPpO2t2y8g_lAc,4161
+sentence_splitter/model/all_results.json,sha256=7EB1F64wApHvJZ_GjqkzaxNBcX4L9UVc5ArgnKg-Q28,557
+sentence_splitter/model/config.json,sha256=LpKjotQFsosZOyBU0YpSiyFi_ueWji0Jk1sAJQ9-ih4,880
+sentence_splitter/model/eval_results.json,sha256=jBXs7IPAQmMSFPxxem-QCcaSOIVQGPBs5Wh7CXyOPtU,344
+sentence_splitter/model/special_tokens_map.json,sha256=BuQFo23-S5YE9IT2oeYZrxp_fQnjSoVV6wt3tmMYBn8,280
+sentence_splitter/model/tokenizer.json,sha256=g3P5zT0nWR4ZJEJrzByHmbxamv_E_IV5gsXWZmjdH0E,17082832
+sentence_splitter/model/tokenizer_config.json,sha256=zPIjuj1bPMf6bDv0UfO7QFV6XJKwqjP2PReAL_Gpb9k,1178
+sentence_splitter/model/train_results.json,sha256=QiTye68_Hbgd7nDO32rN9zAMN_tFtJ9lAZsl69Weks8,234
+sentence_splitter/model/trainer_state.json,sha256=PsbuQlqS29cN61uj4nRiHPheQ5xmVQORXUYLPuk5pio,21361
+sentence_splitter/model/training_args.bin,sha256=WNQT1__UIMDH5iq_XN1FNSL8AFtokUCso7hjyESsAzc,5304
+iges_sentence_splitter-0.1.1.dist-info/METADATA,sha256=cPfY7F9zZ-WqBkmYjHBjrN_LSIV3g9vbAhv4dEBRDqs,4792
+iges_sentence_splitter-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+iges_sentence_splitter-0.1.1.dist-info/top_level.txt,sha256=5wzsTyGZs4u-2wa-D2Sv24RtHsuvD_W8HN72bXFn14E,18
+iges_sentence_splitter-0.1.1.dist-info/RECORD,,
