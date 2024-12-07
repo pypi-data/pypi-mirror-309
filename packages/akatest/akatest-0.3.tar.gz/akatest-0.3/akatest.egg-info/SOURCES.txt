@@ -1,0 +1,8 @@
+README.md
+setup.py
+akatest/__init__.py
+akatest/send_webhook.py
+akatest.egg-info/PKG-INFO
+akatest.egg-info/SOURCES.txt
+akatest.egg-info/dependency_links.txt
+akatest.egg-info/top_level.txt
