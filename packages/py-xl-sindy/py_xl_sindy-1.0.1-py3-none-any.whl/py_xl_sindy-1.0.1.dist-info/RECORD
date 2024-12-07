@@ -1,0 +1,12 @@
+xlsindy/__init__.py,sha256=YkGGTglO4o_O9sWwiLfa_16N14gfQYSF770eujDdmL4,245
+xlsindy/catalog_gen.py,sha256=gghIuuE5FCULpJaIpXmgJdZe9hQ4hYj5lVGQnWewsqE,8456
+xlsindy/dynamics_modeling.py,sha256=fztShWUAJBtp8Qil9MhOuTg0iu_A76i65Pa5gW4ATWg,6671
+xlsindy/euler_lagrange.py,sha256=yXumaRLCQjmzuyB9dmOZjoXg1P7R30Ml_IrnvprU_o0,10997
+xlsindy/optimization.py,sha256=ZlshPZueEPQdv9PkG_mG12xRld9mLzxmfI6zbf_44AI,7267
+xlsindy/render.py,sha256=P00wz9HbjEy_FXSZjTRp7SpzZMaUMXy-0_rrh9neKr8,4322
+xlsindy/simulation.py,sha256=IpNjQsnF5Z9F3XAudNf0LPBX6VoNeSv2cW769wAvT9E,4382
+py_xl_sindy-1.0.1.dist-info/LICENSE,sha256=6mUaIHgEuFHcZbVG6A-drwHdv54IligO2X9SFx4v18M,1073
+py_xl_sindy-1.0.1.dist-info/METADATA,sha256=otx32jfVIao39a68QMpCv_7DFtUfhxlV01iEYsRUbhk,2419
+py_xl_sindy-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+py_xl_sindy-1.0.1.dist-info/top_level.txt,sha256=OIqQ1KX2Oynrf3RzP9VjU5e9dy1iZYwUPbiHtCO4cls,8
+py_xl_sindy-1.0.1.dist-info/RECORD,,
