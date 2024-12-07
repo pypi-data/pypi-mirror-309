@@ -1,0 +1,5 @@
+sgx_ias_structs-0.1.10.dist-info/METADATA,sha256=5tki06MV2RmTfm7GmF_Z3aKFb77T7wYSD8SbbO1YJmo,2175
+sgx_ias_structs-0.1.10.dist-info/WHEEL,sha256=dF6AQ3O5zc5d9-h-_ptGQQ-NsWq8M4-FFjUtLMbpE50,106
+sgx_ias_structs/__init__.py,sha256=g3bbobmBMzFAGCv6GbA0qSLfy2fSTtrRBEh5_0olLCM,143
+sgx_ias_structs/sgx_ias_structs.cpython-311-darwin.so,sha256=YmeF4ob_iEFeB3J31C10yYddHWTzFH9vlIa4YxuM1v0,506376
+sgx_ias_structs-0.1.10.dist-info/RECORD,,
