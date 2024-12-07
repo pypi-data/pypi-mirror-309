@@ -1,0 +1,2 @@
+[console_scripts]
+gv = gv.entry:gv_entry_point
