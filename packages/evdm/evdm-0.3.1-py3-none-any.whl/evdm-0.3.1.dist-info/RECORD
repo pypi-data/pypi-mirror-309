@@ -1,0 +1,14 @@
+evdm/__init__.py,sha256=r4xAFihOf72W9TD-lpMi6ntWSTKTP2SlzKP1ytkjRbI,22
+evdm/core.py,sha256=SdwJqOSIlA87da4V8APgDED1ACxhU7k7lWDq3vMSnW8,3033
+evdm/actors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evdm/actors/debug.py,sha256=GZWqWPs0Uco2nQYPJbUwtXb74rJdX5HWZKRzBBpLhV8,236
+evdm/actors/audio/__init__.py,sha256=lSuP_MKYpv97e3UR-JkdsIaqc49h2pjZX9AvN_meA4M,171
+evdm/actors/audio/deepgram.py,sha256=nc6gsVVozYrQlGUjmVePyBH3maD-ps0p_lbB-N9QOEs,3433
+evdm/actors/audio/microphone.py,sha256=7yIHMdW4ys_kjjE9LEPZ1EDzbThFnqZpabkqcRH-bCM,1347
+evdm/actors/audio/speaker.py,sha256=h8gUoWuYyVKLiloOOYMUslsq05AU17FqBjVr27zN-cM,1890
+evdm/actors/conversation/__init__.py,sha256=L37NRe4eA9s1gD5ReuZ46A22yzFL_1_-FMD_R9cHJeA,171
+evdm/actors/conversation/ollama.py,sha256=S0K7sMbTDNC0uS1Oj1-6TSGhWWtUU5Vj2QXl4RasIX8,2360
+evdm/actors/conversation/openai.py,sha256=fHwRTyOWO_NCfchtZoY-q4WWDAB3IEjJhfdsqUdu9IE,11039
+evdm-0.3.1.dist-info/METADATA,sha256=IVN5edP_7Uek3OLb71yHrMK_4-AdkSIB1Vz0WabH9Yw,1252
+evdm-0.3.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+evdm-0.3.1.dist-info/RECORD,,
