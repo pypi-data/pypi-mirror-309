@@ -1,0 +1,8 @@
+haskellian
+pyzmq
+sqlmodel
+pydantic
+dslog
+
+[cli]
+typer
