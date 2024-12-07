@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PyToolkit-doxy
+Version: 0.3
+Summary: A toolkit for data analysis and visualization
+Author: Doxy
+Author-email: brguillerm@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
