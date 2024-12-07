@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: echolab
+Version: 0.3
+Summary: A simple hello world library
+Home-page: https://gitlab.polytech.umontpellier.fr/leo.damerval/ido-dam-he
+Author: Jiayi & Léo
+Author-email: ido-dam-he@proton.me
+
+
+    This is a simple hello world library in Python. 
+
+    Commit SHA : <commit_sha>
+    
