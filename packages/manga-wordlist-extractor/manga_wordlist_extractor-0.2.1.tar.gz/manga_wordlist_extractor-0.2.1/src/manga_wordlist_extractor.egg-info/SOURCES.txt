@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/main/__init__.py
+src/main/args.py
+src/main/csv.py
+src/main/main.py
+src/main/ocr.py
+src/main/tokenizer.py
+src/manga_wordlist_extractor.egg-info/PKG-INFO
+src/manga_wordlist_extractor.egg-info/SOURCES.txt
+src/manga_wordlist_extractor.egg-info/dependency_links.txt
+src/manga_wordlist_extractor.egg-info/entry_points.txt
+src/manga_wordlist_extractor.egg-info/requires.txt
+src/manga_wordlist_extractor.egg-info/top_level.txt

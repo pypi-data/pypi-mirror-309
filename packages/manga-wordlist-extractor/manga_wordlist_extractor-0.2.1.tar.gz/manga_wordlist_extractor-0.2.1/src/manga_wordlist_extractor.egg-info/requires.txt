@@ -1,0 +1,4 @@
+regex
+mokuro
+mecab-python3
+unidic-lite
