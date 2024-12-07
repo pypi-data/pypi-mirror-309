@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+seatools/__init__.py
+seatools/ext/__init__.py
+seatools/ext/chrome/__init__.py
+seatools/ext/chrome/chrome.py
+seatools/ext/chrome/main.py
+seatools/ext/chrome/utils.py
+seatools_chrome.egg-info/PKG-INFO
+seatools_chrome.egg-info/SOURCES.txt
+seatools_chrome.egg-info/dependency_links.txt
+seatools_chrome.egg-info/entry_points.txt
+seatools_chrome.egg-info/not-zip-safe
+seatools_chrome.egg-info/requires.txt
+seatools_chrome.egg-info/top_level.txt

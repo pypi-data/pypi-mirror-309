@@ -1,0 +1,5 @@
+loguru
+tqdm
+httpx
+toml
+click
