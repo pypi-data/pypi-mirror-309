@@ -1,0 +1,13 @@
+reasoner/__init__.py,sha256=U0ptFlF01iHWA4ZukneFBTDL8wCgZOXgmDVMNoayUPo,87
+reasoner/auth.py,sha256=MC2Sv2SGmxzcaA3njGDgxZNUe2r1F2LSUUFOcDgOw6c,533
+reasoner/batches.py,sha256=_QFHqX3HWFNZor1EPi36kxqaP5wIW3sVHYJD2ox_57c,799
+reasoner/chat.py,sha256=zOThv5jVGJrroLIUTcB3nBRadKGtjF0vOT1DV6-iwvM,2456
+reasoner/cli.py,sha256=5S7fFcjtqrqVHKvkZErtXKRjINOcZCEuHJTNq-OjIyo,13430
+reasoner/config.py,sha256=Qu6uUm0uIXE4Kg5DoNqyH4zc_Si7kVqCKZAhdvy0QNM,923
+reasoner/documents.py,sha256=Snoh0r6rebt32YagSO9-mF1YhTSnjAcT75bk1R6OeLo,5598
+reasoner/reasoner.py,sha256=4eT_LCifuL2v4y0S38T8vBCRDMEr69PEUShOc5ne1Y0,3140
+reasonercli-0.2.4.dist-info/METADATA,sha256=p8KXCUVv1thZa3HLk41VHJgWMfB54hoFKL-6e8lzS9Q,1439
+reasonercli-0.2.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+reasonercli-0.2.4.dist-info/entry_points.txt,sha256=AfrxgmS0Iwl63sY21OehNjRcyQKYUMKHakiCDHN4wYw,49
+reasonercli-0.2.4.dist-info/licenses/LICENSE,sha256=cZntHZPO2sHzU5ZadwQ38Du22NMmNxmX_QyTXqVfF8s,1065
+reasonercli-0.2.4.dist-info/RECORD,,
