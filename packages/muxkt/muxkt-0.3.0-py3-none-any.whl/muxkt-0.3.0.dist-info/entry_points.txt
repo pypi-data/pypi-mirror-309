@@ -1,0 +1,3 @@
+[console_scripts]
+muxkt=muxkt.main:cli
+
