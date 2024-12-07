@@ -1,0 +1,8 @@
+oslodb_sqlalchemy_exceptions/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+oslodb_sqlalchemy_exceptions/exceptions.py,sha256=cu7HxA-mdhKJI1ybkJRAI0AO4FYxueLGQlP8qtcIscY,10622
+oslodb_sqlalchemy_exceptions/reflection.py,sha256=pANnQI4Nrn66jw0q9CdzicCJoSZJTwgmKjcTrZRtxF0,8224
+oslodb_sqlalchemy_exceptions/sqla_errors.py,sha256=rMSwOe8IJ7GYisnORkTPxoBV_8YwfucgcnkGIVvO78o,19887
+oslodb_sqlalchemy_exceptions/warning.py,sha256=C_8FyC5nY17c9YHvj5QrOyZJqUit3L9GLNtBlHJ_Whc,1148
+oslodb_sqlalchemy_exceptions-0.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+oslodb_sqlalchemy_exceptions-0.2.0.dist-info/METADATA,sha256=2WSaU9by17_Y5D3cC4kVQr2UiN0MQdSkry8uK_bBEuo,404
+oslodb_sqlalchemy_exceptions-0.2.0.dist-info/RECORD,,
