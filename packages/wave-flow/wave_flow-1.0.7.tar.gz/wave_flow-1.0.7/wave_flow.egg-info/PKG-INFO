@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wave-flow
+Version: 1.0.7
+Summary: WAVE - Workflow Automation and Versatile Engine
+Author: Lucas Lourenço
+Author-email: dev.lucaslourenco@gmail.com
+License: MIT License
+Keywords: wave build docx treatdata xlsx to word waveflow wave-flow
+Description-Content-Type: text/markdown
+Requires-Dist: python-docx
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+
+# WAVE
+> # Workflow Automation and Versatile Engine
