@@ -1,0 +1,11 @@
+sgnl_api/__init__.py,sha256=Efu2ZnRgFMzjq7LxM2muORGL2V-LDSgevvyoUB_268g,31
+sgnl_api/decorators.py,sha256=UHHUn-JKgpGpzWqsVU9yN9vYzSwMTkJ2t1uLoaWkJe8,342
+sgnl_api/docs_api.py,sha256=79wM72AYa6XYjP9kJAawaRZ0ZQE5WUiWF9jwOrwVY00,23811
+sgnl_api/file.py,sha256=SOdA1RGhm8RU1yE3z6YDn641obkWme-7uAlrucdyAp0,379
+sgnl_api/scopes.py,sha256=vzUzwz9wiG_-zjQLyi4Nd9IgSKOg_0nfhEIQtt7dsGs,455
+sgnl_api/utils.py,sha256=Vj56SAhiElp-wwVka9fKUTpWOlZKkq_qLHgdcrutCzU,1483
+sgnl_api-0.0.3.dist-info/LICENSE,sha256=IOExPYnt6EkojbDVAQxh71dE4r8k2JyT1He57OXERrU,1082
+sgnl_api-0.0.3.dist-info/METADATA,sha256=mPZVOmLFMKX7vHF5nPfgJqO92zUtiQAxAIxd-k0yE0E,5385
+sgnl_api-0.0.3.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+sgnl_api-0.0.3.dist-info/top_level.txt,sha256=cyLsKCvI8fN0Bltchcka0RvSy07RPzOQiKC7FwFPW7s,9
+sgnl_api-0.0.3.dist-info/RECORD,,
