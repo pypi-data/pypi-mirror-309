@@ -1,0 +1,10 @@
+activemodel/__init__.py,sha256=WWLMytAi2VO3-HdySf4IpbeSCPMlVVO_GGQlQNA6UWU,216
+activemodel/base_model.py,sha256=fk_g6jC1GCkAFo78UYjTONyFE8iYQH1bfvxdWG-_178,4200
+activemodel/query_wrapper.py,sha256=JiYN8EN9_gXpKrFw348gs4QixwtrEN50fJF-3uv5Gmg,2319
+activemodel/timestamps.py,sha256=8odUxQ1c0OouPAVioMTkD277w6S28Pk17pwCsaxKgww,991
+activemodel-0.3.0.dist-info/LICENSE,sha256=L8mmpX47rB-xtJ_HsK0zpfO6viEjxbLYGn70BMp8os4,1071
+activemodel-0.3.0.dist-info/METADATA,sha256=PrnCUuQVLSuCQ-tbwEMzHXrqMHq9MHTNYVgvRh9uXng,1174
+activemodel-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+activemodel-0.3.0.dist-info/entry_points.txt,sha256=YLX62TP_hR-n3HMBkdBex4W7XRiyOtIPkwy22puIjjQ,61
+activemodel-0.3.0.dist-info/top_level.txt,sha256=JCMUN_seFIi6GXtnTQRWfxXDx6Oj1uok8qapQWbWKDM,12
+activemodel-0.3.0.dist-info/RECORD,,
