@@ -1,0 +1,5 @@
+Flask>=2.2.4
+itsdangerous>=2.1.2
+Pillow>=9.1.0
+six>=1.16.0
+scour>=0.38.2
