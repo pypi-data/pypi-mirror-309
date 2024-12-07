@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_handler.py,sha256=G0gpgmQlyaZYALM6j2DAuMHDtPEIItImijUcSBhmC8E,9609
+tests/test_logger.py,sha256=J3abFZ5GdFirLR1SxxxdeV_SzjZyn1UQhAJbe6RkHsw,8438
+tests/test_utils.py,sha256=6fPmbV7aevmlArzIPe3IivqBOhREO0XgqQ3uywfH97w,12031
+watchtower_logging/__init__.py,sha256=rCiRbdy_-NKfY25ghXE-UDxvEAuIbha99zXCKcIFX1M,288
+watchtower_logging/config.py,sha256=c-90IaHDo_Oj05aHTHR38DFC7ZenJUoqjvUtaUPoL9o,1378
+watchtower_logging/django.py,sha256=e1Vj56pimR5LC2eatZAfY7hBaGgF8YA51Xf3nbLvO28,864
+watchtower_logging/handlers.py,sha256=_DJSJN0a7ZLEdLQ4auoqx1jJcLpfK75waaTn755QBCo,9312
+watchtower_logging/loggers.py,sha256=gBbvS6lh2LkKvZPBwEimgzS0Ewn9iQxvORjxoNtWzVY,8693
+watchtower_logging/utils.py,sha256=K4aVTqGhsvStsrD9TnuSAIPvAQ0VuR968ocAlRYzRGc,17656
+watchtower_logging/version.py,sha256=4Sr78SDvEWo-2zQydhrpoF3CWUfadGchmfOY3_Syb0E,23
+watchtower_logging/watchtower_logging.py,sha256=lvaTuCJN8BWqs8re6DOK-kRXPrE3LpIV2wV0RiLB4cc,9244
+watchtower_logging-1.0.0b8.dist-info/METADATA,sha256=g_8vWI7A1WUjm0BHYe-cY77hrRhu-2sXida5aXhChp4,284
+watchtower_logging-1.0.0b8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+watchtower_logging-1.0.0b8.dist-info/top_level.txt,sha256=2Cv97q9pc5qtHts3FseI8_d9MV0JGSHd5HngpiiMJxA,25
+watchtower_logging-1.0.0b8.dist-info/RECORD,,
