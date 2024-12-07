@@ -1,0 +1,10 @@
+tensorflow
+networkx
+pygraphviz
+matplotlib
+imageio
+
+[test]
+pytest
+pytest-cov
+testfixtures
