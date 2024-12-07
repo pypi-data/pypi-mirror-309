@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: just-agents-coding
+Version: 0.3.1
+Summary: Just Agents - Coding Components
+Author-email: Alex Karmazin <karmazinalex@gmail.com>
+Maintainer-email: Anton Kulaga <antonkulaga@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: just-agents>=0.3.1
+Requires-Dist: llm-sandbox>=0.1.4
