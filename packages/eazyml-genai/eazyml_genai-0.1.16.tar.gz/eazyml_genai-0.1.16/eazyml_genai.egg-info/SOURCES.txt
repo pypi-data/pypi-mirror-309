@@ -1,0 +1,16 @@
+README.md
+setup.py
+eazyml_genai/__init__.py
+eazyml_genai/compiledeazyml.cp310-win_amd64.pyd
+eazyml_genai/compiledeazyml.cp311-win_amd64.pyd
+eazyml_genai/compiledeazyml.cp312-win_amd64.pyd
+eazyml_genai/compiledeazyml.cp38-win_amd64.pyd
+eazyml_genai/compiledeazyml.cp39-win_amd64.pyd
+eazyml_genai.egg-info/PKG-INFO
+eazyml_genai.egg-info/SOURCES.txt
+eazyml_genai.egg-info/dependency_links.txt
+eazyml_genai.egg-info/top_level.txt
+eazyml_genai/genai/__init__.py
+eazyml_genai/genai/src/__init__.py
+eazyml_genai/genai/src/genai_utils/__init__.py
+eazyml_genai/genai/src/generative_ai/__init__.py
