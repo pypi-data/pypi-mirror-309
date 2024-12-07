@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/chinus_uploads.egg-info/PKG-INFO
+src/chinus_uploads.egg-info/SOURCES.txt
+src/chinus_uploads.egg-info/dependency_links.txt
+src/chinus_uploads.egg-info/requires.txt
+src/chinus_uploads.egg-info/top_level.txt
+src/uploads/__init__.py
+src/uploads/__uploads.py
+src/uploads/upload.py
