@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fast_galaxy/__init__.py
+fast_galaxy/__main__.py
+fast_galaxy/fast_galaxy.py
+fast_galaxy.egg-info/PKG-INFO
+fast_galaxy.egg-info/SOURCES.txt
+fast_galaxy.egg-info/dependency_links.txt
+fast_galaxy.egg-info/entry_points.txt
+fast_galaxy.egg-info/requires.txt
+fast_galaxy.egg-info/top_level.txt
