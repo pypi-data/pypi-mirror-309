@@ -1,0 +1,17 @@
+rid_lib/__init__.py,sha256=u6PjQFvp7mT-qz36J7PM2EtYPApmB6iW_3hpbYsq76A,42
+rid_lib/core.py,sha256=8CQWKIHaTaXeQM3gLuBcW37Qp3C7hcIZg3O_niu_yYY,4181
+rid_lib/exceptions.py,sha256=KXp5ePZu1rtYSbAYuU02Ji8DhCVkSZxH_D_EmqHtYeg,127
+rid_lib/types/__init__.py,sha256=of-cp4R-um2hQ7nD2pGiNbg6FBeClR40rXF5MsFXKF8,363
+rid_lib/types/discord_channel.py,sha256=xdrqhwWM6yhNMfzTNyM1_866eI8QvoomL7A1iYyzyHE,466
+rid_lib/types/discord_guild.py,sha256=WLFgXAuAsGVGFJS_oL8v7DWdr4rKMyoAt2iJslJas9c,439
+rid_lib/types/discord_message.py,sha256=P1M-t5Q4yUvW0C0nnAd06ikflKKs4qnOB3AHeZVJjYE,640
+rid_lib/types/discord_user.py,sha256=wWLAWEkNsVafjhTetc1rt4E3HLHmPyCqI0J9d7On43Y,436
+rid_lib/types/http_s.py,sha256=-LNXq18ffVxaPuHbec4qQqM9ss_hkTrgX02JPmX7GvY,845
+rid_lib/types/slack_channel.py,sha256=CEBUJlZ2w-2dPMWwUNc6p6UWcWgVjHX5sg2LvGzvYTc,623
+rid_lib/types/slack_message.py,sha256=tnNMNVoifpQS5SbJDC8tG6FaI2LhprqhvcA3pr-rIxo,677
+rid_lib/types/slack_user.py,sha256=hkz65AY4aoTTmAI4lH78rp9FPqjndWCk-1S_GQr5fP0,598
+rid_lib/types/slack_workspace.py,sha256=OsP8pREEzKw72XFKAyMfc_ZjE4GW5uonq08k8AFCAOU,451
+rid_lib-3.0.0b1.dist-info/METADATA,sha256=ADuCKrB3Tmxg0X43c-_lq-oiQ08Hpo4JZclrcrHk73E,12123
+rid_lib-3.0.0b1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+rid_lib-3.0.0b1.dist-info/licenses/LICENSE,sha256=1WJXd9nCIEY48Z_VKuG7sIZh7inh8sw6clo-cGMKZNI,1090
+rid_lib-3.0.0b1.dist-info/RECORD,,
