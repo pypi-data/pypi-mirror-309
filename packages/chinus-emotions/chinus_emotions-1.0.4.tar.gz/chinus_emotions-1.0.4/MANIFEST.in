@@ -1,0 +1,2 @@
+include src/emotions/__init__.py
+include src/emotions/emotions.py
