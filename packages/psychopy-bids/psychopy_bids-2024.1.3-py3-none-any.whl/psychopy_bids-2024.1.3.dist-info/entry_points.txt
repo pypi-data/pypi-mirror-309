@@ -1,0 +1,6 @@
+[psychopy.experiment.components]
+BidsBehEventComponent = psychopy_bids.bids_beh:BidsBehEventComponent
+BidsTaskEventComponent = psychopy_bids.bids_task:BidsTaskEventComponent
+
+[psychopy.experiment.routines]
+BidsExportRoutine = psychopy_bids.bids_settings:BidsExportRoutine

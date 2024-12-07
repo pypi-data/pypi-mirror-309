@@ -1,0 +1,9 @@
+bids
+bids_beh
+bids_settings
+bids_task
+docs
+images
+png
+psychopy_bids
+tests
