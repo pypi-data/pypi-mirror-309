@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+facex/__init__.py
+facex/core.py
+facex/utils.py
+facex.egg-info/PKG-INFO
+facex.egg-info/SOURCES.txt
+facex.egg-info/dependency_links.txt
+facex.egg-info/requires.txt
+facex.egg-info/top_level.txt
+facex/assets/haarcascade_frontalface_default.xml
+facex/assets/model_optimized.tflite

@@ -1,0 +1,2 @@
+include facex/assets/model_optimized.tflite
+include facex/assets/haarcascade_frontalface_default.xml
