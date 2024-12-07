@@ -1,0 +1,2 @@
+include requirements.txt
+include mecher_appium_page/*.py

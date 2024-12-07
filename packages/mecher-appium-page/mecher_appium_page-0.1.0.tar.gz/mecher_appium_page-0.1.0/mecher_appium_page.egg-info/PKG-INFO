@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mecher_appium_page
+Version: 0.1.0
+Summary: Universal Appium Page
+Home-page: https://github.com/MaximChernyak98/mecher_appium_page
+Maintainer: mecher
+Keywords: testing
+Description-Content-Type: text/plain
+Requires-Dist: Appium-Python-Client==3.2.1
+Requires-Dist: allure-pytest==2.13.5
+
+Universal Appium Page
