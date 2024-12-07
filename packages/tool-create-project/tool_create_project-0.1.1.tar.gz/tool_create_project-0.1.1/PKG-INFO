@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: tool-create-project
+Version: 0.1.1
+Summary: CLI tool to create projects in configured locations
+Author-email: Eyal Levin <eyalev@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: rich>=13.7.0
+Requires-Dist: typer>=0.13.1
