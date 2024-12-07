@@ -1,0 +1,12 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/cli.py,sha256=cDvtTZfW5zVOlFB_PV1J50szHhXyxCoADKpEzdVn96c,8267
+app/downloader.py,sha256=AIM3lKLe_7qC5uaUine4ryLprqLrKOdhUed2LBL6NpE,19473
+app/menu_apk.py,sha256=ZvbSjoJ_T6mNKCOF9S2dxiqh0ecTrYfIJbDMJs1CJIQ,1928
+app/menu_firmware.py,sha256=OR3cdK7TwUoCUQQkkH2MqdlVKzCeQ47tz-BXFca6UNQ,2562
+app/setup_config.py,sha256=NgIj0fZZlQidL-CcB44uHcKBqoyQIu9KohdkQKDNrco,33639
+fetchtastic-0.2.3.dist-info/LICENSE,sha256=spPlGh4STUWH8_Wge3VdIWSjXw8Kiroctn19wOrniMI,1067
+fetchtastic-0.2.3.dist-info/METADATA,sha256=4C2Fe81vXerIjFA6_d5Ol8RgallWjbWjU0icBVsGpWA,4684
+fetchtastic-0.2.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fetchtastic-0.2.3.dist-info/entry_points.txt,sha256=U_eZT-XoZI0JWwSus3520FnSoe4ux6F6BsRSJ-nuiZQ,45
+fetchtastic-0.2.3.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+fetchtastic-0.2.3.dist-info/RECORD,,
