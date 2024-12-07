@@ -1,0 +1,57 @@
+import pytest
+from mindmeld.metrics.answer_similarity import answer_similarity
+from mindmeld.inference import Inference, BaseModel, MetricResultType
+
+
+class InputData(BaseModel):
+    question: str
+
+
+class OutputData(BaseModel):
+    answer: str
+
+
+@pytest.fixture
+def inference():
+    return Inference(
+        id="test_inference",
+        instructions="Answer the question",
+        input_type=InputData,
+        output_type=OutputData
+    )
+
+
+@pytest.mark.parametrize("question,answer,expected_range", [
+    ("What is the capital of France?", "Paris is the capital of France.", (0.6, 1.0)),
+    ("What is the capital of France?", "The capital of France is Paris.", (0.6, 1.0)),
+    ("Who invented the telephone?", "Alexander Graham Bell invented the telephone.", (0.6, 1.0)),
+    ("What is the capital of France?", "London is seat of power for England.", (0.0, 0.6)),
+    ("Who invented the telephone?", "Thomas Edison created the light bulb.", (0.0, 0.6)),
+])
+def test_answer_similarity_various_inputs(runtime_config, model_name, inference, question, answer, expected_range):
+    input_data = InputData(question=question)
+    output_data = OutputData(answer=answer)
+
+    metric_func = answer_similarity()
+    result = metric_func(runtime_config, inference, "Answer the question accurately", input_data, output_data)
+
+    assert isinstance(result, MetricResultType)
+    assert expected_range[0] <= result.score, f"Expected value above {expected_range[0]}, Got: {result.score}"
+    assert result.score <= expected_range[1], f"Expected value below {expected_range[1]}, Got: {result.score}"
+
+
+@pytest.mark.parametrize("question", [
+    "What is the capital of France?",
+    "Who invented the telephone?",
+    "What is the largest planet in our solar system?",
+])
+def test_answer_similarity_empty_answer(runtime_config, model_name, inference, question):
+    input_data = InputData(question=question)
+    output_data = OutputData(answer="")
+
+    metric_func = answer_similarity()
+    result = metric_func(runtime_config, inference, "Answer the question accurately", input_data, output_data)
+
+    assert isinstance(result, MetricResultType)
+    assert result.score <= 0.3, f"Expected 0.3 of less for empty answer, got {result}"
+

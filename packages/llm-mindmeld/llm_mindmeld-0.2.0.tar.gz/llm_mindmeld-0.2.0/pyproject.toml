@@ -1,0 +1,51 @@
+[project]
+name = "llm_mindmeld"
+description = "A framework to glue all your AI tools together"
+authors = [
+    { name = "Todd Cullen", email = "todd@100-x.ai" },
+]
+dependencies = [
+    "pydantic>=2.9.2",
+    "instructor>=1.5.0",
+    "numpy>=2.1.1",
+    "sentence-transformers>=3.1.1",
+    "litellm>=1.51.3",
+    "pytest>=8.3.3",
+    "flake8>=7.1.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+dynamic = []
+version = "0.2.0"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+mindmeld = "mindmeld.runner:cli"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/mindmeld/__init__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.3.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src",
+]
+testpaths = [
+    "tests",
+]
