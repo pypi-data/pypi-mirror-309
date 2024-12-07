@@ -1,0 +1,4 @@
+[console_scripts]
+conver-tables=table_converter.cli:command_convert_tables
+table-converter=table_converter.cli:main
+
