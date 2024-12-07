@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: just_agents_web
+Version: 0.3.1
+Summary: Just Agents - Web. It allows runing openai API for the agent in the browser.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: just-agents==0.3.1
